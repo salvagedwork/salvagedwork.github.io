@@ -1,0 +1,214 @@
+html {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	width: $display-width;
+	margin: $top-margin auto 0 auto;
+}
+
+body {
+	display: grid;
+	grid-gap: 1rem;
+	font-size: $font-small;
+	line-height: 1.6rem;
+}
+
+#content, #header, #footer {
+	background-color: $content-background-color;
+	float: left;
+	padding: $content-padding * 0.5;
+	display: grid;
+}
+
+#header, #footer {
+	align-items: center;
+	width: 100%;
+}
+
+#content {
+	font-family: $font-regular;
+	display: block;
+	margin: 1rem 0;
+}
+
+h1,header {
+	line-height: 1.1;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+h1,h2,h3,h4,h5,h6,header {
+	/* clear: both; */
+}
+
+h2,h3 {
+	padding-top: 2rem;
+}
+
+.navbar-title {
+	font-family: $font-ubold;
+	font-size: $font-large;
+	line-height: 1.1;
+}
+
+.navbar-links {
+	justify-self: end;
+	padding-top: 1rem;
+}
+
+a {
+	text-decoration: underline;
+	color: $font-color;
+}
+
+a:hover {
+	text-decoration: underline red;
+}
+
+a.navbar-link, a.footer-link {
+	font-family: $font-bold;
+	margin-right: 0.5rem;
+}
+
+a.current {
+  color: red;
+}
+
+.modified-date {
+	font-family: $font-bold;
+}
+
+.article-title-container {
+	display: grid;
+	padding-bottom: 1rem;
+}
+
+.article-title {
+	font-family: $font-ubold;
+	font-size: $font-large;
+	text-transform: uppercase;
+	border-bottom: 5px solid red;
+	padding-bottom: 0.5rem;
+}
+
+.profile-pic {
+	height: 10rem;
+}
+
+.tile {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+	border: 2px solid black;
+}
+
+.tile:hover {
+	border: 4px solid red;
+}
+
+.creator-profile {
+	height: 4rem;
+	padding-right: 1rem;
+}
+	
+.tile-title {
+	font-family: $font-bold;
+	font-size: $font-medium;
+}
+
+.collapsible-container {
+	padding: 0.5rem 0;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.collapsible-content {
+  padding: 0 1rem;
+  background-color: #eee;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.thumb-right {
+	width: 70%;
+	margin: 1rem auto 1rem auto;
+}
+
+.thumb-image {
+	max-height: 100%;
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+.thumb-text {
+	margin-top: 0.5rem;
+	font-family: 'GT-Eesti-Text-Book';
+	font-size: 95%;
+	line-height: 1.4rem;
+}
+
+.quote {
+	margin-top: 1rem;
+	padding: 0.5rem;
+	overflow: hidden;
+	font-style: italic;
+	border-left: 1px dotted black;
+}
+
+.quote p:nth-child(1) {
+	margin-block-start: 0;
+}
+.quote p:nth-last-child(1) {
+	margin-block-end: 0;
+}
+
+.quote-attrib {
+	text-align: right;
+	font-style: normal;
+}
+
+.gallery-grid { 
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap: 0.5rem;
+	align-items: start;
+}
+
+.gallery-grid img {
+	border: 1px solid #ccc;
+	padding: 0.2rem;
+	max-width: 100%;
+}
+
+.gallery-grid figcaption {
+	font-size: 85%;
+}

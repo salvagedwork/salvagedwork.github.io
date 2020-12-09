@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article lang="en">
+
+	<header>{{ page.title }}</header>
+
+	<div class="entry">{{ content }}</div>
+	
+</article>
+
+<h3>Tags</h3>
+
+<span>
+  {% for tag in page.tags %}
+    <a href="/tag/{{ tag }}/">
+			{% assign words = tag | split: '-' %}
+			{% capture titlecase %}
+				{% for word in words %}
+					{{ word | capitalize }}
+				{% endfor %}
+			{% endcapture %}
+			{{ titlecase }}
+		</a><br />
+  {% endfor %}
+</span>

@@ -1,0 +1,6 @@
+<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
+<div class="navbar-links">
+	{% for item in site.data.header %}
+	<a href="{{ item.link }}" {% if page.url == item.link %}class="navbar-link current"{% endif %} class="navbar-link">{{ item.name }}</a>
+	{% endfor %}
+</div>

@@ -1,0 +1,22 @@
+<div class="modified-date">Page last modified on {{ page.last_modified_at | date_to_string: "ordinal", "US" }}</div>
+<div class="navbar-links">
+	{% for item in site.data.footer %}
+	<a href="{{ item.link }}" {% if page.url == item.link %}class="footer-link current"{% endif %} class="footer-link">{{ item.name }}</a>
+	{% endfor %}
+	<script type="text/javascript"> 
+		var totalCount = 7;
+		function changeIt() 
+		{
+		var num = Math.ceil( Math.random() * totalCount );
+		document.body.background = '/assets/images/backgrounds/'+num+'.jpg';
+		document.body.style.backgroundSize = "cover";
+		document.body.style.backgroundPosition = "top";
+		document.body.style.backgroundRepeat = "repeat-y";
+		document.body.style.backgroundAttachment = "fixed";
+		}
+		document.addEventListener("DOMContentLoaded", ()=>{
+			changeIt();
+		});
+		
+	</script>
+</div>

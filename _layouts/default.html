@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	{% include head.html %}
+	<body>
+		<div id="page-body">
+			<div id="header">
+				{% include header.html %}
+			</div>
+			
+			<div id="content">
+				{{ content }}
+			</div>
+			
+			<div id="footer">
+				{% include footer.html %}
+			</div>
+		</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="{{ site.baseurl }}/js/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

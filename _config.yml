@@ -1,0 +1,39 @@
+# Site settings
+title: Untitled archive project.
+description: >
+  An untitled archive project.
+baseurl: "" # the subpath of your site, e.g. /blog/
+permalink: pretty
+
+collections:
+  posts:
+    permalink: /article/:title/
+    output: true
+  creators:
+    output: true
+    permalink: /creators/:path/
+  places:
+    output: true
+    permalink: /places/:path/
+    
+defaults:
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-last-modified-at

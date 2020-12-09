@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<h1 class="creator-tile">
+	{% assign words = page.name | split: '-' %}
+	{% capture titlecase %}
+		{% for word in words %}
+			{{ word | capitalize }}
+		{% endfor %}
+	{% endcapture %}
+	{{ titlecase }}
+</h1>
+
+{{ content }}
+
+<h3>Articles featuring {{ titlecase }}:</h3>
+<ul>
+  {% assign filtered_posts = site.posts | where: 'tags', page.name %}
+  {% for post in filtered_posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
