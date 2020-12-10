@@ -1,9 +1,10 @@
 # Site settings
-title: Untitled archive project.
+title: salvaged.work
 description: >
-  An untitled archive project.
-baseurl: "" # the subpath of your site, e.g. /blog/
+  A digital archive for salvaged analogue materials.
+baseurl: ""
 permalink: pretty
+theme: null
 
 collections:
   posts:
@@ -33,7 +34,4 @@ sass:
 include: ['_pages']
 
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-last-modified-at
+  - github-pages
