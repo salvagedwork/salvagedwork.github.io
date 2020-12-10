@@ -35,3 +35,6 @@ include: ['_pages']
 
 plugins:
   - github-pages
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
