@@ -1,5 +1,5 @@
 ---
-title: Home
+title: salvaged.work - A digital archive for salvaged analogue media.
 ---
 
 <h1>Welcome to salvaged.work</h1>
