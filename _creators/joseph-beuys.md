@@ -3,6 +3,7 @@ name: joseph-beuys
 title: Joseph Beuys
 categories: creators
 layout: creator
+last_modified_at: 2020-12-10
 ---
 Joseph Beuys (12 May 1921 – 23 January 1986) was a German Fluxus, happening, and performance artist as well as a painter, sculptor, medallist, installation artist, graphic artist, art theorist, and pedagogue.
 

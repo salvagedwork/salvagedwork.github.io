@@ -1,22 +1,30 @@
-<div class="modified-date">Page last modified on {{ page.last_modified_at | date_to_string: "ordinal", "US" }}</div>
+<div class="modified-date">
+	{% if page.last_modified_at %}
+		Page last modified on {{ page.last_modified_at }}
+	{% else %}
+		Salvaging for the future.
+	{% endif %}</div>
 <div class="navbar-links">
 	{% for item in site.data.footer %}
-	<a href="{{ item.link }}" {% if page.url == item.link %}class="footer-link current"{% endif %} class="footer-link">{{ item.name }}</a>
+		<a href="{{ item.link }}" {% if page.url == item.link %}class="footer-link current"{% endif %} class="footer-link">{{ item.name }}</a>
 	{% endfor %}
-	<script type="text/javascript"> 
-		var totalCount = 7;
-		function changeIt() 
-		{
-		var num = Math.ceil( Math.random() * totalCount );
-		document.body.background = '/assets/images/backgrounds/'+num+'.jpg';
-		document.body.style.backgroundSize = "cover";
-		document.body.style.backgroundPosition = "top";
-		document.body.style.backgroundRepeat = "repeat-y";
-		document.body.style.backgroundAttachment = "fixed";
-		}
-		document.addEventListener("DOMContentLoaded", ()=>{
-			changeIt();
-		});
-		
-	</script>
+	<a href="mailto:salvagedwork@gmail.com?subject=salvaged.work%20Enquiry" target="_top" class="footer-link">Contact</a>
+	<a href="https://www.instagram.com/salvagedwork/" target="_blank"><img src="{{ '/assets/images/social_media/instagram-logo.svg' | relative_url }}" class="social-media-icon" alt="Instagram" /></a>
+	<a href="https://twitter.com/salvagedwork" target="_blank"><img src="{{ '/assets/images/social_media/twitter-logo.svg' | relative_url }}" class="social-media-icon" style="padding-left: 0.5rem;" alt="Twitter" /></a>
 </div>
+<script type="text/javascript"> 
+	var totalCount = 7;
+	function changeIt() 
+	{
+	var num = Math.ceil( Math.random() * totalCount );
+	document.body.background = '/assets/images/backgrounds/'+num+'.jpg';
+	document.body.style.backgroundSize = "cover";
+	document.body.style.backgroundPosition = "top";
+	document.body.style.backgroundRepeat = "repeat-y";
+	document.body.style.backgroundAttachment = "fixed";
+	}
+	document.addEventListener("DOMContentLoaded", ()=>{
+		changeIt();
+	});
+	
+</script>

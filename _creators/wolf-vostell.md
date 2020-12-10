@@ -3,6 +3,7 @@ name: wolf-vostell
 title: Wolf Vostell
 categories: creators
 layout: creator
+last_modified_at: 2020-12-10
 ---
 Wolf Vostell (14 October 1932 – 3 April 1998) was a German painter and sculptor, considered one of the early adopters of video art and installation art and pioneer of Happening and Fluxus. Techniques such as blurring and Dé-coll/age are characteristic of his work, as is embedding objects in concrete and the use of television sets in his works.
 

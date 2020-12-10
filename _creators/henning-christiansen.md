@@ -3,6 +3,7 @@ name: henning-christiansen
 title: Henning Christiansen
 categories: creators
 layout: creator
+last_modified_at: 2020-12-10
 ---
 Henning Christiansen (May 28, 1932, Copenhagen – December 10, 2008) was a Danish composer and an active member of the Fluxus-movement. He worked with artists such as Joseph Beuys, Nam June Paik, Bazon Brock and Wolf Vostell as well as with his wife Ursula Reuter Christiansen.
 

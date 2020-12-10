@@ -22,7 +22,7 @@ h2, h3 { padding-top: 2rem; }
 
 .navbar-links { justify-self: end; padding-top: 1rem; }
 
-a { text-decoration: underline; color: black; }
+a { text-decoration: underline; color: #1a1a1a; }
 
 a:hover { text-decoration: underline red; }
 
@@ -77,6 +77,14 @@ a.current { color: red; }
 .gallery-grid img { border: 1px solid #ccc; padding: 0.2rem; max-width: 100%; }
 
 .gallery-grid figcaption { font-size: 85%; }
+
+.recent-post-tag { font-size: 80%; background-color: #1a1a1a; padding: 0.2rem 0.4rem 0.1rem 0.4rem; border: 1px solid #000; border-radius: 0.4rem; }
+
+.recent-post-tag-link { color: #fff; text-decoration: none; }
+
+.social-media-icon { height: 1rem; }
+
+.social-media-icon:hover { fill: red; }
 
 @font-face { font-family: 'GT-Eesti-Text-Book'; src: url("/assets/fonts/GT-Eesti-Pro-Text-Book.eot"); src: url("/assets/fonts/GT-Eesti-Pro-Text-Book.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Book.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Book.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'GT-Eesti-Text-Book-Italic'; src: url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.eot"); src: url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }

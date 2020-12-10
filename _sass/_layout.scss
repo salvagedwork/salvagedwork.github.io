@@ -212,3 +212,24 @@ a.current {
 .gallery-grid figcaption {
 	font-size: 85%;
 }
+
+.recent-post-tag {
+	font-size: 80%;
+	background-color: $font-color;
+	padding: 0.2rem 0.4rem 0.1rem 0.4rem;
+	border: 1px solid #000;
+	border-radius: 0.4rem;
+}
+
+.recent-post-tag-link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.social-media-icon {
+	height: 1rem;
+}
+
+.social-media-icon:hover {
+	fill: red;
+}
