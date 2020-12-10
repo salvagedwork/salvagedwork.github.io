@@ -1,10 +1,11 @@
 ---
-title: salvaged.work - A digital archive for salvaged analogue media.
+title: salvaged.work - A digital archive for salvaged analogue works.
+last_modified_at: 2020-12-10
 ---
 
 <h1>Welcome to salvaged.work</h1>
 
-<p>salvaged.work is an archive for media that has languished under the confines of analogue mediums and pays homage to these works through curation and digital restoration so that they may be shared with a wider audience.</p>
+<p>salvaged.work is an archive for texts, audio, and images that have languished within the confines of analogue media. The archive pays homage to these works through curation and digital restoration so that they may be shared with a wider, modern audience.</p>
 
 <p>This project is not supported by advertising and has no commercial interest in the materials shared.</p>
 
