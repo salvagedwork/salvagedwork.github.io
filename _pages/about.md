@@ -2,20 +2,14 @@
 layout: default
 title: About
 permalink: /about/
-last_modified_at: 2020-12-10
+last_modified_at: 2020-12-11
 ---
-# An (un)archive manifesto.
+# The need for salvaging
 
-This archive challenges the notion of what types of content should be considered worthy of preservation.
+salvaged.work began with the winning bid for the catalogue raisonné of the Danish painter Asger Jorn and the subsequent action to digitize the catalogue, which had long been out of print. Further research into Jorn's œuvre revealed many works that had been published in limited number and had since increased in scarcity and value. salvaged.work's first idea was to digitize and *rescue* these rare works from the confines of their physical copies and share them with a new online audience, but has since expanded to include other works that are similarly being "salvaged" from restrictive sources.
 
-**This archive challenges officially-sanctioned systems of classification and uses the curator’s own narrative as a tool for exploration and discovery.**
+Libraries, archives, museums, and collectors reinforce the artificial scarcity of a published work when they limit means of access. When a work is accessible through *reading room use only*, the experience requires a physical presence. In a modern digital-first society where the need for physicality is declining, institutions need to embrace this change and digitize their collections. These efforts are slowed by copyright restrictions and the sheer volume of published works to be digitized that have never been released beyond analogue form, leading to the need for intervention.
 
-*This archive digitizes the analogue, seeking to bring new relevance to works that have languished in out of print, impossibly expensive, or hard to find editions.*
+The work of *citizen archivists* to bring these works to the internet is a valuable resource that is done solely on a volunteer basis. The permanence of a digitized work transcends the decay of paper, the warping of vinyl, and the ruin of institutions.
 
-This archive makes no claims to copyright but aims (when appropriate) to avoid sharing works that are currently in print.
-
-***This archive accepts no forms of financial support and hosts no advertising.***
-
-This archive accepts donations of works that others may find relevant for inclusion.
-
-*This archive remains ignorant of the complexities of the contexts that it is directed at.*
+salvaged.work uses the [Internet Archive](https://archive.org/) as the digital repository for these works, so that they may exist even after this archive has disappeared.
