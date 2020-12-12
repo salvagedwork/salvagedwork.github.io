@@ -20,6 +20,11 @@ collections:
 defaults:
   - scope:
       path: ""
+    values:
+      # For Open Graph metadata, set same link preview image for all pages
+      image: /assets/images/social_media/logo.png
+  - scope:
+      path: ""
       type: "articles"
     values:
       layout: "article"
@@ -27,7 +32,19 @@ defaults:
       path: ""
     values:
       layout: "default"
-  
+
+logo: /assets/images/social_media/logo.png
+
+social:
+  name: salvaged.work
+  links:
+    - https://twitter.com/salvagedwork
+    - https://www.instagram.com/salvagedwork/
+
+twitter:
+  username: salvagedwork
+  card: summary
+
 # Build Settings
 sass:
   sass_dir: _sass
