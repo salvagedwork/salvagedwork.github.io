@@ -8,9 +8,8 @@
 	{% for item in site.data.footer %}
 		<a href="{{ item.link }}" {% if page.url == item.link %}class="footer-link current"{% endif %} class="footer-link">{{ item.name }}</a>
 	{% endfor %}
-	<a href="mailto:salvagedwork@gmail.com?subject=salvaged.work%20Enquiry" target="_top" class="footer-link">Contact</a>
-	<a href="https://www.instagram.com/salvagedwork/" target="_blank"><img src="{{ '/assets/images/social_media/instagram-logo.svg' | relative_url }}" class="social-media-icon" alt="Instagram" /></a>
-	<a href="https://twitter.com/salvagedwork" target="_blank"><img src="{{ '/assets/images/social_media/twitter-logo.svg' | relative_url }}" class="social-media-icon" style="padding-left: 0.5rem;" alt="Twitter" /></a>
+	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
+	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>
 </div>
 <script type="text/javascript"> 
 	var totalCount = 7;

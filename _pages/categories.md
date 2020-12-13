@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Categories
+description: Article categories at salvaged.work, a digital archive for salvaged analogue materials.
 permalink: /categories/
 ---
 

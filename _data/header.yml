@@ -1,2 +1,4 @@
 - name: Index
   link: /index
+- name: Search
+  link: /search

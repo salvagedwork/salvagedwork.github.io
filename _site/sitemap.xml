@@ -17,10 +17,6 @@
 <lastmod>2020-12-10T00:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/article/21-light-drawings-jorn/</loc>
-<lastmod>2020-12-10T00:00:00+01:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/article/abschiedssymphonie/</loc>
 <lastmod>2020-12-10T00:00:00+01:00</lastmod>
 </url>
@@ -74,7 +70,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/article/jorn-a-silkeborg/</loc>
-<lastmod>2020-12-10T00:00:00+01:00</lastmod>
+<lastmod>2020-12-13T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/article/la-langue-verte-contents/</loc>
@@ -93,6 +89,10 @@
 <lastmod>2020-12-12T00:00:00+01:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/article/21-light-drawings-jorn/</loc>
+<lastmod>2020-12-13T00:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 <lastmod>2020-12-11T00:00:00+01:00</lastmod>
 </url>
@@ -101,6 +101,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/categories/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/contact/</loc>
+<lastmod>2020-12-13T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/tag/fluxus/</loc>
@@ -120,6 +124,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/tag/nam-june-paik/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/search/</loc>
+<lastmod>2020-12-13T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/tags/</loc>

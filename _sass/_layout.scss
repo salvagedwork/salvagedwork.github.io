@@ -226,6 +226,14 @@ a.current {
 	text-decoration: none;
 }
 
-img.social-media-icon {
-	height: 1rem;
+.social-media-icon {
+	text-decoration: none;
+}
+
+a.social-media-icon:hover {
+	text-decoration: none;
+}
+
+.search-results-entry {
+	line-height: 1rem;
 }

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+description: The purpose behind salvaged.work, a digital archive for salvaged analogue materials.
 permalink: /about/
 last_modified_at: 2020-12-11
 ---
