@@ -50,7 +50,7 @@
 <meta property="twitter:title" content="Contact" />
 <meta name="twitter:site" content="@salvagedwork" />
 <script type="application/ld+json">
-{"image":"http://localhost:4000/assets/images/social_media/logo.png","@type":"WebPage","url":"http://localhost:4000/contact/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/social_media/logo.png"}},"headline":"Contact","dateModified":"2020-12-13T00:00:00+01:00","description":"Contact salvaged.work","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"http://localhost:4000/contact/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/social_media/logo.png"}},"headline":"Contact","dateModified":"2020-12-13T00:00:00+01:00","description":"Contact salvaged.work","image":"http://localhost:4000/assets/images/social_media/logo.png","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -70,26 +70,26 @@
 			<div id="content">
 				<h1 id="contact">Contact</h1>
 
-<!-- modify this form HTML and place wherever you want your form -->
+<p>Do you have a work that we should salvage? Can you provide a physical copy of a work that we’re missing on this site? Please get in touch!</p>
 
-<form action="https://formspree.io/f/mdopwzyo" method="POST">
-	<p>
-		<label>
-			Your email:
-			<input type="text" name="_replyto" />
-		</label>
-	</p>
-	<p>
-		<label>
-			Your message:
-			<textarea name="message"></textarea>
-		</label>
-	</p>
-
-  <!-- your other form fields go here -->
-
-  <button type="submit">Send</button>
-</form>
+<div class="contact-form-holder">
+	<form action="https://formspree.io/f/mdopwzyo" method="POST">
+		<p>
+			<label>
+				<input type="text" name="_replyto" placeholder="Email" required="" />
+			</label>
+		</p>
+		<p>
+			<label>
+				<textarea name="message" placeholder="Message" required=""></textarea>
+			</label>
+		</p>
+	
+	<!-- your other form fields go here -->
+	
+	<button type="submit">Send</button>
+	</form>
+</div>
 
 			</div>
 			

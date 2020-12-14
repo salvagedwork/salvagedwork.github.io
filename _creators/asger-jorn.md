@@ -2,6 +2,7 @@
 name: asger-jorn
 title: Asger Jorn
 categories: creators
+description: Asger Oluf Jorn (3 March 1914 – 1 May 1973) was a Danish painter, sculptor, ceramic artist, and author. He was a founding member of the avant-garde movement COBRA and the Situationist International.
 layout: creator
 last_modified_at: 2020-12-10
 ---

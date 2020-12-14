@@ -94,6 +94,10 @@
 		box-shadow: 2px 2px 10px #999;
 	}
 	
+	.contact-form-holder {
+		width: 50%;
+	}
+	
 }
 
 /* Added here because we don't want to set justify-items on desktop, which comes before mobile, so we set the value for mobile after all the desktop styles. */

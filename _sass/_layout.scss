@@ -237,3 +237,34 @@ a.social-media-icon:hover {
 .search-results-entry {
 	line-height: 1rem;
 }
+
+.contact-form-holder {
+	margin-top: 2rem;
+	width: 100%;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 0.2rem;
+	border-style: none none solid none;
+	border-color: $font-color;
+}
+
+textarea {
+	width: 100%;
+	padding: 2rem 0.2rem 0.2rem 0.2rem;
+	border-style: none none solid none;
+	border-color: $font-color;
+	resize: vertical;
+}
+
+button {
+	display: block;
+	width: 5rem;
+	padding: 1rem;
+	border: none;
+	background-color: $font-color;
+	color: #fff;
+	font-weight: 600;
+	width: 100%;
+}
