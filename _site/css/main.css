@@ -3,7 +3,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css");
 *, *::before, *::after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-html { -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; width: 90%; margin: 5rem auto 0 auto; }
+html { -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; width: 90%; margin: 3rem auto 0 auto; }
 
 body { display: grid; grid-gap: 1rem; font-size: 1rem; line-height: 1.6rem; }
 
@@ -116,7 +116,7 @@ button { display: block; width: 5rem; padding: 1rem; border: none; background-co
 
 .icon-twitter:before { content: ""; }
 
-@media only screen and (min-width: 769px) { html { margin: calc(5rem * 2) auto 0 auto; }
+@media only screen and (min-width: 769px) { html { margin: calc(3rem * 2) auto 0 auto; }
   #page-body { max-width: 1500px; margin: auto; }
   #content, #header, #footer { padding: 2rem; margin: 1rem; width: 100%; }
   #header, #footer { display: flex; }
