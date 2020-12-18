@@ -62,7 +62,9 @@
 				<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 <div class="navbar-links">
 	
-	<a href="/index"  class="navbar-link">Index</a>
+	<a href="/artists"  class="navbar-link">Artists</a>
+	
+	<a href="/articles"  class="navbar-link">Articles</a>
 	
 	<a href="/search"  class="navbar-link">Search</a>
 	
@@ -74,9 +76,9 @@
 
 	<header>Asger Jorn à Silkeborg</header>
 
-	<div class="entry"><div class="thumb-right">
-	<div class="thumb-image-container"><a href="#" data-featherlight="/assets/articles/jorn-a-silkeborg/asger_jorn_a_silkeborg_cover.jpg"><img class="thumb-image" src="/assets/articles/jorn-a-silkeborg/asger_jorn_a_silkeborg_cover.jpg"></a></div>
-	<div class="thumb-text"><p align="center"><strong>Asger Jorn à Silkeborg</strong></p>
+	<div class="entry"><div class="article-infobox">
+	<div class="article-infobox-image-container"><a href="#" data-featherlight="/assets/articles/jorn-a-silkeborg/asger_jorn_a_silkeborg_cover.jpg"><img class="article-infobox-image" src="/assets/articles/jorn-a-silkeborg/asger_jorn_a_silkeborg_cover.jpg"></a></div>
+	<div class="article-infobox-text"><p align="center"><strong>Asger Jorn à Silkeborg</strong></p>
 	<p>Asger Jorn, Troels Andersen, Jean Dubuffet, Erik Nyholm</p>
 	<p>Silkeborg Kunstmuseum, 1978</p>
 	<p>ISBN 87-980325-6-9</p></div>
@@ -98,13 +100,13 @@
 <h3>Jean Dubuffet's mural <em>Epokhè</em> for the Silkeborg Museum of Art</h3>
 
 <div class="thumb-full">
-	<div class="thumb-image-container"><a href="#" data-featherlight="/assets/articles/jorn-a-silkeborg/dubuffet_epokhe_sketch.jpg"><img class="thumb-image" src="/assets/articles/jorn-a-silkeborg/dubuffet_epokhe_sketch.jpg" title="A sketch of Epokhè by Jean Dubuffet" alt="" width="100%"/></a></div>
-	<div class="thumb-text">Dubuffet's sketch for Epokhè.</div>
+	<div class="article-infobox-image-container"><a href="#" data-featherlight="/assets/articles/jorn-a-silkeborg/dubuffet_epokhe_sketch.jpg"><img class="article-infobox-image" src="/assets/articles/jorn-a-silkeborg/dubuffet_epokhe_sketch.jpg" title="A sketch of Epokhè by Jean Dubuffet" alt="" width="100%"/></a></div>
+	<div class="article-infobox-text">Dubuffet's sketch for Epokhè.</div>
 </div>
 
-<div class="thumb-right">
-	<div class="thumb-image-container"><a href="#" data-featherlight="/assets/articles/jorn-a-silkeborg/dubuffet_mural_2017.jpg"><img class="thumb-image" src="/assets/articles/jorn-a-silkeborg/dubuffet_mural_2017.jpg"></a></div>
-	<div class="thumb-text">Detail of the mural outside the Silkeborg Museum of Art, 2017.</div>
+<div class="article-infobox">
+	<div class="article-infobox-image-container"><a href="#" data-featherlight="/assets/articles/jorn-a-silkeborg/dubuffet_mural_2017.jpg"><img class="article-infobox-image" src="/assets/articles/jorn-a-silkeborg/dubuffet_mural_2017.jpg"></a></div>
+	<div class="article-infobox-text">Detail of the mural outside the Silkeborg Museum of Art, 2017.</div>
 </div>
 
 <p><em>Translated from the French text:</em></p>
@@ -115,9 +117,9 @@
 
 <h2>Essays</h2>
 
-<div class="collapsible-container">
-<button class="collapsible">Asger Jorn: Origins and Paths of Unity</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Asger Jorn: Origins and Paths of Unity</button>
+<div class="collapsible-text-content">
 
 
 <p>from <em>Pour la forme, Paris 1957, pp. 131-132</em></p>
@@ -150,9 +152,9 @@
 </div>
 </div>
 
-<div class="collapsible-container">
-<button class="collapsible">Asger Jorn: Intimate Banalities</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Asger Jorn: Intimate Banalities</button>
+<div class="collapsible-text-content">
 
 
 <p>from <em>Helhesten, Vol. 1, No. 2, Copenhagen 1941, pp. 33-38</em></p>
@@ -280,9 +282,9 @@ from the nethermost land -</p>
 </div>
 </div>
 
-<div class="collapsible-container">
-<button class="collapsible">Troels Andersen: The Collections of Asger Jorn in Silkeborg</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Troels Andersen: The Collections of Asger Jorn in Silkeborg</button>
+<div class="collapsible-text-content">
 
 
 <p>Asger Jorn’s collections at the Silkeborg Art Museum date back to 1953. At that time, he worked in a small ceramic workshop in the
@@ -311,7 +313,7 @@ Village of Sorring near Silkeborg. The museum had paid the ceramics workshop a m
 </div>
 
 <script>
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName("collapsible-text-button");
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -353,7 +355,7 @@ for (i = 0; i < coll.length; i++) {
 			</div>
 			
 			<div id="footer">
-				<div class="modified-date">
+				<div class="page-modified-date">
 	
 		Page last modified on 2020-12-13
 	</div>

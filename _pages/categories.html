@@ -5,23 +5,19 @@ description: Article categories at salvaged.work, a digital archive for salvaged
 permalink: /categories/
 ---
 
-# Categories
+<h1>Categories</h1>
 
 {% capture categories %}
-  {% for category in site.categories %}
-    {{ category[0] }}
-  {% endfor %}
+	{% for category in site.categories %}
+		{{ category[0] }}
+	{% endfor %}
 {% endcapture %}
 {% assign sortedcategories = categories | split:' ' | sort %}
 
 {% for category in sortedcategories %}
-  <h4>{{ category | capitalize }}</h4>
-  <ul>
+	<h2>{{ category | capitalize }}</h2>	
 	{% assign sortedPosts = site.categories[category] | sort: 'title' %}
-  {% for post in sortedPosts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-  </ul>
+	{% for post in sortedPosts %}
+	{% include article-listing.html %}
+	{% endfor %}
 {% endfor %}

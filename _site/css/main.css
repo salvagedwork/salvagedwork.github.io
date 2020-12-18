@@ -5,13 +5,21 @@
 
 html { -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; width: 90%; margin: 3rem auto 0 auto; }
 
-body { display: grid; grid-gap: 1rem; font-size: 1rem; line-height: 1.6rem; }
+body { display: grid; grid-gap: 1rem; font-size: 0.9rem; line-height: 1.5rem; }
 
 #content, #header, #footer { background-color: white; float: left; padding: 1rem; display: grid; }
 
 #header, #footer { align-items: center; width: 100%; }
 
-#content { font-family: "GT-Eesti-Text-Regular", sans-serif; display: block; margin: 1rem 0; }
+#content { font-family: "GT-Eesti-Text-Light", sans-serif; display: block; margin: 1rem 0; }
+
+a { text-decoration: underline; color: #1a1a1a; }
+
+a:hover { text-decoration: underline red; }
+
+a.navbar-link, a.footer-link { font-family: "GT-Eesti-Display-Bold", sans-serif; margin-right: 0.5rem; }
+
+a.current { color: red; }
 
 h1, header { line-height: 1.1; font-size: 2rem; font-weight: 700; }
 
@@ -23,47 +31,33 @@ h2, h3 { padding-top: 2rem; }
 
 .navbar-links { justify-self: end; padding-top: 1rem; }
 
-a { text-decoration: underline; color: #1a1a1a; }
+.page-modified-date { font-family: "GT-Eesti-Display-Bold", sans-serif; }
 
-a:hover { text-decoration: underline red; }
+.social-media-icon { text-decoration: none; }
 
-a.navbar-link, a.footer-link { font-family: "GT-Eesti-Display-Bold", sans-serif; margin-right: 0.5rem; }
+a.social-media-icon:hover { text-decoration: none; }
 
-a.current { color: red; }
+.artist-tile { margin: 0.5rem 0; padding: 0.5rem; display: flex; align-items: center; border: 2px solid black; box-shadow: 0.1rem 0.1rem #eee; }
 
-.modified-date { font-family: "GT-Eesti-Display-Bold", sans-serif; }
-
-.article-title-container { display: grid; padding-bottom: 1rem; }
-
-.article-title { font-family: "GT-Eesti-Display-UBold", sans-serif; font-size: 2.5rem; text-transform: uppercase; border-bottom: 5px solid red; padding-bottom: 0.5rem; }
-
-.profile-pic { height: 10rem; }
-
-.tile { margin: 0.5rem; padding: 0.5rem; display: flex; align-items: center; border: 2px solid black; }
-
-.tile:hover { border: 4px solid red; }
+.artist-tile:hover { border: 4px solid red; }
 
 .creator-profile { height: 4rem; padding-right: 1rem; }
 
-.tile-title { font-family: "GT-Eesti-Display-Bold", sans-serif; font-size: 1.3rem; }
+.artist-tile-title { font-family: "GT-Eesti-Display-Bold", sans-serif; font-size: 1.3rem; }
 
-.collapsible-container { padding: 0.5rem 0; }
+.article-tile-image-container { display: none; }
 
-.collapsible { background-color: #777; color: white; cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; outline: none; font-size: 15px; }
+.article-tile { padding: 0 1rem; margin: 1rem 0; }
 
-.active, .collapsible:hover { background-color: #555; }
+.article-tile h3 { padding-top: 0; }
 
-.collapsible:after { content: '\002B'; color: white; font-weight: bold; float: right; margin-left: 5px; }
+.article-tag { font-style: italic; }
 
-.active:after { content: "\2212"; }
+.article-infobox { width: 70%; margin: 1rem auto 1rem auto; }
 
-.collapsible-content { padding: 0 1rem; background-color: #eee; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
+.article-infobox-image { max-height: 100%; max-width: 100%; display: block; margin: auto; }
 
-.thumb-right { width: 70%; margin: 1rem auto 1rem auto; }
-
-.thumb-image { max-height: 100%; max-width: 100%; display: block; margin: auto; }
-
-.thumb-text { margin-top: 0.5rem; font-family: 'GT-Eesti-Text-Book'; font-size: 95%; line-height: 1.4rem; }
+.article-infobox-text { margin-top: 0.5rem; font-family: 'GT-Eesti-Text-Book'; font-size: 95%; line-height: 1.4rem; }
 
 .quote { margin-top: 1rem; padding: 0.5rem; overflow: hidden; font-style: italic; border-left: 1px dotted black; }
 
@@ -79,15 +73,17 @@ a.current { color: red; }
 
 .gallery-grid figcaption { font-size: 85%; }
 
-.recent-post-tag { font-size: 80%; background-color: #1a1a1a; padding: 0.2rem 0.4rem 0.1rem 0.4rem; border: 1px solid #000; border-radius: 0.4rem; }
+.collapsible-text-container { padding: 0.5rem 0; }
 
-.recent-post-tag-link { color: #fff; text-decoration: none; }
+.collapsible-text-button { background-color: #777; color: white; cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; outline: none; font-size: 15px; }
 
-.social-media-icon { text-decoration: none; }
+.active, .collapsible-text-button:hover { background-color: #555; }
 
-a.social-media-icon:hover { text-decoration: none; }
+.collapsible-text-button:after { content: '\002B'; color: white; font-weight: bold; float: right; margin-left: 5px; }
 
-.search-results-entry { line-height: 1rem; }
+.active:after { content: "\2212"; }
+
+.collapsible-text-content { padding: 0 1rem; background-color: #eee; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
 
 .contact-form-holder { margin-top: 2rem; width: 100%; }
 
@@ -97,6 +93,7 @@ textarea { width: 100%; padding: 2rem 0.2rem 0.2rem 0.2rem; border-style: none n
 
 button { display: block; width: 5rem; padding: 1rem; border: none; background-color: #1a1a1a; color: #fff; font-weight: 600; width: 100%; }
 
+@font-face { font-family: 'GT-Eesti-Text-Light'; src: url("/assets/fonts/GT-Eesti-Pro-Text-Light.eot"); src: url("/assets/fonts/GT-Eesti-Pro-Text-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'GT-Eesti-Text-Book'; src: url("/assets/fonts/GT-Eesti-Pro-Text-Book.eot"); src: url("/assets/fonts/GT-Eesti-Pro-Text-Book.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Book.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Book.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'GT-Eesti-Text-Book-Italic'; src: url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.eot"); src: url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'GT-Eesti-Text-Regular'; src: url("/assets/fonts/GT-Eesti-Pro-Text-Regular.eot"); src: url("/assets/fonts/GT-Eesti-Pro-Text-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
@@ -122,17 +119,17 @@ button { display: block; width: 5rem; padding: 1rem; border: none; background-co
   #header, #footer { display: flex; }
   .navbar-title { line-height: 2.5rem; }
   .navbar-links { padding-top: 0; margin-left: auto; }
-  .article-title-container { align-items: center; grid-template-columns: 10rem 1fr; }
-  .article-title { padding-left: 2rem; }
+  .article-infobox { width: 20rem; float: right; margin: 0.5rem 0 1.3rem 1.4rem; border: 1px solid #aaa; padding: 0.3rem; background-color: #f8f9fa; clear: both; }
+  .article-infobox-image { max-width: 100%; height: auto; }
   .article-content { text-align: justify; line-height: 1.8rem; }
-  .tile-container { display: grid; grid-gap: 1rem; grid-template-columns: repeat(auto-fill, 12rem); }
-  .tile { display: grid; height: 14rem; justify-items: center; }
-  .creator-profile { height: 8rem; padding-right: 0; }
-  .tile-title { text-align: center; }
-  .thumb-right { width: 20rem; float: right; margin: 0.5rem 0 1.3rem 1.4rem; border: 1px solid #aaa; padding: 0.3rem; background-color: #f8f9fa; clear: both; }
-  .thumb-full { padding: 0.5rem; margin: 0.5rem; background-color: #f8f9fa; }
-  .thumb-image { max-width: 100%; height: auto; }
-  .tooltip { display: none; position: absolute; font-family: "GT-Eesti-Text-Regular", sans-serif; border: 1px solid #777; background-color: #f8f9fa; padding: 2px 7px 2px 7px; box-shadow: 2px 2px 10px #999; }
-  .contact-form-holder { width: 50%; } }
+  .artist-tile-container { display: grid; grid-gap: 1rem; grid-template-columns: repeat(auto-fill, 12rem); }
+  .artist-tile { display: grid; height: 14rem; justify-items: center; margin: 0.5rem; }
+  .artist-tile-title { text-align: center; }
+  .contact-form-holder { width: 50%; }
+  .article-tile { display: flex; align-items: center; }
+  .article-tile h3 { padding-top: 0rem; }
+  .article-tile-image-container { display: initial; max-width: 6rem; }
+  .article-tile-image { width: 100%; height: 100%; box-shadow: 0.1rem 0.1rem #eee; }
+  .article-tile-details-container { padding-left: 2rem; } }
 /* Added here because we don't want to set justify-items on desktop, which comes before mobile, so we set the value for mobile after all the desktop styles. */
 @media only screen and (max-width: 769px) { .article-title-container { justify-items: center; } }

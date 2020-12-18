@@ -97,6 +97,12 @@
 <lastmod>2020-12-11T00:00:00+01:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/articles/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/artists/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/tag/asger-jorn/</loc>
 </url>
 <url>
@@ -117,9 +123,6 @@
 <lastmod>2020-12-10T00:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/index/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/tag/joseph-beuys/</loc>
 </url>
 <url>
@@ -134,5 +137,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/tag/wolf-vostell/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page2/</loc>
+<lastmod>2020-12-10T00:00:00+01:00</lastmod>
 </url>
 </urlset>

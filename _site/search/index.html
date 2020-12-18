@@ -60,7 +60,9 @@
 				<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 <div class="navbar-links">
 	
-	<a href="/index"  class="navbar-link">Index</a>
+	<a href="/artists"  class="navbar-link">Artists</a>
+	
+	<a href="/articles"  class="navbar-link">Articles</a>
 	
 	<a href="/search"  class="navbar-link">Search</a>
 	
@@ -88,7 +90,7 @@
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  searchResultTemplate: '<div class="search-results-entry"><a href="{url}"><h2>{title}</h2></a><span>{description}</span></div>',
+  searchResultTemplate: '<div class="article-list-entry"><a href="{url}"><h2>{title}</h2></a><span>{description}</span></div>',
   json: '/search.json'
   
 })
@@ -98,7 +100,7 @@ SimpleJekyllSearch({
 			</div>
 			
 			<div id="footer">
-				<div class="modified-date">
+				<div class="page-modified-date">
 	
 		Page last modified on 2020-12-13
 	</div>

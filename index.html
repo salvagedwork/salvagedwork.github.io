@@ -3,7 +3,7 @@ title: salvaged.work - A digital archive for salvaged works.
 last_modified_at: 2020-12-10
 ---
 
-<h1>Salvage what is hard to access.</h1>
+<h2 style="padding-top: 0;">Salvage what is hard to access.</h2>
 
 <p>salvaged.work is an archive for texts, audio, and images that have languished within the confines of analogue media. The archive pays homage to these works through curation and digital restoration so that they may be shared with a wider, modern audience.</p>
 
@@ -11,27 +11,17 @@ last_modified_at: 2020-12-10
 
 <h2>Newest articles</h2>
 
-{% for post in site.posts limit:5 %}
-	<ul>
-		<li>
-			{{ post.last_modified_at }}: 
-			<a href="{{ post.url }}">{{ post.title }}</a>
-			<span class="recent-post-tag">
-				{% for tag in post.tags %}
-					<a href="/tag/{{ tag }}/" class="recent-post-tag-link">{% assign words = tag | split: '-' %}{% capture titlecase %}{% for word in words %} {{ word | capitalize }} {% endfor %}{% endcapture %}{{ titlecase }}</a>
-				{% endfor %}
-			</span>
-		</li>
-	</ul>
+{% for post in site.posts limit:3 %}
+	{% include article-listing.html %}
 {% endfor %}
 
 <h2>Explore works by artists</h2>
 
-<div class="tile-container">
+<div class="artist-tile-container">
 {% for creator in site.creators %}
 	<a href="/creators/{{ creator.name }}">
-		<div class="tile">
-			<span class="tile-title">
+		<div class="artist-tile">
+			<span class="artist-tile-title">
 				{% assign words = creator.name | split: '-' %}
 				{% capture titlecase %}
 					{% for word in words %}
@@ -51,9 +41,12 @@ last_modified_at: 2020-12-10
 {% assign sortedPosts = site.posts | sort: 'title' %}
 {% for post in sortedPosts %}
   <li>
-    <a href="{{ post.url }}">
-      {{ post.title }}
-    </a>
+    <a href="{{ post.url }}">{{ post.title }}</a> 
+	<span class="article-tag">
+		{% for tag in post.tags %}
+			<a href="/tag/{{ tag }}/" class="article-tag-link">{% assign words = tag | split: '-' %}{% capture titlecase %}{% for word in words %} {{ word | capitalize }} {% endfor %}{% endcapture %}{{ titlecase }}</a>
+		{% endfor %}
+	</span>
   </li>
 {% endfor %}
 </ul>

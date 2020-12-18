@@ -1,12 +1,10 @@
 ---
 layout: default
-title: Index
-permalink: /index/
+title: Artists Index
+permalink: /artists/
 ---
 
-# Index
-
-## Artists
+# Artists
 
 <div class="tile-container">
 {% for creator in site.creators %}
@@ -24,17 +22,3 @@ permalink: /index/
 	</a>
 {% endfor %}
 </div>
-
-
-## Articles
-
-<ul>
-{% assign sortedPosts = site.posts | sort: 'title' %}
-{% for post in sortedPosts %}
-  <li>
-    <a href="{{ post.url }}">
-      {{ post.title }}
-    </a>
-  </li>
-{% endfor %}
-</ul>

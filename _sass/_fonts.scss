@@ -1,4 +1,12 @@
 @font-face {
+  font-family: 'GT-Eesti-Text-Light';
+  src: url("/assets/fonts/GT-Eesti-Pro-Text-Light.eot");
+  src: url("/assets/fonts/GT-Eesti-Pro-Text-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'GT-Eesti-Text-Book';
   src: url("/assets/fonts/GT-Eesti-Pro-Text-Book.eot");
   src: url("/assets/fonts/GT-Eesti-Pro-Text-Book.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Book.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Book.ttf") format("truetype");

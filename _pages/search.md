@@ -25,7 +25,7 @@ Try _Jorn_, for instance...
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  searchResultTemplate: '<div class="search-results-entry"><a href="{url}"><h2>{title}</h2></a><span>{description}</span></div>',
+  searchResultTemplate: '<div class="article-list-entry"><a href="{url}"><h2>{title}</h2></a><span>{description}</span></div>',
   json: '/search.json'
   
 })

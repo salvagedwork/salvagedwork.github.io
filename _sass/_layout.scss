@@ -10,7 +10,7 @@ body {
 	display: grid;
 	grid-gap: 1rem;
 	font-size: $font-small;
-	line-height: 1.6rem;
+	line-height: $line-height;
 }
 
 #content, #header, #footer {
@@ -30,6 +30,30 @@ body {
 	display: block;
 	margin: 1rem 0;
 }
+
+
+// Links ////////////////////////////////////////
+
+a {
+	text-decoration: underline;
+	color: $font-color;
+}
+
+a:hover {
+	text-decoration: underline red;
+}
+
+a.navbar-link, a.footer-link {
+	font-family: $font-bold;
+	margin-right: 0.5rem;
+}
+
+a.current {
+  color: red;
+}
+
+
+// Headers & Footers ////////////////////////////
 
 h1,header {
 	line-height: 1.1;
@@ -56,54 +80,31 @@ h2,h3 {
 	padding-top: 1rem;
 }
 
-a {
-	text-decoration: underline;
-	color: $font-color;
+.page-modified-date {
+    font-family: $font-bold;
 }
 
-a:hover {
-	text-decoration: underline red;
+.social-media-icon {
+	text-decoration: none;
 }
 
-a.navbar-link, a.footer-link {
-	font-family: $font-bold;
-	margin-right: 0.5rem;
+a.social-media-icon:hover {
+	text-decoration: none;
 }
 
-a.current {
-  color: red;
-}
 
-.modified-date {
-	font-family: $font-bold;
-}
+// Artist tiles /////////////////////////////////
 
-.article-title-container {
-	display: grid;
-	padding-bottom: 1rem;
-}
-
-.article-title {
-	font-family: $font-ubold;
-	font-size: $font-large;
-	text-transform: uppercase;
-	border-bottom: 5px solid red;
-	padding-bottom: 0.5rem;
-}
-
-.profile-pic {
-	height: 10rem;
-}
-
-.tile {
-	margin: 0.5rem;
+.artist-tile {
+	margin: 0.5rem 0;
 	padding: 0.5rem;
 	display: flex;
 	align-items: center;
 	border: 2px solid black;
+	box-shadow: 0.1rem 0.1rem $shade-color;
 }
 
-.tile:hover {
+.artist-tile:hover {
 	border: 4px solid red;
 }
 
@@ -112,64 +113,47 @@ a.current {
 	padding-right: 1rem;
 }
 	
-.tile-title {
+.artist-tile-title {
 	font-family: $font-bold;
 	font-size: $font-medium;
 }
 
-.collapsible-container {
-	padding: 0.5rem 0;
+
+// Article tiles ////////////////////////////////
+
+.article-tile-image-container {
+	display: none;
 }
 
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+.article-tile {
+	padding: 0 1rem;
+	margin: 1rem 0;
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
+.article-tile h3 {
+	padding-top: 0;
 }
 
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+.article-tag {
+	font-style: italic;
 }
 
-.active:after {
-  content: "\2212";
-}
 
-.collapsible-content {
-  padding: 0 1rem;
-  background-color: #eee;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
+// Articles /////////////////////////////////////
 
-.thumb-right {
+.article-infobox {
 	width: 70%;
 	margin: 1rem auto 1rem auto;
 }
 
-.thumb-image {
+.article-infobox-image {
 	max-height: 100%;
 	max-width: 100%;
 	display: block;
 	margin: auto;
 }
 
-.thumb-text {
+.article-infobox-text {
 	margin-top: 0.5rem;
 	font-family: 'GT-Eesti-Text-Book';
 	font-size: 95%;
@@ -213,30 +197,51 @@ a.current {
 	font-size: 85%;
 }
 
-.recent-post-tag {
-	font-size: 80%;
-	background-color: $font-color;
-	padding: 0.2rem 0.4rem 0.1rem 0.4rem;
-	border: 1px solid #000;
-	border-radius: 0.4rem;
+
+// Collapsible textboxes ////////////////////////
+
+.collapsible-text-container {
+	padding: 0.5rem 0;
 }
 
-.recent-post-tag-link {
-	color: #fff;
-	text-decoration: none;
+.collapsible-text-button {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
 
-.social-media-icon {
-	text-decoration: none;
+.active, .collapsible-text-button:hover {
+  background-color: #555;
 }
 
-a.social-media-icon:hover {
-	text-decoration: none;
+.collapsible-text-button:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
 }
 
-.search-results-entry {
-	line-height: 1rem;
+.active:after {
+  content: "\2212";
 }
+
+.collapsible-text-content {
+  padding: 0 1rem;
+  background-color: #eee;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+// Contact form /////////////////////////////////
 
 .contact-form-holder {
 	margin-top: 2rem;
@@ -268,3 +273,4 @@ button {
 	font-weight: 600;
 	width: 100%;
 }
+

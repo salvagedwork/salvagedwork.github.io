@@ -1,4 +1,6 @@
-- name: Index
-  link: /index
+- name: Artists
+  link: /artists
+- name: Articles
+  link: /articles
 - name: Search
   link: /search

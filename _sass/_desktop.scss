@@ -19,6 +19,9 @@
 		display: flex;
 	}
 	
+	
+	// Headers & footers ////////////////////////
+	
 	.navbar-title {
 		line-height: 2.5rem;
 	}
@@ -28,42 +31,10 @@
 		margin-left: auto;
 	}
 	
-	.article-title-container {
-		align-items: center;
-		grid-template-columns: 10rem 1fr;
-	}
 	
-	.article-title {
-		padding-left: 2rem;
-	}
+	// Articles /////////////////////////////////
 	
-	.article-content {
-		text-align: justify;
-		line-height: 1.8rem;
-	}
-	
-	.tile-container {
-		display: grid;
-		grid-gap: 1rem;
-		grid-template-columns: repeat(auto-fill, 12rem);
-	}
-	
-	.tile {
-		display: grid;
-		height: 14rem;
-		justify-items: center;
-	}
-	
-	.creator-profile {
-		height: 8rem;
-		padding-right: 0;
-	}
-	
-	.tile-title {
-		text-align: center;
-	}
-	
-	.thumb-right {
+	.article-infobox {
 		width: 20rem;
 		float: right;
 		margin: 0.5rem 0 1.3rem 1.4rem;
@@ -73,29 +44,67 @@
 		clear: both;
 	}
 	
-	.thumb-full {
-		padding: 0.5rem;
-		margin: 0.5rem;
-		background-color: #f8f9fa;
-	}
-	
-	.thumb-image {
+	.article-infobox-image {
 		max-width: 100%;
 		height: auto;
 	}
 	
-	.tooltip {
-		display: none;
-		position: absolute;
-		font-family: $font-regular;
-		border: 1px solid #777;
-		background-color: #f8f9fa;
-		padding: 2px 7px 2px 7px;
-		box-shadow: 2px 2px 10px #999;
+	.article-content {
+		text-align: justify;
+		line-height: 1.8rem;
 	}
+	
+	
+	// Artist tiles /////////////////////////////
+	
+	.artist-tile-container {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: repeat(auto-fill, 12rem);
+	}
+	
+	.artist-tile {
+		display: grid;
+		height: 14rem;
+		justify-items: center;
+		margin: 0.5rem;
+	}
+	
+	.artist-tile-title {
+		text-align: center;
+	}
+	
+	
+	// Contact form /////////////////////////////
 	
 	.contact-form-holder {
 		width: 50%;
+	}
+	
+	// Article tiles ////////////////////////////
+	
+	.article-tile {
+		display: flex;
+		align-items: center;
+	}
+	
+	.article-tile h3 {
+		padding-top: 0rem;
+	}
+	
+	.article-tile-image-container {
+		display: initial;
+		max-width: 6rem;
+	}
+	
+	.article-tile-image {
+		width: 100%;
+		height: 100%;
+		box-shadow: 0.1rem 0.1rem $shade-color;
+	}
+	
+	.article-tile-details-container {
+		padding-left: 2rem;
 	}
 	
 }
