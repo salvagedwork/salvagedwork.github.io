@@ -43,7 +43,7 @@ a:hover {
 	text-decoration: underline red;
 }
 
-a.navbar-link, a.footer-link {
+a.navbar-link {
 	font-family: $font-bold;
 	margin-right: 0.5rem;
 }
@@ -75,9 +75,13 @@ h2,h3 {
 	line-height: 1.1;
 }
 
-.navbar-links {
+.navbar-links-container {
 	justify-self: end;
 	padding-top: 1rem;
+}
+
+.navbar-link {
+	font-size: 1.1rem;
 }
 
 .page-modified-date {

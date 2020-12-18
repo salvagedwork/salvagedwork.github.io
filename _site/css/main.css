@@ -17,7 +17,7 @@ a { text-decoration: underline; color: #1a1a1a; }
 
 a:hover { text-decoration: underline red; }
 
-a.navbar-link, a.footer-link { font-family: "GT-Eesti-Display-Bold", sans-serif; margin-right: 0.5rem; }
+a.navbar-link { font-family: "GT-Eesti-Display-Bold", sans-serif; margin-right: 0.5rem; }
 
 a.current { color: red; }
 
@@ -29,7 +29,9 @@ h2, h3 { padding-top: 2rem; }
 
 .navbar-title { font-family: "GT-Eesti-Display-UBold", sans-serif; font-size: 2.5rem; line-height: 1.1; }
 
-.navbar-links { justify-self: end; padding-top: 1rem; }
+.navbar-links-container { justify-self: end; padding-top: 1rem; }
+
+.navbar-link { font-size: 1.1rem; }
 
 .page-modified-date { font-family: "GT-Eesti-Display-Bold", sans-serif; }
 
@@ -118,7 +120,7 @@ button { display: block; width: 5rem; padding: 1rem; border: none; background-co
   #content, #header, #footer { padding: 2rem; margin: 1rem; width: 100%; }
   #header, #footer { display: flex; }
   .navbar-title { line-height: 2.5rem; }
-  .navbar-links { padding-top: 0; margin-left: auto; }
+  .navbar-links-container { padding-top: 0; margin-left: auto; }
   .article-infobox { width: 20rem; float: right; margin: 0.5rem 0 1.3rem 1.4rem; border: 1px solid #aaa; padding: 0.3rem; background-color: #f8f9fa; clear: both; }
   .article-infobox-image { max-width: 100%; height: auto; }
   .article-content { text-align: justify; line-height: 1.8rem; }
