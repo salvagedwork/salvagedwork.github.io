@@ -18,18 +18,6 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/featherlight.min.css">
 	<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
-	<!-- <script type="text/javascript">  -->
-	<!-- var totalCount = 7; -->
-	<!-- function changeIt()  -->
-	<!-- { -->
-	<!-- var num = Math.ceil( Math.random() * totalCount ); -->
-	<!-- document.body.background = '/assets/images/backgrounds/'+num+'.jpg'; -->
-	<!-- document.body.style.backgroundSize = "cover"; -->
-	<!-- document.body.style.backgroundPosition = "top"; -->
-	<!-- document.body.style.backgroundRepeat = "repeat-y"; -->
-	<!-- document.body.style.backgroundAttachment = "fixed"; -->
-	<!-- } -->
-	<!-- </script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.4/jquery.detect_swipe.min.js"></script>
 	<script src="/js/footnotes.js"></script>
@@ -75,14 +63,37 @@
 				<article lang="en">
 
 	<header>La langue verte et la cuite (Contents)</header>
+	<hr />
 
-	<div class="entry"><div class="article-infobox">
-	<div class="article-infobox-image-container"><a href="#" data-featherlight="/assets/articles/la-langue-verte/front.jpg"><img class="article-infobox-image" src="/assets/articles/la-langue-verte/front.jpg"></a></div>
-	<div class="article-infobox-text"><p align="center"><strong>La langue verte et la cuite</strong></p>
-	<p>Asger Jorn &amp; Noël Arnaud, Jean Jacques Pauvert ed.</p>
-	<p>Published by Jean Jacques Pauvert, 1968</p>
-	<p>Series: Library of Alexandria, Vol. 3</p></div>
-</div>
+	<!-- "entry" class is for footnotes.js to work correctly -->
+	<div class="article-container entry"><table id="infobox">
+	<tbody>
+		<tr>
+			<td colspan="2">
+				<a href="#" data-featherlight="/assets/articles/la-langue-verte/front.jpg"><img class="infobox-image" src="/assets/articles/la-langue-verte/front.jpg"></a>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" id="infobox-subtitle"><cite>La langue verte et la cuite</cite></td>
+		</tr>
+		<tr>
+			<th scope="row">Authors</th>
+			<td>Asger Jorn &amp; Noël Arnaud (Jean Jacques Pauvert editor)</td>
+		</tr>
+		<tr>
+			<th scope="row">Publisher</th>
+			<td>Jean Jacques Pauvert</td>
+		</tr>
+		<tr>
+			<th scope="row">Publishing date</th>
+			<td>1968</td>
+		</tr>
+		<tr>
+			<th scope="row">Series</th>
+			<td>Library of Alexandria, Vol. 3</td>
+		</tr>
+	</tbody>
+</table>
 
 <p><strong>La langue verte et la cuite (Contents)</strong> is a book written in French by Asger Jorn and Noël Arnaud, and edited and published by Jean Jacques Pauvert in 1968. The book was written in reaction to the 1964 book <em>Le cru et le cuit (The Raw and the Cooked)</em> by Claude Lévi-Strauss, which was an examination of structuralist theory. The book contains numerous short essays with titles that parody French culinary dishes and texts that focus on Jorn and Arnaud's dissatisfaction with structuralist theory, coupled with historical greyscale images where the tongues of sculptures, people, and animals have been distinctly highlighted in colour. The book is 327 pages in length and contains over 300 images.<p>
 
@@ -92,9 +103,9 @@
 
 <h4>Prélude aux fines herbes</h4>
 
-<div class="collapsible-container">
-<button class="collapsible">Hommage à l'Americaine</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Hommage à l'Americaine</button>
+<div class="collapsible-text-content">
 
 <p>Le livre que vous allez déguster ici sur la cuisine des langues est le premier du genre. Ce fait surprenant trouve son explication dans l'obstacle, jusqu'à nos jours infranchissable, que dressait l'énigme cultelique de la personnalité. Strictement personnel, ce livre évidemment n'existe pas, puisque par définition ce qui n'existe pas n'est personne et que personne ne peut exister à l'heure présente.</p>
 
@@ -106,9 +117,9 @@
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Sermon fumé</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Sermon fumé</button>
+<div class="collapsible-text-content">
 
 <p>La Science des Marmythes culiphoniques, tel eût pu être le titre de ce livre, si nous n'avions été ramenés à des ambitions plus modestes par le sentiment amplement justifié que, sur la voix que nous essayons d'ouvrir, tout ou presque tout reste à dire, avant qu'on ait le droit de parler de marmythes véritables. En effet, si, comme nous l'espérons, l'homoconie sur la naissance de l'homme marque ici quelques points fumants, ceux-ci ne tiennent à rien autre qu'à une attitude résolue d'illuminé devant l'objet obscur qui, pour la première fois peut-être, nous autorise à considérer les marmythes d'un point de vue complètement chromique.</p>
 
@@ -121,9 +132,9 @@ L'homme lui-même et sa langue doivent sans conteste passer à la même marmythe
 
 <h4>Ouverture gastrophonique</h4>
 
-<div class="collapsible-container">
-<button class="collapsible">Soupe au laiton</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Soupe au laiton</button>
+<div class="collapsible-text-content">
 
 <p>Le génial maître-queux Escoffier ne manquait jamais, dans ses hautes leçons, de mentionner et déplorer la disparition de la langue humaine.</p>
 
@@ -141,9 +152,9 @@ L'homme lui-même et sa langue doivent sans conteste passer à la même marmythe
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Potage sonhorrifique</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Potage sonhorrifique</button>
+<div class="collapsible-text-content">
 
 <p>Avec la linguistation culitonique, nous sommes - ainsi que nous l'avons précisé - passés dans le vide, ce qui exige une explication impliquée sur l'évidence avide antagonisante sous l'avidité évidente de la vidomorphie glossorielle.</p>
 
@@ -155,9 +166,9 @@ L'homme lui-même et sa langue doivent sans conteste passer à la même marmythe
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Trombone in brodo</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Trombone in brodo</button>
+<div class="collapsible-text-content">
 
 <p>L'heureusologie scolairisée de la futuration futétique implique un problématisme étrologique inévitable pour la diamarche glossoculinaire. Sa nullité étronomique ne s'applique ni au cultificiel ni au naturafficiel puisque, artificielle, la glossificassité de sa naturalisation gastreuse s'achève par la culination de sa t:ulstructabilité nationale qui trouve son originalité dans la formule logique <em>qui-sine, qua-non.</em></p>
 
@@ -165,9 +176,9 @@ L'homme lui-même et sa langue doivent sans conteste passer à la même marmythe
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Rigaudon au tord-boyau</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Rigaudon au tord-boyau</button>
+<div class="collapsible-text-content">
 
 <p>Cette dramatomorphie désastrologique émane plus précisément du mal immanuel vers le pire transcendié qui est la transpiration de l'inspiration expirée, comme le voudrait la formule à descarter: « Je pense, donc je sue ».</p>
 
@@ -184,9 +195,9 @@ L'homme lui-même et sa langue doivent sans conteste passer à la même marmythe
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Chiantinata</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Chiantinata</button>
+<div class="collapsible-text-content">
 
 <p>Mais il y a plus. L'olfaction spectrologique de la boissonnerie liquide des cypressions gymnasticulaires à <em>brûle-pourpoint</em> (par conséquent mise à feu et en cendres) dégage, d'une façon définitifervente, la puanteur des héros spectroculinaires de la cruauté pourrielle, en rattachant justement l'odoronomie corpusculaire à la cuite boirocratique, fondée sur la linguophagie boitelle des bouteilles boiteuses qui sont à la base même de l'<em>eau de feu</em> (donc de la boisson brûlante à laquelle on se chauffe), comme il est mentionné dans plusieurs marmythes d'une transparenté assez nébuleuse sur l'origine exstatistique de l'ivressemblance compénétrante de l'esprit alcoolastique chez les sauvages hyperbucoliques.</p>
 
@@ -199,9 +210,9 @@ L'homme lui-même et sa langue doivent sans conteste passer à la même marmythe
 
 <h4>Sonate en sole meunière</h4>
 
-<div class="collapsible-container">
-<button class="collapsible">Pupitre à concombres</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Pupitre à concombres</button>
+<div class="collapsible-text-content">
 
 <p>Contrairement à toutes les prev1s1ons pissimistes, nous sommes parvenus à découvrir deux tribus sauvages qui apprécient hautement la langue et la recherchent avec ardeur. Ces tribus sont établies sur deux domaines mitoyens, à l'intérieur de l'agglomération parisienne; le premier de ces domaines se nomme Montparnasse et l'autre XIVe arrondissement. C'est là que nous avons recueilli les données de base de notre mémoire sur la langue crue et cuite, ses mythes et ses rites. Pour la commodité de l'exposé, nous désignerons désormais la tribu du Montparnasse par M et la tribu du XIVe arrondissement par 14 A.</p>
 
@@ -234,17 +245,17 @@ nous permet justement de nous intéresser, en vertu de la règle culimorphe: « 
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Pupitre a concombres</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Pupitre a concombres</button>
+<div class="collapsible-text-content">
 
 <p></p>
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Salome en tranches</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Salome en tranches</button>
+<div class="collapsible-text-content">
 
 <p>C'est seulement à partir de la domestication zoologique et botanologique . que .la diamétrie linguophonique e.ntre les deux tribus se fait  remarquer. Un mythe zoodomestique de la tribu 14 A nous éclaire en partie sur la zoodomythologie de l'origine cocurielle de la gallonomie en basse-cour:</p>
 
@@ -265,9 +276,9 @@ nous permet justement de nous intéresser, en vertu de la règle culimorphe: « 
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Rôt meunière</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Rôt meunière</button>
+<div class="collapsible-text-content">
 
 <p>Par conséquent, dans une culture qui s'adonne à l'érotomie, les rapports entre homme et femme prennent un sens ambigu et équivoque. Considérée à l'état brut, toute chaîne syntagmatique doit être tenue pour privée de sens, soit qu'aucune signification n'apparaisse de prime abord, soit que l'on croie croire percevoir un sens mais sans discerner si ce sens est le bon. L'érotomisme insensé n'a pas de sens. Pourtant l'érotomisme doit être senti et le sexualisme compris et étudié. Pour surmonter cette difficulté, nous procédons à une sensuration érotomatique.</p>
 
@@ -281,9 +292,9 @@ nous permet justement de nous intéresser, en vertu de la règle culimorphe: « 
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Rilettes Roméo</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Rilettes Roméo</button>
+<div class="collapsible-text-content">
 
 <p>Après cette systématogenèse méthodotautologique, nous pouvons reprendre avec plus de sécurité la comparaison des couj:umes qu'on nomme respectivement l'érotomisme primitif et traditionnel et l'érotomie naturelle et culturelle. Ne craignons pas de regarder en face la difficulté que nous rencontrerons par la suite q'uand nous buterons contre le sens poético-artistique inclus dans le cadre mystique de la mythologie sensorifiée. Opposé au revers, le sens poétique est le sens des vers, extroverti aussi bien qu'introverti, perverti aussi bien que converti, et la notion du sens vers où il faut verser les vers forme ainsi un sujet de contraversion.</p>
 
@@ -293,9 +304,9 @@ nous permet justement de nous intéresser, en vertu de la règle culimorphe: « 
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Abeilard fumé</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Abeilard fumé</button>
+<div class="collapsible-text-content">
 
 <p>Dans la version mythique des indigènes de 14 A, le sens poétique est uniquement une question de nez d'où on tire les vers. L'auditure gastrophonique, inverse de cette versionomie nasoïde, a été excellemment et suffisamment étudiée dans le traité nasomorphologique des nasobèmes intitulé <em>Anatomie ef Biologie des Rhinogrades</em> par le Professeur Dr Harald Stümpke (Masson et Cie, éditeur, 1962. Préface de P.P. Grassé, membre de l'Institut.) qui a décrit, parmi de nombreuses espèces, un nasobème latéral et des nasobèmes bilatéraux découverts dans l'archipel des Aïeaïeaïe il y a peu d'années, mais l'existence de deux spécimens de ces rhinogrades est attestée dans la France médiévale.
 
@@ -306,9 +317,9 @@ La spécialité musiculinaire commune à tous les nasobèmes de l'espèce nasoto
 
 <h4>Symphonie aux poireaux râpés</h4>
 
-<div class="collapsible-container">
-<button class="collapsible">Hareng rouge transistor</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Hareng rouge transistor</button>
+<div class="collapsible-text-content">
 
 <p>La langue étant perdue, il convient d'en tirer les conséquences. D'après le mythe de la tribu M, la langue est un mot, donc une chose pàrce qu'une chose ne saurait être une chose sans être un mot. D'après le mythe 14 A, la langue est au contraire une chose, donc un mot. A la fois institution sociale et système de valeur, puisqu'elle est l'organe privilégié du goût et concourt à la déglutition et à la parole, la langue se présente normalement comme une partie charnue et mobile suspendue dans la bouche.</p>
 
@@ -318,9 +329,9 @@ La spécialité musiculinaire commune à tous les nasobèmes de l'espèce nasoto
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Sourdine à l'huile</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Sourdine à l'huile</button>
+<div class="collapsible-text-content">
 
 <p>Le rapport entre la,1gue et langage mérite examen. La langue c'est le langage moins la parole. Pour dégager la langue, il y a donc nécessité de lui couper la parole, ce qu'on obtient de manière radicale en coupant la langue tout entière. Ce carnage de la langue s'appelle le langage. L'opération elle-même a pour nom langagement.</p>
 
@@ -330,9 +341,9 @@ La spécialité musiculinaire commune à tous les nasobèmes de l'espèce nasoto
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Couleuvres hors saison</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Couleuvres hors saison</button>
+<div class="collapsible-text-content">
 
 <p>Quoi qu'il en soit, si la bonne cuisine est aujourd'hui un mythe hors de vue, c'est grâce à l'industrifricassité scientifigée qui a su le conserver. La motophonie structiste de la logique boiteuse nous réserve encore des surprises motomythiques de tous les mots qui motorisent la chose. Toutes les choses marrantes démarrent en logomotion motorisée; il en résulte que le mot arrive à motoriser des choses par leur originalité motrice.</p>
 
@@ -342,9 +353,9 @@ La spécialité musiculinaire commune à tous les nasobèmes de l'espèce nasoto
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Ecrevisses aux ecrous</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Ecrevisses aux ecrous</button>
+<div class="collapsible-text-content">
 
 <p>Nous pouvons donc avancer, sur un accord général, que c'est la causerie qui effectue la cuisine effective. La cuisine marmythique et causale étant infective, la cuisine non-parlée est non-causale et défective. Allant ainsi en ligne droite de càuse à effet bavardigmatique, nous pouvons constater qu'il n'y aura jamais d'effet sans cause, ce qui légitime que la cuisine soit sacriléchifiée pour la bonne cause affective de la causine causée.</p>
 
@@ -354,9 +365,9 @@ La spécialité musiculinaire commune à tous les nasobèmes de l'espèce nasoto
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Nouveau diapoisson cru</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Nouveau diapoisson cru</button>
+<div class="collapsible-text-content">
 
 <p>L'homme moderne, qui cherche le but de tout, sait que ce but est la langue. Il sait aussi que tout se fait à la mesure de la langue, que toute cuisine est langagement et que nous vivons dans urie époque-langue.</p>
 
@@ -366,9 +377,9 @@ La spécialité musiculinaire commune à tous les nasobèmes de l'espèce nasoto
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Pathétique surgelée</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Pathétique surgelée</button>
+<div class="collapsible-text-content">
 
 <p>Arrêtons-nous un instant sur cette conception de la langue. La tribu M partage la conviction qu'une langue est une langue et que toutes les langues sont des langues, alors que la tribu 14 A prétend qu'il n'existe qu'une seule et même langue nommée la langue, ou, mieux, la langue des langues. Chaque fois que les indigènes de la tribu 14 A tombent sur une langue, ils s'écrient: « Voici la langue! », ce qui présuppose que pour la tribu 14 A la langue est multiple et polymorphe.</p>
 
@@ -380,9 +391,9 @@ La spécialité musiculinaire commune à tous les nasobèmes de l'espèce nasoto
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Pâté de klacson</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Pâté de klacson</button>
+<div class="collapsible-text-content">
 
 <p>L'établissement d'une communauté glotique autour d'une seule langue universelle est d'un avortage individuctiblement évidencible. Cela exige la disposification d'une récipuanteur à la taille glossoculinaire de l'unicuisson d'une même langue individée.</p>
 
@@ -392,9 +403,9 @@ La spécialité musiculinaire commune à tous les nasobèmes de l'espèce nasoto
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Lard du rein</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Lard du rein</button>
+<div class="collapsible-text-content">
 
 <p>Mais voici qu'à présent le problème s'élargit puisque nous sommes confrontés, par la mythomorphie de la tribu 14 A, à d'autres aspects distinguatifs des glossotonalités divisoirées.</p>
 
@@ -404,9 +415,9 @@ La spécialité musiculinaire commune à tous les nasobèmes de l'espèce nasoto
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Andouille en accordéon</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Andouille en accordéon</button>
+<div class="collapsible-text-content">
 
 <p>Le lecteur risque d'être déconcerté par cette discussion sur l'unité et la multiplicité divisionnelle de la langue qui passionne les deux tribus examinées. Nous la justifions par lè projet que nous avons formé de traiter les séquences de chaque langue sectionnée et les langues elles-mêmes dans leurs relations réciproques comme des parties instrumentales d'une oeuvre musiculinaire et d'assimiler leur étude à celle d'une symphonie diaphone. Pour réaliser notre objectif, nous nous appuyons donc sur le monoglossaire polycéphale élaboré par l'Institut babylonaire en conclusion de ses expériences de sectionnement des individus polymonaires. Leur réussitation d'une ·seule langue communiée à deux et même trois têtes est apprécituelle, même si elle se heurte actuellement à la confrontation polycéphale qui nécessite une affrontation communautaire des têtes implicassionnées constituant un seul front à plusieurs visages dont un seul reste glossoire.</p>
 
@@ -416,9 +427,9 @@ La spécialité musiculinaire commune à tous les nasobèmes de l'espèce nasoto
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Pâté de crâne</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Pâté de crâne</button>
+<div class="collapsible-text-content">
 
 <p>Il est clair qu'une langue étant une langue est, par ce fait, en même temps différente de et égale aux autres langues. Cette différence-égalité peut être acceptée suivant une convention purement quantitative, ou encore selon une convention de valeur à la fois quantitative et qualitative.</p>
 
@@ -430,9 +441,9 @@ La spécialité musiculinaire commune à tous les nasobèmes de l'espèce nasoto
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Saucisson pick-up</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Saucisson pick-up</button>
+<div class="collapsible-text-content">
 
 <p>Les deux problèmes ci-dessus énoncés n'en font en réalité qu'un seul, et dès qu'on s'en aperçoit la solution apparaît. Il faut inventer des signes:</p>
 
@@ -494,9 +505,9 @@ Etc.</p>
 
 <h4>Opéra buffet</h4>
 
-<div class="collapsible-container">
-<button class="collapsible">Langouline frite</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Langouline frite</button>
+<div class="collapsible-text-content">
 
 <p>Prenant une vue rétrospective de notre démarche, nous pouvons dire qu'elle commence avec des mythes dont le héros est un dénicheur de langues. Cela rappelé, il n'en est que plus saisissant de constater que les mythes juxtaposent abruptement le motif du dénicheur et celui de la langue, aussi bien que le motif de la langue des langues et celui des langues de la langue.</p>
 
@@ -508,9 +519,9 @@ Etc.</p>
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Clé de sole en filets</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Clé de sole en filets</button>
+<div class="collapsible-text-content">
 
 <p>Après ces explications préliminaires, on admettra plus volontiers l'utilité d'un retour aux sources mythiques de l'origine perditionnelle de la langue au moyen d'une comparenté diaversionnelle entre les tribus M et 14 A. L'origine de l'origine coule toujours d'une,source assez originale : la langue, origine sourcière de n'importe quoi et de tout, comme les grandes choses proviennent toujours, par extraction mythologique, de la petite origine verbalistique du monde entier.</p>
 
@@ -522,9 +533,9 @@ Etc.</p>
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Ré au beurre noir</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Ré au beurre noir</button>
+<div class="collapsible-text-content">
 
 <p>Essayons maintenant d'arriver à l'alternative interne d'une adversité réversible de la diamétrie inverse entre le récipient de la parasymphonie de rechange marmythique et le reçu de son récipié récidiviste. Il serait ainsi possible, conformément au variétablissement dispariétal, d'engendrer tout leur contenu empiré et contenanciel au moyen d'une compartition disparate fondée sur l'algorythme saccadélique de la marmythe parabouillante. La comparaison parégorique entre deux marmythes, dont l'une de la tribu 14 A traite de l'origine de la carpe muette, nous démontre l'opération mythomatique d'une disjonction entre l'homme et la langue paragorique:</p>
 
@@ -595,9 +606,9 @@ Etc.</p>
 
 <h4>Fugue aux figues à la gomme chromosommaire</h4>
 
-<div class="collapsible-container">
-<button class="collapsible">Valse comestible</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Valse comestible</button>
+<div class="collapsible-text-content">
 
 <p>Un point important reste pourtant à élucider. Posons que le sens est purement verbal et logique puisqu'il est de signification vocale. De ce fait nous sommes contraints par articollision d'identifier le sens avec la voix latérale et bilatérale.</p>
 
@@ -611,9 +622,9 @@ Etc.</p>
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Orgue de barbare à Rome</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Orgue de barbare à Rome</button>
+<div class="collapsible-text-content">
 
 <p>C'est l'éminent vidéologue Thomas v. Lehrstuhl qui, encore une fois, nous met dans la nécessité évidamentale de <em>voir avec la voix</em> linguophonique, si nous voulons voir assez clair pour rester sur la bonne voix du bon temps, en reconnaissant la vidité visuelle que nous avons déjà distinctement confusionalisée dans les pages suivantes. Avec une sensualité voisive, largement étroite, il nous envoix sur la voix des faits salutaires et sensés, sans visions ni divisions ou autres devoirs vides. 11 nous envoix à la sécheresse de la voix de terre, à l'humidité de la voix de mère, à la voix fumante de l'air et nous indique la luminosité de la voix lactée du ciel solaire pour, de nouveau, retourner sa voix au sol mineur, en transfusion avec la vicieusité visorielle des voyoux voyageurs.</p>
 
@@ -621,9 +632,9 @@ Etc.</p>
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Contrecôte de danse</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Contrecôte de danse</button>
+<div class="collapsible-text-content">
 
 <p>Notre recherche scientifique d'une voix moyenne entre l'exercice de la pensée archilogique et la perception dia-culinaire devait tout naturellement et culturellement s'inspirer de l'exemple de la musique qui a, depuis toujours, emprunté cette voix. L'impressionnant effet déglutico-auditif de l'avalage d'une entrecôte sonorisée en témoigne amplement.</p>
 
@@ -631,9 +642,9 @@ Etc.</p>
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Bolerigor mortis</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Bolerigor mortis</button>
+<div class="collapsible-text-content">
 
 <p>La bonne c.ouleur est naturelle et le bon ton est culturel. La langue colorée: verte, écarlate, etc., est naturelle quand elle est peinte au pinceau, et si l'on préfère l'entrecôte bleue à l'entrecôte à point, cela n'a rien à voir avec la Côte d'Azur, ce que met en lumière le mythe de la tribu M sur l'origine du rousseau langoustine:</p>
 
@@ -652,9 +663,9 @@ Le chef de la tribu a invité des amis à un grand dîner. Il a décidé de leur
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Mazurka in pentola</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Mazurka in pentola</button>
+<div class="collapsible-text-content">
 
 <p>La démonstratification peut être poussée encore plus loin. Entendue comme nous l'avons entendue, la marmythologie culinomorphe de la cuisine des langues est celle qui manifeste le plus grand nombre de traits communs avec la marmythologie de la musique gastrophonique.</p>
 
@@ -670,9 +681,9 @@ Le chef de la tribu a invité des amis à un grand dîner. Il a décidé de leur
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Lesso eroico</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Lesso eroico</button>
+<div class="collapsible-text-content">
 
 <p>Nous devons à Jean-Jacques Rousseau une découverte d'importance, savoir que la couleur se dit en grec chrome (Dictionnaire de Musique, art. « Chromatique »). Nous possédons ainsi la preuve péremptoire de l'infériorité de la couleur par rapport au ton dans la hiérarchie intervalable.</p>
 
@@ -686,9 +697,9 @@ Le chef de la tribu a invité des amis à un grand dîner. Il a décidé de leur
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Mendelsohn cochère</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Mendelsohn cochère</button>
+<div class="collapsible-text-content">
 
 <p>Dans son traité auditorial sur la <em>Diastructure tonique du Beau Danube Bleu</em>, le chancellairier bavardois Joseph Strauss démontre comment la science linguistique doit, en toute logique, reconnaître l'antagonisme entre l'insigne et le dé-signe.</p>
 
@@ -700,9 +711,9 @@ Le chef de la tribu a invité des amis à un grand dîner. Il a décidé de leur
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Minuetto po lenta</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Minuetto po lenta</button>
+<div class="collapsible-text-content">
 
 <p>Par la voie d'illuminations photophoniques, nous présentons un petit menu, distribué par-ci par-là dans le présent texte, à seule fin de confirmer cette vision orale de bouche à oreille qui permet d'arracher l'oeil à l'extelligence phonomorphe.</p>
 
@@ -729,9 +740,9 @@ Le chef de la tribu a invité des amis à un grand dîner. Il a décidé de leur
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Pizzicato al pommo d'oro</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Pizzicato al pommo d'oro</button>
+<div class="collapsible-text-content">
 
 <p>Il est naturel de faire du bruit, mais il est cultivé de n'en point faire (*). D'un point de vue auditurne, il est de bon ton de faire de la musique sans bruit. L'antagonisme entre bruit et ton constitue ainsi la musique, suivant la corrélation oppositionnelle entre gueule et ton. Cette extrapolarisation à signification gueuletonique met en opposition mythique les deux tribus, selon l'orientation endogueuloise de la tribu M qui considère comme de bon ton d'engueuler, contrairement à l'orientation extragueuloise de 14 A qui considère comme de bon ton de dégueuler.</p>
 
@@ -755,9 +766,9 @@ Le chef de la tribu a invité des amis à un grand dîner. Il a décidé de leur
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Corne de beef</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Corne de beef</button>
+<div class="collapsible-text-content">
 
 <p>Les sauvages de la tribu 14 A prétendent que les savants ne sont vraiment pas drôles quand on les prend au sérieux.</p>
 
@@ -783,9 +794,9 @@ Le chef de la tribu a invité des amis à un grand dîner. Il a décidé de leur
 
 <h4>Cantate quantique au plat réchauffé</h4>
 
-<div class="collapsible-container">
-<button class="collapsible">Chanson au feu de bois</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Chanson au feu de bois</button>
+<div class="collapsible-text-content">
 
 <p>Nulle part l'identité linguistique de la musique et de la cuisson n'est aussi manifeste que dans la chanson de la cuisine indolinguistique. Quittons donc pour un instant la cuisson exolinguistifiée et penchons-nous, pendant ce même instant, sur l'origine musiculinaire de la cuisson prélinguistique de l'indolangue attachée à l'être et qui doit être cuisinée pour le faire chanter.</p>
 
@@ -795,9 +806,9 @@ Le chef de la tribu a invité des amis à un grand dîner. Il a décidé de leur
 	
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Cruautés à la boissellerie</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Cruautés à la boissellerie</button>
+<div class="collapsible-text-content">
 
 <p>La hiérarchisation de la cuisson indolinguistique s'échelonne normalement par degrés quantiques, qui vont du premier au troisième degré, soit du bleu au saignant puis au poing, sous cètte réserve qu'au poing on attrape souvent des bleus. Si on dépasse le troisième degré, la brûlure risque de se carboniser en désacoustication incantabilistique. Si on dépasse le quatrième degré pour atteindre le cinquième, une inflammation générale apparait. Cette gradification numérologique appartient évidemment à une symbolorification d'une algébracité logico-mathématique qu'on aurait tort de prendre trop au sérieux puisque la sonhorribilité superchromatique est saturée d'une torturapidité efficace de la fracturupture réceptionnelle.</p>
 
@@ -839,9 +850,9 @@ Le chef de la tribu a invité des amis à un grand dîner. Il a décidé de leur
 
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Pathétique faisandée</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Pathétique faisandée</button>
+<div class="collapsible-text-content">
 
 <p>Nous n'entreprenons pas une clichématisation complète des innombrables recettations glossocantiques dont nous n'avons donné qu'une exemplification très succinte. Ce qui nous intéresse surtout en elles, c'est qu'elles sont en quelque sorte la clé en main, détachée de la cuisinologie musiculinaire, qui nous mène à la source même de l'originalité structive des marmythes originalistiques, laquelle trace la culturation coulée par ses empreintes bienfaisandées sur l'osmose linguistique.</p>
 
@@ -867,9 +878,9 @@ Le chef de la tribu a invité des amis à un grand dîner. Il a décidé de leur
 
 <h4>Toccata au foie gras en caisse</h4>
 
-<div class="collapsible-container">
-<button class="collapsible">Pastorale rissolée</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Pastorale rissolée</button>
+<div class="collapsible-text-content">
 
 <p>Plaçons-nous maintenant dans une autre perspective, en posant la question de l’apport supplémentaire de la chromotification au sémantisme diapositif entre le cru et la cuite. Ici les exformations importantes peuvent être extraites de la marmythe M 6 sur l’origine du rousseau langoustine où la fonction sémantique est démoralistique, diamétropolisée entre la bonne et le mâle, donc entre le féminin et le masculin, en tant que contrastruction éthicologique qui, en dépit de sa simplicité apparente, exploite un nombre considérable de croyances de bonne foie autant que de mauvaise dont le structisme affrontai mérite une sérialisation sérieuse que nous allons étudier.</p>
 
@@ -879,17 +890,17 @@ Le chef de la tribu a invité des amis à un grand dîner. Il a décidé de leur
 
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Portée de cochons</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Portée de cochons</button>
+<div class="collapsible-text-content">
 
 <p>Si, dans la tribu M, le noir est attribué à la cuite carrée, on associe, dans la tribu 14 A, le pied au noir et le rouge aux lèvres, donc à l’éclat (voir M 9). L’antagonisme entre les pieds noirs et le rouge à lèvres est traité avec une profonde compréhension par l’ingénieur Stendhal dans son œuvre <em>Le Rouge et le Noir</em>. Il faut ici dénoncer une fois de plus la théorie fourbologique du sociologue italien Vitello Macchiato déjà expulcifiée au sujet de sa réconciloiphilie bruitonique, car il renouvelle sa tentative en essayant de lier le pied noir de la tribu 14 A à la cuite M, sous prétexte que la cuite va dans les pieds, comme le fourbu qui a bu devient boiteux, ce qui exige une jambe de bois. Au regard de l’unijambistologie marmythique, une telle soulogie ne tient pas sur ses jambes. On peut boiter d’une jambe, mais non boire avec une jambe de bois, solution vraiment trop facile offerte aux millepattes. Nous croyons donner l’interprétation juste du problème de la langue au pied dans le chapitre suivant qui traite des méchansons alarmoyantes du pied dans le plat. Quoi qu’il en soit, nous avons clairement réfuté la thèse des Docteurs Mireille et Jean Nohain, résumée dans la formule numérotechnique : « C’est un jardinier qui boite et qui boit. »</p>
 
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Grillade a la chaise électrique</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Grillade a la chaise électrique</button>
+<div class="collapsible-text-content">
 
 <p>Mais il y a mieux. La présence de la langue blanche, signe marmythriolectique de la mauvaise foie, établit un triangle culisonique.<br />
 Une marmythe M sur l’origine de la mauvaise foie vient éclaircir cette problématique:</p>
@@ -906,9 +917,9 @@ Une marmythe M sur l’origine de la mauvaise foie vient éclaircir cette probl�
 
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Chopin grillé</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Chopin grillé</button>
+<div class="collapsible-text-content">
 
 <p>Une langue nichée est naturelle; une vraie langue est culturelle : donc la langue doit être dénichée. Et le but culturel, c’est précisément la culbuture culinaire de la langue à dénicher, ce qui peut se faire à pied, à cheval, en voiture, en bateau, avec divers instruments ainsi qu’à main nue.</p>
 
@@ -920,9 +931,9 @@ Une marmythe M sur l’origine de la mauvaise foie vient éclaircir cette probl�
 
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Gigue a la noix</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Gigue a la noix</button>
+<div class="collapsible-text-content">
 
 <p>Il en va tout autrement avec la piétonalité pédalogique. La dénichion pédes-trielle rencontra un succès de durabilité pédiculaire grâce à la pédométrie scientifique qui se pédoncula avec une pégasite assez peignante. Ainsi le dénicheur à pied ferme est-il arrivé à retenir une piété pierreuse pour le piétisme piétinant du concept dénichtique de la langue. Quelque considération qu’on porte à la pédéristique nécessaire à la dénichification linguistique, on reste malgré tout dans le domaine de la main d’œuvre artistique et artisanitaire.</p>
 
@@ -930,9 +941,9 @@ Une marmythe M sur l’origine de la mauvaise foie vient éclaircir cette probl�
 
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Beuglophonie a voix grasses</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Beuglophonie a voix grasses</button>
+<div class="collapsible-text-content">
 
 <p>L’ouverture de la gueulade rituelle est la momentation sacrale la plus faschinaire de l’arrachoir à main. Toutes les tribus s’accordent pour sonner le coup de l’ouverture à main, comme l’expliquent de multiples mythes, même si le second rituel est souvent fâcheux à cause de l’intrusion maniaque dans la gueule où elle risque fort de rester, ce qui se produit de temps en temps à la grande satisfaction du gueuleton. Le moment le plus solennellistique n’en reste pas moins la troisième étape marmythique au cours de laquelle on assiste à la mainmise extractionnelle sur la langue par la main, mille fois supérieure à l’accrochage ferré utilisé par l’industrie artisanitaire.</p>
 
@@ -976,9 +987,9 @@ Je m’éloigne de ces lieux maudits, je passe entre les rochers qui sont les de
 
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Cotelette au jus de Beethoven</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Cotelette au jus de Beethoven</button>
+<div class="collapsible-text-content">
 
 <p>De loin, la dénichiation la plus sensationnée demeure Taction fulgurifiée de Thydrolinguistique dragonomique par la nouvellation métamorphologique ressentie dans la marmythe de Thomme-grenouille soumarin, à la langue crapuleuse. La déni-chiative hydroglossomorphe s’embarque ici dans des marmythes de haute mer à marée basse, d’une diaphorèse marentuelle diapassionnante, qui définissent le musi-culisme chantifique des langues de morue et leur cygnifichanson mortubérante par mortificassité morveuse et mosaïque dans la ligne du mot d’ordre motorisé en course vaguinaire de l’hydromercantilisme embarcationnaire.</p>
 
@@ -989,9 +1000,9 @@ Je m’éloigne de ces lieux maudits, je passe entre les rochers qui sont les de
 
 <h4>Interlude au coup de rouge en timbale</h4>
 
-<div class="collapsible-container">
-<button class="collapsible">Le canard limonaire</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Le canard limonaire</button>
+<div class="collapsible-text-content">
 
 <p>La localisation situgraphique de la langue peut prêter à confusion. Le dénicheur de langue non averti peut se heurter à une grave difficulté pour découvrir sa proie. Nous allons dissiper cette difficulté.</p>
 
@@ -1009,9 +1020,9 @@ Je m’éloigne de ces lieux maudits, je passe entre les rochers qui sont les de
 
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Soprano en croute</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Soprano en croute</button>
+<div class="collapsible-text-content">
 
 <p>La trognonostique dépend de plusieurs trognotations museaumorphes. On ne s’étonnera donc pas de voir des adversitations à diverses versions tant viandeuses que légumineuses diviser les gueules par culinoppositions bilatérales.</p>
 
@@ -1039,9 +1050,9 @@ Le loup alors ferme sa sale gueule, et voici le dénicheur de langues enfermé d
 
 </div>
 </div>
-<div class="collapsible-container">
-<button class="collapsible">Beignet tartare au tambour</button>
-<div class="collapsible-content">
+<div class="collapsible-text-container">
+<button class="collapsible-text-button">Beignet tartare au tambour</button>
+<div class="collapsible-text-content">
 
 <p>La marmythe ne mentionne pas explicitement l’origine du cru et de la cuite, mais, pourrait-on dire, elle sait si bien que là est son sujet véritable qu’elle restitue presque littéralement l’épisode de la cuite du tonnerre transformée en gueule de bois.
 A l’appui de ce rapprochement, on peut faire valoir que la marmythe M contient un détail à première vue incompréhensible. Comment expliquer que le héros émploie de la farine pour nettoyer la gueule du loup ? Sauf à interpréter ce geste comme le reflet transformé d’un acte similaire inclus dans la marmythe 14 A sur l’origine de la langue pourrie, le détail serait complètement arbitraire.</p>

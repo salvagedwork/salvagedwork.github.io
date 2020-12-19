@@ -5,8 +5,10 @@ layout: default
 <article lang="en">
 
 	<header>{{ page.title }}</header>
+	<hr />
 
-	<div class="entry">{{ content }}</div>
+	<!-- "entry" class is for footnotes.js to work correctly -->
+	<div class="article-container entry">{{ content }}</div>
 	
 </article>
 

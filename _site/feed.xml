@@ -1,18 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-18T14:37:06+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">salvaged.work</title><subtitle>A digital archive for salvaged analogue materials.
-</subtitle><entry><title type="html">21 Lystegninger</title><link href="http://localhost:4000/article/21-light-drawings-jorn/" rel="alternate" type="text/html" title="21 Lystegninger" /><published>2020-12-13T00:00:00+01:00</published><updated>2020-12-13T00:00:00+01:00</updated><id>http://localhost:4000/article/21-light-drawings-jorn</id><content type="html" xml:base="http://localhost:4000/article/21-light-drawings-jorn/">&lt;div class=&quot;article-infobox&quot;&gt;
-	&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/21-light-drawings-jorn/front.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/21-light-drawings-jorn/front.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;strong&gt;21 Lystegninger&lt;/strong&gt;&lt;/p&gt;
-	&lt;p&gt;Asger Jorn &amp;amp; Poul Pedersen&lt;/p&gt;
-	&lt;p&gt;&lt;em&gt;Århus Kunstforening af 1847&lt;/em&gt;, 1971&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-19T22:09:21+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">salvaged.work</title><subtitle>A digital archive for salvaged analogue materials.
+</subtitle><entry><title type="html">21 Lystegninger</title><link href="http://localhost:4000/article/21-light-drawings-jorn/" rel="alternate" type="text/html" title="21 Lystegninger" /><published>2020-12-13T00:00:00+01:00</published><updated>2020-12-13T00:00:00+01:00</updated><id>http://localhost:4000/article/21-light-drawings-jorn</id><content type="html" xml:base="http://localhost:4000/article/21-light-drawings-jorn/">&lt;table id=&quot;infobox&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/21-light-drawings-jorn/front.jpg&quot;&gt;&lt;img class=&quot;infobox-image&quot; src=&quot;/assets/articles/21-light-drawings-jorn/front.jpg&quot;&gt;&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot; id=&quot;infobox-subtitle&quot;&gt;&lt;cite&gt;21 Lystegninger&lt;/cite&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Authors&lt;/th&gt;
+			&lt;td&gt;Asger Jorn &amp;amp; Poul Pedersen&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Publisher&lt;/th&gt;
+			&lt;td&gt;Århus Kunstforening af 1847&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Publishing date&lt;/th&gt;
+			&lt;td&gt;1971&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;&lt;strong&gt;21 Lystegninger&lt;/strong&gt; (21 Light Drawings) is the title of an exhibition catalogue released by the Aarhus Art Association of 1847 in conjunction with an exhibition of Asger Jorn's light drawings at the Aarhus Festuge 1971. Jorn's light drawings were photographed by Poul Pedersen in Silkeborg, Denmark in 1953. The catalogue was published by Permild &amp;amp; Rosengreen and distributed to the association's members as its annual publication.&lt;p&gt;
 
 &lt;p&gt;The light drawings were copied on photographic canvas in the sizes 120 x 90 and 160 x 120 cm. Poul Pedersen wrote the following foreward for the catalogue, entitled &amp;quot;Silkeborg 1953&amp;quot;:&lt;/p&gt;
 
-&lt;div class=&quot;article-infobox&quot;&gt;
-	&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/21-light-drawings-jorn/jorn_drawing.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/21-light-drawings-jorn/jorn_drawing.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;Jorn creating light drawing number 6, &lt;em&gt;Pigedrømme&lt;/em&gt; (Girl Dreams).&lt;/div&gt;
+&lt;div class=&quot;thumbnail-container&quot;&gt;
+	&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/21-light-drawings-jorn/jorn_drawing.jpg&quot;&gt;&lt;img class=&quot;thumbnail-image&quot; src=&quot;/assets/articles/21-light-drawings-jorn/jorn_drawing.jpg&quot;&gt;&lt;/a&gt;
+	&lt;div class=&quot;thumbnail-caption&quot;&gt;
+		Jorn creating light drawing number 6, &lt;cite&gt;Pigedrømme&lt;/cite&gt; (Girl Dreams).
+	&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;quote&quot;&gt;
@@ -58,84 +78,44 @@
 			&lt;a href=&quot;/assets/articles/21-light-drawings-jorn/invitation_02.jpg&quot;&gt;&lt;img src=&quot;/assets/articles/21-light-drawings-jorn/invitation_02.jpg&quot;&gt;&lt;/a&gt;
 			&lt;figcaption&gt;Back side of the invitation card for the opening of the exhibition featuring Jorn's works &lt;em&gt;Goterkongen Didrek&lt;/em&gt; and &lt;em&gt;21 Lystegninger&lt;/em&gt;.&lt;/figcaption&gt;
 		&lt;/figure&gt;
-&lt;/section&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><summary type="html">21 Lystegninger Asger Jorn &amp;amp; Poul Pedersen Århus Kunstforening af 1847, 1971</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Jorn in Scandinavia</title><link href="http://localhost:4000/article/atkins-jorn-scandinavia/" rel="alternate" type="text/html" title="Jorn in Scandinavia" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-10T00:00:00+01:00</updated><id>http://localhost:4000/article/atkins-jorn-scandinavia</id><content type="html" xml:base="http://localhost:4000/article/atkins-jorn-scandinavia/">&lt;div class=&quot;article-infobox&quot;&gt;
-	&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/atkins-jorn-scandinavia/front.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/atkins-jorn-scandinavia/front.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;strong&gt;Jorn in Scandinavia&lt;/strong&gt;&lt;/p&gt;
-	&lt;p&gt;Guy Atkins &amp;amp; Troels Andersen&lt;/p&gt;
-	&lt;p&gt;Published by Borgens Forlag, 1968&lt;/p&gt;
-	&lt;p&gt;Series: Asger Jorn Catalogue raisonné, Vol. 1&lt;br /&gt;
-	Followed by&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;/section&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><summary type="html">21 Lystegninger Authors Asger Jorn &amp;amp; Poul Pedersen Publisher Århus Kunstforening af 1847 Publishing date 1971</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Jorn in Scandinavia</title><link href="http://localhost:4000/article/atkins-jorn-scandinavia/" rel="alternate" type="text/html" title="Jorn in Scandinavia" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-10T00:00:00+01:00</updated><id>http://localhost:4000/article/atkins-jorn-scandinavia</id><content type="html" xml:base="http://localhost:4000/article/atkins-jorn-scandinavia/">&lt;table id=&quot;infobox&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/atkins-jorn-scandinavia/front.jpg&quot;&gt;&lt;img class=&quot;infobox-image&quot; src=&quot;/assets/articles/atkins-jorn-scandinavia/front.jpg&quot;&gt;&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot; id=&quot;infobox-subtitle&quot;&gt;&lt;cite&gt;Jorn in Scandinavia&lt;/cite&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Authors&lt;/th&gt;
+			&lt;td&gt;Guy Atkins &amp;amp; Troels Andersen&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Publisher&lt;/th&gt;
+			&lt;td&gt;Borgens Forlag&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Publishing date&lt;/th&gt;
+			&lt;td&gt;1968&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Series&lt;/th&gt;
+			&lt;td&gt;Asger Jorn Catalogue raisonné, Vol. 1&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;p&gt;&lt;strong&gt;Jorn in Scandinavia&lt;/strong&gt; is a book written in French by Asger Jorn and Noël Arnaud, and edited and published by Jean Jacques Pauvert in 1968. The book was written in reaction to the 1964 book &lt;em&gt;Le cru et le cuit (The Raw and the Cooked)&lt;/em&gt; by Claude Lévi-Strauss, which was an examination of structuralist theory. The book contains numerous short essays with titles that parody French culinary dishes and texts that focus on Jorn and Arnaud's dissatisfaction with structuralist theory, coupled with historical greyscale images where the tongues of sculptures, people, and animals have been distinctly highlighted in colour. The book is 327 pages in length and contains over 300 images.&lt;/p&gt;
 
-&lt;p&gt;The book is part of the series &amp;quot;The Library of Alexandria:&amp;quot; Volume 1 consisted of a series of Situationist pamphlets, Volume 2 was Jorn's book &lt;em&gt;Signes gravés sur les églises de l'Eure et du Calvados&lt;/em&gt;, Volume 3 was Jorn's and Pierre Wemaëre's booklet &lt;em&gt;Le long voyage&lt;/em&gt;, and &lt;em&gt;Jorn in Scandinavia&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Steven Harris explains the etymology of the book's title:&lt;/p&gt;
-
-&lt;div class=&quot;quote&quot;&gt;
-&lt;p&gt;&lt;em&gt;Le Cru et le cuit&lt;/em&gt; is, of course, Lévi-Strauss’s examination of the extrapolation of myths
-based on a common myth about the origin of cooking, which exemplifies in his view the transition from nature to culture. Jorn’s first title, &lt;em&gt;La Langue crue et la cuite&lt;/em&gt;, makes explicit the role of the tongue in both eating and speaking... in distinguishing between &lt;em&gt;la langue&lt;/em&gt; (language) and &lt;em&gt;la parole&lt;/em&gt; (speech), strips the word &lt;em&gt;langue&lt;/em&gt; of any association with the body, despite the fact that &lt;em&gt;langue&lt;/em&gt; denotes both &amp;quot;language&amp;quot; and &amp;quot;tongue.&amp;quot; The title can be translated as &amp;quot;The Raw Tongue and the Cooked One&amp;quot;... &lt;em&gt;La Langue verte et la cuite&lt;/em&gt; does not literally mean &amp;quot;The Green Tongue and the Cooked One&amp;quot;, since &lt;em&gt;la langue verte&lt;/em&gt; is an idiom for slang or popular language, but rather &amp;quot;Slang and Drunkenness,&amp;quot; two kinds of improper behavior involving the tongue.&lt;/p&gt;
-&lt;p class=&quot;quote-attrib&quot;&gt;- Steven Harris, &lt;a href=&quot;https://www.mitpressjournals.org/doi/pdfplus/10.1162/OCTO_a_00103&quot; target=&quot;_blank&quot;&gt;How Language Looks: On Asger Jorn and Noël Arnaud's &lt;em&gt;La langue verte&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;In the book, Jorn emphasized the relation of detail to structure and individual to society, which is linked to Jorn's critique of structuralism.&lt;span class=&quot;footnote&quot;&gt;&lt;a href=&quot;https://www.mitpressjournals.org/doi/pdfplus/10.1162/OCTO_a_00103&quot; target=&quot;_blank&quot;&gt;How Language Looks: On Asger Jorn and Noël Arnaud's &lt;em&gt;La langue verte&lt;/em&gt;. Accessed 2020-03-24.&lt;/a&gt;&lt;/span&gt; Jorn later wrote of the book:&lt;/p&gt;
-
-&lt;div class=&quot;quote&quot;&gt;
-&lt;p&gt;Why did we make La Langue verte et la cuite? First because the tongue as a subject of visual art is fascinating and much more varied than still lifes, and these images have never been shown together, and then because the linguists are seriously beginning to plague us. It was time to leave this &amp;quot;too defensive a posture against the power of words...&amp;quot;&lt;/p&gt;
-&lt;p class=&quot;quote-attrib&quot;&gt;- Ibid. Translation by Steven Harris.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h3&gt;Themes&lt;/h3&gt;
-
-&lt;div class=&quot;article-infobox&quot;&gt;
-	&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/la-langue-verte/page132.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/la-langue-verte/page132.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;&lt;em&gt;La langue à jambe volante&lt;/em&gt; (The Flying Legged Tongue), Urnes Stave Church, Norway, page 132&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;quote&quot;&gt;
-&lt;p&gt;One of the initial themes of &lt;em&gt;La Langue verte&lt;/em&gt;, adapted from &lt;em&gt;Le Cru et le cuit&lt;/em&gt;, is that of the dénicheur des langues, the &amp;quot;dislodger of tongues,&amp;quot; which is both described as a myth in Jorn and Arnaud’s text and displayed as a motif in numerous images.&lt;/p&gt;
-&lt;p class=&quot;quote-attrib&quot;&gt;- Ibid.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;div class=&quot;quote&quot;&gt;
-&lt;p&gt;The relation between tongue &lt;em&gt;[langue]&lt;/em&gt; and language &lt;em&gt;[langage]&lt;/em&gt; merits examination. The tongue is language less speech &lt;em&gt;[parole]&lt;/em&gt;. To extract one’s tongue, it is therefore necessary to cut off one’s speech, which one achieves in a radical manner by cutting out the whole tongue. This carnage of the tongue is called language. The operation itself is called &lt;em&gt;langagement&lt;/em&gt;.&lt;/p&gt;
-&lt;p class=&quot;quote-attrib&quot;&gt;- Asger Jorn and Noël Arnaud, &lt;em&gt;La langue verte et la cuite&lt;/em&gt;, p. 48.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;div class=&quot;article-infobox&quot;&gt;
-	&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/la-langue-verte/page201.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/la-langue-verte/page201.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;Excerpt from &lt;em&gt;La tèse de veau à la vinaigrette&lt;/em&gt;, featuring images &lt;em&gt;Langue en tétine légumineuse et ombilicale&lt;/em&gt; (Tongue in leguminous and umbilical pacifier) and &lt;em&gt;Linguiste hippotêtique se nouant la langue&lt;/em&gt; (Hippotetic linguist tying his tongue), page 201&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;quote&quot;&gt;
-&lt;p&gt;Although &lt;em&gt;La Langue verte et la cuite&lt;/em&gt; is a parody of structuralist theory, as well as of the musical and scientific pretensions of &lt;em&gt;Le Cru et le cuit&lt;/em&gt;, it also adopts Lévi-Strauss’s method in the organization of its images and prose. The permutations of images of the tongue — which are broadly organized in the &amp;quot;table service of illuminations&amp;quot; into &lt;em&gt;héros dénicheurs de langues&lt;/em&gt;, &lt;em&gt;la langue pédale&lt;/em&gt; (roughly, &amp;quot;foot lickers&amp;quot;), &lt;em&gt;tireurs&lt;/em&gt; (those who show their tongues), &lt;em&gt;les langues élémentales&lt;/em&gt; (the elements in question being chiefly air and fire), &lt;em&gt;la langue orientable&lt;/em&gt; (in which tongues take the form of vegetal arabesques), &lt;em&gt;la langue zoomorphe&lt;/em&gt; (which are mostly snakes, but on two occasions frogs), &lt;em&gt;bi-langues&lt;/em&gt;, and &lt;em&gt;tri-langues&lt;/em&gt; - are transformational in nature.&lt;/p&gt;
-
-&lt;p&gt;The text is organized according to a different logic of development than that found in the &amp;quot;table service of illuminations.&amp;quot; The table of contents is set up as a menu, with each dish an example of wordplay whose name often incorporates both musical and gastronomic references (for instance, &amp;quot;Pizzicato al pommo d’oro&amp;quot; and &amp;quot;Elégie au fromage blanc&amp;quot;). The texts that have been given the names of individual dishes are modular, and they develop over the course of the book as a series of dismythes and marmythes.&lt;/p&gt;
-
-&lt;p&gt;The musical references in the book’s organization refer of course to Lévi-Strauss’s own use of musical terms to structure the four volumes of his &lt;em&gt;Mythologiques&lt;/em&gt; series, whose first volume was &lt;em&gt;Le Cru et le cuit.&lt;/em&gt;&lt;/p&gt;
-&lt;p class=&quot;quote-attrib&quot;&gt;- Steven Harris, &lt;a href=&quot;https://www.mitpressjournals.org/doi/pdfplus/10.1162/OCTO_a_00103&quot; target=&quot;_blank&quot;&gt;How Language Looks: On Asger Jorn and Noël Arnaud's &lt;em&gt;La langue verte&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Further, Harris defines Jorn and Arnaud's approach to structuralist theory in the book:
-
-&lt;div class=&quot;quote&quot;&gt;
-&lt;p&gt;It is important to emphasize that Jorn and Arnaud’s book is a response to structuralism from the viewpoint of artists; it therefore differs from the intellectual critiques made by Claude Lefort, Henri Lefebvre, and others in the 1950s and ’60s. One of the key aspects of Jorn and Arnaud’s response is an expansive humor—derisive, parodic, but also generous. It is not, in other words, a humor that treats either its object of parody or its audience as an idiot; it is, rather, an inclusive humor, a carnivalesque attitude... Jorn and Arnaud focus on a materialist knowledge gained through the senses (a &lt;em&gt;connaissance&lt;/em&gt; rather than a &lt;em&gt;savoir&lt;/em&gt;), placing an emphasis on the unruly human animal rather than on a system.&lt;/p&gt;
-&lt;p class=&quot;quote-attrib&quot;&gt;- Ibid.&lt;/p&gt;
-&lt;/div&gt;
 
 &lt;h3&gt;Contents&lt;/h3&gt;
 
-&lt;p&gt;See: &lt;em&gt;&lt;a href=&quot;/article/la-langue-verte-contents&quot;&gt;La langue verte et la cuite (Contents)&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 
 &lt;h2&gt;Explore the Book&lt;/h2&gt;
 
-&lt;iframe src=&quot;https://archive.org/embed/jorn-scandinavia&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
 
 &lt;h2&gt;References&lt;/h2&gt;
 
@@ -156,14 +136,38 @@ for (i = 0; i &lt; coll.length; i++) {
     } 
   });
 }
-&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><summary type="html">Jorn in Scandinavia Guy Atkins &amp;amp; Troels Andersen Published by Borgens Forlag, 1968 Series: Asger Jorn Catalogue raisonné, Vol. 1 Followed by</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 1, Booklet 1)</title><link href="http://localhost:4000/article/helhesten-1.1/" rel="alternate" type="text/html" title="Helhesten (Year 1, Booklet 1)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-1.1</id><content type="html" xml:base="http://localhost:4000/article/helhesten-1.1/">&lt;div class=&quot;article-infobox&quot;&gt;
-	&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_1.1_cover.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_1.1_cover.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;strong&gt;Helhesten (Year 1, Booklet 1)&lt;/strong&gt;&lt;/p&gt;
-	&lt;p&gt;Robert Dahlmann Olsen ed.&lt;/p&gt;
-	&lt;p&gt;Issued April 13, 1941&lt;/p&gt;
-	&lt;p&gt;Cover design by Henry Heerup&lt;/p&gt;
-	&lt;p&gt;Followed by &lt;a href=&quot;/article/helhesten-1.2&quot;&gt;Helhesten (Year 1, Booklet 2)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><summary type="html">Jorn in Scandinavia Authors Guy Atkins &amp;amp; Troels Andersen Publisher Borgens Forlag Publishing date 1968 Series Asger Jorn Catalogue raisonné, Vol. 1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 1, Booklet 1)</title><link href="http://localhost:4000/article/helhesten-1.1/" rel="alternate" type="text/html" title="Helhesten (Year 1, Booklet 1)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-1.1</id><content type="html" xml:base="http://localhost:4000/article/helhesten-1.1/">&lt;table id=&quot;infobox&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_1.1_cover.jpg&quot;&gt;&lt;img class=&quot;infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_1.1_cover.jpg&quot;&gt;&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot; id=&quot;infobox-subtitle&quot;&gt;&lt;cite&gt;Helhesten (Year 1, Booklet 1)&lt;/cite&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Editor&lt;/th&gt;
+			&lt;td&gt;Robert Dahlmann Olsen&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Publisher&lt;/th&gt;
+			&lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Issue date&lt;/th&gt;
+			&lt;td&gt;April 13, 1941&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Cover design&lt;/th&gt;
+			&lt;td&gt;Henry Heerup&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Followed by&lt;/th&gt;
+			&lt;td&gt;&lt;a href=&quot;/article/helhesten-1.2&quot;&gt;Helhesten (Year 1, Booklet 2)&lt;/a&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;&lt;strong&gt;Helhesten (Year 1, Booklet 1)&lt;/strong&gt; is the first issue of the Danish art journal &lt;em&gt;&lt;a href=&quot;/article/helhesten&quot;&gt;Helhesten&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -198,14 +202,38 @@ for (i = 0; i &lt; coll.length; i++) {
     } 
   });
 }
-&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 1, Booklet 1) Robert Dahlmann Olsen ed. Issued April 13, 1941 Cover design by Henry Heerup Followed by Helhesten (Year 1, Booklet 2)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 1, Booklet 2)</title><link href="http://localhost:4000/article/helhesten-1.2/" rel="alternate" type="text/html" title="Helhesten (Year 1, Booklet 2)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-1.2</id><content type="html" xml:base="http://localhost:4000/article/helhesten-1.2/">&lt;div class=&quot;article-infobox&quot;&gt;
-	&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_1.2_cover.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_1.2_cover.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;strong&gt;Helhesten (Year 1, Booklet 2)&lt;/strong&gt;&lt;/p&gt;
-	&lt;p&gt;Robert Dahlmann Olsen ed.&lt;/p&gt;
-	&lt;p&gt;Issued May 10, 1941&lt;/p&gt;
-	&lt;p&gt;Cover design by Egon Mathiesen&lt;/p&gt;
-	&lt;p&gt;Followed by &lt;a href=&quot;/article/helhesten-1.3&quot;&gt;Helhesten (Year 1, Booklet 3)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 1, Booklet 1) Editor Robert Dahlmann Olsen Publisher Issue date April 13, 1941 Cover design Henry Heerup Followed by Helhesten (Year 1, Booklet 2)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 1, Booklet 2)</title><link href="http://localhost:4000/article/helhesten-1.2/" rel="alternate" type="text/html" title="Helhesten (Year 1, Booklet 2)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-1.2</id><content type="html" xml:base="http://localhost:4000/article/helhesten-1.2/">&lt;table id=&quot;infobox&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_1.2_cover.jpg&quot;&gt;&lt;img class=&quot;infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_1.2_cover.jpg&quot;&gt;&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot; id=&quot;infobox-subtitle&quot;&gt;&lt;cite&gt;Helhesten (Year 1, Booklet 2)&lt;/cite&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Editor&lt;/th&gt;
+			&lt;td&gt;Robert Dahlmann Olsen&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Publisher&lt;/th&gt;
+			&lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Issue date&lt;/th&gt;
+			&lt;td&gt;May 10, 1941&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Cover design&lt;/th&gt;
+			&lt;td&gt;Egon Mathiesen&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Followed by&lt;/th&gt;
+			&lt;td&gt;&lt;a href=&quot;/article/helhesten-1.3&quot;&gt;Helhesten (Year 1, Booklet 3)&lt;/a&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;&lt;strong&gt;Helhesten (Year 1, Booklet 2)&lt;/strong&gt; is the second issue of the Danish art journal &lt;em&gt;&lt;a href=&quot;/article/helhesten&quot;&gt;Helhesten&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -240,14 +268,38 @@ for (i = 0; i &lt; coll.length; i++) {
     } 
   });
 }
-&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 1, Booklet 2) Robert Dahlmann Olsen ed. Issued May 10, 1941 Cover design by Egon Mathiesen Followed by Helhesten (Year 1, Booklet 3)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 1, Booklet 3)</title><link href="http://localhost:4000/article/helhesten-1.3/" rel="alternate" type="text/html" title="Helhesten (Year 1, Booklet 3)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-1.3</id><content type="html" xml:base="http://localhost:4000/article/helhesten-1.3/">&lt;div class=&quot;article-infobox&quot;&gt;
-	&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_1.3_cover.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_1.3_cover.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;strong&gt;Helhesten (Year 1, Booklet 3)&lt;/strong&gt;&lt;/p&gt;
-	&lt;p&gt;Robert Dahlmann Olsen ed.&lt;/p&gt;
-	&lt;p&gt;Issued September 17, 1941&lt;/p&gt;
-	&lt;p&gt;Cover design by Jens Søndergaard&lt;/p&gt;
-	&lt;p&gt;Followed by &lt;a href=&quot;/article/helhesten-1.4&quot;&gt;Helhesten (Year 1, Booklet 4)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 1, Booklet 2) Editor Robert Dahlmann Olsen Publisher Issue date May 10, 1941 Cover design Egon Mathiesen Followed by Helhesten (Year 1, Booklet 3)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 1, Booklet 3)</title><link href="http://localhost:4000/article/helhesten-1.3/" rel="alternate" type="text/html" title="Helhesten (Year 1, Booklet 3)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-1.3</id><content type="html" xml:base="http://localhost:4000/article/helhesten-1.3/">&lt;table id=&quot;infobox&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_1.3_cover.jpg&quot;&gt;&lt;img class=&quot;infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_1.3_cover.jpg&quot;&gt;&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot; id=&quot;infobox-subtitle&quot;&gt;&lt;cite&gt;Helhesten (Year 1, Booklet 3)&lt;/cite&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Editor&lt;/th&gt;
+			&lt;td&gt;Robert Dahlmann Olsen&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Publisher&lt;/th&gt;
+			&lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Issue date&lt;/th&gt;
+			&lt;td&gt;September 17, 1941&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Cover design&lt;/th&gt;
+			&lt;td&gt;Jens Søndergaard&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Followed by&lt;/th&gt;
+			&lt;td&gt;&lt;a href=&quot;/article/helhesten-1.4&quot;&gt;Helhesten (Year 1, Booklet 4)&lt;/a&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;&lt;strong&gt;Helhesten (Year 1, Booklet 3)&lt;/strong&gt; is the third issue of the Danish art journal &lt;em&gt;&lt;a href=&quot;/article/helhesten&quot;&gt;Helhesten&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -282,14 +334,38 @@ for (i = 0; i &lt; coll.length; i++) {
     } 
   });
 }
-&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 1, Booklet 3) Robert Dahlmann Olsen ed. Issued September 17, 1941 Cover design by Jens Søndergaard Followed by Helhesten (Year 1, Booklet 4)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 1, Booklet 4)</title><link href="http://localhost:4000/article/helhesten-1.4/" rel="alternate" type="text/html" title="Helhesten (Year 1, Booklet 4)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-1.4</id><content type="html" xml:base="http://localhost:4000/article/helhesten-1.4/">&lt;div class=&quot;article-infobox&quot;&gt;
-	&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_1.4_cover.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_1.4_cover.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;strong&gt;Helhesten (Year 1, Booklet 4)&lt;/strong&gt;&lt;/p&gt;
-	&lt;p&gt;Robert Dahlmann Olsen ed.&lt;/p&gt;
-	&lt;p&gt;Issued October 18, 1941&lt;/p&gt;
-	&lt;p&gt;Cover design by Hans Scherfig&lt;/p&gt;
-	&lt;p&gt;Followed by &lt;a href=&quot;/article/helhesten-1.5-6&quot;&gt;Helhesten (Year 1, Booklet 5 &amp;amp; 6)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 1, Booklet 3) Editor Robert Dahlmann Olsen Publisher Issue date September 17, 1941 Cover design Jens Søndergaard Followed by Helhesten (Year 1, Booklet 4)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 1, Booklet 4)</title><link href="http://localhost:4000/article/helhesten-1.4/" rel="alternate" type="text/html" title="Helhesten (Year 1, Booklet 4)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-1.4</id><content type="html" xml:base="http://localhost:4000/article/helhesten-1.4/">&lt;table id=&quot;infobox&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_1.4_cover.jpg&quot;&gt;&lt;img class=&quot;infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_1.4_cover.jpg&quot;&gt;&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot; id=&quot;infobox-subtitle&quot;&gt;&lt;cite&gt;Helhesten (Year 1, Booklet 4)&lt;/cite&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Editor&lt;/th&gt;
+			&lt;td&gt;Robert Dahlmann Olsen&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Publisher&lt;/th&gt;
+			&lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Issue date&lt;/th&gt;
+			&lt;td&gt;October 18, 1941&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Cover design&lt;/th&gt;
+			&lt;td&gt;Hans Scherfig&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Followed by&lt;/th&gt;
+			&lt;td&gt;&lt;a href=&quot;/article/helhesten-1.5-6&quot;&gt;Helhesten (Year 1, Booklet 5 &amp;amp; 6)&lt;/a&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;&lt;strong&gt;Helhesten (Year 1, Booklet 4)&lt;/strong&gt; is the fourth issue of the Danish art journal &lt;em&gt;&lt;a href=&quot;/article/helhesten&quot;&gt;Helhesten&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -324,14 +400,38 @@ for (i = 0; i &lt; coll.length; i++) {
     } 
   });
 }
-&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 1, Booklet 4) Robert Dahlmann Olsen ed. Issued October 18, 1941 Cover design by Hans Scherfig Followed by Helhesten (Year 1, Booklet 5 &amp;amp; 6)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 1, Booklets 5 &amp;amp; 6)</title><link href="http://localhost:4000/article/helhesten-1.5-6/" rel="alternate" type="text/html" title="Helhesten (Year 1, Booklets 5 &amp;amp; 6)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-1.5-6</id><content type="html" xml:base="http://localhost:4000/article/helhesten-1.5-6/">&lt;div class=&quot;article-infobox&quot;&gt;
-	&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_1.56_cover.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_1.56_cover.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;strong&gt;Helhesten (Year 1, Booklets 5 &amp;amp; 6)&lt;/strong&gt;&lt;/p&gt;
-	&lt;p&gt;Robert Dahlmann Olsen ed.&lt;/p&gt;
-	&lt;p&gt;Issued November 18, 1941&lt;/p&gt;
-	&lt;p&gt;Cover design by Axel Salto&lt;/p&gt;
-	&lt;p&gt;Followed by &lt;a href=&quot;/article/helhesten-2.1&quot;&gt;Helhesten (Year 2, Booklet 1)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 1, Booklet 4) Editor Robert Dahlmann Olsen Publisher Issue date October 18, 1941 Cover design Hans Scherfig Followed by Helhesten (Year 1, Booklet 5 &amp;amp; 6)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 1, Booklets 5 &amp;amp; 6)</title><link href="http://localhost:4000/article/helhesten-1.5-6/" rel="alternate" type="text/html" title="Helhesten (Year 1, Booklets 5 &amp;amp; 6)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-1.5-6</id><content type="html" xml:base="http://localhost:4000/article/helhesten-1.5-6/">&lt;table id=&quot;infobox&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_1.56_cover.jpg&quot;&gt;&lt;img class=&quot;infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_1.56_cover.jpg&quot;&gt;&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot; id=&quot;infobox-subtitle&quot;&gt;&lt;cite&gt;Helhesten (Year 1, Booklets 5 &amp;amp; 6)&lt;/cite&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Editor&lt;/th&gt;
+			&lt;td&gt;Robert Dahlmann Olsen&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Publisher&lt;/th&gt;
+			&lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Issue date&lt;/th&gt;
+			&lt;td&gt;November 18, 1941&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Cover design&lt;/th&gt;
+			&lt;td&gt;Axel Salto&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Followed by&lt;/th&gt;
+			&lt;td&gt;&lt;a href=&quot;/article/helhesten-2.1&quot;&gt;Helhesten (Year 2, Booklet 1)&lt;/a&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;&lt;strong&gt;Helhesten (Year 1, Booklets 5 &amp; 6)&lt;/strong&gt; is the fifth issue of the Danish art journal &lt;em&gt;&lt;a href=&quot;/article/helhesten&quot;&gt;Helhesten&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -366,14 +466,38 @@ for (i = 0; i &lt; coll.length; i++) {
     } 
   });
 }
-&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 1, Booklets 5 &amp;amp; 6) Robert Dahlmann Olsen ed. Issued November 18, 1941 Cover design by Axel Salto Followed by Helhesten (Year 2, Booklet 1)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 2, Booklet 1)</title><link href="http://localhost:4000/article/helhesten-2.1/" rel="alternate" type="text/html" title="Helhesten (Year 2, Booklet 1)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-10T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-2.1</id><content type="html" xml:base="http://localhost:4000/article/helhesten-2.1/">&lt;div class=&quot;article-infobox&quot;&gt;
-	&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_2.1_cover.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_2.1_cover.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;strong&gt;Helhesten (Year 2, Booklet 1)&lt;/strong&gt;&lt;/p&gt;
-	&lt;p&gt;Robert Dahlmann Olsen ed.&lt;/p&gt;
-	&lt;p&gt;Issued October 30, 1942&lt;/p&gt;
-	&lt;p&gt;Cover design by Niels Lergaard&lt;/p&gt;
-	&lt;p&gt;Followed by &lt;a href=&quot;/article/helhesten-2.2-3&quot;&gt;Helhesten (Year 2, Booklet 2 &amp;amp; 3)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 1, Booklets 5 &amp;amp; 6) Editor Robert Dahlmann Olsen Publisher Issue date November 18, 1941 Cover design Axel Salto Followed by Helhesten (Year 2, Booklet 1)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 2, Booklet 1)</title><link href="http://localhost:4000/article/helhesten-2.1/" rel="alternate" type="text/html" title="Helhesten (Year 2, Booklet 1)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-10T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-2.1</id><content type="html" xml:base="http://localhost:4000/article/helhesten-2.1/">&lt;table id=&quot;infobox&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_2.1_cover.jpg&quot;&gt;&lt;img class=&quot;infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_2.1_cover.jpg&quot;&gt;&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot; id=&quot;infobox-subtitle&quot;&gt;&lt;cite&gt;Helhesten (Year 2, Booklet 1)&lt;/cite&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Editor&lt;/th&gt;
+			&lt;td&gt;Robert Dahlmann Olsen&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Publisher&lt;/th&gt;
+			&lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Issue date&lt;/th&gt;
+			&lt;td&gt;October 30, 1942&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Cover design&lt;/th&gt;
+			&lt;td&gt;Niels Lergaard&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Followed by&lt;/th&gt;
+			&lt;td&gt;&lt;a href=&quot;/article/helhesten-2.2-3&quot;&gt;Helhesten (Year 2, Booklets 2 &amp;amp; 3)&lt;/a&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;&lt;strong&gt;Helhesten (Year 2, Booklet 1)&lt;/strong&gt; is the sixth issue of the Danish art journal &lt;em&gt;&lt;a href=&quot;/article/helhesten&quot;&gt;Helhesten&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -408,14 +532,38 @@ for (i = 0; i &lt; coll.length; i++) {
     } 
   });
 }
-&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 2, Booklet 1) Robert Dahlmann Olsen ed. Issued October 30, 1942 Cover design by Niels Lergaard Followed by Helhesten (Year 2, Booklet 2 &amp;amp; 3)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 2, Booklets 2 &amp;amp; 3)</title><link href="http://localhost:4000/article/helhesten-2.2-3/" rel="alternate" type="text/html" title="Helhesten (Year 2, Booklets 2 &amp;amp; 3)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-2.2-3</id><content type="html" xml:base="http://localhost:4000/article/helhesten-2.2-3/">&lt;div class=&quot;article-infobox&quot;&gt;
-	&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_2.23_cover.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_2.23_cover.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;strong&gt;Helhesten (Year 2, Booklets 2 &amp;amp; 3)&lt;/strong&gt;&lt;/p&gt;
-	&lt;p&gt;Robert Dahlmann Olsen ed.&lt;/p&gt;
-	&lt;p&gt;Issued March 10, 1943&lt;/p&gt;
-	&lt;p&gt;Cover design by Storm Petersen&lt;/p&gt;
-	&lt;p&gt;Followed by &lt;a href=&quot;/article/helhesten-2.4&quot;&gt;Helhesten (Year 2, Booklet 4)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 2, Booklet 1) Editor Robert Dahlmann Olsen Publisher Issue date October 30, 1942 Cover design Niels Lergaard Followed by Helhesten (Year 2, Booklets 2 &amp;amp; 3)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Helhesten (Year 2, Booklets 2 &amp;amp; 3)</title><link href="http://localhost:4000/article/helhesten-2.2-3/" rel="alternate" type="text/html" title="Helhesten (Year 2, Booklets 2 &amp;amp; 3)" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>http://localhost:4000/article/helhesten-2.2-3</id><content type="html" xml:base="http://localhost:4000/article/helhesten-2.2-3/">&lt;table id=&quot;infobox&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/helhesten/helhesten_2.23_cover.jpg&quot;&gt;&lt;img class=&quot;infobox-image&quot; src=&quot;/assets/articles/helhesten/helhesten_2.23_cover.jpg&quot;&gt;&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot; id=&quot;infobox-subtitle&quot;&gt;&lt;cite&gt;Helhesten (Year 2, Booklets 2 &amp;amp; 3)&lt;/cite&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Editor&lt;/th&gt;
+			&lt;td&gt;Robert Dahlmann Olsen&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Publisher&lt;/th&gt;
+			&lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Issue date&lt;/th&gt;
+			&lt;td&gt;March 10, 1943&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Cover design&lt;/th&gt;
+			&lt;td&gt;Storm Petersen&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Followed by&lt;/th&gt;
+			&lt;td&gt;&lt;a href=&quot;/article/helhesten-2.4&quot;&gt;Helhesten (Year 2, Booklet 4)&lt;/a&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;&lt;strong&gt;Helhesten (Year 2, Booklets 2 &amp; 3)&lt;/strong&gt; is the seventh issue of the Danish art journal &lt;em&gt;&lt;a href=&quot;/article/helhesten&quot;&gt;Helhesten&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -450,25 +598,38 @@ for (i = 0; i &lt; coll.length; i++) {
     } 
   });
 }
-&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 2, Booklets 2 &amp;amp; 3) Robert Dahlmann Olsen ed. Issued March 10, 1943 Cover design by Storm Petersen Followed by Helhesten (Year 2, Booklet 4)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Abschiedssymphonie, Op. 177</title><link href="http://localhost:4000/article/abschiedssymphonie/" rel="alternate" type="text/html" title="Abschiedssymphonie, Op. 177" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-10T00:00:00+01:00</updated><id>http://localhost:4000/article/abschiedssymphonie</id><content type="html" xml:base="http://localhost:4000/article/abschiedssymphonie/">&lt;div class=&quot;article-infobox&quot;&gt;
-	&lt;div class=&quot;article-infobox&quot;&gt;
-		&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/abschiedssymphonie/front.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/abschiedssymphonie/front.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-		&lt;div class=&quot;article-infobox-text&quot;&gt;Front cover&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;article-infobox&quot;&gt;
-		&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/abschiedssymphonie/back.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/abschiedssymphonie/back.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-		&lt;div class=&quot;article-infobox-text&quot;&gt;Back cover&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;strong&gt;Abschiedssymphonie, Op. 177&lt;/strong&gt;&lt;/p&gt;
-	&lt;p&gt;Henning Christiansen, Joseph Beuys, Nam June Paik&lt;/p&gt;
-	&lt;p&gt;&lt;em&gt;Edition Block, EB 118&lt;/em&gt;&lt;br /&gt;
-	1988&lt;/p&gt;
-	&lt;p&gt;Vinyl, 45'21&quot;&lt;/p&gt;
-	
-
-
-	&lt;/div&gt;
-&lt;/div&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="cobra" /><category term="helhesten" /><summary type="html">Helhesten (Year 2, Booklets 2 &amp;amp; 3) Editor Robert Dahlmann Olsen Publisher Issue date March 10, 1943 Cover design Storm Petersen Followed by Helhesten (Year 2, Booklet 4)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Abschiedssymphonie, Op. 177</title><link href="http://localhost:4000/article/abschiedssymphonie/" rel="alternate" type="text/html" title="Abschiedssymphonie, Op. 177" /><published>2019-01-01T00:00:00+01:00</published><updated>2020-12-10T00:00:00+01:00</updated><id>http://localhost:4000/article/abschiedssymphonie</id><content type="html" xml:base="http://localhost:4000/article/abschiedssymphonie/">&lt;table id=&quot;infobox&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/abschiedssymphonie/front.jpg&quot;&gt;&lt;img class=&quot;infobox-image&quot; src=&quot;/assets/articles/abschiedssymphonie/front.jpg&quot;&gt;&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot; id=&quot;infobox-subtitle&quot;&gt;&lt;cite&gt;Abschiedssymphonie, Op. 177&lt;/cite&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Artists&lt;/th&gt;
+			&lt;td&gt;Henning Christiansen, Joseph Beuys, Nam June Paik&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Publisher&lt;/th&gt;
+			&lt;td&gt;Edition Block, EB 118&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Publishing date&lt;/th&gt;
+			&lt;td&gt;1988&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Format&lt;/th&gt;
+			&lt;td&gt;Vinyl&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Duration&lt;/th&gt;
+			&lt;td&gt;45'21&quot;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;&lt;strong&gt;Abschiedssymphonie, Op. 177&lt;/strong&gt; is a recording released by Edition Block featuring a musical performance by Henning Christiansen, Nam June Paik, and Joseph Beuys.&lt;/p&gt;
 
@@ -487,9 +648,11 @@ for (i = 0; i &lt; coll.length; i++) {
 &lt;p class=&quot;quote-attrib&quot;&gt;- Henning Christiansen, Abschiedssymphonie liner notes&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;thumb-full&quot;&gt;
-	&lt;div class=&quot;article-infobox-image-container&quot;&gt;&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/abschiedssymphonie/insideB.jpg&quot;&gt;&lt;img class=&quot;article-infobox-image&quot; src=&quot;/assets/articles/abschiedssymphonie/insideB.jpg&quot; title=&quot;A sketch of Epokhè by Jean Dubuffet&quot; alt=&quot;&quot; width=&quot;100%&quot;/&gt;&lt;/a&gt;&lt;/div&gt;
-	&lt;div class=&quot;article-infobox-text&quot;&gt;Photos from the performance.&lt;/div&gt;
+&lt;div class=&quot;thumbnail-container&quot;&gt;
+	&lt;a href=&quot;#&quot; data-featherlight=&quot;/assets/articles/abschiedssymphonie/insideB.jpg&quot;&gt;&lt;img class=&quot;thumbnail-image&quot; src=&quot;/assets/articles/abschiedssymphonie/insideB.jpg&quot; width=&quot;100%&quot;/&gt;&lt;/a&gt;
+	&lt;div class=&quot;thumbnail-caption&quot;&gt;
+		Photos from the performance.
+	&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;The title of the LP cover is a statement from the recording made by Beuys:&lt;/p&gt;
@@ -597,4 +760,4 @@ for (i = 0; i &lt; coll.length; i++) {
 		&lt;/figure&gt;
 &lt;/section&gt;
 
-&lt;h2&gt;References&lt;/h2&gt;</content><author><name></name></author><category term="recordings" /><category term="joseph-beuys" /><category term="henning-christiansen" /><category term="nam-june-paik" /><category term="fluxus" /><summary type="html">Front cover Back cover Abschiedssymphonie, Op. 177 Henning Christiansen, Joseph Beuys, Nam June Paik Edition Block, EB 118 1988 Vinyl, 45'21&quot;</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;h2&gt;References&lt;/h2&gt;</content><author><name></name></author><category term="recordings" /><category term="joseph-beuys" /><category term="henning-christiansen" /><category term="nam-june-paik" /><category term="fluxus" /><summary type="html">Abschiedssymphonie, Op. 177 Artists Henning Christiansen, Joseph Beuys, Nam June Paik Publisher Edition Block, EB 118 Publishing date 1988 Format Vinyl Duration 45'21&quot;</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

@@ -5,13 +5,15 @@
 
 html { -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; width: 90%; margin: 3rem auto 0 auto; }
 
-body { display: grid; grid-gap: 1rem; font-size: 0.9rem; line-height: 1.5rem; }
+body { display: grid; grid-gap: 1rem; font-size: 1rem; line-height: 1.6; }
 
 #content, #header, #footer { background-color: white; float: left; padding: 1rem; display: grid; }
 
 #header, #footer { align-items: center; width: 100%; }
 
 #content { font-family: "GT-Eesti-Text-Light", sans-serif; display: block; margin: 1rem 0; }
+
+hr { margin: 0; border-top: 1px solid #eee; }
 
 a { text-decoration: underline; color: #1a1a1a; }
 
@@ -21,13 +23,13 @@ a.navbar-link { font-family: "GT-Eesti-Display-Bold", sans-serif; margin-right: 
 
 a.current { color: red; }
 
-h1, header { line-height: 1.1; font-size: 2rem; font-weight: 700; }
+h1, header { font-size: 1.7em; font-family: "GT-Eesti-Display-Bold", sans-serif; }
 
 h1, h2, h3, h4, h5, h6, header { /* clear: both; */ }
 
 h2, h3 { padding-top: 2rem; }
 
-.navbar-title { font-family: "GT-Eesti-Display-UBold", sans-serif; font-size: 2.5rem; line-height: 1.1; }
+.navbar-title { font-family: "GT-Eesti-Display-UBold", sans-serif; font-size: 2rem; line-height: 1.1; }
 
 .navbar-links-container { justify-self: end; padding-top: 1rem; }
 
@@ -45,7 +47,7 @@ a.social-media-icon:hover { text-decoration: none; }
 
 .creator-profile { height: 4rem; padding-right: 1rem; }
 
-.artist-tile-title { font-family: "GT-Eesti-Display-Bold", sans-serif; font-size: 1.3rem; }
+.artist-tile-title { font-family: "GT-Eesti-Text-Light", sans-serif; font-size: 1.7em; }
 
 .article-tile-image-container { display: none; }
 
@@ -55,13 +57,43 @@ a.social-media-icon:hover { text-decoration: none; }
 
 .article-tag { font-style: italic; }
 
-.article-infobox { width: 70%; margin: 1rem auto 1rem auto; }
+header { margin: 0.5rem 0 0.4rem 0; }
 
-.article-infobox-image { max-height: 100%; max-width: 100%; display: block; margin: auto; }
+.article-container { display: flex; flex-direction: column; }
 
-.article-infobox-text { margin-top: 0.5rem; font-family: 'GT-Eesti-Text-Book'; font-size: 95%; line-height: 1.4rem; }
+.article-container #infobox { order: 2; }
 
-.quote { margin-top: 1rem; padding: 0.5rem; overflow: hidden; font-style: italic; border-left: 1px dotted black; }
+.article-container #featured-paragraph { order: 1; }
+
+.article-container :nth-child(n+3) { order: 3; }
+
+#featured-paragraph { margin-bottom: 0; }
+
+#infobox, .thumbnail-container { border: 1px solid #eee; padding: 0.3rem; font-size: 95%; background-color: #f8f9fa; }
+
+#infobox { margin: 1rem auto 1rem auto; width: 100%; max-width: 100%; }
+
+#infobox caption { font-weight: 700; font-size: 1rem; margin-bottom: 0.3rem; }
+
+#infobox-subtitle { text-align: center; padding: 0 0.2rem; }
+
+#infobox tr { min-width: 100%; display: flex; flex-flow: row nowrap; border-bottom: 1px solid #eaecf0; padding: 0.5rem 0; }
+
+#infobox th, td { flex: 1 0; text-align: left; }
+
+#infobox tr:nth-last-of-type(1) { border-bottom: none; }
+
+.infobox-image { max-height: 100%; max-width: 60%; display: block; margin: 0 auto 0.3rem auto; }
+
+.thumbnail-container { width: 70%; margin: 0.5rem auto; font-size: 85%; }
+
+.thumbnail-container-fullwidth { width: 100%; margin: 0.5rem auto; font-size: 85%; }
+
+.thumbnail-image { max-height: 100%; max-width: 100%; margin: auto; }
+
+.thumbnail-caption { margin-top: 0.3rem; }
+
+.quote { margin-top: 1rem; padding: 0.5rem; overflow: hidden; border-left: 1px dotted black; }
 
 .quote p:nth-child(1) { margin-block-start: 0; }
 
@@ -77,7 +109,7 @@ a.social-media-icon:hover { text-decoration: none; }
 
 .collapsible-text-container { padding: 0.5rem 0; }
 
-.collapsible-text-button { background-color: #777; color: white; cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; outline: none; font-size: 15px; }
+.collapsible-text-button { background-color: #777; color: white; cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; outline: none; }
 
 .active, .collapsible-text-button:hover { background-color: #555; }
 
@@ -119,11 +151,15 @@ button { display: block; width: 5rem; padding: 1rem; border: none; background-co
   #page-body { max-width: 1500px; margin: auto; }
   #content, #header, #footer { padding: 2rem; margin: 1rem; width: 100%; }
   #header, #footer { display: flex; }
+  hr { margin-bottom: 2rem; }
   .navbar-title { line-height: 2.5rem; }
   .navbar-links-container { padding-top: 0; margin-left: auto; }
-  .article-infobox { width: 20rem; float: right; margin: 0.5rem 0 1.3rem 1.4rem; border: 1px solid #aaa; padding: 0.3rem; background-color: #f8f9fa; clear: both; }
-  .article-infobox-image { max-width: 100%; height: auto; }
-  .article-content { text-align: justify; line-height: 1.8rem; }
+  header { font-size: 2rem; }
+  .article-container { display: block; }
+  #infobox, .thumbnail-container { max-width: 20rem; margin: 0.5rem 0 1.3rem 1rem; float: right; clear: both; }
+  .infobox-image { max-width: 90%; }
+  .thumbnail-container { max-width: 15rem; }
+  .thumbnail-container-fullwidth { max-width: 100%; }
   .artist-tile-container { display: grid; grid-gap: 1rem; grid-template-columns: repeat(auto-fill, 12rem); }
   .artist-tile { display: grid; height: 14rem; justify-items: center; margin: 0.5rem; }
   .artist-tile-title { text-align: center; }
@@ -132,6 +168,7 @@ button { display: block; width: 5rem; padding: 1rem; border: none; background-co
   .article-tile h3 { padding-top: 0rem; }
   .article-tile-image-container { display: initial; max-width: 6rem; }
   .article-tile-image { width: 100%; height: 100%; box-shadow: 0.1rem 0.1rem #eee; }
-  .article-tile-details-container { padding-left: 2rem; } }
+  .article-tile-details-container { padding-left: 2rem; }
+  .tooltip { display: none; position: absolute; font-family: "GT-Eesti-Text-Light", sans-serif; border: 1px solid #777; background-color: #f8f9fa; padding: 2px 7px 2px 7px; box-shadow: 2px 2px 10px #999; } }
 /* Added here because we don't want to set justify-items on desktop, which comes before mobile, so we set the value for mobile after all the desktop styles. */
 @media only screen and (max-width: 769px) { .article-title-container { justify-items: center; } }

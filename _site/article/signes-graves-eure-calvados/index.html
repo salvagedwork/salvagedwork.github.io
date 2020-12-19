@@ -18,18 +18,6 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/featherlight.min.css">
 	<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
-	<!-- <script type="text/javascript">  -->
-	<!-- var totalCount = 7; -->
-	<!-- function changeIt()  -->
-	<!-- { -->
-	<!-- var num = Math.ceil( Math.random() * totalCount ); -->
-	<!-- document.body.background = '/assets/images/backgrounds/'+num+'.jpg'; -->
-	<!-- document.body.style.backgroundSize = "cover"; -->
-	<!-- document.body.style.backgroundPosition = "top"; -->
-	<!-- document.body.style.backgroundRepeat = "repeat-y"; -->
-	<!-- document.body.style.backgroundAttachment = "fixed"; -->
-	<!-- } -->
-	<!-- </script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.4/jquery.detect_swipe.min.js"></script>
 	<script src="/js/footnotes.js"></script>
@@ -75,24 +63,49 @@
 				<article lang="en">
 
 	<header>Signes gravés sur les églises de l'Eure et du Calvados</header>
+	<hr />
 
-	<div class="entry"><div class="article-infobox">
-	<div class="article-infobox-image-container"><a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/front.jpg"><img class="article-infobox-image" src="/assets/articles/signes-graves-eure-calvados/front.jpg"></a></div>
-	<div class="article-infobox-text"><p align="center"><strong>Signes gravés sur les églises de l'Eure et du Calvados</strong></p>
-	<p>Asger Jorn &amp; Gérard Franceschi</p>
-	<p>Published by Borgen, 1964</p>
-	<p>Series: Library of Alexandria, Vol. 2</p></div>
-</div>
+	<!-- "entry" class is for footnotes.js to work correctly -->
+	<div class="article-container entry"><table id="infobox">
+	<tbody>
+		<tr>
+			<td colspan="2">
+				<a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/front.jpg"><img class="infobox-image" src="/assets/articles/signes-graves-eure-calvados/front.jpg"></a>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" id="infobox-subtitle"><cite>Signs Engraved on the Churches of Eure and Calvados</cite></td>
+		</tr>
+		<tr>
+			<th scope="row">Authors</th>
+			<td>Asger Jorn &amp; Gérard Franceschi</td>
+		</tr>
+		<tr>
+			<th scope="row">Publisher</th>
+			<td>Borgen</td>
+		</tr>
+		<tr>
+			<th scope="row">Publishing date</th>
+			<td>1964</td>
+		</tr>
+		<tr>
+			<th scope="row">Series</th>
+			<td>Library of Alexandria, Vol. 2</td>
+		</tr>
+	</tbody>
+</table>
 
-<p><strong>Signes gravés sur les églises de l'Eure et du Calvados</strong> (Signs Engraved on the Churches of Eure and Calvados) is a book written in French and directed by Asger Jorn, with essay contributions from various antiquities experts and photography by Gérard Franceschi. The book was published by Danish publisher Borgen in 1964 and distributed in France by <em>Librairie 'Le Minotaur.'</em><p>
+<p id="featured-paragraph"><strong>Signes gravés sur les églises de l'Eure et du Calvados</strong> (<cite>Signs Engraved on the Churches of Eure and Calvados</cite>) is a book written in French and directed by Asger Jorn, with essay contributions from various antiquities experts and photography by Gérard Franceschi. The book was published by Danish publisher Borgen in 1964 and distributed in France by <cite>Librairie 'Le Minotaur.'</cite><p>
 
 <p>The book is a photographic examination of secular, pagan, and religious &quot;graffiti&quot; found hand-etched into church architecture in the Calvados and Eure départements of the Normandy region in northern France. Jorn was inspired to document the symbols he found after a visit to the church of Damville in 1946 while visiting the painter Pierre Wemaëre. Jorn further draws comparisons to similar symbols found in Denmark, Sweden, and Norway at the cathedrals of Ribe, Lund, and Trondheim. Franceschi's photography is coupled with essays from Danish archaeologist Peter Vilhelm Glob, University of Caen Professor Michel de Bouard, historian Louis Réau, and Asger Jorn.</p>
 
-<p>The book is part of the series &quot;The Library of Alexandria:&quot; Volume 1 consisted of a series of Situationist pamphlets, Volume 2 was Jorn's book <em>Signes gravés sur les églises de l'Eure et du Calvados</em>, and Volume 3 was Jorn's and Pierre Wemaëre's booklet <em>Le long voyage</em>, and <em>Le langue verte et la cuite</em>.</p>
+<p>The book is part of the series <cite>The Library of Alexandria</cite>. Volume 1 consisted of a series of Situationist pamphlets, Volume 2 was Jorn's book <cite>Signes gravés sur les églises de l'Eure et du Calvados</cite>, and Volume 3 was Jorn's and Pierre Wemaëre's booklet <cite>Le long voyage</cite>, and <cite>Le langue verte et la cuite</cite>.</p>
 
-<div class="article-infobox">
-	<div class="article-infobox-image-container"><a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/signes_01.jpg"><img class="article-infobox-image" src="/assets/articles/signes-graves-eure-calvados/signes_01.jpg"></a></div>
-	<div class="article-infobox-text">An example of signs. The lower photo is from the church in Tournedos, Eure. The upper photo is unidentified.</div>
+<div class="thumbnail-container">
+	<a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/signes_01.jpg"><img class="thumbnail-image" src="/assets/articles/signes-graves-eure-calvados/signes_01.jpg"></a>
+	<div class="thumbnail-caption">
+		An example of signs. The lower photo is from the church in Tournedos, Eure. The upper photo is unidentified.
+	</div>
 </div>
 
 <p>Karen Kurcynski explains Jorn's comparison of the symbols found in Eure and Calvados to the Scandinavian &quot;Vandal&quot; culture:</p>
@@ -102,20 +115,21 @@
 <p class="quote-attrib">- Karen Kurcynski, <a href="https://situationistlibrary.files.wordpress.com/2012/02/kurcynski-expression-vandalism-jorn.pdf" target="_blank">Expression as vandalism: Asger Jorn's &quot;Modifications&quot;</a></p>
 </div>
 
-<div class="article-infobox">
-	<div class="article-infobox-image-container"><a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/signes_02.jpg"><img class="article-infobox-image" src="/assets/articles/signes-graves-eure-calvados/signes_02.jpg"></a></div>
-	<div class="article-infobox-text">Signs from the church in Tilleul-Dame-Agnès, Eure.</div>
+<div class="thumbnail-container">
+	<a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/signes_02.jpg"><img class="thumbnail-image" src="/assets/articles/signes-graves-eure-calvados/signes_02.jpg"></a>
+	<div class="thumbnail-caption">Signs from the church in Tilleul-Dame-Agnès, Eure.</div>
 </div>
 
 <p>Steven Harris links Jorn's fascination with engravings found on churches to Scandinavian expansion into Normandy:</p>
 
 <div class="quote">
-<p>[<em>Signes gravés sur les églises de l'Eure et du Calvados</em>] focused on graffiti carved into the stone interiors of Norman churches between the twelfth and nineteenth centuries, which it presented as an unofficial culture contributed over the centuries by worshippers, as they attended Mass or visited the churches for other purposes. Jorn was drawn to this graffiti for several reasons. On one level, he saw a resemblance between the kinds of marks made in these Norman churches over several centuries and the graffiti found in Scandinavian churches, which implies the persistence of cultural ties between Normandy, settled by Scandinavian peoples, and the cultural heritage of his homeland. (While Jorn was not a nationalist, he saw a specificity to Scandinavian culture that he wished to make available to others.) On another level, he was drawn to this graffiti as a popular expression that is also a commentary on, and a supplement to, the official culture of the Catholic Church.
+<p>[<cite>Signes gravés sur les églises de l'Eure et du Calvados</cite>] focused on graffiti carved into the stone interiors of Norman churches between the twelfth and nineteenth centuries, which it presented as an unofficial culture contributed over the centuries by worshippers, as they attended Mass or visited the churches for other purposes. Jorn was drawn to this graffiti for several reasons. On one level, he saw a resemblance between the kinds of marks made in these Norman churches over several centuries and the graffiti found in Scandinavian churches, which implies the persistence of cultural ties between Normandy, settled by Scandinavian peoples, and the cultural heritage of his homeland. (While Jorn was not a nationalist, he saw a specificity to Scandinavian culture that he wished to make available to others.) On another level, he was drawn to this graffiti as a popular expression that is also a commentary on, and a supplement to, the official culture of the Catholic Church.
 </p>
 <p class="quote-attrib">- Steven Harris, <a href="https://www.mitpressjournals.org/doi/pdfplus/10.1162/OCTO_a_00103" target="_blank">How Language Looks: On Asger Jorn and Noël Arnaud's <em>La langue verte</em></a></p>
 </div>
 
-<h3>Contents</h3>
+
+<h2>Contents</h2>
 
 <div class="collapsible-text-container">
 <button class="collapsible-text-button">Asger Jorn: Introduction</button>
@@ -298,7 +312,7 @@
 </div>
 </div>
 
-<p><strong>Asger Jorn: Sauvagerie, barbarie et civilisation</strong></p>
+<h4>Asger Jorn: Sauvagerie, barbarie et civilisation</h4>
 
 <div class="collapsible-text-container">
 <button class="collapsible-text-button">The Nordics</button>
@@ -1045,6 +1059,7 @@ In the contemporary economy, the instability of the production-consumption balan
 
 <iframe src="https://archive.org/embed/signes-graves-eure-calvados-jorn" width="100%" height="600" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
+
 <h2>Gallery</h2>
 
 <section
@@ -1078,8 +1093,8 @@ In the contemporary economy, the instability of the production-consumption balan
 		</figure>
 </section>
 
-<h2>References</h2>
 
+<h2>References</h2>
 
 
 <script>

@@ -31,6 +31,11 @@ body {
 	margin: 1rem 0;
 }
 
+hr {
+	margin: 0;
+	border-top: 1px solid $shade-color;
+}
+
 
 // Links ////////////////////////////////////////
 
@@ -56,9 +61,8 @@ a.current {
 // Headers & Footers ////////////////////////////
 
 h1,header {
-	line-height: 1.1;
-	font-size: 2rem;
-	font-weight: 700;
+	font-size: $font-medium;
+	font-family: $font-bold;
 }
 
 h1,h2,h3,h4,h5,h6,header {
@@ -118,7 +122,7 @@ a.social-media-icon:hover {
 }
 	
 .artist-tile-title {
-	font-family: $font-bold;
+	font-family: $font-regular;
 	font-size: $font-medium;
 }
 
@@ -145,30 +149,109 @@ a.social-media-icon:hover {
 
 // Articles /////////////////////////////////////
 
-.article-infobox {
-	width: 70%;
-	margin: 1rem auto 1rem auto;
+header {
+	margin: 0.5rem 0 0.4rem 0;
 }
 
-.article-infobox-image {
+.article-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.article-container #infobox {
+	order: 2;
+}
+
+.article-container #featured-paragraph {
+	order: 1;
+}
+
+.article-container :nth-child(n+3) {
+	order: 3;
+}
+
+#featured-paragraph {
+	margin-bottom: 0;
+}
+
+// Article infobox & thumbnails
+
+#infobox, .thumbnail-container {
+	border: 1px solid $shade-color;
+	padding: 0.3rem;
+	font-size: 95%;
+	background-color: #f8f9fa;
+}
+
+#infobox {
+	margin: 1rem auto 1rem auto;
+	width: 100%;
+	max-width: 100%;
+}
+
+#infobox caption {
+	font-weight: 700;
+	font-size: $font-small;
+	margin-bottom: 0.3rem;
+}
+
+#infobox-subtitle {
+	text-align: center;
+	padding: 0 0.2rem;
+}
+
+#infobox tr {
+	min-width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	border-bottom: 1px solid #eaecf0;
+	padding: 0.5rem 0;
+}
+
+#infobox th, td {
+	flex: 1 0;
+	text-align: left;
+}
+
+#infobox tr:nth-last-of-type(1) {
+	border-bottom: none;
+}
+
+.infobox-image {
+	max-height: 100%;
+	max-width: 60%;
+	display: block;
+	margin: 0 auto 0.3rem auto;
+}
+
+.thumbnail-container {
+	width: 70%;
+	margin: 0.5rem auto;
+	font-size: 85%;
+}
+
+.thumbnail-container-fullwidth {
+	width: 100%;
+	margin: 0.5rem auto;
+	font-size: 85%;
+}	
+
+.thumbnail-image {
 	max-height: 100%;
 	max-width: 100%;
-	display: block;
 	margin: auto;
 }
 
-.article-infobox-text {
-	margin-top: 0.5rem;
-	font-family: 'GT-Eesti-Text-Book';
-	font-size: 95%;
-	line-height: 1.4rem;
+.thumbnail-caption {
+	margin-top: 0.3rem;
 }
+
+// Quotes
 
 .quote {
 	margin-top: 1rem;
 	padding: 0.5rem;
 	overflow: hidden;
-	font-style: italic;
 	border-left: 1px dotted black;
 }
 
@@ -183,6 +266,8 @@ a.social-media-icon:hover {
 	text-align: right;
 	font-style: normal;
 }
+
+// Image gallery
 
 .gallery-grid { 
 	display: grid;
@@ -201,8 +286,7 @@ a.social-media-icon:hover {
 	font-size: 85%;
 }
 
-
-// Collapsible textboxes ////////////////////////
+// Collapsible textboxes
 
 .collapsible-text-container {
 	padding: 0.5rem 0;
@@ -217,7 +301,6 @@ a.social-media-icon:hover {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
 }
 
 .active, .collapsible-text-button:hover {

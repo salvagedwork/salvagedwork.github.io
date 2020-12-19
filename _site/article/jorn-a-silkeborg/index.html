@@ -18,18 +18,6 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/featherlight.min.css">
 	<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
-	<!-- <script type="text/javascript">  -->
-	<!-- var totalCount = 7; -->
-	<!-- function changeIt()  -->
-	<!-- { -->
-	<!-- var num = Math.ceil( Math.random() * totalCount ); -->
-	<!-- document.body.background = '/assets/images/backgrounds/'+num+'.jpg'; -->
-	<!-- document.body.style.backgroundSize = "cover"; -->
-	<!-- document.body.style.backgroundPosition = "top"; -->
-	<!-- document.body.style.backgroundRepeat = "repeat-y"; -->
-	<!-- document.body.style.backgroundAttachment = "fixed"; -->
-	<!-- } -->
-	<!-- </script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.4/jquery.detect_swipe.min.js"></script>
 	<script src="/js/footnotes.js"></script>
@@ -75,14 +63,37 @@
 				<article lang="en">
 
 	<header>Asger Jorn à Silkeborg</header>
+	<hr />
 
-	<div class="entry"><div class="article-infobox">
-	<div class="article-infobox-image-container"><a href="#" data-featherlight="/assets/articles/jorn-a-silkeborg/asger_jorn_a_silkeborg_cover.jpg"><img class="article-infobox-image" src="/assets/articles/jorn-a-silkeborg/asger_jorn_a_silkeborg_cover.jpg"></a></div>
-	<div class="article-infobox-text"><p align="center"><strong>Asger Jorn à Silkeborg</strong></p>
-	<p>Asger Jorn, Troels Andersen, Jean Dubuffet, Erik Nyholm</p>
-	<p>Silkeborg Kunstmuseum, 1978</p>
-	<p>ISBN 87-980325-6-9</p></div>
-</div>
+	<!-- "entry" class is for footnotes.js to work correctly -->
+	<div class="article-container entry"><table id="infobox">
+	<tbody>
+		<tr>
+			<td colspan="2">
+				<a href="#" data-featherlight="/assets/articles/jorn-a-silkeborg/asger_jorn_a_silkeborg_cover.jpg"><img class="infobox-image" src="/assets/articles/jorn-a-silkeborg/asger_jorn_a_silkeborg_cover.jpg"></a>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" id="infobox-subtitle"><cite>Asger Jorn à Silkeborg</cite></td>
+		</tr>
+		<tr>
+			<th scope="row">Authors</th>
+			<td>Asger Jorn, Troels Andersen, Jean Dubuffet &amp; Erik Nyholm</td>
+		</tr>
+		<tr>
+			<th scope="row">Publisher</th>
+			<td>Silkeborg Kunstmuseum</td>
+		</tr>
+		<tr>
+			<th scope="row">Publishing date</th>
+			<td>1978</td>
+		</tr>
+		<tr>
+			<th scope="row">ISBN</th>
+			<td>87-980325-6-9</td>
+		</tr>
+	</tbody>
+</table>
 
 <p><strong>Asger Jorn à Silkeborg, Le musée d'un peintre</strong> (Asger Jorn in Silkeborg, a painter's museum) is a partial catalogue of works held by the Silkeborg Museum of Art with a focus on the art of Danish painter Asger Jorn and the relationship that the museum's other works have with Jorn's art. The contents were published in 1978 by the museum in the French language and under the direction of Troels Andersen, who was the museum's director from 1973-2004.<p>
 
@@ -99,14 +110,18 @@
 
 <h3>Jean Dubuffet's mural <em>Epokhè</em> for the Silkeborg Museum of Art</h3>
 
-<div class="thumb-full">
-	<div class="article-infobox-image-container"><a href="#" data-featherlight="/assets/articles/jorn-a-silkeborg/dubuffet_epokhe_sketch.jpg"><img class="article-infobox-image" src="/assets/articles/jorn-a-silkeborg/dubuffet_epokhe_sketch.jpg" title="A sketch of Epokhè by Jean Dubuffet" alt="" width="100%"/></a></div>
-	<div class="article-infobox-text">Dubuffet's sketch for Epokhè.</div>
+<div class="thumbnail-container-fullwidth">
+	<a href="#" data-featherlight="/assets/articles/jorn-a-silkeborg/dubuffet_epokhe_sketch.jpg"><img class="thumbnail-image" src="/assets/articles/jorn-a-silkeborg/dubuffet_epokhe_sketch.jpg" title="A sketch of Epokhè by Jean Dubuffet" alt="" width="100%"/></a>
+	<div class="thumbnail-caption">
+		Dubuffet's sketch for Epokhè.
+	</div>
 </div>
 
-<div class="article-infobox">
-	<div class="article-infobox-image-container"><a href="#" data-featherlight="/assets/articles/jorn-a-silkeborg/dubuffet_mural_2017.jpg"><img class="article-infobox-image" src="/assets/articles/jorn-a-silkeborg/dubuffet_mural_2017.jpg"></a></div>
-	<div class="article-infobox-text">Detail of the mural outside the Silkeborg Museum of Art, 2017.</div>
+<div class="thumbnail-container">
+	<a href="#" data-featherlight="/assets/articles/jorn-a-silkeborg/dubuffet_mural_2017.jpg"><img class="infobox-image" src="/assets/articles/jorn-a-silkeborg/dubuffet_mural_2017.jpg"></a>
+	<div class="thumbnail-caption">
+		Detail of the mural outside the Silkeborg Museum of Art, 2017.
+	</div>
 </div>
 
 <p><em>Translated from the French text:</em></p>
