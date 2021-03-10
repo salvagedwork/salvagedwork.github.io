@@ -60,13 +60,18 @@ a.current {
 
 // Headers & Footers ////////////////////////////
 
-h1,header {
+h1 {
 	font-size: $font-medium;
 	font-family: $font-bold;
 }
 
 h1,h2,h3,h4,h5,h6,header {
-	/* clear: both; */
+	clear: both;
+}
+
+h2 {
+	border-bottom: 1px solid #a2a9b1;
+	overflow: hidden;
 }
 
 h2,h3 {
@@ -158,18 +163,6 @@ header {
 	flex-direction: column;
 }
 
-.article-container #infobox {
-	order: 2;
-}
-
-.article-container #featured-paragraph {
-	order: 1;
-}
-
-.article-container :nth-child(n+3) {
-	order: 3;
-}
-
 #featured-paragraph {
 	margin-bottom: 0;
 }
@@ -245,6 +238,19 @@ header {
 .thumbnail-caption {
 	margin-top: 0.3rem;
 }
+
+/*	.download-button {                              */
+/*		margin: 0.5rem 0;                           */
+/*		padding: 0.5rem;                            */
+/*		border: 2px solid black;                    */
+/*		box-shadow: 0.1rem 0.1rem $shade-color;     */
+/*		text-align: center;                         */
+/*		margin: 0.5rem;                             */
+/*	}                                               */
+/*	                                                */
+/*	.download-button:hover {                        */
+/*		border: 2px solid red;                      */
+/*	}                                               */
 
 // Quotes
 

@@ -5,13 +5,13 @@
 	}
 	
 	#page-body {
-		max-width: 1500px;
+		max-width: 1100px;
 		margin: auto;
 	}
 	
 	#content, #header, #footer {
 		padding: $content-padding;
-		margin: $content-padding / 2;
+		margin: $content-padding / 2 0;
 		width: 100%;
 	}
 	
@@ -38,16 +38,12 @@
 	
 	// Articles /////////////////////////////////
 	
-	header {
-		font-size: $font-large;
-	}
-	
 	.article-container {
 		display: block;
 	}
 	
 	#infobox, .thumbnail-container {
-		max-width: 20rem;
+		max-width: 18rem;
 		margin: 0.5rem 0 1.3rem 1rem;
 		float: right;
 		clear: both;
@@ -63,6 +59,10 @@
 	
 	.thumbnail-container-fullwidth {
 		max-width: 100%;
+	}
+	
+	.header-nestled {
+		clear: none;
 	}
 	
 	

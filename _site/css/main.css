@@ -23,9 +23,11 @@ a.navbar-link { font-family: "GT-Eesti-Display-Bold", sans-serif; margin-right: 
 
 a.current { color: red; }
 
-h1, header { font-size: 1.7em; font-family: "GT-Eesti-Display-Bold", sans-serif; }
+h1 { font-size: 1.7em; font-family: "GT-Eesti-Display-Bold", sans-serif; }
 
-h1, h2, h3, h4, h5, h6, header { /* clear: both; */ }
+h1, h2, h3, h4, h5, h6, header { clear: both; }
+
+h2 { border-bottom: 1px solid #a2a9b1; overflow: hidden; }
 
 h2, h3 { padding-top: 2rem; }
 
@@ -61,12 +63,6 @@ header { margin: 0.5rem 0 0.4rem 0; }
 
 .article-container { display: flex; flex-direction: column; }
 
-.article-container #infobox { order: 2; }
-
-.article-container #featured-paragraph { order: 1; }
-
-.article-container :nth-child(n+3) { order: 3; }
-
 #featured-paragraph { margin-bottom: 0; }
 
 #infobox, .thumbnail-container { border: 1px solid #eee; padding: 0.3rem; font-size: 95%; background-color: #f8f9fa; }
@@ -93,6 +89,18 @@ header { margin: 0.5rem 0 0.4rem 0; }
 
 .thumbnail-caption { margin-top: 0.3rem; }
 
+/*	.download-button {                              */
+/*		margin: 0.5rem 0;                           */
+/*		padding: 0.5rem;                            */
+/*		border: 2px solid black;                    */
+/*		box-shadow: 0.1rem 0.1rem $shade-color;     */
+/*		text-align: center;                         */
+/*		margin: 0.5rem;                             */
+/*	}                                               */
+/*	                                                */
+/*	.download-button:hover {                        */
+/*		border: 2px solid red;                      */
+/*	}                                               */
 .quote { margin-top: 1rem; padding: 0.5rem; overflow: hidden; border-left: 1px dotted black; }
 
 .quote p:nth-child(1) { margin-block-start: 0; }
@@ -148,18 +156,18 @@ button { display: block; width: 5rem; padding: 1rem; border: none; background-co
 .icon-twitter:before { content: ""; }
 
 @media only screen and (min-width: 769px) { html { margin: calc(3rem * 2) auto 0 auto; }
-  #page-body { max-width: 1500px; margin: auto; }
-  #content, #header, #footer { padding: 2rem; margin: 1rem; width: 100%; }
+  #page-body { max-width: 1100px; margin: auto; }
+  #content, #header, #footer { padding: 2rem; margin: 1rem 0; width: 100%; }
   #header, #footer { display: flex; }
   hr { margin-bottom: 2rem; }
   .navbar-title { line-height: 2.5rem; }
   .navbar-links-container { padding-top: 0; margin-left: auto; }
-  header { font-size: 2rem; }
   .article-container { display: block; }
-  #infobox, .thumbnail-container { max-width: 20rem; margin: 0.5rem 0 1.3rem 1rem; float: right; clear: both; }
+  #infobox, .thumbnail-container { max-width: 18rem; margin: 0.5rem 0 1.3rem 1rem; float: right; clear: both; }
   .infobox-image { max-width: 90%; }
   .thumbnail-container { max-width: 15rem; }
   .thumbnail-container-fullwidth { max-width: 100%; }
+  .header-nestled { clear: none; }
   .artist-tile-container { display: grid; grid-gap: 1rem; grid-template-columns: repeat(auto-fill, 12rem); }
   .artist-tile { display: grid; height: 14rem; justify-items: center; margin: 0.5rem; }
   .artist-tile-title { text-align: center; }
