@@ -3,7 +3,7 @@ layout: default
 title: Contact
 description: Contact salvaged.work
 permalink: /contact/
-last_modified_at: 2020-12-13
+last_modified_at: 2021-04-26
 ---
 
 # Contact
@@ -23,6 +23,7 @@ Do you have a work that we should salvage? Can you provide a physical copy of a 
 			</label>
 		</p>
 	
+	<div class="g-recaptcha" data-sitekey="6Lcls7oaAAAAAHE48h-DAXpojju5JLjIsHmd0IKt"></div>
 	<!-- your other form fields go here -->
 	
 	<button type="submit">Send</button>
