@@ -2,6 +2,17 @@
   
     {
 
+      "title"    	: "Cybernetic Serendipity - The Computer and the Arts",
+      "url"      	: "/article/cybernetic-serendipity/",
+	  "tags"     	: "cybernetics, computers",
+      "category" 	: "",
+	  "description" : "is the title of a special 1968 issue of the British magazine 'Studio International.' The issue was first published to coincide with an exhibition entitled 'Cybernetic Serendipity,' dealing broadly with the demonstration of how humans can use the computer and new technology to extend creativity and inventiveness.",
+      "date"     	: "2021-06-11 00:00:00 +0200"
+
+    } ,
+  
+    {
+
       "title"    	: "Klankteksten - Konkrete Poëzie - Visuele Teksten",
       "url"      	: "/article/klankteksten/",
 	  "tags"     	: "klankteksten",
