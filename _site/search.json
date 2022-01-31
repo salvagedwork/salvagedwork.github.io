@@ -2,6 +2,72 @@
   
     {
 
+      "title"    	: "Asger Jorn Catalogue raisonné Series",
+      "url"      	: "/article/jorn-catalogue-raisonne/",
+	  "tags"     	: "asger-jorn",
+      "category" 	: "",
+	  "description" : "is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
+      "date"     	: "2021-08-05 00:00:00 +0200"
+
+    } ,
+  
+    {
+
+      "title"    	: "Asger Jorn - Supplement - Paintings 1930-1973",
+      "url"      	: "/article/atkins-jorn-supplement/",
+	  "tags"     	: "asger-jorn",
+      "category" 	: "",
+	  "description" : "is the penultimate book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
+      "date"     	: "2021-08-05 00:00:00 +0200"
+
+    } ,
+  
+    {
+
+      "title"    	: "Jorn in Scandinavia 1930-1953",
+      "url"      	: "/article/atkins-jorn-scandinavia/",
+	  "tags"     	: "asger-jorn",
+      "category" 	: "",
+	  "description" : "is the first book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
+      "date"     	: "2021-08-05 00:00:00 +0200"
+
+    } ,
+  
+    {
+
+      "title"    	: "Asger Jorn - Revised Supplement",
+      "url"      	: "/article/atkins-jorn-revised-supplement/",
+	  "tags"     	: "asger-jorn",
+      "category" 	: "",
+	  "description" : "is the final book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
+      "date"     	: "2021-08-05 00:00:00 +0200"
+
+    } ,
+  
+    {
+
+      "title"    	: "Asger Jorn - The Final Years 1965-1973",
+      "url"      	: "/article/atkins-jorn-final-years/",
+	  "tags"     	: "asger-jorn",
+      "category" 	: "",
+	  "description" : "is the third book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
+      "date"     	: "2021-08-05 00:00:00 +0200"
+
+    } ,
+  
+    {
+
+      "title"    	: "Asger Jorn - The Crucial Years 1954-1964",
+      "url"      	: "/article/atkins-jorn-crucial-years/",
+	  "tags"     	: "asger-jorn",
+      "category" 	: "",
+	  "description" : "is the second book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
+      "date"     	: "2021-08-05 00:00:00 +0200"
+
+    } ,
+  
+    {
+
       "title"    	: "Cybernetic Serendipity - The Computer and the Arts",
       "url"      	: "/article/cybernetic-serendipity/",
 	  "tags"     	: "cybernetics, computers",
@@ -205,17 +271,6 @@
 	  "tags"     	: "asger-jorn, cobra, helhesten",
       "category" 	: "",
 	  "description" : "is the first issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.",
-      "date"     	: "2019-01-01 00:00:00 +0100"
-
-    } ,
-  
-    {
-
-      "title"    	: "Jorn in Scandinavia",
-      "url"      	: "/article/atkins-jorn-scandinavia/",
-	  "tags"     	: "asger-jorn",
-      "category" 	: "",
-	  "description" : "is a book written in French by Asger Jorn and Noël Arnaud, and edited and published by Jean Jacques Pauvert in 1968.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
     } ,
