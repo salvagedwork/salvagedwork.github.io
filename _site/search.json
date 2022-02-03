@@ -2,6 +2,17 @@
   
     {
 
+      "title"    	: "Mémoires",
+      "url"      	: "/article/memoires/",
+	  "tags"     	: "asger-jorn, guy-debord",
+      "category" 	: "",
+	  "description" : "is an artist's book made by the Danish artist Asger Jorn in collaboration with the French artist and theorist Guy Debord.",
+      "date"     	: "2022-02-03 00:00:00 +0100"
+
+    } ,
+  
+    {
+
       "title"    	: "Asger Jorn Catalogue raisonné Series",
       "url"      	: "/article/jorn-catalogue-raisonne/",
 	  "tags"     	: "asger-jorn",
