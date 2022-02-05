@@ -57,7 +57,9 @@ a.social-media-icon:hover { text-decoration: none; }
 
 .article-tile h3 { padding-top: 0; }
 
-.article-tag { font-style: italic; }
+.article-tag { font-style: italic; font-size: 80%; }
+
+.article-tag-link { text-decoration: none; }
 
 header { margin: 0.5rem 0 0.4rem 0; }
 

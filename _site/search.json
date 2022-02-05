@@ -2,6 +2,17 @@
   
     {
 
+      "title"    	: "La chevelure des choses",
+      "url"      	: "/article/chevelure-des-choses/",
+	  "tags"     	: "asger-jorn, christian-dotremont",
+      "category" 	: "",
+	  "description" : "(The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.",
+      "date"     	: "2022-02-05 00:00:00 +0100"
+
+    } ,
+  
+    {
+
       "title"    	: "Mémoires",
       "url"      	: "/article/memoires/",
 	  "tags"     	: "asger-jorn, guy-debord",
