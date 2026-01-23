@@ -125,7 +125,7 @@ header { margin: 0.5rem 0 0.4rem 0; }
 
 .collapsible-text-button:after { content: '\002B'; color: white; font-weight: bold; float: right; margin-left: 5px; }
 
-.active:after { content: "\2212"; }
+.collapsible-text-button.active:after { content: "\2212"; }
 
 .collapsible-text-content { padding: 0 1rem; background-color: #eee; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
 
@@ -137,6 +137,95 @@ textarea { width: 100%; padding: 2rem 0.2rem 0.2rem 0.2rem; border-style: none n
 
 button { display: block; width: 5rem; padding: 1rem; border: none; background-color: #1a1a1a; color: #fff; font-weight: 600; width: 100%; }
 
+.filter-container { margin-bottom: 1.5rem; padding: 1rem; background-color: #f8f9fa; border: 1px solid #eee; }
+
+.filter-group { margin-bottom: 1rem; }
+
+.filter-group:last-child { margin-bottom: 0; }
+
+.filter-label { display: block; font-family: "GT-Eesti-Display-Bold", sans-serif; margin-bottom: 0.5rem; }
+
+.filter-buttons { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+.filter-btn { display: inline-block; padding: 0.3rem 0.6rem; font-size: 0.85rem; font-family: "GT-Eesti-Text-Light", sans-serif; background-color: white; color: #1a1a1a; border: 1px solid #ccc; cursor: pointer; transition: all 0.15s ease; width: auto; }
+
+.filter-btn:hover { background-color: #eee; color: #1a1a1a; border-color: #ccc; }
+
+.filter-btn.active { background-color: red; color: white; border-color: red; }
+
+.filter-btn.active:hover { background-color: #cc0000; border-color: #cc0000; }
+
+.article-count { font-style: italic; margin-bottom: 1rem; color: #666; }
+
+.article-details-subjects { font-size: 80%; }
+
+.article-subject { font-style: italic; }
+
+.header-top-row { display: flex; align-items: center; width: 100%; }
+
+.burger-menu { display: none; flex-direction: column; justify-content: space-between; width: 1.5rem; height: 1.2rem; background: transparent; border: none; cursor: pointer; padding: 0; margin-left: auto; }
+
+.burger-line { display: block; width: 100%; height: 2px; background-color: #1a1a1a; transition: all 0.2s ease; }
+
+.burger-menu.active .burger-line:nth-child(1) { transform: rotate(45deg) translate(0.35rem, 0.35rem); }
+
+.burger-menu.active .burger-line:nth-child(2) { opacity: 0; }
+
+.burger-menu.active .burger-line:nth-child(3) { transform: rotate(-45deg) translate(0.35rem, -0.35rem); }
+
+.mobile-nav { display: none; flex-direction: column; width: 100%; padding-top: 0.8rem; }
+
+.mobile-nav.visible { display: flex; }
+
+.mobile-nav-link { font-family: "GT-Eesti-Display-Bold", sans-serif; font-size: 1.1rem; padding: 0.5rem 0; text-decoration: none; }
+
+.mobile-nav-link:hover { text-decoration: underline red; }
+
+.mobile-nav-divider { height: 1px; background-color: #eee; margin: 0.5rem 0; }
+
+.mobile-nav-social { display: flex; gap: 1rem; padding: 0.5rem 0; }
+
+.mobile-nav-social .social-media-icon { font-size: 1.3rem; }
+
+.header-search-container { position: relative; }
+
+.header-search-input { font-family: "GT-Eesti-Text-Light", sans-serif; font-size: 0.9rem; padding: 0.3rem 0.5rem; border: 1px solid #ccc; transition: border-color 0.2s ease; }
+
+.header-search-input:focus { outline: none; border-color: #1a1a1a; }
+
+.header-search-input::placeholder { color: #999; }
+
+.header-search-results { display: none; position: absolute; top: 100%; left: 0; right: 0; max-height: 400px; overflow-y: auto; background-color: white; border: 1px solid #ccc; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); z-index: 1000; }
+
+.header-search-results.visible { display: block; }
+
+.header-search-result { display: block; padding: 0.6rem 0.8rem; text-decoration: none; border-bottom: 1px solid #eee; transition: background-color 0.1s ease; }
+
+.header-search-result:hover { background-color: #eee; text-decoration: none; }
+
+.header-search-result:last-child { border-bottom: none; }
+
+.header-search-result-title { display: block; font-family: "GT-Eesti-Display-Bold", sans-serif; font-size: 0.95rem; color: #1a1a1a; }
+
+.header-search-result-desc { display: block; font-family: "GT-Eesti-Text-Light", sans-serif; font-size: 0.8rem; color: #666; margin-top: 0.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.header-search-no-results { padding: 0.8rem; font-family: "GT-Eesti-Text-Light", sans-serif; color: #666; font-style: italic; }
+
+.search-highlight { background-color: #ffeb3b; color: #1a1a1a; padding: 0 0.1rem; }
+
+@media only screen and (max-width: 769px) { .burger-menu { display: flex; }
+  .navbar-links-container { display: none; }
+  .header-search-desktop { display: none; }
+  .header-search-mobile { display: block; width: 100%; margin-top: 0.8rem; }
+  .header-search-mobile .header-search-input { width: 100%; }
+  #footer .navbar-links-container { display: none; } }
+@media only screen and (min-width: 769px) { .burger-menu { display: none; }
+  .mobile-nav { display: none !important; }
+  .header-search-mobile { display: none; }
+  .header-search-desktop { display: inline-block; vertical-align: middle; margin-left: 0.5rem; }
+  .header-search-desktop .header-search-input { width: 120px; transition: width 0.2s ease, border-color 0.2s ease; }
+  .header-search-desktop .header-search-input:focus { width: 180px; }
+  .header-search-desktop .header-search-results { width: 320px; left: auto; right: 0; } }
 @font-face { font-family: 'GT-Eesti-Text-Light'; src: url("/assets/fonts/GT-Eesti-Pro-Text-Light.eot"); src: url("/assets/fonts/GT-Eesti-Pro-Text-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'GT-Eesti-Text-Book'; src: url("/assets/fonts/GT-Eesti-Pro-Text-Book.eot"); src: url("/assets/fonts/GT-Eesti-Pro-Text-Book.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Book.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Book.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'GT-Eesti-Text-Book-Italic'; src: url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.eot"); src: url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
