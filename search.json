@@ -9,7 +9,7 @@ layout: null
       "url"      	: "{{ site.baseurl }}{{ post.url }}",
 	  "tags"     	: "{{ post.tags | join: ', ' }}",
       "category" 	: "{{ post.category }}",
-	  "description" : "{{ post.description }}",
+	  "description" : "{{ post.description | escape }}",
       "date"     	: "{{ post.date }}"
 
     } {% unless forloop.last %},{% endunless %}

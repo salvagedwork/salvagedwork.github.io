@@ -1,0 +1,16 @@
+{%- comment -%}
+Converts hyphenated-text to Title Case
+Usage: {% include titlecase.html text="some-hyphenated-text" %}
+Output: Some Hyphenated Text
+{%- endcomment -%}
+{%- assign words = include.text | split: '-' -%}
+{%- assign result = "" -%}
+{%- for word in words -%}
+{%- assign capitalized = word | capitalize -%}
+{%- if forloop.first -%}
+{%- assign result = capitalized -%}
+{%- else -%}
+{%- assign result = result | append: " " | append: capitalized -%}
+{%- endif -%}
+{%- endfor -%}
+{{ result }}

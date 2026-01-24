@@ -1,36 +1,168 @@
-// Footnote script from https://www.milania.de/blog/Automatic_footnote_generation_with_jQuery
+/**
+ * Footnote generation script
+ * Converts <span class="footnote">text</span> into numbered footnotes with hover tooltips
+ * 
+ * Originally adapted from https://www.milania.de/blog/Automatic_footnote_generation_with_jQuery
+ * Rewritten in vanilla JavaScript
+ */
 
-$(document).ready(function () {                                         // Proceed further when all necessary information is loaded
-    var ctnFootnotesGlobal = 1;
+(function() {
+	'use strict';
 
-    $("article div.entry").each(function () {                           // Handle each article individually
-        var ctnFootnotes = 1;                                           // Counter for the footnotes inside the current article
-        $(this).find("span.footnote").each(function () {                // Traverse through each footnote element inside the article
-            var id = "ftn_" + ctnFootnotesGlobal + "_" + ctnFootnotes;  // Automatic id generation for the links
-            var html = $(this).html();                                  // Content of the footnote element (contains the footnote text)
+	// Configuration
+	const CONFIG = {
+		articleSelector: 'article div.entry',
+		footnoteSelector: 'span.footnote',
+		tooltipClass: 'tooltip',
+		footnoteIdPrefix: 'ftn_',
+		fadeInDuration: 300,
+		fadeOutDuration: 200,
+		tooltipOffsetX: 20,
+		tooltipOffsetY: 10
+	};
 
-            if (ctnFootnotes === 1) {
-                //$(this).parents(".entry").append("<hr />");             // Add a horizontal line before the first footnote after the article text (only for the article where the span element is located)
-            }
+	// Track active tooltip for cleanup
+	let activeTooltip = null;
 
-            $(this).html("<sup><a style='text-decoration: none;' href='#" + id + "'>" + ctnFootnotes + "</a></sup>");                                  // Add the footnote number to the text
-            $(this).parents(".entry").append("<sup id='" + id + "'>" + ctnFootnotes + ". " + html + "</sup><br />");    // Add the footnote text to the bottom of the current article
+	/**
+	 * Initialize footnotes when DOM is ready
+	 */
+	function init() {
+		if (document.readyState === 'loading') {
+			document.addEventListener('DOMContentLoaded', processFootnotes);
+		} else {
+			processFootnotes();
+		}
+	}
 
-            /* Show tooltip on mouse hover (http://www.alessioatzeni.com/blog/simple-tooltip-with-jquery-only-text/) */
-            $(this).hover(function () {               // Hover in
-                var $tooltip = $("<p class='tooltip'></p>");
-                $tooltip.html(html).appendTo("body").fadeIn("slow");        // Add paragraph
-                MathJax.Hub.Queue(["Typeset", MathJax.Hub, $tooltip[0]]);   // Re-run MathJax typesetting on the new element
-            }, function () {                          // Hover out
-                $(".tooltip").fadeOut().remove();     // Remove paragraph
-            }).mousemove(function (e) {               // Move the box with the mouse while still hovering over the link
-                var mouseX = e.pageX + 20;            // Get X coordinates
-                var mouseY = e.pageY + 10;            // Get Y coordinates
-                $(".tooltip").css({top: mouseY, left: mouseX});
-            });
+	/**
+	 * Process all footnotes in article entries
+	 */
+	function processFootnotes() {
+		const articles = document.querySelectorAll(CONFIG.articleSelector);
+		let globalCounter = 1;
 
-            ctnFootnotes++;
-            ctnFootnotesGlobal++;
-        });
-    });
-}); 
+		articles.forEach(article => {
+			const footnotes = article.querySelectorAll(CONFIG.footnoteSelector);
+			let localCounter = 1;
+
+			footnotes.forEach(footnote => {
+				const id = `${CONFIG.footnoteIdPrefix}${globalCounter}_${localCounter}`;
+				const content = footnote.innerHTML;
+
+				// Replace footnote span content with superscript link
+				footnote.innerHTML = `<sup><a href="#${id}" style="text-decoration: none;">${localCounter}</a></sup>`;
+
+				// Append footnote text at bottom of article
+				const footnoteText = document.createElement('sup');
+				footnoteText.id = id;
+				footnoteText.innerHTML = `${localCounter}. ${content}`;
+				article.appendChild(footnoteText);
+				article.appendChild(document.createElement('br'));
+
+				// Set up tooltip hover behavior
+				setupTooltip(footnote, content);
+
+				localCounter++;
+				globalCounter++;
+			});
+		});
+	}
+
+	/**
+	 * Set up tooltip hover behavior for a footnote
+	 * @param {HTMLElement} element - The footnote element
+	 * @param {string} content - The footnote content to display
+	 */
+	function setupTooltip(element, content) {
+		element.addEventListener('mouseenter', function(e) {
+			showTooltip(content, e.pageX, e.pageY);
+		});
+
+		element.addEventListener('mouseleave', function() {
+			hideTooltip();
+		});
+
+		element.addEventListener('mousemove', function(e) {
+			moveTooltip(e.pageX, e.pageY);
+		});
+	}
+
+	/**
+	 * Show tooltip with content at specified position
+	 * @param {string} content - HTML content to display
+	 * @param {number} x - Mouse X position
+	 * @param {number} y - Mouse Y position
+	 */
+	function showTooltip(content, x, y) {
+		// Remove any existing tooltip
+		hideTooltip(true);
+
+		// Create new tooltip
+		const tooltip = document.createElement('p');
+		tooltip.className = CONFIG.tooltipClass;
+		tooltip.innerHTML = content;
+		tooltip.style.opacity = '0';
+		tooltip.style.position = 'absolute';
+		tooltip.style.left = (x + CONFIG.tooltipOffsetX) + 'px';
+		tooltip.style.top = (y + CONFIG.tooltipOffsetY) + 'px';
+		
+		document.body.appendChild(tooltip);
+		activeTooltip = tooltip;
+
+		// Fade in
+		requestAnimationFrame(() => {
+			tooltip.style.transition = `opacity ${CONFIG.fadeInDuration}ms ease`;
+			tooltip.style.opacity = '1';
+		});
+
+		// Trigger MathJax typesetting if available
+		if (typeof MathJax !== 'undefined' && MathJax.Hub) {
+			MathJax.Hub.Queue(['Typeset', MathJax.Hub, tooltip]);
+		} else if (typeof MathJax !== 'undefined' && MathJax.typesetPromise) {
+			// MathJax 3.x API
+			MathJax.typesetPromise([tooltip]).catch(function(err) {
+				console.warn('MathJax typeset failed:', err);
+			});
+		}
+	}
+
+	/**
+	 * Hide and remove the active tooltip
+	 * @param {boolean} immediate - Skip fade animation
+	 */
+	function hideTooltip(immediate) {
+		if (!activeTooltip) return;
+
+		const tooltip = activeTooltip;
+		activeTooltip = null;
+
+		if (immediate) {
+			tooltip.remove();
+			return;
+		}
+
+		tooltip.style.transition = `opacity ${CONFIG.fadeOutDuration}ms ease`;
+		tooltip.style.opacity = '0';
+
+		setTimeout(() => {
+			if (tooltip.parentNode) {
+				tooltip.remove();
+			}
+		}, CONFIG.fadeOutDuration);
+	}
+
+	/**
+	 * Move tooltip to follow mouse cursor
+	 * @param {number} x - Mouse X position
+	 * @param {number} y - Mouse Y position
+	 */
+	function moveTooltip(x, y) {
+		if (!activeTooltip) return;
+		activeTooltip.style.left = (x + CONFIG.tooltipOffsetX) + 'px';
+		activeTooltip.style.top = (y + CONFIG.tooltipOffsetY) + 'px';
+	}
+
+	// Initialize
+	init();
+})();

@@ -1,13 +1,15 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
-	<meta charset="utf-8" />
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<title>
 		
 			Asger Jorn - The Crucial Years 1954-1964 - salvaged.work
 		
 	</title>
+	
+	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -15,13 +17,30 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e81515">
 	<meta name="msapplication-TileColor" content="#2d89ef">
 	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/featherlight.min.css">
 	<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!-- 
+		Scripts loaded in head:
+		- jQuery: Required for Featherlight lightbox
+		- detect_swipe: Required for Featherlight gallery swipe support
+		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- recaptcha: Only needed on contact page, loaded async
+	-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.4/jquery.detect_swipe.min.js"></script>
-	<script src="/js/footnotes.js"></script>
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	
+	<!-- Site scripts (vanilla JS) -->
+	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/background.js" defer></script>
+	
+	<!-- reCAPTCHA - only needed on contact page -->
+	
+	
 	<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="salvaged.work" />
 	<!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Asger Jorn - The Crucial Years 1954-1964 | salvaged.work</title>
@@ -45,6 +64,7 @@
 <!-- End Jekyll SEO tag -->
 
 </head>
+
 	<body>
 		<div id="page-body">
 			<div id="header">
@@ -57,7 +77,7 @@
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
 		<div class="header-search-container header-search-desktop">
-			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off" />
+			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
 		</div>
 	</div>
@@ -68,7 +88,7 @@
 	</button>
 </div>
 
-<div class="mobile-nav" id="mobile-nav">
+<nav class="mobile-nav" id="mobile-nav">
 	
 	<a href="/artists" class="mobile-nav-link">Artists</a>
 	
@@ -84,43 +104,55 @@
 		<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 		<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>
 	</div>
-</div>
+</nav>
 
 <div class="header-search-container header-search-mobile">
-	<input type="text" id="header-search-input-mobile" class="header-search-input" placeholder="Search..." autocomplete="off" />
+	<input type="text" id="header-search-input-mobile" class="header-search-input" placeholder="Search..." autocomplete="off">
 	<div id="header-search-results-mobile" class="header-search-results"></div>
 </div>
 
-<script src="/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+<script src="/js/simple-jekyll-search.min.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
+	'use strict';
+	
 	// Burger menu toggle
-	const burgerMenu = document.getElementById('burger-menu');
-	const mobileNav = document.getElementById('mobile-nav');
+	var burgerMenu = document.getElementById('burger-menu');
+	var mobileNav = document.getElementById('mobile-nav');
 	
-	burgerMenu.addEventListener('click', function() {
-		this.classList.toggle('active');
-		mobileNav.classList.toggle('visible');
-	});
+	if (burgerMenu && mobileNav) {
+		burgerMenu.addEventListener('click', function() {
+			this.classList.toggle('active');
+			mobileNav.classList.toggle('visible');
+		});
+	}
 	
-	// Search functionality - set up for both desktop and mobile inputs
-	function setupSearch(inputId, resultsId) {
-		const searchInput = document.getElementById(inputId);
-		const searchResults = document.getElementById(resultsId);
+	// Search functionality
+	function escapeRegex(string) {
+		return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	}
+	
+	function highlightMatch(text, query) {
+		if (!query || !text) return text;
+		var regex = new RegExp('(' + escapeRegex(query) + ')', 'gi');
+		return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+	}
+	
+	// Only use desktop OR mobile based on viewport, not both
+	// This avoids the race condition in SimpleJekyllSearch's global state
+	function initSearch() {
+		var isDesktop = window.innerWidth >= 769;
+		var inputId = isDesktop ? 'header-search-input-desktop' : 'header-search-input-mobile';
+		var resultsId = isDesktop ? 'header-search-results-desktop' : 'header-search-results-mobile';
 		
-		if (!searchInput || !searchResults) return;
+		var searchInput = document.getElementById(inputId);
+		var searchResults = document.getElementById(resultsId);
 		
-		let currentQuery = '';
-		
-		function escapeRegex(string) {
-			return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+		if (!searchInput || !searchResults || typeof SimpleJekyllSearch === 'undefined') {
+			return;
 		}
 		
-		function highlightMatch(text, query) {
-			if (!query || !text) return text;
-			const regex = new RegExp('(' + escapeRegex(query) + ')', 'gi');
-			return text.replace(regex, '<mark class="search-highlight">$1</mark>');
-		}
+		var currentQuery = '';
 		
 		SimpleJekyllSearch({
 			searchInput: searchInput,
@@ -130,20 +162,23 @@ document.addEventListener('DOMContentLoaded', function() {
 			noResultsText: '<div class="header-search-no-results">No results found</div>',
 			limit: 8,
 			sortMiddleware: function(a, b) {
-				const query = currentQuery.toLowerCase();
-				const aTitle = (a.title || '').toLowerCase();
-				const bTitle = (b.title || '').toLowerCase();
+				var query = currentQuery.toLowerCase();
+				var aTitle = (a.title || '').toLowerCase();
+				var bTitle = (b.title || '').toLowerCase();
 				
-				const aStartsWith = aTitle.startsWith(query);
-				const bStartsWith = bTitle.startsWith(query);
+				// Prioritize titles starting with query
+				var aStartsWith = aTitle.startsWith(query);
+				var bStartsWith = bTitle.startsWith(query);
 				if (aStartsWith && !bStartsWith) return -1;
 				if (!aStartsWith && bStartsWith) return 1;
 				
-				const aTitleContains = aTitle.includes(query);
-				const bTitleContains = bTitle.includes(query);
+				// Then prioritize titles containing query
+				var aTitleContains = aTitle.includes(query);
+				var bTitleContains = bTitle.includes(query);
 				if (aTitleContains && !bTitleContains) return -1;
 				if (!aTitleContains && bTitleContains) return 1;
 				
+				// Fall back to alphabetical
 				return aTitle.localeCompare(bTitle);
 			},
 			templateMiddleware: function(prop, value, template) {
@@ -154,6 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		});
 		
+		// Show/hide results and track current query
 		searchInput.addEventListener('input', function() {
 			currentQuery = this.value;
 			if (this.value.length > 0) {
@@ -181,17 +217,10 @@ document.addEventListener('DOMContentLoaded', function() {
 				this.blur();
 			}
 		});
-		
-		searchResults.addEventListener('click', function(e) {
-			if (e.target.closest('.header-search-result')) {
-				searchResults.classList.remove('visible');
-			}
-		});
 	}
 	
-	setupSearch('header-search-input-desktop', 'header-search-results-desktop');
-	setupSearch('header-search-input-mobile', 'header-search-results-mobile');
-});
+	initSearch();
+})();
 </script>
 
 			</div>
@@ -321,15 +350,7 @@ for (i = 0; i < coll.length; i++) {
 <span>
   
     <a href="/tag/asger-jorn/">
-			
-			
-			
-				
-					Asger
-				
-					Jorn
-				
-			
+			Asger Jorn
 		</a><br />
   
 </span>
@@ -349,25 +370,12 @@ for (i = 0; i < coll.length; i++) {
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>
 </div>
-<script type="text/javascript"> 
-	var totalCount = 7;
-	function changeIt() 
-	{
-	var num = Math.ceil( Math.random() * totalCount );
-	document.body.background = '/assets/images/backgrounds/'+num+'.jpg';
-	document.body.style.backgroundSize = "1300px";
-	document.body.style.backgroundPosition = "top";
-	document.body.style.backgroundRepeat = "repeat-y";
-	document.body.style.backgroundAttachment = "fixed";
-	}
-	document.addEventListener("DOMContentLoaded", ()=>{
-		changeIt();
-	});
-	
-</script>
+
 			</div>
 		</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/js/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!-- Featherlight lightbox - loaded at end of body for proper initialization -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js"></script>
+		<script src="/js/featherlight.gallery.min.js"></script>
 	</body>
 </html>

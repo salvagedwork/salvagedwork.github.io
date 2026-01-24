@@ -1,19 +1,13 @@
 ---
 layout: default
 ---
-<h1>
-	{% assign words = page.name | split: '-' %}
-	{% capture titlecase %}
-		{% for word in words %}
-			{{ word | capitalize }}
-		{% endfor %}
-	{% endcapture %}
-	{{ titlecase }}
-</h1>
+{%- capture creator_name -%}{% include titlecase.html text=page.name %}{%- endcapture -%}
+
+<h1>{{ creator_name }}</h1>
 
 {{ content }}
 
-<h3>Articles featuring {{ titlecase }}:</h3>
+<h3>Articles featuring {{ creator_name }}:</h3>
 
 {% assign filtered_posts = site.posts | where: 'tags', page.name %}
 {% for post in filtered_posts %}

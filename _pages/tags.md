@@ -15,13 +15,7 @@ permalink: /tags/
 
 {% for tag in sortedtags %}
   <h2>
-		{% assign words = tag | split: '-' %}
-		{% capture titlecase %}
-			{% for word in words %}
-				{{ word | capitalize }}
-			{% endfor %}
-		{% endcapture %}
-		{{ titlecase }}
+		{% include titlecase.html text=tag %}
 	</h2>
   <ul>
   {% for post in site.tags[tag] %}

@@ -1,26 +1,47 @@
-$display-width: 90%;
-$information-desktop: "only screen and (min-width: 769px)";
-$information-mobile: "only screen and (max-width: 769px)";
-$top-margin: 3rem;
+// ==========================================================================
+// Variables
+// ==========================================================================
 
-$content-background-color: white;
+// Layout
+$display-width: 90%;
+$max-content-width: 1100px;
+$top-margin: 3rem;
 $content-padding: 2rem;
 
+// Breakpoints
+$breakpoint-desktop: 769px;
+$information-desktop: "only screen and (min-width: #{$breakpoint-desktop})";
+$information-mobile: "only screen and (max-width: #{$breakpoint-desktop - 1})";
+
+// Colors
+$color-text: #1a1a1a;
+$color-background: white;
+$color-shade: #eee;
+$color-border: #ccc;
+$color-border-dark: #a2a9b1;
+$color-muted: #666;
+$color-highlight: #f8f9fa;
+$color-accent: red;
+$color-accent-dark: #cc0000;
+$color-search-highlight: #ffeb3b;
+
+// Typography
 $font-regular: 'GT-Eesti-Text-Light', sans-serif;
-$font-ubold: 'GT-Eesti-Display-UBold', sans-serif;
 $font-bold: 'GT-Eesti-Display-Bold', sans-serif;
-$font-large: 2rem;
-$font-medium: 1.7em;
-$font-small: 1rem;
+$font-ubold: 'GT-Eesti-Display-UBold', sans-serif;
+$font-size-large: 2rem;
+$font-size-medium: 1.7em;
+$font-size-base: 1rem;
+$font-size-small: 0.85rem;
 $line-height: 1.6;
 
-$font-color: #1a1a1a;
-$shade-color: #eee;
+
+// ==========================================================================
+// CSS Reset
+// ==========================================================================
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+	box-sizing: border-box;
 }

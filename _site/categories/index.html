@@ -1,13 +1,15 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
-	<meta charset="utf-8" />
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<title>
 		
 			Categories - salvaged.work
 		
 	</title>
+	
+	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -15,13 +17,30 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e81515">
 	<meta name="msapplication-TileColor" content="#2d89ef">
 	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/featherlight.min.css">
 	<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!-- 
+		Scripts loaded in head:
+		- jQuery: Required for Featherlight lightbox
+		- detect_swipe: Required for Featherlight gallery swipe support
+		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- recaptcha: Only needed on contact page, loaded async
+	-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.4/jquery.detect_swipe.min.js"></script>
-	<script src="/js/footnotes.js"></script>
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	
+	<!-- Site scripts (vanilla JS) -->
+	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/background.js" defer></script>
+	
+	<!-- reCAPTCHA - only needed on contact page -->
+	
+	
 	<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="salvaged.work" />
 	<!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Categories | salvaged.work</title>
@@ -44,6 +63,7 @@
 <!-- End Jekyll SEO tag -->
 
 </head>
+
 	<body>
 		<div id="page-body">
 			<div id="header">
@@ -56,7 +76,7 @@
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
 		<div class="header-search-container header-search-desktop">
-			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off" />
+			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
 		</div>
 	</div>
@@ -67,7 +87,7 @@
 	</button>
 </div>
 
-<div class="mobile-nav" id="mobile-nav">
+<nav class="mobile-nav" id="mobile-nav">
 	
 	<a href="/artists" class="mobile-nav-link">Artists</a>
 	
@@ -83,43 +103,55 @@
 		<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 		<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>
 	</div>
-</div>
+</nav>
 
 <div class="header-search-container header-search-mobile">
-	<input type="text" id="header-search-input-mobile" class="header-search-input" placeholder="Search..." autocomplete="off" />
+	<input type="text" id="header-search-input-mobile" class="header-search-input" placeholder="Search..." autocomplete="off">
 	<div id="header-search-results-mobile" class="header-search-results"></div>
 </div>
 
-<script src="/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+<script src="/js/simple-jekyll-search.min.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
+	'use strict';
+	
 	// Burger menu toggle
-	const burgerMenu = document.getElementById('burger-menu');
-	const mobileNav = document.getElementById('mobile-nav');
+	var burgerMenu = document.getElementById('burger-menu');
+	var mobileNav = document.getElementById('mobile-nav');
 	
-	burgerMenu.addEventListener('click', function() {
-		this.classList.toggle('active');
-		mobileNav.classList.toggle('visible');
-	});
+	if (burgerMenu && mobileNav) {
+		burgerMenu.addEventListener('click', function() {
+			this.classList.toggle('active');
+			mobileNav.classList.toggle('visible');
+		});
+	}
 	
-	// Search functionality - set up for both desktop and mobile inputs
-	function setupSearch(inputId, resultsId) {
-		const searchInput = document.getElementById(inputId);
-		const searchResults = document.getElementById(resultsId);
+	// Search functionality
+	function escapeRegex(string) {
+		return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	}
+	
+	function highlightMatch(text, query) {
+		if (!query || !text) return text;
+		var regex = new RegExp('(' + escapeRegex(query) + ')', 'gi');
+		return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+	}
+	
+	// Only use desktop OR mobile based on viewport, not both
+	// This avoids the race condition in SimpleJekyllSearch's global state
+	function initSearch() {
+		var isDesktop = window.innerWidth >= 769;
+		var inputId = isDesktop ? 'header-search-input-desktop' : 'header-search-input-mobile';
+		var resultsId = isDesktop ? 'header-search-results-desktop' : 'header-search-results-mobile';
 		
-		if (!searchInput || !searchResults) return;
+		var searchInput = document.getElementById(inputId);
+		var searchResults = document.getElementById(resultsId);
 		
-		let currentQuery = '';
-		
-		function escapeRegex(string) {
-			return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+		if (!searchInput || !searchResults || typeof SimpleJekyllSearch === 'undefined') {
+			return;
 		}
 		
-		function highlightMatch(text, query) {
-			if (!query || !text) return text;
-			const regex = new RegExp('(' + escapeRegex(query) + ')', 'gi');
-			return text.replace(regex, '<mark class="search-highlight">$1</mark>');
-		}
+		var currentQuery = '';
 		
 		SimpleJekyllSearch({
 			searchInput: searchInput,
@@ -129,20 +161,23 @@ document.addEventListener('DOMContentLoaded', function() {
 			noResultsText: '<div class="header-search-no-results">No results found</div>',
 			limit: 8,
 			sortMiddleware: function(a, b) {
-				const query = currentQuery.toLowerCase();
-				const aTitle = (a.title || '').toLowerCase();
-				const bTitle = (b.title || '').toLowerCase();
+				var query = currentQuery.toLowerCase();
+				var aTitle = (a.title || '').toLowerCase();
+				var bTitle = (b.title || '').toLowerCase();
 				
-				const aStartsWith = aTitle.startsWith(query);
-				const bStartsWith = bTitle.startsWith(query);
+				// Prioritize titles starting with query
+				var aStartsWith = aTitle.startsWith(query);
+				var bStartsWith = bTitle.startsWith(query);
 				if (aStartsWith && !bStartsWith) return -1;
 				if (!aStartsWith && bStartsWith) return 1;
 				
-				const aTitleContains = aTitle.includes(query);
-				const bTitleContains = bTitle.includes(query);
+				// Then prioritize titles containing query
+				var aTitleContains = aTitle.includes(query);
+				var bTitleContains = bTitle.includes(query);
 				if (aTitleContains && !bTitleContains) return -1;
 				if (!aTitleContains && bTitleContains) return 1;
 				
+				// Fall back to alphabetical
 				return aTitle.localeCompare(bTitle);
 			},
 			templateMiddleware: function(prop, value, template) {
@@ -153,6 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		});
 		
+		// Show/hide results and track current query
 		searchInput.addEventListener('input', function() {
 			currentQuery = this.value;
 			if (this.value.length > 0) {
@@ -180,17 +216,10 @@ document.addEventListener('DOMContentLoaded', function() {
 				this.blur();
 			}
 		});
-		
-		searchResults.addEventListener('click', function(e) {
-			if (e.target.closest('.header-search-result')) {
-				searchResults.classList.remove('visible');
-			}
-		});
 	}
 	
-	setupSearch('header-search-input-desktop', 'header-search-results-desktop');
-	setupSearch('header-search-input-mobile', 'header-search-results-mobile');
-});
+	initSearch();
+})();
 </script>
 
 			</div>
@@ -205,474 +234,395 @@ document.addEventListener('DOMContentLoaded', function() {
 	<h2>Books</h2>	
 	
 	
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/21-light-drawings-jorn/"><img class="article-tile-image" src="/assets/articles/21-light-drawings-jorn/front.jpg" /></a>
+		<a href="/article/21-light-drawings-jorn/"><img class="article-tile-image" src="/assets/articles/21-light-drawings-jorn/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/21-light-drawings-jorn/">21 Lystegninger</a></h3>
-		<p>21 Lystegninger (21 Light Drawings) is the title of an exhibition catalogue released by the Aarhus Art Association of 1847 in conjunction with an exhibition of Asger Jorn's light drawings at the Aarhus Festuge 1971.</p>
+		<p>(21 Light Drawings) is the title of an exhibition catalogue released by the Aarhus Art Association of 1847 in conjunction with an exhibition of Asger Jorn's light drawings at the Aarhus Festuge 1971.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/atkins-jorn-revised-supplement/"><img class="article-tile-image" src="/assets/articles/atkins-jorn-revised-supplement/front.jpg" /></a>
+		<a href="/article/atkins-jorn-revised-supplement/"><img class="article-tile-image" src="/assets/articles/atkins-jorn-revised-supplement/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/atkins-jorn-revised-supplement/">Asger Jorn - Revised Supplement</a></h3>
-		<p>Asger Jorn - Revised Supplement is the final book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
+		<p>is the final book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/atkins-jorn-supplement/"><img class="article-tile-image" src="/assets/articles/atkins-jorn-supplement/front.jpg" /></a>
+		<a href="/article/atkins-jorn-supplement/"><img class="article-tile-image" src="/assets/articles/atkins-jorn-supplement/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/atkins-jorn-supplement/">Asger Jorn - Supplement - Paintings 1930-1973</a></h3>
-		<p>Asger Jorn - Supplement - Paintings 1930-1973 is the penultimate book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
+		<p>is the penultimate book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/atkins-jorn-crucial-years/"><img class="article-tile-image" src="/assets/articles/atkins-jorn-crucial-years/front.jpg" /></a>
+		<a href="/article/atkins-jorn-crucial-years/"><img class="article-tile-image" src="/assets/articles/atkins-jorn-crucial-years/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/atkins-jorn-crucial-years/">Asger Jorn - The Crucial Years 1954-1964</a></h3>
-		<p>Asger Jorn - The Crucial Years 1954-1964 is the second book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
+		<p>is the second book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/atkins-jorn-final-years/"><img class="article-tile-image" src="/assets/articles/atkins-jorn-final-years/front.jpg" /></a>
+		<a href="/article/atkins-jorn-final-years/"><img class="article-tile-image" src="/assets/articles/atkins-jorn-final-years/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/atkins-jorn-final-years/">Asger Jorn - The Final Years 1965-1973</a></h3>
-		<p>Asger Jorn - The Final Years 1965-1973 is the third book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
+		<p>is the third book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/jorn-catalogue-raisonne/"><img class="article-tile-image" src="/assets/articles/jorn-catalogue-raisonne/front.jpg" /></a>
+		<a href="/article/jorn-catalogue-raisonne/"><img class="article-tile-image" src="/assets/articles/jorn-catalogue-raisonne/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a></h3>
-		<p>Asger Jorn Catalogue raisonné Series is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
+		<p>is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/jorn-a-silkeborg/"><img class="article-tile-image" src="/assets/articles/jorn-a-silkeborg/asger_jorn_a_silkeborg_cover.jpg" /></a>
+		<a href="/article/jorn-a-silkeborg/"><img class="article-tile-image" src="/assets/articles/jorn-a-silkeborg/asger_jorn_a_silkeborg_cover.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/jorn-a-silkeborg/">Asger Jorn à Silkeborg</a></h3>
-		<p>Asger Jorn à Silkeborg Le musée d'un peintre (Asger Jorn in Silkeborg, a painter's museum) is a partial catalogue of works held by the Silkeborg Museum of Art with a focus on the art of Danish painter Asger Jorn and the relationship that the museum's other works have with Jorn's art.</p>
+		<p>Le musée d'un peintre (Asger Jorn in Silkeborg, a painter's museum) is a partial catalogue of works held by the Silkeborg Museum of Art with a focus on the art of Danish painter Asger Jorn and the relationship that the museum's other works have with Jorn's art.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="cybernetics,computers" data-subjects="">
+	<div class="article-tile" data-tags="cybernetics,computers" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/cybernetic-serendipity/"><img class="article-tile-image" src="/assets/articles/cybernetic-serendipity/front.jpg" /></a>
+		<a href="/article/cybernetic-serendipity/"><img class="article-tile-image" src="/assets/articles/cybernetic-serendipity/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/cybernetic-serendipity/">Cybernetic Serendipity - The Computer and the Arts</a></h3>
-		<p>Cybernetic Serendipity - The Computer and the Arts is the title of a special 1968 issue of the British magazine 'Studio International.' The issue was first published to coincide with an exhibition entitled 'Cybernetic Serendipity,' dealing broadly with the demonstration of how humans can use the computer and new technology to extend creativity and inventiveness.</p>
+		<p>is the title of a special 1968 issue of the British magazine 'Studio International.' The issue was first published to coincide with an exhibition entitled 'Cybernetic Serendipity,' dealing broadly with the demonstration of how humans can use the computer and new technology to extend creativity and inventiveness.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/cybernetics/" class="article-tag-link">Cybernetics</a>, 
-			<a href="/tag/computers/" class="article-tag-link">Computers</a>
-			
-		</span>
-		</p>
+			<a href="/tag/cybernetics/" class="article-tag-link">Cybernetics</a>, <a href="/tag/computers/" class="article-tag-link">Computers</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/helhesten/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_bound_aargang.jpg" /></a>
+		<a href="/article/helhesten/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_bound_aargang.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/helhesten/">Helhesten</a></h3>
-		<p>Helhesten was a Danish art journal published over nine issues from April 1941 to November 1944 which featured the abstract expressionist art of the Danish avantgarde group of the same name.</p>
+		<p>was a Danish art journal published over nine issues from April 1941 to November 1944 which featured the abstract expressionist art of the Danish avantgarde group of the same name.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/cobra/" class="article-tag-link">Cobra</a>, <a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/helhesten-1.1/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_1.1_cover.jpg" /></a>
+		<a href="/article/helhesten-1.1/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_1.1_cover.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/helhesten-1.1/">Helhesten (Year 1, Booklet 1)</a></h3>
-		<p>Helhesten (Year 1, Booklet 1) is the first issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
+		<p>is the first issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/cobra/" class="article-tag-link">Cobra</a>, <a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/helhesten-1.2/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_1.2_cover.jpg" /></a>
+		<a href="/article/helhesten-1.2/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_1.2_cover.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/helhesten-1.2/">Helhesten (Year 1, Booklet 2)</a></h3>
-		<p>Helhesten (Year 1, Booklet 2) is the second issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
+		<p>is the second issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/cobra/" class="article-tag-link">Cobra</a>, <a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/helhesten-1.3/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_1.3_cover.jpg" /></a>
+		<a href="/article/helhesten-1.3/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_1.3_cover.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/helhesten-1.3/">Helhesten (Year 1, Booklet 3)</a></h3>
-		<p>Helhesten (Year 1, Booklet 3) is the third issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
+		<p>is the third issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/cobra/" class="article-tag-link">Cobra</a>, <a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/helhesten-1.4/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_1.4_cover.jpg" /></a>
+		<a href="/article/helhesten-1.4/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_1.4_cover.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/helhesten-1.4/">Helhesten (Year 1, Booklet 4)</a></h3>
-		<p>Helhesten (Year 1, Booklet 4) is the fourth issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
+		<p>is the fourth issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/cobra/" class="article-tag-link">Cobra</a>, <a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/helhesten-1.5-6/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_1.56_cover.jpg" /></a>
+		<a href="/article/helhesten-1.5-6/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_1.56_cover.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/helhesten-1.5-6/">Helhesten (Year 1, Booklets 5 & 6)</a></h3>
-		<p>Helhesten (Year 1, Booklets 5 & 6) is the fifth issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
+		<p>is the fifth issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/cobra/" class="article-tag-link">Cobra</a>, <a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/helhesten-2.1/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_2.1_cover.jpg" /></a>
+		<a href="/article/helhesten-2.1/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_2.1_cover.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/helhesten-2.1/">Helhesten (Year 2, Booklet 1)</a></h3>
-		<p>Helhesten (Year 2, Booklet 1) is the sixth issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
+		<p>is the sixth issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/cobra/" class="article-tag-link">Cobra</a>, <a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/helhesten-2.4/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_2.4_cover.jpg" /></a>
+		<a href="/article/helhesten-2.4/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_2.4_cover.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/helhesten-2.4/">Helhesten (Year 2, Booklet 4)</a></h3>
-		<p>Helhesten (Year 2, Booklet 4) is the penultimate issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
+		<p>is the penultimate issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/cobra/" class="article-tag-link">Cobra</a>, <a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/helhesten-2.2-3/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_2.23_cover.jpg" /></a>
+		<a href="/article/helhesten-2.2-3/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_2.23_cover.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/helhesten-2.2-3/">Helhesten (Year 2, Booklets 2 & 3)</a></h3>
-		<p>Helhesten (Year 2, Booklets 2 & 3) is the seventh issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
+		<p>is the seventh issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/cobra/" class="article-tag-link">Cobra</a>, <a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,cobra,helhesten" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/helhesten-2.5-6/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_2.56_cover.jpg" /></a>
+		<a href="/article/helhesten-2.5-6/"><img class="article-tile-image" src="/assets/articles/helhesten/helhesten_2.56_cover.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/helhesten-2.5-6/">Helhesten (Year 2, Booklets 5 & 6)</a></h3>
-		<p>Helhesten (Year 2, Booklets 5 & 6) is the final issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
+		<p>is the final issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/cobra/" class="article-tag-link">Cobra</a>, <a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/atkins-jorn-scandinavia/"><img class="article-tile-image" src="/assets/articles/atkins-jorn-scandinavia/front.jpg" /></a>
+		<a href="/article/atkins-jorn-scandinavia/"><img class="article-tile-image" src="/assets/articles/atkins-jorn-scandinavia/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/atkins-jorn-scandinavia/">Jorn in Scandinavia 1930-1953</a></h3>
-		<p>Jorn in Scandinavia 1930-1953 is the first book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
+		<p>is the first book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="klankteksten" data-subjects="">
+	<div class="article-tile" data-tags="klankteksten" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/klankteksten/"><img class="article-tile-image" src="/assets/articles/klankteksten/front.jpg" /></a>
+		<a href="/article/klankteksten/"><img class="article-tile-image" src="/assets/articles/klankteksten/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/klankteksten/">Klankteksten - Konkrete Poëzie - Visuele Teksten</a></h3>
-		<p>Klankteksten - Konkrete Poëzie - Visuele Teksten (Sound Texts - Concrete Poetry - Visual Texts) is the title of an exhibition catalogue released in conjunction with the exhibition 'Klankteksten?' at the Stedelijk Museum in Amsterdam, Netherlands in November 1970. The exhibition provided an overview of the concrete poetry movement.</p>
+		<p>(Sound Texts - Concrete Poetry - Visual Texts) is the title of an exhibition catalogue released in conjunction with the exhibition 'Klankteksten?' at the Stedelijk Museum in Amsterdam, Netherlands in November 1970. The exhibition provided an overview of the concrete poetry movement.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/klankteksten/" class="article-tag-link">Klankteksten</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn,christian-dotremont" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,christian-dotremont" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/chevelure-des-choses/"><img class="article-tile-image" src="/assets/articles/chevelure-des-choses/front.jpg" /></a>
+		<a href="/article/chevelure-des-choses/"><img class="article-tile-image" src="/assets/articles/chevelure-des-choses/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/chevelure-des-choses/">La chevelure des choses</a></h3>
-		<p>La chevelure des choses (The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.</p>
+		<p>(The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/christian-dotremont/" class="article-tag-link">Christian Dotremont</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/christian-dotremont/" class="article-tag-link">Christian Dotremont</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="structuralism,art-theory,french-literature">
+	<div class="article-tile" data-tags="asger-jorn" data-subjects="structuralism,art-theory,french-literature" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/la-langue-verte/"><img class="article-tile-image" src="/assets/articles/la-langue-verte/front.jpg" /></a>
+		<a href="/article/la-langue-verte/"><img class="article-tile-image" src="/assets/articles/la-langue-verte/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/la-langue-verte/">La langue verte et la cuite</a></h3>
-		<p>La langue verte et la cuite is a book written in French by Asger Jorn and Noël Arnaud, and edited and published by Jean Jacques Pauvert in 1968.</p>
+		<p>is a book written in French by Asger Jorn and Noël Arnaud, and edited and published by Jean Jacques Pauvert in 1968.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 		<p class="article-details-subjects">Subjects: <span class="article-subject">
-			<span class="article-subject-item">Structuralism</span>, 
-			<span class="article-subject-item">Art Theory</span>, 
-			<span class="article-subject-item">French Literature</span>
-			
-		</span>
-		</p>
+			<span class="article-subject-item">Structuralism</span>, <span class="article-subject-item">Art Theory</span>, <span class="article-subject-item">French Literature</span>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/la-langue-verte-contents/"><img class="article-tile-image" src="/assets/articles/la-langue-verte/front.jpg" /></a>
+		<a href="/article/la-langue-verte-contents/"><img class="article-tile-image" src="/assets/articles/la-langue-verte/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/la-langue-verte-contents/">La langue verte et la cuite (Contents)</a></h3>
-		<p>La langue verte et la cuite (Contents) is the complete text of La langue verte et la cuite, a book on structuralist theory and cooking by Asger Jorn and Noël Arnaud, edited and published by Jean Jacques Pauvert in 1968.</p>
+		<p>is the complete text of La langue verte et la cuite, a book on structuralist theory and cooking by Asger Jorn and Noël Arnaud, edited and published by Jean Jacques Pauvert in 1968.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn,guy-debord" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,guy-debord" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/memoires/"><img class="article-tile-image" src="/assets/articles/memoires/front.jpg" /></a>
+		<a href="/article/memoires/"><img class="article-tile-image" src="/assets/articles/memoires/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/memoires/">Mémoires</a></h3>
-		<p>Mémoires is an artist's book made by the Danish artist Asger Jorn in collaboration with the French artist and theorist Guy Debord.</p>
+		<p>is an artist's book made by the Danish artist Asger Jorn in collaboration with the French artist and theorist Guy Debord.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/guy-debord/" class="article-tag-link">Guy Debord</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/guy-debord/" class="article-tag-link">Guy Debord</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/signes-graves-eure-calvados/"><img class="article-tile-image" src="/assets/articles/signes-graves-eure-calvados/front.jpg" /></a>
+		<a href="/article/signes-graves-eure-calvados/"><img class="article-tile-image" src="/assets/articles/signes-graves-eure-calvados/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/signes-graves-eure-calvados/">Signes gravés sur les églises de l'Eure et du Calvados</a></h3>
-		<p>Signes gravés sur les églises de l'Eure et du Calvados (Signs Engraved on the Churches of Eure and Calvados) is a book written in French and directed by Asger Jorn, with essay contributions from various antiquities experts and photography by Gérard Franceschi.</p>
+		<p>(Signs Engraved on the Churches of Eure and Calvados) is a book written in French and directed by Asger Jorn, with essay contributions from various antiquities experts and photography by Gérard Franceschi.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/skanes-stenskulptur/"><img class="article-tile-image" src="/assets/articles/skanes-stenskulptur/front.jpg" /></a>
+		<a href="/article/skanes-stenskulptur/"><img class="article-tile-image" src="/assets/articles/skanes-stenskulptur/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/skanes-stenskulptur/">Skånes stenskulptur under 1100-talet</a></h3>
-		<p>Skånes stenskulptur under 1100-talet (Skåne's Stone Sculpture During the 12th Century) is a book written in Swedish by Erik Cinthio, with photography by Gérard Franceschi and arrangement by Asger Jorn. The book is a photographic documentation of stone sculpture from the 12th century with a focus on the Skåne region of southern Sweden.</p>
+		<p>(Skåne's Stone Sculpture During the 12th Century) is a book written in Swedish by Erik Cinthio, with photography by Gérard Franceschi and arrangement by Asger Jorn. The book is a photographic documentation of stone sculpture from the 12th century with a focus on the Skåne region of southern Sweden.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 	</div>
 </div>
@@ -682,39 +632,31 @@ document.addEventListener('DOMContentLoaded', function() {
 	<h2>Recordings</h2>	
 	
 	
-	<div class="article-tile" data-tags="joseph-beuys,henning-christiansen,nam-june-paik,fluxus" data-subjects="">
+	<div class="article-tile" data-tags="joseph-beuys,henning-christiansen,nam-june-paik,fluxus" data-subjects="" data-category="recordings">
 	<div class="article-tile-image-container">
-		<a href="/article/abschiedssymphonie/"><img class="article-tile-image" src="/assets/articles/abschiedssymphonie/front.jpg" /></a>
+		<a href="/article/abschiedssymphonie/"><img class="article-tile-image" src="/assets/articles/abschiedssymphonie/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/abschiedssymphonie/">Abschiedssymphonie, Op. 177</a></h3>
-		<p>Abschiedssymphonie, Op. 177 is a recording released by Edition Block featuring a musical performance by Henning Christiansen, Nam June Paik, and Joseph Beuys.</p>
+		<p>is a recording released by Edition Block featuring a musical performance by Henning Christiansen, Nam June Paik, and Joseph Beuys.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/joseph-beuys/" class="article-tag-link">Joseph Beuys</a>, 
-			<a href="/tag/henning-christiansen/" class="article-tag-link">Henning Christiansen</a>, 
-			<a href="/tag/nam-june-paik/" class="article-tag-link">Nam June Paik</a>, 
-			<a href="/tag/fluxus/" class="article-tag-link">Fluxus</a>
-			
-		</span>
-		</p>
+			<a href="/tag/joseph-beuys/" class="article-tag-link">Joseph Beuys</a>, <a href="/tag/henning-christiansen/" class="article-tag-link">Henning Christiansen</a>, <a href="/tag/nam-june-paik/" class="article-tag-link">Nam June Paik</a>, <a href="/tag/fluxus/" class="article-tag-link">Fluxus</a>
+		</span></p>
 		
 	</div>
 </div>
 
 	
-	<div class="article-tile" data-tags="wolf-vostell,fluxus" data-subjects="">
+	<div class="article-tile" data-tags="wolf-vostell,fluxus" data-subjects="" data-category="recordings">
 	<div class="article-tile-image-container">
-		<a href="/article/il-giardino-delle-delizie/"><img class="article-tile-image" src="/assets/articles/il-giardino-delle-delizie/front.jpg" /></a>
+		<a href="/article/il-giardino-delle-delizie/"><img class="article-tile-image" src="/assets/articles/il-giardino-delle-delizie/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/il-giardino-delle-delizie/">Il giardino delle delizie</a></h3>
-		<p>Il giardino delle delizie (The Garden of Delights) is a recording released by Multhipla Records featuring a musical Fluxus performance by Wolf Vostell.</p>
+		<p>(The Garden of Delights) is a recording released by Multhipla Records featuring a musical Fluxus performance by Wolf Vostell.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/wolf-vostell/" class="article-tag-link">Wolf Vostell</a>, 
-			<a href="/tag/fluxus/" class="article-tag-link">Fluxus</a>
-			
-		</span>
-		</p>
+			<a href="/tag/wolf-vostell/" class="article-tag-link">Wolf Vostell</a>, <a href="/tag/fluxus/" class="article-tag-link">Fluxus</a>
+		</span></p>
 		
 	</div>
 </div>
@@ -737,25 +679,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>
 </div>
-<script type="text/javascript"> 
-	var totalCount = 7;
-	function changeIt() 
-	{
-	var num = Math.ceil( Math.random() * totalCount );
-	document.body.background = '/assets/images/backgrounds/'+num+'.jpg';
-	document.body.style.backgroundSize = "1300px";
-	document.body.style.backgroundPosition = "top";
-	document.body.style.backgroundRepeat = "repeat-y";
-	document.body.style.backgroundAttachment = "fixed";
-	}
-	document.addEventListener("DOMContentLoaded", ()=>{
-		changeIt();
-	});
-	
-</script>
+
 			</div>
 		</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/js/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!-- Featherlight lightbox - loaded at end of body for proper initialization -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js"></script>
+		<script src="/js/featherlight.gallery.min.js"></script>
 	</body>
 </html>

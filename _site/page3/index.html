@@ -1,13 +1,15 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
-	<meta charset="utf-8" />
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<title>
 		
 			salvaged.work - A digital archive for salvaged works. - salvaged.work
 		
 	</title>
+	
+	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -15,13 +17,30 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e81515">
 	<meta name="msapplication-TileColor" content="#2d89ef">
 	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/featherlight.min.css">
 	<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!-- 
+		Scripts loaded in head:
+		- jQuery: Required for Featherlight lightbox
+		- detect_swipe: Required for Featherlight gallery swipe support
+		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- recaptcha: Only needed on contact page, loaded async
+	-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.4/jquery.detect_swipe.min.js"></script>
-	<script src="/js/footnotes.js"></script>
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	
+	<!-- Site scripts (vanilla JS) -->
+	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/background.js" defer></script>
+	
+	<!-- reCAPTCHA - only needed on contact page -->
+	
+	
 	<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="salvaged.work" />
 	<!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Page 3 of 3 for salvaged.work - A digital archive for salvaged works. | salvaged.work</title>
@@ -45,6 +64,7 @@
 <!-- End Jekyll SEO tag -->
 
 </head>
+
 	<body>
 		<div id="page-body">
 			<div id="header">
@@ -57,7 +77,7 @@
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
 		<div class="header-search-container header-search-desktop">
-			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off" />
+			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
 		</div>
 	</div>
@@ -68,7 +88,7 @@
 	</button>
 </div>
 
-<div class="mobile-nav" id="mobile-nav">
+<nav class="mobile-nav" id="mobile-nav">
 	
 	<a href="/artists" class="mobile-nav-link">Artists</a>
 	
@@ -84,43 +104,55 @@
 		<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 		<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>
 	</div>
-</div>
+</nav>
 
 <div class="header-search-container header-search-mobile">
-	<input type="text" id="header-search-input-mobile" class="header-search-input" placeholder="Search..." autocomplete="off" />
+	<input type="text" id="header-search-input-mobile" class="header-search-input" placeholder="Search..." autocomplete="off">
 	<div id="header-search-results-mobile" class="header-search-results"></div>
 </div>
 
-<script src="/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+<script src="/js/simple-jekyll-search.min.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
+	'use strict';
+	
 	// Burger menu toggle
-	const burgerMenu = document.getElementById('burger-menu');
-	const mobileNav = document.getElementById('mobile-nav');
+	var burgerMenu = document.getElementById('burger-menu');
+	var mobileNav = document.getElementById('mobile-nav');
 	
-	burgerMenu.addEventListener('click', function() {
-		this.classList.toggle('active');
-		mobileNav.classList.toggle('visible');
-	});
+	if (burgerMenu && mobileNav) {
+		burgerMenu.addEventListener('click', function() {
+			this.classList.toggle('active');
+			mobileNav.classList.toggle('visible');
+		});
+	}
 	
-	// Search functionality - set up for both desktop and mobile inputs
-	function setupSearch(inputId, resultsId) {
-		const searchInput = document.getElementById(inputId);
-		const searchResults = document.getElementById(resultsId);
+	// Search functionality
+	function escapeRegex(string) {
+		return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	}
+	
+	function highlightMatch(text, query) {
+		if (!query || !text) return text;
+		var regex = new RegExp('(' + escapeRegex(query) + ')', 'gi');
+		return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+	}
+	
+	// Only use desktop OR mobile based on viewport, not both
+	// This avoids the race condition in SimpleJekyllSearch's global state
+	function initSearch() {
+		var isDesktop = window.innerWidth >= 769;
+		var inputId = isDesktop ? 'header-search-input-desktop' : 'header-search-input-mobile';
+		var resultsId = isDesktop ? 'header-search-results-desktop' : 'header-search-results-mobile';
 		
-		if (!searchInput || !searchResults) return;
+		var searchInput = document.getElementById(inputId);
+		var searchResults = document.getElementById(resultsId);
 		
-		let currentQuery = '';
-		
-		function escapeRegex(string) {
-			return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+		if (!searchInput || !searchResults || typeof SimpleJekyllSearch === 'undefined') {
+			return;
 		}
 		
-		function highlightMatch(text, query) {
-			if (!query || !text) return text;
-			const regex = new RegExp('(' + escapeRegex(query) + ')', 'gi');
-			return text.replace(regex, '<mark class="search-highlight">$1</mark>');
-		}
+		var currentQuery = '';
 		
 		SimpleJekyllSearch({
 			searchInput: searchInput,
@@ -130,20 +162,23 @@ document.addEventListener('DOMContentLoaded', function() {
 			noResultsText: '<div class="header-search-no-results">No results found</div>',
 			limit: 8,
 			sortMiddleware: function(a, b) {
-				const query = currentQuery.toLowerCase();
-				const aTitle = (a.title || '').toLowerCase();
-				const bTitle = (b.title || '').toLowerCase();
+				var query = currentQuery.toLowerCase();
+				var aTitle = (a.title || '').toLowerCase();
+				var bTitle = (b.title || '').toLowerCase();
 				
-				const aStartsWith = aTitle.startsWith(query);
-				const bStartsWith = bTitle.startsWith(query);
+				// Prioritize titles starting with query
+				var aStartsWith = aTitle.startsWith(query);
+				var bStartsWith = bTitle.startsWith(query);
 				if (aStartsWith && !bStartsWith) return -1;
 				if (!aStartsWith && bStartsWith) return 1;
 				
-				const aTitleContains = aTitle.includes(query);
-				const bTitleContains = bTitle.includes(query);
+				// Then prioritize titles containing query
+				var aTitleContains = aTitle.includes(query);
+				var bTitleContains = bTitle.includes(query);
 				if (aTitleContains && !bTitleContains) return -1;
 				if (!aTitleContains && bTitleContains) return 1;
 				
+				// Fall back to alphabetical
 				return aTitle.localeCompare(bTitle);
 			},
 			templateMiddleware: function(prop, value, template) {
@@ -154,6 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		});
 		
+		// Show/hide results and track current query
 		searchInput.addEventListener('input', function() {
 			currentQuery = this.value;
 			if (this.value.length > 0) {
@@ -181,17 +217,10 @@ document.addEventListener('DOMContentLoaded', function() {
 				this.blur();
 			}
 		});
-		
-		searchResults.addEventListener('click', function(e) {
-			if (e.target.closest('.header-search-result')) {
-				searchResults.classList.remove('visible');
-			}
-		});
 	}
 	
-	setupSearch('header-search-input-desktop', 'header-search-results-desktop');
-	setupSearch('header-search-input-mobile', 'header-search-results-mobile');
-});
+	initSearch();
+})();
 </script>
 
 			</div>
@@ -206,54 +235,46 @@ document.addEventListener('DOMContentLoaded', function() {
 <h2>Newest articles</h2>
 
 
-	<div class="article-tile" data-tags="asger-jorn,christian-dotremont" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,christian-dotremont" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/chevelure-des-choses/"><img class="article-tile-image" src="/assets/articles/chevelure-des-choses/front.jpg" /></a>
+		<a href="/article/chevelure-des-choses/"><img class="article-tile-image" src="/assets/articles/chevelure-des-choses/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/chevelure-des-choses/">La chevelure des choses</a></h3>
-		<p>La chevelure des choses (The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.</p>
+		<p>(The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/christian-dotremont/" class="article-tag-link">Christian Dotremont</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/christian-dotremont/" class="article-tag-link">Christian Dotremont</a>
+		</span></p>
 		
 	</div>
 </div>
 
 
-	<div class="article-tile" data-tags="asger-jorn,guy-debord" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn,guy-debord" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/memoires/"><img class="article-tile-image" src="/assets/articles/memoires/front.jpg" /></a>
+		<a href="/article/memoires/"><img class="article-tile-image" src="/assets/articles/memoires/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/memoires/">Mémoires</a></h3>
-		<p>Mémoires is an artist's book made by the Danish artist Asger Jorn in collaboration with the French artist and theorist Guy Debord.</p>
+		<p>is an artist's book made by the Danish artist Asger Jorn in collaboration with the French artist and theorist Guy Debord.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-			<a href="/tag/guy-debord/" class="article-tag-link">Guy Debord</a>
-			
-		</span>
-		</p>
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/guy-debord/" class="article-tag-link">Guy Debord</a>
+		</span></p>
 		
 	</div>
 </div>
 
 
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="">
+	<div class="article-tile" data-tags="asger-jorn" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
-		<a href="/article/jorn-catalogue-raisonne/"><img class="article-tile-image" src="/assets/articles/jorn-catalogue-raisonne/front.jpg" /></a>
+		<a href="/article/jorn-catalogue-raisonne/"><img class="article-tile-image" src="/assets/articles/jorn-catalogue-raisonne/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a></h3>
-		<p>Asger Jorn Catalogue raisonné Series is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
+		<p>is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
 			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-			
-		</span>
-		</p>
+		</span></p>
 		
 	</div>
 </div>
@@ -268,61 +289,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	<a href="/creators/asger-jorn">
 		<div class="artist-tile">
-			<span class="artist-tile-title">
-				
-				
-				
-					
-						Asger
-					
-						Jorn
-					
-				</span>
+			<span class="artist-tile-title">Asger Jorn</span>
 		</div>
 	</a>
 
 	<a href="/creators/henning-christiansen">
 		<div class="artist-tile">
-			<span class="artist-tile-title">
-				
-				
-				
-					
-						Henning
-					
-						Christiansen
-					
-				</span>
+			<span class="artist-tile-title">Henning Christiansen</span>
 		</div>
 	</a>
 
 	<a href="/creators/joseph-beuys">
 		<div class="artist-tile">
-			<span class="artist-tile-title">
-				
-				
-				
-					
-						Joseph
-					
-						Beuys
-					
-				</span>
+			<span class="artist-tile-title">Joseph Beuys</span>
 		</div>
 	</a>
 
 	<a href="/creators/wolf-vostell">
 		<div class="artist-tile">
-			<span class="artist-tile-title">
-				
-				
-				
-					
-						Wolf
-					
-						Vostell
-					
-				</span>
+			<span class="artist-tile-title">Wolf Vostell</span>
 		</div>
 	</a>
 
@@ -338,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/21-light-drawings-jorn/">21 Lystegninger</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
 		
 	</span>
   </li>
@@ -347,13 +332,13 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/abschiedssymphonie/">Abschiedssymphonie, Op. 177</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/joseph-beuys/" class="article-tag-link">Joseph Beuys </a>&nbsp;
+			<a href="/tag/joseph-beuys/" class="article-tag-link">Joseph Beuys</a>, 
 		
-			<a href="/tag/henning-christiansen/" class="article-tag-link">Henning Christiansen </a>&nbsp;
+			<a href="/tag/henning-christiansen/" class="article-tag-link">Henning Christiansen</a>, 
 		
-			<a href="/tag/nam-june-paik/" class="article-tag-link">Nam June Paik </a>&nbsp;
+			<a href="/tag/nam-june-paik/" class="article-tag-link">Nam June Paik</a>, 
 		
-			<a href="/tag/fluxus/" class="article-tag-link">Fluxus </a>&nbsp;
+			<a href="/tag/fluxus/" class="article-tag-link">Fluxus</a>
 		
 	</span>
   </li>
@@ -362,7 +347,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/atkins-jorn-revised-supplement/">Asger Jorn - Revised Supplement</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
 		
 	</span>
   </li>
@@ -371,7 +356,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/atkins-jorn-supplement/">Asger Jorn - Supplement - Paintings 1930-1973</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
 		
 	</span>
   </li>
@@ -380,7 +365,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/atkins-jorn-crucial-years/">Asger Jorn - The Crucial Years 1954-1964</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
 		
 	</span>
   </li>
@@ -389,7 +374,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/atkins-jorn-final-years/">Asger Jorn - The Final Years 1965-1973</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
 		
 	</span>
   </li>
@@ -398,7 +383,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
 		
 	</span>
   </li>
@@ -407,7 +392,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/jorn-a-silkeborg/">Asger Jorn à Silkeborg</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
 		
 	</span>
   </li>
@@ -416,9 +401,9 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/cybernetic-serendipity/">Cybernetic Serendipity - The Computer and the Arts</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/cybernetics/" class="article-tag-link">Cybernetics </a>&nbsp;
+			<a href="/tag/cybernetics/" class="article-tag-link">Cybernetics</a>, 
 		
-			<a href="/tag/computers/" class="article-tag-link">Computers </a>&nbsp;
+			<a href="/tag/computers/" class="article-tag-link">Computers</a>
 		
 	</span>
   </li>
@@ -427,11 +412,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/helhesten/">Helhesten</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
 		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra </a>&nbsp;
+			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
 		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten </a>&nbsp;
+			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
 		
 	</span>
   </li>
@@ -440,11 +425,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/helhesten-1.1/">Helhesten (Year 1, Booklet 1)</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
 		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra </a>&nbsp;
+			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
 		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten </a>&nbsp;
+			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
 		
 	</span>
   </li>
@@ -453,11 +438,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/helhesten-1.2/">Helhesten (Year 1, Booklet 2)</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
 		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra </a>&nbsp;
+			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
 		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten </a>&nbsp;
+			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
 		
 	</span>
   </li>
@@ -466,11 +451,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/helhesten-1.3/">Helhesten (Year 1, Booklet 3)</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
 		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra </a>&nbsp;
+			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
 		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten </a>&nbsp;
+			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
 		
 	</span>
   </li>
@@ -479,11 +464,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/helhesten-1.4/">Helhesten (Year 1, Booklet 4)</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
 		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra </a>&nbsp;
+			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
 		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten </a>&nbsp;
+			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
 		
 	</span>
   </li>
@@ -492,11 +477,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/helhesten-1.5-6/">Helhesten (Year 1, Booklets 5 & 6)</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
 		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra </a>&nbsp;
+			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
 		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten </a>&nbsp;
+			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
 		
 	</span>
   </li>
@@ -505,11 +490,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/helhesten-2.1/">Helhesten (Year 2, Booklet 1)</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
 		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra </a>&nbsp;
+			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
 		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten </a>&nbsp;
+			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
 		
 	</span>
   </li>
@@ -518,11 +503,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/helhesten-2.4/">Helhesten (Year 2, Booklet 4)</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
 		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra </a>&nbsp;
+			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
 		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten </a>&nbsp;
+			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
 		
 	</span>
   </li>
@@ -531,11 +516,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/helhesten-2.2-3/">Helhesten (Year 2, Booklets 2 & 3)</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
 		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra </a>&nbsp;
+			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
 		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten </a>&nbsp;
+			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
 		
 	</span>
   </li>
@@ -544,11 +529,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/helhesten-2.5-6/">Helhesten (Year 2, Booklets 5 & 6)</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
 		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra </a>&nbsp;
+			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
 		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten </a>&nbsp;
+			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
 		
 	</span>
   </li>
@@ -557,9 +542,9 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/il-giardino-delle-delizie/">Il giardino delle delizie</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/wolf-vostell/" class="article-tag-link">Wolf Vostell </a>&nbsp;
+			<a href="/tag/wolf-vostell/" class="article-tag-link">Wolf Vostell</a>, 
 		
-			<a href="/tag/fluxus/" class="article-tag-link">Fluxus </a>&nbsp;
+			<a href="/tag/fluxus/" class="article-tag-link">Fluxus</a>
 		
 	</span>
   </li>
@@ -568,7 +553,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/atkins-jorn-scandinavia/">Jorn in Scandinavia 1930-1953</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
 		
 	</span>
   </li>
@@ -577,7 +562,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/klankteksten/">Klankteksten - Konkrete Poëzie - Visuele Teksten</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/klankteksten/" class="article-tag-link">Klankteksten </a>&nbsp;
+			<a href="/tag/klankteksten/" class="article-tag-link">Klankteksten</a>
 		
 	</span>
   </li>
@@ -586,9 +571,9 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/chevelure-des-choses/">La chevelure des choses</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
 		
-			<a href="/tag/christian-dotremont/" class="article-tag-link">Christian Dotremont </a>&nbsp;
+			<a href="/tag/christian-dotremont/" class="article-tag-link">Christian Dotremont</a>
 		
 	</span>
   </li>
@@ -597,7 +582,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/la-langue-verte/">La langue verte et la cuite</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
 		
 	</span>
   </li>
@@ -606,7 +591,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/la-langue-verte-contents/">La langue verte et la cuite (Contents)</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
 		
 	</span>
   </li>
@@ -615,9 +600,9 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/memoires/">Mémoires</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
 		
-			<a href="/tag/guy-debord/" class="article-tag-link">Guy Debord </a>&nbsp;
+			<a href="/tag/guy-debord/" class="article-tag-link">Guy Debord</a>
 		
 	</span>
   </li>
@@ -626,7 +611,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/signes-graves-eure-calvados/">Signes gravés sur les églises de l'Eure et du Calvados</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
 		
 	</span>
   </li>
@@ -635,12 +620,13 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="/article/skanes-stenskulptur/">Skånes stenskulptur under 1100-talet</a> 
 	<span class="article-tag">
 		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn </a>&nbsp;
+			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
 		
 	</span>
   </li>
 
 </ul>
+
 			</div>
 			
 			<div id="footer">
@@ -657,25 +643,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>
 </div>
-<script type="text/javascript"> 
-	var totalCount = 7;
-	function changeIt() 
-	{
-	var num = Math.ceil( Math.random() * totalCount );
-	document.body.background = '/assets/images/backgrounds/'+num+'.jpg';
-	document.body.style.backgroundSize = "1300px";
-	document.body.style.backgroundPosition = "top";
-	document.body.style.backgroundRepeat = "repeat-y";
-	document.body.style.backgroundAttachment = "fixed";
-	}
-	document.addEventListener("DOMContentLoaded", ()=>{
-		changeIt();
-	});
-	
-</script>
+
 			</div>
 		</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/js/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!-- Featherlight lightbox - loaded at end of body for proper initialization -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js"></script>
+		<script src="/js/featherlight.gallery.min.js"></script>
 	</body>
 </html>

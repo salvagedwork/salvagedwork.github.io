@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 	{% include head.html %}
 	<body>
 		<div id="page-body">
@@ -15,7 +15,9 @@
 				{% include footer.html %}
 			</div>
 		</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="{{ site.baseurl }}/js/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!-- Featherlight lightbox - loaded at end of body for proper initialization -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js"></script>
+		<script src="{{ '/js/featherlight.gallery.min.js' | relative_url }}"></script>
 	</body>
 </html>

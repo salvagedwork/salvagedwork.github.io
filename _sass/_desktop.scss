@@ -1,21 +1,70 @@
+// ==========================================================================
+// Mobile-Specific Overrides
+// ==========================================================================
+
+@media #{$information-mobile} {
+	.burger-menu {
+		display: flex;
+	}
+	
+	.navbar-links-container {
+		display: none;
+	}
+	
+	.header-search-desktop {
+		display: none;
+	}
+	
+	.header-search-mobile {
+		display: block;
+		width: 100%;
+		margin-top: 0.8rem;
+		
+		.header-search-input {
+			width: 100%;
+		}
+	}
+	
+	// Hide footer nav links and social icons on mobile
+	#footer .navbar-links-container {
+		display: none;
+	}
+	
+	// Center article titles on mobile
+	.article-title-container {
+		justify-items: center;
+	}
+}
+
+
+// ==========================================================================
+// Desktop Overrides
+// ==========================================================================
+
 @media #{$information-desktop} {
+	
+	// Layout
+	// --------------------------------------------------------------------------
 	
 	html {
 		margin: calc(#{$top-margin} * 2) auto 0 auto;
 	}
 	
 	#page-body {
-		max-width: 1100px;
+		max-width: $max-content-width;
 		margin: auto;
 	}
 	
-	#content, #header, #footer {
+	#content,
+	#header,
+	#footer {
 		padding: $content-padding;
 		margin: $content-padding / 2 0;
 		width: 100%;
 	}
 	
-	#header, #footer {
+	#header,
+	#footer {
 		display: flex;
 	}
 	
@@ -24,7 +73,8 @@
 	}
 	
 	
-	// Headers & footers ////////////////////////
+	// Navigation
+	// --------------------------------------------------------------------------
 	
 	.navbar-title {
 		line-height: 2.5rem;
@@ -35,14 +85,53 @@
 		margin-left: auto;
 	}
 	
+	.burger-menu {
+		display: none;
+	}
 	
-	// Articles /////////////////////////////////
+	.mobile-nav {
+		display: none !important;
+	}
+	
+	
+	// Header Search
+	// --------------------------------------------------------------------------
+	
+	.header-search-mobile {
+		display: none;
+	}
+	
+	.header-search-desktop {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 0.5rem;
+		
+		.header-search-input {
+			width: 120px;
+			transition: width 0.2s ease, border-color 0.2s ease;
+			
+			&:focus {
+				width: 180px;
+			}
+		}
+		
+		.header-search-results {
+			width: 320px;
+			left: auto;
+			right: 0;
+		}
+	}
+	
+	
+	// Articles
+	// --------------------------------------------------------------------------
 	
 	.article-container {
 		display: block;
 	}
 	
-	#infobox, .thumbnail-container {
+	#infobox,
+	.thumbnail-container {
 		max-width: 18rem;
 		margin: 0.5rem 0 1.3rem 1rem;
 		float: right;
@@ -66,7 +155,8 @@
 	}
 	
 	
-	// Artist tiles /////////////////////////////
+	// Artist Tiles
+	// --------------------------------------------------------------------------
 	
 	.artist-tile-container {
 		display: grid;
@@ -86,21 +176,16 @@
 	}
 	
 	
-	// Contact form /////////////////////////////
-	
-	.contact-form-holder {
-		width: 50%;
-	}
-	
-	// Article & artist tiles ///////////////////
+	// Article Tiles
+	// --------------------------------------------------------------------------
 	
 	.article-tile {
 		display: flex;
 		align-items: center;
-	}
-	
-	.article-tile h3 {
-		padding-top: 0rem;
+		
+		h3 {
+			padding-top: 0;
+		}
 	}
 	
 	.article-tile-image-container {
@@ -111,7 +196,7 @@
 	.article-tile-image {
 		width: 100%;
 		height: 100%;
-		box-shadow: 0.1rem 0.1rem $shade-color;
+		box-shadow: 0.1rem 0.1rem $color-shade;
 	}
 	
 	.article-tile-details-container {
@@ -124,23 +209,10 @@
 	}
 	
 	
-	// Footnote tooltip /////////////////////////
+	// Contact Form
+	// --------------------------------------------------------------------------
 	
-	.tooltip {
-		display: none;
-		position: absolute;
-		font-family: $font-regular;
-		border: 1px solid #777;
-		background-color: #f8f9fa;
-		padding: 2px 7px 2px 7px;
-		box-shadow: 2px 2px 10px #999;
-	}
-	
-}
-
-/* Added here because we don't want to set justify-items on desktop, which comes before mobile, so we set the value for mobile after all the desktop styles. */
-@media #{$information-mobile} {
-	.article-title-container {
-		justify-items: center;
+	.contact-form-holder {
+		width: 50%;
 	}
 }

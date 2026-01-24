@@ -23,13 +23,7 @@ layout: default
 <span>
   {% for tag in page.tags %}
     <a href="/tag/{{ tag }}/">
-			{% assign words = tag | split: '-' %}
-			{% capture titlecase %}
-				{% for word in words %}
-					{{ word | capitalize }}
-				{% endfor %}
-			{% endcapture %}
-			{{ titlecase }}
+			{% include titlecase.html text=tag %}
 		</a><br />
   {% endfor %}
 </span>

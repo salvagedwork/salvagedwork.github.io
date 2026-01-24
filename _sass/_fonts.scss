@@ -1,91 +1,134 @@
+// ==========================================================================
+// GT Eesti Font Family
+// ==========================================================================
+
+// Text weights
 @font-face {
-  font-family: 'GT-Eesti-Text-Light';
-  src: url("/assets/fonts/GT-Eesti-Pro-Text-Light.eot");
-  src: url("/assets/fonts/GT-Eesti-Pro-Text-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'GT-Eesti-Text-Light';
+	src: url("/assets/fonts/GT-Eesti-Pro-Text-Light.eot");
+	src: url("/assets/fonts/GT-Eesti-Pro-Text-Light.eot?#iefix") format("embedded-opentype"),
+	     url("/assets/fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"),
+	     url("/assets/fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'GT-Eesti-Text-Book';
-  src: url("/assets/fonts/GT-Eesti-Pro-Text-Book.eot");
-  src: url("/assets/fonts/GT-Eesti-Pro-Text-Book.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Book.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Book.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'GT-Eesti-Text-Book';
+	src: url("/assets/fonts/GT-Eesti-Pro-Text-Book.eot");
+	src: url("/assets/fonts/GT-Eesti-Pro-Text-Book.eot?#iefix") format("embedded-opentype"),
+	     url("/assets/fonts/GT-Eesti-Pro-Text-Book.woff") format("woff"),
+	     url("/assets/fonts/GT-Eesti-Pro-Text-Book.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'GT-Eesti-Text-Book-Italic';
-  src: url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.eot");
-  src: url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'GT-Eesti-Text-Book-Italic';
+	src: url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.eot");
+	src: url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.eot?#iefix") format("embedded-opentype"),
+	     url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.woff") format("woff"),
+	     url("/assets/fonts/GT-Eesti-Pro-Text-Book-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'GT-Eesti-Text-Regular';
-  src: url("/assets/fonts/GT-Eesti-Pro-Text-Regular.eot");
-  src: url("/assets/fonts/GT-Eesti-Pro-Text-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'GT-Eesti-Text-Regular';
+	src: url("/assets/fonts/GT-Eesti-Pro-Text-Regular.eot");
+	src: url("/assets/fonts/GT-Eesti-Pro-Text-Regular.eot?#iefix") format("embedded-opentype"),
+	     url("/assets/fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"),
+	     url("/assets/fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'GT-Eesti-Text-Regular-Italic';
-  src: url("/assets/fonts/GT-Eesti-Pro-Text-Regular-Italic.eot");
-  src: url("/assets/fonts/GT-Eesti-Pro-Text-Regular-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Text-Regular-Italic.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Text-Regular-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'GT-Eesti-Text-Regular-Italic';
+	src: url("/assets/fonts/GT-Eesti-Pro-Text-Regular-Italic.eot");
+	src: url("/assets/fonts/GT-Eesti-Pro-Text-Regular-Italic.eot?#iefix") format("embedded-opentype"),
+	     url("/assets/fonts/GT-Eesti-Pro-Text-Regular-Italic.woff") format("woff"),
+	     url("/assets/fonts/GT-Eesti-Pro-Text-Regular-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
-
+// Display weights
 @font-face {
-  font-family: 'GT-Eesti-Display-Medium';
-  src: url("/assets/fonts/GT-Eesti-Pro-Display-Medium.eot");
-  src: url("/assets/fonts/GT-Eesti-Pro-Display-Medium.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Display-Medium.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Display-Medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GT-Eesti-Display-Medium-Italic';
-  src: url("/assets/fonts/GT-Eesti-Pro-Display-Medium-Italic.eot");
-  src: url("/assets/fonts/GT-Eesti-Pro-Display-Medium-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Display-Medium-Italic.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Display-Medium-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'GT-Eesti-Display-Medium';
+	src: url("/assets/fonts/GT-Eesti-Pro-Display-Medium.eot");
+	src: url("/assets/fonts/GT-Eesti-Pro-Display-Medium.eot?#iefix") format("embedded-opentype"),
+	     url("/assets/fonts/GT-Eesti-Pro-Display-Medium.woff") format("woff"),
+	     url("/assets/fonts/GT-Eesti-Pro-Display-Medium.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'GT-Eesti-Display-Bold';
-  src: url("/assets/fonts/GT-Eesti-Pro-Display-Bold.eot");
-  src: url("/assets/fonts/GT-Eesti-Pro-Display-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Display-Bold.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Display-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'GT-Eesti-Display-Medium-Italic';
+	src: url("/assets/fonts/GT-Eesti-Pro-Display-Medium-Italic.eot");
+	src: url("/assets/fonts/GT-Eesti-Pro-Display-Medium-Italic.eot?#iefix") format("embedded-opentype"),
+	     url("/assets/fonts/GT-Eesti-Pro-Display-Medium-Italic.woff") format("woff"),
+	     url("/assets/fonts/GT-Eesti-Pro-Display-Medium-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'GT-Eesti-Display-Bold-Italic';
-  src: url("/assets/fonts/GT-Eesti-Pro-Display-Bold-Italic.eot");
-  src: url("/assets/fonts/GT-Eesti-Pro-Display-Bold-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Display-Bold-Italic.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Display-Bold-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'GT-Eesti-Display-Bold';
+	src: url("/assets/fonts/GT-Eesti-Pro-Display-Bold.eot");
+	src: url("/assets/fonts/GT-Eesti-Pro-Display-Bold.eot?#iefix") format("embedded-opentype"),
+	     url("/assets/fonts/GT-Eesti-Pro-Display-Bold.woff") format("woff"),
+	     url("/assets/fonts/GT-Eesti-Pro-Display-Bold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'GT-Eesti-Display-UBold';
-  src: url("/assets/fonts/GT-Eesti-Pro-Display-UBold.eot");
-  src: url("/assets/fonts/GT-Eesti-Pro-Display-UBold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Display-UBold.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Display-UBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'GT-Eesti-Display-Bold-Italic';
+	src: url("/assets/fonts/GT-Eesti-Pro-Display-Bold-Italic.eot");
+	src: url("/assets/fonts/GT-Eesti-Pro-Display-Bold-Italic.eot?#iefix") format("embedded-opentype"),
+	     url("/assets/fonts/GT-Eesti-Pro-Display-Bold-Italic.woff") format("woff"),
+	     url("/assets/fonts/GT-Eesti-Pro-Display-Bold-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'GT-Eesti-Display-UBold-Italic';
-  src: url("/assets/fonts/GT-Eesti-Pro-Display-UBold-Italic.eot");
-  src: url("/assets/fonts/GT-Eesti-Pro-Display-UBold-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-Eesti-Pro-Display-UBold-Italic.woff") format("woff"), url("/assets/fonts/GT-Eesti-Pro-Display-UBold-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'GT-Eesti-Display-UBold';
+	src: url("/assets/fonts/GT-Eesti-Pro-Display-UBold.eot");
+	src: url("/assets/fonts/GT-Eesti-Pro-Display-UBold.eot?#iefix") format("embedded-opentype"),
+	     url("/assets/fonts/GT-Eesti-Pro-Display-UBold.woff") format("woff"),
+	     url("/assets/fonts/GT-Eesti-Pro-Display-UBold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
+
+@font-face {
+	font-family: 'GT-Eesti-Display-UBold-Italic';
+	src: url("/assets/fonts/GT-Eesti-Pro-Display-UBold-Italic.eot");
+	src: url("/assets/fonts/GT-Eesti-Pro-Display-UBold-Italic.eot?#iefix") format("embedded-opentype"),
+	     url("/assets/fonts/GT-Eesti-Pro-Display-UBold-Italic.woff") format("woff"),
+	     url("/assets/fonts/GT-Eesti-Pro-Display-UBold-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+// ==========================================================================
+// Icon Font (IcoMoon)
+// ==========================================================================
 
 $icomoon-font-family: "icomoon" !default;
 $icomoon-font-path: "/assets/fonts" !default;
@@ -95,44 +138,38 @@ $icon-instagram: "\ea92";
 $icon-twitter: "\ea96";
 
 @font-face {
-  font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg##{$icomoon-font-family}') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+	font-family: '#{$icomoon-font-family}';
+	src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot');
+	src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot#iefix') format('embedded-opentype'),
+	     url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf') format('truetype'),
+	     url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff') format('woff'),
+	     url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg##{$icomoon-font-family}') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+[class^="icon-"],
+[class*=" icon-"] {
+	font-family: '#{$icomoon-font-family}' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-search {
-  &:before {
-    content: $icon-search; 
-  }
+.icon-search::before {
+	content: $icon-search;
 }
-.icon-instagram {
-  &:before {
-    content: $icon-instagram; 
-  }
+
+.icon-instagram::before {
+	content: $icon-instagram;
 }
-.icon-twitter {
-  &:before {
-    content: $icon-twitter; 
-  }
+
+.icon-twitter::before {
+	content: $icon-twitter;
 }

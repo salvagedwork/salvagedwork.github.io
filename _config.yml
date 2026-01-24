@@ -26,7 +26,7 @@ defaults:
       image: /assets/images/social_media/logo.png
   - scope:
       path: ""
-      type: "articles"
+      type: "posts"
     values:
       layout: "article"
   - scope:
