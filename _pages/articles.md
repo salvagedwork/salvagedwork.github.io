@@ -4,14 +4,14 @@ title: Article Index
 permalink: /articles/
 ---
 
-# Articles
+# <span id="page-header">Articles</span>
 
 <div class="filter-container">
 	<div class="filter-group">
 		<span class="filter-label">Filter by tag</span>
 		<div class="filter-buttons" id="tag-filters">
 			<button class="filter-btn active" data-filter="all" data-type="tag">All</button>
-			{% assign all_tags = site.posts | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
+			{% assign all_tags = site.articles | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
 			{% for tag in all_tags %}
 				{% assign clean_tag = tag | strip %}
 				{% if clean_tag != '' %}
@@ -25,7 +25,7 @@ permalink: /articles/
 		<span class="filter-label">Filter by subject</span>
 		<div class="filter-buttons" id="subject-filters">
 			<button class="filter-btn active" data-filter="all" data-type="subject">All</button>
-			{% assign all_subjects = site.posts | map: 'subjects' | join: ',' | split: ',' | uniq | sort %}
+			{% assign all_subjects = site.articles | map: 'subjects' | join: ',' | split: ',' | uniq | sort %}
 			{% for subject in all_subjects %}
 				{% assign clean_subject = subject | strip %}
 				{% if clean_subject != '' %}
@@ -39,7 +39,7 @@ permalink: /articles/
 		<span class="filter-label">Filter by category</span>
 		<div class="filter-buttons" id="category-filters">
 			<button class="filter-btn active" data-filter="all" data-type="category">All</button>
-			{% assign all_categories = site.posts | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
+			{% assign all_categories = site.articles | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
 			{% for category in all_categories %}
 				{% assign clean_category = category | strip %}
 				{% if clean_category != '' %}
@@ -51,12 +51,12 @@ permalink: /articles/
 </div>
 
 <div class="article-count">
-	Showing <span id="visible-count">{{ site.posts | size }}</span> of {{ site.posts | size }} articles
+	Showing <span id="visible-count">{{ site.articles | size }}</span> of {{ site.articles | size }} articles
 </div>
 
 <div id="article-list">
-{% assign sortedPosts = site.posts | sort: 'title' %}
-{% for post in sortedPosts %}
+{% assign sortedArticles = site.articles | sort: 'title' %}
+{% for article in sortedArticles %}
 	{% include article-listing.html %}
 {% endfor %}
 </div>
@@ -69,10 +69,38 @@ document.addEventListener('DOMContentLoaded', function() {
 	var articles = document.querySelectorAll('.article-tile');
 	var visibleCount = document.getElementById('visible-count');
 	var noResults = document.getElementById('no-results');
+	var pageHeader = document.getElementById('page-header');
 	
 	var activeTagFilters = [];
 	var activeSubjectFilters = [];
 	var activeCategoryFilters = [];
+	
+	// Convert hyphenated-text to Title Case
+	function toTitleCase(str) {
+		return str.split('-').map(function(word) {
+			return word.charAt(0).toUpperCase() + word.slice(1);
+		}).join(' ');
+	}
+	
+	// Update the page header based on active filters
+	function updateHeader() {
+		var headerText = 'Articles';
+		
+		// Only show custom header if exactly one filter type is active with one value
+		var totalFilters = activeTagFilters.length + activeSubjectFilters.length + activeCategoryFilters.length;
+		
+		if (totalFilters === 1) {
+			if (activeTagFilters.length === 1) {
+				headerText = 'Articles tagged with ' + toTitleCase(activeTagFilters[0]);
+			} else if (activeCategoryFilters.length === 1) {
+				headerText = 'Articles about ' + toTitleCase(activeCategoryFilters[0]).toLowerCase();
+			} else if (activeSubjectFilters.length === 1) {
+				headerText = 'Articles about ' + toTitleCase(activeSubjectFilters[0]).toLowerCase();
+			}
+		}
+		
+		pageHeader.textContent = headerText;
+	}
 	
 	// Parse URL parameters to apply initial filters
 	function parseUrlParams() {
@@ -182,6 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 			
 			filterArticles();
+			updateHeader();
 			updateUrl();
 		});
 	});
@@ -255,5 +284,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Initialize: parse URL params and apply filters
 	parseUrlParams();
 	filterArticles();
+	updateHeader();
 });
 </script>

@@ -15,27 +15,27 @@ layout: default
 		{{ content }}
 		
 	</div>
+
+	{% if page.creators %}
+	<h3>Creators</h3>
+	<span>
+	{% for creator in page.creators %}
+		<a href="/creators/{{ creator }}/">
+				{% include titlecase.html text=creator %}
+			</a><br />
+	{% endfor %}
+	</span>
+	{% endif %}
 	
+	{% if page.tags and page.tags.size > 0 %}
+	<h3>Tags</h3>
+	<span>
+	{% for tag in page.tags %}
+		<a href="/tag/{{ tag }}/">
+				{% include titlecase.html text=tag %}
+			</a><br />
+	{% endfor %}
+	</span>
+	{% endif %}
+
 </article>
-
-{% if page.creators %}
-<h3>Creators</h3>
-<span>
-  {% for creator in page.creators %}
-    <a href="/creators/{{ creator }}/">
-			{% include titlecase.html text=creator %}
-		</a><br />
-  {% endfor %}
-</span>
-{% endif %}
-
-{% if page.tags and page.tags.size > 0 %}
-<h3>Tags</h3>
-<span>
-  {% for tag in page.tags %}
-    <a href="/tag/{{ tag }}/">
-			{% include titlecase.html text=tag %}
-		</a><br />
-  {% endfor %}
-</span>
-{% endif %}

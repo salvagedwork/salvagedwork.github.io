@@ -9,11 +9,7 @@ layout: default
 
 <h3>Articles featuring {{ creator_name }}:</h3>
 
-{% assign filtered_posts = site.posts | where_exp: "post", "post.creators contains page.name" %}
-{% for post in filtered_posts %}
+{% assign filtered_articles = site.articles | where_exp: "article", "article.creators contains page.name" %}
+{% for article in filtered_articles %}
   {% include article-listing.html %}
 {% endfor %}
-
-{% if filtered_posts.size == 0 %}
-<p><em>No articles yet.</em></p>
-{% endif %}

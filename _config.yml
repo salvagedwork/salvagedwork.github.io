@@ -8,7 +8,7 @@ theme: null
 paginate: 10
 
 collections:
-  posts:
+  articles:
     permalink: /article/:title/
     output: true
   creators:
@@ -26,7 +26,7 @@ defaults:
       image: /assets/images/social_media/logo.png
   - scope:
       path: ""
-      type: "posts"
+      type: "articles"
     values:
       layout: "article"
   - scope:

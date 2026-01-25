@@ -1,23 +1,16 @@
-<div class="article-tile" data-tags="{{ post.tags | join: ',' }}" data-creators="{{ post.creators | join: ',' }}" data-subjects="{{ post.subjects | join: ',' }}" data-category="{{ post.categories | join: ',' }}">
+<div class="article-tile" data-tags="{{ article.tags | join: ',' }}" data-subjects="{{ article.subjects | join: ',' }}" data-category="{{ article.categories | join: ',' }}">
 	<div class="article-tile-image-container">
-		<a href="{{ post.url }}"><img class="article-tile-image" src="{{ post.featured-image }}"></a>
+		<a href="{{ article.url }}"><img class="article-tile-image" src="{{ article.featured-image }}"></a>
 	</div>
 	<div class="article-tile-details-container">
-		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-		<p>{{ post.description }}</p>
-		{% if post.creators %}
-		<p class="article-details-creators">Creators: <span class="article-creator">
-			{% for creator in post.creators %}<a href="/creators/{{ creator }}/" class="article-creator-link">{% include titlecase.html text=creator %}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
-		</span></p>
-		{% endif %}
-		{% if post.tags and post.tags.size > 0 %}
+		<h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+		<p>{{ article.description }}</p>
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			{% for tag in post.tags %}<a href="/tag/{{ tag }}/" class="article-tag-link">{% include titlecase.html text=tag %}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+			{% for tag in article.tags %}<a href="/tag/{{ tag }}/" class="article-tag-link">{% include titlecase.html text=tag %}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
 		</span></p>
-		{% endif %}
-		{% if post.subjects %}
+		{% if article.subjects %}
 		<p class="article-details-subjects">Subjects: <span class="article-subject">
-			{% for subject in post.subjects %}<span class="article-subject-item">{% include titlecase.html text=subject %}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}
+			{% for subject in article.subjects %}<span class="article-subject-item">{% include titlecase.html text=subject %}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}
 		</span></p>
 		{% endif %}
 	</div>

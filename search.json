@@ -2,16 +2,15 @@
 layout: null
 ---
 [
-  {% for post in site.posts %}
+  {% for article in site.articles %}
     {
 
-      "title"    	: "{{ post.title | escape }}",
-      "url"      	: "{{ site.baseurl }}{{ post.url }}",
-	  "creators"	: "{{ post.creators | join: ', ' }}",
-	  "tags"     	: "{{ post.tags | join: ', ' }}",
-      "category" 	: "{{ post.category }}",
-	  "description" : "{{ post.description | escape }}",
-      "date"     	: "{{ post.date }}"
+      "title"    	: "{{ article.title | escape }}",
+      "url"      	: "{{ site.baseurl }}{{ article.url }}",
+	  "tags"     	: "{{ article.tags | join: ', ' }}",
+      "category" 	: "{{ article.category }}",
+	  "description" : "{{ article.description | escape }}",
+      "date"     	: "{{ article.date }}"
 
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}

@@ -9,7 +9,7 @@ last_modified_at: 2025-01-24
 
 <p>This project is independently supported and has no commercial interest in the materials shared.</p>
 
-<p><strong>{{ site.posts | size }} articles</strong> across <strong>{{ site.creators | size }} creators</strong> are currently archived.</p>
+<p><strong>{{ site.articles | size }} articles</strong> across <strong>{{ site.creators | size }} creators</strong> are currently archived.</p>
 
 
 {% comment %}
@@ -18,10 +18,11 @@ FEATURED ARTICLE (randomly selected at build time)
 ================================================================================
 {% endcomment %}
 
-{% assign featured_posts = site.posts | where_exp: "post", "post.featured-image" %}
+{% assign featured_articles = site.articles | where_exp: "article", "article.featured-image" %}
+{% if featured_articles.size > 0 %}
 {% assign random_seed = site.time | date: "%S" | plus: 0 %}
-{% assign random_index = random_seed | modulo: featured_posts.size %}
-{% assign featured = featured_posts[random_index] %}
+{% assign random_index = random_seed | modulo: featured_articles.size %}
+{% assign featured = featured_articles[random_index] %}
 
 {% if featured %}
 <h2>Featured article</h2>
@@ -41,9 +42,10 @@ FEATURED ARTICLE (randomly selected at build time)
 			{% endfor %}
 		</p>
 		{% endif %}
-		<p><a href="{{ featured.url }}">Read more →</a></p>
+		<p><a href="{{ featured.url }}">Read more â†’</a></p>
 	</div>
 </div>
+{% endif %}
 {% endif %}
 
 
@@ -55,11 +57,12 @@ RECENT ARTICLES
 
 <h2>Recent additions</h2>
 
-{% for post in site.posts limit:3 %}
+{% assign sorted_articles = site.articles | sort: 'date' | reverse %}
+{% for article in sorted_articles limit:3 %}
 	{% include article-listing.html %}
 {% endfor %}
 
-<p><a href="/articles/">Explore all {{ site.posts | size }} articles →</a></p>
+<p><a href="/articles/">Explore all {{ site.articles | size }} articles â†’</a></p>
 
 
 {% comment %}
@@ -72,15 +75,15 @@ BROWSE BY CATEGORY
 
 <p>Articles are organized into the following categories:</p>
 
-{% assign categories = site.posts | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
+{% assign categories = site.articles | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
 <div class="browse-grid">
 {% for category in categories %}
 	{% if category != '' %}
-	{% assign category_posts = site.posts | where: 'categories', category %}
+	{% assign category_articles = site.articles | where: 'categories', category %}
 	<div class="browse-item">
 		<a href="/articles/?category={{ category }}">
 			<span class="browse-item-title">{% include titlecase.html text=category %}</span>
-			<span class="browse-item-count">{{ category_posts.size }} article{% if category_posts.size != 1 %}s{% endif %}</span>
+			<span class="browse-item-count">{{ category_articles.size }} article{% if category_articles.size != 1 %}s{% endif %}</span>
 		</a>
 	</div>
 	{% endif %}
@@ -94,7 +97,7 @@ BROWSE BY SUBJECT
 ================================================================================
 {% endcomment %}
 
-{% assign all_subjects = site.posts | map: 'subjects' | compact | join: ',' | split: ',' | uniq | sort %}
+{% assign all_subjects = site.articles | map: 'subjects' | compact | join: ',' | split: ',' | uniq | sort %}
 {% if all_subjects.size > 0 %}
 <h2>Browse by subject</h2>
 
@@ -104,8 +107,8 @@ BROWSE BY SUBJECT
 {% for subject in all_subjects %}
 	{% if subject != '' %}
 	{% assign subject_count = 0 %}
-	{% for post in site.posts %}
-		{% if post.subjects contains subject %}
+	{% for article in site.articles %}
+		{% if article.subjects contains subject %}
 			{% assign subject_count = subject_count | plus: 1 %}
 		{% endif %}
 	{% endfor %}
@@ -122,22 +125,28 @@ BROWSE BY TAG
 ================================================================================
 {% endcomment %}
 
-{% if site.tags.size > 0 %}
+{% assign all_tags = site.articles | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
+{% if all_tags.size > 0 %}
 <h2>Popular tags</h2>
 
 <p>Articles are tagged for easier discovery:</p>
 
 <div class="tag-cloud">
-{% for tag in site.tags %}
-	{% assign tag_name = tag[0] %}
-	{% assign tag_posts = tag[1] %}
-	{% if tag_posts.size > 0 %}
-	<a href="/tag/{{ tag_name }}/" class="tag-cloud-item">{% include titlecase.html text=tag_name %} <span class="tag-count">({{ tag_posts.size }})</span></a>
+{% for tag_name in all_tags %}
+	{% if tag_name != '' %}
+	{% assign tag_count = 0 %}
+	{% for article in site.articles %}
+		{% if article.tags contains tag_name %}
+			{% assign tag_count = tag_count | plus: 1 %}
+		{% endif %}
+	{% endfor %}
+	{% if tag_count > 0 %}
+	<a href="/articles/?tag={{ tag_name }}" class="tag-cloud-item">{% include titlecase.html text=tag_name %} <span class="tag-count">({{ tag_count }})</span></a>
+	{% endif %}
 	{% endif %}
 {% endfor %}
 </div>
 
-<p><a href="/tags/">View all tags →</a></p>
 {% endif %}
 
 
@@ -157,7 +166,7 @@ CREATORS
 {% endfor %}
 </div>
 
-<p><a href="/creators/">View all creators →</a></p>
+<p><a href="/creators/">View all creators â†’</a></p>
 
 
 {% comment %}
@@ -168,22 +177,22 @@ RANDOM ARTICLE
 
 <h2>Feeling adventurous?</h2>
 
-<p><a href="#" id="random-article-link">Jump to a random article →</a></p>
+<p><a href="#" id="random-article-link">Jump to a random article â†’</a></p>
 
 <script>
 (function() {
-	var articles = [
-		{% for post in site.posts %}
-		"{{ post.url }}"{% unless forloop.last %},{% endunless %}
+	var defined_articles = [
+		{% for article in site.articles %}
+		"{{ article.url }}"{% unless forloop.last %},{% endunless %}
 		{% endfor %}
 	];
 	
 	var randomLink = document.getElementById('random-article-link');
-	if (randomLink && articles.length > 0) {
+	if (randomLink && defined_articles.length > 0) {
 		randomLink.addEventListener('click', function(e) {
 			e.preventDefault();
-			var randomIndex = Math.floor(Math.random() * articles.length);
-			window.location.href = articles[randomIndex];
+			var randomIndex = Math.floor(Math.random() * defined_articles.length);
+			window.location.href = defined_articles[randomIndex];
 		});
 	}
 })();
