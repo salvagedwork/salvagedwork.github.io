@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,6 +38,7 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -60,7 +62,7 @@
 <meta property="twitter:title" content="salvaged.work - A digital archive for salvaged works." />
 <meta name="twitter:site" content="@salvagedwork" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","dateModified":"2022-02-05T00:00:00+01:00","description":"A digital archive for salvaged analogue materials.","headline":"salvaged.work - A digital archive for salvaged works.","image":"http://localhost:4000/assets/images/social_media/logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/social_media/logo.png"}},"url":"http://localhost:4000/page3/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","dateModified":"2025-01-24T00:00:00+01:00","description":"A digital archive for salvaged analogue materials.","headline":"salvaged.work - A digital archive for salvaged works.","image":"http://localhost:4000/assets/images/social_media/logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/social_media/logo.png"}},"url":"http://localhost:4000/page3/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -72,7 +74,7 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/artists"  class="navbar-link">Artists</a>
+		<a href="/creators"  class="navbar-link">Creators</a>
 		
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
@@ -90,7 +92,7 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/artists" class="mobile-nav-link">Artists</a>
+	<a href="/creators" class="mobile-nav-link">Creators</a>
 	
 	<a href="/articles" class="mobile-nav-link">Articles</a>
 	
@@ -232,407 +234,521 @@
 
 <p>This project is independently supported and has no commercial interest in the materials shared.</p>
 
-<h2>Newest articles</h2>
+<p><strong>28 articles</strong> across <strong>4 creators</strong> are currently archived.</p>
 
 
-	<div class="article-tile" data-tags="asger-jorn,christian-dotremont" data-subjects="" data-category="books">
+
+
+
+
+
+
+
+
+<h2>Featured article</h2>
+
+<div class="featured-article">
+	<div class="featured-article-image">
+		<a href="/article/chevelure-des-choses/"><img src="/assets/articles/chevelure-des-choses/front.jpg" alt="La chevelure des choses"></a>
+	</div>
+	<div class="featured-article-content">
+		<h3 style="padding-top: 0; margin-top: 0;"><a href="/article/chevelure-des-choses/">La chevelure des choses</a></h3>
+		<p><strong>La chevelure des choses</strong> (The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.</p>
+		
+		<p class="featured-article-meta">
+			Creators: 
+			
+				<a href="/creators/asger-jorn">Asger Jorn</a>, 
+			
+				<a href="/creators/christian-dotremont">Christian Dotremont</a>
+			
+		</p>
+		
+		<p><a href="/article/chevelure-des-choses/">Read more →</a></p>
+	</div>
+</div>
+
+
+
+
+
+<h2>Recent additions</h2>
+
+
+	<div class="article-tile" data-tags="" data-creators="asger-jorn,christian-dotremont" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
 		<a href="/article/chevelure-des-choses/"><img class="article-tile-image" src="/assets/articles/chevelure-des-choses/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/chevelure-des-choses/">La chevelure des choses</a></h3>
 		<p>(The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.</p>
-		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/christian-dotremont/" class="article-tag-link">Christian Dotremont</a>
+		
+		<p class="article-details-creators">Creators: <span class="article-creator">
+			<a href="/creators/asger-jorn/" class="article-creator-link">Asger Jorn</a>, <a href="/creators/christian-dotremont/" class="article-creator-link">Christian Dotremont</a>
 		</span></p>
+		
+		
 		
 	</div>
 </div>
 
 
-	<div class="article-tile" data-tags="asger-jorn,guy-debord" data-subjects="" data-category="books">
+	<div class="article-tile" data-tags="" data-creators="asger-jorn,guy-debord" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
 		<a href="/article/memoires/"><img class="article-tile-image" src="/assets/articles/memoires/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/memoires/">Mémoires</a></h3>
 		<p>is an artist's book made by the Danish artist Asger Jorn in collaboration with the French artist and theorist Guy Debord.</p>
-		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, <a href="/tag/guy-debord/" class="article-tag-link">Guy Debord</a>
+		
+		<p class="article-details-creators">Creators: <span class="article-creator">
+			<a href="/creators/asger-jorn/" class="article-creator-link">Asger Jorn</a>, <a href="/creators/guy-debord/" class="article-creator-link">Guy Debord</a>
 		</span></p>
+		
+		
 		
 	</div>
 </div>
 
 
-	<div class="article-tile" data-tags="asger-jorn" data-subjects="" data-category="books">
+	<div class="article-tile" data-tags="" data-creators="asger-jorn" data-subjects="" data-category="books">
 	<div class="article-tile-image-container">
 		<a href="/article/jorn-catalogue-raisonne/"><img class="article-tile-image" src="/assets/articles/jorn-catalogue-raisonne/front.jpg"></a>
 	</div>
 	<div class="article-tile-details-container">
 		<h3><a href="/article/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a></h3>
 		<p>is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
-		<p class="article-details-tags">Tags: <span class="article-tag">
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
+		
+		<p class="article-details-creators">Creators: <span class="article-creator">
+			<a href="/creators/asger-jorn/" class="article-creator-link">Asger Jorn</a>
 		</span></p>
+		
+		
 		
 	</div>
 </div>
 
 
 
-<a href="/articles">Explore all articles</a>
+<p><a href="/articles/">Explore all 28 articles →</a></p>
 
-<h2>Explore works by artists</h2>
 
-<div class="artist-tile-container">
 
-	<a href="/creators/asger-jorn">
-		<div class="artist-tile">
-			<span class="artist-tile-title">Asger Jorn</span>
-		</div>
-	</a>
 
-	<a href="/creators/henning-christiansen">
-		<div class="artist-tile">
-			<span class="artist-tile-title">Henning Christiansen</span>
-		</div>
-	</a>
+<h2>Browse by category</h2>
 
-	<a href="/creators/joseph-beuys">
-		<div class="artist-tile">
-			<span class="artist-tile-title">Joseph Beuys</span>
-		</div>
-	</a>
+<p>Articles are organized into the following categories:</p>
 
-	<a href="/creators/wolf-vostell">
-		<div class="artist-tile">
-			<span class="artist-tile-title">Wolf Vostell</span>
-		</div>
-	</a>
+
+<div class="browse-grid">
+
+	
+	
+	<div class="browse-item">
+		<a href="/articles/?category=books">
+			<span class="browse-item-title">Books</span>
+			<span class="browse-item-count">26 articles</span>
+		</a>
+	</div>
+	
+
+	
+	
+	<div class="browse-item">
+		<a href="/articles/?category=recordings">
+			<span class="browse-item-title">Recordings</span>
+			<span class="browse-item-count">2 articles</span>
+		</a>
+	</div>
+	
 
 </div>
 
 
-<h2>Read a specific article</h2>
-
-<ul>
 
 
-  <li>
-    <a href="/article/21-light-drawings-jorn/">21 Lystegninger</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-		
-	</span>
-  </li>
 
-  <li>
-    <a href="/article/abschiedssymphonie/">Abschiedssymphonie, Op. 177</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/joseph-beuys/" class="article-tag-link">Joseph Beuys</a>, 
-		
-			<a href="/tag/henning-christiansen/" class="article-tag-link">Henning Christiansen</a>, 
-		
-			<a href="/tag/nam-june-paik/" class="article-tag-link">Nam June Paik</a>, 
-		
-			<a href="/tag/fluxus/" class="article-tag-link">Fluxus</a>
-		
-	</span>
-  </li>
 
-  <li>
-    <a href="/article/atkins-jorn-revised-supplement/">Asger Jorn - Revised Supplement</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-		
-	</span>
-  </li>
+<h2>Browse by subject</h2>
 
-  <li>
-    <a href="/article/atkins-jorn-supplement/">Asger Jorn - Supplement - Paintings 1930-1973</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-		
-	</span>
-  </li>
+<p>Explore articles by their subject matter:</p>
 
-  <li>
-    <a href="/article/atkins-jorn-crucial-years/">Asger Jorn - The Crucial Years 1954-1964</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-		
-	</span>
-  </li>
+<div class="tag-cloud">
 
-  <li>
-    <a href="/article/atkins-jorn-final-years/">Asger Jorn - The Final Years 1965-1973</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-		
-	</span>
-  </li>
+	
+	
+	
+	<a href="/articles/?subject=art-theory" class="tag-cloud-item" data-count="1">Art Theory <span class="tag-count">(1)</span></a>
+	
 
-  <li>
-    <a href="/article/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-		
-	</span>
-  </li>
+	
+	
+	
+	<a href="/articles/?subject=structuralism" class="tag-cloud-item" data-count="1">Structuralism <span class="tag-count">(1)</span></a>
+	
 
-  <li>
-    <a href="/article/jorn-a-silkeborg/">Asger Jorn à Silkeborg</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-		
-	</span>
-  </li>
+</div>
 
-  <li>
-    <a href="/article/cybernetic-serendipity/">Cybernetic Serendipity - The Computer and the Arts</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/cybernetics/" class="article-tag-link">Cybernetics</a>, 
-		
-			<a href="/tag/computers/" class="article-tag-link">Computers</a>
-		
-	</span>
-  </li>
 
-  <li>
-    <a href="/article/helhesten/">Helhesten</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-		
-	</span>
-  </li>
 
-  <li>
-    <a href="/article/helhesten-1.1/">Helhesten (Year 1, Booklet 1)</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-		
-	</span>
-  </li>
 
-  <li>
-    <a href="/article/helhesten-1.2/">Helhesten (Year 1, Booklet 2)</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-		
-	</span>
-  </li>
 
-  <li>
-    <a href="/article/helhesten-1.3/">Helhesten (Year 1, Booklet 3)</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-		
-	</span>
-  </li>
 
-  <li>
-    <a href="/article/helhesten-1.4/">Helhesten (Year 1, Booklet 4)</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-		
-	</span>
-  </li>
+<h2>Popular tags</h2>
 
-  <li>
-    <a href="/article/helhesten-1.5-6/">Helhesten (Year 1, Booklets 5 & 6)</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-		
-	</span>
-  </li>
+<p>Articles are tagged for easier discovery:</p>
 
-  <li>
-    <a href="/article/helhesten-2.1/">Helhesten (Year 2, Booklet 1)</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-		
-	</span>
-  </li>
+<div class="tag-cloud">
 
-  <li>
-    <a href="/article/helhesten-2.4/">Helhesten (Year 2, Booklet 4)</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-		
-	</span>
-  </li>
+	
+	
+	
+	<a href="/tag/fluxus/" class="tag-cloud-item">Fluxus <span class="tag-count">(2)</span></a>
+	
 
-  <li>
-    <a href="/article/helhesten-2.2-3/">Helhesten (Year 2, Booklets 2 & 3)</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-		
-	</span>
-  </li>
+	
+	
+	
+	<a href="/tag/cobra/" class="tag-cloud-item">Cobra <span class="tag-count">(10)</span></a>
+	
 
-  <li>
-    <a href="/article/helhesten-2.5-6/">Helhesten (Year 2, Booklets 5 & 6)</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-		
-			<a href="/tag/cobra/" class="article-tag-link">Cobra</a>, 
-		
-			<a href="/tag/helhesten/" class="article-tag-link">Helhesten</a>
-		
-	</span>
-  </li>
+	
+	
+	
+	<a href="/tag/helhesten/" class="tag-cloud-item">Helhesten <span class="tag-count">(10)</span></a>
+	
 
-  <li>
-    <a href="/article/il-giardino-delle-delizie/">Il giardino delle delizie</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/wolf-vostell/" class="article-tag-link">Wolf Vostell</a>, 
-		
-			<a href="/tag/fluxus/" class="article-tag-link">Fluxus</a>
-		
-	</span>
-  </li>
+	
+	
+	
+	<a href="/tag/klankteksten/" class="tag-cloud-item">Klankteksten <span class="tag-count">(1)</span></a>
+	
 
-  <li>
-    <a href="/article/atkins-jorn-scandinavia/">Jorn in Scandinavia 1930-1953</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-		
-	</span>
-  </li>
+	
+	
+	
+	<a href="/tag/cybernetics/" class="tag-cloud-item">Cybernetics <span class="tag-count">(1)</span></a>
+	
 
-  <li>
-    <a href="/article/klankteksten/">Klankteksten - Konkrete Poëzie - Visuele Teksten</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/klankteksten/" class="article-tag-link">Klankteksten</a>
-		
-	</span>
-  </li>
+</div>
 
-  <li>
-    <a href="/article/chevelure-des-choses/">La chevelure des choses</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-		
-			<a href="/tag/christian-dotremont/" class="article-tag-link">Christian Dotremont</a>
-		
-	</span>
-  </li>
+<p><a href="/tags/">View all tags →</a></p>
 
-  <li>
-    <a href="/article/la-langue-verte/">La langue verte et la cuite</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-		
-	</span>
-  </li>
 
-  <li>
-    <a href="/article/la-langue-verte-contents/">La langue verte et la cuite (Contents)</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-		
-	</span>
-  </li>
 
-  <li>
-    <a href="/article/memoires/">Mémoires</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>, 
-		
-			<a href="/tag/guy-debord/" class="article-tag-link">Guy Debord</a>
-		
-	</span>
-  </li>
 
-  <li>
-    <a href="/article/signes-graves-eure-calvados/">Signes gravés sur les églises de l'Eure et du Calvados</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-		
-	</span>
-  </li>
 
-  <li>
-    <a href="/article/skanes-stenskulptur/">Skånes stenskulptur under 1100-talet</a> 
-	<span class="article-tag">
-		
-			<a href="/tag/asger-jorn/" class="article-tag-link">Asger Jorn</a>
-		
-	</span>
-  </li>
+<h2>Creators</h2>
 
-</ul>
+<p>The archive focuses on works by the following artists and authors:</p>
+
+<div class="creator-grid">
+
+	<div class="creator-card">
+	<div class="creator-card-image">
+		<a href="/creators/asger-jorn/"><img src="/assets/images/creator_profiles/asger-jorn.png" alt="Asger Jorn" /></a>
+	</div>
+	<div class="creator-card-content">
+		<h3><a href="/creators/asger-jorn/">Asger Jorn</a></h3>
+		<p class="creator-card-description">Asger Oluf Jorn (3 March 1914 – 1 May 1973) was a Danish painter, sculptor, ceramic artist, and author. He was a founding member of the avant-garde movement COBRA and the Situationist International.</p>
+		
+		
+		<p class="creator-card-meta">24 articles archived</p>
+		<div class="creator-card-articles">
+			
+			<a href="/article/chevelure-des-choses/" class="creator-card-article-link">La chevelure des choses</a>, 
+			
+			<a href="/article/memoires/" class="creator-card-article-link">Mémoires</a>, 
+			
+			<a href="/article/jorn-catalogue-raisonne/" class="creator-card-article-link">Asger Jorn Catalogue raisonné Series</a>
+			
+			
+			<span class="creator-card-more">and 21 more...</span>
+			
+		</div>
+		
+		<a href="/creators/asger-jorn/" class="creator-card-link">View creator profile →</a>
+	</div>
+</div>
+
+
+	<div class="creator-card">
+	<div class="creator-card-image">
+		<a href="/creators/henning-christiansen/"><img src="/assets/images/creator_profiles/henning-christiansen.png" alt="Henning Christiansen" /></a>
+	</div>
+	<div class="creator-card-content">
+		<h3><a href="/creators/henning-christiansen/">Henning Christiansen</a></h3>
+		<p class="creator-card-description">Henning Christiansen (May 28, 1932, Copenhagen – December 10, 2008) was a Danish composer and an active member of the Fluxus-movement.</p>
+		
+		
+		<p class="creator-card-meta">1 article archived</p>
+		<div class="creator-card-articles">
+			
+			<a href="/article/abschiedssymphonie/" class="creator-card-article-link">Abschiedssymphonie, Op. 177</a>
+			
+			
+		</div>
+		
+		<a href="/creators/henning-christiansen/" class="creator-card-link">View creator profile →</a>
+	</div>
+</div>
+
+
+	<div class="creator-card">
+	<div class="creator-card-image">
+		<a href="/creators/joseph-beuys/"><img src="/assets/images/creator_profiles/joseph-beuys.png" alt="Joseph Beuys" /></a>
+	</div>
+	<div class="creator-card-content">
+		<h3><a href="/creators/joseph-beuys/">Joseph Beuys</a></h3>
+		<p class="creator-card-description">Joseph Beuys (12 May 1921 – 23 January 1986) was a German Fluxus, happening, and performance artist as well as a painter, sculptor, medallist, installation artist, graphic artist, art theorist, and pedagogue.</p>
+		
+		
+		<p class="creator-card-meta">1 article archived</p>
+		<div class="creator-card-articles">
+			
+			<a href="/article/abschiedssymphonie/" class="creator-card-article-link">Abschiedssymphonie, Op. 177</a>
+			
+			
+		</div>
+		
+		<a href="/creators/joseph-beuys/" class="creator-card-link">View creator profile →</a>
+	</div>
+</div>
+
+
+	<div class="creator-card">
+	<div class="creator-card-image">
+		<a href="/creators/wolf-vostell/"><img src="/assets/images/creator_profiles/wolf-vostell.png" alt="Wolf Vostell" /></a>
+	</div>
+	<div class="creator-card-content">
+		<h3><a href="/creators/wolf-vostell/">Wolf Vostell</a></h3>
+		<p class="creator-card-description">Wolf Vostell (14 October 1932 – 3 April 1998) was a German painter and sculptor, considered one of the early adopters of video art and installation art and pioneer of Happening and Fluxus.</p>
+		
+		
+		<p class="creator-card-meta">1 article archived</p>
+		<div class="creator-card-articles">
+			
+			<a href="/article/il-giardino-delle-delizie/" class="creator-card-article-link">Il giardino delle delizie</a>
+			
+			
+		</div>
+		
+		<a href="/creators/wolf-vostell/" class="creator-card-link">View creator profile →</a>
+	</div>
+</div>
+
+
+</div>
+
+<p><a href="/creators/">View all creators →</a></p>
+
+
+
+
+<h2>Feeling adventurous?</h2>
+
+<p><a href="#" id="random-article-link">Jump to a random article →</a></p>
+
+<script>
+(function() {
+	var articles = [
+		
+		"/article/chevelure-des-choses/",
+		
+		"/article/memoires/",
+		
+		"/article/jorn-catalogue-raisonne/",
+		
+		"/article/atkins-jorn-supplement/",
+		
+		"/article/atkins-jorn-scandinavia/",
+		
+		"/article/atkins-jorn-revised-supplement/",
+		
+		"/article/atkins-jorn-final-years/",
+		
+		"/article/atkins-jorn-crucial-years/",
+		
+		"/article/cybernetic-serendipity/",
+		
+		"/article/klankteksten/",
+		
+		"/article/21-light-drawings-jorn/",
+		
+		"/article/skanes-stenskulptur/",
+		
+		"/article/signes-graves-eure-calvados/",
+		
+		"/article/la-langue-verte/",
+		
+		"/article/la-langue-verte-contents/",
+		
+		"/article/jorn-a-silkeborg/",
+		
+		"/article/il-giardino-delle-delizie/",
+		
+		"/article/helhesten/",
+		
+		"/article/helhesten-2.5-6/",
+		
+		"/article/helhesten-2.4/",
+		
+		"/article/helhesten-2.2-3/",
+		
+		"/article/helhesten-2.1/",
+		
+		"/article/helhesten-1.5-6/",
+		
+		"/article/helhesten-1.4/",
+		
+		"/article/helhesten-1.3/",
+		
+		"/article/helhesten-1.2/",
+		
+		"/article/helhesten-1.1/",
+		
+		"/article/abschiedssymphonie/"
+		
+	];
+	
+	var randomLink = document.getElementById('random-article-link');
+	if (randomLink && articles.length > 0) {
+		randomLink.addEventListener('click', function(e) {
+			e.preventDefault();
+			var randomIndex = Math.floor(Math.random() * articles.length);
+			window.location.href = articles[randomIndex];
+		});
+	}
+})();
+</script>
+
+
+
+
+<style>
+/* Featured Article */
+.featured-article {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1rem;
+	background-color: #f8f9fa;
+	border: 1px solid #eee;
+	margin: 1rem 0;
+}
+
+.featured-article-image img {
+	max-width: 100%;
+	max-height: 200px;
+	object-fit: contain;
+	box-shadow: 0.1rem 0.1rem #eee;
+}
+
+.featured-article-content h3 {
+	margin-bottom: 0.5rem;
+}
+
+.featured-article-meta {
+	font-size: 0.9rem;
+	color: #666;
+}
+
+@media (min-width: 769px) {
+	.featured-article {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+	
+	.featured-article-image {
+		flex: 0 0 150px;
+	}
+	
+	.featured-article-image img {
+		max-height: 180px;
+	}
+	
+	.featured-article-content {
+		flex: 1;
+	}
+}
+
+/* Browse Grid (Categories) */
+.browse-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+	gap: 0.8rem;
+	margin: 1rem 0;
+}
+
+.browse-item {
+	background-color: #f8f9fa;
+	border: 1px solid #ccc;
+	padding: 0.8rem;
+	text-align: center;
+	transition: border-color 0.15s ease;
+}
+
+.browse-item:hover {
+	border-color: red;
+}
+
+.browse-item a {
+	text-decoration: none;
+	display: block;
+}
+
+.browse-item-title {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 0.3rem;
+}
+
+.browse-item-count {
+	font-size: 0.85rem;
+	color: #666;
+}
+
+/* Tag Cloud */
+.tag-cloud {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin: 1rem 0;
+}
+
+.tag-cloud-item {
+	display: inline-block;
+	padding: 0.3rem 0.6rem;
+	background-color: #f8f9fa;
+	border: 1px solid #ccc;
+	font-size: 0.9rem;
+	text-decoration: none;
+	transition: all 0.15s ease;
+}
+
+.tag-cloud-item:hover {
+	background-color: red;
+	border-color: red;
+	color: white;
+	text-decoration: none;
+}
+
+.tag-count {
+	color: #666;
+	font-size: 0.8rem;
+}
+
+.tag-cloud-item:hover .tag-count {
+	color: rgba(255,255,255,0.8);
+}
+</style>
 
 			</div>
 			
 			<div id="footer">
 				<div class="page-modified-date">
 	
-		Page last modified on 2022-02-05
+		Page last modified on 2025-01-24
 	</div>
 <div class="navbar-links-container">
 	

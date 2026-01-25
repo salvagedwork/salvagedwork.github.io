@@ -74,6 +74,58 @@ document.addEventListener('DOMContentLoaded', function() {
 	var activeSubjectFilters = [];
 	var activeCategoryFilters = [];
 	
+	// Parse URL parameters to apply initial filters
+	function parseUrlParams() {
+		var params = new URLSearchParams(window.location.search);
+		
+		// Handle tag parameter
+		var tagParam = params.get('tag');
+		if (tagParam) {
+			applyFilterFromUrl('tag', tagParam);
+		}
+		
+		// Handle subject parameter
+		var subjectParam = params.get('subject');
+		if (subjectParam) {
+			applyFilterFromUrl('subject', subjectParam);
+		}
+		
+		// Handle category parameter
+		var categoryParam = params.get('category');
+		if (categoryParam) {
+			applyFilterFromUrl('category', categoryParam);
+		}
+	}
+	
+	// Apply a filter from URL parameter
+	function applyFilterFromUrl(filterType, filterValue) {
+		var filterGroup = document.getElementById(filterType + '-filters');
+		if (!filterGroup) return;
+		
+		var targetButton = filterGroup.querySelector('[data-filter="' + filterValue + '"]');
+		if (!targetButton) return;
+		
+		var allButton = filterGroup.querySelector('[data-filter="all"]');
+		
+		// Deactivate "All" button
+		if (allButton) {
+			allButton.classList.remove('active');
+		}
+		
+		// Activate the target filter button
+		targetButton.classList.add('active');
+		
+		// Add to active filters array
+		if (filterType === 'tag') {
+			activeTagFilters.push(filterValue);
+		} else if (filterType === 'subject') {
+			activeSubjectFilters.push(filterValue);
+		} else if (filterType === 'category') {
+			activeCategoryFilters.push(filterValue);
+		}
+	}
+	
+	// Set up click handlers for filter buttons
 	filterButtons.forEach(function(button) {
 		button.addEventListener('click', function() {
 			var filterType = this.dataset.type;
@@ -130,6 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 			
 			filterArticles();
+			updateUrl();
 		});
 	});
 	
@@ -176,5 +229,31 @@ document.addEventListener('DOMContentLoaded', function() {
 		visibleCount.textContent = visibleArticles;
 		noResults.style.display = visibleArticles === 0 ? 'block' : 'none';
 	}
+	
+	// Update URL to reflect current filters (for sharing/bookmarking)
+	function updateUrl() {
+		var params = new URLSearchParams();
+		
+		if (activeTagFilters.length === 1) {
+			params.set('tag', activeTagFilters[0]);
+		}
+		if (activeSubjectFilters.length === 1) {
+			params.set('subject', activeSubjectFilters[0]);
+		}
+		if (activeCategoryFilters.length === 1) {
+			params.set('category', activeCategoryFilters[0]);
+		}
+		
+		var newUrl = window.location.pathname;
+		if (params.toString()) {
+			newUrl += '?' + params.toString();
+		}
+		
+		window.history.replaceState({}, '', newUrl);
+	}
+	
+	// Initialize: parse URL params and apply filters
+	parseUrlParams();
+	filterArticles();
 });
 </script>

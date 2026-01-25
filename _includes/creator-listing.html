@@ -1,0 +1,22 @@
+<div class="creator-card">
+	<div class="creator-card-image">
+		<a href="{{ creator.url }}"><img src="/assets/images/creator_profiles/{{ creator.name }}.png" alt="{{ creator.title }}" /></a>
+	</div>
+	<div class="creator-card-content">
+		<h3><a href="{{ creator.url }}">{{ creator.title }}</a></h3>
+		<p class="creator-card-description">{{ creator.description }}</p>
+		{% assign creator_posts = site.posts | where_exp: "post", "post.creators contains creator.name" %}
+		{% if creator_posts.size > 0 %}
+		<p class="creator-card-meta">{{ creator_posts.size }} article{% if creator_posts.size != 1 %}s{% endif %} archived</p>
+		<div class="creator-card-articles">
+			{% for post in creator_posts limit:3 %}
+			<a href="{{ post.url }}" class="creator-card-article-link">{{ post.title }}</a>{% unless forloop.last %}, {% endunless %}
+			{% endfor %}
+			{% if creator_posts.size > 3 %}
+			<span class="creator-card-more">and {{ creator_posts.size | minus: 3 }} more...</span>
+			{% endif %}
+		</div>
+		{% endif %}
+		<a href="{{ creator.url }}" class="creator-card-link">View creator profile →</a>
+	</div>
+</div>

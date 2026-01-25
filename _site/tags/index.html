@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,6 +38,7 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -71,7 +73,7 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/artists"  class="navbar-link">Artists</a>
+		<a href="/creators"  class="navbar-link">Creators</a>
 		
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
@@ -89,7 +91,7 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/artists" class="mobile-nav-link">Artists</a>
+	<a href="/creators" class="mobile-nav-link">Creators</a>
 	
 	<a href="/articles" class="mobile-nav-link">Articles</a>
 	
@@ -228,120 +230,6 @@
 				<h1 id="tags">Tags</h1>
 
 <h2>
-		Asger Jorn
-	</h2>
-<ul>
-  
-    <li>
-      <a href="/article/chevelure-des-choses/">La chevelure des choses</a>
-    </li>
-  
-    <li>
-      <a href="/article/memoires/">Mémoires</a>
-    </li>
-  
-    <li>
-      <a href="/article/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a>
-    </li>
-  
-    <li>
-      <a href="/article/atkins-jorn-supplement/">Asger Jorn - Supplement - Paintings 1930-1973</a>
-    </li>
-  
-    <li>
-      <a href="/article/atkins-jorn-scandinavia/">Jorn in Scandinavia 1930-1953</a>
-    </li>
-  
-    <li>
-      <a href="/article/atkins-jorn-revised-supplement/">Asger Jorn - Revised Supplement</a>
-    </li>
-  
-    <li>
-      <a href="/article/atkins-jorn-final-years/">Asger Jorn - The Final Years 1965-1973</a>
-    </li>
-  
-    <li>
-      <a href="/article/atkins-jorn-crucial-years/">Asger Jorn - The Crucial Years 1954-1964</a>
-    </li>
-  
-    <li>
-      <a href="/article/21-light-drawings-jorn/">21 Lystegninger</a>
-    </li>
-  
-    <li>
-      <a href="/article/skanes-stenskulptur/">Skånes stenskulptur under 1100-talet</a>
-    </li>
-  
-    <li>
-      <a href="/article/signes-graves-eure-calvados/">Signes gravés sur les églises de l'Eure et du Calvados</a>
-    </li>
-  
-    <li>
-      <a href="/article/la-langue-verte/">La langue verte et la cuite</a>
-    </li>
-  
-    <li>
-      <a href="/article/la-langue-verte-contents/">La langue verte et la cuite (Contents)</a>
-    </li>
-  
-    <li>
-      <a href="/article/jorn-a-silkeborg/">Asger Jorn à Silkeborg</a>
-    </li>
-  
-    <li>
-      <a href="/article/helhesten/">Helhesten</a>
-    </li>
-  
-    <li>
-      <a href="/article/helhesten-2.5-6/">Helhesten (Year 2, Booklets 5 &amp; 6)</a>
-    </li>
-  
-    <li>
-      <a href="/article/helhesten-2.4/">Helhesten (Year 2, Booklet 4)</a>
-    </li>
-  
-    <li>
-      <a href="/article/helhesten-2.2-3/">Helhesten (Year 2, Booklets 2 &amp; 3)</a>
-    </li>
-  
-    <li>
-      <a href="/article/helhesten-2.1/">Helhesten (Year 2, Booklet 1)</a>
-    </li>
-  
-    <li>
-      <a href="/article/helhesten-1.5-6/">Helhesten (Year 1, Booklets 5 &amp; 6)</a>
-    </li>
-  
-    <li>
-      <a href="/article/helhesten-1.4/">Helhesten (Year 1, Booklet 4)</a>
-    </li>
-  
-    <li>
-      <a href="/article/helhesten-1.3/">Helhesten (Year 1, Booklet 3)</a>
-    </li>
-  
-    <li>
-      <a href="/article/helhesten-1.2/">Helhesten (Year 1, Booklet 2)</a>
-    </li>
-  
-    <li>
-      <a href="/article/helhesten-1.1/">Helhesten (Year 1, Booklet 1)</a>
-    </li>
-  
-  </ul>
-
-<h2>
-		Christian Dotremont
-	</h2>
-<ul>
-  
-    <li>
-      <a href="/article/chevelure-des-choses/">La chevelure des choses</a>
-    </li>
-  
-  </ul>
-
-<h2>
 		Cobra
 	</h2>
 <ul>
@@ -389,17 +277,6 @@
   </ul>
 
 <h2>
-		Computers
-	</h2>
-<ul>
-  
-    <li>
-      <a href="/article/cybernetic-serendipity/">Cybernetic Serendipity - The Computer and the Arts</a>
-    </li>
-  
-  </ul>
-
-<h2>
 		Cybernetics
 	</h2>
 <ul>
@@ -421,17 +298,6 @@
   
     <li>
       <a href="/article/abschiedssymphonie/">Abschiedssymphonie, Op. 177</a>
-    </li>
-  
-  </ul>
-
-<h2>
-		Guy Debord
-	</h2>
-<ul>
-  
-    <li>
-      <a href="/article/memoires/">Mémoires</a>
     </li>
   
   </ul>
@@ -484,56 +350,12 @@
   </ul>
 
 <h2>
-		Henning Christiansen
-	</h2>
-<ul>
-  
-    <li>
-      <a href="/article/abschiedssymphonie/">Abschiedssymphonie, Op. 177</a>
-    </li>
-  
-  </ul>
-
-<h2>
-		Joseph Beuys
-	</h2>
-<ul>
-  
-    <li>
-      <a href="/article/abschiedssymphonie/">Abschiedssymphonie, Op. 177</a>
-    </li>
-  
-  </ul>
-
-<h2>
 		Klankteksten
 	</h2>
 <ul>
   
     <li>
       <a href="/article/klankteksten/">Klankteksten - Konkrete Poëzie - Visuele Teksten</a>
-    </li>
-  
-  </ul>
-
-<h2>
-		Nam June Paik
-	</h2>
-<ul>
-  
-    <li>
-      <a href="/article/abschiedssymphonie/">Abschiedssymphonie, Op. 177</a>
-    </li>
-  
-  </ul>
-
-<h2>
-		Wolf Vostell
-	</h2>
-<ul>
-  
-    <li>
-      <a href="/article/il-giardino-delle-delizie/">Il giardino delle delizie</a>
     </li>
   
   </ul>

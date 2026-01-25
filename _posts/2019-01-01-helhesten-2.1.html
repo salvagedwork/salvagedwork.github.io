@@ -3,44 +3,21 @@ layout: article
 title: Helhesten (Year 2, Booklet 1)
 categories: books
 description: is the sixth issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.
-tags: asger-jorn cobra helhesten
+creators: [asger-jorn]
+tags: [cobra, helhesten]
 featured-image: /assets/articles/helhesten/helhesten_2.1_cover.jpg
 last_modified_at: 2020-12-10
 ---
 
 <section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/helhesten/helhesten_2.1_cover.jpg"><img class="infobox-image" src="/assets/articles/helhesten/helhesten_2.1_cover.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Helhesten (Year 2, Booklet 1)</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Editor</th>
-				<td>Robert Dahlmann Olsen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td></td>
-			</tr>
-			<tr>
-				<th scope="row">Issue date</th>
-				<td>October 30, 1942</td>
-			</tr>
-			<tr>
-				<th scope="row">Cover design</th>
-				<td>Niels Lergaard</td>
-			</tr>
-			<tr>
-				<th scope="row">Followed by</th>
-				<td><a href="/article/helhesten-2.2-3">Helhesten (Year 2, Booklets 2 &amp; 3)</a></td>
-			</tr>
-		</tbody>
-	</table>
+	{% include infobox.html
+    image="/assets/articles/helhesten/helhesten_2.1_cover.jpg"
+    title="Helhesten (Year 2, Booklet 1)"
+    editor="Robert Dahlmann Olsen"
+    issue_date="October 30, 1942"
+    cover_design="Niels Lergaard"
+    followed_by="Helhesten (Year 2, Booklets 2 &amp; 3)"
+%}
 	
 	<p><strong>{{ page.title }}</strong> {{page.description}}</p>
 	
@@ -57,7 +34,5 @@ last_modified_at: 2020-12-10
 	<h2>Explore the Book</h2>
 	
 </section>
-
-<h2>References</h2>
 
 {% include collapsible.html %}

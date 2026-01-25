@@ -136,9 +136,6 @@
 <loc>http://localhost:4000/articles/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/artists/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/tag/asger-jorn/</loc>
 </url>
 <url>
@@ -149,6 +146,9 @@
 <lastmod>2021-04-26T00:00:00+02:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/creators/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/tag/fluxus/</loc>
 </url>
 <url>
@@ -156,7 +156,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
-<lastmod>2022-02-05T00:00:00+01:00</lastmod>
+<lastmod>2025-01-24T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/tag/joseph-beuys/</loc>
@@ -172,10 +172,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/page2/</loc>
-<lastmod>2022-02-05T00:00:00+01:00</lastmod>
+<lastmod>2025-01-24T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/page3/</loc>
-<lastmod>2022-02-05T00:00:00+01:00</lastmod>
+<lastmod>2025-01-24T00:00:00+01:00</lastmod>
 </url>
 </urlset>

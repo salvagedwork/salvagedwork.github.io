@@ -1,6 +1,7 @@
 /**
  * Footnote generation script
  * Converts <span class="footnote">text</span> into numbered footnotes with hover tooltips
+ * Automatically adds "References" heading only when footnotes are present
  * 
  * Originally adapted from https://www.milania.de/blog/Automatic_footnote_generation_with_jQuery
  * Rewritten in vanilla JavaScript
@@ -44,6 +45,21 @@
 
 		articles.forEach(article => {
 			const footnotes = article.querySelectorAll(CONFIG.footnoteSelector);
+			
+			// Only proceed if there are footnotes
+			if (footnotes.length === 0) {
+				return;
+			}
+			
+			// Create references container
+			const referencesSection = document.createElement('div');
+			referencesSection.className = 'references-section';
+			
+			// Add references heading
+			const heading = document.createElement('h2');
+			heading.textContent = 'References';
+			referencesSection.appendChild(heading);
+			
 			let localCounter = 1;
 
 			footnotes.forEach(footnote => {
@@ -53,12 +69,12 @@
 				// Replace footnote span content with superscript link
 				footnote.innerHTML = `<sup><a href="#${id}" style="text-decoration: none;">${localCounter}</a></sup>`;
 
-				// Append footnote text at bottom of article
+				// Create footnote text element
 				const footnoteText = document.createElement('sup');
 				footnoteText.id = id;
 				footnoteText.innerHTML = `${localCounter}. ${content}`;
-				article.appendChild(footnoteText);
-				article.appendChild(document.createElement('br'));
+				referencesSection.appendChild(footnoteText);
+				referencesSection.appendChild(document.createElement('br'));
 
 				// Set up tooltip hover behavior
 				setupTooltip(footnote, content);
@@ -66,6 +82,9 @@
 				localCounter++;
 				globalCounter++;
 			});
+			
+			// Append references section to article
+			article.appendChild(referencesSection);
 		});
 	}
 

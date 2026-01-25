@@ -4,51 +4,22 @@ title: Abschiedssymphonie, Op. 177
 creator: joseph-beuys
 description: is a recording released by Edition Block featuring a musical performance by Henning Christiansen, Nam June Paik, and Joseph Beuys.
 categories: recordings
-tags: joseph-beuys henning-christiansen nam-june-paik fluxus
+creators: [joseph-beuys, henning-christiansen, nam-june-paik]
+tags: [fluxus]
 featured-image: /assets/articles/abschiedssymphonie/front.jpg
 last_modified_at: 2020-12-10
 ---
 
 <section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/abschiedssymphonie/front.jpg"><img class="infobox-image" src="/assets/articles/abschiedssymphonie/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Abschiedssymphonie, Op. 177</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Artists</th>
-				<td>Henning Christiansen, Joseph Beuys, Nam June Paik</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Edition Block, EB 118</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1988</td>
-			</tr>
-			<tr>
-				<th scope="row">Format</th>
-				<td>Vinyl</td>
-			</tr>
-			<tr>
-				<th scope="row">Duration</th>
-				<td>45'21"</td>
-			</tr>
-			<!-- <tr>
-				<td colspan="2">
-					<a href="https://archive.org/details/abschiedssymphonie177" target="_blank">
-						<div class="download-button">Download Materials (archive.org)</div>
-					</a>
-				</td>
-			</tr> -->
-		</tbody>
-	</table>
+	{% include infobox.html
+    image="/assets/articles/abschiedssymphonie/front.jpg"
+    title="Abschiedssymphonie, Op. 177"
+    artists="Henning Christiansen, Joseph Beuys, Nam June Paik"
+    publisher="Edition Block, EB 118"
+    date="1988"
+    format="Vinyl"
+    duration="45'21&quot;"
+%}
 	
 	<p><strong>{{ page.title }}</strong> {{page.description}}</p>
 </section>
@@ -56,12 +27,10 @@ last_modified_at: 2020-12-10
 <section>
 	<h2 class="header-nestled">Performance</h2>
 
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/abschiedssymphonie/insideB.jpg"><img class="thumbnail-image" src="/assets/articles/abschiedssymphonie/insideB.jpg" width="100%"/></a>
-		<div class="thumbnail-caption">
-			Photos from the performance.
-		</div>
-	</div>
+	{% include thumbnail.html
+    image="/assets/articles/abschiedssymphonie/insideB.jpg"
+    caption="Photos from the performance."
+%}
 	
 	<div class="quote">
 	<p>A concert by Paik and Christiansen was scheduled in Hamburg on November 29, 1985, and visual artist Joseph Beuys was supposed to be a member of the group. The occasion was the opening concert of a large exhibition, &quot;Art of Peace Biennale/The Art School of Hamburg&quot; curated by René Block... However, as Beuys had become too ill to travel, he phoned in his participation - a novelty in those days - and is heard speaking by telephone from time to time.</p>
@@ -143,6 +112,4 @@ last_modified_at: 2020-12-10
 			</figure>
 	</section>
 <section>
-
-<h2>References</h2>
 

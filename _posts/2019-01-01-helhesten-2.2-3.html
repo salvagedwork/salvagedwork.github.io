@@ -3,44 +3,21 @@ layout: article
 title: Helhesten (Year 2, Booklets 2 & 3)
 categories: books
 description: is the seventh issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.
-tags: asger-jorn cobra helhesten
+creators: [asger-jorn]
+tags: [cobra, helhesten]
 featured-image: /assets/articles/helhesten/helhesten_2.23_cover.jpg
 last_modified_at: 2020-12-12
 ---
 
 <section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/helhesten/helhesten_2.23_cover.jpg"><img class="infobox-image" src="/assets/articles/helhesten/helhesten_2.23_cover.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Helhesten (Year 2, Booklets 2 &amp; 3)</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Editor</th>
-				<td>Robert Dahlmann Olsen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td></td>
-			</tr>
-			<tr>
-				<th scope="row">Issue date</th>
-				<td>March 10, 1943</td>
-			</tr>
-			<tr>
-				<th scope="row">Cover design</th>
-				<td>Storm Petersen</td>
-			</tr>
-			<tr>
-				<th scope="row">Followed by</th>
-				<td><a href="/article/helhesten-2.4">Helhesten (Year 2, Booklet 4)</a></td>
-			</tr>
-		</tbody>
-	</table>
+	{% include infobox.html
+    image="/assets/articles/helhesten/helhesten_2.23_cover.jpg"
+    title="Helhesten (Year 2, Booklets 2 &amp; 3)"
+    editor="Robert Dahlmann Olsen"
+    issue_date="March 10, 1943"
+    cover_design="Storm Petersen"
+    followed_by="Helhesten (Year 2, Booklet 4)"
+%}
 	
 	<p><strong>{{ page.title }}</strong> {{page.description}}</p>
 	
@@ -60,7 +37,5 @@ last_modified_at: 2020-12-12
 	
 	<em>This is a preview only - <a href="https://archive.org/details/helhesten-2-2-3" target="_blank">view fullsize on archive.org</a></em> 
 </section>
-
-<h2>References</h2>
 
 {% include collapsible.html %}

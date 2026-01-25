@@ -3,40 +3,21 @@ layout: article
 title: Cybernetic Serendipity - The Computer and the Arts
 categories: books
 description: is the title of a special 1968 issue of the British magazine 'Studio International.' The issue was first published to coincide with an exhibition entitled 'Cybernetic Serendipity,' dealing broadly with the demonstration of how humans can use the computer and new technology to extend creativity and inventiveness.
-tags: cybernetics computers
+creators: []
+tags: [cybernetics]
 featured-image: /assets/articles/cybernetic-serendipity/front.jpg
 last_modified_at: 2021-08-05
 ---
 
 <section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/front.jpg"><img class="infobox-image" src="/assets/articles/cybernetic-serendipity/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Cybernetic Serendipity: The Computer and the Arts</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Editor</th>
-				<td>Jasia Reichardt</td>
-			</tr>
-			<tr>
-				<th scope="row">Exhibition Staff</th>
-				<td>Jasia Reichardt, Mark Dowson, Peter Schmidt, Franciszka Themerson</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Studio International, London</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>July 1968 (1st edition)</td>
-			</tr>
-		</tbody>
-	</table>
+	{% include infobox.html
+    image="/assets/articles/cybernetic-serendipity/front.jpg"
+    title="Cybernetic Serendipity: The Computer and the Arts"
+    editor="Jasia Reichardt"
+    exhibition_staff="Jasia Reichardt, Mark Dowson, Peter Schmidt, Franciszka Themerson"
+    publisher="Studio International, London"
+    date="July 1968 (1st edition)"
+%}
 
 	<p><strong>{{ page.title }}</strong> {{page.description}}<p>
 	
@@ -45,19 +26,15 @@ last_modified_at: 2021-08-05
 
 <section>
 	<h2 class="header-nestled">Exhibition</h2>
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/exhibition.jpg"><img class="thumbnail-image" src="/assets/articles/cybernetic-serendipity/exhibition.jpg"></a>
-		<div class="thumbnail-caption">
-			View of the exhbition.
-		</div>
-	</div>
+	{% include thumbnail.html
+    image="/assets/articles/cybernetic-serendipity/exhibition.jpg"
+    caption="View of the exhbition."
+%}
 	
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/ihnatowicz_sound_activated_mobile.jpg"><img class="thumbnail-image" src="/assets/articles/cybernetic-serendipity/ihnatowicz_sound_activated_mobile.jpg"></a>
-		<div class="thumbnail-caption">
-			Edward Ihnatowicz's <em>Sound Activated Mobile (SAM)</em>, which was also featured in the exhibition catalogue.
-		</div>
-	</div>
+	{% include thumbnail.html
+    image="/assets/articles/cybernetic-serendipity/ihnatowicz_sound_activated_mobile.jpg"
+    caption="Edward Ihnatowicz's <em>Sound Activated Mobile (SAM)</em>, which was also featured in the exhibition catalogue."
+%}
 	
 	<p>The <em>Cybernetic Serendipity</em> exhibition represented three areas of the relationship between technology and creativity:</p>
 	
@@ -105,34 +82,14 @@ last_modified_at: 2021-08-05
 <section>
 	<h2>Vinyl LP</h2>
 	
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/lp_cover.jpg"><img class="infobox-image" src="/assets/articles/cybernetic-serendipity/lp_cover.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Cybernetic Serendipity Music</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Institute of Contemporary Arts, London</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1968</td>
-			</tr>
-			<tr>
-				<th scope="row">Format</th>
-				<td>Vinyl</td>
-			</tr>
-			<tr>
-				<th scope="row">Duration</th>
-				<td>52:44</td>
-			</tr>
-		</tbody>
-	</table>
+	{% include infobox.html
+    image="/assets/articles/cybernetic-serendipity/lp_cover.jpg"
+    title="Cybernetic Serendipity Music"
+    publisher="Institute of Contemporary Arts, London"
+    date="1968"
+    format="Vinyl"
+    duration="52:44"
+%}
 	
 	<p>A vinyl record was available for purchase which included audio excerpts from cybernetic music.</p>
 	

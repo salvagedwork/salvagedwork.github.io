@@ -5,7 +5,7 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<title>
 		
-			Artists Index - salvaged.work
+			Creators Index - salvaged.work
 		
 	</title>
 	
@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,29 +38,30 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
 	
 	<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="salvaged.work" />
 	<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Artists Index | salvaged.work</title>
+<title>Creators Index | salvaged.work</title>
 <meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Artists Index" />
+<meta property="og:title" content="Creators Index" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A digital archive for salvaged analogue materials." />
 <meta property="og:description" content="A digital archive for salvaged analogue materials." />
-<link rel="canonical" href="http://localhost:4000/artists/" />
-<meta property="og:url" content="http://localhost:4000/artists/" />
+<link rel="canonical" href="http://localhost:4000/creators/" />
+<meta property="og:url" content="http://localhost:4000/creators/" />
 <meta property="og:site_name" content="salvaged.work" />
 <meta property="og:image" content="http://localhost:4000/assets/images/social_media/logo.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:image" content="http://localhost:4000/assets/images/social_media/logo.png" />
-<meta property="twitter:title" content="Artists Index" />
+<meta property="twitter:title" content="Creators Index" />
 <meta name="twitter:site" content="@salvagedwork" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A digital archive for salvaged analogue materials.","headline":"Artists Index","image":"http://localhost:4000/assets/images/social_media/logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/social_media/logo.png"}},"url":"http://localhost:4000/artists/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"A digital archive for salvaged analogue materials.","headline":"Creators Index","image":"http://localhost:4000/assets/images/social_media/logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/social_media/logo.png"}},"url":"http://localhost:4000/creators/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -71,7 +73,7 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/artists"  class="navbar-link">Artists</a>
+		<a href="/creators"  class="navbar-link">Creators</a>
 		
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
@@ -89,7 +91,7 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/artists" class="mobile-nav-link">Artists</a>
+	<a href="/creators" class="mobile-nav-link">Creators</a>
 	
 	<a href="/articles" class="mobile-nav-link">Articles</a>
 	
@@ -225,49 +227,106 @@
 			</div>
 			
 			<div id="content">
-				<h1 id="artists">Artists</h1>
+				<h1 id="creators">Creators</h1>
 
-<div class="tile-container">
+<p class="page-intro">The archive focuses on works by the following artists, authors, and collaborators. Each creator page includes a biography and links to all archived materials featuring their work.</p>
 
-	<div class="article-tile">
-	<div class="article-tile-image-container">
-		<a href="/creators/asger-jorn/">&lt;img class="artist-tile-image" src="/assets/images/social_media/logo.pngasger-jorn.png /&gt;</a>
+<div class="creator-grid">
+
+
+	<div class="creator-card">
+	<div class="creator-card-image">
+		<a href="/creators/asger-jorn/"><img src="/assets/images/creator_profiles/asger-jorn.png" alt="Asger Jorn" /></a>
 	</div>
-	<div class="article-tile-details-container">
-		<h3><a href="/creators/asger-jorn">Asger Jorn</a></h3>
-		<p>Asger Oluf Jorn (3 March 1914 – 1 May 1973) was a Danish painter, sculptor, ceramic artist, and author. He was a founding member of the avant-garde movement COBRA and the Situationist International.</p>
+	<div class="creator-card-content">
+		<h3><a href="/creators/asger-jorn/">Asger Jorn</a></h3>
+		<p class="creator-card-description">Asger Oluf Jorn (3 March 1914 – 1 May 1973) was a Danish painter, sculptor, ceramic artist, and author. He was a founding member of the avant-garde movement COBRA and the Situationist International.</p>
+		
+		
+		<p class="creator-card-meta">24 articles archived</p>
+		<div class="creator-card-articles">
+			
+			<a href="/article/chevelure-des-choses/" class="creator-card-article-link">La chevelure des choses</a>, 
+			
+			<a href="/article/memoires/" class="creator-card-article-link">Mémoires</a>, 
+			
+			<a href="/article/jorn-catalogue-raisonne/" class="creator-card-article-link">Asger Jorn Catalogue raisonné Series</a>
+			
+			
+			<span class="creator-card-more">and 21 more...</span>
+			
+		</div>
+		
+		<a href="/creators/asger-jorn/" class="creator-card-link">View creator profile →</a>
 	</div>
 </div>
 
-	<div class="article-tile">
-	<div class="article-tile-image-container">
-		<a href="/creators/henning-christiansen/">&lt;img class="artist-tile-image" src="/assets/images/social_media/logo.pnghenning-christiansen.png /&gt;</a>
+
+	<div class="creator-card">
+	<div class="creator-card-image">
+		<a href="/creators/henning-christiansen/"><img src="/assets/images/creator_profiles/henning-christiansen.png" alt="Henning Christiansen" /></a>
 	</div>
-	<div class="article-tile-details-container">
-		<h3><a href="/creators/henning-christiansen">Henning Christiansen</a></h3>
-		<p>Henning Christiansen (May 28, 1932, Copenhagen – December 10, 2008) was a Danish composer and an active member of the Fluxus-movement.</p>
+	<div class="creator-card-content">
+		<h3><a href="/creators/henning-christiansen/">Henning Christiansen</a></h3>
+		<p class="creator-card-description">Henning Christiansen (May 28, 1932, Copenhagen – December 10, 2008) was a Danish composer and an active member of the Fluxus-movement.</p>
+		
+		
+		<p class="creator-card-meta">1 article archived</p>
+		<div class="creator-card-articles">
+			
+			<a href="/article/abschiedssymphonie/" class="creator-card-article-link">Abschiedssymphonie, Op. 177</a>
+			
+			
+		</div>
+		
+		<a href="/creators/henning-christiansen/" class="creator-card-link">View creator profile →</a>
 	</div>
 </div>
 
-	<div class="article-tile">
-	<div class="article-tile-image-container">
-		<a href="/creators/joseph-beuys/">&lt;img class="artist-tile-image" src="/assets/images/social_media/logo.pngjoseph-beuys.png /&gt;</a>
+
+	<div class="creator-card">
+	<div class="creator-card-image">
+		<a href="/creators/joseph-beuys/"><img src="/assets/images/creator_profiles/joseph-beuys.png" alt="Joseph Beuys" /></a>
 	</div>
-	<div class="article-tile-details-container">
-		<h3><a href="/creators/joseph-beuys">Joseph Beuys</a></h3>
-		<p>Joseph Beuys (12 May 1921 – 23 January 1986) was a German Fluxus, happening, and performance artist as well as a painter, sculptor, medallist, installation artist, graphic artist, art theorist, and pedagogue.</p>
+	<div class="creator-card-content">
+		<h3><a href="/creators/joseph-beuys/">Joseph Beuys</a></h3>
+		<p class="creator-card-description">Joseph Beuys (12 May 1921 – 23 January 1986) was a German Fluxus, happening, and performance artist as well as a painter, sculptor, medallist, installation artist, graphic artist, art theorist, and pedagogue.</p>
+		
+		
+		<p class="creator-card-meta">1 article archived</p>
+		<div class="creator-card-articles">
+			
+			<a href="/article/abschiedssymphonie/" class="creator-card-article-link">Abschiedssymphonie, Op. 177</a>
+			
+			
+		</div>
+		
+		<a href="/creators/joseph-beuys/" class="creator-card-link">View creator profile →</a>
 	</div>
 </div>
 
-	<div class="article-tile">
-	<div class="article-tile-image-container">
-		<a href="/creators/wolf-vostell/">&lt;img class="artist-tile-image" src="/assets/images/social_media/logo.pngwolf-vostell.png /&gt;</a>
+
+	<div class="creator-card">
+	<div class="creator-card-image">
+		<a href="/creators/wolf-vostell/"><img src="/assets/images/creator_profiles/wolf-vostell.png" alt="Wolf Vostell" /></a>
 	</div>
-	<div class="article-tile-details-container">
-		<h3><a href="/creators/wolf-vostell">Wolf Vostell</a></h3>
-		<p>Wolf Vostell (14 October 1932 – 3 April 1998) was a German painter and sculptor, considered one of the early adopters of video art and installation art and pioneer of Happening and Fluxus.</p>
+	<div class="creator-card-content">
+		<h3><a href="/creators/wolf-vostell/">Wolf Vostell</a></h3>
+		<p class="creator-card-description">Wolf Vostell (14 October 1932 – 3 April 1998) was a German painter and sculptor, considered one of the early adopters of video art and installation art and pioneer of Happening and Fluxus.</p>
+		
+		
+		<p class="creator-card-meta">1 article archived</p>
+		<div class="creator-card-articles">
+			
+			<a href="/article/il-giardino-delle-delizie/" class="creator-card-article-link">Il giardino delle delizie</a>
+			
+			
+		</div>
+		
+		<a href="/creators/wolf-vostell/" class="creator-card-link">View creator profile →</a>
 	</div>
 </div>
+
 
 </div>
 

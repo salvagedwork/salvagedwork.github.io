@@ -1,9 +1,0 @@
-<div class="article-tile">
-	<div class="article-tile-image-container">
-		<a href="{{ creator.url }}"><img class="artist-tile-image" src="{{ creator.image | default: '/assets/images/creator_profiles/' | append: creator.name | append: '.png' }} /></a>
-	</div>
-	<div class="article-tile-details-container">
-		<h3><a href="/creators/{{ creator.name }}">{{ creator.title }}</a></h3>
-		<p>{{ creator.description }}</p>
-	</div>
-</div>

@@ -3,9 +3,9 @@
 // ==========================================================================
 
 // Layout
-$display-width: 90%;
+$display-width: 97%;
 $max-content-width: 1100px;
-$top-margin: 3rem;
+$top-margin: 2rem;
 $content-padding: 2rem;
 
 // Breakpoints
@@ -16,7 +16,7 @@ $information-mobile: "only screen and (max-width: #{$breakpoint-desktop - 1})";
 // Colors
 $color-text: #1a1a1a;
 $color-background: white;
-$color-shade: #eee;
+$color-shade: #ddd;
 $color-border: #ccc;
 $color-border-dark: #a2a9b1;
 $color-muted: #666;

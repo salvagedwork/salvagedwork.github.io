@@ -3,41 +3,21 @@ layout: article
 title: Asger Jorn Catalogue raisonné Series
 categories: books
 description: is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
-tags: asger-jorn
+creators: [asger-jorn]
+tags: []
 featured-image: /assets/articles/jorn-catalogue-raisonne/front.jpg
 last_modified_at: 2022-01-31
 ---
 
 <section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/atkins-jorn-scandinavia/front.jpg"><img class="infobox-image" src="/assets/articles/jorn-catalogue-raisonne/front.jpg"></a>
-					<em>Asger Jorn &amp; Guy Atkins, Sweden, 1959</em>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Asger Jorn Catalogue raisonné Series</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Guy Atkins &amp; Troels Andersen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Lund Humphries Publishers Ltd./Borgens Forlag</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1968-2006</td>
-			</tr>
-			<tr>
-				<th scope="row">Number of volumes</th>
-				<td>Three, including two supplements</td>
-			</tr>
-		</tbody>
-	</table>
+	{% include infobox.html
+    image="/assets/articles/atkins-jorn-scandinavia/front.jpg"
+    title="Asger Jorn Catalogue raisonné Series"
+    authors="Guy Atkins &amp; Troels Andersen"
+    publisher="Lund Humphries Publishers Ltd./Borgens Forlag"
+    date="1968-2006"
+    number_of_volumes="Three, including two supplements"
+%}
 	
 	<p><strong>{{ page.title }}</strong> {{page.description}}<p>
 	
@@ -54,7 +34,6 @@ last_modified_at: 2022-01-31
 	<p class="quote-attrib">- Guy Atkins, Asger Jorn - The Final Years 1965-1973, jacket inner leaf</p>
 	</div>
 </section>
-
 
 <section>
 	<h2>Explore the Books</h2>
@@ -90,10 +69,5 @@ last_modified_at: 2022-01-31
 			</figure>
 	</section>
 </section>
-
-
-<h2>References</h2>
-
-
 
 {% include collapsible.html %}

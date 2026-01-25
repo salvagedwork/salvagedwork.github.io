@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,6 +38,7 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -72,7 +74,7 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/artists"  class="navbar-link">Artists</a>
+		<a href="/creators"  class="navbar-link">Creators</a>
 		
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
@@ -90,7 +92,7 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/artists" class="mobile-nav-link">Artists</a>
+	<a href="/creators" class="mobile-nav-link">Creators</a>
 	
 	<a href="/articles" class="mobile-nav-link">Articles</a>
 	
@@ -237,34 +239,57 @@
 		</header>
 	
 		<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/la-langue-verte/front.jpg"><img class="infobox-image" src="/assets/articles/la-langue-verte/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>La langue verte et la cuite</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Asger Jorn &amp; Noël Arnaud (Jean Jacques Pauvert editor)</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Jean Jacques Pauvert</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1968</td>
-			</tr>
-			<tr>
-				<th scope="row">Series</th>
-				<td>Library of Alexandria, Vol. 3</td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/la-langue-verte/front.jpg"><img class="infobox-image" src="/assets/articles/la-langue-verte/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>La langue verte et la cuite</cite></td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Authors</th>
+            <td>Asger Jorn &amp; Noël Arnaud (Jean Jacques Pauvert editor)</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Jean Jacques Pauvert</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1968</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Series</th>
+            <td>Library of Alexandria, Vol. 3</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 	
 	<p><strong>La langue verte et la cuite</strong> is a book written in French by Asger Jorn and Noël Arnaud, and edited and published by Jean Jacques Pauvert in 1968. The book was written in reaction to the 1964 book <em>Le cru et le cuit (The Raw and the Cooked)</em> by Claude Lévi-Strauss, which was an examination of structuralist theory. The book contains numerous short essays with titles that parody French culinary dishes and texts that focus on Jorn and Arnaud's dissatisfaction with structuralist theory, coupled with historical greyscale images where the tongues of sculptures, people, and animals have been distinctly highlighted in colour. The book is 327 pages in length and contains over 300 images.</p>
 	
@@ -293,12 +318,15 @@
 <section>
 	<h2>Themes</h2>
 	
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/la-langue-verte/page132.jpg"><img class="thumbnail-image" src="/assets/articles/la-langue-verte/page132.jpg"></a>
-		<div class="thumbnail-caption">
-			<cite>La langue à jambe volante</cite> (The Flying Legged Tongue), Urnes Stave Church, Norway, page 132
-		</div>
-	</div>
+	
+
+<div class="thumbnail-container">
+    <a href="#" data-featherlight="/assets/articles/la-langue-verte/page132.jpg"><img class="thumbnail-image" src="/assets/articles/la-langue-verte/page132.jpg"></a>
+    
+    <div class="thumbnail-caption"><cite>La langue à jambe volante</cite> (The Flying Legged Tongue), Urnes Stave Church, Norway, page 132</div>
+    
+</div>
+
 	
 	<div class="quote">
 	<p>One of the initial themes of <em>La Langue verte</em>, adapted from <em>Le Cru et le cuit</em>, is that of the dénicheur des langues, the &quot;dislodger of tongues,&quot; which is both described as a myth in Jorn and Arnaud’s text and displayed as a motif in numerous images.</p>
@@ -310,12 +338,15 @@
 	<p class="quote-attrib">- Asger Jorn and Noël Arnaud, <em>La langue verte et la cuite</em>, p. 48.</p>
 	</div>
 	
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/la-langue-verte/page201.jpg"><img class="thumbnail-image" src="/assets/articles/la-langue-verte/page201.jpg"></a>
-		<div class="thumbnail-caption">
-			Excerpt from <cite>La tèse de veau à la vinaigrette</cite>, featuring images <cite>Langue en tétine légumineuse et ombilicale</cite> (Tongue in leguminous and umbilical pacifier) and <cite>Linguiste hippotêtique se nouant la langue</cite> (Hippotetic linguist tying his tongue), page 201
-		</div>
-	</div>
+	
+
+<div class="thumbnail-container">
+    <a href="#" data-featherlight="/assets/articles/la-langue-verte/page201.jpg"><img class="thumbnail-image" src="/assets/articles/la-langue-verte/page201.jpg"></a>
+    
+    <div class="thumbnail-caption">Excerpt from <cite>La tèse de veau à la vinaigrette</cite>, featuring images <cite>Langue en tétine légumineuse et ombilicale</cite> (Tongue in leguminous and umbilical pacifier) and <cite>Linguiste hippotêtique se nouant la langue</cite> (Hippotetic linguist tying his tongue), page 201</div>
+    
+</div>
+
 	
 	<div class="quote">
 	<p>Although <em>La Langue verte et la cuite</em> is a parody of structuralist theory, as well as of the musical and scientific pretensions of <em>Le Cru et le cuit</em>, it also adopts Lévi-Strauss’s method in the organization of its images and prose. The permutations of images of the tongue — which are broadly organized in the &quot;table service of illuminations&quot; into <em>héros dénicheurs de langues</em>, <em>la langue pédale</em> (roughly, &quot;foot lickers&quot;), <em>tireurs</em> (those who show their tongues), <em>les langues élémentales</em> (the elements in question being chiefly air and fire), <em>la langue orientable</em> (in which tongues take the form of vegetal arabesques), <em>la langue zoomorphe</em> (which are mostly snakes, but on two occasions frogs), <em>bi-langues</em>, and <em>tri-langues</em> - are transformational in nature.</p>
@@ -346,8 +377,6 @@
 	<em>This is a preview only - <a href="https://archive.org/details/la-langue-verte-jorn" target="_blank">view fullsize on archive.org</a></em> 
 </section>
 
-<h2>References</h2>
-
 <script>
 var coll = document.getElementsByClassName("collapsible-text-button");
 var i;
@@ -355,29 +384,37 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
 </script>
+
 		
 	</div>
 	
 </article>
 
-<h3>Tags</h3>
 
+<h3>Creators</h3>
 <span>
   
-    <a href="/tag/asger-jorn/">
+    <a href="/creators/asger-jorn/">
 			Asger Jorn
 		</a><br />
   
 </span>
+
+
+
+
 			</div>
 			
 			<div id="footer">

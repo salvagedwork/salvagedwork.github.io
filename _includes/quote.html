@@ -1,0 +1,23 @@
+{% comment %}
+Reusable blockquote.
+Usage:
+{% include quote.html 
+    text="The quote text goes here..."
+    attribution="- Author Name, Source Title"
+    link="https://example.com/source"
+%}
+
+Or for multi-paragraph quotes, use capture:
+{% capture quote_text %}
+<p>First paragraph...</p>
+<p>Second paragraph...</p>
+{% endcapture %}
+{% include quote.html text=quote_text attribution="- Author" %}
+{% endcomment %}
+
+<div class="quote">
+{{ include.text | markdownify }}
+{% if include.attribution %}
+<p class="quote-attrib">{% if include.link %}<a href="{{ include.link }}" target="_blank">{{ include.attribution }}</a>{% else %}{{ include.attribution }}{% endif %}</p>
+{% endif %}
+</div>

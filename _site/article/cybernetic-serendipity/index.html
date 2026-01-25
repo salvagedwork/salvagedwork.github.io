@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,6 +38,7 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -72,7 +74,7 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/artists"  class="navbar-link">Artists</a>
+		<a href="/creators"  class="navbar-link">Creators</a>
 		
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
@@ -90,7 +92,7 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/artists" class="mobile-nav-link">Artists</a>
+	<a href="/creators" class="mobile-nav-link">Creators</a>
 	
 	<a href="/articles" class="mobile-nav-link">Articles</a>
 	
@@ -237,34 +239,57 @@
 		</header>
 	
 		<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/front.jpg"><img class="infobox-image" src="/assets/articles/cybernetic-serendipity/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Cybernetic Serendipity: The Computer and the Arts</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Editor</th>
-				<td>Jasia Reichardt</td>
-			</tr>
-			<tr>
-				<th scope="row">Exhibition Staff</th>
-				<td>Jasia Reichardt, Mark Dowson, Peter Schmidt, Franciszka Themerson</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Studio International, London</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>July 1968 (1st edition)</td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/front.jpg"><img class="infobox-image" src="/assets/articles/cybernetic-serendipity/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Cybernetic Serendipity: The Computer and the Arts</cite></td>
+        </tr>
+        
+        
+        
+        <tr>
+            <th scope="row">Editor</th>
+            <td>Jasia Reichardt</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Exhibition Staff</th>
+            <td>Jasia Reichardt, Mark Dowson, Peter Schmidt, Franciszka Themerson</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Studio International, London</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>July 1968 (1st edition)</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 
 	<p><strong>Cybernetic Serendipity - The Computer and the Arts</strong> is the title of a special 1968 issue of the British magazine 'Studio International.' The issue was first published to coincide with an exhibition entitled 'Cybernetic Serendipity,' dealing broadly with the demonstration of how humans can use the computer and new technology to extend creativity and inventiveness.<p>
 	
@@ -273,19 +298,25 @@
 
 <section>
 	<h2 class="header-nestled">Exhibition</h2>
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/exhibition.jpg"><img class="thumbnail-image" src="/assets/articles/cybernetic-serendipity/exhibition.jpg"></a>
-		<div class="thumbnail-caption">
-			View of the exhbition.
-		</div>
-	</div>
 	
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/ihnatowicz_sound_activated_mobile.jpg"><img class="thumbnail-image" src="/assets/articles/cybernetic-serendipity/ihnatowicz_sound_activated_mobile.jpg"></a>
-		<div class="thumbnail-caption">
-			Edward Ihnatowicz's <em>Sound Activated Mobile (SAM)</em>, which was also featured in the exhibition catalogue.
-		</div>
-	</div>
+
+<div class="thumbnail-container">
+    <a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/exhibition.jpg"><img class="thumbnail-image" src="/assets/articles/cybernetic-serendipity/exhibition.jpg"></a>
+    
+    <div class="thumbnail-caption">View of the exhbition.</div>
+    
+</div>
+
+	
+	
+
+<div class="thumbnail-container">
+    <a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/ihnatowicz_sound_activated_mobile.jpg"><img class="thumbnail-image" src="/assets/articles/cybernetic-serendipity/ihnatowicz_sound_activated_mobile.jpg"></a>
+    
+    <div class="thumbnail-caption">Edward Ihnatowicz's <em>Sound Activated Mobile (SAM)</em>, which was also featured in the exhibition catalogue.</div>
+    
+</div>
+
 	
 	<p>The <em>Cybernetic Serendipity</em> exhibition represented three areas of the relationship between technology and creativity:</p>
 	
@@ -435,15 +466,19 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
 </script>
+
 	
 	<h3>Explore the Catalogue</h3>
 	
@@ -455,34 +490,57 @@ for (i = 0; i < coll.length; i++) {
 <section>
 	<h2>Vinyl LP</h2>
 	
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/lp_cover.jpg"><img class="infobox-image" src="/assets/articles/cybernetic-serendipity/lp_cover.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Cybernetic Serendipity Music</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Institute of Contemporary Arts, London</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1968</td>
-			</tr>
-			<tr>
-				<th scope="row">Format</th>
-				<td>Vinyl</td>
-			</tr>
-			<tr>
-				<th scope="row">Duration</th>
-				<td>52:44</td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/lp_cover.jpg"><img class="infobox-image" src="/assets/articles/cybernetic-serendipity/lp_cover.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Cybernetic Serendipity Music</cite></td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Institute of Contemporary Arts, London</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1968</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Format</th>
+            <td>Vinyl</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Duration</th>
+            <td>52:44</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 	
 	<p>A vinyl record was available for purchase which included audio excerpts from cybernetic music.</p>
 	
@@ -568,19 +626,24 @@ for (i = 0; i < coll.length; i++) {
 	
 </article>
 
-<h3>Tags</h3>
 
+<h3>Creators</h3>
+<span>
+  
+</span>
+
+
+
+<h3>Tags</h3>
 <span>
   
     <a href="/tag/cybernetics/">
 			Cybernetics
 		</a><br />
   
-    <a href="/tag/computers/">
-			Computers
-		</a><br />
-  
 </span>
+
+
 			</div>
 			
 			<div id="footer">

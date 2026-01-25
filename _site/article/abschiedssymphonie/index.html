@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,6 +38,7 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -72,7 +74,7 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/artists"  class="navbar-link">Artists</a>
+		<a href="/creators"  class="navbar-link">Creators</a>
 		
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
@@ -90,7 +92,7 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/artists" class="mobile-nav-link">Artists</a>
+	<a href="/creators" class="mobile-nav-link">Creators</a>
 	
 	<a href="/articles" class="mobile-nav-link">Articles</a>
 	
@@ -237,45 +239,62 @@
 		</header>
 	
 		<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/abschiedssymphonie/front.jpg"><img class="infobox-image" src="/assets/articles/abschiedssymphonie/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Abschiedssymphonie, Op. 177</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Artists</th>
-				<td>Henning Christiansen, Joseph Beuys, Nam June Paik</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Edition Block, EB 118</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1988</td>
-			</tr>
-			<tr>
-				<th scope="row">Format</th>
-				<td>Vinyl</td>
-			</tr>
-			<tr>
-				<th scope="row">Duration</th>
-				<td>45'21"</td>
-			</tr>
-			<!-- <tr>
-				<td colspan="2">
-					<a href="https://archive.org/details/abschiedssymphonie177" target="_blank">
-						<div class="download-button">Download Materials (archive.org)</div>
-					</a>
-				</td>
-			</tr> -->
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/abschiedssymphonie/front.jpg"><img class="infobox-image" src="/assets/articles/abschiedssymphonie/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Abschiedssymphonie, Op. 177</cite></td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Artists</th>
+            <td>Henning Christiansen, Joseph Beuys, Nam June Paik</td>
+        </tr>
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Edition Block, EB 118</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1988</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Format</th>
+            <td>Vinyl</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Duration</th>
+            <td>45'21&quot;</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 	
 	<p><strong>Abschiedssymphonie, Op. 177</strong> is a recording released by Edition Block featuring a musical performance by Henning Christiansen, Nam June Paik, and Joseph Beuys.</p>
 </section>
@@ -283,12 +302,15 @@
 <section>
 	<h2 class="header-nestled">Performance</h2>
 
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/abschiedssymphonie/insideB.jpg"><img class="thumbnail-image" src="/assets/articles/abschiedssymphonie/insideB.jpg" width="100%"/></a>
-		<div class="thumbnail-caption">
-			Photos from the performance.
-		</div>
-	</div>
+	
+
+<div class="thumbnail-container">
+    <a href="#" data-featherlight="/assets/articles/abschiedssymphonie/insideB.jpg"><img class="thumbnail-image" src="/assets/articles/abschiedssymphonie/insideB.jpg"></a>
+    
+    <div class="thumbnail-caption">Photos from the performance.</div>
+    
+</div>
+
 	
 	<div class="quote">
 	<p>A concert by Paik and Christiansen was scheduled in Hamburg on November 29, 1985, and visual artist Joseph Beuys was supposed to be a member of the group. The occasion was the opening concert of a large exhibition, &quot;Art of Peace Biennale/The Art School of Hamburg&quot; curated by René Block... However, as Beuys had become too ill to travel, he phoned in his participation - a novelty in those days - and is heard speaking by telephone from time to time.</p>
@@ -366,15 +388,19 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
 </script>
+
 </section>
 
 <section>
@@ -417,35 +443,42 @@ for (i = 0; i < coll.length; i++) {
 	</section>
 <section>
 
-<h2>References</h2>
-
 
 		
 	</div>
 	
 </article>
 
-<h3>Tags</h3>
 
+<h3>Creators</h3>
 <span>
   
-    <a href="/tag/joseph-beuys/">
+    <a href="/creators/joseph-beuys/">
 			Joseph Beuys
 		</a><br />
   
-    <a href="/tag/henning-christiansen/">
+    <a href="/creators/henning-christiansen/">
 			Henning Christiansen
 		</a><br />
   
-    <a href="/tag/nam-june-paik/">
+    <a href="/creators/nam-june-paik/">
 			Nam June Paik
 		</a><br />
+  
+</span>
+
+
+
+<h3>Tags</h3>
+<span>
   
     <a href="/tag/fluxus/">
 			Fluxus
 		</a><br />
   
 </span>
+
+
 			</div>
 			
 			<div id="footer">

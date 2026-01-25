@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,6 +38,7 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -72,7 +74,7 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/artists"  class="navbar-link">Artists</a>
+		<a href="/creators"  class="navbar-link">Creators</a>
 		
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
@@ -90,7 +92,7 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/artists" class="mobile-nav-link">Artists</a>
+	<a href="/creators" class="mobile-nav-link">Creators</a>
 	
 	<a href="/articles" class="mobile-nav-link">Articles</a>
 	
@@ -237,46 +239,62 @@
 		</header>
 	
 		<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/klankteksten/front.jpg"><img class="infobox-image" src="/assets/articles/klankteksten/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Sound Texts - Concrete Poetry - Visual Texts</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Director</th>
-				<td>Liesbeth Crommelin</td>
-			</tr>
-			<tr>
-				<th scope="row">Curators</th>
-				<td>Hansjörg Mayer, Reinhard Döhl, Bob Cobbing, Paul De Vree</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Stedelijk Museum, Amsterdam</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>November 1970</td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/klankteksten/front.jpg"><img class="infobox-image" src="/assets/articles/klankteksten/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Sound Texts - Concrete Poetry - Visual Texts</cite></td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Stedelijk Museum, Amsterdam</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>November 1970</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 
 	<p><strong>Klankteksten - Konkrete Poëzie - Visuele Teksten</strong> (Sound Texts - Concrete Poetry - Visual Texts) is the title of an exhibition catalogue released in conjunction with the exhibition 'Klankteksten?' at the Stedelijk Museum in Amsterdam, Netherlands in November 1970. The exhibition provided an overview of the concrete poetry movement.<p>
 </section>
 
 <section>
 	<h2 class="header-nestled">Exhibition</h2>
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/klankteksten/1970-1971_amsterdam_overzichtstentoonstelling-konkrete-poezie.jpg"><img class="thumbnail-image" src="/assets/articles/klankteksten/1970-1971_amsterdam_overzichtstentoonstelling-konkrete-poezie.jpg"></a>
-		<div class="thumbnail-caption">
-			Installation view including <em>Revolution</em> (1969).
-		</div>
-	</div>
+	
+
+<div class="thumbnail-container">
+    <a href="#" data-featherlight="/assets/articles/klankteksten/1970-1971_amsterdam_overzichtstentoonstelling-konkrete-poezie.jpg"><img class="thumbnail-image" src="/assets/articles/klankteksten/1970-1971_amsterdam_overzichtstentoonstelling-konkrete-poezie.jpg"></a>
+    
+    <div class="thumbnail-caption">Installation view including <em>Revolution</em> (1969).</div>
+    
+</div>
+
 	
 	<div class="quote">
 	<p>The exhibition came at a time when concrete poetry was in a crisis position internationally. This crisis situation was reflected in the question mark that appears in the title of the exhibition. After all, concrete poetry was declared dead in the English magazine Stereo-headphones.</p>
@@ -484,15 +502,19 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
 </script>
+
 	
 	<h3>Explore the Catalogue</h3>
 	
@@ -504,34 +526,52 @@ for (i = 0; i < coll.length; i++) {
 <section>
 	<h2>Vinyl LP</h2>
 	
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/klankteksten/front.jpg"><img class="infobox-image" src="/assets/articles/klankteksten/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Sound Texts - Concrete Poetry - Visual Texts</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Stedelijk Museum, Amsterdam</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1970</td>
-			</tr>
-			<tr>
-				<th scope="row">Format</th>
-				<td>Vinyl</td>
-			</tr>
-			<tr>
-				<th scope="row">Duration</th>
-				<td></td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/klankteksten/front.jpg"><img class="infobox-image" src="/assets/articles/klankteksten/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Sound Texts - Concrete Poetry - Visual Texts</cite></td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Stedelijk Museum, Amsterdam</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1970</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Format</th>
+            <td>Vinyl</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 	
 	<p>The exhibition catalogue came with a LP of concrete poetry recordings, supervised by Bob Cobbing.</p>
 	
@@ -615,8 +655,15 @@ for (i = 0; i < coll.length; i++) {
 	
 </article>
 
-<h3>Tags</h3>
 
+<h3>Creators</h3>
+<span>
+  
+</span>
+
+
+
+<h3>Tags</h3>
 <span>
   
     <a href="/tag/klankteksten/">
@@ -624,6 +671,8 @@ for (i = 0; i < coll.length; i++) {
 		</a><br />
   
 </span>
+
+
 			</div>
 			
 			<div id="footer">

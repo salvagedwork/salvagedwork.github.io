@@ -1,0 +1,16 @@
+{% comment %}
+Reusable thumbnail container.
+Usage:
+{% include thumbnail.html 
+    image="/assets/articles/example/image.jpg"
+    caption="Image caption here"
+    fullwidth=false
+%}
+{% endcomment %}
+
+<div class="thumbnail-container{% if include.fullwidth %}-fullwidth{% endif %}">
+    <a href="#" data-featherlight="{{ include.image }}"><img class="thumbnail-image" src="{{ include.image }}"></a>
+    {% if include.caption %}
+    <div class="thumbnail-caption">{{ include.caption }}</div>
+    {% endif %}
+</div>

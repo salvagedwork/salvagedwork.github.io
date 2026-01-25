@@ -1,33 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-01-24T09:06:52+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">salvaged.work</title><subtitle>A digital archive for salvaged analogue materials.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-01-25T16:29:56+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">salvaged.work</title><subtitle>A digital archive for salvaged analogue materials.
 </subtitle><entry><title type="html">La chevelure des choses</title><link href="http://localhost:4000/article/chevelure-des-choses/" rel="alternate" type="text/html" title="La chevelure des choses" /><published>2022-02-05T00:00:00+01:00</published><updated>2022-02-05T00:00:00+01:00</updated><id>http://localhost:4000/article/chevelure-des-choses</id><content type="html" xml:base="http://localhost:4000/article/chevelure-des-choses/"><![CDATA[<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/chevelure-des-choses/front.jpg"><img class="infobox-image" src="/assets/articles/chevelure-des-choses/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>La chevelure des choses</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Christian Dotremont &amp; Asger Jorn</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Galerie Rive Gauche, Paris 1961</td>
-			</tr>
-			<tr>
-				<th scope="row">Edition</th>
-				<td>300 copies</td>
-			</tr>
-			<tr>
-				<th scope="row">Dimensions</th>
-				<td>27.1 x 21.4 cm, 32 pages</td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/chevelure-des-choses/front.jpg"><img class="infobox-image" src="/assets/articles/chevelure-des-choses/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>La chevelure des choses</cite></td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Authors</th>
+            <td>Christian Dotremont &amp; Asger Jorn</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Galerie Rive Gauche, Paris 1961</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Edition</th>
+            <td>300 copies</td>
+        </tr>
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Dimensions</th>
+            <td>27.1 x 21.4 cm, 32 pages</td>
+        </tr>
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 
 	<p><strong>La chevelure des choses</strong> (The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn. The book is a catalogue from the pair's exhibition at Galerie Rive Gauche in Paris in 1961 and is a reproduction of small word drawings made by Jorn and Dotremont from 1948 to 1953, and also specifically from when the pair shared a room at the tuberculosis sanatorium in Silkeborg from November 1951 to February 1952. The catalogue contains a preface by Pierre Alechinsky and an original poem, <em>L'orthocatalographe</em> by Dotremont. Presented in a green stiff card slipcase, it was printed in Paris in 1961 by GIL.</p>
 	
@@ -61,39 +84,46 @@
 	<div class="collapsible-text-container">
 <button class="collapsible-text-button">L'orthocatalographe (Christian Dotremont)</button>
 <div class="collapsible-text-content">
+<div class="translation-toggle">
+	<button class="translation-btn active" data-lang="original">Original</button>
+	<button class="translation-btn" data-lang="english">English</button>
+</div>
+<div class="translatable-content">
 
 
-<p><strong>L’orthocatalographe</strong></p>
+<div class="original-text">
+<strong>L'orthocatalographe</strong>
 
-<p>jamais je ne me rappelle j’appelle<br />
-par son nom ce que j’interpelle<br />
+<p>
+jamais je ne me rappelle j'appelle<br />
+par son nom ce que j'interpelle<br />
 jamais je ne me contiens je me contente<br />
 de ce qui constamment me tente<br />
-jamais je ne m’écorne ni l’œil ni l’oreille<br />
+jamais je ne m'écorne ni l'œil ni l'oreille<br />
 je vote contre les corbeaux pour les corneilles<br />
 jamais je ne vais à la guerre<br />
-j’orne mon cœur de ma colère<br />
+j'orne mon cœur de ma colère<br />
 jamais je ne donne de hennin à ma femme<br />
-j’aime sa chevelure comme une flamme<br />
-jamais je ne machine ni ne m’exquise<br />
-je ne m’allèche que si me grise<br />
+j'aime sa chevelure comme une flamme<br />
+jamais je ne machine ni ne m'exquise<br />
+je ne m'allèche que si me grise<br />
 jamais je ne suis petit poucet<br />
 dans la douce forêt du passé<br />
 jamais je ne jette par la fenêtre<br />
 le tas gitbont de rires ou est maêtre<br />
 jamais je ne tombe dans la gueule du loup<br />
 je ne tombe jamais dans la gueule du goût<br />
-et je ne vais dans les musées que pour enlever les muselières.<br /></p>
+et je ne vais dans les musées que pour enlever les muselières.
+</p>
 
-<p>Dotremont</p>
+<p>— Dotremont</p>
+</div>
 
-<p><br /></p>
+<div class="translated-text">
+<strong>The Orthocatalograph</strong>
 
-<p><em>Translated with DeepL:</em></p>
-
-<p><strong>The orthocatalograph</strong></p>
-
-<p>I never remember to call<br />
+<p>
+I never remember I call<br />
 by its name what I call<br />
 never I restrain myself I content myself<br />
 with what constantly tempts me<br />
@@ -111,13 +141,19 @@ never I throw by the window<br />
 the heap of laughter where my being is<br />
 never I fall in the mouth of the wolf<br />
 I never fall into the mouth of the taste<br />
-and I go to the museums only to remove the muzzles.<br /></p>
+and I go to the museums only to remove the muzzles.
+</p>
 
-<p>Dotremont</p>
+<p>— Dotremont</p>
 
+<p><em>(Translated with DeepL)</em></p>
+</div>
 
 </div>
 </div>
+</div>
+
+
 	
 	<script>
 var coll = document.getElementsByClassName("collapsible-text-button");
@@ -126,15 +162,19 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
 </script>
+
 	
 	<h3>Explore the Catalogue</h3>
 	
@@ -142,7 +182,6 @@ for (i = 0; i < coll.length; i++) {
 	
 	<p><em>This is a preview only - <a href="https://archive.org/details/chevelure-des-choses" target="_blank">view fullsize on archive.org</a></em></p>
 </section>
-
 
 <section>
 	<h2>Gallery</h2>
@@ -177,9 +216,7 @@ for (i = 0; i < coll.length; i++) {
 				<figcaption></figcaption>
 			</figure>
 	</section>
-</section>
-
-<h2>References</h2>]]></content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="christian-dotremont" /><summary type="html"><![CDATA[(The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mémoires</title><link href="http://localhost:4000/article/memoires/" rel="alternate" type="text/html" title="Mémoires" /><published>2022-02-03T00:00:00+01:00</published><updated>2022-02-03T00:00:00+01:00</updated><id>http://localhost:4000/article/memoires</id><content type="html" xml:base="http://localhost:4000/article/memoires/"><![CDATA[<section>
+</section>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[(The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mémoires</title><link href="http://localhost:4000/article/memoires/" rel="alternate" type="text/html" title="Mémoires" /><published>2022-02-03T00:00:00+01:00</published><updated>2022-02-03T00:00:00+01:00</updated><id>http://localhost:4000/article/memoires</id><content type="html" xml:base="http://localhost:4000/article/memoires/"><![CDATA[<section>
 	<table id="infobox">
 		<tbody>
 			<tr>
@@ -225,7 +262,6 @@ for (i = 0; i < coll.length; i++) {
 	<p>The book is furnished with a sandpaper cover after a suggestion made by the printer, V. O. Permild. Jorn had asked for an unconventional material as a book cover.</p>
 </section>
 
-
 <section>
 	<h2>Explore the Book</h2>
 	
@@ -265,8 +301,6 @@ for (i = 0; i < coll.length; i++) {
 	</section>
 </section>
 
-<h2>References</h2>
-
 <ul>
 	<li>Wikipedia, <a href="https://en.wikipedia.org/wiki/M%C3%A9moires" target="_blank">Mémoires</a>. Accessed 2022-02-03.</li>
 </ul>
@@ -278,44 +312,64 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
-</script>]]></content><author><name></name></author><category term="books" /><category term="asger-jorn" /><category term="guy-debord" /><summary type="html"><![CDATA[is an artist's book made by the Danish artist Asger Jorn in collaboration with the French artist and theorist Guy Debord.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Asger Jorn Catalogue raisonné Series</title><link href="http://localhost:4000/article/jorn-catalogue-raisonne/" rel="alternate" type="text/html" title="Asger Jorn Catalogue raisonné Series" /><published>2021-08-05T00:00:00+02:00</published><updated>2022-01-31T00:00:00+01:00</updated><id>http://localhost:4000/article/jorn-catalogue-raisonne</id><content type="html" xml:base="http://localhost:4000/article/jorn-catalogue-raisonne/"><![CDATA[<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/atkins-jorn-scandinavia/front.jpg"><img class="infobox-image" src="/assets/articles/jorn-catalogue-raisonne/front.jpg"></a>
-					<em>Asger Jorn &amp; Guy Atkins, Sweden, 1959</em>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Asger Jorn Catalogue raisonné Series</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Guy Atkins &amp; Troels Andersen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Lund Humphries Publishers Ltd./Borgens Forlag</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1968-2006</td>
-			</tr>
-			<tr>
-				<th scope="row">Number of volumes</th>
-				<td>Three, including two supplements</td>
-			</tr>
-		</tbody>
-	</table>
+</script>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[is an artist's book made by the Danish artist Asger Jorn in collaboration with the French artist and theorist Guy Debord.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Asger Jorn Catalogue raisonné Series</title><link href="http://localhost:4000/article/jorn-catalogue-raisonne/" rel="alternate" type="text/html" title="Asger Jorn Catalogue raisonné Series" /><published>2021-08-05T00:00:00+02:00</published><updated>2022-01-31T00:00:00+01:00</updated><id>http://localhost:4000/article/jorn-catalogue-raisonne</id><content type="html" xml:base="http://localhost:4000/article/jorn-catalogue-raisonne/"><![CDATA[<section>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/atkins-jorn-scandinavia/front.jpg"><img class="infobox-image" src="/assets/articles/atkins-jorn-scandinavia/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Asger Jorn Catalogue raisonné Series</cite></td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Authors</th>
+            <td>Guy Atkins &amp; Troels Andersen</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Lund Humphries Publishers Ltd./Borgens Forlag</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1968-2006</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 	
 	<p><strong>Asger Jorn Catalogue raisonné Series</strong> is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.<p>
 	
@@ -332,7 +386,6 @@ for (i = 0; i < coll.length; i++) {
 	<p class="quote-attrib">- Guy Atkins, Asger Jorn - The Final Years 1965-1973, jacket inner leaf</p>
 	</div>
 </section>
-
 
 <section>
 	<h2>Explore the Books</h2>
@@ -369,11 +422,6 @@ for (i = 0; i < coll.length; i++) {
 	</section>
 </section>
 
-
-<h2>References</h2>
-
-
-
 <script>
 var coll = document.getElementsByClassName("collapsible-text-button");
 var i;
@@ -381,47 +429,74 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
-</script>]]></content><author><name></name></author><category term="books" /><category term="asger-jorn" /><summary type="html"><![CDATA[is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Asger Jorn - Supplement - Paintings 1930-1973</title><link href="http://localhost:4000/article/atkins-jorn-supplement/" rel="alternate" type="text/html" title="Asger Jorn - Supplement - Paintings 1930-1973" /><published>2021-08-05T00:00:00+02:00</published><updated>2022-01-31T00:00:00+01:00</updated><id>http://localhost:4000/article/atkins-jorn-supplement</id><content type="html" xml:base="http://localhost:4000/article/atkins-jorn-supplement/"><![CDATA[<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/atkins-jorn-supplement/front.jpg"><img class="infobox-image" src="/assets/articles/atkins-jorn-supplement/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Asger Jorn: Supplement - Paintings 1930-1973</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Guy Atkins &amp; Troels Andersen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Lund Humphries Publishers Ltd.</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1986</td>
-			</tr>
-			<tr>
-				<th scope="row">Series</th>
-				<td><a href="/article/jorn-catalogue-raisonne">Asger Jorn Catalogue raisonné</a></td>
-			</tr>
-			<tr>
-				<th scope="row">Followed by</th>
-				<td><a href="/article/atkins-jorn-revised-supplement">Asger Jorn - Revised Supplement</a></td>
-			</tr>
-		</tbody>
-	</table>
+</script>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Asger Jorn - Supplement - Paintings 1930-1973</title><link href="http://localhost:4000/article/atkins-jorn-supplement/" rel="alternate" type="text/html" title="Asger Jorn - Supplement - Paintings 1930-1973" /><published>2021-08-05T00:00:00+02:00</published><updated>2022-01-31T00:00:00+01:00</updated><id>http://localhost:4000/article/atkins-jorn-supplement</id><content type="html" xml:base="http://localhost:4000/article/atkins-jorn-supplement/"><![CDATA[<section>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/atkins-jorn-supplement/front.jpg"><img class="infobox-image" src="/assets/articles/atkins-jorn-supplement/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Asger Jorn: Supplement - Paintings 1930-1973</cite></td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Authors</th>
+            <td>Guy Atkins &amp; Troels Andersen</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Lund Humphries Publishers Ltd.</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1986</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Series</th>
+            <td>Asger Jorn Catalogue raisonné</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Followed by</th>
+            <td>Asger Jorn - Revised Supplement</td>
+        </tr>
+        
+        
+    </tbody>
+</table>
+
 	
 	<p><strong>Asger Jorn - Supplement - Paintings 1930-1973</strong> is the penultimate book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.<p>
 	
@@ -430,7 +505,6 @@ for (i = 0; i < coll.length; i++) {
 	<p class="quote-attrib">- Guy Atkins, Asger Jorn - Supplement - Paintings 1930-1973</p>
 	</div>
 </section>
-
 
 <section>
 	<h3>Contents</h3>
@@ -464,11 +538,6 @@ for (i = 0; i < coll.length; i++) {
 	<p><em>This is a preview only - <a href="https://archive.org/details/jorn-supplement-paintings" target="_blank">view fullsize on archive.org</a></em></p>
 </section>
 
-
-<h2>References</h2>
-
-
-
 <script>
 var coll = document.getElementsByClassName("collapsible-text-button");
 var i;
@@ -476,47 +545,74 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
-</script>]]></content><author><name></name></author><category term="books" /><category term="asger-jorn" /><summary type="html"><![CDATA[is the penultimate book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Jorn in Scandinavia 1930-1953</title><link href="http://localhost:4000/article/atkins-jorn-scandinavia/" rel="alternate" type="text/html" title="Jorn in Scandinavia 1930-1953" /><published>2021-08-05T00:00:00+02:00</published><updated>2022-01-31T00:00:00+01:00</updated><id>http://localhost:4000/article/atkins-jorn-scandinavia</id><content type="html" xml:base="http://localhost:4000/article/atkins-jorn-scandinavia/"><![CDATA[<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/atkins-jorn-scandinavia/front.jpg"><img class="infobox-image" src="/assets/articles/atkins-jorn-scandinavia/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Jorn in Scandinavia 1930-1953</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Guy Atkins &amp; Troels Andersen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Percy Lund, Humphries &amp; Co. Ltd./Borgens Forlag</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1968</td>
-			</tr>
-			<tr>
-				<th scope="row">Series</th>
-				<td><a href="/article/jorn-catalogue-raisonne">Asger Jorn Catalogue raisonné</a></td>
-			</tr>
-			<tr>
-				<th scope="row">Followed by</th>
-				<td><a href="/article/atkins-jorn-crucial-years">Asger Jorn - The Crucial Years 1954-1964</a></td>
-			</tr>
-		</tbody>
-	</table>
+</script>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[is the penultimate book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Jorn in Scandinavia 1930-1953</title><link href="http://localhost:4000/article/atkins-jorn-scandinavia/" rel="alternate" type="text/html" title="Jorn in Scandinavia 1930-1953" /><published>2021-08-05T00:00:00+02:00</published><updated>2022-01-31T00:00:00+01:00</updated><id>http://localhost:4000/article/atkins-jorn-scandinavia</id><content type="html" xml:base="http://localhost:4000/article/atkins-jorn-scandinavia/"><![CDATA[<section>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/atkins-jorn-scandinavia/front.jpg"><img class="infobox-image" src="/assets/articles/atkins-jorn-scandinavia/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Jorn in Scandinavia 1930-1953</cite></td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Authors</th>
+            <td>Guy Atkins &amp; Troels Andersen</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Percy Lund, Humphries &amp; Co. Ltd./Borgens Forlag</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1968</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Series</th>
+            <td>Asger Jorn Catalogue raisonné</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Followed by</th>
+            <td>Asger Jorn - The Crucial Years 1954-1964</td>
+        </tr>
+        
+        
+    </tbody>
+</table>
+
 	
 	<p><strong>Jorn in Scandinavia 1930-1953</strong> is the first book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.<p>
 	
@@ -529,7 +625,6 @@ for (i = 0; i < coll.length; i++) {
 	<p class="quote-attrib">- Guy Atkins, Jorn in Scandinavia 1930-1953, jacket inner leaf</p>
 	</div>
 </section>
-
 
 <section>
 	<h3>Contents</h3>
@@ -569,11 +664,6 @@ for (i = 0; i < coll.length; i++) {
 	<p><em>This is a preview only - <a href="https://archive.org/details/atkins-jorn-scandinavia" target="_blank">view fullsize on archive.org</a></em></p>
 </section>
 
-
-<h2>References</h2>
-
-
-
 <script>
 var coll = document.getElementsByClassName("collapsible-text-button");
 var i;
@@ -581,43 +671,69 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
-</script>]]></content><author><name></name></author><category term="books" /><category term="asger-jorn" /><summary type="html"><![CDATA[is the first book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Asger Jorn - Revised Supplement</title><link href="http://localhost:4000/article/atkins-jorn-revised-supplement/" rel="alternate" type="text/html" title="Asger Jorn - Revised Supplement" /><published>2021-08-05T00:00:00+02:00</published><updated>2022-01-31T00:00:00+01:00</updated><id>http://localhost:4000/article/atkins-jorn-revised-supplement</id><content type="html" xml:base="http://localhost:4000/article/atkins-jorn-revised-supplement/"><![CDATA[<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/atkins-jorn-revised-supplement/front.jpg"><img class="infobox-image" src="/assets/articles/atkins-jorn-revised-supplement/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Asger Jorn: Revised Supplement</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Guy Atkins &amp; Troels Andersen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Lund Humphries Publishers Ltd.</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>2006</td>
-			</tr>
-			<tr>
-				<th scope="row">Series</th>
-				<td><a href="/article/jorn-catalogue-raisonne">Asger Jorn Catalogue raisonné</a></td>
-			</tr>
-		</tbody>
-	</table>
+</script>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[is the first book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Asger Jorn - Revised Supplement</title><link href="http://localhost:4000/article/atkins-jorn-revised-supplement/" rel="alternate" type="text/html" title="Asger Jorn - Revised Supplement" /><published>2021-08-05T00:00:00+02:00</published><updated>2022-01-31T00:00:00+01:00</updated><id>http://localhost:4000/article/atkins-jorn-revised-supplement</id><content type="html" xml:base="http://localhost:4000/article/atkins-jorn-revised-supplement/"><![CDATA[<section>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/atkins-jorn-revised-supplement/front.jpg"><img class="infobox-image" src="/assets/articles/atkins-jorn-revised-supplement/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Asger Jorn: Revised Supplement</cite></td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Authors</th>
+            <td>Guy Atkins &amp; Troels Andersen</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Lund Humphries Publishers Ltd.</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>2006</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Series</th>
+            <td>Asger Jorn Catalogue raisonné</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 	
 	<p><strong>Asger Jorn - Revised Supplement</strong> is the final book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.<p>
 	
@@ -630,7 +746,6 @@ for (i = 0; i < coll.length; i++) {
 	<p class="quote-attrib">- Troels Andersen, Asger Jorn - Revised Supplement</p>
 	</div>
 </section>
-
 
 <section>
 	<h3>Contents</h3>
@@ -659,11 +774,6 @@ for (i = 0; i < coll.length; i++) {
 	<p><em>This is a preview only - <a href="https://archive.org/details/jorn-revised-supplement" target="_blank">view fullsize on archive.org</a></em></p>
 </section>
 
-
-<h2>References</h2>
-
-
-
 <script>
 var coll = document.getElementsByClassName("collapsible-text-button");
 var i;
@@ -671,47 +781,74 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
-</script>]]></content><author><name></name></author><category term="books" /><category term="asger-jorn" /><summary type="html"><![CDATA[is the final book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Asger Jorn - The Final Years 1965-1973</title><link href="http://localhost:4000/article/atkins-jorn-final-years/" rel="alternate" type="text/html" title="Asger Jorn - The Final Years 1965-1973" /><published>2021-08-05T00:00:00+02:00</published><updated>2022-01-31T00:00:00+01:00</updated><id>http://localhost:4000/article/atkins-jorn-final-years</id><content type="html" xml:base="http://localhost:4000/article/atkins-jorn-final-years/"><![CDATA[<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/atkins-jorn-final-years/front.jpg"><img class="infobox-image" src="/assets/articles/atkins-jorn-final-years/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Asger Jorn: The Final Years 1965-1973</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Guy Atkins &amp; Troels Andersen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Lund Humphries Publishers Ltd./Borgens Forlag</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1980</td>
-			</tr>
-			<tr>
-				<th scope="row">Series</th>
-				<td><a href="/article/jorn-catalogue-raisonne">Asger Jorn Catalogue raisonné</a></td>
-			</tr>
-			<tr>
-				<th scope="row">Followed by</th>
-				<td><a href="/article/atkins-jorn-supplement">Asger Jorn - Supplement - Paintings 1930-1973</a></td>
-			</tr>
-		</tbody>
-	</table>
+</script>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[is the final book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Asger Jorn - The Final Years 1965-1973</title><link href="http://localhost:4000/article/atkins-jorn-final-years/" rel="alternate" type="text/html" title="Asger Jorn - The Final Years 1965-1973" /><published>2021-08-05T00:00:00+02:00</published><updated>2022-01-31T00:00:00+01:00</updated><id>http://localhost:4000/article/atkins-jorn-final-years</id><content type="html" xml:base="http://localhost:4000/article/atkins-jorn-final-years/"><![CDATA[<section>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/atkins-jorn-final-years/front.jpg"><img class="infobox-image" src="/assets/articles/atkins-jorn-final-years/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Asger Jorn: The Final Years 1965-1973</cite></td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Authors</th>
+            <td>Guy Atkins &amp; Troels Andersen</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Lund Humphries Publishers Ltd./Borgens Forlag</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1980</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Series</th>
+            <td>Asger Jorn Catalogue raisonné</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Followed by</th>
+            <td>Asger Jorn - Supplement - Paintings 1930-1973</td>
+        </tr>
+        
+        
+    </tbody>
+</table>
+
 	
 	<p><strong>Asger Jorn - The Final Years 1965-1973</strong> is the third book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.<p>
 	
@@ -724,7 +861,6 @@ for (i = 0; i < coll.length; i++) {
 	<p class="quote-attrib">- Guy Atkins, Asger Jorn - The Final Years 1965-1973</p>
 	</div>
 </section>
-
 
 <section>
 	<h3>Contents</h3>
@@ -752,11 +888,6 @@ for (i = 0; i < coll.length; i++) {
 	<p><em>This is a preview only - <a href="https://archive.org/details/jorn-final-years" target="_blank">view fullsize on archive.org</a></em></p>
 </section>
 
-
-<h2>References</h2>
-
-
-
 <script>
 var coll = document.getElementsByClassName("collapsible-text-button");
 var i;
@@ -764,47 +895,74 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
-</script>]]></content><author><name></name></author><category term="books" /><category term="asger-jorn" /><summary type="html"><![CDATA[is the third book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Asger Jorn - The Crucial Years 1954-1964</title><link href="http://localhost:4000/article/atkins-jorn-crucial-years/" rel="alternate" type="text/html" title="Asger Jorn - The Crucial Years 1954-1964" /><published>2021-08-05T00:00:00+02:00</published><updated>2022-01-31T00:00:00+01:00</updated><id>http://localhost:4000/article/atkins-jorn-crucial-years</id><content type="html" xml:base="http://localhost:4000/article/atkins-jorn-crucial-years/"><![CDATA[<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/atkins-jorn-crucial-years/front.jpg"><img class="infobox-image" src="/assets/articles/atkins-jorn-crucial-years/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Asger Jorn: The Crucial Years 1954-1964</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Guy Atkins &amp; Troels Andersen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Lund Humphries Publishers Ltd.</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1977</td>
-			</tr>
-			<tr>
-				<th scope="row">Series</th>
-				<td><a href="/article/jorn-catalogue-raisonne">Asger Jorn Catalogue raisonné</a></td>
-			</tr>
-			<tr>
-				<th scope="row">Followed by</th>
-				<td><a href="/article/atkins-jorn-final-years">Asger Jorn - The Final Years 1965-1973</a></td>
-			</tr>
-		</tbody>
-	</table>
+</script>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[is the third book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Asger Jorn - The Crucial Years 1954-1964</title><link href="http://localhost:4000/article/atkins-jorn-crucial-years/" rel="alternate" type="text/html" title="Asger Jorn - The Crucial Years 1954-1964" /><published>2021-08-05T00:00:00+02:00</published><updated>2022-01-31T00:00:00+01:00</updated><id>http://localhost:4000/article/atkins-jorn-crucial-years</id><content type="html" xml:base="http://localhost:4000/article/atkins-jorn-crucial-years/"><![CDATA[<section>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/atkins-jorn-crucial-years/front.jpg"><img class="infobox-image" src="/assets/articles/atkins-jorn-crucial-years/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Asger Jorn: The Crucial Years 1954-1964</cite></td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Authors</th>
+            <td>Guy Atkins &amp; Troels Andersen</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Lund Humphries Publishers Ltd.</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1977</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Series</th>
+            <td>Asger Jorn Catalogue raisonné</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Followed by</th>
+            <td>Asger Jorn - The Final Years 1965-1973</td>
+        </tr>
+        
+        
+    </tbody>
+</table>
+
 	
 	<p><strong>Asger Jorn - The Crucial Years 1954-1964</strong> is the second book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.<p>
 	
@@ -817,7 +975,6 @@ for (i = 0; i < coll.length; i++) {
 	<p class="quote-attrib">- Guy Atkins, Asger Jorn - The Crucial Years 1954-1964, jacket inner leaf</p>
 	</div>
 </section>
-
 
 <section>
 	<h3>Contents</h3>
@@ -855,11 +1012,6 @@ for (i = 0; i < coll.length; i++) {
 	<p><em>This is a preview only - <a href="https://archive.org/details/jorn-crucial-years" target="_blank">view fullsize on archive.org</a></em></p>
 </section>
 
-
-<h2>References</h2>
-
-
-
 <script>
 var coll = document.getElementsByClassName("collapsible-text-button");
 var i;
@@ -867,43 +1019,69 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
-</script>]]></content><author><name></name></author><category term="books" /><category term="asger-jorn" /><summary type="html"><![CDATA[is the second book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cybernetic Serendipity - The Computer and the Arts</title><link href="http://localhost:4000/article/cybernetic-serendipity/" rel="alternate" type="text/html" title="Cybernetic Serendipity - The Computer and the Arts" /><published>2021-06-11T00:00:00+02:00</published><updated>2021-08-05T00:00:00+02:00</updated><id>http://localhost:4000/article/cybernetic-serendipity</id><content type="html" xml:base="http://localhost:4000/article/cybernetic-serendipity/"><![CDATA[<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/front.jpg"><img class="infobox-image" src="/assets/articles/cybernetic-serendipity/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Cybernetic Serendipity: The Computer and the Arts</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Editor</th>
-				<td>Jasia Reichardt</td>
-			</tr>
-			<tr>
-				<th scope="row">Exhibition Staff</th>
-				<td>Jasia Reichardt, Mark Dowson, Peter Schmidt, Franciszka Themerson</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Studio International, London</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>July 1968 (1st edition)</td>
-			</tr>
-		</tbody>
-	</table>
+</script>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[is the second book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cybernetic Serendipity - The Computer and the Arts</title><link href="http://localhost:4000/article/cybernetic-serendipity/" rel="alternate" type="text/html" title="Cybernetic Serendipity - The Computer and the Arts" /><published>2021-06-11T00:00:00+02:00</published><updated>2021-08-05T00:00:00+02:00</updated><id>http://localhost:4000/article/cybernetic-serendipity</id><content type="html" xml:base="http://localhost:4000/article/cybernetic-serendipity/"><![CDATA[<section>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/front.jpg"><img class="infobox-image" src="/assets/articles/cybernetic-serendipity/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Cybernetic Serendipity: The Computer and the Arts</cite></td>
+        </tr>
+        
+        
+        
+        <tr>
+            <th scope="row">Editor</th>
+            <td>Jasia Reichardt</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Exhibition Staff</th>
+            <td>Jasia Reichardt, Mark Dowson, Peter Schmidt, Franciszka Themerson</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Studio International, London</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>July 1968 (1st edition)</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 
 	<p><strong>Cybernetic Serendipity - The Computer and the Arts</strong> is the title of a special 1968 issue of the British magazine 'Studio International.' The issue was first published to coincide with an exhibition entitled 'Cybernetic Serendipity,' dealing broadly with the demonstration of how humans can use the computer and new technology to extend creativity and inventiveness.<p>
 	
@@ -912,19 +1090,25 @@ for (i = 0; i < coll.length; i++) {
 
 <section>
 	<h2 class="header-nestled">Exhibition</h2>
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/exhibition.jpg"><img class="thumbnail-image" src="/assets/articles/cybernetic-serendipity/exhibition.jpg"></a>
-		<div class="thumbnail-caption">
-			View of the exhbition.
-		</div>
-	</div>
 	
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/ihnatowicz_sound_activated_mobile.jpg"><img class="thumbnail-image" src="/assets/articles/cybernetic-serendipity/ihnatowicz_sound_activated_mobile.jpg"></a>
-		<div class="thumbnail-caption">
-			Edward Ihnatowicz's <em>Sound Activated Mobile (SAM)</em>, which was also featured in the exhibition catalogue.
-		</div>
-	</div>
+
+<div class="thumbnail-container">
+    <a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/exhibition.jpg"><img class="thumbnail-image" src="/assets/articles/cybernetic-serendipity/exhibition.jpg"></a>
+    
+    <div class="thumbnail-caption">View of the exhbition.</div>
+    
+</div>
+
+	
+	
+
+<div class="thumbnail-container">
+    <a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/ihnatowicz_sound_activated_mobile.jpg"><img class="thumbnail-image" src="/assets/articles/cybernetic-serendipity/ihnatowicz_sound_activated_mobile.jpg"></a>
+    
+    <div class="thumbnail-caption">Edward Ihnatowicz's <em>Sound Activated Mobile (SAM)</em>, which was also featured in the exhibition catalogue.</div>
+    
+</div>
+
 	
 	<p>The <em>Cybernetic Serendipity</em> exhibition represented three areas of the relationship between technology and creativity:</p>
 	
@@ -1074,15 +1258,19 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
 </script>
+
 	
 	<h3>Explore the Catalogue</h3>
 	
@@ -1094,34 +1282,57 @@ for (i = 0; i < coll.length; i++) {
 <section>
 	<h2>Vinyl LP</h2>
 	
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/lp_cover.jpg"><img class="infobox-image" src="/assets/articles/cybernetic-serendipity/lp_cover.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Cybernetic Serendipity Music</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Institute of Contemporary Arts, London</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1968</td>
-			</tr>
-			<tr>
-				<th scope="row">Format</th>
-				<td>Vinyl</td>
-			</tr>
-			<tr>
-				<th scope="row">Duration</th>
-				<td>52:44</td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/cybernetic-serendipity/lp_cover.jpg"><img class="infobox-image" src="/assets/articles/cybernetic-serendipity/lp_cover.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Cybernetic Serendipity Music</cite></td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Institute of Contemporary Arts, London</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1968</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Format</th>
+            <td>Vinyl</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Duration</th>
+            <td>52:44</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 	
 	<p>A vinyl record was available for purchase which included audio excerpts from cybernetic music.</p>
 	
@@ -1201,47 +1412,63 @@ for (i = 0; i < coll.length; i++) {
 				<figcaption>Calcomp Plotting System</figcaption>
 			</figure>
 	</section>
-</section>]]></content><author><name></name></author><category term="books" /><category term="cybernetics" /><category term="computers" /><summary type="html"><![CDATA[is the title of a special 1968 issue of the British magazine 'Studio International.' The issue was first published to coincide with an exhibition entitled 'Cybernetic Serendipity,' dealing broadly with the demonstration of how humans can use the computer and new technology to extend creativity and inventiveness.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Klankteksten - Konkrete Poëzie - Visuele Teksten</title><link href="http://localhost:4000/article/klankteksten/" rel="alternate" type="text/html" title="Klankteksten - Konkrete Poëzie - Visuele Teksten" /><published>2021-03-09T00:00:00+01:00</published><updated>2021-03-09T00:00:00+01:00</updated><id>http://localhost:4000/article/klankteksten</id><content type="html" xml:base="http://localhost:4000/article/klankteksten/"><![CDATA[<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/klankteksten/front.jpg"><img class="infobox-image" src="/assets/articles/klankteksten/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Sound Texts - Concrete Poetry - Visual Texts</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Director</th>
-				<td>Liesbeth Crommelin</td>
-			</tr>
-			<tr>
-				<th scope="row">Curators</th>
-				<td>Hansjörg Mayer, Reinhard Döhl, Bob Cobbing, Paul De Vree</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Stedelijk Museum, Amsterdam</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>November 1970</td>
-			</tr>
-		</tbody>
-	</table>
+</section>]]></content><author><name></name></author><category term="books" /><category term="cybernetics" /><summary type="html"><![CDATA[is the title of a special 1968 issue of the British magazine 'Studio International.' The issue was first published to coincide with an exhibition entitled 'Cybernetic Serendipity,' dealing broadly with the demonstration of how humans can use the computer and new technology to extend creativity and inventiveness.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social_media/logo.png" /><media:content medium="image" url="http://localhost:4000/assets/images/social_media/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Klankteksten - Konkrete Poëzie - Visuele Teksten</title><link href="http://localhost:4000/article/klankteksten/" rel="alternate" type="text/html" title="Klankteksten - Konkrete Poëzie - Visuele Teksten" /><published>2021-03-09T00:00:00+01:00</published><updated>2021-03-09T00:00:00+01:00</updated><id>http://localhost:4000/article/klankteksten</id><content type="html" xml:base="http://localhost:4000/article/klankteksten/"><![CDATA[<section>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/klankteksten/front.jpg"><img class="infobox-image" src="/assets/articles/klankteksten/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Sound Texts - Concrete Poetry - Visual Texts</cite></td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Stedelijk Museum, Amsterdam</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>November 1970</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 
 	<p><strong>Klankteksten - Konkrete Poëzie - Visuele Teksten</strong> (Sound Texts - Concrete Poetry - Visual Texts) is the title of an exhibition catalogue released in conjunction with the exhibition 'Klankteksten?' at the Stedelijk Museum in Amsterdam, Netherlands in November 1970. The exhibition provided an overview of the concrete poetry movement.<p>
 </section>
 
 <section>
 	<h2 class="header-nestled">Exhibition</h2>
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/klankteksten/1970-1971_amsterdam_overzichtstentoonstelling-konkrete-poezie.jpg"><img class="thumbnail-image" src="/assets/articles/klankteksten/1970-1971_amsterdam_overzichtstentoonstelling-konkrete-poezie.jpg"></a>
-		<div class="thumbnail-caption">
-			Installation view including <em>Revolution</em> (1969).
-		</div>
-	</div>
+	
+
+<div class="thumbnail-container">
+    <a href="#" data-featherlight="/assets/articles/klankteksten/1970-1971_amsterdam_overzichtstentoonstelling-konkrete-poezie.jpg"><img class="thumbnail-image" src="/assets/articles/klankteksten/1970-1971_amsterdam_overzichtstentoonstelling-konkrete-poezie.jpg"></a>
+    
+    <div class="thumbnail-caption">Installation view including <em>Revolution</em> (1969).</div>
+    
+</div>
+
 	
 	<div class="quote">
 	<p>The exhibition came at a time when concrete poetry was in a crisis position internationally. This crisis situation was reflected in the question mark that appears in the title of the exhibition. After all, concrete poetry was declared dead in the English magazine Stereo-headphones.</p>
@@ -1449,15 +1676,19 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
 </script>
+
 	
 	<h3>Explore the Catalogue</h3>
 	
@@ -1469,34 +1700,52 @@ for (i = 0; i < coll.length; i++) {
 <section>
 	<h2>Vinyl LP</h2>
 	
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/klankteksten/front.jpg"><img class="infobox-image" src="/assets/articles/klankteksten/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Sound Texts - Concrete Poetry - Visual Texts</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Stedelijk Museum, Amsterdam</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1970</td>
-			</tr>
-			<tr>
-				<th scope="row">Format</th>
-				<td>Vinyl</td>
-			</tr>
-			<tr>
-				<th scope="row">Duration</th>
-				<td></td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/klankteksten/front.jpg"><img class="infobox-image" src="/assets/articles/klankteksten/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Sound Texts - Concrete Poetry - Visual Texts</cite></td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Stedelijk Museum, Amsterdam</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1970</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Format</th>
+            <td>Vinyl</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 	
 	<p>The exhibition catalogue came with a LP of concrete poetry recordings, supervised by Bob Cobbing.</p>
 	

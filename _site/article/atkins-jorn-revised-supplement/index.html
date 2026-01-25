@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,6 +38,7 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -72,7 +74,7 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/artists"  class="navbar-link">Artists</a>
+		<a href="/creators"  class="navbar-link">Creators</a>
 		
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
@@ -90,7 +92,7 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/artists" class="mobile-nav-link">Artists</a>
+	<a href="/creators" class="mobile-nav-link">Creators</a>
 	
 	<a href="/articles" class="mobile-nav-link">Articles</a>
 	
@@ -237,34 +239,57 @@
 		</header>
 	
 		<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/atkins-jorn-revised-supplement/front.jpg"><img class="infobox-image" src="/assets/articles/atkins-jorn-revised-supplement/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Asger Jorn: Revised Supplement</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Guy Atkins &amp; Troels Andersen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Lund Humphries Publishers Ltd.</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>2006</td>
-			</tr>
-			<tr>
-				<th scope="row">Series</th>
-				<td><a href="/article/jorn-catalogue-raisonne">Asger Jorn Catalogue raisonné</a></td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/atkins-jorn-revised-supplement/front.jpg"><img class="infobox-image" src="/assets/articles/atkins-jorn-revised-supplement/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Asger Jorn: Revised Supplement</cite></td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Authors</th>
+            <td>Guy Atkins &amp; Troels Andersen</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Lund Humphries Publishers Ltd.</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>2006</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Series</th>
+            <td>Asger Jorn Catalogue raisonné</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 	
 	<p><strong>Asger Jorn - Revised Supplement</strong> is the final book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.<p>
 	
@@ -277,7 +302,6 @@
 	<p class="quote-attrib">- Troels Andersen, Asger Jorn - Revised Supplement</p>
 	</div>
 </section>
-
 
 <section>
 	<h3>Contents</h3>
@@ -306,11 +330,6 @@
 	<p><em>This is a preview only - <a href="https://archive.org/details/jorn-revised-supplement" target="_blank">view fullsize on archive.org</a></em></p>
 </section>
 
-
-<h2>References</h2>
-
-
-
 <script>
 var coll = document.getElementsByClassName("collapsible-text-button");
 var i;
@@ -318,29 +337,37 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
 </script>
+
 		
 	</div>
 	
 </article>
 
-<h3>Tags</h3>
 
+<h3>Creators</h3>
 <span>
   
-    <a href="/tag/asger-jorn/">
+    <a href="/creators/asger-jorn/">
 			Asger Jorn
 		</a><br />
   
 </span>
+
+
+
+
 			</div>
 			
 			<div id="footer">

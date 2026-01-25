@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,6 +38,7 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -72,7 +74,7 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/artists"  class="navbar-link">Artists</a>
+		<a href="/creators"  class="navbar-link">Creators</a>
 		
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
@@ -90,7 +92,7 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/artists" class="mobile-nav-link">Artists</a>
+	<a href="/creators" class="mobile-nav-link">Creators</a>
 	
 	<a href="/articles" class="mobile-nav-link">Articles</a>
 	
@@ -237,38 +239,57 @@
 		</header>
 	
 		<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/helhesten/helhesten_2.4_cover.jpg"><img class="infobox-image" src="/assets/articles/helhesten/helhesten_2.4_cover.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Helhesten (Year 2, Booklet 4)</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Editor</th>
-				<td>Robert Dahlmann Olsen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td></td>
-			</tr>
-			<tr>
-				<th scope="row">Issue date</th>
-				<td>December 24, 1943</td>
-			</tr>
-			<tr>
-				<th scope="row">Cover design</th>
-				<td>Ejler Bille</td>
-			</tr>
-			<tr>
-				<th scope="row">Followed by</th>
-				<td><a href="/article/helhesten-2.5-6">Helhesten (Year 2, Booklets 5 &amp; 6)</a></td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/helhesten/helhesten_2.4_cover.jpg"><img class="infobox-image" src="/assets/articles/helhesten/helhesten_2.4_cover.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Helhesten (Year 2, Booklet 4)</cite></td>
+        </tr>
+        
+        
+        
+        <tr>
+            <th scope="row">Editor</th>
+            <td>Robert Dahlmann Olsen</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Issue date</th>
+            <td>December 24, 1943</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Cover design</th>
+            <td>Ejler Bille</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Followed by</th>
+            <td>Helhesten (Year 2, Booklets 5 &amp; 6)</td>
+        </tr>
+        
+        
+    </tbody>
+</table>
+
 	
 	<p><strong>Helhesten (Year 2, Booklet 4)</strong> is the penultimate issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.</p>
 	
@@ -289,8 +310,6 @@
 	<em>This is a preview only - <a href="https://archive.org/details/helhesten-2-4" target="_blank">view fullsize on archive.org</a></em> 
 </section>
 
-<h2>References</h2>
-
 <script>
 var coll = document.getElementsByClassName("collapsible-text-button");
 var i;
@@ -298,27 +317,38 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
 </script>
+
 		
 	</div>
 	
 </article>
 
-<h3>Tags</h3>
 
+<h3>Creators</h3>
 <span>
   
-    <a href="/tag/asger-jorn/">
+    <a href="/creators/asger-jorn/">
 			Asger Jorn
 		</a><br />
+  
+</span>
+
+
+
+<h3>Tags</h3>
+<span>
   
     <a href="/tag/cobra/">
 			Cobra
@@ -329,6 +359,8 @@ for (i = 0; i < coll.length; i++) {
 		</a><br />
   
 </span>
+
+
 			</div>
 			
 			<div id="footer">

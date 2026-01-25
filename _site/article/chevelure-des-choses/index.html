@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,6 +38,7 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -72,7 +74,7 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/artists"  class="navbar-link">Artists</a>
+		<a href="/creators"  class="navbar-link">Creators</a>
 		
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
@@ -90,7 +92,7 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/artists" class="mobile-nav-link">Artists</a>
+	<a href="/creators" class="mobile-nav-link">Creators</a>
 	
 	<a href="/articles" class="mobile-nav-link">Articles</a>
 	
@@ -237,34 +239,57 @@
 		</header>
 	
 		<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/chevelure-des-choses/front.jpg"><img class="infobox-image" src="/assets/articles/chevelure-des-choses/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>La chevelure des choses</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Christian Dotremont &amp; Asger Jorn</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Galerie Rive Gauche, Paris 1961</td>
-			</tr>
-			<tr>
-				<th scope="row">Edition</th>
-				<td>300 copies</td>
-			</tr>
-			<tr>
-				<th scope="row">Dimensions</th>
-				<td>27.1 x 21.4 cm, 32 pages</td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/chevelure-des-choses/front.jpg"><img class="infobox-image" src="/assets/articles/chevelure-des-choses/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>La chevelure des choses</cite></td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Authors</th>
+            <td>Christian Dotremont &amp; Asger Jorn</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Galerie Rive Gauche, Paris 1961</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Edition</th>
+            <td>300 copies</td>
+        </tr>
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Dimensions</th>
+            <td>27.1 x 21.4 cm, 32 pages</td>
+        </tr>
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 
 	<p><strong>La chevelure des choses</strong> (The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn. The book is a catalogue from the pair's exhibition at Galerie Rive Gauche in Paris in 1961 and is a reproduction of small word drawings made by Jorn and Dotremont from 1948 to 1953, and also specifically from when the pair shared a room at the tuberculosis sanatorium in Silkeborg from November 1951 to February 1952. The catalogue contains a preface by Pierre Alechinsky and an original poem, <em>L'orthocatalographe</em> by Dotremont. Presented in a green stiff card slipcase, it was printed in Paris in 1961 by GIL.</p>
 	
@@ -298,39 +323,46 @@
 	<div class="collapsible-text-container">
 <button class="collapsible-text-button">L'orthocatalographe (Christian Dotremont)</button>
 <div class="collapsible-text-content">
+<div class="translation-toggle">
+	<button class="translation-btn active" data-lang="original">Original</button>
+	<button class="translation-btn" data-lang="english">English</button>
+</div>
+<div class="translatable-content">
 
 
-<p><strong>L’orthocatalographe</strong></p>
+<div class="original-text">
+<strong>L'orthocatalographe</strong>
 
-<p>jamais je ne me rappelle j’appelle<br />
-par son nom ce que j’interpelle<br />
+<p>
+jamais je ne me rappelle j'appelle<br />
+par son nom ce que j'interpelle<br />
 jamais je ne me contiens je me contente<br />
 de ce qui constamment me tente<br />
-jamais je ne m’écorne ni l’œil ni l’oreille<br />
+jamais je ne m'écorne ni l'œil ni l'oreille<br />
 je vote contre les corbeaux pour les corneilles<br />
 jamais je ne vais à la guerre<br />
-j’orne mon cœur de ma colère<br />
+j'orne mon cœur de ma colère<br />
 jamais je ne donne de hennin à ma femme<br />
-j’aime sa chevelure comme une flamme<br />
-jamais je ne machine ni ne m’exquise<br />
-je ne m’allèche que si me grise<br />
+j'aime sa chevelure comme une flamme<br />
+jamais je ne machine ni ne m'exquise<br />
+je ne m'allèche que si me grise<br />
 jamais je ne suis petit poucet<br />
 dans la douce forêt du passé<br />
 jamais je ne jette par la fenêtre<br />
 le tas gitbont de rires ou est maêtre<br />
 jamais je ne tombe dans la gueule du loup<br />
 je ne tombe jamais dans la gueule du goût<br />
-et je ne vais dans les musées que pour enlever les muselières.<br /></p>
+et je ne vais dans les musées que pour enlever les muselières.
+</p>
 
-<p>Dotremont</p>
+<p>— Dotremont</p>
+</div>
 
-<p><br /></p>
+<div class="translated-text">
+<strong>The Orthocatalograph</strong>
 
-<p><em>Translated with DeepL:</em></p>
-
-<p><strong>The orthocatalograph</strong></p>
-
-<p>I never remember to call<br />
+<p>
+I never remember I call<br />
 by its name what I call<br />
 never I restrain myself I content myself<br />
 with what constantly tempts me<br />
@@ -348,13 +380,19 @@ never I throw by the window<br />
 the heap of laughter where my being is<br />
 never I fall in the mouth of the wolf<br />
 I never fall into the mouth of the taste<br />
-and I go to the museums only to remove the muzzles.<br /></p>
+and I go to the museums only to remove the muzzles.
+</p>
 
-<p>Dotremont</p>
+<p>— Dotremont</p>
 
+<p><em>(Translated with DeepL)</em></p>
+</div>
 
 </div>
 </div>
+</div>
+
+
 	
 	<script>
 var coll = document.getElementsByClassName("collapsible-text-button");
@@ -363,15 +401,19 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
 </script>
+
 	
 	<h3>Explore the Catalogue</h3>
 	
@@ -379,7 +421,6 @@ for (i = 0; i < coll.length; i++) {
 	
 	<p><em>This is a preview only - <a href="https://archive.org/details/chevelure-des-choses" target="_blank">view fullsize on archive.org</a></em></p>
 </section>
-
 
 <section>
 	<h2>Gallery</h2>
@@ -415,26 +456,28 @@ for (i = 0; i < coll.length; i++) {
 			</figure>
 	</section>
 </section>
-
-<h2>References</h2>
 		
 	</div>
 	
 </article>
 
-<h3>Tags</h3>
 
+<h3>Creators</h3>
 <span>
   
-    <a href="/tag/asger-jorn/">
+    <a href="/creators/asger-jorn/">
 			Asger Jorn
 		</a><br />
   
-    <a href="/tag/christian-dotremont/">
+    <a href="/creators/christian-dotremont/">
 			Christian Dotremont
 		</a><br />
   
 </span>
+
+
+
+
 			</div>
 			
 			<div id="footer">

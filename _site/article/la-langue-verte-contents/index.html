@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,6 +38,7 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -72,7 +74,7 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/artists"  class="navbar-link">Artists</a>
+		<a href="/creators"  class="navbar-link">Creators</a>
 		
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
@@ -90,7 +92,7 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/artists" class="mobile-nav-link">Artists</a>
+	<a href="/creators" class="mobile-nav-link">Creators</a>
 	
 	<a href="/articles" class="mobile-nav-link">Articles</a>
 	
@@ -237,34 +239,57 @@
 		</header>
 	
 		<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/la-langue-verte/front.jpg"><img class="infobox-image" src="/assets/articles/la-langue-verte/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>La langue verte et la cuite</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Asger Jorn &amp; Noël Arnaud (Jean Jacques Pauvert editor)</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Jean Jacques Pauvert</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1968</td>
-			</tr>
-			<tr>
-				<th scope="row">Series</th>
-				<td>Library of Alexandria, Vol. 3</td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/la-langue-verte/front.jpg"><img class="infobox-image" src="/assets/articles/la-langue-verte/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>La langue verte et la cuite</cite></td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Authors</th>
+            <td>Asger Jorn &amp; Noël Arnaud (Jean Jacques Pauvert editor)</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Jean Jacques Pauvert</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1968</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Series</th>
+            <td>Library of Alexandria, Vol. 3</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 	
 	<p><strong>La langue verte et la cuite (Contents)</strong> is a book written in French by Asger Jorn and Noël Arnaud, and edited and published by Jean Jacques Pauvert in 1968. The book was written in reaction to the 1964 book <em>Le cru et le cuit (The Raw and the Cooked)</em> by Claude Lévi-Strauss, which was an examination of structuralist theory. The book contains numerous short essays with titles that parody French culinary dishes and texts that focus on Jorn and Arnaud's dissatisfaction with structuralist theory, coupled with historical greyscale images where the tongues of sculptures, people, and animals have been distinctly highlighted in colour. The book is 327 pages in length and contains over 300 images.<p>
 <section>
@@ -1310,29 +1335,37 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
 </script>
+
 		
 	</div>
 	
 </article>
 
-<h3>Tags</h3>
 
+<h3>Creators</h3>
 <span>
   
-    <a href="/tag/asger-jorn/">
+    <a href="/creators/asger-jorn/">
 			Asger Jorn
 		</a><br />
   
 </span>
+
+
+
+
 			</div>
 			
 			<div id="footer">

@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,6 +38,7 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -72,7 +74,7 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/artists"  class="navbar-link">Artists</a>
+		<a href="/creators"  class="navbar-link">Creators</a>
 		
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
@@ -90,7 +92,7 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/artists" class="mobile-nav-link">Artists</a>
+	<a href="/creators" class="mobile-nav-link">Creators</a>
 	
 	<a href="/articles" class="mobile-nav-link">Articles</a>
 	
@@ -237,38 +239,62 @@
 		</header>
 	
 		<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/front.jpg"><img class="infobox-image" src="/assets/articles/il-giardino-delle-delizie/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Il giardino delle delizie</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Artists</th>
-				<td>Wolf Vostell et. al.</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Multhipla Records, M20138 - Edition Wewerka</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1984</td>
-			</tr>
-			<tr>
-				<th scope="row">Format</th>
-				<td>Vinyl</td>
-			</tr>
-			<tr>
-				<th scope="row">Duration</th>
-				<td>1:39:26</td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/front.jpg"><img class="infobox-image" src="/assets/articles/il-giardino-delle-delizie/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Il giardino delle delizie</cite></td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Artists</th>
+            <td>Wolf Vostell et. al.</td>
+        </tr>
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Multhipla Records, M20138 - Edition Wewerka</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1984</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Format</th>
+            <td>Vinyl</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Duration</th>
+            <td>1:39:26</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 	
 	<p><strong>Il giardino delle delizie</strong> (The Garden of Delights) is a recording released by Multhipla Records featuring a musical Fluxus performance by Wolf Vostell. Sopranos Esperanza Abad, Nancy Bellow, Marie-Louise Gilles, Helga Hamm-Albrecht, Else Nabu, cante jondo singer Paco Corales, and the Capella St. Martini, Bremen-Lesum under the direction of Günter Koller also participated. The work was commissioned by the Theaters der Freien Hansestadt Bremen and Radio Bremen, and was broadcast on Radio Bremen 2 on Friday, June 11, 1982 from 21:05 to 23:00. The vinyl recording is from May 8, 1982 and was performed at the Weserburg Museum of Modern Art in Bremen, Germany from 20:30 to 22:30.</p>
 	
@@ -294,12 +320,15 @@
 		
 	<h3>Act 1 (Juana la Loca)</h3>
 	
-	<div class="thumbnail-container-fullwidth">
-		<a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/score_02.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_02.jpg" title="Visual score for the setting of Act 1." alt="" width="100%"/></a>
-		<div class="thumbnail-caption">
-			Visual score for the setting of Act 1.
-		</div>
-	</div>
+	
+
+<div class="thumbnail-container-fullwidth">
+    <a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/score_02.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_02.jpg"></a>
+    
+    <div class="thumbnail-caption">Visual score for the setting of Act 1.</div>
+    
+</div>
+
 	
 	<p>Act 1 <em>(Juana la Loca, or Crazy Joan)</em>  describes a scene with 30 minutes of constant ambience. Interruptions occur by the six sopranos moving from their location in the ambience and moving the _______ of the nine iron poles in the scene, as well as triggering sounds consisting of cassette recorders with endless tapes.</p>
 	
@@ -313,12 +342,15 @@
 	
 	<h3>Act 2 (Endogene Depression) (Ensalada)</h3>
 	
-	<div class="thumbnail-container-fullwidth">
-		<a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/score_05.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_05.jpg" title="Visual score for the setting of Act 2." alt="" width="100%"/></a>
-		<div class="thumbnail-caption">
-			Visual score for the setting of Act 2.
-		</div>
-	</div>
+	
+
+<div class="thumbnail-container-fullwidth">
+    <a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/score_05.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_05.jpg"></a>
+    
+    <div class="thumbnail-caption">Visual score for the setting of Act 2.</div>
+    
+</div>
+
 	
 	<p>Act 2 <em>(Endogene Depression) (Ensalada)</em> consists of:
 		<ul>
@@ -332,12 +364,15 @@
 	
 	<h3>Act 3 (Die Winde)</h3>
 	
-	<div class="thumbnail-container-fullwidth">
-		<a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/score_07.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_07.jpg" title="Visual score for the setting of Act 3." alt="" width="100%"/></a>
-		<div class="thumbnail-caption">
-			Visual score for the setting of Act 3.
-		</div>
-	</div>
+	
+
+<div class="thumbnail-container-fullwidth">
+    <a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/score_07.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_07.jpg"></a>
+    
+    <div class="thumbnail-caption">Visual score for the setting of Act 3.</div>
+    
+</div>
+
 	
 	<p>Act 3 <em>(Die Winde)</em> consists of:
 		<ul>
@@ -351,12 +386,15 @@
 	
 	<h3>Act 4 (El rocio)</h3>
 	
-	<div class="thumbnail-container-fullwidth">
-		<a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/score_08.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_08.jpg" title="Visual score for the setting of Act 4." alt="" width="100%"/></a>
-		<div class="thumbnail-caption">
-			Visual score for the setting of Act 4.
-		</div>
-	</div>
+	
+
+<div class="thumbnail-container-fullwidth">
+    <a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/score_08.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_08.jpg"></a>
+    
+    <div class="thumbnail-caption">Visual score for the setting of Act 4.</div>
+    
+</div>
+
 	
 	<p>Act 4 <em>(El rocio)</em> consists of:
 		<ul>
@@ -412,15 +450,19 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
 </script>
+
 </section>
 
 <section>
@@ -553,26 +595,33 @@ for (i = 0; i < coll.length; i++) {
 	</section>
 </section>
 
-<h2>References</h2>
-
 		
 	</div>
 	
 </article>
 
-<h3>Tags</h3>
 
+<h3>Creators</h3>
 <span>
   
-    <a href="/tag/wolf-vostell/">
+    <a href="/creators/wolf-vostell/">
 			Wolf Vostell
 		</a><br />
+  
+</span>
+
+
+
+<h3>Tags</h3>
+<span>
   
     <a href="/tag/fluxus/">
 			Fluxus
 		</a><br />
   
 </span>
+
+
 			</div>
 			
 			<div id="footer">

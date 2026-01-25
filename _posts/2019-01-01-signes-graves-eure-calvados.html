@@ -3,40 +3,21 @@ layout: article
 title: Signes gravés sur les églises de l'Eure et du Calvados
 categories: books
 description: (Signs Engraved on the Churches of Eure and Calvados) is a book written in French and directed by Asger Jorn, with essay contributions from various antiquities experts and photography by Gérard Franceschi.
-tags: asger-jorn
+creators: [asger-jorn]
+tags: []
 featured-image: /assets/articles/signes-graves-eure-calvados/front.jpg
 last_modified_at: 2021-03-10
 ---
 
 <section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/front.jpg"><img class="infobox-image" src="/assets/articles/signes-graves-eure-calvados/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Signs Engraved on the Churches of Eure and Calvados</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Asger Jorn &amp; Gérard Franceschi</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Borgen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1964</td>
-			</tr>
-			<tr>
-				<th scope="row">Series</th>
-				<td>Library of Alexandria, Vol. 2</td>
-			</tr>
-		</tbody>
-	</table>
+	{% include infobox.html
+    image="/assets/articles/signes-graves-eure-calvados/front.jpg"
+    title="Signs Engraved on the Churches of Eure and Calvados"
+    authors="Asger Jorn &amp; Gérard Franceschi"
+    publisher="Borgen"
+    date="1964"
+    series="Library of Alexandria, Vol. 2"
+%}
 	
 	<p><strong>{{ page.title }}</strong> {{page.description}} The book was published by Danish publisher Borgen in 1964 and distributed in France by <cite>Librairie 'Le Minotaur.'</cite><p>
 	
@@ -48,12 +29,10 @@ last_modified_at: 2021-03-10
 <section>
 	<h2>Concept</h2>
 	
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/signes_01.jpg"><img class="thumbnail-image" src="/assets/articles/signes-graves-eure-calvados/signes_01.jpg"></a>
-		<div class="thumbnail-caption">
-			An example of signs. The lower photo is from the church in Tournedos, Eure. The upper photo is unidentified.
-		</div>
-	</div>
+	{% include thumbnail.html
+    image="/assets/articles/signes-graves-eure-calvados/signes_01.jpg"
+    caption="An example of signs. The lower photo is from the church in Tournedos, Eure. The upper photo is unidentified."
+%}
 	
 	<p>Karen Kurcynski explains Jorn's comparison of the symbols found in Eure and Calvados to the Scandinavian &quot;Vandal&quot; culture:</p>
 	
@@ -62,10 +41,10 @@ last_modified_at: 2021-03-10
 	<p class="quote-attrib">- Karen Kurcynski, <a href="https://situationistlibrary.files.wordpress.com/2012/02/kurcynski-expression-vandalism-jorn.pdf" target="_blank">Expression as vandalism: Asger Jorn's &quot;Modifications&quot;</a></p>
 	</div>
 	
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/signes_02.jpg"><img class="thumbnail-image" src="/assets/articles/signes-graves-eure-calvados/signes_02.jpg"></a>
-		<div class="thumbnail-caption">Signs from the church in Tilleul-Dame-Agnès, Eure.</div>
-	</div>
+	{% include thumbnail.html
+    image="/assets/articles/signes-graves-eure-calvados/signes_02.jpg"
+    caption="Signs from the church in Tilleul-Dame-Agnès, Eure."
+%}
 	
 	<p>Steven Harris links Jorn's fascination with engravings found on churches to Scandinavian expansion into Normandy:</p>
 	
@@ -157,7 +136,5 @@ last_modified_at: 2021-03-10
 			</figure>
 	</section>
 </section>
-
-<h2>References</h2>
 
 {% include collapsible.html %}

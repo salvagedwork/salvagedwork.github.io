@@ -3,52 +3,31 @@ layout: article
 title: Klankteksten - Konkrete Poëzie - Visuele Teksten
 categories: books
 description: (Sound Texts - Concrete Poetry - Visual Texts) is the title of an exhibition catalogue released in conjunction with the exhibition 'Klankteksten?' at the Stedelijk Museum in Amsterdam, Netherlands in November 1970. The exhibition provided an overview of the concrete poetry movement.
-tags: klankteksten
+creators: []
+tags: [klankteksten]
 featured-image: /assets/articles/klankteksten/front.jpg
 last_modified_at: 2021-03-09
 ---
 
 <section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/klankteksten/front.jpg"><img class="infobox-image" src="/assets/articles/klankteksten/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Sound Texts - Concrete Poetry - Visual Texts</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Director</th>
-				<td>Liesbeth Crommelin</td>
-			</tr>
-			<tr>
-				<th scope="row">Curators</th>
-				<td>Hansjörg Mayer, Reinhard Döhl, Bob Cobbing, Paul De Vree</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Stedelijk Museum, Amsterdam</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>November 1970</td>
-			</tr>
-		</tbody>
-	</table>
+	{% include infobox.html
+    image="/assets/articles/klankteksten/front.jpg"
+    title="Sound Texts - Concrete Poetry - Visual Texts"
+    publisher="Stedelijk Museum, Amsterdam"
+    date="November 1970"
+    director="Liesbeth Crommelin"
+    curators="Hansjörg Mayer, Reinhard Döhl, Bob Cobbing, Paul De Vree"
+%}
 
 	<p><strong>{{ page.title }}</strong> {{page.description}}<p>
 </section>
 
 <section>
 	<h2 class="header-nestled">Exhibition</h2>
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/klankteksten/1970-1971_amsterdam_overzichtstentoonstelling-konkrete-poezie.jpg"><img class="thumbnail-image" src="/assets/articles/klankteksten/1970-1971_amsterdam_overzichtstentoonstelling-konkrete-poezie.jpg"></a>
-		<div class="thumbnail-caption">
-			Installation view including <em>Revolution</em> (1969).
-		</div>
-	</div>
+	{% include thumbnail.html
+    image="/assets/articles/klankteksten/1970-1971_amsterdam_overzichtstentoonstelling-konkrete-poezie.jpg"
+    caption="Installation view including <em>Revolution</em> (1969)."
+%}
 	
 	<div class="quote">
 	<p>The exhibition came at a time when concrete poetry was in a crisis position internationally. This crisis situation was reflected in the question mark that appears in the title of the exhibition. After all, concrete poetry was declared dead in the English magazine Stereo-headphones.</p>
@@ -86,34 +65,13 @@ last_modified_at: 2021-03-09
 <section>
 	<h2>Vinyl LP</h2>
 	
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/klankteksten/front.jpg"><img class="infobox-image" src="/assets/articles/klankteksten/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Sound Texts - Concrete Poetry - Visual Texts</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Stedelijk Museum, Amsterdam</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1970</td>
-			</tr>
-			<tr>
-				<th scope="row">Format</th>
-				<td>Vinyl</td>
-			</tr>
-			<tr>
-				<th scope="row">Duration</th>
-				<td></td>
-			</tr>
-		</tbody>
-	</table>
+	{% include infobox.html
+    image="/assets/articles/klankteksten/front.jpg"
+    title="Sound Texts - Concrete Poetry - Visual Texts"
+    publisher="Stedelijk Museum, Amsterdam"
+    date="1970"
+    format="Vinyl"
+%}
 	
 	<p>The exhibition catalogue came with a LP of concrete poetry recordings, supervised by Bob Cobbing.</p>
 	

@@ -1,0 +1,129 @@
+{% comment %}
+Reusable infobox for articles.
+Usage:
+{% include infobox.html 
+    image="/assets/articles/example/cover.jpg"
+    title="Book Title"
+    authors="Author Name"
+    artists="Artist Name (for recordings)"
+    editor="Editor Name"
+    exhibition_staff="Staff Names"
+    publisher="Publisher Name"
+    date="1978"
+    isbn="123-456"
+    series="Series Name"
+    edition="300 copies"
+    format="Vinyl"
+    duration="45'21"
+    dimensions="27.1 x 21.4 cm, 32 pages"
+%}
+{% endcomment %}
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="{{ include.image }}"><img class="infobox-image" src="{{ include.image }}"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>{{ include.title }}</cite></td>
+        </tr>
+        {% if include.authors %}
+        <tr>
+            <th scope="row">Authors</th>
+            <td>{{ include.authors }}</td>
+        </tr>
+        {% endif %}
+        {% if include.artists %}
+        <tr>
+            <th scope="row">Artists</th>
+            <td>{{ include.artists }}</td>
+        </tr>
+        {% endif %}
+        {% if include.editor %}
+        <tr>
+            <th scope="row">Editor</th>
+            <td>{{ include.editor }}</td>
+        </tr>
+        {% endif %}
+        {% if include.exhibition_staff %}
+        <tr>
+            <th scope="row">Exhibition Staff</th>
+            <td>{{ include.exhibition_staff }}</td>
+        </tr>
+        {% endif %}
+        {% if include.publisher %}
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>{{ include.publisher }}</td>
+        </tr>
+        {% endif %}
+        {% if include.date %}
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>{{ include.date }}</td>
+        </tr>
+        {% endif %}
+        {% if include.series %}
+        <tr>
+            <th scope="row">Series</th>
+            <td>{{ include.series }}</td>
+        </tr>
+        {% endif %}
+        {% if include.isbn %}
+        <tr>
+            <th scope="row">ISBN</th>
+            <td>{{ include.isbn }}</td>
+        </tr>
+        {% endif %}
+        {% if include.edition %}
+        <tr>
+            <th scope="row">Edition</th>
+            <td>{{ include.edition }}</td>
+        </tr>
+        {% endif %}
+        {% if include.format %}
+        <tr>
+            <th scope="row">Format</th>
+            <td>{{ include.format }}</td>
+        </tr>
+        {% endif %}
+        {% if include.duration %}
+        <tr>
+            <th scope="row">Duration</th>
+            <td>{{ include.duration }}</td>
+        </tr>
+        {% endif %}
+        {% if include.dimensions %}
+        <tr>
+            <th scope="row">Dimensions</th>
+            <td>{{ include.dimensions }}</td>
+        </tr>
+        {% endif %}
+        {% if include.issue_date %}
+        <tr>
+            <th scope="row">Issue date</th>
+            <td>{{ include.issue_date }}</td>
+        </tr>
+        {% endif %}
+        {% if include.cover_design %}
+        <tr>
+            <th scope="row">Cover design</th>
+            <td>{{ include.cover_design }}</td>
+        </tr>
+        {% endif %}
+        {% if include.followed_by %}
+        <tr>
+            <th scope="row">Followed by</th>
+            <td>{{ include.followed_by }}</td>
+        </tr>
+        {% endif %}
+        {% if include.preceded_by %}
+        <tr>
+            <th scope="row">Preceded by</th>
+            <td>{{ include.preceded_by }}</td>
+        </tr>
+        {% endif %}
+    </tbody>
+</table>

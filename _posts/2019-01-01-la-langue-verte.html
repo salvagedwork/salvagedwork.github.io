@@ -3,44 +3,22 @@ layout: article
 title: La langue verte et la cuite
 categories: books
 description: is a book written in French by Asger Jorn and Noël Arnaud, and edited and published by Jean Jacques Pauvert in 1968.
-tags: asger-jorn
-subjects:
-  - structuralism
-  - art-theory
-  - french-literature
+creators: [asger-jorn]
+tags: []
+subjects: [structuralism, art-theory]
 featured-image: /assets/articles/la-langue-verte/front.jpg
 last_modified_at: 2021-03-10
 ---
 
 <section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/la-langue-verte/front.jpg"><img class="infobox-image" src="/assets/articles/la-langue-verte/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>La langue verte et la cuite</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Asger Jorn &amp; Noël Arnaud (Jean Jacques Pauvert editor)</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Jean Jacques Pauvert</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1968</td>
-			</tr>
-			<tr>
-				<th scope="row">Series</th>
-				<td>Library of Alexandria, Vol. 3</td>
-			</tr>
-		</tbody>
-	</table>
+	{% include infobox.html
+    image="/assets/articles/la-langue-verte/front.jpg"
+    title="La langue verte et la cuite"
+    authors="Asger Jorn &amp; Noël Arnaud (Jean Jacques Pauvert editor)"
+    publisher="Jean Jacques Pauvert"
+    date="1968"
+    series="Library of Alexandria, Vol. 3"
+%}
 	
 	<p><strong>{{ page.title }}</strong> {{page.description}} The book was written in reaction to the 1964 book <em>Le cru et le cuit (The Raw and the Cooked)</em> by Claude Lévi-Strauss, which was an examination of structuralist theory. The book contains numerous short essays with titles that parody French culinary dishes and texts that focus on Jorn and Arnaud's dissatisfaction with structuralist theory, coupled with historical greyscale images where the tongues of sculptures, people, and animals have been distinctly highlighted in colour. The book is 327 pages in length and contains over 300 images.</p>
 	
@@ -69,12 +47,10 @@ last_modified_at: 2021-03-10
 <section>
 	<h2>Themes</h2>
 	
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/la-langue-verte/page132.jpg"><img class="thumbnail-image" src="/assets/articles/la-langue-verte/page132.jpg"></a>
-		<div class="thumbnail-caption">
-			<cite>La langue à jambe volante</cite> (The Flying Legged Tongue), Urnes Stave Church, Norway, page 132
-		</div>
-	</div>
+	{% include thumbnail.html
+    image="/assets/articles/la-langue-verte/page132.jpg"
+    caption="<cite>La langue à jambe volante</cite> (The Flying Legged Tongue), Urnes Stave Church, Norway, page 132"
+%}
 	
 	<div class="quote">
 	<p>One of the initial themes of <em>La Langue verte</em>, adapted from <em>Le Cru et le cuit</em>, is that of the dénicheur des langues, the &quot;dislodger of tongues,&quot; which is both described as a myth in Jorn and Arnaud’s text and displayed as a motif in numerous images.</p>
@@ -86,12 +62,10 @@ last_modified_at: 2021-03-10
 	<p class="quote-attrib">- Asger Jorn and Noël Arnaud, <em>La langue verte et la cuite</em>, p. 48.</p>
 	</div>
 	
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/la-langue-verte/page201.jpg"><img class="thumbnail-image" src="/assets/articles/la-langue-verte/page201.jpg"></a>
-		<div class="thumbnail-caption">
-			Excerpt from <cite>La tèse de veau à la vinaigrette</cite>, featuring images <cite>Langue en tétine légumineuse et ombilicale</cite> (Tongue in leguminous and umbilical pacifier) and <cite>Linguiste hippotêtique se nouant la langue</cite> (Hippotetic linguist tying his tongue), page 201
-		</div>
-	</div>
+	{% include thumbnail.html
+    image="/assets/articles/la-langue-verte/page201.jpg"
+    caption="Excerpt from <cite>La tèse de veau à la vinaigrette</cite>, featuring images <cite>Langue en tétine légumineuse et ombilicale</cite> (Tongue in leguminous and umbilical pacifier) and <cite>Linguiste hippotêtique se nouant la langue</cite> (Hippotetic linguist tying his tongue), page 201"
+%}
 	
 	<div class="quote">
 	<p>Although <em>La Langue verte et la cuite</em> is a parody of structuralist theory, as well as of the musical and scientific pretensions of <em>Le Cru et le cuit</em>, it also adopts Lévi-Strauss’s method in the organization of its images and prose. The permutations of images of the tongue — which are broadly organized in the &quot;table service of illuminations&quot; into <em>héros dénicheurs de langues</em>, <em>la langue pédale</em> (roughly, &quot;foot lickers&quot;), <em>tireurs</em> (those who show their tongues), <em>les langues élémentales</em> (the elements in question being chiefly air and fire), <em>la langue orientable</em> (in which tongues take the form of vegetal arabesques), <em>la langue zoomorphe</em> (which are mostly snakes, but on two occasions frogs), <em>bi-langues</em>, and <em>tri-langues</em> - are transformational in nature.</p>
@@ -121,7 +95,5 @@ last_modified_at: 2021-03-10
 	
 	<em>This is a preview only - <a href="https://archive.org/details/la-langue-verte-jorn" target="_blank">view fullsize on archive.org</a></em> 
 </section>
-
-<h2>References</h2>
 
 {% include collapsible.html %}

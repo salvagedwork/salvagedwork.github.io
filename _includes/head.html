@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,6 +38,7 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="{{ '/js/footnotes.js' | relative_url }}" defer></script>
 	<script src="{{ '/js/background.js' | relative_url }}" defer></script>
+	<script src="{{ '/js/translation-toggle.js' | relative_url }}" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	{% if page.url == '/contact/' %}

@@ -15,7 +15,7 @@ permalink: /categories/
 {% assign sortedcategories = categories | split:' ' | sort %}
 
 {% for category in sortedcategories %}
-	<h2>{{ category | capitalize }}</h2>	
+	<h2 id="{{ category }}">{{ category | capitalize }}</h2>	
 	{% assign sortedPosts = site.categories[category] | sort: 'title' %}
 	{% for post in sortedPosts %}
 	{% include article-listing.html %}

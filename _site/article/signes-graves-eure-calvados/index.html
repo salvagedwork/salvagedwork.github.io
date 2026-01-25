@@ -29,6 +29,7 @@
 		- jQuery: Required for Featherlight lightbox
 		- detect_swipe: Required for Featherlight gallery swipe support
 		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,6 +38,7 @@
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -72,7 +74,7 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/artists"  class="navbar-link">Artists</a>
+		<a href="/creators"  class="navbar-link">Creators</a>
 		
 		<a href="/articles"  class="navbar-link">Articles</a>
 		
@@ -90,7 +92,7 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/artists" class="mobile-nav-link">Artists</a>
+	<a href="/creators" class="mobile-nav-link">Creators</a>
 	
 	<a href="/articles" class="mobile-nav-link">Articles</a>
 	
@@ -237,34 +239,57 @@
 		</header>
 	
 		<section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/front.jpg"><img class="infobox-image" src="/assets/articles/signes-graves-eure-calvados/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Signs Engraved on the Churches of Eure and Calvados</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Asger Jorn &amp; Gérard Franceschi</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Borgen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1964</td>
-			</tr>
-			<tr>
-				<th scope="row">Series</th>
-				<td>Library of Alexandria, Vol. 2</td>
-			</tr>
-		</tbody>
-	</table>
+	
+
+<table id="infobox">
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/front.jpg"><img class="infobox-image" src="/assets/articles/signes-graves-eure-calvados/front.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="infobox-subtitle"><cite>Signs Engraved on the Churches of Eure and Calvados</cite></td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Authors</th>
+            <td>Asger Jorn &amp; Gérard Franceschi</td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+            <th scope="row">Publisher</th>
+            <td>Borgen</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Publishing date</th>
+            <td>1964</td>
+        </tr>
+        
+        
+        <tr>
+            <th scope="row">Series</th>
+            <td>Library of Alexandria, Vol. 2</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </tbody>
+</table>
+
 	
 	<p><strong>Signes gravés sur les églises de l'Eure et du Calvados</strong> (Signs Engraved on the Churches of Eure and Calvados) is a book written in French and directed by Asger Jorn, with essay contributions from various antiquities experts and photography by Gérard Franceschi. The book was published by Danish publisher Borgen in 1964 and distributed in France by <cite>Librairie 'Le Minotaur.'</cite><p>
 	
@@ -276,12 +301,15 @@
 <section>
 	<h2>Concept</h2>
 	
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/signes_01.jpg"><img class="thumbnail-image" src="/assets/articles/signes-graves-eure-calvados/signes_01.jpg"></a>
-		<div class="thumbnail-caption">
-			An example of signs. The lower photo is from the church in Tournedos, Eure. The upper photo is unidentified.
-		</div>
-	</div>
+	
+
+<div class="thumbnail-container">
+    <a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/signes_01.jpg"><img class="thumbnail-image" src="/assets/articles/signes-graves-eure-calvados/signes_01.jpg"></a>
+    
+    <div class="thumbnail-caption">An example of signs. The lower photo is from the church in Tournedos, Eure. The upper photo is unidentified.</div>
+    
+</div>
+
 	
 	<p>Karen Kurcynski explains Jorn's comparison of the symbols found in Eure and Calvados to the Scandinavian &quot;Vandal&quot; culture:</p>
 	
@@ -290,10 +318,15 @@
 	<p class="quote-attrib">- Karen Kurcynski, <a href="https://situationistlibrary.files.wordpress.com/2012/02/kurcynski-expression-vandalism-jorn.pdf" target="_blank">Expression as vandalism: Asger Jorn's &quot;Modifications&quot;</a></p>
 	</div>
 	
-	<div class="thumbnail-container">
-		<a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/signes_02.jpg"><img class="thumbnail-image" src="/assets/articles/signes-graves-eure-calvados/signes_02.jpg"></a>
-		<div class="thumbnail-caption">Signs from the church in Tilleul-Dame-Agnès, Eure.</div>
-	</div>
+	
+
+<div class="thumbnail-container">
+    <a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/signes_02.jpg"><img class="thumbnail-image" src="/assets/articles/signes-graves-eure-calvados/signes_02.jpg"></a>
+    
+    <div class="thumbnail-caption">Signs from the church in Tilleul-Dame-Agnès, Eure.</div>
+    
+</div>
+
 	
 	<p>Steven Harris links Jorn's fascination with engravings found on churches to Scandinavian expansion into Normandy:</p>
 	
@@ -1273,8 +1306,6 @@ In the contemporary economy, the instability of the production-consumption balan
 	</section>
 </section>
 
-<h2>References</h2>
-
 <script>
 var coll = document.getElementsByClassName("collapsible-text-button");
 var i;
@@ -1282,29 +1313,37 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var container = this.parentElement;
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      container.classList.remove("expanded");
     } else {
+      container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
 </script>
+
 		
 	</div>
 	
 </article>
 
-<h3>Tags</h3>
 
+<h3>Creators</h3>
 <span>
   
-    <a href="/tag/asger-jorn/">
+    <a href="/creators/asger-jorn/">
 			Asger Jorn
 		</a><br />
   
 </span>
+
+
+
+
 			</div>
 			
 			<div id="footer">

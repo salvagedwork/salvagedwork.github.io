@@ -10,8 +10,8 @@
 		totalBackgrounds: 7,
 		imagePath: '/assets/images/backgrounds/',
 		imageExtension: '.jpg',
-		backgroundSize: '1300px',
-		backgroundPosition: 'top',
+		backgroundSize: '100% auto',
+		backgroundPosition: 'top center',
 		backgroundRepeat: 'repeat-y',
 		backgroundAttachment: 'fixed'
 	};

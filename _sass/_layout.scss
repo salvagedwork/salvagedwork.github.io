@@ -66,10 +66,7 @@ a:hover {
 h1 {
 	font-size: $font-size-medium;
 	font-family: $font-bold;
-}
-
-h1, h2, h3, h4, h5, h6, header {
-	clear: both;
+	margin: 0 0 0.5rem 0;
 }
 
 h2 {
@@ -311,7 +308,7 @@ a.current {
 
 
 // ==========================================================================
-// Artist Tiles
+// Artist Tiles (legacy)
 // ==========================================================================
 
 .artist-tile {
@@ -357,7 +354,6 @@ a.current {
 
 .article-tag {
 	font-style: italic;
-	font-size: 80%;
 }
 
 .article-tag-link {
@@ -372,6 +368,14 @@ a.current {
 	font-style: italic;
 }
 
+.article-creator {
+	font-style: italic;
+}
+
+.article-creator-link {
+	text-decoration: none;
+}
+
 
 // ==========================================================================
 // Article Content
@@ -384,6 +388,14 @@ a.current {
 
 #featured-paragraph {
 	margin-bottom: 0;
+}
+
+article iframe {
+    display: block;
+}
+
+article section:has(iframe) {
+    overflow: hidden;
 }
 
 
@@ -422,10 +434,18 @@ a.current {
 		}
 	}
 	
-	th,
-	td {
-		flex: 1 0;
+	th {
+		flex: 0 0 35%;
 		text-align: left;
+	}
+	
+	td {
+		flex: 0 0 65%;
+		text-align: left;
+	}
+	
+	td:only-child {
+		flex: 1 1 100%;
 	}
 }
 
@@ -517,6 +537,12 @@ a.current {
 
 .collapsible-text-container {
 	padding: 0.5rem 0;
+	overflow: hidden;
+	
+	&.expanded {
+		clear: both;
+		overflow: visible;
+	}
 }
 
 .collapsible-text-button {
@@ -524,10 +550,15 @@ a.current {
 	color: white;
 	cursor: pointer;
 	padding: 18px;
-	width: 100%;
 	border: none;
 	text-align: left;
 	outline: none;
+	display: block;
+	overflow: hidden;
+	
+	.expanded & {
+		width: 100%;
+	}
 	
 	&:hover,
 	&.active {
@@ -553,6 +584,61 @@ a.current {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
+}
+
+
+// ==========================================================================
+// Translation Toggle (for collapsible sections)
+// ==========================================================================
+
+.translation-toggle {
+	display: flex;
+	gap: 0;
+	margin-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+.translation-btn {
+	flex: 1;
+	padding: 0.5rem 1rem;
+	font-family: $font-regular;
+	font-size: $font-size-small;
+	background-color: $color-background;
+	color: $color-text;
+	border: 1px solid $color-border;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	width: auto;
+	
+	&:first-child {
+		border-radius: 4px 0 0 4px;
+		border-right: none;
+	}
+	
+	&:last-child {
+		border-radius: 0 4px 4px 0;
+	}
+	
+	&:hover {
+		background-color: $color-shade;
+	}
+	
+	&.active {
+		background-color: #a04040;
+		color: $color-background;
+		border-color: #a04040;
+		
+		&:hover {
+			background-color: #8a3535;
+		}
+	}
+}
+
+.translatable-content {
+	.original-text,
+	.translated-text {
+		transition: opacity 0.2s ease;
+	}
 }
 
 
@@ -670,4 +756,91 @@ button {
 	box-shadow: 2px 2px 10px #999;
 	z-index: 1000;
 	max-width: 300px;
+}
+
+
+// ==========================================================================
+// Creator Cards (for creators/artists index pages)
+// ==========================================================================
+
+.page-intro {
+	font-size: 1.1rem;
+	margin-bottom: 2rem;
+	color: #444;
+}
+
+.creator-grid {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.creator-card {
+	display: flex;
+	flex-direction: column;
+	background-color: $color-highlight;
+	border: 1px solid $color-shade;
+	padding: 1.2rem;
+	transition: border-color 0.15s ease;
+	
+	&:hover {
+		border-color: $color-border;
+	}
+}
+
+.creator-card-image {
+	flex: 0 0 auto;
+	margin-bottom: 1rem;
+	
+	img {
+		width: 100px;
+		height: 100px;
+		object-fit: cover;
+		border-radius: 50%;
+		border: 2px solid #ddd;
+	}
+}
+
+.creator-card-content {
+	h3 {
+		margin: 0 0 0.5rem 0;
+		padding: 0;
+	}
+}
+
+.creator-card-description {
+	font-size: 0.95rem;
+	margin: 0 0 0.8rem 0;
+	color: #333;
+}
+
+.creator-card-meta {
+	font-size: $font-size-small;
+	font-family: $font-bold;
+	color: $color-muted;
+	margin: 0 0 0.3rem 0;
+}
+
+.creator-card-articles {
+	font-size: $font-size-small;
+	color: #555;
+	margin-bottom: 0.8rem;
+	line-height: 1.5;
+}
+
+.creator-card-article-link {
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.creator-card-more {
+	color: #888;
+	font-style: italic;
+}
+
+.creator-card-link {
+	font-size: 0.9rem;
+	font-style: italic;
 }

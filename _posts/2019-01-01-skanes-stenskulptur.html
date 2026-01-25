@@ -3,36 +3,20 @@ layout: article
 title: Skånes stenskulptur under 1100-talet
 description: (Skåne's Stone Sculpture During the 12th Century) is a book written in Swedish by Erik Cinthio, with photography by Gérard Franceschi and arrangement by Asger Jorn. The book is a photographic documentation of stone sculpture from the 12th century with a focus on the Skåne region of southern Sweden.
 categories: books
-tags: asger-jorn
+creators: [asger-jorn]
+tags: []
 featured-image: /assets/articles/skanes-stenskulptur/front.jpg
 last_modified_at: 2020-03-10
 ---
 
 <section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/skanes-stenskulptur/front.jpg"><img class="infobox-image" src="/assets/articles/skanes-stenskulptur/front.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Skånes stenskulptur under 1100-talet</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Authors</th>
-				<td>Erik Cinthio &amp; Gérard Franceschi (Asger Jorn editor)</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td>Privately published</td>
-			</tr>
-			<tr>
-				<th scope="row">Publishing date</th>
-				<td>1965</td>
-			</tr>
-		</tbody>
-	</table>
+	{% include infobox.html
+    image="/assets/articles/skanes-stenskulptur/front.jpg"
+    title="Skånes stenskulptur under 1100-talet"
+    authors="Erik Cinthio &amp; Gérard Franceschi (Asger Jorn editor)"
+    publisher="Privately published"
+    date="1965"
+%}
 	
 	<p><strong>{{ page.title }}</strong> {{page.description}} Cinthio includes historical essays and Jorn provides artistic framing of the project alongside an essay of &quot;random remarks&quot; at the end of the book. The book was republished in a wider edition in 1995 by Borgen in Copenhagen, Denmark.</p>
 </section>
@@ -111,7 +95,5 @@ last_modified_at: 2020-03-10
 			</figure>
 	</section>
 </section>
-
-<h2>References</h2>
 
 {% include collapsible.html %}

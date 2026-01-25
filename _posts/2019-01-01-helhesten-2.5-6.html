@@ -3,40 +3,20 @@ layout: article
 title: Helhesten (Year 2, Booklets 5 & 6)
 categories: books
 description: is the final issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.
-tags: asger-jorn cobra helhesten
+creators: [asger-jorn]
+tags: [cobra, helhesten]
 featured-image: /assets/articles/helhesten/helhesten_2.56_cover.jpg
 last_modified_at: 2020-12-10
 ---
 
 <section>
-	<table id="infobox">
-		<tbody>
-			<tr>
-				<td colspan="2">
-					<a href="#" data-featherlight="/assets/articles/helhesten/helhesten_2.56_cover.jpg"><img class="infobox-image" src="/assets/articles/helhesten/helhesten_2.56_cover.jpg"></a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" id="infobox-subtitle"><cite>Helhesten (Year 2, Booklets 5 &amp; 6)</cite></td>
-			</tr>
-			<tr>
-				<th scope="row">Editor</th>
-				<td>Robert Dahlmann Olsen</td>
-			</tr>
-			<tr>
-				<th scope="row">Publisher</th>
-				<td></td>
-			</tr>
-			<tr>
-				<th scope="row">Issue date</th>
-				<td>November 11, 1944</td>
-			</tr>
-			<tr>
-				<th scope="row">Cover design</th>
-				<td>Carl Henning Pedersen</td>
-			</tr>
-		</tbody>
-	</table>
+	{% include infobox.html
+    image="/assets/articles/helhesten/helhesten_2.56_cover.jpg"
+    title="Helhesten (Year 2, Booklets 5 &amp; 6)"
+    editor="Robert Dahlmann Olsen"
+    issue_date="November 11, 1944"
+    cover_design="Carl Henning Pedersen"
+%}
 	
 	<p><strong>{{ page.title }}</strong> {{page.description}}</p>
 	
@@ -53,9 +33,5 @@ last_modified_at: 2020-12-10
 	<h2>Explore the Book</h2>
 	
 </section>
-
-<h2>References</h2>
-
-
 
 {% include collapsible.html %}
