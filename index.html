@@ -14,38 +14,74 @@ last_modified_at: 2025-01-24
 
 {% comment %}
 ================================================================================
-FEATURED ARTICLE (randomly selected at build time)
+FEATURED ARTICLE (randomly selected on each page load via JavaScript)
 ================================================================================
 {% endcomment %}
 
 {% assign featured_articles = site.articles | where_exp: "article", "article.featured-image" %}
 {% if featured_articles.size > 0 %}
-{% assign random_seed = site.time | date: "%S" | plus: 0 %}
-{% assign random_index = random_seed | modulo: featured_articles.size %}
-{% assign featured = featured_articles[random_index] %}
 
-{% if featured %}
 <h2>Featured article</h2>
 
-<div class="featured-article">
-	<div class="featured-article-image">
-		<a href="{{ featured.url }}"><img src="{{ featured.featured-image }}" alt="{{ featured.title }}"></a>
-	</div>
-	<div class="featured-article-content">
-		<h3 style="padding-top: 0; margin-top: 0;"><a href="{{ featured.url }}">{{ featured.title }}</a></h3>
-		<p><strong>{{ featured.title }}</strong> {{ featured.description }}</p>
-		{% if featured.creators %}
-		<p class="featured-article-meta">
-			Creator{% if featured.creators.size > 1 %}s{% endif %}: 
-			{% for creator in featured.creators %}
-				<a href="/creators/{{ creator }}">{% include titlecase.html text=creator %}</a>{% unless forloop.last %}, {% endunless %}
-			{% endfor %}
-		</p>
-		{% endif %}
-		<p><a href="{{ featured.url }}">Read more &rarr;</a></p>
-	</div>
+<div class="featured-article" id="featured-article-container">
+	<!-- Content will be populated by JavaScript -->
 </div>
-{% endif %}
+
+<script>
+(function() {
+	'use strict';
+	
+	// All articles with featured images
+	var featuredArticles = [
+		{% for article in featured_articles %}
+		{
+			url: "{{ article.url }}",
+			title: {{ article.title | jsonify }},
+			description: {{ article.description | jsonify }},
+			image: "{{ article.featured-image }}",
+			creators: {{ article.creators | jsonify }}
+		}{% unless forloop.last %},{% endunless %}
+		{% endfor %}
+	];
+	
+	// Select random article
+	var randomIndex = Math.floor(Math.random() * featuredArticles.length);
+	var featured = featuredArticles[randomIndex];
+	
+	// Build HTML
+	var html = '<div class="featured-article-image">' +
+		'<a href="' + featured.url + '"><img src="' + featured.image + '" alt="' + featured.title + '"></a>' +
+		'</div>' +
+		'<div class="featured-article-content">' +
+		'<h3 style="padding-top: 0; margin-top: 0;"><a href="' + featured.url + '">' + featured.title + '</a></h3>' +
+		'<p><strong>' + featured.title + '</strong> ' + featured.description + '</p>';
+	
+	// Add creators if present
+	if (featured.creators && featured.creators.length > 0) {
+		html += '<p class="featured-article-meta">Creator';
+		if (featured.creators.length > 1) html += 's';
+		html += ': ';
+		
+		featured.creators.forEach(function(creator, index) {
+			var creatorTitle = creator.split('-').map(function(word) {
+				return word.charAt(0).toUpperCase() + word.slice(1);
+			}).join(' ');
+			
+			html += '<a href="/creators/' + creator + '">' + creatorTitle + '</a>';
+			if (index < featured.creators.length - 1) html += ', ';
+		});
+		
+		html += '</p>';
+	}
+	
+	html += '<p><a href="' + featured.url + '">Read more &rarr;</a></p>' +
+		'</div>';
+	
+	// Insert into page
+	document.getElementById('featured-article-container').innerHTML = html;
+})();
+</script>
+
 {% endif %}
 
 
