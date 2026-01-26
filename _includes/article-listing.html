@@ -5,9 +5,11 @@
 	<div class="article-tile-details-container">
 		<h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
 		<p>{{ article.description }}</p>
+		{% if article.tags.size > 0 %}
 		<p class="article-details-tags">Tags: <span class="article-tag">
-			{% for tag in article.tags %}<a href="/tag/{{ tag }}/" class="article-tag-link">{% include titlecase.html text=tag %}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+			{% for tag in article.tags %}<a href="/articles/?tag={{ tag }}" class="article-tag-link">{% include titlecase.html text=tag %}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
 		</span></p>
+		{% endif %}
 		{% if article.subjects %}
 		<p class="article-details-subjects">Subjects: <span class="article-subject">
 			{% for subject in article.subjects %}<span class="article-subject-item">{% include titlecase.html text=subject %}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}

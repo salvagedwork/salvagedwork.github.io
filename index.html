@@ -42,7 +42,7 @@ FEATURED ARTICLE (randomly selected at build time)
 			{% endfor %}
 		</p>
 		{% endif %}
-		<p><a href="{{ featured.url }}">Read more â†’</a></p>
+		<p><a href="{{ featured.url }}">Read more &rarr;</a></p>
 	</div>
 </div>
 {% endif %}
@@ -62,7 +62,7 @@ RECENT ARTICLES
 	{% include article-listing.html %}
 {% endfor %}
 
-<p><a href="/articles/">Explore all {{ site.articles | size }} articles â†’</a></p>
+<p><a href="/articles/">Explore all {{ site.articles | size }} articles &rarr;</a></p>
 
 
 {% comment %}
@@ -166,7 +166,7 @@ CREATORS
 {% endfor %}
 </div>
 
-<p><a href="/creators/">View all creators â†’</a></p>
+<p><a href="/creators/">View all creators &rarr;</a></p>
 
 
 {% comment %}
@@ -177,7 +177,7 @@ RANDOM ARTICLE
 
 <h2>Feeling adventurous?</h2>
 
-<p><a href="#" id="random-article-link">Jump to a random article â†’</a></p>
+<p><a href="#" id="random-article-link">Jump to a random article &rarr;</a></p>
 
 <script>
 (function() {
