@@ -120,11 +120,17 @@ a.current { color: red; }
 
 .article-details-subjects { font-size: 80%; }
 
+.article-details-collection { font-size: 85%; color: #666; }
+.article-details-collection a { color: #cc0000; }
+
 .article-subject { font-style: italic; }
 
 .article-creator { font-style: italic; }
 
 .article-creator-link { text-decoration: none; }
+
+.article-collection-link { text-decoration: none; }
+.article-collection-link:hover { text-decoration: underline; }
 
 .article-container { display: flex; flex-direction: column; }
 
@@ -238,6 +244,37 @@ button { display: block; padding: 1rem; border: none; background-color: #1a1a1a;
 .creator-card-more { color: #888; font-style: italic; }
 
 .creator-card-link { font-size: 0.9rem; font-style: italic; }
+
+.collection-list-item { padding: 1rem; margin-bottom: 1rem; background-color: #f8f9fa; border-left: 3px solid #cc0000; }
+
+.collection-list-title { font-family: "GT-Eesti-Display-Bold", sans-serif; font-size: 1.1rem; margin-bottom: 0.3rem; }
+.collection-list-title a { text-decoration: none; }
+.collection-list-title a:hover { text-decoration: underline; }
+
+.collection-list-description { margin-bottom: 0.5rem; line-height: 1.5; }
+.collection-list-description a { text-decoration: none; }
+
+.collection-list-meta { font-size: 0.85rem; color: #666; }
+
+.collection-articles { margin-top: 2rem; }
+.collection-articles h2 { margin-bottom: 1rem; }
+
+.collection-article-count { font-style: italic; color: #666; margin-bottom: 1rem; }
+
+.collection-browse-list { margin: 1rem 0; }
+
+.collection-browse-item { padding: 1rem; margin-bottom: 1rem; background-color: #f8f9fa; border-left: 3px solid #cc0000; }
+
+.collection-browse-title { font-family: "GT-Eesti-Display-Bold", sans-serif; font-size: 1.1rem; margin-bottom: 0.3rem; }
+.collection-browse-title a { text-decoration: none; }
+.collection-browse-title a:hover { text-decoration: underline; }
+
+.collection-browse-description { margin-bottom: 0.5rem; line-height: 1.5; }
+.collection-browse-description a { text-decoration: none; }
+
+.collection-browse-meta { font-size: 0.85rem; color: #666; }
+.collection-browse-meta a { color: #666; }
+.collection-browse-meta a:hover { color: #cc0000; }
 
 @media only screen and (max-width: 768px) { .burger-menu { display: flex; }
   .navbar-links-container { display: none; }

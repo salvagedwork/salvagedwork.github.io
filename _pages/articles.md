@@ -8,6 +8,17 @@ permalink: /articles/
 
 <div class="filter-container">
 	<div class="filter-group">
+		<span class="filter-label">Filter by collection</span>
+		<div class="filter-buttons" id="collection-filters">
+			<button class="filter-btn active" data-filter="all" data-type="collection">All</button>
+			{% assign defined_collections = site.collections | where_exp: "c", "c.collection_id" %}
+			{% for collection in defined_collections %}
+			<button class="filter-btn" data-filter="{{ collection.collection_id }}" data-type="collection">{{ collection.title }}</button>
+			{% endfor %}
+		</div>
+	</div>
+	
+	<div class="filter-group">
 		<span class="filter-label">Filter by tag</span>
 		<div class="filter-buttons" id="tag-filters">
 			<button class="filter-btn active" data-filter="all" data-type="tag">All</button>
@@ -71,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	var noResults = document.getElementById('no-results');
 	var pageHeader = document.getElementById('page-header');
 	
+	var activeCollectionFilters = [];
 	var activeTagFilters = [];
 	var activeSubjectFilters = [];
 	var activeCategoryFilters = [];
@@ -87,10 +99,12 @@ document.addEventListener('DOMContentLoaded', function() {
 		var headerText = 'Articles';
 		
 		// Only show custom header if exactly one filter type is active with one value
-		var totalFilters = activeTagFilters.length + activeSubjectFilters.length + activeCategoryFilters.length;
+		var totalFilters = activeCollectionFilters.length + activeTagFilters.length + activeSubjectFilters.length + activeCategoryFilters.length;
 		
 		if (totalFilters === 1) {
-			if (activeTagFilters.length === 1) {
+			if (activeCollectionFilters.length === 1) {
+				headerText = 'Articles in ' + toTitleCase(activeCollectionFilters[0]) + ' collection';
+			} else if (activeTagFilters.length === 1) {
 				headerText = 'Articles tagged with ' + toTitleCase(activeTagFilters[0]);
 			} else if (activeCategoryFilters.length === 1) {
 				headerText = 'Articles about ' + toTitleCase(activeCategoryFilters[0]).toLowerCase();
@@ -105,6 +119,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Parse URL parameters to apply initial filters
 	function parseUrlParams() {
 		var params = new URLSearchParams(window.location.search);
+		
+		// Handle collection parameter
+		var collectionParam = params.get('collection');
+		if (collectionParam) {
+			applyFilterFromUrl('collection', collectionParam);
+		}
 		
 		// Handle tag parameter
 		var tagParam = params.get('tag');
@@ -144,7 +164,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		targetButton.classList.add('active');
 		
 		// Add to active filters array
-		if (filterType === 'tag') {
+		if (filterType === 'collection') {
+			activeCollectionFilters.push(filterValue);
+		} else if (filterType === 'tag') {
 			activeTagFilters.push(filterValue);
 		} else if (filterType === 'subject') {
 			activeSubjectFilters.push(filterValue);
@@ -168,7 +190,9 @@ document.addEventListener('DOMContentLoaded', function() {
 				});
 				this.classList.add('active');
 				
-				if (filterType === 'tag') {
+				if (filterType === 'collection') {
+					activeCollectionFilters = [];
+				} else if (filterType === 'tag') {
 					activeTagFilters = [];
 				} else if (filterType === 'subject') {
 					activeSubjectFilters = [];
@@ -181,7 +205,9 @@ document.addEventListener('DOMContentLoaded', function() {
 					// Deselect this filter
 					this.classList.remove('active');
 					
-					if (filterType === 'tag') {
+					if (filterType === 'collection') {
+						activeCollectionFilters = activeCollectionFilters.filter(function(f) { return f !== filterValue; });
+					} else if (filterType === 'tag') {
 						activeTagFilters = activeTagFilters.filter(function(f) { return f !== filterValue; });
 					} else if (filterType === 'subject') {
 						activeSubjectFilters = activeSubjectFilters.filter(function(f) { return f !== filterValue; });
@@ -199,7 +225,9 @@ document.addEventListener('DOMContentLoaded', function() {
 					this.classList.add('active');
 					allButton.classList.remove('active');
 					
-					if (filterType === 'tag') {
+					if (filterType === 'collection') {
+						activeCollectionFilters.push(filterValue);
+					} else if (filterType === 'tag') {
 						activeTagFilters.push(filterValue);
 					} else if (filterType === 'subject') {
 						activeSubjectFilters.push(filterValue);
@@ -219,9 +247,18 @@ document.addEventListener('DOMContentLoaded', function() {
 		var visibleArticles = 0;
 		
 		articles.forEach(function(article) {
+			var articleCollection = article.dataset.collection || '';
 			var articleTags = article.dataset.tags ? article.dataset.tags.split(',') : [];
 			var articleSubjects = article.dataset.subjects ? article.dataset.subjects.split(',') : [];
 			var articleCategories = article.dataset.category ? article.dataset.category.split(',') : [];
+			
+			// Check if article matches ALL selected collection filters
+			var matchesCollection = true;
+			if (activeCollectionFilters.length > 0) {
+				matchesCollection = activeCollectionFilters.some(function(filter) {
+					return articleCollection === filter;
+				});
+			}
 			
 			// Check if article matches ALL selected tag filters
 			var matchesTag = true;
@@ -247,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				});
 			}
 			
-			if (matchesTag && matchesSubject && matchesCategory) {
+			if (matchesCollection && matchesTag && matchesSubject && matchesCategory) {
 				article.style.display = '';
 				visibleArticles++;
 			} else {
@@ -263,6 +300,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	function updateUrl() {
 		var params = new URLSearchParams();
 		
+		if (activeCollectionFilters.length === 1) {
+			params.set('collection', activeCollectionFilters[0]);
+		}
 		if (activeTagFilters.length === 1) {
 			params.set('tag', activeTagFilters[0]);
 		}

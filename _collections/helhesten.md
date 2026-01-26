@@ -1,7 +1,7 @@
 ---
-layout: article
+layout: collection
 title: Helhesten
-categories: books
+collection_id: helhesten
 description: was a Danish art journal published over nine issues from April 1941 to November 1944 which featured the abstract expressionist art of the Danish avantgarde group of the same name.
 creators: [asger-jorn]
 tags: [cobra, helhesten]
@@ -27,7 +27,7 @@ last_modified_at: 2020-12-10
 %}
 	
 	<div class="quote">
-	<p>In bold defiance of the very real presence of their German occupiers, Helhesten’s artists chose as the journal’s ideological symbol the helhest, the iconic three-legged harbinger of death from Nordic mythology and folklore. [Egill] Jacobsen recalled that Jorn suggested the hell-horse specifically to provoke the Germans as a '... quite excellent name to flaunt under the noses of the Nazis'.</p>
+	<p>In bold defiance of the very real presence of their German occupiers, Helhesten's artists chose as the journal's ideological symbol the helhest, the iconic three-legged harbinger of death from Nordic mythology and folklore. [Egill] Jacobsen recalled that Jorn suggested the hell-horse specifically to provoke the Germans as a '... quite excellent name to flaunt under the noses of the Nazis'.</p>
 	<p class="quote-attrib">- Kerry Greaves, <a href="https://sci-hub.tw/10.1093/oxartj/kct043" target="_blank">Hell-Horse: Radical Art and Resistance in Nazi-Occupied Denmark</a></p>
 	</div>
 </section>
@@ -41,14 +41,14 @@ last_modified_at: 2020-12-10
 %}
 	
 	<div class="quote">
-	<p>Helhesten promoted contemporary Danish art as well as international modernism, indigenous folk art, and popular culture. Members contributed articles on prehistoric Scandinavian rock carvings, Viking rune stones, vernacular architecture, and medieval Scandinavian church frescos, while artists profiled one another as well as contemporary international artists such as Fernand Léger and Paul Klee. Helhesten’s essays on recent European art marked the group as cosmopolitan, a characteristic traditionally used to qualify avant-garde status in Denmark by artists and critics alike, and supported ideas of universalism and inclusivity by emphasizing quotidian art forms and symbols common to all cultures. The journal emphasized humor, playfulness, and amusement in its reproductions of satirical images of the hell-horse and other creatures, popular art forms such as advertisements, tattoo designs, folk poems, and fairytales, and whimsical children’s drawings, while a photo of the artists imbibing at their local bar and discussing art emphasized festive socializing as a creative practice. The journal disseminated the artists’ ideas about their own work and the future of Danish art, and served as a vehicle for the elaboration of and inspiration for experimentation with colorful gestural abstraction and fantastical subject matter. Such an aesthetic was varied and distinguishable by artist but also collective in its reflection of spontaneity and fantasy as agents of creative freedom and social equality.</p>
+	<p>Helhesten promoted contemporary Danish art as well as international modernism, indigenous folk art, and popular culture. Members contributed articles on prehistoric Scandinavian rock carvings, Viking rune stones, vernacular architecture, and medieval Scandinavian church frescos, while artists profiled one another as well as contemporary international artists such as Fernand Léger and Paul Klee. Helhesten's essays on recent European art marked the group as cosmopolitan, a characteristic traditionally used to qualify avant-garde status in Denmark by artists and critics alike, and supported ideas of universalism and inclusivity by emphasizing quotidian art forms and symbols common to all cultures. The journal emphasized humor, playfulness, and amusement in its reproductions of satirical images of the hell-horse and other creatures, popular art forms such as advertisements, tattoo designs, folk poems, and fairytales, and whimsical children's drawings, while a photo of the artists imbibing at their local bar and discussing art emphasized festive socializing as a creative practice. The journal disseminated the artists' ideas about their own work and the future of Danish art, and served as a vehicle for the elaboration of and inspiration for experimentation with colorful gestural abstraction and fantastical subject matter. Such an aesthetic was varied and distinguishable by artist but also collective in its reflection of spontaneity and fantasy as agents of creative freedom and social equality.</p>
 	<p class="quote-attrib">- Kerry Greaves, <a href="https://ir.uiowa.edu/cgi/viewcontent.cgi?article=1330&context=dadasur" target="_blank">Thirteen Artists in a Tent: Danish Avant-garde Exhibition Practice during World War II</a></p>
 	</div>
 	
 	<div class="quote">
-	<p>The artists who founded Helhesten were active in Paris and Germany before the war and were devoted to perpetuating aspects of Surrealism, Dada and German Expressionism. Their reinterpretation of these movements and interest in Nordic mythology, ethnographic objects and folk and children’s art combined to manifest a unique style during the war that included the use of brightly colored, spontaneously applied pigment to depict fantastical subjects. Many of the Helhesten artists became part of the radical post-war Cobra art movement (named after artists from Copenhagen, Brussels and Amsterdam).</p>
+	<p>The artists who founded Helhesten were active in Paris and Germany before the war and were devoted to perpetuating aspects of Surrealism, Dada and German Expressionism. Their reinterpretation of these movements and interest in Nordic mythology, ethnographic objects and folk and children's art combined to manifest a unique style during the war that included the use of brightly colored, spontaneously applied pigment to depict fantastical subjects. Many of the Helhesten artists became part of the radical post-war Cobra art movement (named after artists from Copenhagen, Brussels and Amsterdam).</p>
 	
-	<p>Although the Helhesten artists worked with gestural abstraction at the same moment as the New York School artists who would later be labeled Abstract Expressionists, the Danes did not know of the Americans’ work until after the war. Unlike their American counterparts, the Danish artists rejected complete abstraction in favor of semi-figuration and whimsy in their compositions and held to a belief in the inherent value of art for everyday life. This “new realism” – as they defined it – purposefully challenged the brutality of the Nazi regime and its condemnation of so-called degenerate modern art by celebrating humanistic and universal commonalities, tongue-in-cheek humor and collectivist creativity.</p>
+	<p>Although the Helhesten artists worked with gestural abstraction at the same moment as the New York School artists who would later be labeled Abstract Expressionists, the Danes did not know of the Americans' work until after the war. Unlike their American counterparts, the Danish artists rejected complete abstraction in favor of semi-figuration and whimsy in their compositions and held to a belief in the inherent value of art for everyday life. This "new realism" — as they defined it — purposefully challenged the brutality of the Nazi regime and its condemnation of so-called degenerate modern art by celebrating humanistic and universal commonalities, tongue-in-cheek humor and collectivist creativity.</p>
 	<p class="quote-attrib">- Steven Harris, <a href="https://nsuartmuseum.org/exhibition/war-horses-helhesten-and-the-danish-avant-garde-during-world-war-2/" target="_blank">War Horses: The Danish Avant-Garde During World War II (NSU Art Museum, Fort Lauderdale)</a></p>
 	</div>
 </section>
@@ -59,7 +59,7 @@ last_modified_at: 2020-12-10
 	Kerry Greaves wrote about <em>Helhesten's</em> demise:
 	
 	<div class="quote">
-	<p>While components such as pagination and a table of contents rendered the format of the journal relatively conventional, a variety of layouts and typographical elements were experimented with so that each new issue appeared novel to the reader. Jorn and Olsen were responsible for the practical aspects of production, which rather unusually for a wartime publication, was printed partially in colour. This may have contributed to the journal’s lack of financial solvency after its first year. It was Helhesten’s growing financial debt, in fact, and not censorship by the Germans, that led to its closure in 1944... The financial problems led to uneven publication, so that while six issues came out in 1941, just one issue was produced in 1942, three in 1943, and two in 1944.</p>
+	<p>While components such as pagination and a table of contents rendered the format of the journal relatively conventional, a variety of layouts and typographical elements were experimented with so that each new issue appeared novel to the reader. Jorn and Olsen were responsible for the practical aspects of production, which rather unusually for a wartime publication, was printed partially in colour. This may have contributed to the journal's lack of financial solvency after its first year. It was Helhesten's growing financial debt, in fact, and not censorship by the Germans, that led to its closure in 1944... The financial problems led to uneven publication, so that while six issues came out in 1941, just one issue was produced in 1942, three in 1943, and two in 1944.</p>
 	<p class="quote-attrib">- Kerry Greaves, <a href="https://sci-hub.tw/10.1093/oxartj/kct043" target="_blank">Hell-Horse: Radical Art and Resistance in Nazi-Occupied Denmark</a></p>
 	</div>
 </section>
@@ -68,7 +68,7 @@ last_modified_at: 2020-12-10
 	<h2>Publications</h2>
 	
 	<div class="quote">
-	<p>Helhesten was illustrated with over fifty original, mostly color graphic works, and was printed in editions of 800. The journal was affordable to the general public; a full set of all the issues cost twelve kroner, or the equivalent of $2.30 in 1944. Artists were not paid for their contributions, and group dues covered the printing costs. The editor of the journal, Robert Dahlmann Olsen, was also the editor of the first issue of Cobra, which was a virtual duplicate of Helhesten’s format.</p>
+	<p>Helhesten was illustrated with over fifty original, mostly color graphic works, and was printed in editions of 800. The journal was affordable to the general public; a full set of all the issues cost twelve kroner, or the equivalent of $2.30 in 1944. Artists were not paid for their contributions, and group dues covered the printing costs. The editor of the journal, Robert Dahlmann Olsen, was also the editor of the first issue of Cobra, which was a virtual duplicate of Helhesten's format.</p>
 	<p class="quote-attrib">- Kerry Greaves, <a href="https://ir.uiowa.edu/cgi/viewcontent.cgi?article=1330&context=dadasur" target="_blank">Thirteen Artists in a Tent: Danish Avant-garde Exhibition Practice during World War II</a></p>
 	</div>
 	
@@ -114,60 +114,6 @@ last_modified_at: 2020-12-10
 	</ul>
 	
 	<p>Year 1 was available in a bound hardcover edition and was advertised for sale from the publisher Axelholm for 3 Danish kroner in <em>Helhesten</em> editions from year 2. The cover featured a design by Carl Henning Pedersen. Year 2 was also available in the same format and featured a design by Asger Jorn. These hardbound editions have become exceedingly rare and can often command prices upwards of $1,000 USD. The books can sometimes be found with custom slipcases or boxes, as collectors would create their own bound copies of the journals.</p>
-	
-	
-	<h3>Explore the Booklets</h3>
-	
-	<p>Click on the covers to visit the individual article pages for each booklet:</p>
-	
-	<section
-		class="gallery-grid"
-		>
-			<figure>
-				<a href="/article/helhesten-1.1"><img src="/assets/articles/helhesten/helhesten_1.1_cover.jpg"></a>
-				<figcaption>Helhesten Year 1, Booklet 1</figcaption>
-			</figure>
-			
-			<figure>
-				<a href="/article/helhesten-1.2"><img src="/assets/articles/helhesten/helhesten_1.2_cover.jpg"></a>
-				<figcaption>Helhesten Year 1, Booklet 2</figcaption>
-			</figure>
-		
-			<figure>
-				<a href="/article/helhesten-1.3"><img src="/assets/articles/helhesten/helhesten_1.3_cover.jpg"></a>
-				<figcaption>Helhesten Year 1, Booklet 3</figcaption>
-			</figure>
-		
-			<figure>
-				<a href="/article/helhesten-1.4"><img src="/assets/articles/helhesten/helhesten_1.4_cover.jpg"></a>
-				<figcaption>Helhesten Year 1, Booklet 4</figcaption>
-			</figure>
-			
-			<figure>
-				<a href="/article/helhesten-1.5-6"><img src="/assets/articles/helhesten/helhesten_1.56_cover.jpg"></a>
-				<figcaption>Helhesten Year 1, Booklet 5-6</figcaption>
-			</figure>
-			
-			<figure>
-				<a href="/article/helhesten-2.1"><img src="/assets/articles/helhesten/helhesten_2.1_cover.jpg"></a>
-				<figcaption>Helhesten Year 2, Booklet 1</figcaption>
-			</figure>
-		
-			<figure>
-				<a href="/article/helhesten-2.2-3"><img src="/assets/articles/helhesten/helhesten_2.23_cover.jpg"></a>
-				<figcaption>Helhesten Year 2, Booklet 2-3</figcaption>
-			</figure>
-		
-			<figure>
-				<a href="/article/helhesten-2.4"><img src="/assets/articles/helhesten/helhesten_2.4_cover.jpg"></a>
-				<figcaption>Helhesten Year 2, Booklet 4</figcaption>
-			</figure>
-			
-			<figure>
-				<a href="/article/helhesten-2.5-6"><img src="/assets/articles/helhesten/helhesten_2.56_cover.jpg"></a>
-				<figcaption>Helhesten Year 2, Booklet 5-6</figcaption>
-			</figure>
-	</section>
 </section>
 
 <section>
@@ -190,7 +136,7 @@ last_modified_at: 2020-12-10
 		
 			<figure>
 				<a href="/assets/articles/helhesten/helhesten_1.2_jorn_banalities.jpg"><img src="/assets/articles/helhesten/helhesten_1.2_jorn_banalities.jpg"></a>
-				<figcaption>First page of Asger Jorn's article <em>Intimate Banalities (Intime banaliteter) </em>from <em>Helhesten</em> year 1, booklet 2</figcaption>
+				<figcaption>First page of Asger Jorn's article <em>Intimate Banalities (Intime banaliteter)</em> from <em>Helhesten</em> year 1, booklet 2</figcaption>
 			</figure>
 		
 			<figure>
@@ -200,7 +146,7 @@ last_modified_at: 2020-12-10
 		
 			<figure>
 				<a href="/assets/articles/helhesten/helhesten_1.2_medieval.jpg"><img src="/assets/articles/helhesten/helhesten_1.2_medieval.jpg"></a>
-				<figcaption>A recurring theme explored throughout <em>Helhesten</em> was medieval-era and early Scandinavian frescoes and ceramics. This article in <em>Helhesten</em> year 2, booklet 5-6 is titled &quot;Medieval Frescoes&quot; and was written by the Danish artist Carl Henning Pedersen. Asger Jorn and the archaeologist P. V. Glob also contributed to this theme, with Jorn focusing heavily on the subject through a number of publications after <em>Helhesten</em>.</figcaption>
+				<figcaption>A recurring theme explored throughout <em>Helhesten</em> was medieval-era and early Scandinavian frescoes and ceramics. This article in <em>Helhesten</em> year 2, booklet 5-6 is titled "Medieval Frescoes" and was written by the Danish artist Carl Henning Pedersen. Asger Jorn and the archaeologist P. V. Glob also contributed to this theme, with Jorn focusing heavily on the subject through a number of publications after <em>Helhesten</em>.</figcaption>
 			</figure>
 		
 			<figure>

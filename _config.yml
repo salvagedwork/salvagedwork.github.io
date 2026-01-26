@@ -17,6 +17,9 @@ collections:
   places:
     output: true
     permalink: /places/:path/
+  collections:
+    output: true
+    permalink: /collection/:path/
     
 defaults:
   - scope:
@@ -29,6 +32,11 @@ defaults:
       type: "articles"
     values:
       layout: "article"
+  - scope:
+      path: ""
+      type: "collections"
+    values:
+      layout: "collection"
   - scope:
       path: ""
     values:

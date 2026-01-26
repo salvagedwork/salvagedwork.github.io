@@ -112,17 +112,6 @@
   
     {
 
-      "title"    	: "Helhesten",
-      "url"      	: "/article/helhesten/",
-	  "tags"     	: "cobra, helhesten",
-      "category" 	: "",
-	  "description" : "was a Danish art journal published over nine issues from April 1941 to November 1944 which featured the abstract expressionist art of the Danish avantgarde group of the same name.",
-      "date"     	: "2019-01-01 00:00:00 +0100"
-
-    } ,
-  
-    {
-
       "title"    	: "Il giardino delle delizie",
       "url"      	: "/article/il-giardino-delle-delizie/",
 	  "tags"     	: "fluxus",
@@ -271,17 +260,6 @@
 	  "tags"     	: "",
       "category" 	: "",
 	  "description" : "is the penultimate book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
-      "date"     	: "2021-08-05 00:00:00 +0200"
-
-    } ,
-  
-    {
-
-      "title"    	: "Asger Jorn Catalogue raisonné Series",
-      "url"      	: "/article/jorn-catalogue-raisonne/",
-	  "tags"     	: "",
-      "category" 	: "",
-	  "description" : "is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
       "date"     	: "2021-08-05 00:00:00 +0200"
 
     } ,

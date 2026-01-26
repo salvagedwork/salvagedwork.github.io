@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<article lang="en">
+
+	<div class="article-container entry">
+	
+		<header>
+			<h1>{{ page.title }}</h1>
+			<hr />
+		</header>
+	
+		{{ content }}
+		
+		<section class="collection-articles">
+			<h2>Articles in this collection</h2>
+			
+			{% assign collection_articles = site.articles | where: "member_of", page.collection_id | sort: 'title' %}
+			{% if collection_articles.size > 0 %}
+				<p class="collection-article-count">{{ collection_articles.size }} article{% if collection_articles.size != 1 %}s{% endif %} in this collection.</p>
+				{% for article in collection_articles %}
+					{% include article-listing.html %}
+				{% endfor %}
+			{% else %}
+				<p><em>No articles have been added to this collection yet.</em></p>
+			{% endif %}
+		</section>
+		
+	</div>
+	
+</article>
+
+{% if page.tags.size > 0 %}
+<h3>Tags</h3>
+
+<span>
+  {% for tag in page.tags %}
+    <a href="/tag/{{ tag }}/">
+			{% include titlecase.html text=tag %}
+		</a><br />
+  {% endfor %}
+</span>
+{% endif %}

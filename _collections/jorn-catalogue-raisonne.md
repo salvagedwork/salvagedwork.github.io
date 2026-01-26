@@ -1,6 +1,7 @@
 ---
-layout: article
+layout: collection
 title: Asger Jorn Catalogue raisonné Series
+collection_id: jorn-catalogue-raisonne
 categories: books
 description: is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
 creators: [asger-jorn]
@@ -20,7 +21,7 @@ last_modified_at: 2022-01-31
     number_of_volumes="Three, including two supplements"
 %}
 	
-	<p><strong>{{ page.title }}</strong> {{page.description}}<p>
+	<p><strong>{{ page.title }}</strong> {{page.description}}</p>
 	
 	<div class="quote">
 	<p>This is a detailed study of the early career of the Danish artist, Asger Jorn, who is one of the most versatile and original artists at work in Europe today. His output, besides oils and acrylics, includes many other media: ceramics, graphics, drawings, tapestries, and book illustrations. He is also a prolific writer on a great variety of subjects.</p>
@@ -33,42 +34,6 @@ last_modified_at: 2022-01-31
 	
 	<p>Unfortunately the artist did not live to see the completion of the task, since volumes 2 and 3 only appeared after his death.</p>
 	<p class="quote-attrib">- Guy Atkins, Asger Jorn - The Final Years 1965-1973, jacket inner leaf</p>
-	</div>
-</section>
-
-<section>
-	<h2>Explore the Books</h2>
-	
-	<p>Click on the covers to visit the individual article pages for each book:</p>
-	
-	<section
-		class="gallery-grid"
-		>
-			<figure>
-				<a href="/article/atkins-jorn-scandinavia"><img src="/assets/articles/atkins-jorn-scandinavia/front.jpg"></a>
-				<figcaption>Jorn in Scandinavia 1930-1953</figcaption>
-			</figure>
-			
-			<figure>
-				<a href="/article/atkins-jorn-crucial-years"><img src="/assets/articles/atkins-jorn-crucial-years/front.jpg"></a>
-				<figcaption>Asger Jorn - The Crucial Years 1954-1964</figcaption>
-			</figure>
-		
-			<figure>
-				<a href="/article/atkins-jorn-final-years"><img src="/assets/articles/atkins-jorn-final-years/front.jpg"></a>
-				<figcaption>Asger Jorn - The Final Years 1965-1973</figcaption>
-			</figure>
-		
-			<figure>
-				<a href="/article/atkins-jorn-supplement"><img src="/assets/articles/atkins-jorn-supplement/front.jpg"></a>
-				<figcaption>Asger Jorn - Supplement - Paintings 1930-1973</figcaption>
-			</figure>
-			
-			<figure>
-				<a href="/article/atkins-jorn-revised-supplement"><img src="/assets/articles/atkins-jorn-revised-supplement/front.jpg"></a>
-				<figcaption>Asger Jorn - Revised Supplement</figcaption>
-			</figure>
-	</section>
 </section>
 
 {% include collapsible.html %}

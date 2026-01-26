@@ -364,6 +364,15 @@ a.current {
 	font-size: 80%;
 }
 
+.article-details-collection {
+	font-size: 85%;
+	color: $color-muted;
+	
+	a {
+		color: $color-accent-dark;
+	}
+}
+
 .article-subject {
 	font-style: italic;
 }
@@ -374,6 +383,14 @@ a.current {
 
 .article-creator-link {
 	text-decoration: none;
+}
+
+.article-collection-link {
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 
@@ -843,4 +860,108 @@ button {
 .creator-card-link {
 	font-size: 0.9rem;
 	font-style: italic;
+}
+
+
+// ==========================================================================
+// Collections
+// ==========================================================================
+
+// Collection listing include (for use in various contexts)
+.collection-list-item {
+	padding: 1rem;
+	margin-bottom: 1rem;
+	background-color: $color-highlight;
+	border-left: 3px solid $color-accent-dark;
+}
+
+.collection-list-title {
+	font-family: $font-bold;
+	font-size: 1.1rem;
+	margin-bottom: 0.3rem;
+	
+	a {
+		text-decoration: none;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.collection-list-description {
+	margin-bottom: 0.5rem;
+	line-height: 1.5;
+	
+	a {
+		text-decoration: none;
+	}
+}
+
+.collection-list-meta {
+	font-size: $font-size-small;
+	color: $color-muted;
+}
+
+// Collection page specific styles
+.collection-articles {
+	margin-top: 2rem;
+	
+	h2 {
+		margin-bottom: 1rem;
+	}
+}
+
+.collection-article-count {
+	font-style: italic;
+	color: $color-muted;
+	margin-bottom: 1rem;
+}
+
+// Collection browse list (for index page)
+.collection-browse-list {
+	margin: 1rem 0;
+}
+
+.collection-browse-item {
+	padding: 1rem;
+	margin-bottom: 1rem;
+	background-color: $color-highlight;
+	border-left: 3px solid $color-accent-dark;
+}
+
+.collection-browse-title {
+	font-family: $font-bold;
+	font-size: 1.1rem;
+	margin-bottom: 0.3rem;
+	
+	a {
+		text-decoration: none;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.collection-browse-description {
+	margin-bottom: 0.5rem;
+	line-height: 1.5;
+	
+	a {
+		text-decoration: none;
+	}
+}
+
+.collection-browse-meta {
+	font-size: $font-size-small;
+	color: $color-muted;
+	
+	a {
+		color: $color-muted;
+		
+		&:hover {
+			color: $color-accent-dark;
+		}
+	}
 }

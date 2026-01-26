@@ -1,0 +1,19 @@
+{% comment %}
+Collection listing for index pages and collection browsing.
+Displays collection title and description as a sentence.
+Usage: {% for collection in site.collections %}{% include collection-listing.html %}{% endfor %}
+{% endcomment %}
+
+{% assign collection_articles = site.articles | where: "member_of", collection.collection_id %}
+
+<div class="collection-list-item">
+	<div class="collection-list-title">
+		<a href="{{ collection.url }}">{{ collection.title }}</a>
+	</div>
+	<div class="collection-list-description">
+		<strong><a href="{{ collection.url }}">{{ collection.title }}</a></strong> {{ collection.description }}
+	</div>
+	<div class="collection-list-meta">
+		{{ collection_articles.size }} article{% if collection_articles.size != 1 %}s{% endif %} in collection
+	</div>
+</div>
