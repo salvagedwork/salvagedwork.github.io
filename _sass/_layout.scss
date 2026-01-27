@@ -340,57 +340,75 @@ a.current {
 // ==========================================================================
 
 .article-tile {
-	padding: 0 1rem;
-	margin: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1rem;
+	background-color: $color-highlight;
+	border: 1px solid $color-shade;
+	margin: 0 0 1rem 0;
 	
 	h3 {
-		padding-top: 0;
+		margin: 0 0 0.5rem 0;
+		padding: 0;
 	}
 }
 
-.article-tile-image-container {
-	display: none;
+.article-tile-image {
+	flex: 0 0 auto;
+	
+	img {
+		max-width: 100%;
+		max-height: 150px;
+		object-fit: contain;
+		box-shadow: 0.1rem 0.1rem $color-shade;
+	}
 }
 
-.article-tag {
-	font-style: italic;
+.article-tile-content {
+	flex: 1;
 }
 
-.article-tag-link {
-	text-decoration: none;
+.article-tile-description {
+	margin: 0 0 0.5rem 0;
+	line-height: 1.5;
 }
 
-.article-details-subjects {
-	font-size: 80%;
-}
-
-.article-details-collection {
-	font-size: 85%;
+.article-tile-meta {
+	font-size: $font-size-small;
 	color: $color-muted;
+	margin: 0.2rem 0;
+	line-height: 1.6;
 	
 	a {
-		color: $color-accent-dark;
+		color: $color-muted;
+		text-decoration: none;
+		
+		&:hover {
+			color: $color-text;
+			text-decoration: underline;
+		}
 	}
 }
 
-.article-subject {
-	font-style: italic;
-}
-
-.article-creator {
-	font-style: italic;
-}
-
-.article-creator-link {
-	text-decoration: none;
-}
-
-.article-collection-link {
-	text-decoration: none;
+.meta-item {
+	&::after {
+		content: " · ";
+		color: $color-border;
+	}
 	
-	&:hover {
-		text-decoration: underline;
+	&:last-child::after {
+		content: "";
 	}
+}
+
+.meta-label {
+	color: #888;
+}
+
+.article-tile-link {
+	margin: 0.5rem 0 0 0;
+	font-size: 0.9rem;
 }
 
 
@@ -740,16 +758,65 @@ button {
 	&:hover {
 		background-color: $color-shade;
 	}
+}
+
+// Collection filter colors
+#collection-filters .filter-btn.active {
+	background-color: $color-filter-collection;
+	color: white;
+	border-color: $color-filter-collection;
 	
-	&.active {
-		background-color: $color-accent;
-		color: white;
-		border-color: $color-accent;
-		
-		&:hover {
-			background-color: $color-accent-dark;
-			border-color: $color-accent-dark;
-		}
+	&:hover {
+		background-color: $color-filter-collection-dark;
+		border-color: $color-filter-collection-dark;
+	}
+}
+
+// Tag filter colors
+#tag-filters .filter-btn.active {
+	background-color: $color-filter-tag;
+	color: white;
+	border-color: $color-filter-tag;
+	
+	&:hover {
+		background-color: $color-filter-tag-dark;
+		border-color: $color-filter-tag-dark;
+	}
+}
+
+// Subject filter colors
+#subject-filters .filter-btn.active {
+	background-color: $color-filter-subject;
+	color: white;
+	border-color: $color-filter-subject;
+	
+	&:hover {
+		background-color: $color-filter-subject-dark;
+		border-color: $color-filter-subject-dark;
+	}
+}
+
+// Category filter colors
+#category-filters .filter-btn.active {
+	background-color: $color-filter-category;
+	color: white;
+	border-color: $color-filter-category;
+	
+	&:hover {
+		background-color: $color-filter-category-dark;
+		border-color: $color-filter-category-dark;
+	}
+}
+
+// Creator filter colors
+#creator-filters .filter-btn.active {
+	background-color: $color-filter-creator;
+	color: white;
+	border-color: $color-filter-creator;
+	
+	&:hover {
+		background-color: $color-filter-creator-dark;
+		border-color: $color-filter-creator-dark;
 	}
 }
 

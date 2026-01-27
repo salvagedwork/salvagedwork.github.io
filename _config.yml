@@ -20,6 +20,9 @@ collections:
   collections:
     output: true
     permalink: /collection/:path/
+  books:
+    output: true
+    permalink: /book/:path/
     
 defaults:
   - scope:

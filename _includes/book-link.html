@@ -1,0 +1,31 @@
+{% comment %}
+Prominent link to a book reader page.
+Usage:
+{% include book-link.html 
+    url="/book/la-langue-verte/"
+    title="La langue verte et la cuite"
+    description="Read the complete text with original French and English translation."
+    image="/assets/articles/la-langue-verte/front.jpg"
+%}
+
+Or minimal version:
+{% include book-link.html 
+    url="/book/la-langue-verte/"
+    title="La langue verte et la cuite"
+%}
+{% endcomment %}
+
+<div class="book-link-card">
+	{% if include.image %}
+	<div class="book-link-image">
+		<a href="{{ include.url }}"><img src="{{ include.image }}" alt="{{ include.title }}"></a>
+	</div>
+	{% endif %}
+	<div class="book-link-content">
+		<h3 class="book-link-title"><a href="{{ include.url }}">{{ include.title }}</a></h3>
+		{% if include.description %}
+		<p class="book-link-description">{{ include.description }}</p>
+		{% endif %}
+		<a href="{{ include.url }}" class="book-link-button">Read the full text &rarr;</a>
+	</div>
+</div>

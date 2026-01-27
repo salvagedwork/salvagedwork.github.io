@@ -1,0 +1,405 @@
+// ==========================================================================
+// Book Reader Component
+// Responsive layout: sticky sidebar on desktop, top TOC on mobile
+// ==========================================================================
+
+// Variables
+$book-toc-width: 250px;
+$book-gap: 2rem;
+
+
+// ==========================================================================
+// Mobile-First Base Styles
+// ==========================================================================
+
+.book-reader {
+	position: relative;
+}
+
+// Header
+.book-header {
+	margin-bottom: 1.5rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid $color-shade;
+}
+
+.book-back-link {
+	display: inline-block;
+	font-size: $font-size-small;
+	margin-bottom: 0.5rem;
+	color: $color-muted;
+	text-decoration: none;
+	
+	&:hover {
+		color: $color-text;
+		text-decoration: underline;
+	}
+}
+
+.book-title {
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+// TOC - displayed at top on mobile
+.book-toc {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background-color: $color-highlight;
+	border: 1px solid $color-shade;
+}
+
+.book-toc-inner {
+	// No sticky behavior on mobile
+}
+
+.book-toc-title {
+	font-family: $font-bold;
+	font-size: 1rem;
+	margin: 0 0 0.8rem 0;
+	padding: 0;
+}
+
+.book-toc-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.book-toc-item {
+	margin-bottom: 0.3rem;
+}
+
+.book-toc-link {
+	display: block;
+	font-size: $font-size-small;
+	color: $color-text;
+	text-decoration: none;
+	padding: 0.3rem 0.5rem;
+	border-left: 2px solid transparent;
+	transition: all 0.15s ease;
+	
+	&:hover {
+		color: $color-accent-dark;
+		background-color: rgba(0, 0, 0, 0.03);
+		text-decoration: none;
+	}
+	
+	&.active {
+		color: $color-accent-dark;
+		border-left-color: $color-accent-dark;
+		background-color: rgba(0, 0, 0, 0.03);
+	}
+}
+
+// Indent h3 and h4 items
+.book-toc-h3 {
+	padding-left: 1rem;
+	
+	.book-toc-link {
+		font-size: 0.8rem;
+	}
+}
+
+.book-toc-h4 {
+	padding-left: 2rem;
+	
+	.book-toc-link {
+		font-size: 0.75rem;
+		color: $color-muted;
+	}
+}
+
+.book-toc-loading,
+.book-toc-empty {
+	font-size: $font-size-small;
+	color: $color-muted;
+	font-style: italic;
+	padding: 0.3rem 0.5rem;
+}
+
+// Language Switcher
+.book-language-switch {
+	display: flex;
+	gap: 0;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid $color-shade;
+}
+
+.book-lang-btn {
+	flex: 1;
+	padding: 0.5rem 1rem;
+	font-family: $font-regular;
+	font-size: $font-size-small;
+	background-color: $color-background;
+	color: $color-text;
+	border: 1px solid $color-border;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	
+	&:first-child {
+		border-radius: 4px 0 0 4px;
+		border-right: none;
+	}
+	
+	&:last-child {
+		border-radius: 0 4px 4px 0;
+	}
+	
+	&:hover {
+		background-color: $color-shade;
+	}
+	
+	&.active {
+		background-color: $color-filter-collection;
+		color: $color-background;
+		border-color: $color-filter-collection;
+		
+		&:hover {
+			background-color: $color-filter-collection-dark;
+		}
+	}
+}
+
+// Main content
+.book-content {
+	line-height: 1.8;
+}
+
+.book-text {
+	h2 {
+		font-size: 1.4rem;
+		margin-top: 2rem;
+		padding-top: 1rem;
+		border-top: 1px solid $color-shade;
+		
+		&:first-child {
+			margin-top: 0;
+			padding-top: 0;
+			border-top: none;
+		}
+	}
+	
+	h3 {
+		font-size: 1.2rem;
+		margin-top: 1.5rem;
+	}
+	
+	h4 {
+		font-size: 1.1rem;
+		margin-top: 1rem;
+	}
+	
+	p {
+		margin-bottom: 1rem;
+	}
+	
+	img {
+		max-width: 100%;
+		height: auto;
+		margin: 1rem 0;
+	}
+	
+	blockquote {
+		margin: 1rem 0;
+		padding: 0.5rem 1rem;
+		border-left: 3px solid $color-border;
+		background-color: $color-highlight;
+		
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+// Hidden content (for language switching)
+.book-text[hidden] {
+	display: none;
+}
+
+
+// ==========================================================================
+// Desktop Styles
+// ==========================================================================
+
+@media #{$information-desktop} {
+	
+	.book-reader {
+		display: grid;
+		grid-template-columns: $book-toc-width 1fr;
+		grid-template-rows: auto 1fr;
+		gap: $book-gap;
+		align-items: start;
+	}
+	
+	// Header spans full width
+	.book-header {
+		grid-column: 1 / -1;
+	}
+	
+	.book-title {
+		font-size: 1.8rem;
+	}
+	
+	// TOC becomes sticky sidebar
+	.book-toc {
+		grid-column: 1;
+		grid-row: 2;
+		position: sticky;
+		top: 2rem;
+		margin-bottom: 0;
+		padding: 0;
+		background-color: transparent;
+		border: none;
+		// Prevent overflow issues that break sticky
+		overflow: visible;
+	}
+	
+	.book-toc-inner {
+		max-height: calc(100vh - 4rem);
+		overflow-y: auto;
+		padding: 1rem;
+		background-color: $color-highlight;
+		border: 1px solid $color-shade;
+		
+		// Subtle scrollbar
+		&::-webkit-scrollbar {
+			width: 4px;
+		}
+		
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+		
+		&::-webkit-scrollbar-thumb {
+			background-color: $color-border;
+			border-radius: 2px;
+		}
+	}
+	
+	.book-toc-list {
+		max-height: none;
+	}
+	
+	// Main content
+	.book-content {
+		grid-column: 2;
+		grid-row: 2;
+	}
+	
+	.book-text {
+		h2 {
+			font-size: 1.6rem;
+		}
+		
+		h3 {
+			font-size: 1.3rem;
+		}
+	}
+}
+
+
+// ==========================================================================
+// Book Link Card (for use in articles)
+// ==========================================================================
+
+.book-link-card {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1.5rem;
+	background-color: $color-highlight;
+	border: 2px solid $color-border;
+	border-left: 4px solid $color-accent-dark;
+	margin: 1.5rem 0;
+	transition: border-color 0.15s ease;
+	
+	&:hover {
+		border-color: $color-accent-dark;
+	}
+}
+
+.book-link-image {
+	flex: 0 0 auto;
+	
+	img {
+		max-width: 120px;
+		max-height: 160px;
+		object-fit: contain;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+	}
+}
+
+.book-link-content {
+	flex: 1;
+}
+
+.book-link-title {
+	font-size: 1.2rem;
+	margin: 0 0 0.5rem 0;
+	padding: 0;
+	
+	a {
+		text-decoration: none;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.book-link-description {
+	margin: 0 0 1rem 0;
+	color: #444;
+}
+
+.book-link-button {
+	display: inline-block;
+	padding: 0.6rem 1.2rem;
+	background-color: $color-accent-dark;
+	color: white;
+	text-decoration: none;
+	font-family: $font-bold;
+	font-size: $font-size-small;
+	transition: background-color 0.15s ease;
+	
+	&:hover {
+		background-color: darken($color-accent-dark, 10%);
+		text-decoration: none;
+		color: white;
+	}
+}
+
+@media #{$information-desktop} {
+	.book-link-card {
+		flex-direction: row;
+		align-items: center;
+	}
+	
+	.book-link-image {
+		margin-right: 1rem;
+	}
+}
+
+
+// ==========================================================================
+// Print Styles
+// ==========================================================================
+
+@media print {
+	.book-toc {
+		display: none;
+	}
+	
+	.book-reader {
+		display: block;
+	}
+	
+	.book-content {
+		width: 100%;
+	}
+}

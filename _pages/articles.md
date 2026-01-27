@@ -59,6 +59,20 @@ permalink: /articles/
 			{% endfor %}
 		</div>
 	</div>
+	
+	<div class="filter-group">
+		<span class="filter-label">Filter by creator</span>
+		<div class="filter-buttons" id="creator-filters">
+			<button class="filter-btn active" data-filter="all" data-type="creator">All</button>
+			{% assign all_creators = site.articles | map: 'creators' | join: ',' | split: ',' | uniq | sort %}
+			{% for creator in all_creators %}
+				{% assign clean_creator = creator | strip %}
+				{% if clean_creator != '' %}
+			<button class="filter-btn" data-filter="{{ clean_creator }}" data-type="creator">{% include titlecase.html text=clean_creator %}</button>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
 </div>
 
 <div class="article-count">
@@ -86,6 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	var activeTagFilters = [];
 	var activeSubjectFilters = [];
 	var activeCategoryFilters = [];
+	var activeCreatorFilters = [];
 	
 	// Convert hyphenated-text to Title Case
 	function toTitleCase(str) {
@@ -99,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		var headerText = 'Articles';
 		
 		// Only show custom header if exactly one filter type is active with one value
-		var totalFilters = activeCollectionFilters.length + activeTagFilters.length + activeSubjectFilters.length + activeCategoryFilters.length;
+		var totalFilters = activeCollectionFilters.length + activeTagFilters.length + activeSubjectFilters.length + activeCategoryFilters.length + activeCreatorFilters.length;
 		
 		if (totalFilters === 1) {
 			if (activeCollectionFilters.length === 1) {
@@ -110,6 +125,8 @@ document.addEventListener('DOMContentLoaded', function() {
 				headerText = 'Articles about ' + toTitleCase(activeCategoryFilters[0]).toLowerCase();
 			} else if (activeSubjectFilters.length === 1) {
 				headerText = 'Articles about ' + toTitleCase(activeSubjectFilters[0]).toLowerCase();
+			} else if (activeCreatorFilters.length === 1) {
+				headerText = 'Articles by ' + toTitleCase(activeCreatorFilters[0]);
 			}
 		}
 		
@@ -143,6 +160,12 @@ document.addEventListener('DOMContentLoaded', function() {
 		if (categoryParam) {
 			applyFilterFromUrl('category', categoryParam);
 		}
+		
+		// Handle creator parameter
+		var creatorParam = params.get('creator');
+		if (creatorParam) {
+			applyFilterFromUrl('creator', creatorParam);
+		}
 	}
 	
 	// Apply a filter from URL parameter
@@ -172,6 +195,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			activeSubjectFilters.push(filterValue);
 		} else if (filterType === 'category') {
 			activeCategoryFilters.push(filterValue);
+		} else if (filterType === 'creator') {
+			activeCreatorFilters.push(filterValue);
 		}
 	}
 	
@@ -198,6 +223,8 @@ document.addEventListener('DOMContentLoaded', function() {
 					activeSubjectFilters = [];
 				} else if (filterType === 'category') {
 					activeCategoryFilters = [];
+				} else if (filterType === 'creator') {
+					activeCreatorFilters = [];
 				}
 			} else {
 				// Toggle this filter
@@ -213,6 +240,8 @@ document.addEventListener('DOMContentLoaded', function() {
 						activeSubjectFilters = activeSubjectFilters.filter(function(f) { return f !== filterValue; });
 					} else if (filterType === 'category') {
 						activeCategoryFilters = activeCategoryFilters.filter(function(f) { return f !== filterValue; });
+					} else if (filterType === 'creator') {
+						activeCreatorFilters = activeCreatorFilters.filter(function(f) { return f !== filterValue; });
 					}
 					
 					// If no filters selected, reactivate "All"
@@ -233,6 +262,8 @@ document.addEventListener('DOMContentLoaded', function() {
 						activeSubjectFilters.push(filterValue);
 					} else if (filterType === 'category') {
 						activeCategoryFilters.push(filterValue);
+					} else if (filterType === 'creator') {
+						activeCreatorFilters.push(filterValue);
 					}
 				}
 			}
@@ -251,6 +282,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			var articleTags = article.dataset.tags ? article.dataset.tags.split(',') : [];
 			var articleSubjects = article.dataset.subjects ? article.dataset.subjects.split(',') : [];
 			var articleCategories = article.dataset.category ? article.dataset.category.split(',') : [];
+			var articleCreators = article.dataset.creators ? article.dataset.creators.split(',') : [];
 			
 			// Check if article matches ALL selected collection filters
 			var matchesCollection = true;
@@ -284,7 +316,15 @@ document.addEventListener('DOMContentLoaded', function() {
 				});
 			}
 			
-			if (matchesCollection && matchesTag && matchesSubject && matchesCategory) {
+			// Check if article matches ALL selected creator filters
+			var matchesCreator = true;
+			if (activeCreatorFilters.length > 0) {
+				matchesCreator = activeCreatorFilters.every(function(filter) {
+					return articleCreators.includes(filter);
+				});
+			}
+			
+			if (matchesCollection && matchesTag && matchesSubject && matchesCategory && matchesCreator) {
 				article.style.display = '';
 				visibleArticles++;
 			} else {
@@ -311,6 +351,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 		if (activeCategoryFilters.length === 1) {
 			params.set('category', activeCategoryFilters[0]);
+		}
+		if (activeCreatorFilters.length === 1) {
+			params.set('creator', activeCreatorFilters[0]);
 		}
 		
 		var newUrl = window.location.pathname;

@@ -134,17 +134,6 @@
   
     {
 
-      "title"    	: "La langue verte et la cuite (Contents)",
-      "url"      	: "/article/la-langue-verte-contents/",
-	  "tags"     	: "",
-      "category" 	: "",
-	  "description" : "is the complete text of La langue verte et la cuite, a book on structuralist theory and cooking by Asger Jorn and Noël Arnaud, edited and published by Jean Jacques Pauvert in 1968.",
-      "date"     	: "2019-01-01 00:00:00 +0100"
-
-    } ,
-  
-    {
-
       "title"    	: "La langue verte et la cuite",
       "url"      	: "/article/la-langue-verte/",
 	  "tags"     	: "",

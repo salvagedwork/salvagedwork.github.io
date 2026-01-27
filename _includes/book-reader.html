@@ -1,0 +1,96 @@
+{% comment %}
+Book reader component with responsive layout:
+- Desktop: Sticky sidebar TOC with all content visible
+- Mobile: Collapsible chapters with expand/collapse controls
+
+Usage:
+{% include book-reader.html data=site.data.books.la-langue-verte %}
+
+Data structure expected:
+sections:
+  - heading: "Chapter Title"
+    excerpts:
+      - title: "Excerpt Title"
+        original: |
+          Original text...
+        translation: |
+          Translated text...
+{% endcomment %}
+
+<div class="book-reader">
+	
+	<!-- Mobile controls (hidden on desktop) -->
+	<div class="book-mobile-controls">
+		<button class="book-control-btn" id="book-expand-all">Expand All</button>
+		<button class="book-control-btn" id="book-collapse-all">Collapse All</button>
+	</div>
+	
+	<!-- Sidebar TOC (sticky on desktop, hidden on mobile) -->
+	<nav class="book-toc" aria-label="Table of contents">
+		<div class="book-toc-inner">
+			<h3 class="book-toc-title">Contents</h3>
+			<ul class="book-toc-list">
+				{% for section in include.data.sections %}
+				<li class="book-toc-chapter">
+					<a href="#chapter-{{ forloop.index }}" class="book-toc-chapter-link">{{ section.heading }}</a>
+					{% if section.excerpts.size > 1 %}
+					<ul class="book-toc-excerpts">
+						{% for excerpt in section.excerpts %}
+						<li><a href="#excerpt-{{ forloop.parentloop.index }}-{{ forloop.index }}">{{ excerpt.title }}</a></li>
+						{% endfor %}
+					</ul>
+					{% endif %}
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Main content area -->
+	<div class="book-content">
+		{% for section in include.data.sections %}
+		<section class="book-chapter" id="chapter-{{ forloop.index }}">
+			
+			<!-- Chapter header: regular h2 on desktop, collapsible button on mobile -->
+			<h2 class="book-chapter-title book-chapter-title-desktop">{{ section.heading }}</h2>
+			<button class="book-chapter-toggle" aria-expanded="false" aria-controls="chapter-content-{{ forloop.index }}">
+				<span class="book-chapter-toggle-text">{{ section.heading }}</span>
+				<span class="book-chapter-toggle-icon" aria-hidden="true"></span>
+			</button>
+			
+			<div class="book-chapter-content" id="chapter-content-{{ forloop.index }}">
+				{% for excerpt in section.excerpts %}
+				<article class="book-excerpt" id="excerpt-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+					<h3 class="book-excerpt-title">{{ excerpt.title }}</h3>
+					
+					{% if excerpt.translation %}
+					<!-- Translatable content with toggle -->
+					<div class="translation-toggle">
+						<button class="translation-btn active" data-lang="original">Original</button>
+						<button class="translation-btn" data-lang="english">English</button>
+					</div>
+					<div class="translatable-content">
+						<div class="original-text">
+							{{ excerpt.original | markdownify }}
+						</div>
+						<div class="translated-text">
+							{{ excerpt.translation | markdownify }}
+						</div>
+					</div>
+					{% else %}
+					<!-- Original only -->
+					<div class="book-excerpt-text">
+						{{ excerpt.original | markdownify }}
+					</div>
+					{% endif %}
+				</article>
+				{% endfor %}
+			</div>
+			
+		</section>
+		{% endfor %}
+	</div>
+	
+</div>
+
+<script src="{{ '/js/book-reader.js' | relative_url }}"></script>

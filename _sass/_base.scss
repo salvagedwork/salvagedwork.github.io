@@ -3,9 +3,9 @@
 // ==========================================================================
 
 // Layout
-$display-width: 97%;
+$display-width: 96%;
 $max-content-width: 1100px;
-$top-margin: 2rem;
+$top-margin: 5rem;
 $content-padding: 2rem;
 
 // Breakpoints
@@ -16,7 +16,7 @@ $information-mobile: "only screen and (max-width: #{$breakpoint-desktop - 1})";
 // Colors
 $color-text: #1a1a1a;
 $color-background: white;
-$color-shade: #ddd;
+$color-shade: #eee;
 $color-border: #ccc;
 $color-border-dark: #a2a9b1;
 $color-muted: #666;
@@ -24,6 +24,18 @@ $color-highlight: #f8f9fa;
 $color-accent: red;
 $color-accent-dark: #cc0000;
 $color-search-highlight: #ffeb3b;
+
+// Filter button colors (muted palette)
+$color-filter-collection: #a04040;      // Muted burgundy/red
+$color-filter-collection-dark: #8a3535;
+$color-filter-tag: #4a6fa5;             // Muted steel blue
+$color-filter-tag-dark: #3d5c8a;
+$color-filter-subject: #5a8a5a;         // Muted sage green
+$color-filter-subject-dark: #4a7a4a;
+$color-filter-category: #7a5a8a;        // Muted purple
+$color-filter-category-dark: #6a4a7a;
+$color-filter-creator: #b07040;         // Muted amber/orange
+$color-filter-creator-dark: #9a6035;
 
 // Typography
 $font-regular: 'GT-Eesti-Text-Light', sans-serif;

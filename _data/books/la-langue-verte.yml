@@ -1,0 +1,82 @@
+# La langue verte et la cuite
+# Book content organized by chapter/section
+
+sections:
+  - heading: "Prélude aux fines herbes"
+    excerpts:
+      - title: "Hommage à l'Americaine"
+        original: |
+          Le livre que vous allez déguster ici sur la cuisine des langues est le premier du genre. Ce fait surprenant trouve son explication dans l'obstacle, jusqu'à nos jours infranchissable, que dressait l'énigme cultelique de la personnalité. Strictement personnel, ce livre évidemment n'existe pas, puisque par définition ce qui n'existe pas n'est personne et que personne ne peut exister à l'heure présente.
+
+          Pourtant, les progrès fulgurants de la nouvelle zéromorphie scientifique nous ont permis de recoudre ce problème délicat grâce à la mise en oeuvre d'une néantechnique largement computaine, nécessaire à la struction glutosonore de notre diamarche ethnogastrique.
+
+          Pour avoir ainsi amplement satisfait notre soif auditive aux bonnes sources coulant de la source perdue, et heureusement retrouvée par les hommes de science d'aujourd'hui, nous avons saisi l'occasion de puiser dans des sources de premier cru déjà cuitées de l'art de demain.
+
+          Nous ne pouvons qu'imprimer notre plus vive reconnaissance et notre gratitude envers tous ceux qui ont montré une attitude mythophonique gracieuse, et de plus gratuite, d'une fécondité savoureusement poétique, humaine et savante.
+        translation: |
+          The book you are about to enjoy here on the cooking of languages is the first of its kind. This surprising fact finds its explanation in the obstacle, insurmountable until now, posed by the cultic enigma of personality. Strictly personal, this book obviously does not exist, since by definition what does not exist is nobody and nobody can exist at present.
+
+          However, the dazzling progress of the new scientific zeromorphy has allowed us to resolve this delicate problem through the implementation of a largely computational non-technique, necessary for the glutosonorous struction of our ethnogastric diamarch.
+
+          Having thus amply satisfied our auditory thirst at the good sources flowing from the lost source, and happily rediscovered by today's men of science, we seized the opportunity to draw from first-growth sources already cooked from the art of tomorrow.
+
+          We can only express our deepest recognition and gratitude to all those who have shown a gracious mythophonic attitude, and moreover a gratuitous one, of a savoury poetic, human and learned fecundity.
+
+      - title: "Sermon fumé"
+        original: |
+          Example text for Sermon fumé...
+        translation: |
+          Example translation for Sermon fumé...
+
+  - heading: "Ouverture gastrophonique"
+    excerpts:
+      - title: "Soupe au laiton"
+        original: |
+          Example text...
+        translation: |
+          Example translation...
+
+      - title: "Potage sonhorrifique"
+        original: |
+          Example text...
+        translation: |
+          Example translation...
+
+      - title: "Trombone in brodo"
+        original: |
+          Example text...
+        # No translation yet - will only show original
+
+      - title: "Rigaudon au tord boyau"
+        original: |
+          Example text...
+
+      - title: "Chiantinata"
+        original: |
+          Example text...
+
+  - heading: "Sonate en sole meunière"
+    excerpts:
+      - title: "Pupitre à concombres"
+        original: |
+          Example text...
+
+      - title: "Omelette au bugle en chaleur"
+        original: |
+          Example text...
+
+      - title: "Salomé en tranches"
+        original: |
+          Example text...
+
+      - title: "Rôt meunière"
+        original: |
+          Example text...
+
+      - title: "Rillettes roméo"
+        original: |
+          Example text...
+
+      - title: "Abeilard fumé"
+        original: |
+          Example text...

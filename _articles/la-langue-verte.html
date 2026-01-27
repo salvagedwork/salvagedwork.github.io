@@ -88,13 +88,20 @@ last_modified_at: 2021-03-10
 <section>
 	<h2>Contents</h2>
 	
-	<p>See: <em><a href="/article/la-langue-verte-contents">La langue verte et la cuite (Contents)</a></em></p>
+	{% include book-link.html 
+       url="/book/la-langue-verte/"
+       title="La langue verte et la cuite"
+       description="Read the complete text in French and English."
+       image="/assets/articles/la-langue-verte/front.jpg"
+   %}
+   
+</section>
 
-	<h3>Explore the Book</h3>
+<section>
+	<h2>Explore the Book</h2>
 	
-	{% include_relative la-langue-verte/book_embed.html %}
+	{% include archive-embed.html id="la-langue-verte-jorn" %}
 	
-	<em>This is a preview only - <a href="https://archive.org/details/la-langue-verte-jorn" target="_blank">view fullsize on archive.org</a></em> 
 </section>
 
 {% include collapsible.html %}
