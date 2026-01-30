@@ -1,20 +1,3 @@
-{% comment %}
-Prominent link to a book reader page.
-Usage:
-{% include book-link.html 
-    url="/book/la-langue-verte/"
-    title="La langue verte et la cuite"
-    description="Read the complete text with original French and English translation."
-    image="/assets/articles/la-langue-verte/front.jpg"
-%}
-
-Or minimal version:
-{% include book-link.html 
-    url="/book/la-langue-verte/"
-    title="La langue verte et la cuite"
-%}
-{% endcomment %}
-
 <div class="book-link-card">
 	{% if include.image %}
 	<div class="book-link-image">

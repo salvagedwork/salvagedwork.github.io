@@ -13,6 +13,17 @@
   
     {
 
+      "title"    	: "Asger Jorn à Silkeborg",
+      "url"      	: "/article/asger-jorn-a-silkeborg/",
+	  "tags"     	: "",
+      "category" 	: "",
+	  "description" : "Le musée d&#39;un peintre (Asger Jorn in Silkeborg, a painter&#39;s museum) is a partial catalogue of works held by the Silkeborg Museum of Art with a focus on the art of Danish painter Asger Jorn and the relationship that the museum&#39;s other works have with Jorn&#39;s art.",
+      "date"     	: "2019-01-01 00:00:00 +0100"
+
+    } ,
+  
+    {
+
       "title"    	: "Helhesten (Year 1, Booklet 1)",
       "url"      	: "/article/helhesten-1.1/",
 	  "tags"     	: "cobra, helhesten",
@@ -123,17 +134,6 @@
   
     {
 
-      "title"    	: "Asger Jorn à Silkeborg",
-      "url"      	: "/article/jorn-a-silkeborg/",
-	  "tags"     	: "",
-      "category" 	: "",
-	  "description" : "Le musée d&#39;un peintre (Asger Jorn in Silkeborg, a painter&#39;s museum) is a partial catalogue of works held by the Silkeborg Museum of Art with a focus on the art of Danish painter Asger Jorn and the relationship that the museum&#39;s other works have with Jorn&#39;s art.",
-      "date"     	: "2019-01-01 00:00:00 +0100"
-
-    } ,
-  
-    {
-
       "title"    	: "La langue verte et la cuite",
       "url"      	: "/article/la-langue-verte/",
 	  "tags"     	: "",
@@ -160,7 +160,7 @@
       "url"      	: "/article/skanes-stenskulptur/",
 	  "tags"     	: "",
       "category" 	: "",
-	  "description" : "(Skåne&#39;s Stone Sculpture During the 12th Century) is a book written in Swedish by Erik Cinthio, with photography by Gérard Franceschi and arrangement by Asger Jorn. The book is a photographic documentation of stone sculpture from the 12th century with a focus on the Skåne region of southern Sweden.",
+	  "description" : "(Skåne&#39;s Stone Sculpture during the 12th Century) is a book on 12th century stone sculpture from the Scania region of southern Sweden by Erik Cinthio, with an introduction by P. V. Glob and notes by Asger Jorn.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
     } ,

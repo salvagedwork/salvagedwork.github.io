@@ -1,0 +1,160 @@
+---
+layout: article
+title: Cybernetic Serendipity - The Computer and the Arts
+categories: books
+description: is the title of a special 1968 issue of the British magazine 'Studio International.' The issue was first published to coincide with an exhibition entitled 'Cybernetic Serendipity,' dealing broadly with the demonstration of how humans can use the computer and new technology to extend creativity and inventiveness.
+creators: []
+tags: [cybernetics]
+featured-image: /assets/articles/cybernetic-serendipity/front.jpg
+date: 2021-06-11
+last_modified_at: 2021-08-05
+---
+
+{% include infobox.html
+    image="/assets/articles/cybernetic-serendipity/front.jpg"
+    title="Cybernetic Serendipity: The Computer and the Arts"
+    editor="Jasia Reichardt"
+    exhibition_staff="Jasia Reichardt, Mark Dowson, Peter Schmidt, Franciszka Themerson"
+    publisher="Studio International, London"
+    date="July 1968 (1st edition)"
+%}
+
+**{{ page.title }}** {{page.description}}
+
+The exhibition was held at the Institute of Contemporary Arts in London from August 2 to October 20, 1968. The exhibition was organized by Jasia Reichardt in collaboration with Mark Dowson (technological adviser) and Peter Schmidt (musical adviser). The exhibition was designed by Franciszka Themerson.
+
+## Exhibition
+
+{% include thumbnail.html
+    image="/assets/articles/cybernetic-serendipity/exhibition.jpg"
+    caption="View of the exhbition."
+%}
+
+{% include thumbnail.html
+    image="/assets/articles/cybernetic-serendipity/ihnatowicz_sound_activated_mobile.jpg"
+    caption="Edward Ihnatowicz's <em>Sound Activated Mobile (SAM)</em>, which was also featured in the exhibition catalogue."
+%}
+
+The *Cybernetic Serendipity* exhibition represented three areas of the relationship between technology and creativity:
+
+- Computer-generated graphics, computer-animated films, computer-composed and -played music, and computer poems and texts
+- Cybernetic devices as works of art, cybernetic environments, remote-control robots and painting machines
+- Machines demonstrating the uses of computers and an environment dealing with the history of cybernetics
+
+A number of recognised academics, scientists, artists, and composers took part in the exhibition, including Max Bense, Nicholas Negroponte, Earle Brown, John Cage, Nam June Paik, Karlheinz Stockhausen, Jean Tinguely, Iannis Xenakis, and Peter Zinovieff.
+
+<div class="quote">
+<p>The idea behind this venture... is to show some of the creative forms engendered by technology. The aim is to present an area of activity which manifests artists' involvement with science, and the scientists' involvement with the arts; also, to show the links between the random systems employed by artists, composers and poets, and those involved with the making and the use of cybernetic devices.</p>
+
+<p>Cybernetic Serendipity deals with possibilities rather than achievements... [t]here are no heroic claims to be made because computers have so far neither revolutionized music, nor art, nor poetry, in the same way that they have revolutionized science.</p>
+
+<p>...no visitor to the exhibition, unless he reads all the notes relating to all the works, will know whether he is looking at something made by an artist, engineer. mathematician, or architect. Nor is it particularly im portant to know the background of the makers of the various robots, machines and graphics-it will not alter their impact, although it might make us see them differently.</p>
+
+<p class="quote-attrib">- Introduction by Jasia Reichardt, exhibition catalogue</p>
+</div>
+
+## Exhibition Catalogue
+
+Numbering just over 100 pages, the *Cybernetic Serendipity* exhibition catalogue contains contributions from cybernetics originator Norbert Wiener, musicians Karlheinz Stockhausen and John Cage, and a range of individuals involved in the cybernetic movement, including photographic and written documentation of many different artistic, architectural, and musical creations.
+
+### Selected Essays
+
+{% include articles/cybernetic-serendipity/introduction.html %}
+
+{% include articles/cybernetic-serendipity/notes-on-cybernetics.html %}
+
+{% include articles/cybernetic-serendipity/computer-art.html %}
+
+{% include collapsible.html %}
+
+### Explore the Catalogue
+
+<iframe src="https://archive.org/embed/cybernetic-serendipity" width="100%" height="700" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+
+*This is a preview only - <a href="https://archive.org/details/cybernetic-serendipity" target="_blank">view fullsize on archive.org</a>*
+
+## Vinyl LP
+
+{% include infobox.html
+    image="/assets/articles/cybernetic-serendipity/lp_cover.jpg"
+    title="Cybernetic Serendipity Music"
+    publisher="Institute of Contemporary Arts, London"
+    date="1968"
+    format="Vinyl"
+    duration="52:44"
+%}
+
+A vinyl record was available for purchase which included audio excerpts from cybernetic music.
+
+<div class="quote">
+<p>During the preparation of the Cybernetic Serendipity exhibition two things became apparent. 
+
+<p>One, that in order to show what was going on in the field computer music, it was necessary to include a considerable amount of material that was not strictly composed with or played by computer. Two, that dealing with an exploratory field, all attempts at a historical perspective or firm evaluation were out of place. The exhibition and this record, therefore, are essentially a reportage of current trends and developments in programmed and stochastic music.</p>
+
+<p>The first landmark in computer composition is Lejaren A. Hiller's <em>Illiac Suite</em>, 1957. Many experiments have been carried out before, but these were either exploratory without yielding a tangible music, or were mostly concerned with the technical possibilities of imitating familiar sounds.</p>
+
+<p>Ideas which are relevant to composition with computers were frequently employed in the experimental musical composition of the past thirty years. The work of Joseph Schillinger, for instance, through its systematic analysis and programming, antedates the methods employed by computer composers today. The notion of randomness exemplified in the work of John Cage is also of crucial importance. Randomness (decision avoiding, or more concisely, leaving a decision to chance within an exactly specified range of possibilities) is one of the most important tools of the computer composer.</p>
+
+<p>Computer music falls into two categories: computer composition and computer sound. Specific works may employ one or both of these. <em>Illiac Suite</em> is computer composed but performed by a string quartet. Pieces by James Tenney, Gerald Strang and Peter Zinovieff utilise the computer both as a tool to compose with and a sound-making instrument. The experimental pieces produced at Bell Telephone Laboratories make use of existing tunes like <em>A bicycle built for two</em> but played and sung by a computer.</p>
+
+<p>As a souvenir of the Cybernetic Serendipity exhibition this record is a selection of work in progress.</p> 
+
+The cover shows a section of a score for <em>Four Sacred April Rounds</em> 1968 by Peter Zinovieff.</p>
+
+<p class="quote-attrib">- Liner notes</p>
+</div>
+
+### Audio
+
+<iframe src="https://archive.org/embed/cybernetic-serendipity-music&playlist=1&list_height=150" width="100%" height="100" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+
+*<a href="https://archive.org/details/cybernetic-serendipity-music" target="_blank">Download the audio from archive.org</a>*
+
+**Tracklisting:**
+
+- A1. Lejaren Hiller & Leonard Isaacson - Illiac Suite (Experiment 4) (4:00)
+- A2. John Cage - Cartridge Music (Excerpt) (4:00)
+- A3. Iannis Xenakis - Strategie (Excerpt) (5:00)
+- A4. Wilhelm Fucks - Experiment Quatro-Due (5:00)
+- A5. J. K. Randall - Mudgett (Excerpt) (7:30)
+- B1. Gerald Strang - Composition 3 (2:30)
+- B2. Haruki Tsuchiya - Bit Music (Excerpt) (2:30)
+- B3. T. H. O'Beirne - Enneadic Selections (4:30)
+- B4. Peter Zinovieff - January Tensions (10:30)
+- B5. Herbert Brün - Infraudibles (8:30)
+
+Dates of composition:
+
+- A1 - 1957
+- A2 - 1960
+- A3 - 1962
+- A4 - 1963
+- A5 - 1965
+- B1 - 1966
+- B2 - 1968
+- B3 - 1968
+- B4 - 1968
+- B5 - 1967
+
+## Gallery
+
+<section
+	data-featherlight-gallery
+	data-featherlight-filter="a"
+	class="gallery-grid"
+	>
+		<figure>
+			<a href="/assets/articles/cybernetic-serendipity/cybernetic_044.jpg"><img src="/assets/articles/cybernetic-serendipity/cybernetic_044.jpg"></a>
+			<figcaption>Nicolas Schöffer - <em>Cybernetic Light Tower</em></figcaption>
+		</figure>
+		
+		<figure>
+			<a href="/assets/articles/cybernetic-serendipity/cybernetic_054.jpg"><img src="/assets/articles/cybernetic-serendipity/cybernetic_054.jpg"></a>
+			<figcaption>Margaret Masterman & Robin McKinnon Wood - <em>Computerized Japanese Haiku</em></figcaption>
+		</figure>
+	
+		<figure>
+			<a href="/assets/articles/cybernetic-serendipity/cybernetic_091.jpg"><img src="/assets/articles/cybernetic-serendipity/cybernetic_091.jpg"></a>
+			<figcaption>Calcomp Plotting System</figcaption>
+		</figure>
+</section>

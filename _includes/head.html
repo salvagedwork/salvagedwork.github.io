@@ -2,7 +2,10 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<title>
-		{% if page.title == "salvaged.work - A digital archive for salvaged analogue works." %}
+		{% if page.article_slug %}
+			{% assign book_article = site.articles | where: "slug", page.article_slug | first %}
+			{{ book_article.title }} - salvaged.work
+		{% elsif page.title == "salvaged.work - A digital archive for salvaged analogue works." %}
 			{{ page.title }}
 		{% else %}
 			{{ page.title }} - salvaged.work

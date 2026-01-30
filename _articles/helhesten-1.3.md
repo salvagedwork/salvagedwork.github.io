@@ -1,0 +1,37 @@
+---
+layout: article
+title: Helhesten (Year 1, Booklet 3)
+categories: books
+description: is the third issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.
+creators: [asger-jorn]
+tags: [cobra, helhesten]
+member_of: helhesten
+featured-image: /assets/articles/helhesten/helhesten_1.3_cover.jpg
+date: 2019-01-01
+last_modified_at: 2020-12-12
+---
+
+{% include infobox.html
+    image="/assets/articles/helhesten/helhesten_1.3_cover.jpg"
+    title="Helhesten (Year 1, Booklet 3)"
+    editor="Robert Dahlmann Olsen"
+    issue_date="September 17, 1941"
+    cover_design="Jens Søndergaard"
+    followed_by="Helhesten (Year 1, Booklet 4)"
+%}
+
+**{{ page.title }}** {{page.description}}
+
+*Helhesten* was published over nine issues from April 1941 to November 1944 and featured the abstract expressionist art of the Danish avantgarde group of the same name. The issues also included essays on art theory, non-Western artefacts, literature, poetry, film, architecture, and photography, as well as exhibition reviews and profiles of contemporary Danish artists. *{{ page.title }}* was named for the three-legged horse associated with Scandinavian mythology that symbolised death and illness. The *Helhesten* group included artists Asger Jorn, Ejler Bille, Henry Heerup, Egill Jacobsen, Carl-Henning Pedersen, and the architect Robert Dahlmann Olsen, among others.
+
+## Contents
+
+Contents are currently only available in Danish - work is being undertaken to translate the articles.
+
+## Explore the Book
+
+<iframe src="https://archive.org/embed/helhesten-1-3" width="100%" height="700" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+
+*This is a preview only - <a href="https://archive.org/details/helhesten-1-3" target="_blank">view fullsize on archive.org</a>*
+
+{% include collapsible.html %}

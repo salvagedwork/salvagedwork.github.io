@@ -14,6 +14,7 @@ layout: default
 	<nav class="book-toc" aria-label="Table of contents">
 		<div class="book-toc-inner">
 			
+			{% if article.book_reader.languages.size > 1 %}
 			<div class="book-language-switch">
 				{% for lang in article.book_reader.languages %}
 				<button class="book-lang-btn{% if lang.code == article.book_reader.default_language %} active{% endif %}" 
@@ -22,6 +23,7 @@ layout: default
 				</button>
 				{% endfor %}
 			</div>
+			{% endif %}
 			
 			<h3 class="book-toc-title">Contents</h3>
 			

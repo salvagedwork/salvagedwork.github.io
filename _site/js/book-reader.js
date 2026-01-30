@@ -1,74 +1,28 @@
 /**
  * Book Reader Component
  * Handles:
- * - Auto-generating TOC from headers
+ * - TOC generation from content headings
  * - Language switching
- * - Active section highlighting while scrolling
+ * - Mobile collapsible chapters
+ * - Expand/collapse all functionality
+ * - Desktop TOC active state highlighting
  * - Smooth scrolling to sections
  */
 
 (function() {
 	'use strict';
 
-	var activeLanguage = null;
-	var observer = null;
-
+	// Only initialize if book reader exists on page
 	function init() {
 		var bookReader = document.querySelector('.book-reader');
 		if (!bookReader) return;
 
-		// Get default language from the active button
-		var activeBtn = document.querySelector('.book-lang-btn.active');
-		activeLanguage = activeBtn ? activeBtn.dataset.lang : null;
-
-		generateTOC();
 		initLanguageSwitcher();
-		initScrollHighlighting();
+		generateToc();
+		initCollapsibles();
+		initExpandCollapseAll();
+		initTocHighlighting();
 		initSmoothScroll();
-	}
-
-	/**
-	 * Generate TOC from headers in the active language content
-	 */
-	function generateTOC() {
-		var tocList = document.getElementById('book-toc-list');
-		if (!tocList) return;
-
-		var activeContent = document.querySelector('.book-text[data-lang="' + activeLanguage + '"]');
-		if (!activeContent) return;
-
-		// Find all headers (h2, h3, h4)
-		var headers = activeContent.querySelectorAll('h2, h3, h4');
-		
-		// Clear existing TOC
-		tocList.innerHTML = '';
-
-		if (headers.length === 0) {
-			tocList.innerHTML = '<li class="book-toc-empty">No sections found</li>';
-			return;
-		}
-
-		// Generate IDs for headers if they don't have them, and build TOC
-		headers.forEach(function(header, index) {
-			// Create ID if missing
-			if (!header.id) {
-				header.id = 'section-' + activeLanguage + '-' + index;
-			}
-
-			var li = document.createElement('li');
-			li.className = 'book-toc-item book-toc-' + header.tagName.toLowerCase();
-			
-			var link = document.createElement('a');
-			link.href = '#' + header.id;
-			link.textContent = header.textContent;
-			link.className = 'book-toc-link';
-			
-			li.appendChild(link);
-			tocList.appendChild(li);
-		});
-
-		// Reinitialize scroll highlighting with new headers
-		initScrollHighlighting();
 	}
 
 	/**
@@ -77,68 +31,200 @@
 	function initLanguageSwitcher() {
 		var langButtons = document.querySelectorAll('.book-lang-btn');
 		
+		if (langButtons.length === 0) return;
+
 		langButtons.forEach(function(btn) {
 			btn.addEventListener('click', function() {
-				var newLang = this.dataset.lang;
-				if (newLang === activeLanguage) return;
-
+				var lang = this.dataset.lang;
+				
 				// Update active button
 				langButtons.forEach(function(b) {
 					b.classList.remove('active');
 				});
 				this.classList.add('active');
-
-				// Switch content visibility
-				var contents = document.querySelectorAll('.book-text');
-				contents.forEach(function(content) {
-					if (content.dataset.lang === newLang) {
-						content.hidden = false;
+				
+				// Show/hide content
+				var allContent = document.querySelectorAll('.book-text');
+				allContent.forEach(function(content) {
+					if (content.dataset.lang === lang) {
+						content.removeAttribute('hidden');
 					} else {
-						content.hidden = true;
+						content.setAttribute('hidden', '');
 					}
 				});
-
-				activeLanguage = newLang;
-
-				// Regenerate TOC for new language
-				generateTOC();
 				
-				// Keep user's current scroll position - no scrolling
+				// Regenerate TOC for new language
+				generateToc();
 			});
 		});
 	}
 
 	/**
-	 * Highlight current section in TOC while scrolling
+	 * Generate TOC from headings in visible content
 	 */
-	function initScrollHighlighting() {
-		// Disconnect existing observer
-		if (observer) {
-			observer.disconnect();
+	function generateToc() {
+		var tocList = document.getElementById('book-toc-list');
+		if (!tocList) return;
+
+		// Find the visible book-text content
+		var visibleContent = document.querySelector('.book-text:not([hidden])');
+		if (!visibleContent) {
+			tocList.innerHTML = '<li class="book-toc-empty">No content available</li>';
+			return;
 		}
 
-		var activeContent = document.querySelector('.book-text[data-lang="' + activeLanguage + '"]');
-		if (!activeContent) return;
+		// Find all headings (h2, h3, h4)
+		var headings = visibleContent.querySelectorAll('h2, h3, h4');
+		
+		if (headings.length === 0) {
+			tocList.innerHTML = '<li class="book-toc-empty">No sections found</li>';
+			return;
+		}
 
-		var headers = activeContent.querySelectorAll('h2, h3, h4');
-		if (headers.length === 0) return;
+		// Clear existing TOC
+		tocList.innerHTML = '';
 
+		// Generate TOC items
+		headings.forEach(function(heading, index) {
+			// Ensure heading has an ID for linking
+			if (!heading.id) {
+				heading.id = 'section-' + index;
+			}
+
+			var li = document.createElement('li');
+			li.className = 'book-toc-item book-toc-' + heading.tagName.toLowerCase();
+
+			var link = document.createElement('a');
+			link.href = '#' + heading.id;
+			link.className = 'book-toc-link';
+			link.textContent = heading.textContent;
+
+			li.appendChild(link);
+			tocList.appendChild(li);
+		});
+
+		// Re-initialize smooth scroll for new links
+		initSmoothScroll();
+		
+		// Re-initialize TOC highlighting
+		initTocHighlighting();
+	}
+
+	/**
+	 * Initialize chapter collapsibles (mobile behavior)
+	 */
+	function initCollapsibles() {
+		var toggles = document.querySelectorAll('.book-chapter-toggle');
+
+		toggles.forEach(function(toggle) {
+			toggle.addEventListener('click', function() {
+				var expanded = this.getAttribute('aria-expanded') === 'true';
+				var contentId = this.getAttribute('aria-controls');
+				var content = document.getElementById(contentId);
+
+				if (expanded) {
+					collapseChapter(this, content);
+				} else {
+					expandChapter(this, content);
+				}
+			});
+		});
+	}
+
+	/**
+	 * Expand a chapter
+	 */
+	function expandChapter(toggle, content) {
+		toggle.setAttribute('aria-expanded', 'true');
+		toggle.classList.add('active');
+		content.style.maxHeight = content.scrollHeight + 'px';
+		content.classList.add('expanded');
+		
+		// Update max-height after transition to allow for dynamic content
+		setTimeout(function() {
+			if (content.classList.contains('expanded')) {
+				content.style.maxHeight = 'none';
+			}
+		}, 300);
+	}
+
+	/**
+	 * Collapse a chapter
+	 */
+	function collapseChapter(toggle, content) {
+		// Set explicit height first for smooth animation
+		content.style.maxHeight = content.scrollHeight + 'px';
+		content.offsetHeight; // Force reflow
+		
+		toggle.setAttribute('aria-expanded', 'false');
+		toggle.classList.remove('active');
+		content.style.maxHeight = '0';
+		content.classList.remove('expanded');
+	}
+
+	/**
+	 * Initialize expand/collapse all buttons
+	 */
+	function initExpandCollapseAll() {
+		var expandAllBtn = document.getElementById('book-expand-all');
+		var collapseAllBtn = document.getElementById('book-collapse-all');
+
+		if (expandAllBtn) {
+			expandAllBtn.addEventListener('click', function() {
+				var toggles = document.querySelectorAll('.book-chapter-toggle');
+				toggles.forEach(function(toggle) {
+					var contentId = toggle.getAttribute('aria-controls');
+					var content = document.getElementById(contentId);
+					expandChapter(toggle, content);
+				});
+			});
+		}
+
+		if (collapseAllBtn) {
+			collapseAllBtn.addEventListener('click', function() {
+				var toggles = document.querySelectorAll('.book-chapter-toggle');
+				toggles.forEach(function(toggle) {
+					var contentId = toggle.getAttribute('aria-controls');
+					var content = document.getElementById(contentId);
+					collapseChapter(toggle, content);
+				});
+			});
+		}
+	}
+
+	/**
+	 * Highlight current section in TOC while scrolling (desktop)
+	 */
+	function initTocHighlighting() {
+		var tocLinks = document.querySelectorAll('.book-toc a');
+		
+		if (tocLinks.length === 0) return;
+
+		// Find all headings with IDs in the visible content
+		var visibleContent = document.querySelector('.book-text:not([hidden])');
+		if (!visibleContent) return;
+
+		var headings = visibleContent.querySelectorAll('h2[id], h3[id], h4[id]');
+		if (headings.length === 0) return;
+
+		// Use Intersection Observer for performance
 		var observerOptions = {
 			root: null,
-			rootMargin: '-80px 0px -70% 0px',
+			rootMargin: '-20% 0px -60% 0px',
 			threshold: 0
 		};
 
-		observer = new IntersectionObserver(function(entries) {
+		var observer = new IntersectionObserver(function(entries) {
 			entries.forEach(function(entry) {
 				if (entry.isIntersecting) {
-					updateActiveTocLink(entry.target.id);
+					var id = entry.target.getAttribute('id');
+					updateActiveTocLink(id);
 				}
 			});
 		}, observerOptions);
 
-		headers.forEach(function(header) {
-			observer.observe(header);
+		headings.forEach(function(heading) {
+			observer.observe(heading);
 		});
 	}
 
@@ -146,10 +232,11 @@
 	 * Update which TOC link is marked as active
 	 */
 	function updateActiveTocLink(activeId) {
-		var tocLinks = document.querySelectorAll('.book-toc-link');
+		var tocLinks = document.querySelectorAll('.book-toc a');
 		
 		tocLinks.forEach(function(link) {
-			if (link.getAttribute('href') === '#' + activeId) {
+			var href = link.getAttribute('href');
+			if (href === '#' + activeId) {
 				link.classList.add('active');
 			} else {
 				link.classList.remove('active');
@@ -161,27 +248,29 @@
 	 * Smooth scroll when clicking TOC links
 	 */
 	function initSmoothScroll() {
-		document.addEventListener('click', function(e) {
-			var link = e.target.closest('.book-toc-link');
-			if (!link) return;
+		var tocLinks = document.querySelectorAll('.book-toc a');
 
-			var href = link.getAttribute('href');
-			if (!href || !href.startsWith('#')) return;
+		tocLinks.forEach(function(link) {
+			link.addEventListener('click', function(e) {
+				var href = this.getAttribute('href');
+				if (href.startsWith('#')) {
+					e.preventDefault();
+					var target = document.querySelector(href);
+					if (target) {
+						// Account for any fixed headers
+						var offset = 20;
+						var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+						
+						window.scrollTo({
+							top: targetPosition,
+							behavior: 'smooth'
+						});
 
-			e.preventDefault();
-			var target = document.querySelector(href);
-			if (target) {
-				var offset = 100; // Account for sticky elements
-				var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-				
-				window.scrollTo({
-					top: targetPosition,
-					behavior: 'smooth'
-				});
-
-				// Update URL without jumping
-				history.pushState(null, null, href);
-			}
+						// Update URL without jumping
+						history.pushState(null, null, href);
+					}
+				}
+			});
 		});
 	}
 

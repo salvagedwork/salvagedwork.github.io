@@ -1,0 +1,105 @@
+---
+layout: article
+title: Abschiedssymphonie, Op. 177
+creator: joseph-beuys
+description: is a recording released by Edition Block featuring a musical performance by Henning Christiansen, Nam June Paik, and Joseph Beuys.
+categories: recordings
+creators: [joseph-beuys, henning-christiansen, nam-june-paik]
+tags: [fluxus]
+featured-image: /assets/articles/abschiedssymphonie/front.jpg
+date: 2019-01-01
+last_modified_at: 2020-12-10
+---
+
+{% include infobox.html
+    image="/assets/articles/abschiedssymphonie/front.jpg"
+    title="Abschiedssymphonie, Op. 177"
+    artists="Henning Christiansen, Joseph Beuys, Nam June Paik"
+    publisher="Edition Block, EB 118"
+    date="1988"
+    format="Vinyl"
+    duration="45'21&quot;"
+%}
+
+**{{ page.title }}** {{page.description}}
+
+## Performance
+
+{% include thumbnail.html
+    image="/assets/articles/abschiedssymphonie/insideB.jpg"
+    caption="Photos from the performance."
+%}
+
+<div class="quote">
+<p>A concert by Paik and Christiansen was scheduled in Hamburg on November 29, 1985, and visual artist Joseph Beuys was supposed to be a member of the group. The occasion was the opening concert of a large exhibition, "Art of Peace Biennale/The Art School of Hamburg" curated by René Block... However, as Beuys had become too ill to travel, he phoned in his participation - a novelty in those days - and is heard speaking by telephone from time to time.</p>
+<p class="quote-attrib">- <a href="https://www.otherminds.org/wp-content/uploads/2017/09/fluxus_program_lorez.pdf" target="_blank">Something Else: A Fluxus Semicentenary</a></p>
+</div>
+
+The performance consisted of Henning Christiansen on a *Klaviervogel* or piano bird, Nam June Paik on horsehead fiddle (*Pferdegeige-Reitergeige*) and piano, a white canary in a cage, and actions such as arm flapping and singing. Gallery owner René Block, whose publishing arm Edition Block released the LP, collaborated with Christiansen to augment the recording with sounds of water, moving stones from beaches on the Baltic Sea, hammering, and bleating sheep. In the LP liner notes, Christiansen describes the event as such:
+
+<div class="quote">
+<p>When Beuys was asked by René Block if he wanted to participate in the opening concert with Paik and Christiansen, he immediately agreed. On 29.11.1985, it was suddenly very cold and certainly not wise for a heart condition, to go outside, but he immediately had a solution: "I'll join over the telephone." Block should only unscrew the pedals from Beuys' piano and place it on top of the piano cover, maybe as its legs, then place a board with a piece of chalk next to it, and place an oxygen bottle under the piano, to be used when he asks for it over the phone. He would then call to signal the beginning of the concert.</p>
+<p>The opening concert of the Peace Biennial ran under the motto "Peace must be active." The room was full of phonetic images: Paik plays the horse head fiddle and Christiansen plays a piano bird. On his piano is a white canary female, who is constantly hopping and peeping... Christiansen flaps between the chords with his arm wings and sings a few words on the way: "Love is here to stay." Paik goes to the TV and now shows the Tokiovideo, a concert with him and Beuys, where Beuys records the 'ö-ö' theme and makes himself understood in Japan. On tape in the hall runs the sound of the sea and the SYMPHONY NATURA and the wolves sing together with Beuys 'ö-ö ssang-ssang' (Korean = together).</p>
+<p>Paik attacks his piano with love and plays Chopin. Christiansen accompanies him flying on his piano, while Paik's microphone falls out and Chopin flutters around in the great hall. After the applause, only a ringing and the female canary singing to the sound of the sea is to hear - peace.</p>
+<p>During the concert, Beuys answered by phone. The oxygen is released, and he has said the beautiful phrase, "BEI EINEM 'WESENSGEMÄSSEN' ..., etc., and Felisch has chalked this down on the blackboard, with the triangle and the tetrad - and after repeating the sentence by Beuys and his question "OK then?" and after Felisch's "yes," Beuys has said goodbye to all of us.</p>
+<p class="quote-attrib">- Henning Christiansen, Abschiedssymphonie liner notes</p>
+</div>
+
+*Abschiedssymphonie* was Beuys' last performance before dying of heart failure on January 23, 1986 in Düsseldorf. For this reason, Block named the performance after Haydn's Farewell Symphony (Symphony No.
+45 in F-sharp Minor) "*Abschiedssymphonie*" in German.
+
+## Recording
+
+The title of the LP cover is a statement from the recording made by Beuys:
+
+**BEI EINEM WESENSGEMÄSSEN BESCHREIBEN DES GESCHEHENS ZUR BEFREIUNG DER VON DER FÄHIGKEIT GETRAGENEN ARBEIT IS ES DOCH LOGISCH, DASS DAS TRAGENDE ZUERST BEFREIT WERDEN MUSS.**
+
+Greg Lutz<span class="footnote"><a href="http://surround.noquam.com/nature-and-culture/" target="_blank">http://surround.noquam.com/nature-and-culture/</a>. Accessed 2020-03-22.</span> translates this sentence into English as *If you want to free the work resulting from ability, it's logical to first free the ability.*
+
+### Audio
+
+<iframe src="https://archive.org/embed/abschiedssymphonie177&playlist=1&list_height=150" width="100%" height="100" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+
+### Liner Notes
+
+{% include articles/abschiedssymphonie/linernotes.html %}
+
+{% include collapsible.html %}
+
+## Gallery
+
+<section
+	data-featherlight-gallery
+	data-featherlight-filter="a"
+	class="gallery-grid"
+	>
+		<figure>
+			<a href="/assets/articles/abschiedssymphonie/front.jpg"><img src="/assets/articles/abschiedssymphonie/front.jpg"></a>
+			<figcaption>LP front cover</figcaption>
+		</figure>
+	
+		<figure>
+			<a href="/assets/articles/abschiedssymphonie/back.jpg"><img src="/assets/articles/abschiedssymphonie/back.jpg"></a>
+			<figcaption>LP back cover</figcaption>
+		</figure>
+		
+		<figure>
+			<a href="/assets/articles/abschiedssymphonie/insideA.jpg"><img src="/assets/articles/abschiedssymphonie/insideA.jpg"></a>
+			<figcaption>LP inside A</figcaption>
+		</figure>
+		
+		<figure>
+			<a href="/assets/articles/abschiedssymphonie/insideB.jpg"><img src="/assets/articles/abschiedssymphonie/insideB.jpg"></a>
+			<figcaption>LP inside B</figcaption>
+		</figure>
+		
+		<figure>
+			<a href="/assets/articles/abschiedssymphonie/sideA.jpg"><img src="/assets/articles/abschiedssymphonie/sideA.jpg"></a>
+			<figcaption>LP vinyl side A</figcaption>
+		</figure>
+		
+		<figure>
+			<a href="/assets/articles/abschiedssymphonie/sideB.jpg"><img src="/assets/articles/abschiedssymphonie/sideB.jpg"></a>
+			<figcaption>LP vinyl side B</figcaption>
+		</figure>
+</section>
