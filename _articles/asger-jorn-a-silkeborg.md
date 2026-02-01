@@ -5,7 +5,7 @@ categories: books
 description: Le musée d'un peintre (Asger Jorn in Silkeborg, a painter's museum) is a partial catalogue of works held by the Silkeborg Museum of Art with a focus on the art of Danish painter Asger Jorn and the relationship that the museum's other works have with Jorn's art.
 creators: [asger-jorn]
 tags: []
-featured-image: /assets/articles/asger-jorn-a-silkeborg/cover.jpg
+featured-image: /assets/articles/asger-jorn-a-silkeborg/front.jpg
 date: 2019-01-01
 last_modified_at: 2021-03-10
 
@@ -18,7 +18,7 @@ book_reader:
 ---
 
 {% include infobox.html 
-    image="/assets/articles/asger-jorn-a-silkeborg/cover.jpg"
+    image="/assets/articles/asger-jorn-a-silkeborg/front.jpg"
     title="Asger Jorn à Silkeborg"
     authors="Asger Jorn, Troels Andersen, Jean Dubuffet & Erik Nyholm"
     publisher="Silkeborg Kunstmuseum"
@@ -41,12 +41,12 @@ The book contains the following sections:
 
 ### Essays
 
-	{% include book-link.html 
+{% include book-link.html 
        url="/books/asger-jorn-a-silkeborg/"
        title="Asger Jorn à Silkeborg"
-       description="Read the complete text in French and English."
-       image="/assets/articles/asger-jorn-a-silkeborg/cover.jpg"
-   %}
+       description="Read the book in English and French."
+       image="/assets/articles/asger-jorn-a-silkeborg/front.jpg"
+%}
 
 ### Explore the Book
 

@@ -66,7 +66,7 @@ Part Three
 {% include book-link.html 
        url="/books/atkins-jorn-crucial-years/"
        title="Asger Jorn - The Crucial Years 1954-1964"
-       description="Read part one in English."
+       description="Read the book in English."
        image="/assets/articles/atkins-jorn-crucial-years/front.jpg"
 %}
 

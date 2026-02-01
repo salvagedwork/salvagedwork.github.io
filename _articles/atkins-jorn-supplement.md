@@ -59,7 +59,7 @@ Part Three
 {% include book-link.html 
        url="/books/atkins-jorn-supplement/"
        title="Asger Jorn - Supplement - Paintings 1930-1973"
-       description="Read part one in English."
+       description="Read the book in English."
        image="/assets/articles/atkins-jorn-supplement/front.jpg"
 %}
 

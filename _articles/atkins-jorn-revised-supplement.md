@@ -57,7 +57,7 @@ Part Three
 {% include book-link.html 
        url="/books/atkins-jorn-revised-supplement/"
        title="Asger Jorn - Revised Supplement"
-       description="Read part one in English."
+       description="Read the book in English."
        image="/assets/articles/atkins-jorn-revised-supplement/front.jpg"
 %}
 

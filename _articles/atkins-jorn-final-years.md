@@ -9,6 +9,12 @@ member_of: jorn-catalogue-raisonne
 featured-image: /assets/articles/atkins-jorn-final-years/front.jpg
 date: 2021-08-05
 last_modified_at: 2022-01-31
+
+book_reader:
+  enabled: true
+  languages:
+    - {code: en, label: English}
+  default_language: en
 ---
 
 {% include infobox.html
@@ -46,6 +52,13 @@ Part Two
 
 - Appendix to the catalogue of paintings from 1934-73
 - Bibliography
+
+{% include book-link.html 
+       url="/books/atkins-jorn-final-years/"
+       title="Asger Jorn - The Final Years 1965-1973"
+       description="Read the book in English."
+       image="/assets/articles/atkins-jorn-final-years/front.jpg"
+%}
 
 ## Explore the Book
 

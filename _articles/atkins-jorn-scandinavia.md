@@ -9,6 +9,12 @@ member_of: jorn-catalogue-raisonne
 featured-image: /assets/articles/atkins-jorn-scandinavia/front.jpg
 date: 2021-08-05
 last_modified_at: 2022-01-31
+
+book_reader:
+  enabled: true
+  languages:
+    - {code: en, label: English}
+  default_language: en
 ---
 
 {% include infobox.html
@@ -57,6 +63,13 @@ Part Two
 
 - Catalogue of paintings from 1930 to 1953/4
 - Appendix, Bibliography, Credits, Index
+
+{% include book-link.html 
+       url="/books/atkins-jorn-scandinavia/"
+       title="Jorn in Scandinavia 1930-1953"
+       description="Read the book in English."
+       image="/assets/articles/atkins-jorn-scandinavia/front.jpg"
+%}
 
 ## Explore the Book
 

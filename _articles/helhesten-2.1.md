@@ -30,4 +30,8 @@ Contents are currently only available in Danish - work is being undertaken to tr
 
 ## Explore the Book
 
+<iframe src="https://archive.org/embed/helhesten-2-1" width="100%" height="700" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+
+*This is a preview only - <a href="https://archive.org/details/helhesten-2-1" target="_blank">view fullsize on archive.org</a>*
+
 {% include collapsible.html %}

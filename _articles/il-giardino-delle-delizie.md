@@ -43,7 +43,6 @@ Vostell's handwritten notes for each act is difficult to interpret, but an attem
 {% include thumbnail.html
     image="/assets/articles/il-giardino-delle-delizie/score_02.jpg"
     caption="Visual score for the setting of Act 1."
-    fullwidth=true
 %}
 
 Act 1 *(Juana la Loca, or Crazy Joan)* describes a scene with 30 minutes of constant ambience. Interruptions occur by the six sopranos moving from their location in the ambience and moving the _______ of the nine iron poles in the scene, as well as triggering sounds consisting of cassette recorders with endless tapes.
@@ -59,7 +58,6 @@ Vostell has also included the following notes:
 {% include thumbnail.html
     image="/assets/articles/il-giardino-delle-delizie/score_05.jpg"
     caption="Visual score for the setting of Act 2."
-    fullwidth=true
 %}
 
 Act 2 *(Endogene Depression) (Ensalada)* consists of:
@@ -75,7 +73,6 @@ Act 2 *(Endogene Depression) (Ensalada)* consists of:
 {% include thumbnail.html
     image="/assets/articles/il-giardino-delle-delizie/score_07.jpg"
     caption="Visual score for the setting of Act 3."
-    fullwidth=true
 %}
 
 Act 3 *(Die Winde)* consists of:
@@ -91,7 +88,6 @@ Act 3 *(Die Winde)* consists of:
 {% include thumbnail.html
     image="/assets/articles/il-giardino-delle-delizie/score_08.jpg"
     caption="Visual score for the setting of Act 4."
-    fullwidth=true
 %}
 
 Act 4 *(El rocio)* consists of:
