@@ -8,6 +8,13 @@ tags: []
 featured-image: /assets/articles/signes-graves-eure-calvados/front.jpg
 date: 2019-01-01
 last_modified_at: 2021-03-10
+
+book_reader:
+  enabled: true
+  languages:
+    - {code: fr, label: Français}
+    - {code: en, label: English}
+  default_language: fr
 ---
 
 {% include infobox.html
@@ -47,41 +54,12 @@ Steven Harris links Jorn's fascination with engravings found on churches to Scan
 
 ## Contents
 
-{% include articles/signes-graves-eure-calvados/introduction_jorn.html %}
-
-{% include articles/signes-graves-eure-calvados/essay_p_v_glob.html %}
-
-{% include articles/signes-graves-eure-calvados/essay_gjessing.html %}
-
-#### Asger Jorn: Sauvagerie, barbarie et civilisation
-
-{% include articles/signes-graves-eure-calvados/05a_les_nordiques.html %}
-
-{% include articles/signes-graves-eure-calvados/05b_le_vandalisme_eglisophage.html %}
-
-{% include articles/signes-graves-eure-calvados/05c_les_peaux_dours.html %}
-
-{% include articles/signes-graves-eure-calvados/05d_la_pierre_de_touche.html %}
-
-{% include articles/signes-graves-eure-calvados/05e_pierre_a_aiguiser.html %}
-
-{% include articles/signes-graves-eure-calvados/05f_le_trois_et_son_image.html %}
-
-{% include articles/signes-graves-eure-calvados/05g_prudence_et_sagresse.html %}
-
-{% include articles/signes-graves-eure-calvados/05h_historique_et_probleme.html %}
-
-{% include articles/signes-graves-eure-calvados/05i_schemas_triolectiques.html %}
-
-{% include articles/signes-graves-eure-calvados/05j_barbarie_nordique.html %}
-
-{% include articles/signes-graves-eure-calvados/05k_vraie_et_fausse.html %}
-
-{% include articles/signes-graves-eure-calvados/05l_art_et_coutumes.html %}
-
-{% include articles/signes-graves-eure-calvados/05m_les_graffitis_normands.html %}
-
-{% include articles/signes-graves-eure-calvados/05n_production_consommation_administration.html %}
+{% include book-link.html 
+   url="/books/signes-graves-eure-calvados/"
+   title="Signes gravés sur les églises de l'Eure et du Calvados"
+   description="Read the complete text in French and English."
+   image="/assets/articles/signes-graves-eure-calvados/front.jpg"
+%}
 
 
 ### Explore the Book

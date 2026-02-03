@@ -8,6 +8,13 @@ tags: []
 featured-image: /assets/articles/skanes-stenskulptur/front.jpg
 date: 2019-01-01
 last_modified_at: 2021-03-10
+
+book_reader:
+  enabled: true
+  languages:
+    - {code: se, label: Swedish}
+    - {code: en, label: English}
+  default_language: se
 ---
 
 {% include infobox.html
@@ -54,25 +61,12 @@ The book contains the following sections:
 - Poem: Donkey and Angel *by Jens August Schade*
 - Marginal Notes *by Asger Jorn*
 
-### Texts
-
-{% include articles/skanes-stenskulptur/foreward_glob.html %}
-
-{% include articles/skanes-stenskulptur/skane_landskapet_cinthio.html %}
-
-{% include articles/skanes-stenskulptur/skane_stenmastarna_cinthio.html %}
-
-{% include articles/skanes-stenskulptur/lunds_domkyrka_cinthio.html %}
-
-{% include articles/skanes-stenskulptur/bildvarlden_cinthio.html %}
-
-{% include articles/skanes-stenskulptur/bildvarlden_betydelsefunktionen_cinthio.html %}
-
-{% include articles/skanes-stenskulptur/poem_schade.html %}
-
-{% include articles/skanes-stenskulptur/randanmaerkninger_jorn.html %}
-
-{% include collapsible.html %}
+{% include book-link.html 
+   url="/books/skanes-stenskulptur/"
+   title="Skånes stenskulptur under 1100-talet"
+   description="Read the complete text in Swedish and English."
+   image="/assets/articles/skanes-stenskulptur/front.jpg"
+%}
 
 ### Explore the Book
 
