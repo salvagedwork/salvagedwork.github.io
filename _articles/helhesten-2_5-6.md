@@ -1,10 +1,10 @@
 ---
 layout: article
 title: Helhesten (Year 2, Booklets 5 & 6)
-categories: books
+categories: journals
 description: is the final issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published in November 1944, it concluded the journal's remarkable three-and-a-half-year run during the German occupation of Denmark.
 creators: [asger-jorn]
-tags: [cobra, helhesten]
+subjects: [cobra, helhesten]
 member_of: helhesten
 featured-image: /assets/articles/helhesten/helhesten_2.56_cover.jpg
 date: 2019-01-01

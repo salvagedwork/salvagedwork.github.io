@@ -4,7 +4,7 @@ title: Signes gravés sur les églises de l'Eure et du Calvados
 categories: books
 description: (Signs Engraved on the Churches of Eure and Calvados) is a book written in French and directed by Asger Jorn, with essay contributions from various antiquities experts and photography by Gérard Franceschi.
 creators: [asger-jorn]
-tags: []
+subjects: [comparative-vandalism, medieval-art, church-graffiti]
 featured-image: /assets/articles/signes-graves-eure-calvados/front.jpg
 date: 2019-01-01
 last_modified_at: 2021-03-10

@@ -4,7 +4,7 @@ title: 21 Lystegninger
 categories: books
 description: (21 Light Drawings) is the title of an exhibition catalogue released by the Aarhus Art Association of 1847 in conjunction with an exhibition of Asger Jorn's light drawings at the Aarhus Festuge 1971.
 creators: [asger-jorn]
-tags: []
+subjects: []
 featured-image: /assets/articles/21-light-drawings-jorn/front.jpg
 date: 2020-12-13
 last_modified_at: 2020-12-13

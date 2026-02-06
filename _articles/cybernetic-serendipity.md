@@ -4,7 +4,7 @@ title: Cybernetic Serendipity - The Computer and the Arts
 categories: books
 description: is the title of a special 1968 issue of the British magazine 'Studio International.' The issue was first published to coincide with an exhibition entitled 'Cybernetic Serendipity,' dealing broadly with the demonstration of how humans can use the computer and new technology to extend creativity and inventiveness.
 creators: [jasia-reichardt]
-tags: [cybernetics]
+subjects: [cybernetics]
 featured-image: /assets/articles/cybernetic-serendipity/front.jpg
 date: 2021-06-11
 last_modified_at: 2021-08-05

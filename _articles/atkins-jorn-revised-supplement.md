@@ -4,7 +4,7 @@ title: Asger Jorn - Revised Supplement
 categories: books
 description: is the fifth and final book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
 creators: [asger-jorn]
-tags: []
+subjects: [painting]
 member_of: jorn-catalogue-raisonne
 featured-image: /assets/articles/atkins-jorn-revised-supplement/front.jpg
 date: 2021-08-05

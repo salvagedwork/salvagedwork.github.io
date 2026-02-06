@@ -393,7 +393,7 @@ a.current {
 
 .meta-item {
 	&::after {
-		content: " · ";
+		content: " Â· ";
 		color: $color-border;
 	}
 	
@@ -419,6 +419,35 @@ a.current {
 .article-container {
 	display: flex;
 	flex-direction: column;
+}
+
+.article-meta {
+	font-size: $font-size-small;
+	color: $color-muted;
+	margin: 0 0 0.8rem 0;
+	
+	a {
+		color: $color-muted;
+		text-decoration: none;
+		
+		&:hover {
+			color: $color-text;
+			text-decoration: underline;
+		}
+	}
+}
+
+.article-collection {
+	display: block;
+}
+
+.article-subjects {
+	display: block;
+	font-style: italic;
+	
+	a {
+		font-style: italic;
+	}
 }
 
 #featured-paragraph {

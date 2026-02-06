@@ -1,10 +1,10 @@
 ---
 layout: article
 title: Helhesten (Year 2, Booklets 2 & 3)
-categories: books
+categories: journals
 description: is a double issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published in March 1943, it appeared shortly after a fund-raising exhibition held to address the journal's mounting debts.
 creators: [asger-jorn]
-tags: [cobra, helhesten]
+subjects: [cobra, helhesten]
 member_of: helhesten
 featured-image: /assets/articles/helhesten/helhesten_2.23_cover.jpg
 date: 2019-01-01

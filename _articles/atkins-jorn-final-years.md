@@ -4,7 +4,7 @@ title: Asger Jorn - The Final Years 1965-1973
 categories: books
 description: is the third book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
 creators: [asger-jorn]
-tags: []
+subjects: [painting, sculpture, collage]
 member_of: jorn-catalogue-raisonne
 featured-image: /assets/articles/atkins-jorn-final-years/front.jpg
 date: 2021-08-05

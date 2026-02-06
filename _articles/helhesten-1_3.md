@@ -1,10 +1,10 @@
 ---
 layout: article
 title: Helhesten (Year 1, Booklet 3)
-categories: books
+categories: journals
 description: is the third issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This issue features key theoretical texts including Egill Jacobsen's introduction to Carl-Henning Pedersen's work, Niels Lergaard's essay on myth, and Egon Mathiesen's "What Modern Art Is."
 creators: [asger-jorn]
-tags: [cobra, helhesten]
+subjects: [cobra, helhesten]
 member_of: helhesten
 featured-image: /assets/articles/helhesten/helhesten_1.3_cover.jpg
 date: 2019-01-01

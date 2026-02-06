@@ -4,7 +4,7 @@ title: Klankteksten - Konkrete Poëzie - Visuele Teksten
 categories: books
 description: (Sound Texts - Concrete Poetry - Visual Texts) is the title of an exhibition catalogue released in conjunction with the exhibition 'Klankteksten?' at the Stedelijk Museum in Amsterdam, Netherlands in November 1970. The exhibition provided an overview of the concrete poetry movement.
 creators: []
-tags: [klankteksten]
+subjects: [klankteksten]
 featured-image: /assets/articles/klankteksten/front.jpg
 date: 2021-03-09
 last_modified_at: 2021-03-09

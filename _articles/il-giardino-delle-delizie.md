@@ -5,7 +5,7 @@ creator: wolf-vostell
 description: (The Garden of Delights) is a recording released by Multhipla Records featuring a musical Fluxus performance by Wolf Vostell.
 categories: recordings
 creators: [wolf-vostell]
-tags: [fluxus]
+subjects: [fluxus]
 featured-image: /assets/articles/il-giardino-delle-delizie/front.jpg
 date: 2019-01-01
 last_modified_at: 2020-12-10

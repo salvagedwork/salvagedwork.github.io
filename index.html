@@ -113,39 +113,6 @@ RECENT ARTICLES
 
 {% comment %}
 ================================================================================
-BROWSE BY COLLECTION
-================================================================================
-{% endcomment %}
-
-{% if site.collections.size > 0 %}
-{% assign defined_collections = site.collections | where_exp: "c", "c.collection_id" %}
-{% if defined_collections.size > 0 %}
-<h2>Browse by collection</h2>
-
-<p>Some articles are organized into thematic collections:</p>
-
-<div class="collection-browse-list">
-{% for collection in defined_collections %}
-	{% assign collection_articles = site.articles | where: "member_of", collection.collection_id %}
-	<div class="collection-browse-item">
-		<div class="collection-browse-title">
-			<a href="{{ collection.url }}">{{ collection.title }}</a>
-		</div>
-		<div class="collection-browse-description">
-			<strong><a href="{{ collection.url }}">{{ collection.title }}</a></strong> {{ collection.description }}
-		</div>
-		<div class="collection-browse-meta">
-			{{ collection_articles.size }} article{% if collection_articles.size != 1 %}s{% endif %} &middot; <a href="{{ collection.url }}">View collection &rarr;</a>
-		</div>
-	</div>
-{% endfor %}
-</div>
-{% endif %}
-{% endif %}
-
-
-{% comment %}
-================================================================================
 BROWSE BY CATEGORY
 ================================================================================
 {% endcomment %}
@@ -231,6 +198,39 @@ BROWSE BY TAG
 
 {% comment %}
 ================================================================================
+BROWSE BY COLLECTION
+================================================================================
+{% endcomment %}
+
+{% if site.collections.size > 0 %}
+{% assign defined_collections = site.collections | where_exp: "c", "c.collection_id" %}
+{% if defined_collections.size > 0 %}
+<h2>Browse by collection</h2>
+
+<p>Some articles are organized into thematic collections:</p>
+
+<div class="collection-browse-list">
+{% for collection in defined_collections %}
+	{% assign collection_articles = site.articles | where: "member_of", collection.collection_id %}
+	<div class="collection-browse-item">
+		<div class="collection-browse-title">
+			<a href="{{ collection.url }}">{{ collection.title }}</a>
+		</div>
+		<div class="collection-browse-description">
+			<strong><a href="{{ collection.url }}">{{ collection.title }}</a></strong> {{ collection.description }}
+		</div>
+		<div class="collection-browse-meta">
+			{{ collection_articles.size }} article{% if collection_articles.size != 1 %}s{% endif %} &middot; <a href="{{ collection.url }}">View collection &rarr;</a>
+		</div>
+	</div>
+{% endfor %}
+</div>
+{% endif %}
+{% endif %}
+
+
+{% comment %}
+================================================================================
 CREATORS
 ================================================================================
 {% endcomment %}
@@ -246,36 +246,6 @@ CREATORS
 </div>
 
 <p><a href="/creators/">View all creators &rarr;</a></p>
-
-
-{% comment %}
-================================================================================
-RANDOM ARTICLE
-================================================================================
-{% endcomment %}
-
-<h2>Feeling adventurous?</h2>
-
-<p><a href="#" id="random-article-link">Jump to a random article &rarr;</a></p>
-
-<script>
-(function() {
-	var defined_articles = [
-		{% for article in site.articles %}
-		"{{ article.url }}"{% unless forloop.last %},{% endunless %}
-		{% endfor %}
-	];
-	
-	var randomLink = document.getElementById('random-article-link');
-	if (randomLink && defined_articles.length > 0) {
-		randomLink.addEventListener('click', function(e) {
-			e.preventDefault();
-			var randomIndex = Math.floor(Math.random() * defined_articles.length);
-			window.location.href = defined_articles[randomIndex];
-		});
-	}
-})();
-</script>
 
 
 {% comment %}

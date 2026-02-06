@@ -1,10 +1,10 @@
 ---
 layout: article
 title: Helhesten (Year 1, Booklets 5 & 6)
-categories: books
+categories: journals
 description: is the final double issue of the first year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This combined issue completed an extraordinary first year that saw six issues published during the German occupation of Denmark.
 creators: [asger-jorn]
-tags: [cobra, helhesten]
+subjects: [cobra, helhesten]
 member_of: helhesten
 featured-image: /assets/articles/helhesten/helhesten_1.56_cover.jpg
 date: 2019-01-01

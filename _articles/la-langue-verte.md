@@ -4,7 +4,6 @@ title: La langue verte et la cuite
 categories: books
 description: <em>(Slang and Drunkenness)</em> is a book written in French by Asger Jorn and Noël Arnaud, and edited and published by Jean Jacques Pauvert in 1968.
 creators: [asger-jorn]
-tags: []
 subjects: [structuralism, art-theory]
 featured-image: /assets/articles/la-langue-verte/front.jpg
 date: 2019-01-01

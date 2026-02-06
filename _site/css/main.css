@@ -123,7 +123,7 @@ a.current { color: red; }
 .article-tile-meta a { color: #666; text-decoration: none; }
 .article-tile-meta a:hover { color: #1a1a1a; text-decoration: underline; }
 
-.meta-item::after { content: " · "; color: #ccc; }
+.meta-item::after { content: " Â· "; color: #ccc; }
 .meta-item:last-child::after { content: ""; }
 
 .meta-label { color: #888; }
@@ -131,6 +131,15 @@ a.current { color: red; }
 .article-tile-link { margin: 0.5rem 0 0 0; font-size: 0.9rem; }
 
 .article-container { display: flex; flex-direction: column; }
+
+.article-meta { font-size: 0.85rem; color: #666; margin: 0 0 0.8rem 0; }
+.article-meta a { color: #666; text-decoration: none; }
+.article-meta a:hover { color: #1a1a1a; text-decoration: underline; }
+
+.article-collection { display: block; }
+
+.article-subjects { display: block; font-style: italic; }
+.article-subjects a { font-style: italic; }
 
 #featured-paragraph { margin-bottom: 0; }
 

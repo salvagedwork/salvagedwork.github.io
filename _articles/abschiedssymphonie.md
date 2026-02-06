@@ -5,7 +5,7 @@ creator: joseph-beuys
 description: is a recording released by Edition Block featuring a musical performance by Henning Christiansen, Nam June Paik, and Joseph Beuys.
 categories: recordings
 creators: [joseph-beuys, henning-christiansen, nam-june-paik]
-tags: [fluxus]
+subjects: [fluxus]
 featured-image: /assets/articles/abschiedssymphonie/front.jpg
 date: 2019-01-01
 last_modified_at: 2020-12-10

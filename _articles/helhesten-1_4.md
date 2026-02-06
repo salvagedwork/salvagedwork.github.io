@@ -1,10 +1,10 @@
 ---
 layout: article
 title: Helhesten (Year 1, Booklet 4)
-categories: books
+categories: journals
 description: is the fourth issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This issue features Egill Jacobsen's important profile of Asger Jorn, a poem about the hell-horse by national poet Steen Steensen Blicher, and Jens Sigsgaard's influential essay on children's drawings.
 creators: [asger-jorn]
-tags: [cobra, helhesten]
+subjects: [cobra, helhesten]
 member_of: helhesten
 featured-image: /assets/articles/helhesten/helhesten_1.4_cover.jpg
 date: 2019-01-01

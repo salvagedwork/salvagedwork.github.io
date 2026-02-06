@@ -4,7 +4,7 @@
 
       "title"    	: "Abschiedssymphonie, Op. 177",
       "url"      	: "/article/abschiedssymphonie/",
-	  "tags"     	: "fluxus",
+	  "subjects"    : "fluxus",
       "category" 	: "",
 	  "description" : "is a recording released by Edition Block featuring a musical performance by Henning Christiansen, Nam June Paik, and Joseph Beuys.",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -15,7 +15,7 @@
 
       "title"    	: "Asger Jorn à Silkeborg",
       "url"      	: "/article/asger-jorn-a-silkeborg/",
-	  "tags"     	: "",
+	  "subjects"    : "exhibition-catalogue",
       "category" 	: "",
 	  "description" : "Le musée d&#39;un peintre (Asger Jorn in Silkeborg, a painter&#39;s museum) is a partial catalogue of works held by the Silkeborg Museum of Art with a focus on the art of Danish painter Asger Jorn and the relationship that the museum&#39;s other works have with Jorn&#39;s art.",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -26,7 +26,7 @@
 
       "title"    	: "Helhesten (Year 1, Booklet 1)",
       "url"      	: "/article/helhesten-1_1/",
-	  "tags"     	: "cobra, helhesten",
+	  "subjects"    : "cobra, helhesten",
       "category" 	: "",
 	  "description" : "is the inaugural issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published during the German occupation of Denmark, it launched the most significant avant-garde art journal to emerge from occupied Europe during World War II.",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -37,7 +37,7 @@
 
       "title"    	: "Helhesten (Year 1, Booklet 2)",
       "url"      	: "/article/helhesten-1_2/",
-	  "tags"     	: "cobra, helhesten",
+	  "subjects"    : "cobra, helhesten",
       "category" 	: "",
 	  "description" : "is the second issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This landmark issue contains Asger Jorn&#39;s influential essay &quot;Intimate Banalities&quot; and was published to coincide with the groundbreaking exhibition &quot;13 Artists in a Tent.&quot;",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -48,7 +48,7 @@
 
       "title"    	: "Helhesten (Year 1, Booklet 3)",
       "url"      	: "/article/helhesten-1_3/",
-	  "tags"     	: "cobra, helhesten",
+	  "subjects"    : "cobra, helhesten",
       "category" 	: "",
 	  "description" : "is the third issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This issue features key theoretical texts including Egill Jacobsen&#39;s introduction to Carl-Henning Pedersen&#39;s work, Niels Lergaard&#39;s essay on myth, and Egon Mathiesen&#39;s &quot;What Modern Art Is.&quot;",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -59,7 +59,7 @@
 
       "title"    	: "Helhesten (Year 1, Booklet 4)",
       "url"      	: "/article/helhesten-1_4/",
-	  "tags"     	: "cobra, helhesten",
+	  "subjects"    : "cobra, helhesten",
       "category" 	: "",
 	  "description" : "is the fourth issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This issue features Egill Jacobsen&#39;s important profile of Asger Jorn, a poem about the hell-horse by national poet Steen Steensen Blicher, and Jens Sigsgaard&#39;s influential essay on children&#39;s drawings.",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -70,7 +70,7 @@
 
       "title"    	: "Helhesten (Year 1, Booklets 5 &amp; 6)",
       "url"      	: "/article/helhesten-1_5-6/",
-	  "tags"     	: "cobra, helhesten",
+	  "subjects"    : "cobra, helhesten",
       "category" 	: "",
 	  "description" : "is the final double issue of the first year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This combined issue completed an extraordinary first year that saw six issues published during the German occupation of Denmark.",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -81,7 +81,7 @@
 
       "title"    	: "Helhesten (Year 2, Booklet 1)",
       "url"      	: "/article/helhesten-2_1/",
-	  "tags"     	: "cobra, helhesten",
+	  "subjects"    : "cobra, helhesten",
       "category" 	: "",
 	  "description" : "is the first issue of the second year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published nearly a year after the previous issue, it marked the journal&#39;s survival despite growing financial difficulties during the German occupation.",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -92,7 +92,7 @@
 
       "title"    	: "Helhesten (Year 2, Booklets 2 &amp; 3)",
       "url"      	: "/article/helhesten-2_2-3/",
-	  "tags"     	: "cobra, helhesten",
+	  "subjects"    : "cobra, helhesten",
       "category" 	: "",
 	  "description" : "is a double issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published in March 1943, it appeared shortly after a fund-raising exhibition held to address the journal&#39;s mounting debts.",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -103,7 +103,7 @@
 
       "title"    	: "Helhesten (Year 2, Booklet 4)",
       "url"      	: "/article/helhesten-2_4/",
-	  "tags"     	: "cobra, helhesten",
+	  "subjects"    : "cobra, helhesten",
       "category" 	: "",
 	  "description" : "is the fourth issue of the second year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published on Christmas Eve 1943, this issue features Dan Sterup-Hansen&#39;s profile of Henry Heerup, Jorn&#39;s theoretical article on stylistics, and Carl-Henning Pedersen&#39;s influential essay on fantasy art.",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -114,7 +114,7 @@
 
       "title"    	: "Helhesten (Year 2, Booklets 5 &amp; 6)",
       "url"      	: "/article/helhesten-2_5-6/",
-	  "tags"     	: "cobra, helhesten",
+	  "subjects"    : "cobra, helhesten",
       "category" 	: "",
 	  "description" : "is the final issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published in November 1944, it concluded the journal&#39;s remarkable three-and-a-half-year run during the German occupation of Denmark.",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -125,7 +125,7 @@
 
       "title"    	: "Il giardino delle delizie",
       "url"      	: "/article/il-giardino-delle-delizie/",
-	  "tags"     	: "fluxus",
+	  "subjects"    : "fluxus",
       "category" 	: "",
 	  "description" : "(The Garden of Delights) is a recording released by Multhipla Records featuring a musical Fluxus performance by Wolf Vostell.",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -136,7 +136,7 @@
 
       "title"    	: "La langue verte et la cuite",
       "url"      	: "/article/la-langue-verte/",
-	  "tags"     	: "",
+	  "subjects"    : "structuralism, art-theory",
       "category" 	: "",
 	  "description" : "&lt;em&gt;(Slang and Drunkenness)&lt;/em&gt; is a book written in French by Asger Jorn and Noël Arnaud, and edited and published by Jean Jacques Pauvert in 1968.",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -147,7 +147,7 @@
 
       "title"    	: "Signes gravés sur les églises de l&#39;Eure et du Calvados",
       "url"      	: "/article/signes-graves-eure-calvados/",
-	  "tags"     	: "",
+	  "subjects"    : "comparative-vandalism, medieval-art, church-graffiti",
       "category" 	: "",
 	  "description" : "(Signs Engraved on the Churches of Eure and Calvados) is a book written in French and directed by Asger Jorn, with essay contributions from various antiquities experts and photography by Gérard Franceschi.",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -158,7 +158,7 @@
 
       "title"    	: "Skånes stenskulptur under 1100-talet",
       "url"      	: "/article/skanes-stenskulptur/",
-	  "tags"     	: "",
+	  "subjects"    : "comparative-vandalism, medieval-art, romanesque-architecture, sculpture",
       "category" 	: "",
 	  "description" : "(Skåne&#39;s Stone Sculpture during the 12th Century) is a book on 12th century stone sculpture from the Scania region of southern Sweden by Erik Cinthio, with an introduction by P. V. Glob and notes by Asger Jorn.",
       "date"     	: "2019-01-01 00:00:00 +0100"
@@ -169,7 +169,7 @@
 
       "title"    	: "21 Lystegninger",
       "url"      	: "/article/21-light-drawings-jorn/",
-	  "tags"     	: "",
+	  "subjects"    : "",
       "category" 	: "",
 	  "description" : "(21 Light Drawings) is the title of an exhibition catalogue released by the Aarhus Art Association of 1847 in conjunction with an exhibition of Asger Jorn&#39;s light drawings at the Aarhus Festuge 1971.",
       "date"     	: "2020-12-13 00:00:00 +0100"
@@ -180,7 +180,7 @@
 
       "title"    	: "Klankteksten - Konkrete Poëzie - Visuele Teksten",
       "url"      	: "/article/klankteksten/",
-	  "tags"     	: "klankteksten",
+	  "subjects"    : "klankteksten",
       "category" 	: "",
 	  "description" : "(Sound Texts - Concrete Poetry - Visual Texts) is the title of an exhibition catalogue released in conjunction with the exhibition &#39;Klankteksten?&#39; at the Stedelijk Museum in Amsterdam, Netherlands in November 1970. The exhibition provided an overview of the concrete poetry movement.",
       "date"     	: "2021-03-09 00:00:00 +0100"
@@ -191,7 +191,7 @@
 
       "title"    	: "Cybernetic Serendipity - The Computer and the Arts",
       "url"      	: "/article/cybernetic-serendipity/",
-	  "tags"     	: "cybernetics",
+	  "subjects"    : "cybernetics",
       "category" 	: "",
 	  "description" : "is the title of a special 1968 issue of the British magazine &#39;Studio International.&#39; The issue was first published to coincide with an exhibition entitled &#39;Cybernetic Serendipity,&#39; dealing broadly with the demonstration of how humans can use the computer and new technology to extend creativity and inventiveness.",
       "date"     	: "2021-06-11 00:00:00 +0200"
@@ -202,7 +202,7 @@
 
       "title"    	: "Asger Jorn - The Crucial Years 1954-1964",
       "url"      	: "/article/atkins-jorn-crucial-years/",
-	  "tags"     	: "",
+	  "subjects"    : "painting, ceramics",
       "category" 	: "",
 	  "description" : "is the second book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
       "date"     	: "2021-08-05 00:00:00 +0200"
@@ -213,7 +213,7 @@
 
       "title"    	: "Asger Jorn - The Final Years 1965-1973",
       "url"      	: "/article/atkins-jorn-final-years/",
-	  "tags"     	: "",
+	  "subjects"    : "painting, sculpture, collage",
       "category" 	: "",
 	  "description" : "is the third book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
       "date"     	: "2021-08-05 00:00:00 +0200"
@@ -224,7 +224,7 @@
 
       "title"    	: "Asger Jorn - Revised Supplement",
       "url"      	: "/article/atkins-jorn-revised-supplement/",
-	  "tags"     	: "",
+	  "subjects"    : "painting",
       "category" 	: "",
 	  "description" : "is the fifth and final book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
       "date"     	: "2021-08-05 00:00:00 +0200"
@@ -235,7 +235,7 @@
 
       "title"    	: "Jorn in Scandinavia 1930-1953",
       "url"      	: "/article/atkins-jorn-scandinavia/",
-	  "tags"     	: "",
+	  "subjects"    : "",
       "category" 	: "",
 	  "description" : "is the first book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
       "date"     	: "2021-08-05 00:00:00 +0200"
@@ -246,7 +246,7 @@
 
       "title"    	: "Asger Jorn - Supplement - Paintings 1930-1973",
       "url"      	: "/article/atkins-jorn-supplement/",
-	  "tags"     	: "",
+	  "subjects"    : "painting",
       "category" 	: "",
 	  "description" : "is the fourth book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
       "date"     	: "2021-08-05 00:00:00 +0200"
@@ -257,7 +257,7 @@
 
       "title"    	: "Mémoires",
       "url"      	: "/article/memoires/",
-	  "tags"     	: "",
+	  "subjects"    : "situationist-international, collage, psychogeography",
       "category" 	: "",
 	  "description" : "is an artist&#39;s book made by the Danish artist Asger Jorn in collaboration with the French artist and theorist Guy Debord.",
       "date"     	: "2022-02-03 00:00:00 +0100"
@@ -268,7 +268,7 @@
 
       "title"    	: "La chevelure des choses",
       "url"      	: "/article/chevelure-des-choses/",
-	  "tags"     	: "",
+	  "subjects"    : "cobra, exhibition-catalogue, word-painting",
       "category" 	: "",
 	  "description" : "(The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.",
       "date"     	: "2022-02-05 00:00:00 +0100"
@@ -277,9 +277,20 @@
   
     {
 
+      "title"    	: "Asger Jorn on Læsø",
+      "url"      	: "/article/jorn-laeso/",
+	  "subjects"    : "biography, danish-art, cobra",
+      "category" 	: "",
+	  "description" : "is a book by Lars Morell documenting the Danish painter Asger Jorn&#39;s relationship with the island of Læsø, where he maintained a studio from 1964 until his death in 1973.",
+      "date"     	: "2025-02-05 00:00:00 +0100"
+
+    } ,
+  
+    {
+
       "title"    	: "The Bird, the Animal and the Human in Nordic Iron Age Art",
       "url"      	: "/article/fuglen-dyret-mennesket/",
-	  "tags"     	: "archaeology, nordic-art",
+	  "subjects"    : "archaeology, nordic-art",
       "category" 	: "",
 	  "description" : "is the second volume in Asger Jorn&#39;s posthumous series 10,000 Years of Nordic Folk Art, featuring photographs by Gérard Franceschi and text by Norwegian archaeologist Bente Magnus examining animal symbolism in Nordic Iron Age art.",
       "date"     	: "2026-02-04 00:00:00 +0100"

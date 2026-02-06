@@ -4,7 +4,7 @@ title: Mémoires
 categories: books
 description: is an artist's book made by the Danish artist Asger Jorn in collaboration with the French artist and theorist Guy Debord.
 creators: [asger-jorn, guy-debord]
-tags: []
+subjects: [situationist-international, collage, psychogeography]
 featured-image: /assets/articles/memoires/front.jpg
 date: 2022-02-03
 last_modified_at: 2022-02-03

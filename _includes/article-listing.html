@@ -1,4 +1,4 @@
-<div class="article-tile" data-tags="{{ article.tags | join: ',' }}" data-subjects="{{ article.subjects | join: ',' }}" data-category="{{ article.categories | join: ',' }}" data-collection="{{ article.member_of }}" data-creators="{{ article.creators | join: ',' }}">
+<div class="article-tile" data-subjects="{{ article.subjects | join: ',' }}" data-category="{{ article.categories | join: ',' }}" data-collection="{{ article.member_of }}" data-creators="{{ article.creators | join: ',' }}">
 	<div class="article-tile-image">
 		<a href="{{ article.url }}"><img src="{{ article.featured-image }}" alt="{{ article.title }}"></a>
 	</div>
@@ -6,27 +6,23 @@
 		<h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
 		<p class="article-tile-description"><strong>{{ article.title }}</strong> {{ article.description }}</p>
 		<p class="article-tile-meta">
-			{%- if article.creators.size > 0 -%}
-				<span class="meta-item"><span class="meta-label">Creator{% if article.creators.size != 1 %}s{% endif %}:</span> {% for creator in article.creators %}<a href="/articles/?creator={{ creator }}">{% include titlecase.html text=creator %}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
-			{%- endif -%}
 			{%- if article.categories.size > 0 -%}
-				<span class="meta-item"><span class="meta-label">Category:</span> {% for cat in article.categories %}<a href="/articles/?category={{ cat }}">{% include titlecase.html text=cat %}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
-			{%- endif -%}
-			{%- if article.member_of -%}
+				{% for cat in article.categories %}<a href="/articles/?category={{ cat }}">{% include titlecase.html text=cat %}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}:{% endif %} {% if article.member_of -%}
 				{%- assign parent_collection = site.collections | where: "collection_id", article.member_of | first -%}
 				{%- if parent_collection -%}
-					<span class="meta-item"><span class="meta-label">Collection:</span> <a href="{{ parent_collection.url }}">{{ parent_collection.title }}</a></span>
-				{%- endif -%}
+<a href="{{ parent_collection.url }}">{{ parent_collection.title }}</a> {% endif -%}
+			{%- endif -%}
+			{%- if article.creators.size > 0 -%}
+				{% if article.member_of %}({% endif -%}
+				{%- for creator in article.creators -%}
+<a href="/articles/?creator={{ creator }}">{% include titlecase.html text=creator %}</a>{% unless forloop.last %}, {% endunless -%}
+				{%- endfor -%}
+				{%- if article.member_of %}){% endif -%}
 			{%- endif -%}
 		</p>
-		{%- if article.tags.size > 0 or article.subjects.size > 0 -%}
+		{%- if article.subjects.size > 0 -%}
 		<p class="article-tile-meta">
-			{%- if article.tags.size > 0 -%}
-				<span class="meta-item"><span class="meta-label">Tags:</span> {% for tag in article.tags %}<a href="/articles/?tag={{ tag }}">{% include titlecase.html text=tag %}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
-			{%- endif -%}
-			{%- if article.subjects.size > 0 -%}
-				<span class="meta-item"><span class="meta-label">Subjects:</span> {% for subject in article.subjects %}{% include titlecase.html text=subject %}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
-			{%- endif -%}
+			<em>{% for subject in article.subjects %}<a href="/articles/?subject={{ subject }}">{% include titlecase.html text=subject %}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</em>
 		</p>
 		{%- endif -%}
 		<p class="article-tile-link"><a href="{{ article.url }}">Read more &rarr;</a></p>

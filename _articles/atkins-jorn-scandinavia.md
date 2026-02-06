@@ -4,7 +4,7 @@ title: Jorn in Scandinavia 1930-1953
 categories: books
 description: is the first book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
 creators: [asger-jorn]
-tags: []
+subjects: []
 member_of: jorn-catalogue-raisonne
 featured-image: /assets/articles/atkins-jorn-scandinavia/front.jpg
 date: 2021-08-05

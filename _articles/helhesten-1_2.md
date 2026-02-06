@@ -1,10 +1,10 @@
 ---
 layout: article
 title: Helhesten (Year 1, Booklet 2)
-categories: books
+categories: journals
 description: is the second issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This landmark issue contains Asger Jorn's influential essay "Intimate Banalities" and was published to coincide with the groundbreaking exhibition "13 Artists in a Tent."
 creators: [asger-jorn]
-tags: [cobra, helhesten]
+subjects: [cobra, helhesten]
 member_of: helhesten
 featured-image: /assets/articles/helhesten/helhesten_1.2_cover.jpg
 date: 2019-01-01

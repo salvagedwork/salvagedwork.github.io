@@ -1,10 +1,10 @@
 ---
 layout: article
 title: Helhesten (Year 1, Booklet 1)
-categories: books
+categories: journals
 description: is the inaugural issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published during the German occupation of Denmark, it launched the most significant avant-garde art journal to emerge from occupied Europe during World War II.
 creators: [asger-jorn]
-tags: [cobra, helhesten]
+subjects: [cobra, helhesten]
 member_of: helhesten
 featured-image: /assets/articles/helhesten/helhesten_1.1_cover.jpg
 date: 2019-01-01

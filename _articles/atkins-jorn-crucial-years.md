@@ -4,7 +4,7 @@ title: Asger Jorn - The Crucial Years 1954-1964
 categories: books
 description: is the second book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
 creators: [asger-jorn]
-tags: []
+subjects: [painting, ceramics]
 member_of: jorn-catalogue-raisonne
 featured-image: /assets/articles/atkins-jorn-crucial-years/front.jpg
 date: 2021-08-05

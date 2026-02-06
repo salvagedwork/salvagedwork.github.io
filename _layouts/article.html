@@ -9,33 +9,42 @@ layout: default
 	
 		<header>
 			<h1>{{ page.title }}</h1>
+			{% if page.creators or page.subjects.size > 0 %}
+			<p class="article-meta">
+				{%- if page.creators -%}
+				<span class="article-collection">
+					{%- if page.categories -%}
+					{%- for cat in page.categories -%}
+					<a href="/articles/?category={{ cat }}">{{ cat | capitalize }}</a>{%- unless forloop.last %}, {% endunless -%}
+					{%- endfor -%}
+					: {% endif -%}
+					{%- for creator_slug in page.creators -%}
+					{%- assign creator = site.creators | where: "name", creator_slug | first -%}
+					{%- if creator -%}
+					<a href="/creator/{{ creator_slug }}/">{{ creator.title }}</a>
+					{%- else -%}
+					{%- assign words = creator_slug | split: "-" -%}
+					<a href="/creator/{{ creator_slug }}/">{%- for word in words -%}{{ word | capitalize }}{%- unless forloop.last %} {% endunless -%}{%- endfor -%}</a>
+					{%- endif -%}
+					{%- unless forloop.last %}, {% endunless -%}
+					{%- endfor -%}
+				</span>
+				{%- endif %}
+				{% if page.subjects.size > 0 -%}
+				<span class="article-subjects">
+					{%- for subject in page.subjects -%}
+					<a href="/articles/?subject={{ subject }}">{% include titlecase.html text=subject %}</a>
+					{%- unless forloop.last %}, {% endunless -%}
+					{%- endfor -%}
+				</span>
+				{%- endif %}
+			</p>
+			{% endif %}
 			<hr />
 		</header>
 	
 		{{ content }}
 		
 	</div>
-
-	{% if page.creators %}
-	<h3>Creators</h3>
-	<span>
-	{% for creator in page.creators %}
-		<a href="/creators/{{ creator }}/">
-				{% include titlecase.html text=creator %}
-			</a><br />
-	{% endfor %}
-	</span>
-	{% endif %}
 	
-	{% if page.tags and page.tags.size > 0 %}
-	<h3>Tags</h3>
-	<span>
-	{% for tag in page.tags %}
-		<a href="/tag/{{ tag }}/">
-				{% include titlecase.html text=tag %}
-			</a><br />
-	{% endfor %}
-	</span>
-	{% endif %}
-
 </article>

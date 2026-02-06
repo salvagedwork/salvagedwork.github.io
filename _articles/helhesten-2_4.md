@@ -1,10 +1,10 @@
 ---
 layout: article
 title: Helhesten (Year 2, Booklet 4)
-categories: books
+categories: journals
 description: is the fourth issue of the second year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published on Christmas Eve 1943, this issue features Dan Sterup-Hansen's profile of Henry Heerup, Jorn's theoretical article on stylistics, and Carl-Henning Pedersen's influential essay on fantasy art.
 creators: [asger-jorn]
-tags: [cobra, helhesten]
+subjects: [cobra, helhesten]
 member_of: helhesten
 featured-image: /assets/articles/helhesten/helhesten_2.4_cover.jpg
 date: 2019-01-01
