@@ -15,7 +15,13 @@ permalink: /articles/
 			{% for category in all_categories %}
 				{% assign clean_category = category | strip %}
 				{% if clean_category != '' %}
-			<button class="filter-btn" data-filter="{{ clean_category }}" data-type="category">{% include titlecase.html text=clean_category %}</button>
+					{% assign category_count = 0 %}
+					{% for article in site.articles %}
+						{% if article.categories == clean_category %}
+							{% assign category_count = category_count | plus: 1 %}
+						{% endif %}
+					{% endfor %}
+			<button class="filter-btn" data-filter="{{ clean_category }}" data-type="category">{% include titlecase.html text=clean_category %} <span class="filter-count">({{ category_count }})</span></button>
 				{% endif %}
 			{% endfor %}
 		</div>
@@ -29,7 +35,13 @@ permalink: /articles/
 			{% for creator in all_creators %}
 				{% assign clean_creator = creator | strip %}
 				{% if clean_creator != '' %}
-			<button class="filter-btn" data-filter="{{ clean_creator }}" data-type="creator">{% include titlecase.html text=clean_creator %}</button>
+					{% assign creator_count = 0 %}
+					{% for article in site.articles %}
+						{% if article.creators contains clean_creator %}
+							{% assign creator_count = creator_count | plus: 1 %}
+						{% endif %}
+					{% endfor %}
+			<button class="filter-btn" data-filter="{{ clean_creator }}" data-type="creator">{% include titlecase.html text=clean_creator %} <span class="filter-count">({{ creator_count }})</span></button>
 				{% endif %}
 			{% endfor %}
 		</div>
@@ -43,7 +55,13 @@ permalink: /articles/
 			{% for subject in all_subjects %}
 				{% assign clean_subject = subject | strip %}
 				{% if clean_subject != '' %}
-			<button class="filter-btn" data-filter="{{ clean_subject }}" data-type="subject">{% include titlecase.html text=clean_subject %}</button>
+					{% assign subject_count = 0 %}
+					{% for article in site.articles %}
+						{% if article.subjects contains clean_subject %}
+							{% assign subject_count = subject_count | plus: 1 %}
+						{% endif %}
+					{% endfor %}
+			<button class="filter-btn" data-filter="{{ clean_subject }}" data-type="subject">{% include titlecase.html text=clean_subject %} <span class="filter-count">({{ subject_count }})</span></button>
 				{% endif %}
 			{% endfor %}
 		</div>
@@ -55,7 +73,8 @@ permalink: /articles/
 			<button class="filter-btn active" data-filter="all" data-type="collection">All</button>
 			{% assign defined_collections = site.collections | where_exp: "c", "c.collection_id" %}
 			{% for collection in defined_collections %}
-			<button class="filter-btn" data-filter="{{ collection.collection_id }}" data-type="collection">{{ collection.title }}</button>
+				{% assign collection_articles = site.articles | where: "member_of", collection.collection_id %}
+			<button class="filter-btn" data-filter="{{ collection.collection_id }}" data-type="collection">{{ collection.title }} <span class="filter-count">({{ collection_articles.size }})</span></button>
 			{% endfor %}
 		</div>
 	</div>

@@ -824,21 +824,35 @@
 (function() {
 	'use strict';
 	
-	// Color palette from filter buttons (with 80% opacity via rgba)
-	var colors = [
-		'rgba(160, 64, 64, 0.8)',   // Collection burgundy/red
-		'rgba(74, 111, 165, 0.8)',  // Tag steel blue
-		'rgba(90, 138, 90, 0.8)',   // Subject sage green
-		'rgba(122, 90, 138, 0.8)',  // Category purple
-		'rgba(176, 112, 64, 0.8)'   // Creator amber/orange
-	];
-	
 	var subjectTags = document.querySelectorAll('.subject-tag');
 	
+	// Find the maximum count
+	var maxCount = 0;
 	subjectTags.forEach(function(tag) {
-		var randomColor = colors[Math.floor(Math.random() * colors.length)];
-		tag.style.backgroundColor = randomColor;
-		tag.style.borderColor = randomColor;
+		var count = parseInt(tag.getAttribute('data-count'), 10);
+		if (count > maxCount) maxCount = count;
+	});
+	
+	// Apply color based on count using logarithmic scale for better gradation
+	subjectTags.forEach(function(tag) {
+		var count = parseInt(tag.getAttribute('data-count'), 10);
+		
+		// Use logarithmic scale to create more distinction between low counts
+		// log(1) = 0, log(2) â‰ˆ 0.69, log(3) â‰ˆ 1.1, etc.
+		var logCount = Math.log(count + 1);
+		var logMax = Math.log(maxCount + 1);
+		var intensity = logCount / logMax;
+		
+		// Blue gradient from very light (low count) to dark (high count)
+		// Very light blue: rgb(150, 190, 240)
+		// Dark blue: rgb(30, 70, 140)
+		var r = Math.round(150 - (120 * intensity));
+		var g = Math.round(190 - (120 * intensity));
+		var b = Math.round(240 - (100 * intensity));
+		
+		var color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+		tag.style.backgroundColor = color;
+		tag.style.borderColor = color;
 	});
 })();
 </script>
@@ -885,7 +899,7 @@
 			<strong><a href="/collection/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a></strong> is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
 		</div>
 		<div class="collection-browse-meta">
-			6 articles &middot; <a href="/collection/jorn-catalogue-raisonne/">View collection &rarr;</a>
+			5 articles &middot; <a href="/collection/jorn-catalogue-raisonne/">View collection &rarr;</a>
 		</div>
 	</div>
 
@@ -999,223 +1013,6 @@
 </div>
 
 <p><a href="/creators/">View all creators &rarr;</a></p>
-
-
-
-
-<style>
-/* Featured Article */
-.featured-article {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	padding: 1rem;
-	background-color: #f8f9fa;
-	border: 1px solid #eee;
-	margin: 1rem 0;
-}
-
-.featured-article-image img {
-	max-width: 100%;
-	max-height: 200px;
-	object-fit: contain;
-	box-shadow: 0.1rem 0.1rem #eee;
-}
-
-.featured-article-content h3 {
-	margin-bottom: 0.5rem;
-}
-
-.featured-article-meta {
-	font-size: 0.9rem;
-	color: #666;
-}
-
-@media (min-width: 769px) {
-	.featured-article {
-		flex-direction: row;
-		align-items: flex-start;
-	}
-	
-	.featured-article-image {
-		flex: 0 0 150px;
-	}
-	
-	.featured-article-image img {
-		max-height: 180px;
-	}
-	
-	.featured-article-content {
-		flex: 1;
-	}
-}
-
-/* Recent Articles */
-.recent-article {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	padding: 1rem;
-	background-color: #f8f9fa;
-	border: 1px solid #eee;
-	margin: 1rem 0;
-}
-
-.recent-article-image img {
-	max-width: 100%;
-	max-height: 150px;
-	object-fit: contain;
-	box-shadow: 0.1rem 0.1rem #eee;
-}
-
-.recent-article-content h3 {
-	margin-bottom: 0.5rem;
-}
-
-.recent-article-date {
-	font-size: 0.85rem;
-	color: #666;
-	font-style: italic;
-	margin: 0.3rem 0;
-}
-
-@media (min-width: 769px) {
-	.recent-article {
-		flex-direction: row;
-		align-items: flex-start;
-	}
-	
-	.recent-article-image {
-		flex: 0 0 120px;
-	}
-	
-	.recent-article-image img {
-		max-height: 140px;
-	}
-	
-	.recent-article-content {
-		flex: 1;
-	}
-}
-
-/* Browse Grid (Categories) */
-.browse-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-	gap: 0.8rem;
-	margin: 1rem 0;
-}
-
-.browse-item {
-	background-color: #f8f9fa;
-	border: 1px solid #ccc;
-	padding: 0.8rem;
-	text-align: center;
-	transition: border-color 0.15s ease;
-}
-
-.browse-item:hover {
-	border-color: red;
-}
-
-.browse-item a {
-	text-decoration: none;
-	display: block;
-}
-
-.browse-item-title {
-	display: block;
-	font-weight: bold;
-	margin-bottom: 0.3rem;
-}
-
-.browse-item-count {
-	font-size: 0.85rem;
-	color: #666;
-}
-
-/* Collection Browse List */
-.collection-browse-list {
-	margin: 1rem 0;
-}
-
-.collection-browse-item {
-	padding: 1rem;
-	margin-bottom: 1rem;
-	background-color: #f8f9fa;
-	border-left: 3px solid #cc0000;
-}
-
-.collection-browse-title {
-	font-family: 'GT-Eesti-Display-Bold', sans-serif;
-	font-size: 1.1rem;
-	margin-bottom: 0.3rem;
-}
-
-.collection-browse-title a {
-	text-decoration: none;
-}
-
-.collection-browse-title a:hover {
-	text-decoration: underline;
-}
-
-.collection-browse-description {
-	margin-bottom: 0.5rem;
-	line-height: 1.5;
-}
-
-.collection-browse-description a {
-	text-decoration: none;
-}
-
-.collection-browse-meta {
-	font-size: 0.85rem;
-	color: #666;
-}
-
-.collection-browse-meta a {
-	color: #666;
-}
-
-.collection-browse-meta a:hover {
-	color: #cc0000;
-}
-
-/* Tag Cloud */
-.tag-cloud {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem;
-	margin: 1rem 0;
-}
-
-.tag-cloud-item {
-	display: inline-block;
-	padding: 0.3rem 0.6rem;
-	background-color: #f8f9fa;
-	border: 1px solid #ccc;
-	font-size: 0.9rem;
-	text-decoration: none;
-	transition: all 0.15s ease;
-}
-
-.tag-cloud-item:hover {
-	background-color: red;
-	border-color: red;
-	color: white;
-	text-decoration: none;
-}
-
-.tag-count {
-	color: #666;
-	font-size: 0.8rem;
-}
-
-.tag-cloud-item:hover .tag-count {
-	color: rgba(255,255,255,0.8);
-}
-</style>
 
 			</div>
 			
