@@ -295,6 +295,39 @@
 	  "description" : "is the second volume in Asger Jorn&#39;s posthumous series 10,000 Years of Nordic Folk Art, featuring photographs by Gérard Franceschi and text by Norwegian archaeologist Bente Magnus examining animal symbolism in Nordic Iron Age art.",
       "date"     	: "2026-02-04 00:00:00 +0100"
 
+    } ,
+  
+    {
+
+      "title"    	: "Asger Jorn and 10,000 Years of Nordic Folk Art",
+      "url"      	: "/article/jorn-10-thousand-years/",
+	  "subjects"    : "archaeology, nordic-art, folk-art, vandalism",
+      "category" 	: "",
+	  "description" : "is an exhibition catalogue and documentation of Asger Jorn&#39;s ambitious but unfinished project to create a 32-volume encyclopedic visual survey of Nordic art from prehistory through the Middle Ages, published in conjunction with exhibitions at the National Museum in Copenhagen and Silkeborg Art Museum in 1995-96.",
+      "date"     	: "2026-02-07 00:00:00 +0100"
+
+    } ,
+  
+    {
+
+      "title"    	: "Asger Jorn&#39;s Aarhus Mural",
+      "url"      	: "/article/jorn-aarhus-mural/",
+	  "subjects"    : "ceramics, murals",
+      "category" 	: "",
+	  "description" : "is a limited-edition booklet documenting Asger Jorn&#39;s monumental ceramic relief at Aarhus State Gymnasium in Denmark, edited by Guy Atkins with an introduction by Erik Nyholm and photography by Dominique Darbois.",
+      "date"     	: "2026-02-08 00:00:00 +0100"
+
+    } ,
+  
+    {
+
+      "title"    	: "Musique Phénoménale",
+      "url"      	: "/article/jorn-dubuffet-musique/",
+	  "subjects"    : "experimental-music, art-brut, sound-art",
+      "category" 	: "",
+	  "description" : "collaborative recording of experimental music by Asger Jorn and Jean Dubuffet, recorded between December 1960 and March 1961 in Paris and originally published in an extremely limited edition of fifty numbered box sets by Galleria del Cavallino in Venice.",
+      "date"     	: "2026-02-08 00:00:00 +0100"
+
     } 
   
 ]

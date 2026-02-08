@@ -21,24 +21,33 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/featherlight.min.css">
-	<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
+	
+	<!-- PhotoSwipe CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.css">
+	<link rel="stylesheet" href="/css/photoswipe-custom.css">
 	
 	<!-- 
 		Scripts loaded in head:
-		- jQuery: Required for Featherlight lightbox
-		- detect_swipe: Required for Featherlight gallery swipe support
-		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- footnotes.js: Vanilla JS, no dependencies
 		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.4/jquery.detect_swipe.min.js"></script>
 	
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
+	
+	<!-- PhotoSwipe JavaScript -->
+	<script type="module">
+		import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js';
+		import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.esm.js';
+		
+		// Make available globally for our init script
+		window.PhotoSwipeLightbox = PhotoSwipeLightbox;
+		window.PhotoSwipe = PhotoSwipe;
+	</script>
+	<script src="/js/photoswipe-init.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -325,11 +334,13 @@
 
 <h3 id="act-1-juana-la-loca">Act 1 (Juana la Loca)</h3>
 
-<div class="thumbnail-container">
-    <a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/score_02.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_02.jpg" /></a>
-    
-    <div class="thumbnail-caption">Visual score for the setting of Act 1.</div>
-    
+<div class="thumbnail-container" data-gallery="">
+    <figure>
+        <a href="/assets/articles/il-giardino-delle-delizie/score_02.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_02.jpg" /></a>
+        
+        <figcaption class="thumbnail-caption">Visual score for the setting of Act 1.</figcaption>
+        
+    </figure>
 </div>
 
 <p>Act 1 <em>(Juana la Loca, or Crazy Joan)</em> describes a scene with 30 minutes of constant ambience. Interruptions occur by the six sopranos moving from their location in the ambience and moving the <strong>__</strong>_ of the nine iron poles in the scene, as well as triggering sounds consisting of cassette recorders with endless tapes.</p>
@@ -344,11 +355,13 @@
 
 <h3 id="act-2-endogene-depression-ensalada">Act 2 (Endogene Depression) (Ensalada)</h3>
 
-<div class="thumbnail-container">
-    <a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/score_05.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_05.jpg" /></a>
-    
-    <div class="thumbnail-caption">Visual score for the setting of Act 2.</div>
-    
+<div class="thumbnail-container" data-gallery="">
+    <figure>
+        <a href="/assets/articles/il-giardino-delle-delizie/score_05.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_05.jpg" /></a>
+        
+        <figcaption class="thumbnail-caption">Visual score for the setting of Act 2.</figcaption>
+        
+    </figure>
 </div>
 
 <p>Act 2 <em>(Endogene Depression) (Ensalada)</em> consists of:</p>
@@ -363,11 +376,13 @@
 
 <h3 id="act-3-die-winde">Act 3 (Die Winde)</h3>
 
-<div class="thumbnail-container">
-    <a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/score_07.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_07.jpg" /></a>
-    
-    <div class="thumbnail-caption">Visual score for the setting of Act 3.</div>
-    
+<div class="thumbnail-container" data-gallery="">
+    <figure>
+        <a href="/assets/articles/il-giardino-delle-delizie/score_07.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_07.jpg" /></a>
+        
+        <figcaption class="thumbnail-caption">Visual score for the setting of Act 3.</figcaption>
+        
+    </figure>
 </div>
 
 <p>Act 3 <em>(Die Winde)</em> consists of:</p>
@@ -382,11 +397,13 @@
 
 <h3 id="act-4-el-rocio">Act 4 (El rocio)</h3>
 
-<div class="thumbnail-container">
-    <a href="#" data-featherlight="/assets/articles/il-giardino-delle-delizie/score_08.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_08.jpg" /></a>
-    
-    <div class="thumbnail-caption">Visual score for the setting of Act 4.</div>
-    
+<div class="thumbnail-container" data-gallery="">
+    <figure>
+        <a href="/assets/articles/il-giardino-delle-delizie/score_08.jpg"><img class="thumbnail-image" src="/assets/articles/il-giardino-delle-delizie/score_08.jpg" /></a>
+        
+        <figcaption class="thumbnail-caption">Visual score for the setting of Act 4.</figcaption>
+        
+    </figure>
 </div>
 
 <p>Act 4 <em>(El rocio)</em> consists of:</p>
@@ -454,7 +471,7 @@ for (i = 0; i < coll.length; i++) {
 
 <h2 id="gallery">Gallery</h2>
 
-<section data-featherlight-gallery="" data-featherlight-filter="a" class="gallery-grid">
+<section data-gallery="" class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/il-giardino-delle-delizie/front.jpg"><img src="/assets/articles/il-giardino-delle-delizie/front.jpg" /></a>
 			<figcaption>LP front cover</figcaption>
@@ -601,8 +618,6 @@ for (i = 0; i < coll.length; i++) {
 			</div>
 		</div>
 		
-		<!-- Featherlight lightbox - loaded at end of body for proper initialization -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js"></script>
-		<script src="/js/featherlight.gallery.min.js"></script>
+		<!-- PhotoSwipe is loaded via ES6 modules in head.html -->
 	</body>
 </html>

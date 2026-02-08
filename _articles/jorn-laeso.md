@@ -90,7 +90,7 @@ After Jorn's death, Bangsbohave was leased by Stoklund and rented to tourists be
 
 ## Gallery
 
-<section data-featherlight-gallery data-featherlight-filter="a" class="gallery-grid">
+<section data-gallery class="gallery-grid">
     <figure>
         <a href="/assets/articles/jorn-laeso/laeso_01.jpg"><img src="/assets/articles/jorn-laeso/laeso_01.jpg"></a>
         <figcaption>Exterior of Bangsbohave, photographed in June 2016.</figcaption>

@@ -393,7 +393,7 @@ a.current {
 
 .meta-item {
 	&::after {
-		content: " Â· ";
+		content: " Ã‚Â· ";
 		color: $color-border;
 	}
 	
@@ -1061,3 +1061,22 @@ button {
 		}
 	}
 }
+
+
+// ==========================================================================
+// Subject Tags with Random Colors (Homepage)
+// ==========================================================================
+
+.subject-tag {
+	color: white;
+	
+	.tag-count {
+		color: rgba(255, 255, 255, 0.9);
+	}
+	
+	&:hover {
+		opacity: 0.85;
+		color: white;
+	}
+}
+

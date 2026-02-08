@@ -70,7 +70,7 @@ This path is passable because the artist and the scholar have joined forces. Thu
        image="/assets/articles/fuglen-dyret-mennesket/front.jpg"
 %}
 
-<!-- Archive embed placeholder: {% include archive-embed.html id="ARCHIVE_ID" %} -->
+{% include archive-embed.html id="jorn-10000-ars" %}
 
 ## Contributors
 
@@ -95,7 +95,7 @@ The Nordic Iron Age volumes were published with support from Augustinusfonden an
 
 ## Gallery
 
-<section data-featherlight-gallery data-featherlight-filter="a" class="gallery-grid">
+<section data-gallery class="gallery-grid">
 
 	<figure>
 		<a href="/assets/articles/fuglen-dyret-mennesket/fuglen_01.jpg"><img src="/assets/articles/fuglen-dyret-mennesket/fuglen_01.jpg"></a>

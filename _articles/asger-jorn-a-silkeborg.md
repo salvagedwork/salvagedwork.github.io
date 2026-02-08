@@ -72,7 +72,7 @@ The relief is entitled *Épokhè*. It is a term that belongs to the philosophica
 
 ## Gallery
 
-<section data-featherlight-gallery data-featherlight-filter="a" class="gallery-grid">
+<section data-gallery class="gallery-grid">
 <figure>
 <a href="/assets/articles/asger-jorn-a-silkeborg/dubuffet_epokhe_sketch.jpg"><img src="/assets/articles/asger-jorn-a-silkeborg/dubuffet_epokhe_sketch.jpg"></a>
 <figcaption>A sketch of the <em>Épokhè</em> mural by Jean Dubuffet</figcaption>

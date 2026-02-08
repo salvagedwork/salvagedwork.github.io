@@ -21,24 +21,33 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/featherlight.min.css">
-	<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
+	
+	<!-- PhotoSwipe CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.css">
+	<link rel="stylesheet" href="/css/photoswipe-custom.css">
 	
 	<!-- 
 		Scripts loaded in head:
-		- jQuery: Required for Featherlight lightbox
-		- detect_swipe: Required for Featherlight gallery swipe support
-		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- footnotes.js: Vanilla JS, no dependencies
 		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.4/jquery.detect_swipe.min.js"></script>
 	
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
+	
+	<!-- PhotoSwipe JavaScript -->
+	<script type="module">
+		import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js';
+		import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.esm.js';
+		
+		// Make available globally for our init script
+		window.PhotoSwipeLightbox = PhotoSwipeLightbox;
+		window.PhotoSwipe = PhotoSwipe;
+	</script>
+	<script src="/js/photoswipe-init.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -304,6 +313,20 @@
 </div>
 
 	
+	<div class="article-tile" data-subjects="archaeology,nordic-art,folk-art,vandalism" data-category="books" data-collection="jorn-catalogue-raisonne" data-creators="asger-jorn">
+	<div class="article-tile-image">
+		<a href="/article/jorn-10-thousand-years/"><img src="/assets/articles/jorn-10-thousand-years/front.jpg" alt="Asger Jorn and 10,000 Years of Nordic Folk Art"></a>
+	</div>
+	<div class="article-tile-content">
+		<h3><a href="/article/jorn-10-thousand-years/">Asger Jorn and 10,000 Years of Nordic Folk Art</a></h3>
+		<p class="article-tile-description"><strong>Asger Jorn and 10,000 Years of Nordic Folk Art</strong> is an exhibition catalogue and documentation of Asger Jorn's ambitious but unfinished project to create a 32-volume encyclopedic visual survey of Nordic art from prehistory through the Middle Ages, published in conjunction with exhibitions at the National Museum in Copenhagen and Silkeborg Art Museum in 1995-96.</p>
+		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/collection/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
+			<em><a href="/articles/?subject=archaeology">Archaeology</a>, <a href="/articles/?subject=nordic-art">Nordic Art</a>, <a href="/articles/?subject=folk-art">Folk Art</a>, <a href="/articles/?subject=vandalism">Vandalism</a></em>
+		</p><p class="article-tile-link"><a href="/article/jorn-10-thousand-years/">Read more &rarr;</a></p>
+	</div>
+</div>
+
+	
 	<div class="article-tile" data-subjects="biography,danish-art,cobra" data-category="books" data-collection="" data-creators="asger-jorn,lars-morell">
 	<div class="article-tile-image">
 		<a href="/article/jorn-laeso/"><img src="/assets/articles/jorn-laeso/front.jpg" alt="Asger Jorn on Læsø"></a>
@@ -328,6 +351,20 @@
 		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a></p><p class="article-tile-meta">
 			<em><a href="/articles/?subject=exhibition-catalogue">Exhibition Catalogue</a></em>
 		</p><p class="article-tile-link"><a href="/article/asger-jorn-a-silkeborg/">Read more &rarr;</a></p>
+	</div>
+</div>
+
+	
+	<div class="article-tile" data-subjects="ceramics,murals" data-category="books" data-collection="" data-creators="asger-jorn">
+	<div class="article-tile-image">
+		<a href="/article/jorn-aarhus-mural/"><img src="/assets/articles/jorn-aarhus-mural/front.jpg" alt="Asger Jorn's Aarhus Mural"></a>
+	</div>
+	<div class="article-tile-content">
+		<h3><a href="/article/jorn-aarhus-mural/">Asger Jorn's Aarhus Mural</a></h3>
+		<p class="article-tile-description"><strong>Asger Jorn's Aarhus Mural</strong> is a limited-edition booklet documenting Asger Jorn's monumental ceramic relief at Aarhus State Gymnasium in Denmark, edited by Guy Atkins with an introduction by Erik Nyholm and photography by Dominique Darbois.</p>
+		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a></p><p class="article-tile-meta">
+			<em><a href="/articles/?subject=ceramics">Ceramics</a>, <a href="/articles/?subject=murals">Murals</a></em>
+		</p><p class="article-tile-link"><a href="/article/jorn-aarhus-mural/">Read more &rarr;</a></p>
 	</div>
 </div>
 
@@ -622,6 +659,20 @@
 </div>
 
 	
+	<div class="article-tile" data-subjects="experimental-music,art-brut,sound-art" data-category="recordings" data-collection="" data-creators="asger-jorn,jean-dubuffet">
+	<div class="article-tile-image">
+		<a href="/article/jorn-dubuffet-musique/"><img src="/assets/articles/jorn-dubuffet-musique/front.jpg" alt="Musique Phénoménale"></a>
+	</div>
+	<div class="article-tile-content">
+		<h3><a href="/article/jorn-dubuffet-musique/">Musique Phénoménale</a></h3>
+		<p class="article-tile-description"><strong>Musique Phénoménale</strong> collaborative recording of experimental music by Asger Jorn and Jean Dubuffet, recorded between December 1960 and March 1961 in Paris and originally published in an extremely limited edition of fifty numbered box sets by Galleria del Cavallino in Venice.</p>
+		<p class="article-tile-meta"><a href="/articles/?category=recordings">Recordings</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a>, <a href="/articles/?creator=jean-dubuffet">Jean Dubuffet</a></p><p class="article-tile-meta">
+			<em><a href="/articles/?subject=experimental-music">Experimental Music</a>, <a href="/articles/?subject=art-brut">Art Brut</a>, <a href="/articles/?subject=sound-art">Sound Art</a></em>
+		</p><p class="article-tile-link"><a href="/article/jorn-dubuffet-musique/">Read more &rarr;</a></p>
+	</div>
+</div>
+
+	
 	
 
 
@@ -645,8 +696,6 @@
 			</div>
 		</div>
 		
-		<!-- Featherlight lightbox - loaded at end of body for proper initialization -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js"></script>
-		<script src="/js/featherlight.gallery.min.js"></script>
+		<!-- PhotoSwipe is loaded via ES6 modules in head.html -->
 	</body>
 </html>

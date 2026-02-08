@@ -138,11 +138,7 @@ Dates of composition:
 
 ## Gallery
 
-<section
-	data-featherlight-gallery
-	data-featherlight-filter="a"
-	class="gallery-grid"
-	>
+<section data-gallery class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/cybernetic-serendipity/cybernetic_044.jpg"><img src="/assets/articles/cybernetic-serendipity/cybernetic_044.jpg"></a>
 			<figcaption>Nicolas Schöffer - <em>Cybernetic Light Tower</em></figcaption>

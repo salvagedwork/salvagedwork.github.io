@@ -78,11 +78,7 @@ As Atkins explains, Jorn spoke of "sacrificing" the pictures he chose to overpai
 
 The *New Disfigurations* of 1962 had a more serious intention. Landscapes were replaced by portraits and battle scenes, which lent themselves to sometimes sinister psychological adaptations. The exhibition at Galerie Rive Gauche was divided into three groups: *Beauty and the Human Beast* (featuring transformed female portraits), battle scenes with military men in uniform, and *Anecdotal Imagery from Daily Life*. As Atkins notes: "To this day Jorn's overpainted pictures have not been widely understood or appreciated. Yet the best of them have a startling and surrealist clarity of vision. Their impact on the viewer is increased through the double layers of imagery, which may either be brought into harmony or allowed to coexist in a state of tension."
 
-<section
-	data-featherlight-gallery
-	data-featherlight-filter="a"
-	class="gallery-grid"
-	>
+<section data-gallery class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/atkins-jorn-crucial-years/modifications_01.jpg"><img src="/assets/articles/atkins-jorn-crucial-years/modifications_01.jpg"></a>
 			<figcaption>The disquieting duck, 1959, 54x46 cm (Cat. 1197)</figcaption>

@@ -112,11 +112,7 @@ The vinyl recording of the performance is collaged/de-collaged with a variety of
 
 ## Gallery
 
-<section
-	data-featherlight-gallery
-	data-featherlight-filter="a"
-	class="gallery-grid"
-	>
+<section data-gallery class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/il-giardino-delle-delizie/front.jpg"><img src="/assets/articles/il-giardino-delle-delizie/front.jpg"></a>
 			<figcaption>LP front cover</figcaption>

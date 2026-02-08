@@ -21,24 +21,33 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/featherlight.min.css">
-	<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
+	
+	<!-- PhotoSwipe CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.css">
+	<link rel="stylesheet" href="/css/photoswipe-custom.css">
 	
 	<!-- 
 		Scripts loaded in head:
-		- jQuery: Required for Featherlight lightbox
-		- detect_swipe: Required for Featherlight gallery swipe support
-		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- footnotes.js: Vanilla JS, no dependencies
 		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.4/jquery.detect_swipe.min.js"></script>
 	
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
+	
+	<!-- PhotoSwipe JavaScript -->
+	<script type="module">
+		import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js';
+		import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.esm.js';
+		
+		// Make available globally for our init script
+		window.PhotoSwipeLightbox = PhotoSwipeLightbox;
+		window.PhotoSwipe = PhotoSwipe;
+	</script>
+	<script src="/js/photoswipe-init.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -237,6 +246,11 @@
 
 <p>salvaged.work uses the <a href="https://archive.org/">Internet Archive</a> as the digital repository for these works, so that they may exist even after this archive has disappeared.</p>
 
+<blockquote>
+  <p>The grind of the scanner as it peels language off the page, thawing it, liberating it.<br />
+*Kenneth Goldsmith, Theory, 2015</p>
+</blockquote>
+
 			</div>
 			
 			<div id="footer">
@@ -257,8 +271,6 @@
 			</div>
 		</div>
 		
-		<!-- Featherlight lightbox - loaded at end of body for proper initialization -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js"></script>
-		<script src="/js/featherlight.gallery.min.js"></script>
+		<!-- PhotoSwipe is loaded via ES6 modules in head.html -->
 	</body>
 </html>

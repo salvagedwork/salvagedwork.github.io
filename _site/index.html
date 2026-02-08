@@ -21,24 +21,33 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/featherlight.min.css">
-	<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
+	
+	<!-- PhotoSwipe CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.css">
+	<link rel="stylesheet" href="/css/photoswipe-custom.css">
 	
 	<!-- 
 		Scripts loaded in head:
-		- jQuery: Required for Featherlight lightbox
-		- detect_swipe: Required for Featherlight gallery swipe support
-		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- footnotes.js: Vanilla JS, no dependencies
 		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.4/jquery.detect_swipe.min.js"></script>
 	
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
+	
+	<!-- PhotoSwipe JavaScript -->
+	<script type="module">
+		import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js';
+		import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.esm.js';
+		
+		// Make available globally for our init script
+		window.PhotoSwipeLightbox = PhotoSwipeLightbox;
+		window.PhotoSwipe = PhotoSwipe;
+	</script>
+	<script src="/js/photoswipe-init.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -233,7 +242,7 @@
 
 <p>This project is independently supported and has no commercial interest in the materials shared.</p>
 
-<p><strong>27 articles</strong> across <strong>4 creators</strong> are currently archived.</p>
+<p><strong>30 articles</strong> across <strong>4 creators</strong> are currently archived.</p>
 
 
 
@@ -468,6 +477,30 @@
 			description: "is the second volume in Asger Jorn's posthumous series 10,000 Years of Nordic Folk Art, featuring photographs by Gérard Franceschi and text by Norwegian archaeologist Bente Magnus examining animal symbolism in Nordic Iron Age art.",
 			image: "/assets/articles/fuglen-dyret-mennesket/front.jpg",
 			creators: ["asger-jorn"]
+		},
+		
+		{
+			url: "/article/jorn-10-thousand-years/",
+			title: "Asger Jorn and 10,000 Years of Nordic Folk Art",
+			description: "is an exhibition catalogue and documentation of Asger Jorn's ambitious but unfinished project to create a 32-volume encyclopedic visual survey of Nordic art from prehistory through the Middle Ages, published in conjunction with exhibitions at the National Museum in Copenhagen and Silkeborg Art Museum in 1995-96.",
+			image: "/assets/articles/jorn-10-thousand-years/front.jpg",
+			creators: ["asger-jorn"]
+		},
+		
+		{
+			url: "/article/jorn-aarhus-mural/",
+			title: "Asger Jorn's Aarhus Mural",
+			description: "is a limited-edition booklet documenting Asger Jorn's monumental ceramic relief at Aarhus State Gymnasium in Denmark, edited by Guy Atkins with an introduction by Erik Nyholm and photography by Dominique Darbois.",
+			image: "/assets/articles/jorn-aarhus-mural/front.jpg",
+			creators: ["asger-jorn"]
+		},
+		
+		{
+			url: "/article/jorn-dubuffet-musique/",
+			title: "Musique Phénoménale",
+			description: "collaborative recording of experimental music by Asger Jorn and Jean Dubuffet, recorded between December 1960 and March 1961 in Paris and originally published in an extremely limited edition of fifty numbered box sets by Galleria del Cavallino in Venice.",
+			image: "/assets/articles/jorn-dubuffet-musique/front.jpg",
+			creators: ["asger-jorn","jean-dubuffet"]
 		}
 		
 	];
@@ -521,42 +554,42 @@
 
 <div class="recent-article">
 	<div class="recent-article-image">
-		<a href="/article/fuglen-dyret-mennesket/"><img src="/assets/articles/fuglen-dyret-mennesket/front.jpg" alt="The Bird, the Animal and the Human in Nordic Iron Age Art"></a>
+		<a href="/article/jorn-aarhus-mural/"><img src="/assets/articles/jorn-aarhus-mural/front.jpg" alt="Asger Jorn's Aarhus Mural"></a>
 	</div>
 	<div class="recent-article-content">
-		<h3 style="padding-top: 0; margin-top: 0;"><a href="/article/fuglen-dyret-mennesket/">The Bird, the Animal and the Human in Nordic Iron Age Art</a></h3>
-		<p><strong>The Bird, the Animal and the Human in Nordic Iron Age Art</strong> is the second volume in Asger Jorn's posthumous series 10,000 Years of Nordic Folk Art, featuring photographs by Gérard Franceschi and text by Norwegian archaeologist Bente Magnus examining animal symbolism in Nordic Iron Age art.</p>
-		<p class="recent-article-date">Added: February 04, 2026</p>
-		<p><a href="/article/fuglen-dyret-mennesket/">Read more &rarr;</a></p>
+		<h3 style="padding-top: 0; margin-top: 0;"><a href="/article/jorn-aarhus-mural/">Asger Jorn's Aarhus Mural</a></h3>
+		<p><strong>Asger Jorn's Aarhus Mural</strong> is a limited-edition booklet documenting Asger Jorn's monumental ceramic relief at Aarhus State Gymnasium in Denmark, edited by Guy Atkins with an introduction by Erik Nyholm and photography by Dominique Darbois.</p>
+		<p class="recent-article-date">Added: February 08, 2026</p>
+		<p><a href="/article/jorn-aarhus-mural/">Read more &rarr;</a></p>
 	</div>
 </div>
 
 <div class="recent-article">
 	<div class="recent-article-image">
-		<a href="/article/jorn-laeso/"><img src="/assets/articles/jorn-laeso/front.jpg" alt="Asger Jorn on Læsø"></a>
+		<a href="/article/jorn-dubuffet-musique/"><img src="/assets/articles/jorn-dubuffet-musique/front.jpg" alt="Musique Phénoménale"></a>
 	</div>
 	<div class="recent-article-content">
-		<h3 style="padding-top: 0; margin-top: 0;"><a href="/article/jorn-laeso/">Asger Jorn on Læsø</a></h3>
-		<p><strong>Asger Jorn on Læsø</strong> is a book by Lars Morell documenting the Danish painter Asger Jorn's relationship with the island of Læsø, where he maintained a studio from 1964 until his death in 1973.</p>
-		<p class="recent-article-date">Added: February 05, 2025</p>
-		<p><a href="/article/jorn-laeso/">Read more &rarr;</a></p>
+		<h3 style="padding-top: 0; margin-top: 0;"><a href="/article/jorn-dubuffet-musique/">Musique Phénoménale</a></h3>
+		<p><strong>Musique Phénoménale</strong> collaborative recording of experimental music by Asger Jorn and Jean Dubuffet, recorded between December 1960 and March 1961 in Paris and originally published in an extremely limited edition of fifty numbered box sets by Galleria del Cavallino in Venice.</p>
+		<p class="recent-article-date">Added: February 08, 2026</p>
+		<p><a href="/article/jorn-dubuffet-musique/">Read more &rarr;</a></p>
 	</div>
 </div>
 
 <div class="recent-article">
 	<div class="recent-article-image">
-		<a href="/article/chevelure-des-choses/"><img src="/assets/articles/chevelure-des-choses/front.jpg" alt="La chevelure des choses"></a>
+		<a href="/article/jorn-10-thousand-years/"><img src="/assets/articles/jorn-10-thousand-years/front.jpg" alt="Asger Jorn and 10,000 Years of Nordic Folk Art"></a>
 	</div>
 	<div class="recent-article-content">
-		<h3 style="padding-top: 0; margin-top: 0;"><a href="/article/chevelure-des-choses/">La chevelure des choses</a></h3>
-		<p><strong>La chevelure des choses</strong> (The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.</p>
-		<p class="recent-article-date">Added: February 05, 2022</p>
-		<p><a href="/article/chevelure-des-choses/">Read more &rarr;</a></p>
+		<h3 style="padding-top: 0; margin-top: 0;"><a href="/article/jorn-10-thousand-years/">Asger Jorn and 10,000 Years of Nordic Folk Art</a></h3>
+		<p><strong>Asger Jorn and 10,000 Years of Nordic Folk Art</strong> is an exhibition catalogue and documentation of Asger Jorn's ambitious but unfinished project to create a 32-volume encyclopedic visual survey of Nordic art from prehistory through the Middle Ages, published in conjunction with exhibitions at the National Museum in Copenhagen and Silkeborg Art Museum in 1995-96.</p>
+		<p class="recent-article-date">Added: February 07, 2026</p>
+		<p><a href="/article/jorn-10-thousand-years/">Read more &rarr;</a></p>
 	</div>
 </div>
 
 
-<p><a href="/articles/">Explore all 27 articles &rarr;</a></p>
+<p><a href="/articles/">Explore all 30 articles &rarr;</a></p>
 
 
 
@@ -573,7 +606,7 @@
 	<div class="browse-item">
 		<a href="/articles/?category=books">
 			<span class="browse-item-title">Books</span>
-			<span class="browse-item-count">16 articles</span>
+			<span class="browse-item-count">18 articles</span>
 		</a>
 	</div>
 	
@@ -593,7 +626,7 @@
 	<div class="browse-item">
 		<a href="/articles/?category=recordings">
 			<span class="browse-item-title">Recordings</span>
-			<span class="browse-item-count">2 articles</span>
+			<span class="browse-item-count">3 articles</span>
 		</a>
 	</div>
 	
@@ -609,147 +642,207 @@
 
 <p>Explore articles by their subject matter:</p>
 
-<div class="tag-cloud">
+<div class="tag-cloud" id="subject-tag-cloud">
 
 	
 	
 	
-	<a href="/articles/?subject=archaeology" class="tag-cloud-item" data-count="1">Archaeology <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=art-theory" class="tag-cloud-item" data-count="1">Art Theory <span class="tag-count">(1)</span></a>
+	<a href="/articles/?subject=archaeology" class="tag-cloud-item subject-tag" data-count="2">Archaeology <span class="tag-count">(2)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=biography" class="tag-cloud-item" data-count="1">Biography <span class="tag-count">(1)</span></a>
+	<a href="/articles/?subject=art-brut" class="tag-cloud-item subject-tag" data-count="1">Art Brut <span class="tag-count">(1)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=ceramics" class="tag-cloud-item" data-count="1">Ceramics <span class="tag-count">(1)</span></a>
+	<a href="/articles/?subject=art-theory" class="tag-cloud-item subject-tag" data-count="1">Art Theory <span class="tag-count">(1)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=church-graffiti" class="tag-cloud-item" data-count="1">Church Graffiti <span class="tag-count">(1)</span></a>
+	<a href="/articles/?subject=biography" class="tag-cloud-item subject-tag" data-count="1">Biography <span class="tag-count">(1)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=cobra" class="tag-cloud-item" data-count="11">Cobra <span class="tag-count">(11)</span></a>
+	<a href="/articles/?subject=ceramics" class="tag-cloud-item subject-tag" data-count="2">Ceramics <span class="tag-count">(2)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=collage" class="tag-cloud-item" data-count="2">Collage <span class="tag-count">(2)</span></a>
+	<a href="/articles/?subject=church-graffiti" class="tag-cloud-item subject-tag" data-count="1">Church Graffiti <span class="tag-count">(1)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=comparative-vandalism" class="tag-cloud-item" data-count="2">Comparative Vandalism <span class="tag-count">(2)</span></a>
+	<a href="/articles/?subject=cobra" class="tag-cloud-item subject-tag" data-count="11">Cobra <span class="tag-count">(11)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=cybernetics" class="tag-cloud-item" data-count="1">Cybernetics <span class="tag-count">(1)</span></a>
+	<a href="/articles/?subject=collage" class="tag-cloud-item subject-tag" data-count="2">Collage <span class="tag-count">(2)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=danish-art" class="tag-cloud-item" data-count="1">Danish Art <span class="tag-count">(1)</span></a>
+	<a href="/articles/?subject=comparative-vandalism" class="tag-cloud-item subject-tag" data-count="2">Comparative Vandalism <span class="tag-count">(2)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=exhibition-catalogue" class="tag-cloud-item" data-count="2">Exhibition Catalogue <span class="tag-count">(2)</span></a>
+	<a href="/articles/?subject=cybernetics" class="tag-cloud-item subject-tag" data-count="1">Cybernetics <span class="tag-count">(1)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=fluxus" class="tag-cloud-item" data-count="2">Fluxus <span class="tag-count">(2)</span></a>
+	<a href="/articles/?subject=danish-art" class="tag-cloud-item subject-tag" data-count="1">Danish Art <span class="tag-count">(1)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=helhesten" class="tag-cloud-item" data-count="9">Helhesten <span class="tag-count">(9)</span></a>
+	<a href="/articles/?subject=exhibition-catalogue" class="tag-cloud-item subject-tag" data-count="2">Exhibition Catalogue <span class="tag-count">(2)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=klankteksten" class="tag-cloud-item" data-count="1">Klankteksten <span class="tag-count">(1)</span></a>
+	<a href="/articles/?subject=experimental-music" class="tag-cloud-item subject-tag" data-count="1">Experimental Music <span class="tag-count">(1)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=medieval-art" class="tag-cloud-item" data-count="2">Medieval Art <span class="tag-count">(2)</span></a>
+	<a href="/articles/?subject=fluxus" class="tag-cloud-item subject-tag" data-count="2">Fluxus <span class="tag-count">(2)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=nordic-art" class="tag-cloud-item" data-count="1">Nordic Art <span class="tag-count">(1)</span></a>
+	<a href="/articles/?subject=folk-art" class="tag-cloud-item subject-tag" data-count="1">Folk Art <span class="tag-count">(1)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=painting" class="tag-cloud-item" data-count="4">Painting <span class="tag-count">(4)</span></a>
+	<a href="/articles/?subject=helhesten" class="tag-cloud-item subject-tag" data-count="9">Helhesten <span class="tag-count">(9)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=psychogeography" class="tag-cloud-item" data-count="1">Psychogeography <span class="tag-count">(1)</span></a>
+	<a href="/articles/?subject=klankteksten" class="tag-cloud-item subject-tag" data-count="1">Klankteksten <span class="tag-count">(1)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=romanesque-architecture" class="tag-cloud-item" data-count="1">Romanesque Architecture <span class="tag-count">(1)</span></a>
+	<a href="/articles/?subject=medieval-art" class="tag-cloud-item subject-tag" data-count="2">Medieval Art <span class="tag-count">(2)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=sculpture" class="tag-cloud-item" data-count="2">Sculpture <span class="tag-count">(2)</span></a>
+	<a href="/articles/?subject=murals" class="tag-cloud-item subject-tag" data-count="1">Murals <span class="tag-count">(1)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=situationist-international" class="tag-cloud-item" data-count="1">Situationist International <span class="tag-count">(1)</span></a>
+	<a href="/articles/?subject=nordic-art" class="tag-cloud-item subject-tag" data-count="2">Nordic Art <span class="tag-count">(2)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=structuralism" class="tag-cloud-item" data-count="1">Structuralism <span class="tag-count">(1)</span></a>
+	<a href="/articles/?subject=painting" class="tag-cloud-item subject-tag" data-count="4">Painting <span class="tag-count">(4)</span></a>
 	
 
 	
 	
 	
-	<a href="/articles/?subject=word-painting" class="tag-cloud-item" data-count="1">Word Painting <span class="tag-count">(1)</span></a>
+	<a href="/articles/?subject=psychogeography" class="tag-cloud-item subject-tag" data-count="1">Psychogeography <span class="tag-count">(1)</span></a>
+	
+
+	
+	
+	
+	<a href="/articles/?subject=romanesque-architecture" class="tag-cloud-item subject-tag" data-count="1">Romanesque Architecture <span class="tag-count">(1)</span></a>
+	
+
+	
+	
+	
+	<a href="/articles/?subject=sculpture" class="tag-cloud-item subject-tag" data-count="2">Sculpture <span class="tag-count">(2)</span></a>
+	
+
+	
+	
+	
+	<a href="/articles/?subject=situationist-international" class="tag-cloud-item subject-tag" data-count="1">Situationist International <span class="tag-count">(1)</span></a>
+	
+
+	
+	
+	
+	<a href="/articles/?subject=sound-art" class="tag-cloud-item subject-tag" data-count="1">Sound Art <span class="tag-count">(1)</span></a>
+	
+
+	
+	
+	
+	<a href="/articles/?subject=structuralism" class="tag-cloud-item subject-tag" data-count="1">Structuralism <span class="tag-count">(1)</span></a>
+	
+
+	
+	
+	
+	<a href="/articles/?subject=vandalism" class="tag-cloud-item subject-tag" data-count="1">Vandalism <span class="tag-count">(1)</span></a>
+	
+
+	
+	
+	
+	<a href="/articles/?subject=word-painting" class="tag-cloud-item subject-tag" data-count="1">Word Painting <span class="tag-count">(1)</span></a>
 	
 
 </div>
+
+<script>
+(function() {
+	'use strict';
+	
+	// Color palette from filter buttons (with 80% opacity via rgba)
+	var colors = [
+		'rgba(160, 64, 64, 0.8)',   // Collection burgundy/red
+		'rgba(74, 111, 165, 0.8)',  // Tag steel blue
+		'rgba(90, 138, 90, 0.8)',   // Subject sage green
+		'rgba(122, 90, 138, 0.8)',  // Category purple
+		'rgba(176, 112, 64, 0.8)'   // Creator amber/orange
+	];
+	
+	var subjectTags = document.querySelectorAll('.subject-tag');
+	
+	subjectTags.forEach(function(tag) {
+		var randomColor = colors[Math.floor(Math.random() * colors.length)];
+		tag.style.backgroundColor = randomColor;
+		tag.style.borderColor = randomColor;
+	});
+})();
+</script>
+
 
 
 
@@ -792,7 +885,7 @@
 			<strong><a href="/collection/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a></strong> is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
 		</div>
 		<div class="collection-browse-meta">
-			5 articles &middot; <a href="/collection/jorn-catalogue-raisonne/">View collection &rarr;</a>
+			6 articles &middot; <a href="/collection/jorn-catalogue-raisonne/">View collection &rarr;</a>
 		</div>
 	</div>
 
@@ -818,7 +911,7 @@
 		<p class="creator-card-description">Asger Oluf Jorn (3 March 1914 – 1 May 1973) was a Danish painter, sculptor, ceramic artist, and author. He was a founding member of the avant-garde movement COBRA and the Situationist International.</p>
 		
 		
-		<p class="creator-card-meta">23 articles archived</p>
+		<p class="creator-card-meta">26 articles archived</p>
 		<div class="creator-card-articles">
 			
 			<a href="/article/asger-jorn-a-silkeborg/" class="creator-card-article-link">Asger Jorn à Silkeborg</a>, 
@@ -828,7 +921,7 @@
 			<a href="/article/helhesten-1_2/" class="creator-card-article-link">Helhesten (Year 1, Booklet 2)</a>
 			
 			
-			<span class="creator-card-more">and 20 more...</span>
+			<span class="creator-card-more">and 23 more...</span>
 			
 		</div>
 		
@@ -1144,8 +1237,6 @@
 			</div>
 		</div>
 		
-		<!-- Featherlight lightbox - loaded at end of body for proper initialization -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js"></script>
-		<script src="/js/featherlight.gallery.min.js"></script>
+		<!-- PhotoSwipe is loaded via ES6 modules in head.html -->
 	</body>
 </html>

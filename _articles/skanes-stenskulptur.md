@@ -150,11 +150,7 @@ This volume is part of Jorn's *10,000 Years of Nordic Folk Art* series. Other vo
 
 ## Gallery
 
-<section
-	data-featherlight-gallery
-	data-featherlight-filter="a"
-	class="gallery-grid"
-	>
+<section data-gallery class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/skanes-stenskulptur/lund_1580.jpg"><img src="/assets/articles/skanes-stenskulptur/lund_1580.jpg"></a>
 			<figcaption>Lund Cathedral in 1580</figcaption>

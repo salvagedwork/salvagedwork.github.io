@@ -68,11 +68,7 @@ Greg Lutz<span class="footnote"><a href="http://surround.noquam.com/nature-and-c
 
 ## Gallery
 
-<section
-	data-featherlight-gallery
-	data-featherlight-filter="a"
-	class="gallery-grid"
-	>
+<section data-gallery class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/abschiedssymphonie/front.jpg"><img src="/assets/articles/abschiedssymphonie/front.jpg"></a>
 			<figcaption>LP front cover</figcaption>

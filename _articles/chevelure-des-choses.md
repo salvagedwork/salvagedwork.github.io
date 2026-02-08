@@ -41,11 +41,7 @@ Prior to the publication and exhibition of *La chevelure*, the pair collaborated
 
 ## Gallery
 
-<section
-	data-featherlight-gallery
-	data-featherlight-filter="a"
-	class="gallery-grid"
-	>
+<section data-gallery class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/chevelure-des-choses/chevelure_painting.jpg"><img src="/assets/articles/chevelure-des-choses/chevelure_painting.jpg"></a>
 			<figcaption><em>Ici la chevelure des choses coiffée avec un doigt d'eau</em> (Here the hair of things capped with a finger of water), a 1948 word painting by Jorn and Dotremont.</figcaption>

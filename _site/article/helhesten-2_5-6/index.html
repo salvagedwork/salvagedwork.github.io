@@ -21,24 +21,33 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/featherlight.min.css">
-	<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
+	
+	<!-- PhotoSwipe CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.css">
+	<link rel="stylesheet" href="/css/photoswipe-custom.css">
 	
 	<!-- 
 		Scripts loaded in head:
-		- jQuery: Required for Featherlight lightbox
-		- detect_swipe: Required for Featherlight gallery swipe support
-		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- footnotes.js: Vanilla JS, no dependencies
 		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.4/jquery.detect_swipe.min.js"></script>
 	
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
+	
+	<!-- PhotoSwipe JavaScript -->
+	<script type="module">
+		import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js';
+		import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.esm.js';
+		
+		// Make available globally for our init script
+		window.PhotoSwipeLightbox = PhotoSwipeLightbox;
+		window.PhotoSwipe = PhotoSwipe;
+	</script>
+	<script src="/js/photoswipe-init.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -340,11 +349,13 @@
 
 <h3 id="childrens-drawings">Children’s Drawings</h3>
 
-<div class="thumbnail-container">
-    <a href="#" data-featherlight="/assets/articles/helhesten/helhesten_2.56_children.jpg"><img class="thumbnail-image" src="/assets/articles/helhesten/helhesten_2.56_children.jpg" /></a>
-    
-    <div class="thumbnail-caption">Some of the print inserts in <cite>Helhesten</cite> were drawings made by children, as seen in this print from <cite>Helhesten</cite> year 2, booklets 5-6. The Helhesten artists believed in the ability of children's drawings to convey an uninhibited and uninfluenced sense of realism.</div>
-    
+<div class="thumbnail-container" data-gallery="">
+    <figure>
+        <a href="/assets/articles/helhesten/helhesten_2.56_children.jpg"><img class="thumbnail-image" src="/assets/articles/helhesten/helhesten_2.56_children.jpg" /></a>
+        
+        <figcaption class="thumbnail-caption">Some of the print inserts in <cite>Helhesten</cite> were drawings made by children, as seen in this print from <cite>Helhesten</cite> year 2, booklets 5-6. The Helhesten artists believed in the ability of children's drawings to convey an uninhibited and uninfluenced sense of realism.</figcaption>
+        
+    </figure>
 </div>
 
 <p>The final issue included children’s drawings as print inserts, demonstrating the group’s continued commitment to celebrating uninhibited creativity as a model for authentic artistic expression.</p>
@@ -427,8 +438,6 @@ for (i = 0; i < coll.length; i++) {
 			</div>
 		</div>
 		
-		<!-- Featherlight lightbox - loaded at end of body for proper initialization -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js"></script>
-		<script src="/js/featherlight.gallery.min.js"></script>
+		<!-- PhotoSwipe is loaded via ES6 modules in head.html -->
 	</body>
 </html>

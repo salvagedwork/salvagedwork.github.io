@@ -21,24 +21,33 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/featherlight.min.css">
-	<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
+	
+	<!-- PhotoSwipe CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.css">
+	<link rel="stylesheet" href="/css/photoswipe-custom.css">
 	
 	<!-- 
 		Scripts loaded in head:
-		- jQuery: Required for Featherlight lightbox
-		- detect_swipe: Required for Featherlight gallery swipe support
-		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- footnotes.js: Vanilla JS, no dependencies
 		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.4/jquery.detect_swipe.min.js"></script>
 	
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
+	
+	<!-- PhotoSwipe JavaScript -->
+	<script type="module">
+		import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js';
+		import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.esm.js';
+		
+		// Make available globally for our init script
+		window.PhotoSwipeLightbox = PhotoSwipeLightbox;
+		window.PhotoSwipe = PhotoSwipe;
+	</script>
+	<script src="/js/photoswipe-init.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -301,11 +310,13 @@
 
 <h2 id="concept">Concept</h2>
 
-<div class="thumbnail-container">
-    <a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/signes_01.jpg"><img class="thumbnail-image" src="/assets/articles/signes-graves-eure-calvados/signes_01.jpg" /></a>
-    
-    <div class="thumbnail-caption">An example of signs. The lower photo is from the church in Tournedos, Eure. The upper photo is unidentified.</div>
-    
+<div class="thumbnail-container" data-gallery="">
+    <figure>
+        <a href="/assets/articles/signes-graves-eure-calvados/signes_01.jpg"><img class="thumbnail-image" src="/assets/articles/signes-graves-eure-calvados/signes_01.jpg" /></a>
+        
+        <figcaption class="thumbnail-caption">An example of signs. The lower photo is from the church in Tournedos, Eure. The upper photo is unidentified.</figcaption>
+        
+    </figure>
 </div>
 
 <p>Karen Kurcynski explains Jorn’s comparison of the symbols found in Eure and Calvados to the Scandinavian “Vandal” culture:</p>
@@ -318,11 +329,13 @@
 
 </div>
 
-<div class="thumbnail-container">
-    <a href="#" data-featherlight="/assets/articles/signes-graves-eure-calvados/signes_02.jpg"><img class="thumbnail-image" src="/assets/articles/signes-graves-eure-calvados/signes_02.jpg" /></a>
-    
-    <div class="thumbnail-caption">Signs from the church in Tilleul-Dame-Agnès, Eure.</div>
-    
+<div class="thumbnail-container" data-gallery="">
+    <figure>
+        <a href="/assets/articles/signes-graves-eure-calvados/signes_02.jpg"><img class="thumbnail-image" src="/assets/articles/signes-graves-eure-calvados/signes_02.jpg" /></a>
+        
+        <figcaption class="thumbnail-caption">Signs from the church in Tilleul-Dame-Agnès, Eure.</figcaption>
+        
+    </figure>
 </div>
 
 <p>Steven Harris links Jorn’s fascination with engravings found on churches to Scandinavian expansion into Normandy:</p>
@@ -360,7 +373,7 @@
 
 <h2 id="gallery">Gallery</h2>
 
-<section data-featherlight-gallery="" data-featherlight-filter="a" class="gallery-grid">
+<section data-gallery="" class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/signes-graves-eure-calvados/signes_03.jpg"><img src="/assets/articles/signes-graves-eure-calvados/signes_03.jpg" /></a>
 			<figcaption>Signs from the church in Claville, Eure.</figcaption>
@@ -433,8 +446,6 @@ for (i = 0; i < coll.length; i++) {
 			</div>
 		</div>
 		
-		<!-- Featherlight lightbox - loaded at end of body for proper initialization -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js"></script>
-		<script src="/js/featherlight.gallery.min.js"></script>
+		<!-- PhotoSwipe is loaded via ES6 modules in head.html -->
 	</body>
 </html>

@@ -21,24 +21,33 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/featherlight.min.css">
-	<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
+	
+	<!-- PhotoSwipe CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.css">
+	<link rel="stylesheet" href="/css/photoswipe-custom.css">
 	
 	<!-- 
 		Scripts loaded in head:
-		- jQuery: Required for Featherlight lightbox
-		- detect_swipe: Required for Featherlight gallery swipe support
-		- footnotes.js: Now vanilla JS, no jQuery dependency
+		- footnotes.js: Vanilla JS, no dependencies
 		- translation-toggle.js: For original/English toggle in collapsibles
 		- recaptcha: Only needed on contact page, loaded async
 	-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.4/jquery.detect_swipe.min.js"></script>
 	
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
+	
+	<!-- PhotoSwipe JavaScript -->
+	<script type="module">
+		import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js';
+		import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.esm.js';
+		
+		// Make available globally for our init script
+		window.PhotoSwipeLightbox = PhotoSwipeLightbox;
+		window.PhotoSwipe = PhotoSwipe;
+	</script>
+	<script src="/js/photoswipe-init.js" defer></script>
 	
 	<!-- reCAPTCHA - only needed on contact page -->
 	
@@ -307,11 +316,13 @@
 
 <p>The Scandinavian Institute of Comparative Vandalism <em>(Skandinavisk Institut for Sammenlignende Vandalisme)</em> was an organization created by Asger Jorn, Gérard Franceschi, and several scholars, based in Silkeborg and with satellite offices in Paris and Brussels. The Institute was formed to document the artistic tradition of the Scandinavian region in the Northern migration period through photography, but also to show how this tradition migrated through Europe over time. Jorn employed the term <em>Vandalism</em> both to reference the popular culture of the period (the Vandals were one of the historic Germanic tribes that sacked Rome in 455 A.D.) and to position himself as a rebel, or <em>vandal</em>, who would tell the world about this alternative history to historical art.</p>
 
-<div class="thumbnail-container">
-    <a href="#" data-featherlight="/assets/articles/skanes-stenskulptur/dedication.jpg"><img class="thumbnail-image" src="/assets/articles/skanes-stenskulptur/dedication.jpg" /></a>
-    
-    <div class="thumbnail-caption">The dedication page of the book, <em>"Given the importance of the subject of the medieval origins of Scandinavian art, this subject should not be dealt with in a partial but a comprehensive study. For this reason the Institute expresses its gratitude to all those who through their collaboration made this publication possible."</em></div>
-    
+<div class="thumbnail-container" data-gallery="">
+    <figure>
+        <a href="/assets/articles/skanes-stenskulptur/dedication.jpg"><img class="thumbnail-image" src="/assets/articles/skanes-stenskulptur/dedication.jpg" /></a>
+        
+        <figcaption class="thumbnail-caption">The dedication page of the book, <em>"Given the importance of the subject of the medieval origins of Scandinavian art, this subject should not be dealt with in a partial but a comprehensive study. For this reason the Institute expresses its gratitude to all those who through their collaboration made this publication possible."</em></figcaption>
+        
+    </figure>
 </div>
 
 <p>Karen Kurczynski explains:</p>
@@ -339,11 +350,13 @@
 
 <h2 id="concept">Concept</h2>
 
-<div class="thumbnail-container">
-    <a href="#" data-featherlight="/assets/articles/skanes-stenskulptur/skane_map.jpg"><img class="thumbnail-image" src="/assets/articles/skanes-stenskulptur/skane_map.jpg" /></a>
-    
-    <div class="thumbnail-caption">A map of Skåne showing the location of the churches examined in the book.</div>
-    
+<div class="thumbnail-container" data-gallery="">
+    <figure>
+        <a href="/assets/articles/skanes-stenskulptur/skane_map.jpg"><img class="thumbnail-image" src="/assets/articles/skanes-stenskulptur/skane_map.jpg" /></a>
+        
+        <figcaption class="thumbnail-caption">A map of Skåne showing the location of the churches examined in the book.</figcaption>
+        
+    </figure>
 </div>
 
 <p>The book examines 12th century stone sculptures and reliefs that are found on and in churches throughout the Skåne region. Cinthio provides detailed analyses of sculptures, their provenance, what they depict, and how they are similar to other works found in other regions. Today, the Skåne region is part of Sweden, but was part of the Kingdom of Denmark until 1658.</p>
@@ -453,7 +466,7 @@ for you to say that, before I die.”</p>
 
 <h2 id="gallery">Gallery</h2>
 
-<section data-featherlight-gallery="" data-featherlight-filter="a" class="gallery-grid">
+<section data-gallery="" class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/skanes-stenskulptur/lund_1580.jpg"><img src="/assets/articles/skanes-stenskulptur/lund_1580.jpg" /></a>
 			<figcaption>Lund Cathedral in 1580</figcaption>
@@ -500,8 +513,6 @@ for you to say that, before I die.”</p>
 			</div>
 		</div>
 		
-		<!-- Featherlight lightbox - loaded at end of body for proper initialization -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js"></script>
-		<script src="/js/featherlight.gallery.min.js"></script>
+		<!-- PhotoSwipe is loaded via ES6 modules in head.html -->
 	</body>
 </html>

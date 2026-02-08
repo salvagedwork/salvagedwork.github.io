@@ -123,7 +123,7 @@ a.current { color: red; }
 .article-tile-meta a { color: #666; text-decoration: none; }
 .article-tile-meta a:hover { color: #1a1a1a; text-decoration: underline; }
 
-.meta-item::after { content: " Â· "; color: #ccc; }
+.meta-item::after { content: " Ã‚Â· "; color: #ccc; }
 .meta-item:last-child::after { content: ""; }
 
 .meta-label { color: #888; }
@@ -295,6 +295,10 @@ button { display: block; padding: 1rem; border: none; background-color: #1a1a1a;
 .collection-browse-meta { font-size: 0.85rem; color: #666; }
 .collection-browse-meta a { color: #666; }
 .collection-browse-meta a:hover { color: #cc0000; }
+
+.subject-tag { color: white; }
+.subject-tag .tag-count { color: rgba(255, 255, 255, 0.9); }
+.subject-tag:hover { opacity: 0.85; color: white; }
 
 @media only screen and (max-width: 768px) { .burger-menu { display: flex; }
   .navbar-links-container { display: none; }

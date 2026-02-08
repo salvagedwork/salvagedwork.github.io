@@ -96,11 +96,7 @@ Dates of composition:
 
 ## Gallery
 
-<section
-	data-featherlight-gallery
-	data-featherlight-filter="a"
-	class="gallery-grid"
-	>
+<section data-gallery class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/klankteksten/klankteksten_084.jpg"><img src="/assets/articles/klankteksten/klankteksten_084.jpg"></a>
 			<figcaption>Toshihiko Shimizu - <em>six meditations</em> (1969)</figcaption>

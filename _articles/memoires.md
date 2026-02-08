@@ -58,11 +58,7 @@ The book is furnished with a sandpaper cover after a suggestion made by the prin
 
 ## Gallery
 
-<section
-	data-featherlight-gallery
-	data-featherlight-filter="a"
-	class="gallery-grid"
-	>
+<section data-gallery class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/memoires/memoires_01.jpg"><img src="/assets/articles/memoires/memoires_01.jpg"></a>
 			<figcaption></figcaption>

@@ -1,0 +1,72 @@
+/**
+ * PhotoSwipe Custom Styles
+ * Customizations on top of the default PhotoSwipe CSS
+ */
+
+/* Ensure captions are styled nicely */
+.pswp__custom-caption {
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+/* Style the zoom cursor */
+.pswp__img {
+    cursor: zoom-in;
+}
+
+.pswp__img--zoomed-in {
+    cursor: grab;
+}
+
+.pswp__img--zoomed-in:active {
+    cursor: grabbing;
+}
+
+/* Navigation arrows styling to match your site */
+.pswp__button--arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.pswp__button--arrow:hover {
+    background-color: rgba(204, 0, 0, 0.7); /* Match your red accent color */
+}
+
+/* Counter styling */
+.pswp__counter {
+    font-family: inherit;
+    opacity: 0.8;
+}
+
+/* Close button */
+.pswp__button--close {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.pswp__button--close:hover {
+    background-color: rgba(204, 0, 0, 0.7);
+}
+
+/* Zoom button */
+.pswp__button--zoom {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.pswp__button--zoom:hover {
+    background-color: rgba(204, 0, 0, 0.7);
+}
+
+/* Loading indicator */
+.pswp__preloader__icn {
+    opacity: 0.75;
+}

@@ -14,3 +14,6 @@ Libraries, archives, museums, and collectors reinforce the artificial scarcity o
 The voluntary dedication of *citizen archivists* to bring these works to the internet is invaluable. The permanence of a digitized work transcends the decay of paper, the warping of vinyl, and the ruin of institutions.
 
 salvaged.work uses the [Internet Archive](https://archive.org/) as the digital repository for these works, so that they may exist even after this archive has disappeared.
+
+> The grind of the scanner as it peels language off the page, thawing it, liberating it.  
+> *Kenneth Goldsmith, Theory, 2015

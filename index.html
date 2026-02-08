@@ -149,7 +149,7 @@ BROWSE BY SUBJECT
 
 <p>Explore articles by their subject matter:</p>
 
-<div class="tag-cloud">
+<div class="tag-cloud" id="subject-tag-cloud">
 {% for subject in all_subjects %}
 	{% if subject != '' %}
 	{% assign subject_count = 0 %}
@@ -158,10 +158,34 @@ BROWSE BY SUBJECT
 			{% assign subject_count = subject_count | plus: 1 %}
 		{% endif %}
 	{% endfor %}
-	<a href="/articles/?subject={{ subject }}" class="tag-cloud-item" data-count="{{ subject_count }}">{% include titlecase.html text=subject %} <span class="tag-count">({{ subject_count }})</span></a>
+	<a href="/articles/?subject={{ subject }}" class="tag-cloud-item subject-tag" data-count="{{ subject_count }}">{% include titlecase.html text=subject %} <span class="tag-count">({{ subject_count }})</span></a>
 	{% endif %}
 {% endfor %}
 </div>
+
+<script>
+(function() {
+	'use strict';
+	
+	// Color palette from filter buttons (with 80% opacity via rgba)
+	var colors = [
+		'rgba(160, 64, 64, 0.8)',   // Collection burgundy/red
+		'rgba(74, 111, 165, 0.8)',  // Tag steel blue
+		'rgba(90, 138, 90, 0.8)',   // Subject sage green
+		'rgba(122, 90, 138, 0.8)',  // Category purple
+		'rgba(176, 112, 64, 0.8)'   // Creator amber/orange
+	];
+	
+	var subjectTags = document.querySelectorAll('.subject-tag');
+	
+	subjectTags.forEach(function(tag) {
+		var randomColor = colors[Math.floor(Math.random() * colors.length)];
+		tag.style.backgroundColor = randomColor;
+		tag.style.borderColor = randomColor;
+	});
+})();
+</script>
+
 {% endif %}
 
 

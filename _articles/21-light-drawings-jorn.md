@@ -54,11 +54,7 @@ The exhibition continued beyond Aarhus Festuge 1971 as a traveling exhibition in
 
 ## Gallery
 
-<section
-	data-featherlight-gallery
-	data-featherlight-filter="a"
-	class="gallery-grid"
-	>
+<section data-gallery class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/21-light-drawings-jorn/lystegninger.jpg"><img src="/assets/articles/21-light-drawings-jorn/lystegninger.jpg"></a>
 			<figcaption>A selection of Jorn's light drawings.</figcaption>

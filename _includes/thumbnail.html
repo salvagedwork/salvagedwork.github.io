@@ -8,9 +8,11 @@ Usage:
 %}
 {% endcomment %}
 
-<div class="thumbnail-container{% if include.fullwidth %}-fullwidth{% endif %}">
-    <a href="#" data-featherlight="{{ include.image }}"><img class="thumbnail-image" src="{{ include.image }}"></a>
-    {% if include.caption %}
-    <div class="thumbnail-caption">{{ include.caption }}</div>
-    {% endif %}
+<div class="thumbnail-container{% if include.fullwidth %}-fullwidth{% endif %}" data-gallery>
+    <figure>
+        <a href="{{ include.image }}"><img class="thumbnail-image" src="{{ include.image }}"></a>
+        {% if include.caption %}
+        <figcaption class="thumbnail-caption">{{ include.caption }}</figcaption>
+        {% endif %}
+    </figure>
 </div>

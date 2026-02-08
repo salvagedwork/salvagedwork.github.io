@@ -70,11 +70,7 @@ Steven Harris links Jorn's fascination with engravings found on churches to Scan
 
 ## Gallery
 
-<section
-	data-featherlight-gallery
-	data-featherlight-filter="a"
-	class="gallery-grid"
-	>
+<section data-gallery class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/signes-graves-eure-calvados/signes_03.jpg"><img src="/assets/articles/signes-graves-eure-calvados/signes_03.jpg"></a>
 			<figcaption>Signs from the church in Claville, Eure.</figcaption>

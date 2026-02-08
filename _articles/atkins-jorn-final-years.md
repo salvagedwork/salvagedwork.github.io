@@ -59,11 +59,7 @@ In so doing he placed an entirely new and highly significant emphasis on the scu
 
 Jorn's diary reveals the intensity of this period: between 9-15 March 1972 alone, he made five sculptures, none smaller than 60 cm high. When talking about these completed sculptures to his Italian dealer, Jorn said: "I feel I have concluded what I had to conclude." The words, unfortunately, were prophetic.
 
-<section
-	data-featherlight-gallery
-	data-featherlight-filter="a"
-	class="gallery-grid"
-	>
+<section data-gallery class="gallery-grid">
 		<figure>
 			<a href="/assets/articles/atkins-jorn-final-years/sculpture_01.jpg"><img src="/assets/articles/atkins-jorn-final-years/sculpture_01.jpg"></a>
 			<figcaption>L: Untitled, 1944, 24 cm. R: Weirdwolf (Varyl), 1952, 56x27 cm</figcaption>
