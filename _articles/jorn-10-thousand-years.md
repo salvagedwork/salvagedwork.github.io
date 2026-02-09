@@ -5,6 +5,7 @@ categories: books
 description: is an exhibition catalogue and documentation of Asger Jorn's ambitious but unfinished project to create a 32-volume encyclopedic visual survey of Nordic art from prehistory through the Middle Ages, published in conjunction with exhibitions at the National Museum in Copenhagen and Silkeborg Art Museum in 1995-96.
 creators: [asger-jorn]
 subjects: [archaeology, nordic-art, folk-art, vandalism]
+member_of: 10000-years-nordic-folk-art
 featured-image: /assets/articles/jorn-10-thousand-years/front.jpg
 date: 2026-02-07
 last_modified_at: 2026-02-07

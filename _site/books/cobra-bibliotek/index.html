@@ -1,0 +1,1154 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>
+		
+			
+			COBRA Bibliotek - salvaged.work
+		
+	</title>
+	
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e81515">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="/css/main.css">
+	
+	<!-- PhotoSwipe CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.css">
+	<link rel="stylesheet" href="/css/photoswipe-custom.css">
+	
+	<!-- 
+		Scripts loaded in head:
+		- footnotes.js: Vanilla JS, no dependencies
+		- translation-toggle.js: For original/English toggle in collapsibles
+		- recaptcha: Only needed on contact page, loaded async
+	-->
+	
+	<!-- Site scripts (vanilla JS) -->
+	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/background.js" defer></script>
+	<script src="/js/translation-toggle.js" defer></script>
+	
+	<!-- PhotoSwipe JavaScript -->
+	<script type="module">
+		import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js';
+		import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.esm.js';
+		
+		// Make available globally for our init script
+		window.PhotoSwipeLightbox = PhotoSwipeLightbox;
+		window.PhotoSwipe = PhotoSwipe;
+	</script>
+	<script src="/js/photoswipe-init.js" defer></script>
+	
+	<!-- reCAPTCHA - only needed on contact page -->
+	
+	
+	<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="salvaged.work" />
+	<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>salvaged.work | A digital archive for salvaged analogue materials.</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="salvaged.work" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A digital archive for salvaged analogue materials." />
+<meta property="og:description" content="A digital archive for salvaged analogue materials." />
+<link rel="canonical" href="http://localhost:4000/books/cobra-bibliotek/" />
+<meta property="og:url" content="http://localhost:4000/books/cobra-bibliotek/" />
+<meta property="og:site_name" content="salvaged.work" />
+<meta property="og:image" content="http://localhost:4000/assets/images/social_media/logo.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="http://localhost:4000/assets/images/social_media/logo.png" />
+<meta property="twitter:title" content="salvaged.work" />
+<meta name="twitter:site" content="@salvagedwork" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"A digital archive for salvaged analogue materials.","headline":"salvaged.work","image":"http://localhost:4000/assets/images/social_media/logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/social_media/logo.png"}},"url":"http://localhost:4000/books/cobra-bibliotek/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+	<body>
+		<div id="page-body">
+			<div id="header">
+				<div class="header-top-row">
+	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
+	<div class="navbar-links-container">
+		
+		<a href="/creators"  class="navbar-link">Creators</a>
+		
+		<a href="/articles"  class="navbar-link">Articles</a>
+		
+		<div class="header-search-container header-search-desktop">
+			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
+			<div id="header-search-results-desktop" class="header-search-results"></div>
+		</div>
+	</div>
+	<button class="burger-menu" id="burger-menu" aria-label="Toggle menu">
+		<span class="burger-line"></span>
+		<span class="burger-line"></span>
+		<span class="burger-line"></span>
+	</button>
+</div>
+
+<nav class="mobile-nav" id="mobile-nav">
+	
+	<a href="/creators" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles" class="mobile-nav-link">Articles</a>
+	
+	<div class="mobile-nav-divider"></div>
+	
+	<a href="/about/" class="mobile-nav-link">About</a>
+	
+	<a href="/contact/" class="mobile-nav-link">Contact</a>
+	
+	<div class="mobile-nav-social">
+		<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
+		<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>
+	</div>
+</nav>
+
+<div class="header-search-container header-search-mobile">
+	<input type="text" id="header-search-input-mobile" class="header-search-input" placeholder="Search..." autocomplete="off">
+	<div id="header-search-results-mobile" class="header-search-results"></div>
+</div>
+
+<script src="/js/simple-jekyll-search.min.js"></script>
+<script>
+(function() {
+	'use strict';
+	
+	// Burger menu toggle
+	var burgerMenu = document.getElementById('burger-menu');
+	var mobileNav = document.getElementById('mobile-nav');
+	
+	if (burgerMenu && mobileNav) {
+		burgerMenu.addEventListener('click', function() {
+			this.classList.toggle('active');
+			mobileNav.classList.toggle('visible');
+		});
+	}
+	
+	// Search functionality
+	function escapeRegex(string) {
+		return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	}
+	
+	function highlightMatch(text, query) {
+		if (!query || !text) return text;
+		var regex = new RegExp('(' + escapeRegex(query) + ')', 'gi');
+		return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+	}
+	
+	// Only use desktop OR mobile based on viewport, not both
+	// This avoids the race condition in SimpleJekyllSearch's global state
+	function initSearch() {
+		var isDesktop = window.innerWidth >= 769;
+		var inputId = isDesktop ? 'header-search-input-desktop' : 'header-search-input-mobile';
+		var resultsId = isDesktop ? 'header-search-results-desktop' : 'header-search-results-mobile';
+		
+		var searchInput = document.getElementById(inputId);
+		var searchResults = document.getElementById(resultsId);
+		
+		if (!searchInput || !searchResults || typeof SimpleJekyllSearch === 'undefined') {
+			return;
+		}
+		
+		var currentQuery = '';
+		
+		SimpleJekyllSearch({
+			searchInput: searchInput,
+			resultsContainer: searchResults,
+			json: '/search.json',
+			searchResultTemplate: '<a href="{url}" class="header-search-result"><span class="header-search-result-title">{title}</span><span class="header-search-result-desc">{description}</span></a>',
+			noResultsText: '<div class="header-search-no-results">No results found</div>',
+			limit: 8,
+			sortMiddleware: function(a, b) {
+				var query = currentQuery.toLowerCase();
+				var aTitle = (a.title || '').toLowerCase();
+				var bTitle = (b.title || '').toLowerCase();
+				
+				// Prioritize titles starting with query
+				var aStartsWith = aTitle.startsWith(query);
+				var bStartsWith = bTitle.startsWith(query);
+				if (aStartsWith && !bStartsWith) return -1;
+				if (!aStartsWith && bStartsWith) return 1;
+				
+				// Then prioritize titles containing query
+				var aTitleContains = aTitle.includes(query);
+				var bTitleContains = bTitle.includes(query);
+				if (aTitleContains && !bTitleContains) return -1;
+				if (!aTitleContains && bTitleContains) return 1;
+				
+				// Fall back to alphabetical
+				return aTitle.localeCompare(bTitle);
+			},
+			templateMiddleware: function(prop, value, template) {
+				if (prop === 'title' || prop === 'description') {
+					return highlightMatch(value, currentQuery);
+				}
+				return value;
+			}
+		});
+		
+		// Show/hide results and track current query
+		searchInput.addEventListener('input', function() {
+			currentQuery = this.value;
+			if (this.value.length > 0) {
+				searchResults.classList.add('visible');
+			} else {
+				searchResults.classList.remove('visible');
+			}
+		});
+		
+		searchInput.addEventListener('focus', function() {
+			if (this.value.length > 0) {
+				searchResults.classList.add('visible');
+			}
+		});
+		
+		document.addEventListener('click', function(e) {
+			if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+				searchResults.classList.remove('visible');
+			}
+		});
+		
+		searchInput.addEventListener('keydown', function(e) {
+			if (e.key === 'Escape') {
+				searchResults.classList.remove('visible');
+				this.blur();
+			}
+		});
+	}
+	
+	initSearch();
+})();
+</script>
+
+			</div>
+			
+			<div id="content">
+				
+
+<div class="book-reader">
+	
+	<div class="book-header">
+		<a href="/article/cobra-bibliotek/" class="book-back-link">&larr; Back to article</a>
+		<h1 class="book-title">COBRA Bibliotek</h1>
+	</div>
+	
+	<nav class="book-toc" aria-label="Table of contents">
+		<div class="book-toc-inner">
+			
+			
+			<div class="book-language-switch">
+				
+				<button class="book-lang-btn" 
+						data-lang="dk">
+					Danish
+				</button>
+				
+				<button class="book-lang-btn active" 
+						data-lang="en">
+					English
+				</button>
+				
+			</div>
+			
+			
+			<h3 class="book-toc-title">Contents</h3>
+			
+			<ul class="book-toc-list" id="book-toc-list">
+				<li class="book-toc-loading">Loading...</li>
+			</ul>
+			
+		</div>
+	</nav>
+	
+	<div class="book-content">
+		
+		<div class="book-text" data-lang="dk" hidden>
+			
+			
+			<h1 id="cobra-bibliotheket">COBRA BIBLIOTHEKET</h1>
+
+<p>1. SERIE: <em>DE FRIE KUNSTNERE</em>. REDAKTØR ASGER JORN</p>
+
+<p><em>Permanent encyklopædi for eksperimenterende kunst. Redaktion: COBRA, den internationale gruppe af eksperimenterende kunstnere.</em></p>
+
+<p>EJNAR MUNKSGAARDS FORLAG</p>
+
+<p>KØBENHAVN 1950</p>
+
+<hr />
+
+<p>FEMTEN KUNSTNERMONOGRAFIER</p>
+
+<p><em>første serie i den eksperimentelle kunsts permanente encyklopædi</em></p>
+
+<p>1. <em>Pierre Alechinsky.</em> Tekst af Luc Zangrie.</p>
+
+<p>2. <em>Else Alfelt.</em> Tekst af Edouard Jaguer.</p>
+
+<p>3. <em>Karel Appel.</em> Tekst af Chr. Dotremont.</p>
+
+<p>4. <em>Atlan.</em> Tekst af Michel Ragon.</p>
+
+<p>5. <em>Ejler Bille.</em> Tekst af Michel Ragon.</p>
+
+<p>6. <em>Constant.</em> Tekst af Chr. Dotremont.</p>
+
+<p>7. <em>Corneille.</em> Tekst af Chr. Dotremont.</p>
+
+<p>8. <em>Jaques Doucet.</em> Tekst af Jean Laude.</p>
+
+<p>9. <em>Sonja Ferlov.</em> Tekst af Chr. Dotremont.</p>
+
+<p>10. <em>Stephen Gilbert.</em> Tekst af Edouard Jaguer.</p>
+
+<p>11. <em>Svavar Gudnason.</em> Tekst af Edouard Jaguer.</p>
+
+<p>12. <em>Henry Heerup.</em> Tekst af Chr. Dotremont.</p>
+
+<p>13. <em>Egill Jacobsen.</em> Tekst af Chr. Dotremont.</p>
+
+<p>14. <em>Asger Jorn.</em> Tekst af Chr. Dotremont.</p>
+
+<p>15. <em>Carl-Henning Pedersen.</em> Tekst af Chr. Dotremont.</p>
+
+<p>Den her foreliggende samling små monografier er opstået ud fra ønsket om at manifestere en bestemt kunstnerisk tendens i vor tid gennem nogle af dennes mest typiske repræsentanter, og for gennem en serie upretentiøse småhefter at give den mest omfattende karakteristik af hver enkelt kunstner. Vi har søgt at finde en form for information mellem kunstnere og kunstinteresserede, der fritaget for merkantile pragtudfoldelser kunne blive et sidestykke til den udveksling af erfaringer, der igennem lange tider har været videnskabens styrke, og på deres område hjulpet til at fremme det internationale samarbejde.</p>
+
+<p>Det er vort håb, at kunstnere af andre tendenser vil tage ideen op og derigennem hjælpe med til at bryde de unaturlige rammer og sekter hvori <em>ismerne</em> efterhånden har indkapslet vor tids kunst. Denne opløsning af de kunstneriske rammer er grundprogrammet for den tendens, der her er repræsenteret. Vi søger dette mål, ikke ved at tage afstand fra disse specielle bestræbelser og koge suppe på traditionernes traditionalisme, hvor stoffet har mistet sit salt, men ved at stræbe mod en synthèse af det levende i den abstrakte form, såvel som i det naturalistiske indhold, af det sociale fællesskab udtrykt gennem den frigjorte personlighed, af det frigjorte samfund, af den surrealistiske drøm såvel som den hårde konkrete kendsgerning, sammensmeltet i en romantisk realisme.</p>
+
+<p>Det er vor overbevisning, at vi gennem disse syn- thetiske bestræbelser og kun herigennem og kun om de også tages op fra andet hold, vil nå til en kunstnerisk kvalitetsændring, til en metamorfose, en indholdets umiddelbare, sande form, til en universel kunst, frigjort for klassicistiske dogmer og formalistiske taburegler, til en menneskelig kunst.</p>
+
+<p>Vi vil gerne takke såvel Munksgaards Forlag som Bogtrykkeriet Selandia og litograf J. Chr. Sørensen for deres store hjælpsomhed ved gennemførelsen af dette eksperiment. Ganske specielt takker vi cliche-anstalten Heimburger &amp; Wendt, hvis generøsitet har muliggjort bibliotekets udgivelse.</p>
+
+<p><em>Asger Jorn.</em></p>
+
+<h2 id="1-pierre-alechinsky">1: PIERRE ALECHINSKY</h2>
+
+<p><em>TEXTE LUC ZANGRIE</em></p>
+
+<p>Belgisk maler.</p>
+
+<p>Født 1927 i Bryssel.</p>
+
+<p>Når Pierre Alechinsky deltager i de <em>store manøvrer,</em> gør hans blod blot en enkelt omdrejning. Hans blod eksploderer til dråber.</p>
+
+<p>Jeg mener at have mødt ham ved tidligt gry en dag uden nat, og vi blev ikke færdige med at sige goddag.</p>
+
+<p>Hver morgen sin kultur: Ved morgengry bevæbner Alechinskys naboer sig med stylter for at gøre gymnastik på en seng af vandsugende vat, hvor deres pulsårer sveder dråbe efter dråbe, men den <em>rustne, ubevægelige</em> maler opløses i latter. Organerne holdes blot sammen med en tråd. Fodspidsen dykker ned i mavesækken, der presser på blæren, der skubber til hjertet, der løfter hovedet. <em>Pulsmåleren</em> viser stadig storm. Foreløbigt slutter jeg altså, at der på den ene side er militæret og gymnasterne og på den anden side malerne.</p>
+
+<p>Dog elsker Alechinsky <em>den fri luft.</em> Han vilde deri se <em>moderskaber</em> vokse som træer, rummet befolket med smukke erotiske blomster med tyngende bekymringer. Uafladeligt beriget af øjnene er verden en <em>zoologisk have,</em> hvor formerne gi’r hinanden pote med latterens farvesnor.</p>
+
+<p>Når snoren brister af for megen latter, flyver formen bort, og en ballon fødes, hvide <em>balloner,</em> grønne og røde ægter friheden.</p>
+
+<p>Da vi dog er i kosmos, lad os da lade de mærkeligste fæomener, der udspilles, passere revy. Lad os for det første pensle — det drejer sig netop om at pensle — et billede af den almindelige situation.</p>
+
+<p>En væsentlig kendsgerning påtrænger sig: De sorte sole ophæver ikke himlens blå. Til min store glæde tilintetgør Alechinsky identitetsprincippet. Verdnerne i panik træffer aftaler, telefonerer, strikker. <em>Universet</em> er endeligt truet af maleriet, men ud fra dette synspunkt finder maleren en alvorlig konkurrent i strategen: Den ene truer, den anden dræber. Alechinsky beskriver med pinlighed de professionelle bekymringer, som militærhistoriens annaler forårsager ham, fra Waterloo til Bikini. Hader han de militære (undskyld min gentagelse), så tilbeder Alechinsky til gengæld videnskabsmændene, som han beundrer. Til fysikerens store overraskelse synker de røde verdner langs med deres edderkoppetråd, mens zeppelineren hæver sig.</p>
+
+<p>Verdnerne modstår beregninger, men ikke en hemmelig appel til smilet.</p>
+
+<p>* * *</p>
+
+<p>I stor hemmelighed forbereder Alechinsky uld-bomben i et landskab, han har japaniseret, jeg tror, for at udslette sporene. Han forlader om middagen sit laboratorium, al- vorlig, udfordrende, gnistrende. Han vurderer utålmodigt uvejret udenfor, for at se, om det er muligt at tage et bad. Denne vinter har han uopholdeligt forbundet vandets idé med isens billede: <em>Det regner på pakisen.</em> Alechinsky rejste gerne til de varme lande. Babylon tiltrækker ham og de tusinde og een nætter, han endnu har at drømme.</p>
+
+<p>Imens han venter på at komme over havet, laver han et <em>akvarium.</em> Han tilpasser sine tanker til <em>søens format,</em> fyldt med grønne og røde vande, hvor frøerne lægger guldæg. Smukke skibe er fortøjet i stævnen. I øjeblikket interesserer han sig for havets indre. Han går på opdagelse i tingenes underverden. Han spørger sig selv, hvorfor tingene svømmer. Nysgerrigheden er så forbløffende, at det får havet til at gå over sine bredder. Når han er dykket ned, udskilles bølgerne af deres naturlige kyskhed og forvandles til aks, til ankerringe, og kommer for at udføre den <em>dansende</em> moral på kaptajnen på broen af hans eget skib.</p>
+
+<p>En nat udskar han i en selvlysende rosa bøje en stor, trefarvet slange i <em>karnevals</em>-konfetti. Blandt de natlige fester er der visse alvorligt kompromitterede. Til jul var der på de oplyste gader i Brüssel en fodgænger, der smeltede sammen med isen.</p>
+
+<p>Men foråret genfødes på et <em>hollandsk landskab</em> mer’ lokkende end Holland. En vindmølle forlover sig med en blomst, skyerne luller på engene, et tulipanhoved er skudt op over de andre tulipaner. Af alle Hollands gule tulipaner komponerer Alechinsky en mand, der sover på gamle fornøjelige træfninger.</p>
+
+<p>Jeg tror hos Alechinsky at kunne skelne det seksuelle instinkt med dets vidunderlige skala af nuancer, og et specielt instinkt, som man udefra kun kan forsøge ufuldstændigt at definere ved hjælp af de rosa farver, der fuldstændigt udtrykker det. Jeg erklærer på æresord, at det hverken drejer sig om en „rosa periode” eller en stræben mod „livet i rosenrødt”, men om en uopdæmmelig tendens til livets opretholdelse, der indtager deres øjne som en befrielseshær. Af denne hær har Alechinsky opsat en minutiøs fortegnelse, hvor tusinde berusede generaler overvåger nogle forsultede gul-okrede soldater. Dette bagvendte <em>forsøg på kolonisation</em> bringer spørgsmålet om adskillige af de opnåede stillinger på bane, hvorom jeg dog er forsigtig nok til her ikke at udbrede mig. Jeg tvinger mig selv til at vende tilbage til mit oprindelige emne, som er at vise visse sider af min vens dårlige karakter.</p>
+
+<p>Han elsker de utallige smukke kvinder, der er forenet i hans. For den, der forstår at se på akvareller i sollys, fremtræder hun i filigran i disse tilspidsede fester, som jeg anstrenger mig for at beskrive dialektisk. Alechinsky udvikler en manichæisk metafysik. Det gode og det onde kæmper en voldsom kamp: De udspreder sig sjofelt fra lærred til lærred, men jeg gyser ikke værst ved det daglige syn af dette skuespil, for jeg véd, hvem der fordeler ammunitionen, og hvordan. Hans religion, grundlagt på kvindelige guddomme, nogle fjendtlige, de fleste milde, er en pancromatisk polytheisme. Deres dialog (lydbilledet i Alechinskys maleri slår os stærkt) overdøver en dag museernes.</p>
+
+<p>I starten bringer han sine gudinder i samklang på en given akkord, som han spiller for dem på guitar: Alechinskys former er smukke og lysende som nøgne mandler. En hemmelig ret våger over deres skæbne. Han giver ordet til den gode fé, såvel som til den onde, og deres argumenter går løs på hinanden.</p>
+
+<p>Den fjortende juli svarer til <em>blyhavet.</em> Til tider, når uenigheden forværres, synes det opløste publikum — bogstaveligt talt opløst — at deltage i den sindssyge <em>akrobats</em> sidste øjeblik, når han med foldede arme trodser tomrummet.</p>
+
+<p>Alechinskys magisk astrofysiske undervands-miljø bli’r indviklet af hekserier. For at nå sit mål anvender han til tider lysende pro-jektioner.</p>
+
+<p>De optiske fantasmorgier har i vort land været fordunklet, siden de perfektioneringer, som Robertson tilførte biografen et århundrede, før den blev opfundet. Pierre Alechinsky gav sig på sin side til privat at forevise de frigivne fanger, pletter og skyer. Han forestillede sig endeligt, jeg overdriver ikke, at indtrykke drømmen på fotografisk papir ved hjælp af lysbilledapparatet, det gennemsigtige glas, hvor drømmen indskriver sig.</p>
+
+<p>For ganske nylig har Louis Van Lint genoplivet lysbil- ledpladen. Denne mand, gentager jeg, repræsenterer en fare for menneskeheden, for det borgerlige samfund såvel som for det revolutionære samfund. Jeg ofrer hans tanker som brændoffer til de æstetiske kanoner.</p>
+
+<h2 id="2-else-alfelt">2: ELSE ALFELT</h2>
+
+<p><em>TEKST EDOUARD JAGUER</em></p>
+
+<p>Dansk malerinde. Født 1910.</p>
+
+<p>For at undgå ethvert angreb fra denne elegante „rutine“, der altid er parat til under forskellige former at tilegne sig enhver sejr som maleren (digteren eller billedhuggeren) har opnået, med sygeligt voksende appetit, undgår anstifterne af den danske avant-gardebevægelse at stole på nogen som helst formel, mistror dem alle og viser os eksemplet på en offensiv <em>fra alle sider</em> med en beregnet og altid skiftende strategi mod alle fronter.</p>
+
+<p>I kampen fra abstraktion til fri figurdannelse besidder hver enkelt sit specielle rustkammer. Der er Bille, hvis tilsyneladende abstraktioner på nærmeste hold indregistrerer den intime strøm, den indre korning i stoffet. Erik Ort- vad, der leder impressionismen og kubismen til deres poetiske østerland, der er Egill Jacobsen: hans maleri, flyvedrager, der stryger græsset, opflammer hele barndommens kådhed til en gnistrende ringdans, desuden Carl-Henning Pedersen og Asger Jorn, der mere, mindre eller meget, leder mod en gyldig synthese af de forskellige tendenser. Freddies og Mortensens holdning spiller ikke med i det her foreliggende regnskab.</p>
+
+<p>På denne usammenhængende stige, rejst i hast op ad en af de mest teoretiske mure, klavrer en anden maler i den mest faretruende stilling, <em>i forvildelsens tegn:</em> det er Else Alfelt. Utvivlsomt hengiver hun sig nu og da, som for at more sig, til disse øvelser på slap line i maleriet, som for- nyligt har vakt så megen opsigt i Frankrig under Bazaines, Singiers og Manessiers farver. Men dragten gør ikke munk, og trekanter og cirkler heller ikke abstraktioner, og om dette arbejde umiddelbart fremviser et ansigt mindre uroligt end Billes eller Jorns, bør vi dog ikke deraf slutte, at dets ophav hengiver sig til sin naturlige kvindelighed og går ind på at opfatte sin kunst som en højere afart af broderiet — at hun stort set er besluttet på at spille Penelope på hjørnet af sin palet, mens hendes mand, Carl Henning Pedersen, sætter hver time af sit liv på spil under jagten på vampyrer i Sjællands skove eller havfruer ved Helsingørs kyster. Det er ikke et fikst lille lam i varulvens hule.</p>
+
+<p>Det ville være ret barnagtigt at bestride de kromatiske bedrifter og det vellykkede dekorative udbytte af blandt andet en Bazaine. Når vi bebrejder ham og hans venner, er det først og fremmest på grund af deres sygelige angst for at bryde formens og liniens fortryllelse. Dette maleri udgør en behagelig kommentar til livet, men det rokker det ikke et hanefjed. Det er talentfulde akrobater, der lammede havner i deres eget nets masker!<sup>1</sup>). Når Else Alfelt finder behag i disse slyngværk eller disse blomsterranker, der har skabt deres berømmelse, og som også kunne lægge grund til hendes, skænker hun dog ikke tegningens lunefulde bugtninger hele sin opmærksomhed. Hun akcep- terer kun sit handicap på grund af sin smag for det vovelige. Prøv at hellige Dem disse former, tilspidsede som sakse med åbne blade. Det er altid med sådanne former, Manessier udmunder i „forfaldne domkirkers“ religiøse vidundere, mens Else Alfelt selv med disse midler kun drømmer om <em>metodisk</em> at opdyrke de mest udstrakte jordlodder i det uendelige landskabs naturlige rum, som hun en dag har afsløret. Heller ikke hendes farver fremgår af nogle gennemprøvede alkymisnier, de er endog af og til en smule glansløse efter min smag, men det væsentlige er dog, at hendes sakse ikke bruger sig til udklipning af helgenglorier, at deres blade lukker sig om en konkret verden. Hendes nautiske former, hendes sejl og hendes master, der er oversået med gullige og grønlige pletter, som margueritblomsters hjerter, vrimlende i krattet — <em>kun til ære for tvivlen —</em> er blot <em>sætstykker på scenen</em> for et langt mere betydningsfuldt skuespil: intet der ligner dette flittige medbejlerskab, som udvikler sig i denne dystre atmosfære af de områder, hvor sjælen sukker ensomt, uden nogen som helst forbindelse med det reelle. Der er ingen lakuner, ingen fodnoter, ingen parenteser eller anførselstegn i denne skrift.</p>
+
+<p>Det sker forøvrigt hyppigt, at alle disse grene, hele denne takkelage er bortført, fejet væk af et pludseligt vindstød. I deres sted viser der sig stabler af streger og striber, og øverst oppe en bastard af stjerne, blomst, måne og sol, der behersker uvejret. Det er en anden afdeling i det naturlige sceneri, som maleren går løs på blot med interesse for <em>beskrivelsen.</em> Jeg fastholder dette ord, for Else Alfelt fører beskrivelsen og ikke anekdoten til et <em>bankende</em> stadium, som kun André Masson har nået i visse af sine seneste værker. På den anden side det banebrydende udgangspunkt og de forskellige stadier i dets omformning består værdien af dette maleri i <em>regelmæssigheden</em> som metronomen eller svøben, pendulet eller gyroskopet har opnået at anlægge.</p>
+
+<p>Men hvem tør påstå, at ildebrandens lysskær svækker dens hærgende magt.</p>
+
+<p>\1) Disse temaer: lænken, nettet og gitret vender ofte tilbage hos Singier og Manessier; det er behagelige befordringsmidler for „rutinen”.</p>
+
+<h2 id="3-karel-appel">3: KAREL APPEL</h2>
+
+<p><em>TEKST CHRISTIAN DOTREMONT</em></p>
+
+<p>Hollandsk maler.</p>
+
+<p>Født 1921 i Amsterdam.</p>
+
+<p>Appel har ingen mindreværdskomplexer, heller ikke hans billeder. Dermed vil jeg dog hverken sige, at han eller hans billeder er indbildske, overhovedet ikke. Men han gør sig gældende med en vis råhed, der ikke lader nogen tvivl mulig: han er i det mindste sikker på, at Appel eksisterer, at Appels billeder eksisterer, at Appel er levende, og at Appels billeder er lavet af farvestof. Jeg ved ikke, hvem der virkelig skulle modsige mig. Det er et af de punkter, hvorom alle mennesker kan blive enige.</p>
+
+<p>Appels maleri er et selvfølgeligt maleri. Men jeg er ikke enig med ham, når han lader vores hånd føre hen over billedets ujævne flader med deres underfundige rifler og naturlige overflødighed for at påvise deres materialisme: det er kun den ydre fremtoning af materialismen hos Appel og i hans maleri. Der er malere, som klistrer det samme ydre på deres billeder, men de er ikke materialister.</p>
+
+<p>Appels maleri er fuldstændig materialistisk fra overfladen til grunden, fra det, de viser med brask og bram, og til det, de viser med forfinelse, i en sådan grad, at overflade og grund er een og samme ting. Men sig ikke, at Appel er brutal og dermed basta. Siger De om den herre, der har en tyk mave: Der har vi en tyk mave? Ja, De siger det, men det er for sjovs skyld. Appel er en digter, hvis spontanitet er af en sådan art, at den ikke har tid til at miste sin aggressivitet og chokerende styrke mellem hånd og lærred.</p>
+
+<p>Vi er langt fra den kandiserede kunst, fra det æstetiske bolchekogeri : Appel leverer kun usorteret, og det er ikke sukkergodt.</p>
+
+<p>Der er det, at Appel er rig. Ikke rigere end de andre, i virkeligheden er alle og enhver rig, men for det første har han alle sine rigdomme ved hånden. Han kender hverken til kister eller konservesdåser, desuden er han gavmild. Vi er også fjernt fra denne gerrige kunst, der hos så mange malere kun omspænder det enkelte billede ad gangen, lige som man kun anbringer eet lys i en lysestage.</p>
+
+<p>Han kommer fra folket, og han har ikke forladt det. Han har ikke følt trang til at afmale folkets elendighed. Han har foretrukket at vise det selvfølgelige i universets glæder, i følsomhedens glæder (hvoraf den ene ikke kan udskilles fra den anden) for dertil har folket lige så megen ret som alle andre.</p>
+
+<h2 id="4-atlan">4: ATLAN</h2>
+
+<p><em>TEKST MICHEL RAGON</em></p>
+
+<p>Fransk maler. Født i Algier 1920.</p>
+
+<p>I vor tids maleri fremtræder Atlan som en udpræget ener. Men da man må kunne henvise til forbilleder, om man vil have sig en plads i kunstens stad, kan vi sige, at han på samme tid minder om Chagall og Soutine. Men Atlan har intet tilfælles med denne verden af fabler og eventyr fra Chagalls ghetto, og hans humor er mere glubsk end Soutines.</p>
+
+<p>For at forstå Atlan må man vide, at han er fra Algier. Det forklarer for en stor del anslaget i hans tegning, hans kaktusformer og øgletænder. Europa har overhovedet ikke præget ham med sit segl. Han er frem for alt afrikaner. Hans farver (de matte røde og okkerfarverne) er dem fra de malede masker. Som en gudsbespotter har han stået i forhold til dyr, trodsende Mose lov, og hans afkom er talløst.</p>
+
+<p>Når jeg tillægger Atlans maleri en ganske særlig betydning, da er det, fordi det forekommer mig at være en synthese, en synthese i det kunstneriske plan af de tre store bevægelser, der har domineret kunsten i de sidste fyrretyve år: Expressionismen, surrealismen og abstraktionen, en synthese af de mest gribende former og af livets største dybder i udtrykkets plan.</p>
+
+<p>Arkitekten, der ifølge sin natur er abstrakt, stiliserer træet til tempelsøjler. Atlan, mageren, skaber en menneskelig metamorphosé af træet og os selv, på samme måde som de sorte hekse udstyrer deres alruner med fem kønsdele og tolv fingre. I den retning er Atlans billeder det modsatte af abstraktioner. Blandt naturens skabende kræfter deltager også de, efter min mening, i forplantningens opkomst. Som den afrikanske kunstner i sin skulptur udformer ildens ånd og ikke ilden, sådan maler Atlan en sammensmeltning af både det mineralske, det vegetabilske og det animalske element. Hans kraftige stofvirkninger er som de første tiders jordskorpe, hvor de levende former i de oprindelige humus endnu søgte deres kanoniske love. Det er havhestens og flyveøglens verden, søstjernens og korallens, svampens og søpindsvinets.</p>
+
+<p>Atlan går ud fra abstrakte former (alle former er i sig selv abstrakte. Et glas er lige så abstrakt som en form af Arp. Fra det øjeblik, hvor det kunstneriske værk finder sin nyttevirkning, er det blevet realistisk), — og disse døde former giver han liv, et heftigt, rystende og grusomt liv, udgået fra underbevidsthedens dyb. Det er på den måde, han når til at fremstille denne mærkelige fauna, i lige høj grad flora og fauna, for disse kaktus er grådige, alrunerne er erotiserede og blomsterne sluger deres bier.</p>
+
+<p>Apollinaire sagde: „Siden tolderen Rousseau har der groet mærkelige blomster på Seinens kajer“.</p>
+
+<p>Jeg må bekræfte det samme med Atlan. Hans fantastiske verden er blevet mig så fortrolig, at jeg finder den lige så selvfølgelig som hestens og havmågens. Men hvis vi ikke var vant til hver dag at se heste og måger, da vilde der uden tvivl være dem, der sagde: „Sikke underlige uhyrer, de der!“</p>
+
+<h2 id="5-ejler-bille">5: EJLER BILLE</h2>
+
+<p><em>TEKST MICHEL RAGON</em></p>
+
+<p>Dansk maler og billedhugger.</p>
+
+<p>Født 1910 i Odder.</p>
+
+<p>Inden for dansk maleris avant-garde er Ejler Bille utvivlsomt den, der bedst kender den franske kunst. Efter i lang tid at have levet i Frankrig på førkrigstidens og surrealismens parisiske Montparnasse, vendte han tilbage til København for at udgive et omfangsrigt værk: „Picasso, surrealisme, abstrakt kunst“, en titel, der angiver tre stadier, tre udviklingstrin, som Ejler Bille var den første i sit land, der blev klar over, skulle tilbagelægges ; at der af disse tre eksperimenter måtte fremgå et nyt, der skulle udtrykke hans generation.</p>
+
+<p>Allerede i 1935 stillede han sig i opposition til konstruktivismen og surrealismen, som han havde frigjort sig fra. Som grundlægger og redaktør af <em>Limen</em> indtil 1939, (på dette tidspunkt blev det erstattet af det ny tidsskrift <em>Helhesten),</em> fastholdt han denne linie med en fanatisk strenghed.</p>
+
+<p>Bille: Opflammeren og kunstkritikeren, digteren, maleren og billedhuggeren, hvilket forbavsende menneske for os franskmænd, der er et folk af specialister. I Danmark synes dette mindre mærkværdigt. De fleste af avant-gar- dens malere er også digtere, endog arkæologer (ikke sandt, Asger Jorn?), i almindelighed musikere, og hvad véd jeg? En dansker, om han er arbejder eller borgermand, ville føle sig æreløs, om han ikke på væggene i sit hjem havde ophængt nogle værker af de kunstnere, han holder af.</p>
+
+<p>Det er uden tvivl Miro og Kandinsky, fra dennes første periode (den bedste), der i stærkest grad har påvirket Bille som maler, og Arp, der for billedhuggeren Bille har været mesteren. Men som sine landsmænd har Bille frem for alt næret sig af den skandinaviske folkekunst, der er så lidet kendt i Frankrig, og som, om man blot henholder sig til den aggressive vikingekunst og de danske middelalderkirkers dæmoniske fresker, dog er noget af det smukkeste og mest originale, der overhovedet findes.</p>
+
+<p>I al almindelighed bærer den danske kunst præg af det land, der igennem tiderne har bevaret sin solkult. Dermed være sagt, at de danske malere elsker farven og den stoflige fylde, der får billedet til at skingre. De maler det, de ikke har, en ukendt vegetations overdådighed og dæmoniske mineralers glans. Kunsten er ofte et udtryk for de uopfyldte længslers brændende krav. I deres tilsneede huse ophænger de billedernes grønne, røde og gule farvepletter på væggene. Deres lune bygninger i det flade landskab synger af al kraft med malernes lidenskabelige farve- strøg.</p>
+
+<p>Men Bille hører til de mere ensomme; hans farver er mere intime. Måske sløres de lette skyer på hans nordiske himmel som af en fin, grå tåge, en erindring om Paris.</p>
+
+<h2 id="6-constant">6: CONSTANT</h2>
+
+<p><em>TEKST CHRISTIAN DOTREMONT</em></p>
+
+<p>Hollandsk maler. Født i Amsterdam 1920.</p>
+
+<p>Constant (Nieuwenhuys) er grundlæggeren, opildneren, den åndelige akse og arbejdsaksen i den hollandske eksperimentelle gruppe. Han har nægtet at indelukke sine kræfter, sin intelligens og sin følsomhed i et rum og opdyrke dem som champignons, han havde måttet spise alene.</p>
+
+<p>Han har et kollektivt sind, som andre har et vanskeligt sind. Han har ikke været bange for at stille en gruppe eksperimentelle skribenter og malere på benene i den mest yderliggående forstand i Amsterdam, hvor intet lignende eksisterede, men hvor der var adskillige prioriteter, frem for alt de gamle abstraktivistiske laser, som nogle stykker stadig vil anvende som banner. Constant er, om jeg så må sige, en hård negl. Han tror ikke på, at man kan nå frem til noget ad indrømmelsernes luftbaner. Han bliver på jorden.</p>
+
+<p>Og den eksperimentelle gruppe i Holland er idag en af de mest levende og frugtbare i verden. Den er bestemt, men den er ikke ensom; det er den eneste virkningsfulde løsning.</p>
+
+<p>Der eksisterer forøvrigt ingen effektivitet uden fordomme. Constant er skaber. Han ser på det eksperimentelle maleri <em>som deltager</em> heri. I <em>deltagelsen</em> eksisterer allerede <em>bedømmelsen.</em> Men der er intet, absolut intet af denne dilettantisme, der forveksler og sammenblander alle livets fordomme i en cocktail til behag for salonernes publikum.</p>
+
+<p>Det drejer sig ikke om at behage, og Constant undgår at behage. Jeg er hans ven, så jeg ved det.</p>
+
+<p>Han vil, at hans maleri skal være sandt og ikke behageligt. Han maler på en sådan måde, uden facon, at <em>intet</em> glider ud mellem hans malertrang og lærredet. Han siger, at det er den eneste formulering af det gode maleri. Det gode maleri er for ham ikke alene det, der ikke narrer, men endog det, der ikke leger. Dets glæde må have alvorlige grunde.</p>
+
+<p>Hans maleri er tilstrækkeligt bevis for, at han har ret. Det stiger op over de æstetiske afspejlinger af et bour- geoiseret og søndagspræget øje. Det må tages råt, uden forkristnet civilisation, uden syfiliseret borgerlighed. Men det må alligevel tages varmt, lige som det er, med sin vibrato og sin dynamisme. Constant drikker ved kilderne, og han foretrækker folkets tegninger på vægge og mure frem for kunstens mesterværker, kunsten, der opstår som skrig, frem for malerier, der opstår som læresætninger. Der er forresten ingen grund til ros, for han er blot på naturlig måde sig selv. Han har et negerhjerte, og jeg tror ikke, at amerikanerne vilde give ham indrejsetilladelse, hvis de røntgenfotograferede ham. Han trænger ind i midlerne som i en kvinde. Han taler ofte om de <em>organiske</em> midler, og jeg, der er skribent, ser heri <em>orgasmen</em> fødes.</p>
+
+<p>Constant er gået til afsløringen af menneskets <em>skammeligste sider,</em> af realiteten. Hans malerier er nøgne.</p>
+
+<h2 id="7-corneille">7: CORNEILLE</h2>
+
+<p><em>TEKST CHRISTIAN DOTREMONT</em></p>
+
+<p>Hollandsk maler. Født 1922 i Belgien.</p>
+
+<p>Constant har engang sagt om sin ven Corneille, at han var et barn. Det er rigtigt. Men der findes flere forskellige slags børn: Barnet, der kommer til syne, og som hele familiekredsen hylder med store frydeskrig, som Hugo siger, det artige barn, så er der det frygtelige barn, der smadrer alt, endog malerierne, det surmulende barn, det sluddervorne barn, det skrigende barn, det fremmelige barn, det alvorlige barn, det legitime barn, elskovsbarnet og det drilagtige barn. Corneille er til tider et frygteligt barn, altid et naturbarn og altid et underfundigt barn. De ved, barnet, der bag sin barnligheds skjold spekulerer, beregner og observerer. Han har en måde at betragte dig på, der siger meget: intet undslipper ham, men han undslipper dig. På en måde er det snu barn ikke dialektisk: han går bag om jeres skærme for at se, hvad der foregår, men det er ikke muligt at se, hvad der foregår bag hans skærmende smil.</p>
+
+<p>Skulde det være nødvendigt at finde endnu et bevis for det intime forhold, der eksisterer mellem kunst og liv, da ville Corneilles tilstedeværelse være nok til at afgive et sådant. Et underfundigt barn i livet, legende som et barn, med en barnlig opførsel, men kendt med de rigtige adresser, i stand til som ingen at finde en dejlig pige, sådan er han også i maleriet et underfundigt barn.</p>
+
+<p>Han maler som et barn, men også som en matematiker. Det er et spædbarn, der endnu har ørerne fulde af mælk, eller ligefrem et barn, der rundhåndet spiller skak, for til tider er det barnet, der behersker ham, til tider er det matematikeren, og nu og da blandes de, så man ikke kan skille dem ad.</p>
+
+<p>For Eksempel laver Corneille børnetegninger, farvelægger dem, som et barn gør det. Her finder man alt, hvad man vil, undtagen livets alvor og universets majestæt: her ser jeg ænder og høns, der leger foran en bondegård, og køkkenets fliselægning går over sine bredder helt ud i marken, og der går en lille, spinkel gade tværs igennem det hele ; den må føre hen til en drømme-mølle eller en fantasiflod. Men pas på, farverne ligger, hvor de skal, og linierne skulker ikke fra skolegangen.</p>
+
+<p>Han maler matematiske snit af universet, en slags vægge, der mangler sokkel, og som kun holder sig oprejst ved hjælp af deres ufejlbarlige struktur. Endvidere kan det være universet, set fra Sirius med dets ruder, som afstanden gør regelmæssige, med dets huller og bjerge, der er blevet til bakker. Corneille burde studere problemet omkring linierne, der kan observeres på planeten Mars: barnet vil opfatte dem som kanaler (så meget mere, som lian nærmest er hollænder), men matematikeren ville opfatte nogle lige linier. Pas for resten på, for i disse fremmede geografiske kort, som han maler, har et barn også malet sine, og et øjekast fra dette grå til dette røde er tilstrækkeligt til, at man genfinder jordens smag.</p>
+
+<p>Når det lykkes ham helt at være sig selv med sin enkle poesi, på samme tid bondsk og månebundet, og med denne tilbøjelighed for en vis strenghed, da forsvinder Corneille, og det er blot et tilsyneladende paradoks: det er normalt, at individet forsvinder, når det realiseres. Du går ind i hans univers, men det er dit, det er universet i selve dets harmoni og modsætninger, den uopløselige buket af linier, former, farver, drømme og syner.</p>
+
+<p>Han har den ærlighed at kalde sig <em>eksperimenterende</em> maler og ikke sove den drømmeløses søvn på sine første laurbær. Han forsøger, og for mig er hans forsøg mindst lige så interessante som hans resultater. Han kæmper mod barnagtighed og hårdhed, han forkaster skulkeriets blomstrende stier lige så vel som formalismens ideelle autostradaer, og han drager frem gennem skoven fra lian til lian. Jeg tror ikke, at den eksperimentelle maler er den, der laver malerier, som man trækker i tombola: for at vinde det store lod og så trække sig tilbage til et eller andet sted ved Rivieraen. Jeg tror, at Corneille er en eksperimenterende maler, fordi han er i brechen, i ilden, i livet, der slår og lader sig slå.</p>
+
+<h2 id="8-jacques-doucet">8: JACQUES DOUCET</h2>
+
+<p><em>TEKST JEAN LAUDE</em></p>
+
+<p>Fransk maler.</p>
+
+<p>Født 1924 i Paris.</p>
+
+<p>Måske skyldes det visse menneskers hele ulykke, at et ubarmhjertigt samfund har berøvet dem deres barndom: deres følsomhed forbliver uudnyttet, urørt. For svage til at gøre sig gældende i barndommen, har de ikke fundet mulighed for at opøve sig. Derfor må det moderne menneske uafbrudt vælge imellem, hvad det var og ofte blev ved med at være, og det voksne menneske, der kender sine ansvars tyngde. Her tilspidser vanskeligheden sig: forråde sig selv eller de andre. Kunst og poesi synes et øjeblik at være løsninger, men individuelle, midlertidige. De, der udøver den, kan her finde en midlertidig beroligelse: tilbage står at give deres værker gyldighed, i modsat fald betyder disse intet mer, de selv er <em>opløste,</em> eksisterer ikke mere. Dette er det vanskeligste, for mellem deres velyndere sjakrer den ene part med deres produktion, mens den anden påkalder tidens alvor og proklamerer, at legens tid er overfløjet.</p>
+
+<p>Det går dog på samme måde med følsomheden som med den folkelige fornemmelse: man kan ikke forklare den udefra. Selv om man arrangerer rids fra vægtegninger på et blad, så de former en plastisk set gyldig helhed, er det dog ikke tilstrækkeligt til at lave et maleri. Det bliver højt regnet til et dekorativt felt, men dette er ikke malerens hensigt, for han vil betage dybere end ved hjælp af disse former.</p>
+
+<p>Om Doucet på en plan flade arrangerer linier og farver, som man ellers i almindelighed ser på offentlige mure og fortove, da forstår han at disponere disse tegn, som han oppebærer på fladen, han tænker med hånden, der tegner. Han gør sig til eet med barnet, hvem både hånden og øjet tilhører. „Geniet er barndommen, begavet med alle udtryks- muligheder“, bemærker Baudelaire. Denne sætning er hovedsagen i den kunst og poesi, der følger den. Den giver en indføring heri, bedre end et omfattende studie.</p>
+
+<p>Alle steder og til alle tider har vægindskriften været opladet med en ualmindelig befriende og dristig energi. Jeg vil antage, at Doucet i sin celle, hvor nazisterne havde lukket ham inde, er blevet klar over dette forhold gennem direkte forsøg, og at denne smudsige magi, indridset i fængselsmuren, har haft en stærk indflydelse på hans kunst: for en fange drejer det sig virkelig om at tilkendegive, for at tilkendegive er at eksistere og eksistere fuldt ud. Mennesket samler sig sammen i tilfælde af, at han bliver jaget: hans uopløselige enhed søger at gøre sig gældende, for ikke at blive tilintetgjort. Man maler, man skriver altid med front mod døden. Et ængsteligt væsens værk er derfor ikke håbløst, det er en udvej, det er en sprække i det pinlige system, der omgiver ham. Er det ulykkeligt, da søger det dog mod lykken. Doucet, der for os genopvækker „de barnlige kærligheders grønne paradis“ giver os tiltro til de dage, da mennesket, idet det fuldt og helt kan påtage sig sine barnlige vilkår, endelig kan blive sig selv i sin modenhed.</p>
+
+<p>Det er endog lidet sagt, for det siger os ikke helt, i hvilken grad Doucet er en poetisk kunstner. Poesien mødes altid med mistro af malerne, i samme grad som den foregiver at bestå i en litterær stemning frem for en kunstnerisk stemning; men findes den i Doucets maleri, da er den ikke oprindeligere end tegningen eller akvarellen, det er ikke hensigten. Måske følgerne af en rytme eller en harmoni, men frem for alt af en dynamisk følsomhed, den er indvendig, den er liv. Man gør sig et begreb om dette ved at betragte de følgende gengivelser, de er tilstrækkelige til at støtte mine udtalelser, de gør dem nærmest overflødige, men forinden måtte jeg præsentere ham.</p>
+
+<h2 id="9-sonja-ferlov">9: SONJA FERLOV</h2>
+
+<p><em>TEKST CHRISTIAN DOTREMONT</em></p>
+
+<p>Dansk billedhugger.</p>
+
+<p>Det må være trist for den slags mennesker, der fornægter skulpturens ret til at opfinde og skabe, d. v. s. være tro mod rummet og de rum, der lever i rummet. Det må være trist for den slags mennesker, der har en ikke-ein- steinsk og småborgerlig opfattelse af skulpturen og ikke blot mangler evnen til at se rummets og tidens relativitet, men endog rummets indre relativitet. Det må være trist for dem, der opfatter enhver skulptur som abstrakt, der ikke er modelleret over deres egen næse, men som forøvrigt, hvor abstrakt den end er, kunne smadre denne, trist for dem. Sonja Ferlov har, når jeg ser hende, på knæet, såvel et barn som en af disse sten-ibis, en af disse levende sakse, som hun hugger ud af havets skum.</p>
+
+<p>Det er hendes barn, som det er hendes ibis og hendes sakse, og det får mig til at mindes den engelske antropologs eksperiment med at opdrage sin nyfødte sammen med en marekats nyfødte. Sonja Ferlov burde, paradoksalt nok med et mindre eksperimentelt formål, opdrage hendes nyfødte sammen med hendes nyfødte skulptur, for alt bør blandes sammen, i stedet for at adskille det, som man gør i Frankrig, og skulpturen har sine aborter, sine kejsersnit, sine navlestrenge, en skulptur har sine troskriser, sine ører, sin skarlagensfeber, og nævn blot, hvad der er mest automatisk i skulptering og i kærlighed.</p>
+
+<p>Hun har boet lang tid i Paris, og Paris har længe for hende været Alberto Giaeometti. Som Giacomettis skulpturer har også hendes stærke, dramatiske spændinger bag de glatte, præcise og fuldendte overflader. Og dog er det vanskeligt at finde denne spænding, at sætte sin finger på den, for Sonja ejer intet af denne opfattelse af skulptur, hvor det drejer sig om at pumpe så mange ligegyldige former op i sten som muligt. I en del af rummet opbygger hun nogle rumlige dele. Stenen og luften er her udsonede.</p>
+
+<p>Hvad der endvidere straks slår en ved et øjebliks betragtning af Sonja Ferlovs værker — som for resten er langt fra at være talrige, hun har ødelagt mange — er, at de altid eller næsten altid har en slags dobbeltkarakter, som om hun var bange for at lade en form eller et arbejde alene. Se f. eks. de levende grene eller forgrundsfiguren på den følgende side: Den udtrykker <em>dialogen</em> med mindre humor end præcision. De står forøvrigt i modsætning til senere arbejder, der er <em>monologer</em> af rette linier, som jeg finder frygtelige, om jeg ser dem på nært hold, for her er udvejene blokerede af selve problemet.</p>
+
+<p>Men er her egentlig så mange problemer? Sonja Ferlov, med sit barn på knæet, med dramaets urværk, hvis lyd kan høres i det, hun laver, som man hører havet i en konkylie, hun arbejder som os andre og med os andre imod det døde, for at vi kan have glæden, og for selv at glædes. Lad os derfor nyde øjets glæde efter hændernes.</p>
+
+<h2 id="10-stephen-gilbert">10: STEPHEN GILBERT</h2>
+
+<p><em>TEKST EDOUARD JAGUER</em></p>
+
+<p>Engelsk maler. Født 1910.</p>
+
+<p><em>„Der behøves en smule af vor tørre luft. . .“</em></p>
+
+<p><em>Jaques Vache.</em></p>
+
+<p>Brydende harmonien i vor tids britiske kunst, løfter en ny og uventet tone sig. I c-moll.</p>
+
+<p>Gilberts kunst rummer virkelig et rystende budskab til alle sind, der er følsomme over for det drama, der indkredser vor tid. Det er, som om den aftegner den mørkeste og mest sønderrivende tinde. For det drejer sig her om et anfald i maleriet langt voldsomme end en Bechmanns eller en Kokoschkas expressionisme — endog end Soutines, og i en anden retning end Fautrier.</p>
+
+<p>Først og fremmest i opposition til alt litterært — og Dalis båd fortaber sig i tågen for bestandigt — tvinger Gilbert maleriet ud til skrigets grænse. Det siger sig selv, at han ikke kunne have tilpasset sig et sådant mål til en veltalende naturalismes forældede midler — selv om den i 1949 udstafferes med en terminologi, der er tilstrækkeligt besnærende til at narre adskillige, og med en sygelig trang til systematisering at tildele visse „realisters” „hellige visioner” en officiel revolutionær etikette.</p>
+
+<p>Han anvender de mest <em>fantastiske</em> midler, der overhovedet eksisterer, de mest frygteligt <em>reelle.</em> For at oprette henrettelsens ro mobiliserer hans univers en hær af <em>stedfortrædere:</em> fugle-insekter, sprællemands-insekter, forslugne sommerfugle, <em>dødningehoved-sommerfugle,</em> sfinkser og harpyer, altid tættere ved mennesket, det, som „de” vil gøre ham til, det, vi ikke kan tillade, at han bliver.</p>
+
+<p>Og disse fantomer fra blodbad og almindelig fortabelse dukker kun op af intetheden for at vise os vor vildfarelses umådelighed, og <em>drømmens påtrængende nødvendighed.</em> Om Gilbert foretrækker angstens farver, da er det, fordi han ikke føler øjeblikket inde til at male „rosenrødt”, til at nynne romancer. Visse jordfarver, brændte eller blodige, visse okkerfarver, udtrykker bedst efter hans mening disse stemninger af hærgende ødelæggelse og atmosfærisk tilintetgørelse. Og det er ligeledes den klare bevidsthed om dette klima, der får ham til at føre sine former direkte hen mod en firdobbelt exode fra lærredets midtpunkt mod hjørnerne, <em>mod rædslens fire kardinalpunkter.</em> Men det er ikke en korsfæstelse, det drejer sig om, og vi befinder os i modsætningen til messebog og kirkerude.</p>
+
+<p>Dette værk, der fremstår efter „Guernicas” og Mattas vidnesbyrd, de mest synske, vi hidtil har kendt, får en udpræget karakter af <em>advarsel.</em></p>
+
+<p>Deres store grafiske værdi er resultatet af den uafbrudte formindskelse i en skarpsindigt fremkaldt kompositionel uligevægt. Dette maleri driver et drøjt og mesterligt slag mod disse forstads-modellører, der „skaber et helt volumen” ud af to flader, der mødes omkring en ret linie!</p>
+
+<p>Gilbert forkaster falskheden hos disse tomhedens pompøse fortalere. Man kan utvivlsomt, idet vi vender tilbage til den engelske kunst, ikke bestride dette lands malere deres tekniske gyldighed, deres fuldendte „håndværk“, men i hvor høj grad drejer det sig ikke fra Nash og Moor til Sutherland om det kompromis og den brægende formalisme, som den marxistiske kritik netop undsiger — og surrealisterne? Gilbert strander ikke på dette skær, omend han, såvel som de, forstår at fastlægge en præcis form, der er nødvendiggjort af det synspunkt, han har valgt, af hans problemer, og han ved, at <em>kilderne</em> til hans ængstelse ikke er de samme, for han <em>kender ængstelsen —</em> og maler ud fra en fuld menneskelig logik.</p>
+
+<p>For ham antager netop farvens dionysiske udstrømning på lærredet, tvunget mod sin yderste forskansning, en præcis psykologisk betydning, en rent fysisk heftighed.</p>
+
+<p>Mod „koloristernes“ svulstighed tager Gilbert sin tilflugt til <em>elipsen.</em> Mod de vrøvlende paletters paradenumre — bevæbner han skriget, nøgent, strengt. Uimodståeligt. Men vi bliver aldrig for mange til på alle områder at gribe veltalenheden „og dreje halsen om på den“.</p>
+
+<h2 id="11-svavar-gudnason">11: SVAVAR GUDNASON</h2>
+
+<p><em>TEKST EDOUARD JAGUER</em></p>
+
+<p>Islandsk maler.</p>
+
+<p>Født 1909 i Hornafjordur.</p>
+
+<p><em>Mellem hver gry og hver kvæld hugger og hugger brændingen sine klipper med stenede harlekins voldsomme drøn.</em></p>
+
+<p>Da jeg i 1947 nedskrev disse linier, som i forbindelse med en rent lyrisk tekst, for mig blot havde en rent poetisk mening, havde jeg ingen anelse om, at de en dag ville komme til at tjene som et budskab, som en efterklang, der krydser Svavar Gudnasons arbejde (der netop stammer fra landet, hvor gryet åbenbarer sit mest <em>dvælende</em> væsen). Straks ved første møde i august 1949 afsløredes dog dette forhold: Endnu en gang afklaredes forvirringen og den formodede irrationalitet i en tekst, ved mødet med en anden irrationalitet. Bekræftende hinanden, veg deres mystik for det reelle. Disse klinter, med deres umådelige vidder i ugæstfri formationer, udslettede mig helt og holdent, og de takkede kæders lunefulde hulninger og rødmende kløfter, der <em>flugter</em> i hundrede dristigt svungne kurver, hele denne fortumlede følelse som af et <em>sneskred</em>, det var netop det, der havde påkaldt mig så stærkt i disse ejendommelige sætningers flakkende tilsynekomst.</p>
+
+<p>Men vi må over tærskelen: Dog vil det falde svært for læseren, der blot kan støtte sig til fotografierne, at forstå værdierne i denne voldsomme kunst. I dette univers, hvis glans ægger og brænder øjet, må man overrumple farven og strejfe rifler og ruhed. Man må flakke omkring mellem dette højtidelige riges klipper, for at kunne fatte dets vælde.</p>
+
+<p>I hjertet af disse kompositioner hamrer der altid visse oprindelige former, kugler eller prismer af vulkansk natur, som søger at trække rummet sammen omkring sig, at gennembryde muren, og fra alle sider dukker andre former frem, tænder og nåle (men af skifer og basalt) og modvirker denne rotation, for at bremse den og derefter tilintetgøre den. Sker det tilfældigvis, at visse fjernt dyre- lignende former hæver sig midt i dette klippefulde kaos af forskudte slyngninger, tænker man, snarere end på ishavets uhyrer og forhistoriens groft tildannede kolosser, på Levithan, der er en så indgroet del af selve havets væsen, at det ville være omsonst at beskrive dets nøjagtige konturer.</p>
+
+<p>Den egentlige kraft i denne kunst er indeholdt i disse modgående bevægelser, i denne fremgangsform af neddæm- pelse og fremdrift, eller af forbrænding og afkøling, og i farvens aggressivitet, der som lavastrømme flyder fra Gudnasons fyldige palet, en vulkantragt i stadig udbrud. (Man kan uden megen humor sige, at han bærer ild til den første mølle). Han bekræfter på denne måde blot ved brugen af farvestoffet, hele denne sammensatte heftighed i konflikten mellem elementerne, mellem mennesket og dets elementer. Benytter han ikke for at realisere et sådant mål denne forstærkede figurative metode som en Egill Jacobsen — for at nævne en kunstner, der tangerer ham — en Miro eller en Lam med forkærlighed bruger, for resten med helt fuldgyldige motiveringer, da må man dog vogte sig for deraf at slutte, at han manøvrerer op langs siden af dem, der rider den rene abstraktionismes kæphest. Med samme indædte efterforskningsiver som Constant eller Jorn, gennemstrejfer han blot andre egne.</p>
+
+<p>Grunddraget i hans udgravninger betegner, for at holde sig til de følelsesområder, de lavere lag i bevidstheden, som bibeholder aftrykket af verdens første tider, i tilsvarende grad en af de mest fængslende bestæbelser, der findes.</p>
+
+<p>Det islandske „landsmandsskab” repræsenterer i sig selv en ejendommelighed, tilstrækkelig bemærkelsesværdig for en og anden. Han kunne med held smigre de exotiske komplexer hos fæhoveder, med trang til flugt fra hverdagen, og begrænse sig til vedtagne beskrivelser af mærkværdigheder fra yderlighedens land. Han foretrækker som Atlan, der behersker den modsatte pol af den geografiske goldhed, selv at lade sig påtrykke de afsvedne vidders dybe naturpræg, hvor magre plantevækster kryber langs jorden, hvor endog årstidernes kærre blot glider frem i store skub.</p>
+
+<p>Det er fysiologisk han gennemtrænger kramperne i jordskorpen, som den oldnordiske kosmologi troede dannet af urjætten Ymers sønderlemmede krop, jætten med de frost- sprukne kæber. Han fastholder endogså den mindste skælven, den mest dulgte pulseren, og det er i kraft af en ret enkel analogi, at vi drives til at forbinde faserne i dette jordgrundens epos med menneskevæsenets ængstelige og lidenskabsfulde udvikling, med dets dynamiske og statiske faser, dets oprør og dets hemmeligheder. Dette tildeler hans arbejde en objektiv — eller snarere en social — mening, og beskytter det mod denne truende tomhed, som malerne ikke undgår blot ved at henvise til dette „indre forbillede”, som man i den seneste tid har skiltet med på modeskibenes stævn. Den oprørte sø lader os forudse, at nye skibe snart må befragtes. Allerede i det tidlige gry holder Gudnason sig parat yderst på bemandingskajen.</p>
+
+<h2 id="12-henry-heerup">12: HENRY HEERUP</h2>
+
+<p><em>TEKST CHRISTIAN DOTREMONT</em></p>
+
+<p>Dansk maler og billedhugger.</p>
+
+<p>Født 1905 i København.</p>
+
+<p>Heerup ligner en markeds-atlet, ikke fordi han har nogen særlig firskåren figur. Det er hans styrke, blot ved et enkelt øjekast, blot ved måden at flytte foden frem på, at kunne ligne det han ikke er, og som han alligevel er: Han er istand til at være alt uden dog at holde op med at være sig selv.</p>
+
+<p>Desuden ligner han en dykker, som havet uden at røre ham glider hen over. Men han har ingen dykkerdragt. Hvad der sker, er, at han skrider frem gennem livet som dykkeren gennem havet, der opdager en skat, en fisk, en konkylie og lader solen se den.</p>
+
+<p>Han er måske en markedsdykker, en havatlet. Sådan vandrer vi i Heerups kunst fra den ene pol til den anden, fra maleri til skulptur: uden hverken at have farvens eller liniens genialitet, men med genialitet maler han de mest <em>ejendommelige</em> billeder, jeg nogen sinde har set, og hans maleri er udpræget gøgl, men gøgl fra livets umådelige cirkus, og går han til havets bund, jeg ville sige jordens, er det for at hente de druknede sten op, og mens han bærer dem op til overfladen, hvor vi befinder os, retter han dem til med en enestående fingerfærdighed.</p>
+
+<p>En dag gik jeg ind i Heerups have i nærheden af Vanløse, og jeg spurgte mig selv, hvormed man vel kunne sammenligne Hesperidernes eller Semiramis have.</p>
+
+<p>Der fandtes her, ikke anbragt på jorden, men voksende op af jorden, som har skabt dem, en flora af sten, en formens encyklopedi, en stor ubevægelig myretue, majestætisk men hyggelig, en mark med fugle, væsener og ting, der gav mig indtryk af at være kommet på besøg i universet, som om jeg var død.</p>
+
+<p>For ingen af disse sten var døde, ingen af disse sten var sten. De <em>forestillede</em> intet, ikke engang sten, de <em>var</em> alt, indbefattet sten.</p>
+
+<p>Ligesom Tommeliden såede småsten for at kunne genfinde vejen, har Heerup sået disse store sten, som er blevet det, de var, og som ikke holder op med at blive, for at <em>vi</em> skal kunne genfinde vor vej, som vi stadig mister <em>under vore egne trusler,</em> realitetens vej.</p>
+
+<p>Han elsker stenene, og han genskaber dem i sit eget billede i sin have, ikke som en gud, ejheller som Narcissus, han fuldender blot, hvad jorden har påbegyndt. Han bryder ind, når jorden har gjort stoffet, materialet i stand. Han er som en Candide, der ville forlade sin have for naturens skyld — men som fortsatte med at behandle denne som en have.</p>
+
+<h2 id="13-egill-jacobsen">13: EGILL JACOBSEN</h2>
+
+<p><em>TEKST CHRISTIAN DOTREMONT</em></p>
+
+<p>Dansk maler. Født 1911 i København.</p>
+
+<p>En dag diskuterede jeg reklame med Egill Jacobsen, og vi kom til det samme resultat: at reklamen er værdifuld, hvis den former sig som det sammentrængte udtryk for en streng analyse af genstanden — og når denne har godtgjort, at den er en <em>værdifuld</em> ting.</p>
+
+<p>Egill Jacobsen og hans malerier, Egill Jacobsen og hans intelligens, Egill Jacobsen og hans psykologi er værdifulde ting. De er genstand for denne tekst, hvor jeg vil tale kortfattet ikke uden at gøre reklame, for det, der bekæmper natten, maleriets nat, der sminker occidentens nat, skal drages frem i lyset.</p>
+
+<p>Egill er nærmest en slags mirakel. Han maler nogle af de mest slående billeder i Danmark (og dermed i Europa), og som kunstteoretiker er han ualmindelig indtrængende, ualmindelig subtil.</p>
+
+<p>Hans teoretiske og kritiske intelligens, der kan være meget hård, har dog aldrig drevet ham til at lave udregnet kunst, og hans følsomhed har aldrig drevet ham til at male ud i det tomme rum, blot drevet af de indre tilskyndelsers regler.</p>
+
+<p>Han har hånden, der tænker, og hovedet, der gør oprør.</p>
+
+<p>Da han viser mig et af sine billeder og forklarer mig sin hensigt hermed, har jeg følelsen af at træde ind gennem en stor og strålende port — der slår en i hænderne — til et univers, hvor alt er orden, ro og præcision. Egill kunde have været tilfreds med blot at have malet dette billede og ladet det angribe os med dets slående frihed, men han graver hensynsløst ned i det, skiller det ad, sætter det sammen igen, og hans hensigts fine væv træder frem for vort øje, uden at det generer os. I den grad forbliver han tro over for det, vi selv forud har set.</p>
+
+<p>Som reklamen bør støtte sig til analysen, sådan støtter Egills fantasi, denne et barns lykkelige og sunde frihed, som han tager <em>fra</em> universet, sig til en streng bevidsthed om, hvad der må gøres, for at „livet kan forandres“, for at „verden kan forandres”.</p>
+
+<p>Og muligvis kan man finde spor af denne samvittighed i retskaffenheden eller i det mindste i den lineære præcision i hans værker: tilspidsede masker, præcise flader, runde sole … Jeg ved det ikke, for Egill Jacobsen, der en nat satte sig i hovedet, at han ville opfinde farver og så skred til handling, Egill, der er en farvens psykolog, som Bachelard er en formens psykolog, Egill mener, at maleriet er farve, før det er linie. Alt i alt har han bevist dette gennem utallige eksperimenter, hvoraf de sidste drejer sig om muligheden for at spille over en enkelt farves udtryksrigdom, uden at billedet mister hverken sit helhedspræg eller sin mangfoldighed, solstråler, skygger.</p>
+
+<p>Egills maleri er med få ord et stort historisk skridt mod enheden : formens og indholdets enhed, intelligensens og følsomhedens enhed, enheden af alle maleriets midler, målets og midlets enhed i maleriet.</p>
+
+<p>Derfor er hans maleri revolutionært.</p>
+
+<p>For den verden, hvori vi nu befinder os, holdes kun oppe på grund af sine mangler og modsætninger.</p>
+
+<h2 id="14-asger-jorn">14: ASGER JORN</h2>
+
+<p><em>TEKST CHRISTIAN DOTREMONT</em></p>
+
+<p>Dansk maler.</p>
+
+<p>Født 1914 i Vejrum.</p>
+
+<p>Det siges, at Danmark er en smørfabrik. Det er rigtigt. Men det er også en slags Icarien for malere, et learien mer mærkeligt, end man kan forestille sig det i udlandet, et Icarien, der har årtusinders erindring og årtusinders fantasi, men efter sigende et Icarien, der eksporterer sit smør for at kunne beholde sine malerier. Jeg er tilbøjelig til at mene, at Danmark har en slags smør-taktik på samme måde, som Japan engang havde en legetøjs-taktik.</p>
+
+<p>Det siges også, at Asger Jorn er en mærkelig maler. Det er rigtige. Fra tid til anden går Asger Jorn til frisør, tager til universet, til Tunis, til Paris, til Amsterdam, til Bryssel og til venner, der ikke er malere men venner, til broncealderen, til køkkenet, hvor han forøvrigt maler væggene efter at have tilberedt et udpræget revolutionært måltid.</p>
+
+<p>For nogle år siden fik Asger Jorn lyst til at slå nogle porte ind til universet, som ikke gav efter for penselstrøg men måtte slås ind med hovedstød. Han dykkede ned i religionernes, kulternes, samfundets, symbolernes og kunstens historie, og langt fra at drukne reddede han sig tvært imod en mængde ting op, som havde været oversvømmet eller var ved at blive det.</p>
+
+<p>Picasso fortalte mig engang: „Jeg ved ikke, hvornår jeg maler, det er sikkert musene, der maler, mens jeg sover,“ og Jorn, der ikke opfatter sig som en Picasso, men i bund og grund som en Jorn, kunde sige det samme. I Danmark og i Sverige findes der i hundredevis af hans malerier i de mest forskelligartede hjem, der findes grafiske arbejder i de mest forskelligartede bøger, et hus, hvorpå han har arbejdet i cement, en børnehave, hvis vægge han har kostet over sammen med en gruppe, der ikke eksisterer, og med falske italienske sten, — og hvad ved jeg, og hvad ved han: han tæller hverken sine egne eller andres værker.</p>
+
+<p>Det, der sker, er, at Jorn ikke spiller komedie. Der er folk, som det bringer ud af fatning. Jorns maleri ligner ham selv. Det er frit: det går fra frihed til frihed, uden at man nogen sinde kan tage det på fersk gerning, hverken i retning af <em>stil</em> eller af <em>kaos</em> (det borgerlige maleris to poler). Det er hensynsløst: hvor lidet matematisk, det end er, så genspejler, stiller eller løser det dog maleriets problem, spørgsmålet om forbindelsen mellem maleriet og mennesket (indbefattet maleren) med en styrke, der hverken lader sig forstyrre eller begrænse. Det er levende: Jorn maler med den samme hånd, som han bruger til at give livet håndslag med, og hans hjerte sidder i hånden. Det er direkte: forsmående skaberakkerne, hvorunder realiteten endnu sover, går det fra drømmen om realiteten til <em>indholdets drøm,</em> og til det punkt, hvor <em>jeg</em> (Jorn) og <em>det</em> (realiteten) kysser hinanden (på munden).</p>
+
+<p>Klar over „maleriets elendighed” eller rettere dets rigdoms skrøbelighed og farerne, der lurer på det (fra ramme til penge, fra tråd til nål, fra palet til skrivebord) ser Jorn maleriet og lader <em>os</em> se det, ikke som en glemselens himmel, et tæppe for øjet, en sump for chockets skrup- tudser, men stilfærdigt, som det farlige område for et menneskeligt enheds-eksperiment, der når fra den simple seismografi til organiseringen af en fælles glæde for alle sanser og i alle retninger.</p>
+
+<p>Der findes ikke mange malere, der i samme grad som han nægter at være <em>malerist</em> og undgår at forveksle maleriets naturlige nødvendighed med maniens kirsebærstilke. Men i den skov af former og farver, syner, drømme og spekulationer, hvor Asger Jorn vandrer frem, mister han ikke et øjeblik det vidunderlige træ af syne, hvori den borgerlige æstetik skal hænges ved sin hals. Han arbejder på at få den hængt, og han arbejder på at få den erstattet med noget andet end dets eget lig. Han mener, at den borgerlige æstetik er glædens store skaberak, men han gør mer end det, han løfter det. Derfor ville det have været urigtigt at tale om Asger Jorns maleri i montmartre-jargon.</p>
+
+<h2 id="15-carl-henning-pedersen">15: Carl-Henning Pedersen</h2>
+
+<p><em>TEKST CHRISTIAN DOTREMONT</em></p>
+
+<p>Dansk maler. Født 1913 i København.</p>
+
+<p>På afstand minder Carl-Henning Pedersen om Harpo Marx, og det sker endda, at han er stum, for, mens De taler til ham, at følge universets underfundige (som kid) og naturlige (som kid) linier, der findes mellem universet og ham, og som medvirker i universet og i ham.</p>
+
+<p>Paa nært hold er det en kæmpe, der spiser godt, drikker godt, ryger godt, og som lever godt sammen med sin kone Else Alfelt og deres to små piger, der samler på fremmede mønter og ting fra Lapland, og som synger franske sange med en accent, der gør dem „abstrakte“.</p>
+
+<p>For ikke så lang tid siden havde Carl-Henning og Else deres lille lejlighed så fyldt med billeder, at de ikke mere havde nogen lejlighed. De var langt fra André Malraux’s „musée imaginaire”. Men jeg er sikker på, at det næste gang jeg kommer der, vil være lige som før. For de maler meget.</p>
+
+<p>De elsker at male.</p>
+
+<p>Hvad angår Carl-Hennings maleri, så har jeg aldrig set nogen, hvis fantasi er mere fjærnt fra <em>fantasteriet.</em> Carl- Henning er væsensforskellig fra Heerup. Han anbringer drømmen på lærredet, og drømmen anbringer sig der, som om den var hjemme, med sin vage „logik“ og sin „logiske” vellyst. Jeg mener, at drømmene, fantasierne, billederne her <em>holder</em> ved hjælp af egne midler.</p>
+
+<p>Vi befinder os i en modsætning til denne måde (som Heerup undslipper gennem absurditeten) at hænge fantasierne op som tøj på en malerisk tøjsnor, der er kommet til andet steds fra, og virker som et hår i suppen. Det er denne facon med at løsrive „et godt stykke“ fra den billed- mæssige realitet eller <em>den indbildte realitet,</em> og derefter hyklerisk at anbringe det med stor omhyggelighed i maleriets kasse. Carl-Henning behandler ikke livet som en insektsamler.</p>
+
+<p>Jeg vil ikke sige, at Carl-Henning maler på tåspidserne, ejheller på fingerspidserne, for han er forelsket i maleriet. Jeg siger tvært imod, at han i den grad hengiver sig til maleriet, at maleriet gir sig i det mest intime, vi har, og som vi må <em>vise frem,</em> om det så blot er for at synliggøre enheden mellem den ydre verden og os selv (der er en del af den).</p>
+
+<p>Carl-Henning får det, der synes vågent, til at drømme, det, hvis vågenhed syntes tilhyllet.</p>
+
+		</div>
+		
+		<div class="book-text" data-lang="en">
+			
+			
+			<h1 id="the-cobra-library">THE COBRA LIBRARY</h1>
+
+<p>1st SERIES: <em>THE FREE ARTISTS</em>. EDITOR ASGER JORN</p>
+
+<p><em>Permanent encyclopedia for experimental art. Editorship: COBRA, the international group of experimental artists.</em></p>
+
+<p>EJNAR MUNKSGAARD PUBLISHERS</p>
+
+<p>COPENHAGEN 1950</p>
+
+<hr />
+
+<p>FIFTEEN ARTIST MONOGRAPHS</p>
+
+<p><em>first series in the permanent encyclopedia of experimental art</em></p>
+
+<ol>
+  <li>
+    <p><em>Pierre Alechinsky.</em> Text by Luc Zangrie.</p>
+  </li>
+  <li>
+    <p><em>Else Alfelt.</em> Text by Edouard Jaguer.</p>
+  </li>
+  <li>
+    <p><em>Karel Appel.</em> Text by Chr. Dotremont.</p>
+  </li>
+  <li>
+    <p><em>Atlan.</em> Text by Michel Ragon.</p>
+  </li>
+  <li>
+    <p><em>Ejler Bille.</em> Text by Michel Ragon.</p>
+  </li>
+  <li>
+    <p><em>Constant.</em> Text by Chr. Dotremont.</p>
+  </li>
+  <li>
+    <p><em>Corneille.</em> Text by Chr. Dotremont.</p>
+  </li>
+  <li>
+    <p><em>Jaques Doucet.</em> Text by Jean Laude.</p>
+  </li>
+  <li>
+    <p><em>Sonja Ferlov.</em> Text by Chr. Dotremont.</p>
+  </li>
+  <li>
+    <p><em>Stephen Gilbert.</em> Text by Edouard Jaguer.</p>
+  </li>
+  <li>
+    <p><em>Svavar Gudnason.</em> Text by Edouard Jaguer.</p>
+  </li>
+  <li>
+    <p><em>Henry Heerup.</em> Text by Chr. Dotremont.</p>
+  </li>
+  <li>
+    <p><em>Egill Jacobsen.</em> Text by Chr. Dotremont.</p>
+  </li>
+  <li>
+    <p><em>Asger Jorn.</em> Text by Chr. Dotremont.</p>
+  </li>
+  <li>
+    <p><em>Carl-Henning Pedersen.</em> Text by Chr. Dotremont.</p>
+  </li>
+</ol>
+
+<p>The present collection of small monographs has arisen from the desire to manifest a particular artistic tendency in our time through some of its most typical representatives, and through a series of unpretentious small booklets to provide the most comprehensive characterization of each individual artist. We have sought to find a form of information between artists and those interested in art, which, freed from commercial ostentation, could become a counterpart to the exchange of experiences that for long periods has been the strength of science, and in its domain has helped to promote international cooperation.</p>
+
+<p>It is our hope that artists of other tendencies will take up the idea and thereby help to break down the unnatural frameworks and sects within which the <em>isms</em> have gradually encapsulated our time’s art. This dissolution of artistic frameworks is the basic program for the tendency represented here. We seek this goal, not by distancing ourselves from these special endeavors and cooking soup from the traditionalism of traditions, where the substance has lost its salt, but by striving toward a synthesis of the living in abstract form, as well as in naturalistic content, of the social community expressed through the liberated personality, of the liberated society, of the surrealist dream as well as the harsh concrete fact, fused in a romantic realism.</p>
+
+<p>It is our conviction that we, through these synthetic endeavors and only through these and only if they are also taken up from other quarters, will reach an artistic change of quality, a metamorphosis, an immediate, true form of content, a universal art, freed from classicist dogmas and formalistic taboo rules, a human art.</p>
+
+<p>We would like to thank Munksgaard Publishers as well as the Selandia Printing House and lithographer J. Chr. Sørensen for their great helpfulness in carrying out this experiment. Most especially we thank the cliché-establishment Heimburger &amp; Wendt, whose generosity has made the publication of the library possible.</p>
+
+<p><em>Asger Jorn.</em></p>
+
+<h2 id="1-pierre-alechinsky">1: PIERRE ALECHINSKY</h2>
+
+<p><em>TEXT LUC ZANGRIE</em></p>
+
+<p>Belgian painter.</p>
+
+<p>Born 1927 in Brussels.</p>
+
+<p>When Pierre Alechinsky participates in the <em>grand maneuvers,</em> his blood merely makes a single revolution. His blood explodes into droplets.</p>
+
+<p>I believe I met him at early dawn one day without night, and we never finished saying hello.</p>
+
+<p>Every morning its culture: At dawn Alechinsky’s neighbors arm themselves with stilts to do gymnastics on a bed of absorbent cotton, where their arteries sweat drop by drop, but the <em>rusty, immobile</em> painter dissolves in laughter. The organs are merely held together by a thread. The toe dips into the stomach, which presses on the bladder, which pushes the heart, which lifts the head. The <em>pulse meter</em> still shows storm. Provisionally I therefore conclude that on one side there are the military and the gymnasts and on the other side the painters.</p>
+
+<p>Yet Alechinsky loves <em>the open air.</em> He would see therein <em>maternities</em> growing like trees, space populated with beautiful erotic flowers with burdensome worries. Incessantly enriched by the eyes, the world is a <em>zoological garden,</em> where forms give each other a paw with the color string of laughter.</p>
+
+<p>When the string breaks from too much laughter, the form flies away, and a balloon is born, white <em>balloons,</em> green and red weds freedom.</p>
+
+<p>Since we are indeed in cosmos, let us then let the strangest phenomena that unfold pass in review. Let us first brush — it is precisely about brushing — a picture of the general situation.</p>
+
+<p>An essential fact forces itself upon us: The black suns do not abolish the blue of the sky. To my great joy, Alechinsky annihilates the principle of identity. The cosmoses in panic make agreements, telephone, knit. The <em>universe</em> is finally threatened by painting, but from this viewpoint the painter finds a serious competitor in the strategist: One threatens, the other kills. Alechinsky describes with embarrassment the professional worries that the annals of military history cause him, from Waterloo to Bikini. If he hates the military (excuse my repetition), Alechinsky in return adores the scientists, whom he admires. To the physicist’s great surprise, the red cosmoses sink along their spider threads, while the zeppelin rises.</p>
+
+<p>The cosmoses resist calculations, but not a secret appeal to the smile.</p>
+
+<p>* * *</p>
+
+<p>In great secrecy Alechinsky prepares the wool-bomb in a landscape he has japonized, I believe, to erase the traces. He leaves his laboratory at noon, serious, defiant, sparkling. He impatiently evaluates the storm outside, to see if it is possible to take a bath. This winter he has incessantly connected the idea of water with the image of ice: <em>It rains on the pack ice.</em> Alechinsky would gladly travel to the warm countries. Babylon attracts him and the thousand and one nights he still has to dream.</p>
+
+<p>While he waits to cross the sea, he makes an <em>aquarium.</em> He adapts his thoughts to <em>the sea’s format,</em> filled with green and red waters, where the frogs lay golden eggs. Beautiful ships are moored at the bow. At the moment he is interested in the sea’s interior. He goes exploring in the underworld of things. He asks himself why things swim. The curiosity is so astounding that it makes the sea overflow its banks. When he has dived down, the waves are stripped of their natural modesty and transform into ears of grain, into anchor rings, and come to perform the <em>dancing</em> morality on the captain on the bridge of his own ship.</p>
+
+<p>One night he carved out of a self-luminous pink buoy a large, tricolor snake in <em>carnival</em> confetti. Among the nightly celebrations there are certain seriously compromised ones. At Christmas there was on the illuminated streets of Brussels a pedestrian who melted together with the ice.</p>
+
+<p>But spring is reborn in a <em>Dutch landscape</em> more alluring than Holland. A windmill becomes engaged to a flower, the clouds lull on the meadows, a tulip head has shot up above the other tulips. Of all of Holland’s yellow tulips Alechinsky composes a man who sleeps on old pleasant wooden meetings.</p>
+
+<p>I believe I can discern in Alechinsky the sexual instinct with its wonderful scale of nuances, and a special instinct, which from the outside one can only attempt incompletely to define by means of the pink colors that completely express it. I declare on my word of honor that it is neither about a “pink period” nor a striving toward “life in rosy hues,” but about an irrepressible tendency toward the maintenance of life, which occupies their eyes like an army of liberation. Of this army Alechinsky has set up a meticulous inventory, where a thousand intoxicated generals supervise some starved yellow-ocher soldiers. This reversed <em>colonization attempt</em> brings the question of several of the obtained positions into play, about which I am however careful enough not to expatiate here. I force myself to return to my original subject, which is to show certain sides of my friend’s bad character.</p>
+
+<p>He loves the countless beautiful women who are united in his. For those who understand how to look at watercolors in sunlight, she appears in filigree in these pointed celebrations, which I strive to describe dialectically. Alechinsky develops a Manichean metaphysics. Good and evil fight a violent battle: They spread shabbily from canvas to canvas, but I do not shudder most at the daily sight of this spectacle, for I know who distributes the ammunition, and how. His religion, founded on female deities, some hostile, most mild, is a panchromatic polytheism. Their dialogue (the sound picture in Alechinsky’s painting strikes us strongly) one day drowns out that of the museums.</p>
+
+<p>At first he brings his goddesses into harmony on a given chord, which he plays for them on guitar: Alechinsky’s forms are beautiful and luminous like naked almonds. A secret council watches over their fate. He gives the floor to the good fairy, as well as to the evil one, and their arguments attack each other.</p>
+
+<p>The fourteenth of July corresponds to the <em>lead sea.</em> At times, when the disagreement worsens, the dissolved audience — literally dissolved — seems to participate in the mad <em>acrobat’s</em> last moment, when with folded arms he defies the void.</p>
+
+<p>Alechinsky’s magically astrophysical underwater environment becomes complicated by sorceries. To reach his goal he at times uses luminous projections.</p>
+
+<p>The optical phantasmagoria have in our country been obscured, since the improvements that Robertson brought to the cinema a century before it was invented. Pierre Alechinsky gave himself on his part to privately exhibiting the released prisoners, spots and clouds. He finally imagined, I do not exaggerate, imprinting the dream on photographic paper by means of the slide projector, the transparent glass, where the dream inscribes itself.</p>
+
+<p>Quite recently Louis Van Lint has revived the slide. This man, I repeat, represents a danger to humanity, to bourgeois society as well as to revolutionary society. I sacrifice his thoughts as burnt offering to the aesthetic canons.</p>
+
+<h2 id="2-else-alfelt">2: ELSE ALFELT</h2>
+
+<p><em>TEXT EDOUARD JAGUER</em></p>
+
+<p>Danish female painter. Born 1910.</p>
+
+<p>To avoid any attack from that elegant “routine,” which is always ready in various forms to appropriate any victory that the painter (the poet or the sculptor) has achieved, with sickly growing appetite, the instigators of the Danish avant-garde movement avoid trusting in any whatsoever formula, distrust them all and show us the example of an offensive <em>from all sides</em> with a calculated and always changing strategy on all fronts.</p>
+
+<p>In the battle from abstraction to free figure formation, each individual possesses his special armory. There is Bille, whose apparent abstractions at close range register the intimate current, the inner grain in the material. Erik Ortvad, who leads impressionism and cubism to their poetic Orient, there is Egill Jacobsen: his painting, kites that graze the grass, inflame all of childhood’s wantonness into a sparkling round dance, furthermore Carl-Henning Pedersen and Asger Jorn, who more, less or much, lead toward a valid synthesis of the various tendencies. Freddie’s and Mortensen’s position does not play into the present account.</p>
+
+<p>On this disconnected ladder, erected in haste up one of the most theoretical walls, another painter climbs in the most perilous position, <em>in the sign of bewilderment:</em> that is Else Alfelt. Undoubtedly she abandons herself now and then, as if to amuse herself, to these exercises on slack line in painting, which have recently caused such a stir in France under the colors of Bazaine, Singier and Manessier. But the habit does not make the monk, and triangles and circles are not abstractions either, and if this work immediately presents a face less troubled than Bille’s or Jorn’s, we should not from that conclude that its originator abandons herself to her natural femininity and agrees to conceive her art as a higher variety of embroidery — that she by and large has decided to play Penelope on the corner of her palette, while her husband, Carl Henning Pedersen, stakes every hour of his life during the hunt for vampires in Zealand’s forests or mermaids by Elsinore’s coasts. It is not a cunning little lamb in the werewolf’s den.</p>
+
+<p>It would be quite childish to dispute the chromatic feats and the successful decorative yield of among others a Bazaine. When we reproach him and his friends, it is first and foremost because of their sickly anxiety about breaking the enchantment of form and line. This painting constitutes a pleasant commentary on life, but it does not budge it a cock’s feather. They are talented acrobats who paralyzed harbor in their own net’s meshes!<sup>1</sup>) When Else Alfelt finds pleasure in these tendrils or these flower garlands, which have created their fame, and which could also lay the foundation for hers, she does not however devote all her attention to the drawing’s capricious windings. She only accepts her handicap because of her taste for the daring. Try to devote yourself to these forms, pointed like scissors with open blades. It is always with such forms that Manessier culminates in the religious wonders of “decayed cathedrals,” while Else Alfelt even with these means only dreams of <em>methodically</em> cultivating the most extensive plots of land in the infinite landscape’s natural space, which she one day has revealed. Neither do her colors emerge from some tested alchemies, they are even at times a bit lackluster according to my taste, but the essential thing is however that her scissors are not used for cutting out halos, that their blades close around a concrete world. Her nautical forms, her sails and her masts, which are covered with yellowish and greenish spots, like daisy hearts, swarming in the thicket — <em>only in honor of doubt —</em> are merely <em>set pieces on the stage</em> for a far more significant play: nothing resembling this diligent rivalry, which develops in this gloomy atmosphere of the areas where the soul sighs alone, without any connection whatsoever with the real. There are no lacunae, no footnotes, no parentheses or quotation marks in this writing.</p>
+
+<p>It happens moreover frequently that all these branches, all this rigging is carried away, swept away by a sudden gust of wind. In their place appear stacks of streaks and stripes, and at the very top a bastard of star, flower, moon and sun, which dominates the storm. It is another division of the natural scenery that the painter attacks merely with interest for <em>description.</em> I maintain this word, for Else Alfelt leads description and not anecdote to a <em>throbbing</em> stage, which only André Masson has reached in certain of his latest works. On the other hand, the pioneering point of departure and the various stages in its transformation, the value of this painting consists in the <em>regularity</em> which the metronome or the whip, the pendulum or the gyroscope has managed to establish.</p>
+
+<p>But who dares claim that the glow of the conflagration weakens its devastating power.</p>
+
+<p>\1) These themes: the chain, the net and the lattice often return in Singier and Manessier; they are pleasant means of transport for the “routine”.</p>
+
+<h2 id="3-karel-appel">3: KAREL APPEL</h2>
+
+<p><em>TEXT CHRISTIAN DOTREMONT</em></p>
+
+<p>Dutch painter.</p>
+
+<p>Born 1921 in Amsterdam.</p>
+
+<p>Appel has no inferiority complexes, neither do his pictures. By that I do not however mean either that he or his pictures are conceited, not at all. But he asserts himself with a certain rawness that allows no doubt possible: he is at least certain that Appel exists, that Appel’s pictures exist, that Appel is alive, and that Appel’s pictures are made of paint. I do not know who would really contradict me. It is one of the points about which all people can agree.</p>
+
+<p>Appel’s painting is a self-evident painting. But I do not agree with him when he lets our hand run over the picture’s uneven surfaces with their cunning grooves and natural superfluity to demonstrate their materialism: it is only the outer appearance of materialism in Appel and in his painting. There are painters who paste the same exterior on their pictures, but they are not materialists.</p>
+
+<p>Appel’s painting is completely materialistic from surface to ground, from what they show with fanfare, and to what they show with refinement, to such a degree that surface and ground are one and the same thing. But do not say that Appel is brutal and that’s that. Do you say about the gentleman who has a fat belly: There we have a fat belly? Yes, you say it, but it is for fun’s sake. Appel is a poet whose spontaneity is of such a nature that it does not have time to lose its aggressivity and shocking strength between hand and canvas.</p>
+
+<p>We are far from the candied art, from the aesthetic candy-making: Appel only delivers unsorted, and it is not candy-sweet.</p>
+
+<p>There is this, that Appel is rich. Not richer than the others, in reality everyone is rich, but first of all he has all his riches at hand. He knows neither chests nor cans, moreover he is generous. We are also distant from this miserly art, which in so many painters only embraces the single picture at a time, just as one only places one candle in a candlestick.</p>
+
+<p>He comes from the people, and he has not left it. He has not felt a need to depict the people’s misery. He has preferred to show the self-evident in the universe’s joys, in sensitivity’s joys (of which one cannot be separated from the other) for to that the people have just as much right as everyone else.</p>
+
+<h2 id="4-atlan">4: ATLAN</h2>
+
+<p><em>TEXT MICHEL RAGON</em></p>
+
+<p>French painter. Born in Algiers 1920.</p>
+
+<p>In contemporary painting Atlan appears as a pronounced loner. But since one must be able to refer to models, if one wants to have a place in art’s city, we can say that he at the same time reminds one of Chagall and Soutine. But Atlan has nothing in common with this world of fables and fairy tales from Chagall’s ghetto, and his humor is more voracious than Soutine’s.</p>
+
+<p>To understand Atlan one must know that he is from Algiers. That explains to a large extent the approach in his drawing, his cactus forms and lizard teeth. Europe has not at all stamped him with its seal. He is above all African. His colors (the matte reds and ocher colors) are those from the painted masks. Like a blasphemer he has stood in relation to animals, defying Moses’ law, and his offspring are countless.</p>
+
+<p>When I attribute to Atlan’s painting a quite special significance, it is because it seems to me to be a synthesis, a synthesis in the artistic plane of the three great movements that have dominated art in the last forty years: Expressionism, surrealism and abstraction, a synthesis of the most gripping forms and of life’s greatest depths in the plane of expression.</p>
+
+<p>The architect, who according to his nature is abstract, stylizes the tree into temple columns. Atlan, the magician, creates a human metamorphosis of the tree and ourselves, in the same way as the black witches equip their mandrakes with five genital parts and twelve fingers. In that direction Atlan’s pictures are the opposite of abstractions. Among nature’s creative forces they also participate, in my opinion, in procreation’s emergence. As the African artist in his sculpture forms the spirit of fire and not the fire, so Atlan paints a fusion of both the mineral, the vegetable and the animal element. His powerful material effects are like the earth’s crust of the first times, where the living forms in the original humus still sought their canonical laws. It is the world of the seahorse and the pterodactyl, the starfish and the coral, the sponge and the sea urchin.</p>
+
+<p>Atlan starts from abstract forms (all forms are in themselves abstract. A glass is just as abstract as a form by Arp. From the moment when the artistic work finds its utility function, it has become realistic), — and these dead forms he gives life, a violent, shaking and cruel life, issued from the depths of the unconscious. It is in this way that he manages to present this strange fauna, equally flora and fauna, for these cactuses are greedy, the mandrakes are eroticized and the flowers devour their bees.</p>
+
+<p>Apollinaire said: “Since the customs officer Rousseau, strange flowers have grown on the quays of the Seine.”</p>
+
+<p>I must confirm the same with Atlan. His fantastic world has become so familiar to me that I find it just as natural as the horse’s and the seagull’s. But if we were not accustomed to seeing horses and seagulls every day, there would undoubtedly be those who would say: “What strange monsters, those there!”</p>
+
+<h2 id="5-ejler-bille">5: EJLER BILLE</h2>
+
+<p><em>TEXT MICHEL RAGON</em></p>
+
+<p>Danish painter and sculptor.</p>
+
+<p>Born 1910 in Odder.</p>
+
+<p>Within the avant-garde of Danish painting, Ejler Bille is undoubtedly the one who knows French art best. After having lived for a long time in France in the Parisian Montparnasse of the pre-war period and surrealism, he returned to Copenhagen to publish an extensive work: “Picasso, surrealism, abstract art,” a title that indicates three stages, three developmental steps, which Ejler Bille was the first in his country to realize had to be traversed; that from these three experiments a new one had to emerge that would express his generation.</p>
+
+<p>Already in 1935 he positioned himself in opposition to constructivism and surrealism, from which he had freed himself. As founder and editor of <em>Limen</em> until 1939, (at this time it was replaced by the new journal <em>Helhesten),</em> he maintained this line with fanatic strictness.</p>
+
+<p>Bille: The agitator and art critic, the poet, the painter and the sculptor, what an astonishing person for us Frenchmen, who are a people of specialists. In Denmark this seems less remarkable. Most of the avant-garde’s painters are also poets, even archaeologists (isn’t that right, Asger Jorn?), generally musicians, and what do I know? A Dane, whether he is a worker or a bourgeois, would feel dishonored if he had not hung on the walls of his home some works by the artists he cares about.</p>
+
+<p>It is undoubtedly Miro and Kandinsky, from his first period (the best), who have most strongly influenced Bille as a painter, and Arp, who for the sculptor Bille has been the master. But like his countrymen, Bille has above all nourished himself on Scandinavian folk art, which is so little known in France, and which, if one merely refers to the aggressive Viking art and the demonic frescoes of Danish medieval churches, is nevertheless some of the most beautiful and original that exists anywhere.</p>
+
+<p>In general, Danish art bears the mark of the country that through the ages has preserved its sun cult. With that be said that the Danish painters love color and the material fullness that makes the picture ring. They paint what they do not have, the profusion of an unknown vegetation and the luster of demonic minerals. Art is often an expression of the burning demands of unfulfilled longings. In their snow-covered houses they hang the pictures’ green, red and yellow color patches on the walls. Their cozy buildings in the flat landscape sing with all their might with the painters’ passionate color strokes.</p>
+
+<p>But Bille belongs among the more solitary; his colors are more intimate. Perhaps the light clouds on his Nordic sky are veiled as by a fine, gray fog, a memory of Paris.</p>
+
+<h2 id="6-constant">6: CONSTANT</h2>
+
+<p><em>TEXT CHRISTIAN DOTREMONT</em></p>
+
+<p>Dutch painter. Born in Amsterdam 1920.</p>
+
+<p>Constant (Nieuwenhuys) is the founder, the agitator, the spiritual axis and the working axis in the Dutch experimental group. He has refused to enclose his forces, his intelligence and his sensitivity in a room and cultivate them like mushrooms, which he would have had to eat alone.</p>
+
+<p>He has a collective mind, as others have a difficult mind. He has not been afraid to set up a group of experimental writers and painters in the most radical sense in Amsterdam, where nothing similar existed, but where there were several priorities, above all the old abstractivist rags, which some still want to use as a banner. Constant is, if I may say so, a hard nail. He does not believe that one can reach anything by way of concessions’ airways. He stays on the ground.</p>
+
+<p>And the experimental group in Holland is today one of the most living and fruitful in the world. It is determined, but it is not lonely; that is the only effective solution.</p>
+
+<p>There exists moreover no effectiveness without prejudices. Constant is a creator. He looks at experimental painting <em>as a participant</em> therein. In <em>participation</em> already exists <em>judgment.</em> But there is nothing, absolutely nothing of this dilettantism that confuses and mixes all of life’s prejudices in a cocktail for the pleasure of the salons’ audience.</p>
+
+<p>It is not about pleasing, and Constant avoids pleasing. I am his friend, so I know it.</p>
+
+<p>He wants his painting to be true and not pleasant. He paints in such a way, without façon, that <em>nothing</em> slips out between his painting urge and the canvas. He says that it is the only formulation of good painting. Good painting for him is not only that which does not deceive, but even that which does not play. Its joy must have serious reasons.</p>
+
+<p>His painting is sufficient proof that he is right. It rises above the aesthetic reflections of a bourgeoisified and Sunday-marked eye. It must be taken raw, without Christened civilization, without syphilized bourgeoisie. But it must nevertheless be taken warm, just as it is, with its vibrato and its dynamism. Constant drinks at the sources, and he prefers the people’s drawings on walls and ramparts to art’s masterpieces, the art that arises as a scream, to paintings that arise as doctrines. There is moreover no reason for praise, for he is merely naturally himself. He has a Negro heart, and I do not believe that the Americans would give him entry permission if they X-rayed him. He penetrates into the means as into a woman. He often speaks of the <em>organic</em> means, and I, who am a writer, see herein <em>orgasm</em> being born.</p>
+
+<p>Constant has gone to the revelation of man’s <em>most shameful sides,</em> of reality. His paintings are naked.</p>
+
+<h2 id="7-corneille">7: CORNEILLE</h2>
+
+<p><em>TEXT CHRISTIAN DOTREMONT</em></p>
+
+<p>Dutch painter. Born 1922 in Belgium.</p>
+
+<p>Constant has once said about his friend Corneille, that he was a child. That is correct. But there are several different kinds of children: The child who appears, and whom the whole family circle hails with great cries of joy, as Hugo says, the well-behaved child, then there is the terrible child, who smashes everything, even the paintings, the sulking child, the chattering child, the screaming child, the forward child, the serious child, the legitimate child, the love child and the mischievous child. Corneille is at times a terrible child, always a natural child and always a cunning child. You know, the child who, behind his childishness’s shield, speculates, calculates and observes. He has a way of looking at you that says much: nothing escapes him, but he escapes you. In a way the cunning child is not dialectical: he goes behind your screens to see what is going on, but it is not possible to see what is going on behind his shielding smile.</p>
+
+<p>Should it be necessary to find yet another proof of the intimate relationship that exists between art and life, then Corneille’s presence would be enough to provide such. A cunning child in life, playing like a child, with childish behavior, but acquainted with the right addresses, capable like no one of finding a lovely girl, so he is also in painting a cunning child.</p>
+
+<p>He paints like a child, but also like a mathematician. It is an infant, who still has his ears full of milk, or rather a child who lavishly plays chess, for at times it is the child who controls him, at times it is the mathematician, and now and then they blend, so one cannot separate them.</p>
+
+<p>For example, Corneille makes children’s drawings, colors them, as a child does it. Here one finds everything one wants, except life’s seriousness and the universe’s majesty: here I see ducks and chickens playing in front of a farmyard, and the kitchen’s tiling overflows its banks all the way into the field, and there goes a little, spindly street straight through it all; it must lead to a dream-mill or a fantasy river. But watch out, the colors lie where they should, and the lines do not skip school.</p>
+
+<p>He paints mathematical sections of the universe, a kind of walls that lack a base, and which only keep themselves upright by means of their infallible structure. Furthermore it can be the universe, seen from Sirius with its panes, which distance makes regular, with its holes and mountains, which have become hills. Corneille should study the problem surrounding the lines that can be observed on the planet Mars: the child will perceive them as canals (all the more so, as he is almost Dutch), but the mathematician would perceive some straight lines. Watch out for the rest, for in these strange geographical maps, which he paints, a child has also painted his, and a glance from this gray to this red is sufficient for one to rediscover the taste of earth.</p>
+
+<p>When he succeeds completely in being himself with his simple poetry, at the same time peasant-like and moonstruck, and with this inclination for a certain strictness, then Corneille disappears, and it is merely an apparent paradox: it is normal that the individual disappears when it is realized. You enter his universe, but it is yours, it is the universe in its very harmony and contradictions, the indissoluble bouquet of lines, forms, colors, dreams and visions.</p>
+
+<p>He has the honesty to call himself an <em>experimental</em> painter and not to sleep the dreamless sleep on his first laurels. He experiments, and for me his experiments are at least as interesting as his results. He fights against childishness and harshness, he rejects the flourishing paths of shirking just as well as the ideal autostradas of formalism, and he advances through the forest from clearing to clearing. I do not believe that the experimental painter is the one who makes paintings that one draws in a raffle: to win the grand prize and then withdraw to somewhere on the Riviera. I believe that Corneille is an experimental painter, because he is in the breach, in the fire, in life, which strikes and lets itself be struck.</p>
+
+<h2 id="8-jacques-doucet">8: JACQUES DOUCET</h2>
+
+<p><em>TEXT JEAN LAUDE</em></p>
+
+<p>French painter.</p>
+
+<p>Born 1924 in Paris.</p>
+
+<p>Perhaps it is due to certain people’s entire misfortune that a merciless society has deprived them of their childhood: their sensitivity remains unexploited, untouched. Too weak to assert themselves in childhood, they have not found the opportunity to practice. Therefore modern man must continually choose between what he was and often continued to be, and the adult human being who knows the weight of his responsibilities. Here the difficulty intensifies: to betray oneself or the others. Art and poetry seem for a moment to be solutions, but individual, temporary ones. Those who practice it can find here a temporary reassurance: there remains to give their works validity, otherwise these mean nothing more, they themselves are <em>dissolved,</em> no longer exist. This is the most difficult, for among their well-wishers one party haggles with their production, while the other invokes the seriousness of the times and proclaims that the time for play is past.</p>
+
+<p>Yet it goes the same way with sensitivity as with the popular sense: one cannot explain it from the outside. Even if one arranges sketches from wall drawings on a sheet, so they form a plastically valid whole, it is nevertheless not sufficient to make a painting. It becomes at most a decorative field, but this is not the painter’s intention, for he wants to captivate more deeply than by means of these forms.</p>
+
+<p>If Doucet on a flat surface arranges lines and colors, as one otherwise generally sees on public walls and sidewalks, then he understands how to dispose these signs, which he sustains on the surface, he thinks with the hand that draws. He makes himself one with the child, to whom both the hand and the eye belong. “Genius is childhood, gifted with all means of expression,” remarks Baudelaire. This sentence is the main thing in the art and poetry that follows it. It provides an introduction to it, better than a comprehensive study.</p>
+
+<p>Everywhere and at all times the wall inscription has been charged with an unusually liberating and bold energy. I will assume that Doucet in his cell, where the Nazis had locked him up, became aware of this relationship through direct experiment, and that this dirty magic, inscribed in the prison wall, has had a strong influence on his art: for a prisoner it is truly about making oneself known, for to make oneself known is to exist and to exist fully. Man gathers himself together in case he is hunted: his indissoluble unity seeks to assert itself, in order not to be annihilated. One paints, one writes always with front against death. An anxious being’s work is therefore not hopeless, it is an exit, it is a crack in the painful system that surrounds him. If it is unhappy, it nevertheless seeks toward happiness. Doucet, who for us revives “the green paradise of childlike loves” gives us trust in the days when man, by being able to fully and completely assume his childlike conditions, can finally become himself in his maturity.</p>
+
+<p>It is even little said, for it does not tell us entirely to what degree Doucet is a poetic artist. Poetry is always met with distrust by painters, to the same degree as it pretends to consist in a literary mood rather than an artistic mood; but if it exists in Doucet’s painting, then it is no more original than the drawing or the watercolor, it is not the intention. Perhaps the consequences of a rhythm or a harmony, but above all of a dynamic sensitivity, it is internal, it is life. One gets a concept of this by looking at the following reproductions, they are sufficient to support my statements, they make them almost superfluous, but beforehand I had to present him.</p>
+
+<h2 id="9-sonja-ferlov">9: SONJA FERLOV</h2>
+
+<p><em>TEXT CHRISTIAN DOTREMONT</em></p>
+
+<p>Danish sculptor.</p>
+
+<p>It must be sad for the kind of people who deny sculpture’s right to invent and create, i.e. to be faithful to space and the spaces that live in space. It must be sad for the kind of people who have a non-Einsteinian and petty bourgeois conception of sculpture and not only lack the ability to see the relativity of space and time, but even the inner relativity of space. It must be sad for them, who perceive every sculpture as abstract that is not modeled on their own nose, but which moreover, however abstract it may be, could smash it, sad for them. Sonja Ferlov has, when I see her, on her knee, as well a child as one of these stone-ibises, one of these living scissors, which she hews out of the sea’s foam.</p>
+
+<p>It is her child, as it is her ibis and her scissors, and it makes me recall the English anthropologist’s experiment of raising his newborn together with a macaque’s newborn. Sonja Ferlov should, paradoxically enough with a less experimental purpose, raise her newborn together with her newborn sculpture, for everything should be mixed together, instead of separating it, as one does in France, and sculpture has its abortions, its Caesarean sections, its umbilical cords, a sculpture has its crises of faith, its ears, its scarlet fever, and just name what is most automatic in sculpting and in love.</p>
+
+<p>She has lived a long time in Paris, and Paris has long for her been Alberto Giacometti. Like Giacometti’s sculptures, hers also has strong, dramatic tensions behind the smooth, precise and perfect surfaces. And yet it is difficult to find this tension, to put one’s finger on it, for Sonja possesses nothing of this conception of sculpture, where it is about pumping as many indifferent forms into stone as possible. In a part of space she constructs some spatial parts. Stone and air are here reconciled.</p>
+
+<p>What furthermore immediately strikes one upon a moment’s contemplation of Sonja Ferlov’s works — which for the rest are far from being numerous, she has destroyed many — is that they always or almost always have a kind of double character, as if she were afraid to leave a form or a work alone. See for example the living branches or the foreground figure on the following page: It expresses <em>dialogue</em> with less humor than precision. They stand moreover in contrast to later works, which are <em>monologues</em> of straight lines, which I find frightful, if I see them up close, for here the exits are blocked by the problem itself.</p>
+
+<p>But are there really so many problems? Sonja Ferlov, with her child on her knee, with the drama’s clockwork, whose sound can be heard in what she makes, as one hears the sea in a conch shell, she works like the rest of us and with the rest of us against the dead, so we can have joy, and to rejoice herself. Let us therefore enjoy the eye’s joy after the hands’.</p>
+
+<h2 id="10-stephen-gilbert">10: STEPHEN GILBERT</h2>
+
+<p><em>TEXT EDOUARD JAGUER</em></p>
+
+<p>English painter. Born 1910.</p>
+
+<p><em>“A little of our dry air is needed. . .”</em></p>
+
+<p><em>Jacques Vaché.</em></p>
+
+<p>Breaking the harmony of our time’s British art, a new and unexpected tone raises itself. In C minor.</p>
+
+<p>Gilbert’s art truly contains a shattering message to all minds that are sensitive to the drama that encircles our time. It is as if it delineates the darkest and most heartrending peak. For what is involved here is an assault in painting far more violent than a Beckmann’s or a Kokoschka’s expressionism — even than Soutine’s, and in another direction than Fautrier.</p>
+
+<p>First and foremost in opposition to everything literary — and Dali’s boat is lost in the fog forever — Gilbert forces painting out to the scream’s boundary. It goes without saying that he could not have adapted such a goal to an eloquent naturalism’s outdated means — even if it in 1949 is outfitted with a terminology sufficiently alluring to deceive several, and with a sickly urge to systematization to assign certain “realists’” “sacred visions” an official revolutionary label.</p>
+
+<p>He uses the most <em>fantastic</em> means that exist at all, the most terribly <em>real.</em> To establish the execution’s calm his universe mobilizes an army of <em>substitutes:</em> bird-insects, jumping-jack-insects, devouring butterflies, <em>death’s-head butterflies,</em> sphinxes and harpies, always closer to man, that which “they” want to make him into, that which we cannot allow him to become.</p>
+
+<p>And these phantoms from bloodbath and general perdition only emerge from nothingness to show us the immensity of our aberration, and <em>the dream’s urgent necessity.</em> If Gilbert prefers the colors of anxiety, it is because he does not feel the moment is right for painting “rosy,” for humming romances. Certain earth colors, burned or bloody, certain ocher colors, express best in his opinion these moods of devastating destruction and atmospheric annihilation. And it is likewise the clear consciousness of this climate that causes him to lead his forms directly toward a fourfold exodus from the canvas’s center toward the corners, <em>toward the four cardinal points of horror.</em> But it is not a crucifixion that is involved, and we find ourselves in opposition to the missal and the church window.</p>
+
+<p>This work, which appears after “Guernica” and Matta’s testimony, the most visionary we have hitherto known, acquires a pronounced character of <em>warning.</em></p>
+
+<p>Their great graphic value is the result of the uninterrupted diminution in a cleverly evoked compositional imbalance. This painting deals a heavy and masterful blow against these suburban modelers who “create a whole volume” out of two surfaces that meet around a straight line!</p>
+
+<p>Gilbert rejects the falseness of these pompous advocates of emptiness. One can undoubtedly, as we return to English art, not dispute this country’s painters their technical validity, their perfect “craftsmanship,” but to what degree is it not from Nash and Moore to Sutherland about that compromise and that bleating formalism, which Marxist criticism precisely disavows — and the surrealists? Gilbert does not run aground on this reef, although he, as well as they, understands how to establish a precise form, which is necessitated by the viewpoint he has chosen, by his problems, and he knows that the <em>sources</em> of his anxiety are not the same, for he <em>knows anxiety —</em> and paints from a full human logic.</p>
+
+<p>For him precisely the Dionysian outpouring of color on the canvas, forced toward its uttermost entrenchment, assumes a precise psychological significance, a purely physical vehemence.</p>
+
+<p>Against the “colorists’” bombast Gilbert takes his refuge in <em>ellipsis.</em> Against the babbling palettes’ parade numbers — he arms the scream, naked, strict. Irresistible. But we never become too many to in all areas seize eloquence “and wring its neck.”</p>
+
+<h2 id="11-svavar-gudnason">11: SVAVAR GUDNASON</h2>
+
+<p><em>TEXT EDOUARD JAGUER</em></p>
+
+<p>Icelandic painter.</p>
+
+<p>Born 1909 in Hornafjordur.</p>
+
+<p><em>Between each dawn and each evening the surf hews and hews its cliffs with the violent thunder of stony harlequins.</em></p>
+
+<p>When I in 1947 wrote down these lines, which in connection with a purely lyrical text, for me only had a purely poetic meaning, I had no idea that they one day would come to serve as a message, as an echo that crosses Svavar Gudnason’s work (which precisely comes from the country where dawn reveals its most <em>lingering</em> essence). Immediately at the first meeting in August 1949 this relationship was however revealed: Once again the confusion and the supposed irrationality in a text was clarified, at the meeting with another irrationality. Confirming each other, their mysticism gave way to the real. These cliffs, with their immense expanses in inhospitable formations, obliterated me completely, and the jagged chains’ capricious hollows and reddening chasms, which <em>align</em> in a hundred boldly swung curves, this whole tumultuous feeling as of an <em>avalanche,</em> it was precisely this that had summoned me so strongly in these peculiar sentences’ flickering appearance.</p>
+
+<p>But we must cross the threshold: Yet it will fall hard for the reader, who can only rely on the photographs, to understand the values in this violent art. In this universe, whose brilliance eggs on and burns the eye, one must ambush the color and touch grooves and roughness. One must wander around among this solemn realm’s cliffs, to be able to grasp its power.</p>
+
+<p>At the heart of these compositions there always hammer certain original forms, spheres or prisms of volcanic nature, which seek to pull space together around themselves, to break through the wall, and from all sides other forms emerge, teeth and needles (but of slate and basalt) and counteract this rotation, to brake it and thereafter annihilate it. Does it happen by chance that certain distantly animal-like forms rise in the midst of this rocky chaos of displaced coils, one thinks, rather than of the Arctic Ocean’s monsters and prehistory’s coarsely fashioned colossi, of Leviathan, which is such an ingrained part of the very essence of the sea that it would be futile to describe its exact contours.</p>
+
+<p>The actual power in this art is contained in these counter-movements, in this procedure of damping and propulsion, or of combustion and cooling, and in the color’s aggressiveness, which like lava streams flow from Gudnason’s abundant palette, a volcanic crater in constant eruption. (One can without much humor say that he carries fire to the first mill). He confirms in this way merely by the use of the paint material, this whole composite vehemence in the conflict between the elements, between man and its elements. Does he not use to realize such a goal this reinforced figurative method as an Egill Jacobsen — to mention an artist who touches him — a Miro or a Lam with predilection use, for the rest with completely valid motivations, then one must however beware of from that concluding that he maneuvers up alongside those who ride the pure abstractionism’s hobby horse. With the same dogged research zeal as Constant or Jorn, he merely traverses other regions.</p>
+
+<p>The basic feature of his excavations designates, to adhere to the emotional areas, the lower layers in consciousness, which retain the imprint of the world’s first times, in corresponding degree one of the most captivating endeavors that exist.</p>
+
+<p>The Icelandic “countrymenship” represents in itself a peculiarity, sufficiently remarkable for one and another. He could successfully flatter the exotic complexes in blockheads, with an urge to escape from everyday life, and limit himself to accepted descriptions of curiosities from the land of extremity. He prefers like Atlan, who controls the opposite pole of geographical barrenness, himself to let himself be imprinted by the scorched expanses’ deep nature stamp, where meager plant growths creep along the ground, where even the seasons’ cart only glides forward in large jolts.</p>
+
+<p>It is physiologically he penetrates the convulsions in the earth’s crust, which Old Norse cosmology believed formed from the giant Ymir’s dismembered body, the giant with frost-cracked jaws. He even captures the slightest trembling, the most concealed pulsing, and it is by virtue of a quite simple analogy that we are driven to connect the phases in this earth ground’s epic with the human being’s anxious and passionate development, with its dynamic and static phases, its revolts and its secrets. This assigns his work an objective — or rather a social — meaning, and protects it against this threatening emptiness, which painters do not avoid merely by referring to this “inner model,” which one in recent times has displayed on fashion ships’ bows. The turbulent sea lets us foresee that new ships must soon be chartered. Already in the early dawn Gudnason keeps himself ready at the very end of the manning quay.</p>
+
+<h2 id="12-henry-heerup">12: HENRY HEERUP</h2>
+
+<p><em>TEXT CHRISTIAN DOTREMONT</em></p>
+
+<p>Danish painter and sculptor.</p>
+
+<p>Born 1905 in Copenhagen.</p>
+
+<p>Heerup resembles a market athlete, not because he has any particularly square-cut figure. It is his strength, merely by a single glance, merely by the way of moving the foot forward, to be able to resemble what he is not, and which he nevertheless is: He is capable of being everything without however ceasing to be himself.</p>
+
+<p>Moreover he resembles a diver, over whom the sea without touching him glides. But he has no diving suit. What happens is that he strides through life like the diver through the sea, who discovers a treasure, a fish, a shell and lets the sun see it.</p>
+
+<p>He is perhaps a market diver, a sea athlete. Thus we wander in Heerup’s art from one pole to the other, from painting to sculpture: without having either the color’s or the line’s genius, but with genius he paints the most <em>peculiar</em> pictures I have ever seen, and his painting is pronounced jugglery, but jugglery from life’s immense circus, and if he goes to the sea’s bottom, I would say the earth’s, it is to bring up the drowned stones, and while he carries them up to the surface, where we are, he fixes them with a unique dexterity.</p>
+
+<p>One day I walked into Heerup’s garden near Vanløse, and I asked myself what one could possibly compare the Hesperides’ or Semiramis’ garden to.</p>
+
+<p>There was found here, not placed on the ground, but growing up from the ground, which has created them, a flora of stones, an encyclopedia of form, a large immobile anthill, majestic but cozy, a field with birds, beings and things, which gave me the impression of having come on a visit to the universe, as if I were dead.</p>
+
+<p>For none of these stones were dead, none of these stones were stones. They <em>represented</em> nothing, not even stones, they <em>were</em> everything, including stones.</p>
+
+<p>Just as Tom Thumb sowed small stones to be able to find the way back, Heerup has sown these large stones, which have become what they were, and which do not stop becoming, so that <em>we</em> can find our way back, which we constantly lose <em>under our own threats,</em> the way of reality.</p>
+
+<p>He loves the stones, and he recreates them in his own image in his garden, not as a god, neither as Narcissus, he merely completes what the earth has begun. He breaks in when the earth has made the substance, the material ready. He is like a Candide who would leave his garden for nature’s sake — but who continued to treat it as a garden.</p>
+
+<h2 id="13-egill-jacobsen">13: EGILL JACOBSEN</h2>
+
+<p><em>TEXT CHRISTIAN DOTREMONT</em></p>
+
+<p>Danish painter. Born 1911 in Copenhagen.</p>
+
+<p>One day I discussed advertising with Egill Jacobsen, and we came to the same result: that advertising is valuable if it forms itself as the compressed expression of a strict analysis of the object — and when this has proven that it is a <em>valuable</em> thing.</p>
+
+<p>Egill Jacobsen and his paintings, Egill Jacobsen and his intelligence, Egill Jacobsen and his psychology are valuable things. They are the subject of this text, where I will speak briefly not without making advertising, for that which fights the night, the night of painting, which masks the night of the Occident, must be brought into the light.</p>
+
+<p>Egill is almost a kind of miracle. He paints some of the most striking pictures in Denmark (and thereby in Europe), and as an art theorist he is uncommonly penetrating, uncommonly subtle.</p>
+
+<p>His theoretical and critical intelligence, which can be very hard, has however never driven him to make calculated art, and his sensitivity has never driven him to paint into the empty space, merely driven by the inner impulses’ rules.</p>
+
+<p>He has the hand that thinks, and the head that revolts.</p>
+
+<p>When he shows me one of his pictures and explains to me his intention with it, I have the feeling of stepping through a large and radiant gate — which claps one’s hands — into a universe where everything is order, calm and precision. Egill could have been satisfied with merely having painted this picture and let it attack us with its striking freedom, but he digs ruthlessly down into it, takes it apart, puts it together again, and his intention’s fine web emerges before our eye, without it bothering us. To such a degree does he remain faithful to what we ourselves have seen beforehand.</p>
+
+<p>As advertising should rely on analysis, so Egill’s fantasy, this happy and healthy freedom of a child, which he takes <em>from</em> the universe, relies on a strict consciousness of what must be done, so that “life can change,” so that “the world can change.”</p>
+
+<p>And possibly one can find traces of this conscience in the honesty or at least in the linear precision in his works: pointed masks, precise surfaces, round suns … I do not know, for Egill Jacobsen, who one night got it into his head that he wanted to invent colors and then proceeded to action, Egill, who is a psychologist of color, as Bachelard is a psychologist of form, Egill believes that painting is color before it is line. All in all he has proven this through countless experiments, the last of which concern the possibility of playing over a single color’s expressive richness, without the picture losing either its overall impression or its diversity, sunbeams, shadows.</p>
+
+<p>Egill’s painting is in few words a great historical step toward unity: the unity of form and content, the unity of intelligence and sensitivity, the unity of all painting’s means, the unity of goal and means in painting.</p>
+
+<p>Therefore his painting is revolutionary.</p>
+
+<p>For the world in which we now find ourselves is only held up because of its deficiencies and contradictions.</p>
+
+<h2 id="14-asger-jorn">14: ASGER JORN</h2>
+
+<p><em>TEXT CHRISTIAN DOTREMONT</em></p>
+
+<p>Danish painter.</p>
+
+<p>Born 1914 in Vejrum.</p>
+
+<p>It is said that Denmark is a butter factory. That is correct. But it is also a kind of Icaria for painters, an Icaria more remarkable than one can imagine it abroad, an Icaria that has millennia’s memory and millennia’s fantasy, but supposedly an Icaria that exports its butter to be able to keep its paintings. I am inclined to believe that Denmark has a kind of butter-tactics in the same way as Japan once had a toy-tactics.</p>
+
+<p>It is also said that Asger Jorn is a strange painter. That is correct. From time to time Asger Jorn goes to the barber, goes to the universe, to Tunis, to Paris, to Amsterdam, to Brussels and to friends who are not painters but friends, to the Bronze Age, to the kitchen, where he moreover paints the walls after having prepared a pronouncedly revolutionary meal.</p>
+
+<p>Some years ago Asger Jorn got the desire to break some gates into the universe, which did not yield to brushstrokes but had to be broken in with head butts. He dived into the history of religions, cults, society, symbols and art, and far from drowning he on the contrary rescued a multitude of things up, which had been flooded or were about to be.</p>
+
+<p>Picasso once told me: “I do not know when I paint, it is certainly the muses who paint while I sleep,” and Jorn, who does not perceive himself as a Picasso, but fundamentally as a Jorn, could say the same. In Denmark and in Sweden there are hundreds of his paintings in the most diverse homes, there are graphic works in the most diverse books, a house on which he has worked in cement, a kindergarten whose walls he has coated together with a group that does not exist, and with false Italian stones, — and what do I know, and what does he know: he counts neither his own nor others’ works.</p>
+
+<p>What happens is that Jorn does not play comedy. There are people whom it puts out of composure. Jorn’s painting resembles himself. It is free: it goes from freedom to freedom, without one ever being able to catch it red-handed, neither in the direction of <em>style</em> nor of <em>chaos</em> (the two poles of bourgeois painting). It is ruthless: however little mathematical it may be, it nevertheless reflects, poses or solves painting’s problem, the question of the connection between painting and man (including the painter) with a strength that allows itself to be neither disturbed nor limited. It is living: Jorn paints with the same hand that he uses to shake hands with life, and his heart sits in his hand. It is direct: scorning the creator-aches, under which reality still sleeps, it goes from the dream of reality to <em>the dream of content,</em> and to the point where <em>I</em> (Jorn) and <em>it</em> (reality) kiss each other (on the mouth).</p>
+
+<p>Aware of “painting’s misery” or rather its wealth’s fragility and the dangers that lurk for it (from frame to money, from thread to needle, from palette to desk) Jorn sees painting and lets <em>us</em> see it, not as a heaven of oblivion, a carpet for the eye, a swamp for shock’s screw-toads, but quietly, as the dangerous area for a human unity-experiment, which reaches from the simple seismograph to the organization of a common joy for all senses and in all directions.</p>
+
+<p>There are not many painters who to the same degree as he refuses to be a <em>painterist</em> and avoids confusing painting’s natural necessity with mania’s cherry stems. But in that forest of forms and colors, visions, dreams and speculations, where Asger Jorn wanders forward, he does not lose sight for a moment of the wonderful tree in which bourgeois aesthetics shall be hanged by its neck. He works to get it hanged, and he works to get it replaced with something other than its own corpse. He believes that bourgeois aesthetics is joy’s great creator-ache, but he does more than that, he lifts it. Therefore it would have been wrong to speak of Asger Jorn’s painting in Montmartre jargon.</p>
+
+<h2 id="15-carl-henning-pedersen">15: Carl-Henning Pedersen</h2>
+
+<p><em>TEXT CHRISTIAN DOTREMONT</em></p>
+
+<p>Danish painter. Born 1913 in Copenhagen.</p>
+
+<p>At a distance Carl-Henning Pedersen reminds one of Harpo Marx, and it even happens that he is mute, in order, while you speak to him, to follow the universe’s cunning (like a kid) and natural (like a kid) lines, which exist between the universe and him, and which participate in the universe and in him.</p>
+
+<p>Up close he is a giant, who eats well, drinks well, smokes well, and who lives well together with his wife Else Alfelt and their two little girls, who collect foreign coins and things from Lapland, and who sing French songs with an accent that makes them “abstract.”</p>
+
+<p>Not so long ago Carl-Henning and Else had their little apartment so filled with pictures that they no longer had any apartment. They were far from André Malraux’s “musée imaginaire.” But I am certain that the next time I come there, it will be just like before. For they paint a lot.</p>
+
+<p>They love to paint.</p>
+
+<p>As for Carl-Henning’s painting, I have never seen anyone whose fantasy is more distant from <em>fantasy-making.</em> Carl-Henning is essentially different from Heerup. He places the dream on the canvas, and the dream places itself there, as if it were at home, with its vague “logic” and its “logical” voluptuousness. I believe that the dreams, the fantasies, the images here <em>hold</em> by means of their own means.</p>
+
+<p>We find ourselves in opposition to this way (which Heerup escapes through absurdity) of hanging the fantasies up like clothes on a painterly clothesline, which has come from elsewhere, and works like a hair in the soup. It is this façon of detaching “a good piece” from the pictorial reality or <em>the imagined reality,</em> and thereafter hypocritically placing it with great care in painting’s box. Carl-Henning does not treat life like an insect collector.</p>
+
+<p>I will not say that Carl-Henning paints on tiptoe, neither on fingertips, for he is in love with painting. I say on the contrary that he to such a degree abandons himself to painting that painting gives itself in the most intimate we have, and which we must <em>show forth,</em> if only to make visible the unity between the external world and ourselves (who are a part of it).</p>
+
+<p>Carl-Henning makes what seems awake dream, that whose wakefulness seemed veiled.</p>
+
+		</div>
+		
+	</div>
+	
+</div>
+
+<script src="/js/book-reader.js"></script>
+			</div>
+			
+			<div id="footer">
+				<div class="page-modified-date">
+	
+		Salvaging for the future.
+	</div>
+<div class="navbar-links-container">
+	
+		<a href="/about/"  class="navbar-link">About</a>
+	
+		<a href="/contact/"  class="navbar-link">Contact</a>
+	
+	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
+	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>
+</div>
+
+			</div>
+		</div>
+		
+		<!-- PhotoSwipe is loaded via ES6 modules in head.html -->
+	</body>
+</html>

@@ -182,7 +182,7 @@
       "url"      	: "/article/klankteksten/",
 	  "subjects"    : "klankteksten",
       "category" 	: "",
-	  "description" : "(Sound Texts - Concrete Poetry - Visual Texts) is the title of an exhibition catalogue released in conjunction with the exhibition &#39;Klankteksten?&#39; at the Stedelijk Museum in Amsterdam, Netherlands in November 1970. The exhibition provided an overview of the concrete poetry movement.",
+	  "description" : "(Sound Texts - Concrete Poetry - Visual Texts) is the catalogue of a touring exhibition organised by the Stedelijk Museum in Amsterdam in November 1970. Conceived at a moment when concrete poetry was being declared dead, the exhibition brought together over one hundred international poets and provided a comprehensive survey of the movement&#39;s visual, typographic, and phonetic dimensions.",
       "date"     	: "2021-03-09 00:00:00 +0100"
 
     } ,
@@ -193,7 +193,7 @@
       "url"      	: "/article/cybernetic-serendipity/",
 	  "subjects"    : "cybernetics",
       "category" 	: "",
-	  "description" : "is the title of a special 1968 issue of the British magazine &#39;Studio International.&#39; The issue was first published to coincide with an exhibition entitled &#39;Cybernetic Serendipity,&#39; dealing broadly with the demonstration of how humans can use the computer and new technology to extend creativity and inventiveness.",
+	  "description" : "is a special issue of the British magazine *Studio International*, first published in July 1968 to coincide with the exhibition of the same name at the Institute of Contemporary Arts in London. Curated by Jasia Reichardt at the suggestion of the German philosopher Max Bense, the exhibition was the first large-scale international show devoted to the relationship between computers, cybernetics, and creative activity, drawing an estimated 45,000 to 60,000 visitors and subsequently touring to the Corcoran Gallery of Art in Washington, D.C. and the newly opened Exploratorium in San Francisco.",
       "date"     	: "2021-06-11 00:00:00 +0200"
 
     } ,
@@ -327,6 +327,28 @@
       "category" 	: "",
 	  "description" : "collaborative recording of experimental music by Asger Jorn and Jean Dubuffet, recorded between December 1960 and March 1961 in Paris and originally published in an extremely limited edition of fifty numbered box sets by Galleria del Cavallino in Venice.",
       "date"     	: "2026-02-08 00:00:00 +0100"
+
+    } ,
+  
+    {
+
+      "title"    	: "COBRA Bibliotek",
+      "url"      	: "/article/cobra-bibliotek/",
+	  "subjects"    : "cobra, avant-garde, artist-monographs",
+      "category" 	: "",
+	  "description" : "was a series of fifteen artist monographs published in Copenhagen in 1950, edited by Asger Jorn as the first installment of a planned permanent encyclopedia of experimental art.",
+      "date"     	: "2026-02-09 00:00:00 +0100"
+
+    } ,
+  
+    {
+
+      "title"    	: "A bibliography of Asger Jorn&#39;s writings to 1963",
+      "url"      	: "/article/jorn-bibliography/",
+	  "subjects"    : "bibliography, art",
+      "category" 	: "",
+	  "description" : "is a comprehensive bibliography documenting the Danish painter and writer Asger Jorn&#39;s published writings from 1932 to 1963, compiled by Guy Atkins and Erik Schmidt.",
+      "date"     	: "2026-02-09 00:00:00 +0100"
 
     } 
   

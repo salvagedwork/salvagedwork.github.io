@@ -5,6 +5,7 @@ categories: books
 description: (Skåne's Stone Sculpture during the 12th Century) is a book on 12th century stone sculpture from the Scania region of southern Sweden by Erik Cinthio, with an introduction by P. V. Glob and notes by Asger Jorn.
 creators: [asger-jorn]
 subjects: [comparative-vandalism, medieval-art, romanesque-architecture, sculpture]
+member_of: 10000-years-nordic-folk-art
 featured-image: /assets/articles/skanes-stenskulptur/front.jpg
 date: 2019-01-01
 last_modified_at: 2021-03-10
