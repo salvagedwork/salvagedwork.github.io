@@ -6,7 +6,7 @@
       "url"      	: "/article/abschiedssymphonie/",
 	  "subjects"    : "fluxus",
       "category" 	: "",
-	  "description" : "is a recording released by Edition Block featuring a musical performance by Henning Christiansen, Nam June Paik, and Joseph Beuys.",
+	  "description" : "is a recording by Henning Christiansen released by Edition Block in 1988, constructed from material recorded at the opening concert of the Biennale des Friedens in Hamburg on November 29, 1985, with Nam June Paik and Joseph Beuys.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
     } ,
@@ -145,22 +145,22 @@
   
     {
 
-      "title"    	: "Signes gravés sur les églises de l&#39;Eure et du Calvados",
-      "url"      	: "/article/signes-graves-eure-calvados/",
-	  "subjects"    : "comparative-vandalism, medieval-art, church-graffiti",
+      "title"    	: "Scania&#39;s Stone Sculpture During the 12th Century",
+      "url"      	: "/article/scania-stone-sculpture/",
+	  "subjects"    : "comparative-vandalism, medieval-art, romanesque-architecture, sculpture",
       "category" 	: "",
-	  "description" : "(Signs Engraved on the Churches of Eure and Calvados) is a book written in French and directed by Asger Jorn, with essay contributions from various antiquities experts and photography by Gérard Franceschi.",
+	  "description" : "is a book on 12th century stone sculpture from the Scania region of southern Sweden by Erik Cinthio, with an introduction by P. V. Glob and notes by Asger Jorn.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
     } ,
   
     {
 
-      "title"    	: "Skånes stenskulptur under 1100-talet",
-      "url"      	: "/article/skanes-stenskulptur/",
-	  "subjects"    : "comparative-vandalism, medieval-art, romanesque-architecture, sculpture",
+      "title"    	: "Signes gravés sur les églises de l&#39;Eure et du Calvados",
+      "url"      	: "/article/signes-graves-eure-calvados/",
+	  "subjects"    : "comparative-vandalism, medieval-art, church-graffiti",
       "category" 	: "",
-	  "description" : "(Skåne&#39;s Stone Sculpture during the 12th Century) is a book on 12th century stone sculpture from the Scania region of southern Sweden by Erik Cinthio, with an introduction by P. V. Glob and notes by Asger Jorn.",
+	  "description" : "(Signs Engraved on the Churches of Eure and Calvados) is a book written in French and directed by Asger Jorn, with essay contributions from various antiquities experts and photography by Gérard Franceschi.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
     } ,
@@ -257,9 +257,9 @@
 
       "title"    	: "Mémoires",
       "url"      	: "/article/memoires/",
-	  "subjects"    : "situationist-international, collage, psychogeography",
+	  "subjects"    : "situationist-international, collage, psychogeography, artist-books, detournement",
       "category" 	: "",
-	  "description" : "is an artist&#39;s book made by the Danish artist Asger Jorn in collaboration with the French artist and theorist Guy Debord.",
+	  "description" : "is an artist&#39;s book by Guy Debord with structures portantes by Asger Jorn, published by the Internationale Situationniste and printed by Permild &amp; Rosengreen in Copenhagen in 1959.",
       "date"     	: "2022-02-03 00:00:00 +0100"
 
     } ,
@@ -268,7 +268,7 @@
 
       "title"    	: "La chevelure des choses",
       "url"      	: "/article/chevelure-des-choses/",
-	  "subjects"    : "cobra, exhibition-catalogue, word-painting",
+	  "subjects"    : "cobra, exhibition-catalogue, word-painting, artist-books",
       "category" 	: "",
 	  "description" : "(The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.",
       "date"     	: "2022-02-05 00:00:00 +0100"
@@ -279,7 +279,7 @@
 
       "title"    	: "Asger Jorn on Læsø",
       "url"      	: "/article/jorn-laeso/",
-	  "subjects"    : "biography, danish-art, cobra",
+	  "subjects"    : "biography, cobra",
       "category" 	: "",
 	  "description" : "is a book by Lars Morell documenting the Danish painter Asger Jorn&#39;s relationship with the island of Læsø, where he maintained a studio from 1964 until his death in 1973.",
       "date"     	: "2025-02-05 00:00:00 +0100"
@@ -290,7 +290,7 @@
 
       "title"    	: "The Bird, the Animal and the Human in Nordic Iron Age Art",
       "url"      	: "/article/fuglen-dyret-mennesket/",
-	  "subjects"    : "archaeology, nordic-art",
+	  "subjects"    : "archaeology, nordic-art, comparative-vandalism",
       "category" 	: "",
 	  "description" : "is the second volume in Asger Jorn&#39;s posthumous series 10,000 Years of Nordic Folk Art, featuring photographs by Gérard Franceschi and text by Norwegian archaeologist Bente Magnus examining animal symbolism in Nordic Iron Age art.",
       "date"     	: "2026-02-04 00:00:00 +0100"
@@ -349,6 +349,17 @@
       "category" 	: "",
 	  "description" : "is a comprehensive bibliography documenting the Danish painter and writer Asger Jorn&#39;s published writings from 1932 to 1963, compiled by Guy Atkins and Erik Schmidt.",
       "date"     	: "2026-02-09 00:00:00 +0100"
+
+    } ,
+  
+    {
+
+      "title"    	: "Reunion",
+      "url"      	: "/article/cage-duchamp-reunion/",
+	  "subjects"    : "fluxus, electronic-music, chess, artist-books",
+      "category" 	: "",
+	  "description" : "is an artist&#39;s book by Shigeko Kubota, published by Takeyoshi Miyazawa in 1970. Documenting the March 1968 performance *Reunion* in Toronto, the book pairs Kubota&#39;s black-and-white photographs of Marcel Duchamp and John Cage playing chess on an electronic chessboard with Cage&#39;s text *36 Acrostics re and not re Duchamp* and a blue flexi-disc recording of the event.",
+      "date"     	: "2026-02-13 00:00:00 +0100"
 
     } 
   

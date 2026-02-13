@@ -4,7 +4,7 @@ title: La chevelure des choses
 categories: books
 description: (The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.
 creators: [asger-jorn, christian-dotremont]
-subjects: [cobra, exhibition-catalogue, word-painting]
+subjects: [cobra, exhibition-catalogue, word-painting, artist-books]
 featured-image: /assets/articles/chevelure-des-choses/front.jpg
 date: 2022-02-05
 last_modified_at: 2022-02-05

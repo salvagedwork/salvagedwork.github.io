@@ -4,7 +4,7 @@ title: The Bird, the Animal and the Human in Nordic Iron Age Art
 categories: books
 description: is the second volume in Asger Jorn's posthumous series 10,000 Years of Nordic Folk Art, featuring photographs by Gérard Franceschi and text by Norwegian archaeologist Bente Magnus examining animal symbolism in Nordic Iron Age art.
 creators: [asger-jorn]
-subjects: [archaeology, nordic-art]
+subjects: [archaeology, nordic-art, comparative-vandalism]
 member_of: 10000-years-nordic-folk-art
 featured-image: /assets/articles/fuglen-dyret-mennesket/front.jpg
 date: 2026-02-04

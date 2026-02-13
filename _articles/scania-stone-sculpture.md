@@ -1,12 +1,12 @@
 ---
 layout: article
-title: Skånes stenskulptur under 1100-talet
+title: Scania's Stone Sculpture During the 12th Century
 categories: books
-description: (Skåne's Stone Sculpture during the 12th Century) is a book on 12th century stone sculpture from the Scania region of southern Sweden by Erik Cinthio, with an introduction by P. V. Glob and notes by Asger Jorn.
+description: is a book on 12th century stone sculpture from the Scania region of southern Sweden by Erik Cinthio, with an introduction by P. V. Glob and notes by Asger Jorn.
 creators: [asger-jorn]
 subjects: [comparative-vandalism, medieval-art, romanesque-architecture, sculpture]
 member_of: 10000-years-nordic-folk-art
-featured-image: /assets/articles/skanes-stenskulptur/front.jpg
+featured-image: /assets/articles/scania-stone-sculpture/front.jpg
 date: 2019-01-01
 last_modified_at: 2021-03-10
 
@@ -19,15 +19,15 @@ book_reader:
 ---
 
 {% include infobox.html
-    image="/assets/articles/skanes-stenskulptur/front.jpg"
-    title="Skånes stenskulptur under 1100-talet"
+    image="/assets/articles/scania-stone-sculpture/front.jpg"
+    title="Scania's Stone Sculpture During the 12th Century"
     authors="Erik Cinthio, P. V. Glob, Asger Jorn, Jens August Schade"
     publisher="Skandinavisk Institut for Sammenlignende Vandalisme"
     date="1965"
     edition="120 numbered copies"
 %}
 
-**{{ page.title }}** {{page.description}} It was published in 1965 by the Scandinavian Institute of Comparative Vandalism in an edition of 120 numbered copies and designated as Volume I of the Nordic Middle Ages subseries within Jorn's planned *10,000 Years of Nordic Folk Art*.
+**{{ page.title }}** *(Skånes stenskulptur under 1100-talet)* {{page.description}} It was published in 1965 by the Scandinavian Institute of Comparative Vandalism in an edition of 120 numbered copies and designated as Volume I of the Nordic Middle Ages subseries within Jorn's planned *10,000 Years of Nordic Folk Art*.
 
 ## Background
 
@@ -42,7 +42,7 @@ As a private edition, the book bore the restriction that it "cannot be sold, rev
 The Scandinavian Institute of Comparative Vandalism *(Skandinavisk Institut for Sammenlignende Vandalisme)* was an organization created by Asger Jorn, Gérard Franceschi, and several scholars, based in Silkeborg and with satellite offices in Paris and Brussels. The Institute was formed to document the artistic tradition of the Scandinavian region in the Northern migration period through photography, but also to show how this tradition migrated through Europe over time. Jorn employed the term *Vandalism* both to reference the popular culture of the period (the Vandals were one of the historic Germanic tribes that sacked Rome in 455 A.D.) and to position himself as a rebel, or *vandal*, who would tell the world about this alternative history to historical art.
 
 {% include thumbnail.html
-    image="/assets/articles/skanes-stenskulptur/dedication.jpg"
+    image="/assets/articles/scania-stone-sculpture/dedication.jpg"
     caption="The dedication page of the book, <em>\"Given the importance of the subject of the medieval origins of Scandinavian art, this subject should not be dealt with in a partial but a comprehensive study. For this reason the Institute expresses its gratitude to all those who through their collaboration made this publication possible.\"</em>"
 %}
 
@@ -62,7 +62,7 @@ This path is passable because the artist and the scholar have joined forces. Thu
 ## Concept
 
 {% include thumbnail.html
-    image="/assets/articles/skanes-stenskulptur/skane_map.jpg"
+    image="/assets/articles/scania-stone-sculpture/skane_map.jpg"
     caption="A map of Skåne showing the location of the churches examined in the book."
 %}
 
@@ -73,7 +73,7 @@ Erik Cinthio's text explores the central role of Lund Cathedral in the developme
 {% capture cinthio_quote %}
 When the monumental stone sculpture made its entry into Lund Cathedral, there was no counterpart in the Scanian countryside to this continentally inspired Romanesque pictorial art. What there was were the raised stones with their Viking Age world of images, simply carved portal frames on some of the many wooden churches, and possibly some isolated stone relief on the very earliest stone churches... The situation changed radically with the creation of the archiepiscopal church. A world of images and forms previously unknown in monumental form made its entry into the Nordic environment.
 {% endcapture %}
-{% include quote.html text=cinthio_quote attribution="- Erik Cinthio, <em>Skånes stenskulptur under 1100-talet</em>" %}
+{% include quote.html text=cinthio_quote attribution="- Erik Cinthio, <em>Scania's Stone Sculpture During the 12th Century</em>" %}
 
 The book documents sculptures from dozens of churches across Skåne, including major works at Lund Cathedral, Dalby Church, Åhus Church, Tryde Church, and many rural parish churches. The sculptures depicted include baptismal fonts, tympanum reliefs, capitals, portal decorations, and freestanding figures.
 
@@ -107,17 +107,15 @@ for you to say that, before I die."
 {% include quote.html text=schade_quote attribution="- Jens August Schade, from <em>Skånes stenskulptur under 1100-talet</em>" %}
 
 {% include book-link.html 
-   url="/books/skanes-stenskulptur/"
-   title="Skånes stenskulptur under 1100-talet"
+   url="/books/scania-stone-sculpture/"
+   title="Scania's Stone Sculpture During the 12th Century"
    description="Read the complete text in Swedish and English."
-   image="/assets/articles/skanes-stenskulptur/front.jpg"
+   image="/assets/articles/scania-stone-sculpture/front.jpg"
 %}
 
 ### Explore the Book
 
-<iframe src="https://archive.org/embed/skanes-stenskulptur-jorn" width="100%" height="700" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-
-*This is a preview only - <a href="https://archive.org/details/skanes-stenskulptur-jorn" target="_blank">view fullsize on archive.org</a>*
+<iframe src="https://archive.org/embed/skanes-stenskulptur-1100" width="100%" height="700" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
 ## Contributors
 
@@ -153,22 +151,22 @@ This volume is part of Jorn's *10,000 Years of Nordic Folk Art* series. Other vo
 
 <section data-gallery class="gallery-grid">
 		<figure>
-			<a href="/assets/articles/skanes-stenskulptur/lund_1580.jpg"><img src="/assets/articles/skanes-stenskulptur/lund_1580.jpg"></a>
+			<a href="/assets/articles/scania-stone-sculpture/lund_1580.jpg"><img src="/assets/articles/scania-stone-sculpture/lund_1580.jpg"></a>
 			<figcaption>Lund Cathedral in 1580</figcaption>
 		</figure>
 		
 		<figure>
-			<a href="/assets/articles/skanes-stenskulptur/lund_tympanum.jpg"><img src="/assets/articles/skanes-stenskulptur/lund_tympanum.jpg"></a>
+			<a href="/assets/articles/scania-stone-sculpture/lund_tympanum.jpg"><img src="/assets/articles/scania-stone-sculpture/lund_tympanum.jpg"></a>
 			<figcaption>Tympanum (decorative wall surface over an entrance) at Lund Cathedral in Skåne</figcaption>
 		</figure>
 	
 		<figure>
-			<a href="/assets/articles/skanes-stenskulptur/skane_01.jpg"><img src="/assets/articles/skanes-stenskulptur/skane_01.jpg"></a>
+			<a href="/assets/articles/scania-stone-sculpture/skane_01.jpg"><img src="/assets/articles/scania-stone-sculpture/skane_01.jpg"></a>
 			<figcaption>Image plates from Skånes stenskulptur</figcaption>
 		</figure>
 		
 		<figure>
-			<a href="/assets/articles/skanes-stenskulptur/skane_02.jpg"><img src="/assets/articles/skanes-stenskulptur/skane_02.jpg"></a>
+			<a href="/assets/articles/scania-stone-sculpture/skane_02.jpg"><img src="/assets/articles/scania-stone-sculpture/skane_02.jpg"></a>
 			<figcaption>Image plates from Skånes stenskulptur</figcaption>
 		</figure>
 </section>

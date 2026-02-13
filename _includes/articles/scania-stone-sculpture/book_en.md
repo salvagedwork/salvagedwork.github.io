@@ -25,7 +25,7 @@ VOLUME I
 
 <br>
 
-**Scanian Stone Sculpture During the 12th Century**
+**Scania's Stone Sculpture During the 12th Century**
 
 TEXT: ERIK CINTHIO
 

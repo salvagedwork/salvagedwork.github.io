@@ -4,7 +4,7 @@ title: Asger Jorn on Læsø
 categories: books
 description: is a book by Lars Morell documenting the Danish painter Asger Jorn's relationship with the island of Læsø, where he maintained a studio from 1964 until his death in 1973.
 creators: [asger-jorn, lars-morell]
-subjects: [biography, danish-art, cobra]
+subjects: [biography, cobra]
 featured-image: /assets/articles/jorn-laeso/front.jpg
 date: 2025-02-05
 last_modified_at: 2025-02-05
