@@ -376,6 +376,17 @@
   
     {
 
+      "title"    	: "Symphonie &#39;Monoton-Silence&#39;",
+      "url"      	: "/article/klein-monoton-silence/",
+	  "subjects"    : "nouveau-realisme, minimalism, performance-art, conceptual-art, sound-art, france",
+      "category" 	: "",
+	  "description" : "a conceptual musical work by French artist Yves Klein, conceived between 1947 and 1949 and first performed publicly in Paris in 1960. Scored for a large orchestra and chorus, the piece consists of two equal parts: a sustained D major chord held for twenty minutes, followed by twenty minutes of absolute silence.",
+      "date"     	: "2026-02-18 00:00:00 +0100"
+
+    } ,
+  
+    {
+
       "title"    	: "Prince of Space, Musik der Leere",
       "url"      	: "/article/klein-space/",
 	  "subjects"    : "nouveau-realisme, conceptual-art, avant-garde, silence, fluxus-adjacent",
