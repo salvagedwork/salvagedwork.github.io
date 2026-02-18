@@ -372,6 +372,17 @@
 	  "description" : "a parish history written in Sursilvan Romansh by the historian and priest Felici Maissen, published in 1983 by Casa editura Desertina at Mustér (Disentis), Switzerland. Spanning sixteen chapters and 264 pages, it chronicles the Catholic parish of Cumbel in the Val Lumnezia from the early medieval period through the 1980s, drawing on parish archives, baptismal and death registers, communal protocols, cantonal records, and oral tradition to document the ecclesiastical, political, demographic, and cultural life of a small Alpine community across six centuries.",
       "date"     	: "2026-02-15 00:00:00 +0100"
 
+    } ,
+  
+    {
+
+      "title"    	: "Prince of Space, Musik der Leere",
+      "url"      	: "/article/klein-space/",
+	  "subjects"    : "nouveau-realisme, conceptual-art, avant-garde, silence, fluxus-adjacent",
+      "category" 	: "",
+	  "description" : "a vinyl LP conceived by Yves Klein and produced by Charles Wilp, released by Sight &amp; Sound Productions in Germany. The record contains no music whatsoever — only the crackling of a stylus tracing an empty groove.",
+      "date"     	: "2026-02-18 00:00:00 +0100"
+
     } 
   
 ]
