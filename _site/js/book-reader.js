@@ -33,30 +33,54 @@
 		
 		if (langButtons.length === 0) return;
 
+		// Check URL for language parameter and apply it
+		var urlParams = new URLSearchParams(window.location.search);
+		var urlLang = urlParams.get('lang');
+		if (urlLang) {
+			var matchingContent = document.querySelector('.book-text[data-lang="' + urlLang + '"]');
+			if (matchingContent) {
+				switchLanguage(urlLang, langButtons);
+			}
+		}
+
 		langButtons.forEach(function(btn) {
 			btn.addEventListener('click', function() {
 				var lang = this.dataset.lang;
-				
-				// Update active button
-				langButtons.forEach(function(b) {
-					b.classList.remove('active');
-				});
-				this.classList.add('active');
-				
-				// Show/hide content
-				var allContent = document.querySelectorAll('.book-text');
-				allContent.forEach(function(content) {
-					if (content.dataset.lang === lang) {
-						content.removeAttribute('hidden');
-					} else {
-						content.setAttribute('hidden', '');
-					}
-				});
-				
-				// Regenerate TOC for new language
-				generateToc();
+				switchLanguage(lang, langButtons);
+
+				// Update URL parameter without reloading
+				var url = new URL(window.location);
+				url.searchParams.set('lang', lang);
+				history.replaceState(null, '', url);
 			});
 		});
+	}
+
+	/**
+	 * Switch visible language content and update UI
+	 */
+	function switchLanguage(lang, langButtons) {
+		// Update active button
+		langButtons.forEach(function(b) {
+			if (b.dataset.lang === lang) {
+				b.classList.add('active');
+			} else {
+				b.classList.remove('active');
+			}
+		});
+		
+		// Show/hide content
+		var allContent = document.querySelectorAll('.book-text');
+		allContent.forEach(function(content) {
+			if (content.dataset.lang === lang) {
+				content.removeAttribute('hidden');
+			} else {
+				content.setAttribute('hidden', '');
+			}
+		});
+		
+		// Regenerate TOC for new language
+		generateToc();
 	}
 
 	/**
@@ -208,9 +232,11 @@
 		if (headings.length === 0) return;
 
 		// Use Intersection Observer for performance
+		// Observation zone covers the top ~15% of the viewport,
+		// matching where headings land after smooth-scrolling
 		var observerOptions = {
 			root: null,
-			rootMargin: '-20% 0px -60% 0px',
+			rootMargin: '0px 0px -85% 0px',
 			threshold: 0
 		};
 
@@ -255,8 +281,12 @@
 				var href = this.getAttribute('href');
 				if (href.startsWith('#')) {
 					e.preventDefault();
-					var target = document.querySelector(href);
+					var targetId = href.substring(1);
+					var target = document.getElementById(targetId);
 					if (target) {
+						// Immediately highlight the clicked link
+						updateActiveTocLink(targetId);
+
 						// Account for any fixed headers
 						var offset = 20;
 						var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;

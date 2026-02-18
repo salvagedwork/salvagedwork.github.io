@@ -251,8 +251,20 @@
 			
 			<hr />
 		</header>
-	
-		
+
+		<!-- Table of Contents (populated by article-toc.js) -->
+		<nav class="article-toc" id="article-toc" aria-label="Table of contents">
+			<div class="toc-header">
+				<span class="toc-title">Contents</span>
+				<button class="toc-toggle" id="toc-toggle" aria-expanded="false" aria-controls="toc-list-wrapper">▾</button>
+			</div>
+			<div class="toc-list-wrapper" id="toc-list-wrapper">
+				<ol class="toc-list" id="toc-list"></ol>
+			</div>
+		</nav>
+
+		<div class="article-body">
+			
 <table id="infobox">
     <tbody>
         <tr>
@@ -431,10 +443,13 @@ for (i = 0; i < coll.length; i++) {
 </script>
 
 
+		</div>
 		
 	</div>
 	
 </article>
+
+<script src="/js/article-toc.js"></script>
 
 			</div>
 			

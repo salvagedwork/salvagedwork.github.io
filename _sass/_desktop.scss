@@ -131,11 +131,58 @@
 	
 	// Articles
 	// --------------------------------------------------------------------------
-	
+
+	// Two-column grid: [TOC] [article body]
+	// The header spans both columns automatically as the first grid child.
 	.article-container {
-		display: block;
+		display: grid;
+		grid-template-columns: 210px 1fr;
+		column-gap: 2rem;
+		align-items: start;
+
+		header {
+			grid-column: 1 / -1;
+		}
 	}
-	
+
+	.article-toc {
+		grid-column: 1;
+		position: sticky;
+		top: 1.5rem;
+		max-height: calc(100vh - 3rem);
+		overflow-y: auto;
+		scrollbar-width: thin;
+		scrollbar-color: $color-border transparent;
+
+		&::-webkit-scrollbar {
+			width: 4px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: $color-border;
+		}
+	}
+
+	.article-body {
+		grid-column: 2;
+		min-width: 0; // prevent content overflow in grid
+	}
+
+	// On desktop: always show the list, hide the mobile toggle button
+	.toc-list-wrapper {
+		display: block !important;
+		border: 1px solid $color-border;
+		border-top: none;
+	}
+
+	.toc-toggle {
+		display: none;
+	}
+
+	.toc-header {
+		cursor: default;
+	}
+
 	#infobox,
 	.thumbnail-container {
 		max-width: 18rem;

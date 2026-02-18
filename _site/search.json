@@ -361,6 +361,17 @@
 	  "description" : "is an artist&#39;s book by Shigeko Kubota, published by Takeyoshi Miyazawa in 1970. Documenting the March 1968 performance *Reunion* in Toronto, the book pairs Kubota&#39;s black-and-white photographs of Marcel Duchamp and John Cage playing chess on an electronic chessboard with Cage&#39;s text *36 Acrostics re and not re Duchamp* and a blue flexi-disc recording of the event.",
       "date"     	: "2026-02-13 00:00:00 +0100"
 
+    } ,
+  
+    {
+
+      "title"    	: "History of the Parish of Cumbel",
+      "url"      	: "/article/cumbel-parish-history/",
+	  "subjects"    : "romansh-literature, parish-history, switzerland",
+      "category" 	: "",
+	  "description" : "a parish history written in Sursilvan Romansh by the historian and priest Felici Maissen, published in 1983 by Casa editura Desertina at Mustér (Disentis), Switzerland. Spanning sixteen chapters and 264 pages, it chronicles the Catholic parish of Cumbel in the Val Lumnezia from the early medieval period through the 1980s, drawing on parish archives, baptismal and death registers, communal protocols, cantonal records, and oral tradition to document the ecclesiastical, political, demographic, and cultural life of a small Alpine community across six centuries.",
+      "date"     	: "2026-02-15 00:00:00 +0100"
+
     } 
   
 ]
