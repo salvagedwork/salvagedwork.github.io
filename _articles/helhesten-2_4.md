@@ -49,7 +49,7 @@ Heerup stands with his feet firmly on the ground; but from the heart and up over
 
 Jorn contributed a theoretical article on stylistics, continuing his engagement with questions of art history and aesthetic theory. In the essay, he called for a comprehensive style history "based on the development of living life," critiquing works that failed to engage with the vital dimensions of artistic expression.
 
-### "Abstract Art or Fantasy Art—A Painter's Work" by Carl-Henning Pedersen
+### "Abstract Art or Fantasy Art-A Painter's Work" by Carl-Henning Pedersen
 
 Carl-Henning Pedersen's important essay articulated the group's preferred term "fantasy art" (*fantasikunst*) over "abstract art":
 
@@ -60,7 +60,7 @@ What is common to the artists called "abstract" is that they all work from the f
 
 ### "Junkman & Junk Model" (*Skraldemand & Skraldemodel*) by Henry Heerup
 
-Heerup contributed a text elaborating his artistic philosophy of working with discarded materials—"junk art" or *skraldekunst*—which would become one of his signature approaches.
+Heerup contributed a text elaborating his artistic philosophy of working with discarded materials-"junk art" or *skraldekunst*-which would become one of his signature approaches.
 
 ## The Helhesten Series
 
@@ -68,14 +68,14 @@ Heerup contributed a text elaborating his artistic philosophy of working with di
 
 Other issues in the series include:
 
-- *Helhesten* Year 1, Booklet 1 (April 13, 1941) — Cover by Henry Heerup
-- *Helhesten* Year 1, Booklet 2 (May 10, 1941) — Cover by Egon Mathiesen
-- *Helhesten* Year 1, Booklet 3 (September 17, 1941) — Cover by Jens Søndergaard
-- *Helhesten* Year 1, Booklet 4 (October 18, 1941) — Cover by Hans Scherfig
-- *Helhesten* Year 1, Booklets 5 & 6 (November 18, 1941) — Cover by Axel Salto
-- *Helhesten* Year 2, Booklet 1 (October 30, 1942) — Cover by Niels Lergaard
-- *Helhesten* Year 2, Booklets 2 & 3 (March 10, 1943) — Cover by Storm Petersen
-- *Helhesten* Year 2, Booklets 5 & 6 (November 11, 1944) — Cover by Carl-Henning Pedersen
+- *Helhesten* Year 1, Booklet 1 (April 13, 1941) - Cover by Henry Heerup
+- *Helhesten* Year 1, Booklet 2 (May 10, 1941) - Cover by Egon Mathiesen
+- *Helhesten* Year 1, Booklet 3 (September 17, 1941) - Cover by Jens Søndergaard
+- *Helhesten* Year 1, Booklet 4 (October 18, 1941) - Cover by Hans Scherfig
+- *Helhesten* Year 1, Booklets 5 & 6 (November 18, 1941) - Cover by Axel Salto
+- *Helhesten* Year 2, Booklet 1 (October 30, 1942) - Cover by Niels Lergaard
+- *Helhesten* Year 2, Booklets 2 & 3 (March 10, 1943) - Cover by Storm Petersen
+- *Helhesten* Year 2, Booklets 5 & 6 (November 11, 1944) - Cover by Carl-Henning Pedersen
 
 ## Explore the Book
 
@@ -83,4 +83,3 @@ Other issues in the series include:
 
 *This is a preview only - <a href="https://archive.org/details/helhesten-2-4" target="_blank">view fullsize on archive.org</a>*
 
-{% include collapsible.html %}

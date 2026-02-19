@@ -47,7 +47,7 @@ As has been emphasized from the first time this project was discussed, this conc
 {% endcapture %}
 {% include quote.html text=jorn_quote attribution="- Asger Jorn, Plan for the Working Process, May 1964" %}
 
-Jorn insisted on complete artistic control over the arrangement and presentation of images. His method, which he called "comparative vandalism," involved separating artworks from their original contexts through photography, allowing them to be compared and juxtaposed in new configurations. The term "vandalism" was deliberately provocative, positioning Nordic artistic traditions—which he associated with the Germanic tribes including the Vandals—as a non-canonical, anti-classical alternative to established European art history.
+Jorn insisted on complete artistic control over the arrangement and presentation of images. His method, which he called "comparative vandalism," involved separating artworks from their original contexts through photography, allowing them to be compared and juxtaposed in new configurations. The term "vandalism" was deliberately provocative, positioning Nordic artistic traditions-which he associated with the Germanic tribes including the Vandals-as a non-canonical, anti-classical alternative to established European art history.
 
 As archaeologist P.V. Glob explained in his introduction to the series:
 
@@ -64,7 +64,7 @@ Jorn reserved the right to arrange images "absolutely undidactically according t
 
 Between 1962 and 1965, Jorn and Franceschi conducted extensive research trips throughout Scandinavia and Europe, systematically photographing ancient, Romanesque, and Gothic figurative and decorative motifs. The photographer Ulrik Ross also contributed to the documentation. The archive eventually comprised approximately 25,000 photographic negatives documenting churches, stone sculptures, rock carvings, stave churches, runestones, and medieval artifacts across the Nordic countries.
 
-Jorn spent the summer of 1964 on Gotland, photographing around one hundred stone churches and historic sites. He traveled through Norway in May-June 1963 with particular focus on stave churches around Bergen and Kaupanger. His documentation extended beyond Scandinavia to include Norman churches in France, where he discovered numerous carvings that showed striking similarities to Nordic Bronze Age rock carvings—observations that became central to his comparative methodology.
+Jorn spent the summer of 1964 on Gotland, photographing around one hundred stone churches and historic sites. He traveled through Norway in May-June 1963 with particular focus on stave churches around Bergen and Kaupanger. His documentation extended beyond Scandinavia to include Norman churches in France, where he discovered numerous carvings that showed striking similarities to Nordic Bronze Age rock carvings-observations that became central to his comparative methodology.
 
 Many more photographs were taken than could ever be accommodated in the projected 256-page volumes. Jorn envisioned that after publication, authors would have access to this expanded archive for deeper scientific work, hoping "that the invested money in the project could be directly used for publishing such works that would give the folk works deeper perspectives, and give the specialist a more personal interest in working with the new image material."
 
@@ -111,7 +111,7 @@ The institute planned to compile its photographs into a series of publications e
 {% endcapture %}
 {% include quote.html text=kurczynski_quote attribution="- Karen Kurczynski, <em>Expression as vandalism: Asger Jorn's 'Modifications'</em>" %}
 
-The project's incompletion paradoxically reinforces Jorn's anti-authoritarian approach to knowledge production. The massive archive of decontextualized images, freed from definitive scholarly interpretation, remains open to continual reordering and reinterpretation—a "vandalist" approach to art history that privileges visual comparison and morphological study over fixed narratives.
+The project's incompletion paradoxically reinforces Jorn's anti-authoritarian approach to knowledge production. The massive archive of decontextualized images, freed from definitive scholarly interpretation, remains open to continual reordering and reinterpretation-a "vandalist" approach to art history that privileges visual comparison and morphological study over fixed narratives.
 
 ## Explore the Book
 
@@ -149,4 +149,3 @@ The following volumes were published as part of the *10,000 Years of Nordic Folk
     </figure>
 </section>
 
-{% include collapsible.html %}

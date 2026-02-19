@@ -403,6 +403,7 @@ button { display: block; padding: 1rem; border: none; background-color: #1a1a1a;
   .article-toc::-webkit-scrollbar { width: 4px; }
   .article-toc::-webkit-scrollbar-thumb { background-color: #ccc; }
   .article-body { grid-column: 2; min-width: 0; }
+  .references-section { grid-column: 2; min-width: 0; }
   .toc-list-wrapper { display: block !important; border: 1px solid #ccc; border-top: none; }
   .toc-toggle { display: none; }
   .toc-header { cursor: default; }

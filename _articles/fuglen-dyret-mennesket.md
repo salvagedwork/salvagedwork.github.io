@@ -32,9 +32,9 @@ book_reader:
 
 ## Background
 
-The book is part of Jorn's long-gestating project *10,000 Years of Nordic Folk Art*, which he conceived through his Scandinavian Institute for Comparative Vandalism founded in 1962. Jorn's vision was to create a comprehensive visual survey of Nordic art from prehistory to the Middle Ages, with the images taking precedence over the text—a reversal of conventional art historical practice.
+The book is part of Jorn's long-gestating project *10,000 Years of Nordic Folk Art*, which he conceived through his Scandinavian Institute for Comparative Vandalism founded in 1962. Jorn's vision was to create a comprehensive visual survey of Nordic art from prehistory to the Middle Ages, with the images taking precedence over the text-a reversal of conventional art historical practice.
 
-As Guy Atkins noted in *Asger Jorn: The Final Years*, Jorn had been "trying, in vain, to persuade various art foundations, ministries, and art scholars in Scandinavia to collaborate with him—on his own terms—in a series of publications under the general heading '10,000 years of Nordic folk art'. The idea of documenting the history of early Scandinavian art had haunted him... for the last 25 years."<span class="footnote">Guy Atkins and Troels Andersen, *Asger Jorn: The Final Years 1965–1973*, Borgens Forlag, Copenhagen.</span>
+As Guy Atkins noted in *Asger Jorn: The Final Years*, Jorn had been "trying, in vain, to persuade various art foundations, ministries, and art scholars in Scandinavia to collaborate with him-on his own terms-in a series of publications under the general heading '10,000 years of Nordic folk art'. The idea of documenting the history of early Scandinavian art had haunted him... for the last 25 years."<span class="footnote">Guy Atkins and Troels Andersen, *Asger Jorn: The Final Years 1965–1973*, Borgens Forlag, Copenhagen.</span>
 
 Jorn's approach to the project was distinctive: "Previous studies of Viking art had failed in one vital respect: the pictures were treated as a minor appendage to the text, whereas Jorn insisted that the images should take precedence over anything that might be written about them."<span class="footnote">Guy Atkins and Troels Andersen, *Asger Jorn: The Final Years 1965–1973*, Borgens Forlag, Copenhagen.</span>
 
@@ -45,7 +45,7 @@ The book examines the symbolic significance of animals and birds in Nordic Iron 
 Key themes include:
 
 - The raven, eagle, hawk, wolf, bear, serpent, wild boar, and horse as symbolic animals associated with the god Odin and the warrior aristocracy
-- The concept of the *fylgja* (follower)—an animal alter ego accompanying each human through life
+- The concept of the *fylgja* (follower)-an animal alter ego accompanying each human through life
 - Animal ornamentation styles (Styles I, II, and III/D/E/F) and their development through the Migration Period, Vendel Period, and Viking Age
 - The gripping beast motif and its emergence in Viking Age art
 - Women's and men's ornaments and their symbolic significance

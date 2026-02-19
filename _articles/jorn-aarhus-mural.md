@@ -183,4 +183,3 @@ The Aarhus mural stands alongside Jorn's later ceramic relief at Randers from 19
     </figure>
 </section>
 
-{% include collapsible.html %}

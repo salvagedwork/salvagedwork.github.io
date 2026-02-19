@@ -325,7 +325,7 @@
       "url"      	: "/article/jorn-dubuffet-musique/",
 	  "subjects"    : "experimental-music, art-brut, sound-art",
       "category" 	: "",
-	  "description" : "collaborative recording of experimental music by Asger Jorn and Jean Dubuffet, recorded between December 1960 and March 1961 in Paris and originally published in an extremely limited edition of fifty numbered box sets by Galleria del Cavallino in Venice.",
+	  "description" : "is a collaborative recording of experimental music by Asger Jorn and Jean Dubuffet, recorded between December 1960 and March 1961 in Paris and originally published in an extremely limited edition of fifty numbered box sets by Galleria del Cavallino in Venice.",
       "date"     	: "2026-02-08 00:00:00 +0100"
 
     } ,
@@ -376,6 +376,17 @@
   
     {
 
+      "title"    	: "Schottische Symphonie / Requiem of Art",
+      "url"      	: "/article/beuys-christiansen-schottische/",
+	  "subjects"    : "fluxus, sound-art, performance-art, action-art",
+      "category" 	: "",
+	  "description" : "a double LP released in 1973 by Edition Schellmann, Munich, documenting two works by Joseph Beuys and Henning Christiansen drawn from their 1970 collaboration &lt;em&gt;Celtic (Kinloch Rannoch) Scottish Symphony&lt;/em&gt; at the Edinburgh College of Art.",
+      "date"     	: "2026-02-18 00:00:00 +0100"
+
+    } ,
+  
+    {
+
       "title"    	: "Symphonie &#39;Monoton-Silence&#39;",
       "url"      	: "/article/klein-monoton-silence/",
 	  "subjects"    : "nouveau-realisme, minimalism, performance-art, conceptual-art, sound-art, france",
@@ -391,8 +402,63 @@
       "url"      	: "/article/klein-space/",
 	  "subjects"    : "nouveau-realisme, conceptual-art, avant-garde, silence, fluxus-adjacent",
       "category" 	: "",
-	  "description" : "a vinyl LP conceived by Yves Klein and produced by Charles Wilp, released by Sight &amp; Sound Productions in Germany. The record contains no music whatsoever — only the crackling of a stylus tracing an empty groove.",
+	  "description" : "a vinyl LP conceived by Yves Klein and produced by Charles Wilp, released by Sight &amp; Sound Productions in Germany. The record contains no music whatsoever - only the crackling of a stylus tracing an empty groove.",
       "date"     	: "2026-02-18 00:00:00 +0100"
+
+    } ,
+  
+    {
+
+      "title"    	: "3a Bienal Americana de Arte",
+      "url"      	: "/article/bienal-americana/",
+	  "subjects"    : "electronic-music, experimental-music, latin-american-avant-garde, computer-music, aleatory-music",
+      "category" 	: "",
+	  "description" : "is a two-disc LP set documenting the experimental music concerts held during the Tercera Bienal Americana de Arte in Córdoba, Argentina in October 1966.",
+      "date"     	: "2026-02-19 00:00:00 +0100"
+
+    } ,
+  
+    {
+
+      "title"    	: "Duett Paik/Takis",
+      "url"      	: "/article/duett-paik-takis/",
+	  "subjects"    : "fluxus, kinetic-art, sound-art, performance-art, experimental-music",
+      "category" 	: "",
+	  "description" : "is a double-sided vinyl LP documenting two live performances staged at the Kölnischer Kunstverein in Cologne in June 1979, featuring Nam June Paik performing on harpsichord, piano, and voice alongside the electromagnetic sculptures of Takis.",
+      "date"     	: "2026-02-19 00:00:00 +0100"
+
+    } ,
+  
+    {
+
+      "title"    	: "Lower Fort Garry: A History of the Stone Fort",
+      "url"      	: "/article/lower-fort-garry/",
+	  "subjects"    : "hudson-bay-company, canadian-history, fur-trade, red-river-settlement, rupert's-land, first-nations-treaties",
+      "category" 	: "",
+	  "description" : "is a historical account of Lower Fort Garry, the oldest intact stone fur trading post in North America, written to commemorate the centenary of the fort&#39;s construction and published by the Hudson&#39;s Bay Company in Winnipeg in 1928.",
+      "date"     	: "2026-02-19 00:00:00 +0100"
+
+    } ,
+  
+    {
+
+      "title"    	: "Music Before Revolution",
+      "url"      	: "/article/music-before-revolution/",
+	  "subjects"    : "experimental-music, indeterminacy, new-york-school, graphic-notation, anarchism, fluxus-adjacent",
+      "category" 	: "",
+	  "description" : "is a 1972 quadruple-LP box set released on the Odeon label documenting radical American experimental music from 1939 to 1970, performed by the Ensemble Musica Negativa under conductor Rainer Riehn, with liner notes by critic Heinz-Klaus Metzger and recorded conversations between the composers themselves.",
+      "date"     	: "2026-02-19 00:00:00 +0100"
+
+    } ,
+  
+    {
+
+      "title"    	: "Originale",
+      "url"      	: "/article/stockhausen-originale/",
+	  "subjects"    : "fluxus, happenings, electronic-music, performance-art, new-york-avant-garde-festival",
+      "category" 	: "",
+	  "description" : "is a recording of the 1964 New York premiere of Karlheinz Stockhausen&#39;s music theatre work of the same name, released on vinyl by Cyalume &amp; Argonzer in 2018.",
+      "date"     	: "2026-02-19 00:00:00 +0100"
 
     } 
   

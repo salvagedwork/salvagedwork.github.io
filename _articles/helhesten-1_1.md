@@ -28,7 +28,7 @@ This article is part of the [Helhesten](/collection/helhesten/) collection.
 
 Less than a year after Germany invaded Denmark on April 9, 1940, a circle of young artists and intellectuals launched *Helhesten* as a vehicle for cultural resistance and artistic experimentation. The journal's first issue appeared in March 1941, reaching more than a thousand Danish homes and offices.
 
-The artists who founded *Helhesten*—including Asger Jorn (1914–1973), Ejler Bille (1910–2004), Egill Jacobsen (1910–1998), Carl-Henning Pedersen (1913–2007), and Henry Heerup (1907–1993)—had been active in Paris and Germany before the war. Many had studied under Fernand Léger or encountered the work of German Expressionists like Paul Klee and Emil Nolde. As Guy Atkins writes in *Jorn in Scandinavia*:
+The artists who founded *Helhesten*-including Asger Jorn (1914–1973), Ejler Bille (1910–2004), Egill Jacobsen (1910–1998), Carl-Henning Pedersen (1913–2007), and Henry Heerup (1907–1993)-had been active in Paris and Germany before the war. Many had studied under Fernand Léger or encountered the work of German Expressionists like Paul Klee and Emil Nolde. As Guy Atkins writes in *Jorn in Scandinavia*:
 
 {% capture atkins_quote %}
 It is now generally recognized that the artists of the war years were by far the most talented generation of painters and sculptors that Denmark has ever produced. The war situation drew these men closer together. They could no longer travel abroad and so they had to rely entirely upon each other for mental stimulus and companionship.
@@ -39,7 +39,7 @@ The magazine *helhesten*, which ran from 1941 to 1944, provided a forum for the 
 
 ## The Name
 
-In bold defiance of the very real presence of their German occupiers, the artists chose as the journal's ideological symbol the *helhest*—the three-legged harbinger of death from Nordic mythology and the tales of Hans Christian Andersen and the Brothers Grimm. Egill Jacobsen recalled that Jorn suggested the name specifically to provoke the Germans as "a quite excellent name to flaunt under the noses of the Nazis."
+In bold defiance of the very real presence of their German occupiers, the artists chose as the journal's ideological symbol the *helhest*-the three-legged harbinger of death from Nordic mythology and the tales of Hans Christian Andersen and the Brothers Grimm. Egill Jacobsen recalled that Jorn suggested the name specifically to provoke the Germans as "a quite excellent name to flaunt under the noses of the Nazis."
 
 The choice was a direct provocation of Nazi cultural policy, which sought to appropriate Nordic mythology for its own propaganda. By caricaturing the mythological figure in deliberately "degenerate" depictions, the artists mocked the Nazi abuse of Nordic heritage.
 
@@ -65,19 +65,19 @@ When viewed in light of Denmark's official policy of deference towards Germany, 
 
 ## Cover Design
 
-Henry Heerup's simple cover image depicted an ebullient hell-horse that must have looked more like a children's magazine illustration than an avant-garde art journal. This apparent naïveté was deliberate—the artists understood childlike and fantastical forms as representative of unbridled creativity common to all human beings.
+Henry Heerup's simple cover image depicted an ebullient hell-horse that must have looked more like a children's magazine illustration than an avant-garde art journal. This apparent naïveté was deliberate-the artists understood childlike and fantastical forms as representative of unbridled creativity common to all human beings.
 
 ## Editorial Context
 
-The journal was edited by architect Robert Dahlmann Olsen (1915–1993), who would later edit the first issue of *Cobra* in a virtually identical format. Jorn and Olsen were responsible for the practical aspects of production, which—rather unusually for a wartime publication—was printed partially in colour.
+The journal was edited by architect Robert Dahlmann Olsen (1915–1993), who would later edit the first issue of *Cobra* in a virtually identical format. Jorn and Olsen were responsible for the practical aspects of production, which-rather unusually for a wartime publication-was printed partially in colour.
 
 The editorial meetings were held in the office of archaeologist P.V. Glob (1911–1985), future director of the National Museum, whose expertise in Nordic prehistory informed the journal's interest in ancient artifacts and folk art.
 
 ## Contents and Themes
 
-The first issue established the journal's distinctive interdisciplinary approach, including essays on art theory, non-Western artefacts, literature, poetry, film, architecture, and photography, alongside profiles of contemporary Danish artists. Articles spanned high and low culture—from prehistoric Scandinavian rock carvings and Japanese theatre to vernacular architecture, contemporary film, and popular art forms like tattoos.
+The first issue established the journal's distinctive interdisciplinary approach, including essays on art theory, non-Western artefacts, literature, poetry, film, architecture, and photography, alongside profiles of contemporary Danish artists. Articles spanned high and low culture-from prehistoric Scandinavian rock carvings and Japanese theatre to vernacular architecture, contemporary film, and popular art forms like tattoos.
 
-Artists wrote profiles on one another as well as international figures such as Alberto Giacometti and Paul Klee, and translated works—some of the first in Danish—of writers like James Joyce, Franz Kafka, and Arthur Rimbaud. Regardless of the subject, every article questioned hierarchies of power and the cultural products they engendered.
+Artists wrote profiles on one another as well as international figures such as Alberto Giacometti and Paul Klee, and translated works-some of the first in Danish-of writers like James Joyce, Franz Kafka, and Arthur Rimbaud. Regardless of the subject, every article questioned hierarchies of power and the cultural products they engendered.
 
 ## The Helhesten Series
 
@@ -85,14 +85,14 @@ Artists wrote profiles on one another as well as international figures such as A
 
 Other issues in the series include:
 
-- *Helhesten* Year 1, Booklet 2 (May 10, 1941) — Cover by Egon Mathiesen
-- *Helhesten* Year 1, Booklet 3 (September 17, 1941) — Cover by Jens Søndergaard
-- *Helhesten* Year 1, Booklet 4 (October 18, 1941) — Cover by Hans Scherfig
-- *Helhesten* Year 1, Booklets 5 & 6 (November 18, 1941) — Cover by Axel Salto
-- *Helhesten* Year 2, Booklet 1 (October 30, 1942) — Cover by Niels Lergaard
-- *Helhesten* Year 2, Booklets 2 & 3 (March 10, 1943) — Cover by Storm Petersen
-- *Helhesten* Year 2, Booklet 4 (December 24, 1943) — Cover by Ejler Bille
-- *Helhesten* Year 2, Booklets 5 & 6 (November 11, 1944) — Cover by Carl-Henning Pedersen
+- *Helhesten* Year 1, Booklet 2 (May 10, 1941) - Cover by Egon Mathiesen
+- *Helhesten* Year 1, Booklet 3 (September 17, 1941) - Cover by Jens Søndergaard
+- *Helhesten* Year 1, Booklet 4 (October 18, 1941) - Cover by Hans Scherfig
+- *Helhesten* Year 1, Booklets 5 & 6 (November 18, 1941) - Cover by Axel Salto
+- *Helhesten* Year 2, Booklet 1 (October 30, 1942) - Cover by Niels Lergaard
+- *Helhesten* Year 2, Booklets 2 & 3 (March 10, 1943) - Cover by Storm Petersen
+- *Helhesten* Year 2, Booklet 4 (December 24, 1943) - Cover by Ejler Bille
+- *Helhesten* Year 2, Booklets 5 & 6 (November 11, 1944) - Cover by Carl-Henning Pedersen
 
 ## Explore the Book
 
@@ -100,4 +100,3 @@ Other issues in the series include:
 
 *This is a preview only - <a href="https://archive.org/details/helhesten-1-1" target="_blank">view fullsize on archive.org</a>*
 
-{% include collapsible.html %}

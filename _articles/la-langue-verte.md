@@ -56,7 +56,7 @@ In the book, Jorn emphasized the relation of detail to structure and individual 
     caption="Excerpt from <cite>La tèse de veau à la vinaigrette</cite>, featuring images <cite>Langue en tétine légumineuse et ombilicale</cite> (Tongue in leguminous and umbilical pacifier) and <cite>Linguiste hippotêtique se nouant la langue</cite> (Hippotetic linguist tying his tongue), page 201"
 %}
 
-{% include quote.html text="Although *La Langue verte et la cuite* is a parody of structuralist theory, as well as of the musical and scientific pretensions of *Le Cru et le cuit*, it also adopts Lévi-Strauss's method in the organization of its images and prose. The permutations of images of the tongue — which are broadly organized in the \"table service of illuminations\" into *héros dénicheurs de langues*, *la langue pédale* (roughly, \"foot lickers\"), *tireurs* (those who show their tongues), *les langues élémentales* (the elements in question being chiefly air and fire), *la langue orientable* (in which tongues take the form of vegetal arabesques), *la langue zoomorphe* (which are mostly snakes, but on two occasions frogs), *bi-langues*, and *tri-langues* - are transformational in nature.
+{% include quote.html text="Although *La Langue verte et la cuite* is a parody of structuralist theory, as well as of the musical and scientific pretensions of *Le Cru et le cuit*, it also adopts Lévi-Strauss's method in the organization of its images and prose. The permutations of images of the tongue - which are broadly organized in the \"table service of illuminations\" into *héros dénicheurs de langues*, *la langue pédale* (roughly, \"foot lickers\"), *tireurs* (those who show their tongues), *les langues élémentales* (the elements in question being chiefly air and fire), *la langue orientable* (in which tongues take the form of vegetal arabesques), *la langue zoomorphe* (which are mostly snakes, but on two occasions frogs), *bi-langues*, and *tri-langues* - are transformational in nature.
 
 The text is organized according to a different logic of development than that found in the \"table service of illuminations.\" The table of contents is set up as a menu, with each dish an example of wordplay whose name often incorporates both musical and gastronomic references (for instance, \"Pizzicato al pommo d'oro\" and \"Elégie au fromage blanc\"). The texts that have been given the names of individual dishes are modular, and they develop over the course of the book as a series of dismythes and marmythes.
 
@@ -64,7 +64,7 @@ The musical references in the book's organization refer of course to Lévi-Strau
 
 Further, Harris defines Jorn and Arnaud's approach to structuralist theory in the book:
 
-{% include quote.html text="It is important to emphasize that Jorn and Arnaud's book is a response to structuralism from the viewpoint of artists; it therefore differs from the intellectual critiques made by Claude Lefort, Henri Lefebvre, and others in the 1950s and '60s. One of the key aspects of Jorn and Arnaud's response is an expansive humor—derisive, parodic, but also generous. It is not, in other words, a humor that treats either its object of parody or its audience as an idiot; it is, rather, an inclusive humor, a carnivalesque attitude... Jorn and Arnaud focus on a materialist knowledge gained through the senses (a *connaissance* rather than a *savoir*), placing an emphasis on the unruly human animal rather than on a system." attribution="- Ibid." %}
+{% include quote.html text="It is important to emphasize that Jorn and Arnaud's book is a response to structuralism from the viewpoint of artists; it therefore differs from the intellectual critiques made by Claude Lefort, Henri Lefebvre, and others in the 1950s and '60s. One of the key aspects of Jorn and Arnaud's response is an expansive humor-derisive, parodic, but also generous. It is not, in other words, a humor that treats either its object of parody or its audience as an idiot; it is, rather, an inclusive humor, a carnivalesque attitude... Jorn and Arnaud focus on a materialist knowledge gained through the senses (a *connaissance* rather than a *savoir*), placing an emphasis on the unruly human animal rather than on a system." attribution="- Ibid." %}
 
 ## Contents
 
@@ -81,4 +81,3 @@ Further, Harris defines Jorn and Arnaud's approach to structuralist theory in th
 
 *This is a preview only - <a href="https://archive.org/details/la-langue-verte-jorn" target="_blank">view fullsize on archive.org</a>*
 
-{% include collapsible.html %}

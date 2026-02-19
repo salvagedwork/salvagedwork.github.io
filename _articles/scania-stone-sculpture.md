@@ -121,7 +121,7 @@ for you to say that, before I die."
 
 ### Erik Cinthio
 
-Erik Cinthio (1921–2018) was a Swedish art historian and archaeologist. He received his doctorate in 1957 with a dissertation on Lund Cathedral during the Romanesque period and was appointed the same year as docent in art history with medieval archaeology at Lund University. In his dissertation, he broke with older tradition by allowing the archaeological remains, the monument, and its artworks to form the starting point for analysis as a means to explain the building's practical and ideal function as well as its position in historical context. From 1 July 1965—the same year this book was published—Cinthio held the first professorship in medieval archaeology in Scandinavia at Lund University.
+Erik Cinthio (1921–2018) was a Swedish art historian and archaeologist. He received his doctorate in 1957 with a dissertation on Lund Cathedral during the Romanesque period and was appointed the same year as docent in art history with medieval archaeology at Lund University. In his dissertation, he broke with older tradition by allowing the archaeological remains, the monument, and its artworks to form the starting point for analysis as a means to explain the building's practical and ideal function as well as its position in historical context. From 1 July 1965-the same year this book was published-Cinthio held the first professorship in medieval archaeology in Scandinavia at Lund University.
 
 ### Gérard Franceschi
 

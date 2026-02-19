@@ -373,7 +373,7 @@
 
 <p>The four collaborating composers performed continuously throughout the evening using their own pre-existing works on custom-built or modified equipment. Behrman contributed <em>Runthrough</em>, Mumma performed <em>Hornpipe</em> and <em>Swarmer</em>, and Tudor, who Cross noted did not enter the engagement with much enthusiasm, performed a piece titled <em>Reunion</em>. Cross’s contributions were two pre-recorded tape works, <em>Video II (B)</em> and <em>Musica Instrumentalis</em>, the latter also generating the oscilloscopic imagery on the television screens.</p>
 
-<p>Duchamp, playing White, gave Cage a handicap in the first game by removing his king’s knight, replacing it on the board with a U.S. quarter dollar. With this action, as Cross later noted, Duchamp demonstrated his understanding of the function of the chessboard — and indeed, of the entire event. Despite the handicap, Duchamp defeated Cage in roughly 25 minutes. In the 1950s, Duchamp had been considered by the American grand master Edward Lasker to be among the top 25 chess players in the United States. He had also competed for France in the 1930s Chess Olympiads alongside Alexander Alekhine.</p>
+<p>Duchamp, playing White, gave Cage a handicap in the first game by removing his king’s knight, replacing it on the board with a U.S. quarter dollar. With this action, as Cross later noted, Duchamp demonstrated his understanding of the function of the chessboard - and indeed, of the entire event. Despite the handicap, Duchamp defeated Cage in roughly 25 minutes. In the 1950s, Duchamp had been considered by the American grand master Edward Lasker to be among the top 25 chess players in the United States. He had also competed for France in the 1930s Chess Olympiads alongside Alexander Alekhine.</p>
 
 <p>After a brief intermission during which much of the audience departed, Cage (White) and Teeny Duchamp (Black) began a second game at around 9:15 PM while Duchamp observed or, as photographs by Kubota show, occasionally dozed off. The two proved well matched and played seriously and deliberately. The game continued until 1:00 AM on 6 March, when Duchamp made known his fatigue. The match was adjourned, with Duchamp memorising the final positions. Teeny finished the game and won several days later in New York. No record of the moves in either game survives.</p>
 
@@ -444,26 +444,6 @@
     </figure>
 </section>
 
-<script>
-var coll = document.getElementsByClassName("collapsible-text-button");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var container = this.parentElement;
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-      container.classList.remove("expanded");
-    } else {
-      container.classList.add("expanded");
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-
 
 		</div>
 		
@@ -472,6 +452,24 @@ for (i = 0; i < coll.length; i++) {
 </article>
 
 <script src="/js/article-toc.js"></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-text-button");
+for (var i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var container = this.parentElement;
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      container.classList.remove("expanded");
+    } else {
+      container.classList.add("expanded");
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
 
 			</div>
 			

@@ -98,11 +98,10 @@ Part Two includes the illustrated œuvre catalogue of all paintings by Jorn disc
 
 This volume is the first in a five-volume catalogue raisonné of Asger Jorn's oil paintings by Guy Atkins and Troels Andersen. The series documents over 2,000 paintings spanning Jorn's entire career from 1930 to 1973, representing 45 years of research. Other volumes in the series include:
 
-- *Asger Jorn: The Crucial Years 1954-1964* (1977) — 751 paintings from the period of Jorn's international breakthrough
-- *Asger Jorn: The Final Years 1965-1973* (1980) — The concluding volume of the main trilogy
-- *Asger Jorn: Supplement - Paintings 1930-1973* (1986) — 100 additional paintings discovered after the main volumes
-- *Asger Jorn: Revised Supplement* (2006) — A further 123 paintings, concluding the registration of Jorn's œuvre
+- *Asger Jorn: The Crucial Years 1954-1964* (1977) - 751 paintings from the period of Jorn's international breakthrough
+- *Asger Jorn: The Final Years 1965-1973* (1980) - The concluding volume of the main trilogy
+- *Asger Jorn: Supplement - Paintings 1930-1973* (1986) - 100 additional paintings discovered after the main volumes
+- *Asger Jorn: Revised Supplement* (2006) - A further 123 paintings, concluding the registration of Jorn's œuvre
 
 Jorn was able to review and authenticate the photographs for this first volume before publication. Unfortunately, the artist did not live to see the completion of the project, as he died in 1973. The second and third volumes appeared posthumously.
 
-{% include collapsible.html %}

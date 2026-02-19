@@ -6,6 +6,7 @@ baseurl: ""
 permalink: pretty
 theme: null
 paginate: 10
+future: true
 
 collections:
   articles:

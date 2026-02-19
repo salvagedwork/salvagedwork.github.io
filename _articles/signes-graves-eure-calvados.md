@@ -97,4 +97,3 @@ Steven Harris links Jorn's fascination with engravings found on churches to Scan
 		</figure>
 </section>
 
-{% include collapsible.html %}

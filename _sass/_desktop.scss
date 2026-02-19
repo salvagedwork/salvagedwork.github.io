@@ -168,6 +168,14 @@
 		min-width: 0; // prevent content overflow in grid
 	}
 
+	// footnotes.js appends .references-section directly to .article-container,
+	// so we explicitly place it in the content column rather than letting it
+	// auto-place into the TOC column
+	.references-section {
+		grid-column: 2;
+		min-width: 0;
+	}
+
 	// On desktop: always show the list, hide the mobile toggle button
 	.toc-list-wrapper {
 		display: block !important;

@@ -97,5 +97,3 @@ The work also demonstrates the collaborative nature of Jorn scholarship during t
         <figcaption>Self-portrait in pencil, 1947.</figcaption>
     </figure>
 </section>
-
-{% include collapsible.html %}

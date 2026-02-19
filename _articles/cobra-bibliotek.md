@@ -186,4 +186,3 @@ The series can be understood within the broader context of Jorn's lifelong commi
     </figure>
 </section>
 
-{% include collapsible.html %}

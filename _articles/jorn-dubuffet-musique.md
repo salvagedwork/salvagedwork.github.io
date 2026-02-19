@@ -2,7 +2,7 @@
 layout: article
 title: Musique Phénoménale
 categories: recordings
-description: collaborative recording of experimental music by Asger Jorn and Jean Dubuffet, recorded between December 1960 and March 1961 in Paris and originally published in an extremely limited edition of fifty numbered box sets by Galleria del Cavallino in Venice.
+description: is a collaborative recording of experimental music by Asger Jorn and Jean Dubuffet, recorded between December 1960 and March 1961 in Paris and originally published in an extremely limited edition of fifty numbered box sets by Galleria del Cavallino in Venice.
 creators: [asger-jorn, jean-dubuffet]
 subjects: [experimental-music, art-brut, sound-art]
 featured-image: /assets/articles/jorn-dubuffet-musique/front.jpg
@@ -21,7 +21,7 @@ last_modified_at: 2026-02-08
     dimensions="29.5 x 28.5 x 5.5 cm"
 %}
 
-**{{ page.title }}** is a {{ page.description }} The work represents an audacious extension of Dubuffet's Art Brut philosophy into the sonic realm, an exploration of what Jorn termed "chaosmic music" following the language of James Joyce.
+**{{ page.title }}** {{ page.description }} The work represents an audacious extension of Dubuffet's Art Brut philosophy into the sonic realm, an exploration of what Jorn termed "chaosmic music" following the language of James Joyce.
 
 ## Background
 
@@ -69,21 +69,21 @@ The release represented a significant art object in itself, with production valu
 **Disc 1**
 - Side I: Nez cassé (Broken Nose)
 - Side I: Nouvel an (New Year)
-- Side II: Vole vent (Wind Flies) — December 1960
+- Side II: Vole vent (Wind Flies) - December 1960
 
 **Disc 2**
 - Side I: Débats et rumeurs (Debates and Rumours)
 - Side II: Crépite et flambe (Crackles and Blazes)
-- Side II: Brusqueries (Abruptness) — January 1961
+- Side II: Brusqueries (Abruptness) - January 1961
 
 **Disc 3**
 - Side I: Sang (Blood)
-- Side II: Claque dent (Chattering Teeth) — February 1961
+- Side II: Claque dent (Chattering Teeth) - February 1961
 
 **Disc 4**
-- Side I: Ébats (Frolics) — March 1961
+- Side I: Ébats (Frolics) - March 1961
 - Side II: Danse moustique (Mosquito Dance)
-- Side II: Innocence — February 1961
+- Side II: Innocence - February 1961
 
 The eleven compositions vary in length and character. The opening piece "Nez cassé" runs nearly eight minutes and establishes the work's confrontational aesthetic. "Sang," the longest track at over sixteen minutes, builds in intensity through sustained improvisational exchanges. The final piece "Innocence," lasting just over six and a half minutes, concludes the cycle with what one critic described as a ghostly, abrupt end.
 
@@ -145,4 +145,3 @@ Both artists maintained active involvement in experimental and collaborative pra
     </figure>
 </section>
 
-{% include collapsible.html %}

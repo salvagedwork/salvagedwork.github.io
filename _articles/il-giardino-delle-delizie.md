@@ -108,7 +108,6 @@ The vinyl recording of the performance is collaged/de-collaged with a variety of
 
 {% include articles/il-giardino-delle-delizie/linernotes.html %}
 
-{% include collapsible.html %}
 
 ## Gallery
 

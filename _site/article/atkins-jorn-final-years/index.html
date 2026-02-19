@@ -346,7 +346,7 @@
 
 <h2 id="the-sculptures-of-1972">The Sculptures of 1972</h2>
 
-<p>The book includes a major chapter by Ursula Lehmann-Brockhaus on Jorn’s remarkable final turn to sculpture. In 1972, Jorn executed thirty-one sculptures in bronze or marble—classical, time-honoured materials he had never used before. As Lehmann-Brockhaus writes:</p>
+<p>The book includes a major chapter by Ursula Lehmann-Brockhaus on Jorn’s remarkable final turn to sculpture. In 1972, Jorn executed thirty-one sculptures in bronze or marble-classical, time-honoured materials he had never used before. As Lehmann-Brockhaus writes:</p>
 
 <div class="quote">
 
@@ -431,33 +431,13 @@
 <p>This volume is the third in a five-volume catalogue raisonné of Asger Jorn’s oil paintings by Guy Atkins and Troels Andersen. The series documents over 2,000 paintings spanning Jorn’s entire career from 1930 to 1973, representing 45 years of research. Other volumes in the series include:</p>
 
 <ul>
-  <li><em>Jorn in Scandinavia 1930-1953</em> (1968) — 855 paintings from Jorn’s early career in Denmark</li>
-  <li><em>Asger Jorn: The Crucial Years 1954-1964</em> (1977) — 751 paintings from the period of Jorn’s international breakthrough</li>
-  <li><em>Asger Jorn: Supplement - Paintings 1930-1973</em> (1986) — 100 additional paintings discovered after the main volumes</li>
-  <li><em>Asger Jorn: Revised Supplement</em> (2006) — A further 123 paintings, concluding the registration of Jorn’s œuvre</li>
+  <li><em>Jorn in Scandinavia 1930-1953</em> (1968) - 855 paintings from Jorn’s early career in Denmark</li>
+  <li><em>Asger Jorn: The Crucial Years 1954-1964</em> (1977) - 751 paintings from the period of Jorn’s international breakthrough</li>
+  <li><em>Asger Jorn: Supplement - Paintings 1930-1973</em> (1986) - 100 additional paintings discovered after the main volumes</li>
+  <li><em>Asger Jorn: Revised Supplement</em> (2006) - A further 123 paintings, concluding the registration of Jorn’s œuvre</li>
 </ul>
 
-<p>By including chapters on acrylics and collages (contributed by Frank Whitford) alongside the sculpture chapter by Ursula Lehmann-Brockhaus, this volume sketches out a large part of Jorn’s œuvre in its astonishing variety—bearing in mind the chapters on ceramics, graphics, and tapestries in the preceding volume.</p>
-
-<script>
-var coll = document.getElementsByClassName("collapsible-text-button");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var container = this.parentElement;
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-      container.classList.remove("expanded");
-    } else {
-      container.classList.add("expanded");
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
+<p>By including chapters on acrylics and collages (contributed by Frank Whitford) alongside the sculpture chapter by Ursula Lehmann-Brockhaus, this volume sketches out a large part of Jorn’s œuvre in its astonishing variety-bearing in mind the chapters on ceramics, graphics, and tapestries in the preceding volume.</p>
 
 
 		</div>
@@ -467,6 +447,24 @@ for (i = 0; i < coll.length; i++) {
 </article>
 
 <script src="/js/article-toc.js"></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-text-button");
+for (var i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var container = this.parentElement;
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      container.classList.remove("expanded");
+    } else {
+      container.classList.add("expanded");
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
 
 			</div>
 			

@@ -36,7 +36,7 @@ It was Helhesten's growing financial debt, in fact, and not censorship by the Ge
 
 ## Cover Design
 
-Carl-Henning Pedersen (1913–2007) designed the cover for this final issue, bringing the series full circle—he had also designed the cover for the bound Year 1 collection. Pedersen was one of the core Helhesten artists, known for his fantastical imagery populated by birds, suns, and mythological creatures rendered in bright, spontaneous colours. His work exemplified the "fantasy art" approach he had theorized in earlier issues.
+Carl-Henning Pedersen (1913–2007) designed the cover for this final issue, bringing the series full circle-he had also designed the cover for the bound Year 1 collection. Pedersen was one of the core Helhesten artists, known for his fantastical imagery populated by birds, suns, and mythological creatures rendered in bright, spontaneous colours. His work exemplified the "fantasy art" approach he had theorized in earlier issues.
 
 ## Key Contents
 
@@ -55,7 +55,7 @@ Pedersen contributed an essay on Danish medieval church frescoes, connecting the
 
 ### "All Art Should Be Popular" (*Al kunst bør være folkelig*) by Henry Heerup
 
-Heerup's essay articulated the journal's populist ethos, arguing that art should be accessible and meaningful to ordinary people—a position that aligned with the Danish tradition of *folkelighed* (popular belonging) while challenging both academic elitism and Nazi cultural propaganda.
+Heerup's essay articulated the journal's populist ethos, arguing that art should be accessible and meaningful to ordinary people-a position that aligned with the Danish tradition of *folkelighed* (popular belonging) while challenging both academic elitism and Nazi cultural propaganda.
 
 ### "Folk Poetry" (*Almuepoesi*) by Jens Sigsgaard
 
@@ -72,7 +72,7 @@ The final issue included children's drawings as print inserts, demonstrating the
 
 ## Legacy
 
-Though *Helhesten* ended in 1944, its influence extended far beyond the war years. Many of its core artists—including Jorn, Pedersen, Bille, and Jacobsen—became founding members of the international Cobra movement (1948–1951), which carried forward *Helhesten*'s emphasis on spontaneity, fantasy, and the integration of art with everyday life. The journal's editor, Robert Dahlmann Olsen, edited the first issue of *Cobra* in a format virtually identical to *Helhesten*.
+Though *Helhesten* ended in 1944, its influence extended far beyond the war years. Many of its core artists-including Jorn, Pedersen, Bille, and Jacobsen-became founding members of the international Cobra movement (1948–1951), which carried forward *Helhesten*'s emphasis on spontaneity, fantasy, and the integration of art with everyday life. The journal's editor, Robert Dahlmann Olsen, edited the first issue of *Cobra* in a format virtually identical to *Helhesten*.
 
 As Guy Atkins writes:
 
@@ -87,13 +87,12 @@ It is now generally recognized that the artists of the war years were by far the
 
 Other issues in the series include:
 
-- *Helhesten* Year 1, Booklet 1 (April 13, 1941) — Cover by Henry Heerup
-- *Helhesten* Year 1, Booklet 2 (May 10, 1941) — Cover by Egon Mathiesen
-- *Helhesten* Year 1, Booklet 3 (September 17, 1941) — Cover by Jens Søndergaard
-- *Helhesten* Year 1, Booklet 4 (October 18, 1941) — Cover by Hans Scherfig
-- *Helhesten* Year 1, Booklets 5 & 6 (November 18, 1941) — Cover by Axel Salto
-- *Helhesten* Year 2, Booklet 1 (October 30, 1942) — Cover by Niels Lergaard
-- *Helhesten* Year 2, Booklets 2 & 3 (March 10, 1943) — Cover by Storm Petersen
-- *Helhesten* Year 2, Booklet 4 (December 24, 1943) — Cover by Ejler Bille
+- *Helhesten* Year 1, Booklet 1 (April 13, 1941) - Cover by Henry Heerup
+- *Helhesten* Year 1, Booklet 2 (May 10, 1941) - Cover by Egon Mathiesen
+- *Helhesten* Year 1, Booklet 3 (September 17, 1941) - Cover by Jens Søndergaard
+- *Helhesten* Year 1, Booklet 4 (October 18, 1941) - Cover by Hans Scherfig
+- *Helhesten* Year 1, Booklets 5 & 6 (November 18, 1941) - Cover by Axel Salto
+- *Helhesten* Year 2, Booklet 1 (October 30, 1942) - Cover by Niels Lergaard
+- *Helhesten* Year 2, Booklets 2 & 3 (March 10, 1943) - Cover by Storm Petersen
+- *Helhesten* Year 2, Booklet 4 (December 24, 1943) - Cover by Ejler Bille
 
-{% include collapsible.html %}

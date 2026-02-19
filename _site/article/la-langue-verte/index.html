@@ -377,7 +377,7 @@
 </div>
 
 <div class="quote">
-<p>Although <em>La Langue verte et la cuite</em> is a parody of structuralist theory, as well as of the musical and scientific pretensions of <em>Le Cru et le cuit</em>, it also adopts Lévi-Strauss’s method in the organization of its images and prose. The permutations of images of the tongue — which are broadly organized in the “table service of illuminations” into <em>héros dénicheurs de langues</em>, <em>la langue pédale</em> (roughly, “foot lickers”), <em>tireurs</em> (those who show their tongues), <em>les langues élémentales</em> (the elements in question being chiefly air and fire), <em>la langue orientable</em> (in which tongues take the form of vegetal arabesques), <em>la langue zoomorphe</em> (which are mostly snakes, but on two occasions frogs), <em>bi-langues</em>, and <em>tri-langues</em> - are transformational in nature.</p>
+<p>Although <em>La Langue verte et la cuite</em> is a parody of structuralist theory, as well as of the musical and scientific pretensions of <em>Le Cru et le cuit</em>, it also adopts Lévi-Strauss’s method in the organization of its images and prose. The permutations of images of the tongue - which are broadly organized in the “table service of illuminations” into <em>héros dénicheurs de langues</em>, <em>la langue pédale</em> (roughly, “foot lickers”), <em>tireurs</em> (those who show their tongues), <em>les langues élémentales</em> (the elements in question being chiefly air and fire), <em>la langue orientable</em> (in which tongues take the form of vegetal arabesques), <em>la langue zoomorphe</em> (which are mostly snakes, but on two occasions frogs), <em>bi-langues</em>, and <em>tri-langues</em> - are transformational in nature.</p>
 
 <p>The text is organized according to a different logic of development than that found in the “table service of illuminations.” The table of contents is set up as a menu, with each dish an example of wordplay whose name often incorporates both musical and gastronomic references (for instance, “Pizzicato al pommo d’oro” and “Elégie au fromage blanc”). The texts that have been given the names of individual dishes are modular, and they develop over the course of the book as a series of dismythes and marmythes.</p>
 
@@ -391,7 +391,7 @@
 <p>Further, Harris defines Jorn and Arnaud’s approach to structuralist theory in the book:</p>
 
 <div class="quote">
-<p>It is important to emphasize that Jorn and Arnaud’s book is a response to structuralism from the viewpoint of artists; it therefore differs from the intellectual critiques made by Claude Lefort, Henri Lefebvre, and others in the 1950s and ’60s. One of the key aspects of Jorn and Arnaud’s response is an expansive humor—derisive, parodic, but also generous. It is not, in other words, a humor that treats either its object of parody or its audience as an idiot; it is, rather, an inclusive humor, a carnivalesque attitude… Jorn and Arnaud focus on a materialist knowledge gained through the senses (a <em>connaissance</em> rather than a <em>savoir</em>), placing an emphasis on the unruly human animal rather than on a system.</p>
+<p>It is important to emphasize that Jorn and Arnaud’s book is a response to structuralism from the viewpoint of artists; it therefore differs from the intellectual critiques made by Claude Lefort, Henri Lefebvre, and others in the 1950s and ’60s. One of the key aspects of Jorn and Arnaud’s response is an expansive humor-derisive, parodic, but also generous. It is not, in other words, a humor that treats either its object of parody or its audience as an idiot; it is, rather, an inclusive humor, a carnivalesque attitude… Jorn and Arnaud focus on a materialist knowledge gained through the senses (a <em>connaissance</em> rather than a <em>savoir</em>), placing an emphasis on the unruly human animal rather than on a system.</p>
 
 
 <p class="quote-attrib">- Ibid.</p>
@@ -421,26 +421,6 @@
 
 <p><em>This is a preview only - <a href="https://archive.org/details/la-langue-verte-jorn" target="_blank">view fullsize on archive.org</a></em></p>
 
-<script>
-var coll = document.getElementsByClassName("collapsible-text-button");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var container = this.parentElement;
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-      container.classList.remove("expanded");
-    } else {
-      container.classList.add("expanded");
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-
 
 		</div>
 		
@@ -449,6 +429,24 @@ for (i = 0; i < coll.length; i++) {
 </article>
 
 <script src="/js/article-toc.js"></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-text-button");
+for (var i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var container = this.parentElement;
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      container.classList.remove("expanded");
+    } else {
+      container.classList.add("expanded");
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
 
 			</div>
 			

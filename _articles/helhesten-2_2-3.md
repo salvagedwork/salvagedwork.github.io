@@ -59,14 +59,14 @@ By 1943, the German occupation had entered a more difficult phase. Danish resist
 
 Other issues in the series include:
 
-- *Helhesten* Year 1, Booklet 1 (April 13, 1941) — Cover by Henry Heerup
-- *Helhesten* Year 1, Booklet 2 (May 10, 1941) — Cover by Egon Mathiesen
-- *Helhesten* Year 1, Booklet 3 (September 17, 1941) — Cover by Jens Søndergaard
-- *Helhesten* Year 1, Booklet 4 (October 18, 1941) — Cover by Hans Scherfig
-- *Helhesten* Year 1, Booklets 5 & 6 (November 18, 1941) — Cover by Axel Salto
-- *Helhesten* Year 2, Booklet 1 (October 30, 1942) — Cover by Niels Lergaard
-- *Helhesten* Year 2, Booklet 4 (December 24, 1943) — Cover by Ejler Bille
-- *Helhesten* Year 2, Booklets 5 & 6 (November 11, 1944) — Cover by Carl-Henning Pedersen
+- *Helhesten* Year 1, Booklet 1 (April 13, 1941) - Cover by Henry Heerup
+- *Helhesten* Year 1, Booklet 2 (May 10, 1941) - Cover by Egon Mathiesen
+- *Helhesten* Year 1, Booklet 3 (September 17, 1941) - Cover by Jens Søndergaard
+- *Helhesten* Year 1, Booklet 4 (October 18, 1941) - Cover by Hans Scherfig
+- *Helhesten* Year 1, Booklets 5 & 6 (November 18, 1941) - Cover by Axel Salto
+- *Helhesten* Year 2, Booklet 1 (October 30, 1942) - Cover by Niels Lergaard
+- *Helhesten* Year 2, Booklet 4 (December 24, 1943) - Cover by Ejler Bille
+- *Helhesten* Year 2, Booklets 5 & 6 (November 11, 1944) - Cover by Carl-Henning Pedersen
 
 ## Explore the Book
 
@@ -74,4 +74,3 @@ Other issues in the series include:
 
 *This is a preview only - <a href="https://archive.org/details/helhesten-2-2-3" target="_blank">view fullsize on archive.org</a>*
 
-{% include collapsible.html %}

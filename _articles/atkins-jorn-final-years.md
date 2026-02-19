@@ -50,7 +50,7 @@ As Atkins notes: "From this exhibition dates a renaissance of Jorn's creative st
 
 ## The Sculptures of 1972
 
-The book includes a major chapter by Ursula Lehmann-Brockhaus on Jorn's remarkable final turn to sculpture. In 1972, Jorn executed thirty-one sculptures in bronze or marble—classical, time-honoured materials he had never used before. As Lehmann-Brockhaus writes:
+The book includes a major chapter by Ursula Lehmann-Brockhaus on Jorn's remarkable final turn to sculpture. In 1972, Jorn executed thirty-one sculptures in bronze or marble-classical, time-honoured materials he had never used before. As Lehmann-Brockhaus writes:
 
 {% capture sculpture_quote %}
 In so doing he placed an entirely new and highly significant emphasis on the sculptural side of his art. For decades all his three-dimensional work had been in clay, a material entirely without pretensions; and he had made his sculptures in an apparently casual way against the craft background of small potteries... After the extended and frequently interrupted development of the three-dimensional work the climax of 1972 was like an eruption. Within the space of less than a year and with an amazing concentration of all his powers (already threatened by the illness that would end in his death) Jorn created twenty-three bronze and eight marble sculptures.
@@ -114,11 +114,10 @@ Jorn died of cancer in the Aarhus Municipal Hospital on 1 May 1973, after an ill
 
 This volume is the third in a five-volume catalogue raisonné of Asger Jorn's oil paintings by Guy Atkins and Troels Andersen. The series documents over 2,000 paintings spanning Jorn's entire career from 1930 to 1973, representing 45 years of research. Other volumes in the series include:
 
-- *Jorn in Scandinavia 1930-1953* (1968) — 855 paintings from Jorn's early career in Denmark
-- *Asger Jorn: The Crucial Years 1954-1964* (1977) — 751 paintings from the period of Jorn's international breakthrough
-- *Asger Jorn: Supplement - Paintings 1930-1973* (1986) — 100 additional paintings discovered after the main volumes
-- *Asger Jorn: Revised Supplement* (2006) — A further 123 paintings, concluding the registration of Jorn's œuvre
+- *Jorn in Scandinavia 1930-1953* (1968) - 855 paintings from Jorn's early career in Denmark
+- *Asger Jorn: The Crucial Years 1954-1964* (1977) - 751 paintings from the period of Jorn's international breakthrough
+- *Asger Jorn: Supplement - Paintings 1930-1973* (1986) - 100 additional paintings discovered after the main volumes
+- *Asger Jorn: Revised Supplement* (2006) - A further 123 paintings, concluding the registration of Jorn's œuvre
 
-By including chapters on acrylics and collages (contributed by Frank Whitford) alongside the sculpture chapter by Ursula Lehmann-Brockhaus, this volume sketches out a large part of Jorn's œuvre in its astonishing variety—bearing in mind the chapters on ceramics, graphics, and tapestries in the preceding volume.
+By including chapters on acrylics and collages (contributed by Frank Whitford) alongside the sculpture chapter by Ursula Lehmann-Brockhaus, this volume sketches out a large part of Jorn's œuvre in its astonishing variety-bearing in mind the chapters on ceramics, graphics, and tapestries in the preceding volume.
 
-{% include collapsible.html %}

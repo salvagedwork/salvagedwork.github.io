@@ -26,7 +26,7 @@ book_reader:
     series="Asger Jorn Catalogue raisonné"
 %}
 
-**{{ page.title }}** {{page.description}} Published twenty years after the first supplement, it documents 123 additional paintings and formally concludes the registration of Jorn's oil paintings—a project spanning 45 years of research.
+**{{ page.title }}** {{page.description}} Published twenty years after the first supplement, it documents 123 additional paintings and formally concludes the registration of Jorn's oil paintings-a project spanning 45 years of research.
 
 ## Conclusion of the Catalogue Raisonné
 
@@ -73,7 +73,7 @@ Even today, basically, I know nothing. At any rate, anything that I can explain.
 
 ## Contents
 
-**Part One — Historical Documents**
+**Part One - Historical Documents**
 
 1. An interview with Pola Gauguin
 2. Öyvind Fahlström on Jorn
@@ -105,12 +105,11 @@ Even today, basically, I know nothing. At any rate, anything that I can explain.
 
 This volume is the fifth and final in a five-volume catalogue raisonné of Asger Jorn's oil paintings by Guy Atkins and Troels Andersen. The series documents over 2,000 paintings spanning Jorn's entire career from 1930 to 1973, representing 45 years of research from 1961 to 2006. The complete series comprises:
 
-- *Jorn in Scandinavia 1930-1953* (1968) — 855 paintings from Jorn's early career in Denmark
-- *Asger Jorn: The Crucial Years 1954-1964* (1977) — 751 paintings from the period of Jorn's international breakthrough
-- *Asger Jorn: The Final Years 1965-1973* (1980) — The concluding volume of the main trilogy
-- *Asger Jorn: Supplement - Paintings 1930-1973* (1986) — 100 additional paintings discovered after the main volumes
-- *Asger Jorn: Revised Supplement* (2006) — 123 further paintings, concluding the registration
+- *Jorn in Scandinavia 1930-1953* (1968) - 855 paintings from Jorn's early career in Denmark
+- *Asger Jorn: The Crucial Years 1954-1964* (1977) - 751 paintings from the period of Jorn's international breakthrough
+- *Asger Jorn: The Final Years 1965-1973* (1980) - The concluding volume of the main trilogy
+- *Asger Jorn: Supplement - Paintings 1930-1973* (1986) - 100 additional paintings discovered after the main volumes
+- *Asger Jorn: Revised Supplement* (2006) - 123 further paintings, concluding the registration
 
 The project began in 1961, when Guy Atkins proposed cataloguing Jorn's early paintings over lunch at the Coupole in Paris. Jorn was able to authenticate photographs for the first volume before his death in 1973. The work continued under Troels Andersen's direction, with the Silkeborg Museum of Art serving as the repository for all records. With this final volume, the registration of Jorn's oil paintings is formally concluded.
 
-{% include collapsible.html %}

@@ -414,33 +414,13 @@
 <p>This volume is the first in a five-volume catalogue raisonné of Asger Jorn’s oil paintings by Guy Atkins and Troels Andersen. The series documents over 2,000 paintings spanning Jorn’s entire career from 1930 to 1973, representing 45 years of research. Other volumes in the series include:</p>
 
 <ul>
-  <li><em>Asger Jorn: The Crucial Years 1954-1964</em> (1977) — 751 paintings from the period of Jorn’s international breakthrough</li>
-  <li><em>Asger Jorn: The Final Years 1965-1973</em> (1980) — The concluding volume of the main trilogy</li>
-  <li><em>Asger Jorn: Supplement - Paintings 1930-1973</em> (1986) — 100 additional paintings discovered after the main volumes</li>
-  <li><em>Asger Jorn: Revised Supplement</em> (2006) — A further 123 paintings, concluding the registration of Jorn’s œuvre</li>
+  <li><em>Asger Jorn: The Crucial Years 1954-1964</em> (1977) - 751 paintings from the period of Jorn’s international breakthrough</li>
+  <li><em>Asger Jorn: The Final Years 1965-1973</em> (1980) - The concluding volume of the main trilogy</li>
+  <li><em>Asger Jorn: Supplement - Paintings 1930-1973</em> (1986) - 100 additional paintings discovered after the main volumes</li>
+  <li><em>Asger Jorn: Revised Supplement</em> (2006) - A further 123 paintings, concluding the registration of Jorn’s œuvre</li>
 </ul>
 
 <p>Jorn was able to review and authenticate the photographs for this first volume before publication. Unfortunately, the artist did not live to see the completion of the project, as he died in 1973. The second and third volumes appeared posthumously.</p>
-
-<script>
-var coll = document.getElementsByClassName("collapsible-text-button");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var container = this.parentElement;
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-      container.classList.remove("expanded");
-    } else {
-      container.classList.add("expanded");
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
 
 
 		</div>
@@ -450,6 +430,24 @@ for (i = 0; i < coll.length; i++) {
 </article>
 
 <script src="/js/article-toc.js"></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-text-button");
+for (var i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var container = this.parentElement;
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      container.classList.remove("expanded");
+    } else {
+      container.classList.add("expanded");
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
 
 			</div>
 			

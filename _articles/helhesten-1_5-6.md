@@ -30,15 +30,15 @@ The combined fifth and sixth booklets of *Helhesten*'s first year appeared in No
 
 ## Cover Design
 
-Axel Salto (1889–1961) designed the cover for this double issue. Salto was one of Denmark's most celebrated ceramicists and painters, renowned for his organic, nature-inspired stoneware forms that drew on motifs of sprouting, budding, and growing vegetation. His inclusion among the cover artists demonstrated *Helhesten*'s embrace of the broader Danish modernist community—Salto belonged to an older generation that had established Danish ceramics as an internationally recognized art form, bridging the *art nouveau* tradition with modern expressionism.
+Axel Salto (1889–1961) designed the cover for this double issue. Salto was one of Denmark's most celebrated ceramicists and painters, renowned for his organic, nature-inspired stoneware forms that drew on motifs of sprouting, budding, and growing vegetation. His inclusion among the cover artists demonstrated *Helhesten*'s embrace of the broader Danish modernist community-Salto belonged to an older generation that had established Danish ceramics as an internationally recognized art form, bridging the *art nouveau* tradition with modern expressionism.
 
-Salto's work aligned with the Helhesten artists' interest in organic forms and their belief in the continuity between folk craft traditions and avant-garde experimentation. As Jorn would later note, Danish ceramicists like Thorvald Bindesbøll, the Skovgaard brothers, and Niels Hansen Jacobsen "deserve credit for having revived ceramics as an art form in Denmark"—a tradition that Salto carried forward and that would later influence Jorn's own ceramic experiments.
+Salto's work aligned with the Helhesten artists' interest in organic forms and their belief in the continuity between folk craft traditions and avant-garde experimentation. As Jorn would later note, Danish ceramicists like Thorvald Bindesbøll, the Skovgaard brothers, and Niels Hansen Jacobsen "deserve credit for having revived ceramics as an art form in Denmark"-a tradition that Salto carried forward and that would later influence Jorn's own ceramic experiments.
 
 ## End of Year One
 
 The publication of this double issue marked the completion of *Helhesten*'s first year (*1. Aargang*), which was subsequently made available as a bound hardcover edition with a cover design by Carl-Henning Pedersen. This collected volume was advertised for sale from the publisher Axelholm for 3 Danish kroner in later issues.
 
-The remarkable productivity of Year One—six issues in eight months—proved financially unsustainable. As Kerry Greaves notes:
+The remarkable productivity of Year One-six issues in eight months-proved financially unsustainable. As Kerry Greaves notes:
 
 {% capture greaves_quote %}
 Jorn and Olsen were responsible for the practical aspects of production, which rather unusually for a wartime publication, was printed partially in colour. This may have contributed to the journal's lack of financial solvency after its first year. It was Helhesten's growing financial debt, in fact, and not censorship by the Germans, that led to its closure in 1944... The financial problems led to uneven publication, so that while six issues came out in 1941, just one issue was produced in 1942, three in 1943, and two in 1944.
@@ -52,7 +52,7 @@ Jorn and Olsen were responsible for the practical aspects of production, which r
     caption="Many of the advertisements included in <cite>Helhesten</cite> were created by the artists, such as this advertisement for a bar featuring a photo of some of the <cite>Helhesten</cite> group artists."
 %}
 
-Like other issues, this double issue featured artist-designed advertisements that blurred boundaries between fine art and commercial design—a practice central to the Helhesten philosophy of integrating art with everyday life.
+Like other issues, this double issue featured artist-designed advertisements that blurred boundaries between fine art and commercial design-a practice central to the Helhesten philosophy of integrating art with everyday life.
 
 ## The Helhesten Series
 
@@ -60,14 +60,14 @@ Like other issues, this double issue featured artist-designed advertisements tha
 
 Other issues in the series include:
 
-- *Helhesten* Year 1, Booklet 1 (April 13, 1941) — Cover by Henry Heerup
-- *Helhesten* Year 1, Booklet 2 (May 10, 1941) — Cover by Egon Mathiesen
-- *Helhesten* Year 1, Booklet 3 (September 17, 1941) — Cover by Jens Søndergaard
-- *Helhesten* Year 1, Booklet 4 (October 18, 1941) — Cover by Hans Scherfig
-- *Helhesten* Year 2, Booklet 1 (October 30, 1942) — Cover by Niels Lergaard
-- *Helhesten* Year 2, Booklets 2 & 3 (March 10, 1943) — Cover by Storm Petersen
-- *Helhesten* Year 2, Booklet 4 (December 24, 1943) — Cover by Ejler Bille
-- *Helhesten* Year 2, Booklets 5 & 6 (November 11, 1944) — Cover by Carl-Henning Pedersen
+- *Helhesten* Year 1, Booklet 1 (April 13, 1941) - Cover by Henry Heerup
+- *Helhesten* Year 1, Booklet 2 (May 10, 1941) - Cover by Egon Mathiesen
+- *Helhesten* Year 1, Booklet 3 (September 17, 1941) - Cover by Jens Søndergaard
+- *Helhesten* Year 1, Booklet 4 (October 18, 1941) - Cover by Hans Scherfig
+- *Helhesten* Year 2, Booklet 1 (October 30, 1942) - Cover by Niels Lergaard
+- *Helhesten* Year 2, Booklets 2 & 3 (March 10, 1943) - Cover by Storm Petersen
+- *Helhesten* Year 2, Booklet 4 (December 24, 1943) - Cover by Ejler Bille
+- *Helhesten* Year 2, Booklets 5 & 6 (November 11, 1944) - Cover by Carl-Henning Pedersen
 
 ## Explore the Book
 
@@ -75,4 +75,3 @@ Other issues in the series include:
 
 *This is a preview only - <a href="https://archive.org/details/helhesten-1-5-6" target="_blank">view fullsize on archive.org</a>*
 
-{% include collapsible.html %}

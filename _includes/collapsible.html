@@ -1,19 +1,17 @@
 <script>
 var coll = document.getElementsByClassName("collapsible-text-button");
-var i;
-
-for (i = 0; i < coll.length; i++) {
+for (var i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var container = this.parentElement;
     var content = this.nextElementSibling;
-    if (content.style.maxHeight){
+    if (content.style.maxHeight) {
       content.style.maxHeight = null;
       container.classList.remove("expanded");
     } else {
       container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
-    } 
+    }
   });
 }
 </script>

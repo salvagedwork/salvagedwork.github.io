@@ -26,11 +26,11 @@ This article is part of the [Helhesten](/collection/helhesten/) collection.
 
 ## Background
 
-The third issue of *Helhesten* appeared in September 1941, marking the journal's continued vitality during the first year of German occupation. This issue contained several important theoretical texts that elaborated the group's aesthetic philosophy, as well as an artist-designed advertisement by Asger Jorn for the Oscar Davidsen Restaurant—demonstrating the journal's commitment to merging art with everyday commercial life.
+The third issue of *Helhesten* appeared in September 1941, marking the journal's continued vitality during the first year of German occupation. This issue contained several important theoretical texts that elaborated the group's aesthetic philosophy, as well as an artist-designed advertisement by Asger Jorn for the Oscar Davidsen Restaurant-demonstrating the journal's commitment to merging art with everyday commercial life.
 
 ## Cover Design
 
-Jens Søndergaard (1895–1957) designed the cover for this issue. Søndergaard was a Danish Expressionist painter known for his dramatic landscapes and seascapes, particularly of the west coast of Jutland. His inclusion signalled the journal's embrace of established Danish Expressionists alongside younger avant-garde artists—a characteristic openness that distinguished *Helhesten* from more sectarian art movements.
+Jens Søndergaard (1895–1957) designed the cover for this issue. Søndergaard was a Danish Expressionist painter known for his dramatic landscapes and seascapes, particularly of the west coast of Jutland. His inclusion signalled the journal's embrace of established Danish Expressionists alongside younger avant-garde artists-a characteristic openness that distinguished *Helhesten* from more sectarian art movements.
 
 ## Key Contents
 
@@ -67,7 +67,7 @@ Jorn contributed a characteristically provocative short text titled "Idleness Is
 
 ### Artist-Designed Advertisements
 
-The inside front cover featured an advertisement for the Oscar Davidsen Restaurant, designed by Jorn. According to Robert Dahlmann Olsen's records, Jorn created this advertisement as part of the journal's practice of having artists design commercial content—a deliberate blurring of boundaries between fine art and popular culture that was central to the Helhesten philosophy.
+The inside front cover featured an advertisement for the Oscar Davidsen Restaurant, designed by Jorn. According to Robert Dahlmann Olsen's records, Jorn created this advertisement as part of the journal's practice of having artists design commercial content-a deliberate blurring of boundaries between fine art and popular culture that was central to the Helhesten philosophy.
 
 ### "A Sad Announcement" (*En sørgelig meddelelse*)
 
@@ -79,14 +79,14 @@ The inside back cover featured a satirical piece by Henry Heerup and Asger Jorn,
 
 Other issues in the series include:
 
-- *Helhesten* Year 1, Booklet 1 (April 13, 1941) — Cover by Henry Heerup
-- *Helhesten* Year 1, Booklet 2 (May 10, 1941) — Cover by Egon Mathiesen
-- *Helhesten* Year 1, Booklet 4 (October 18, 1941) — Cover by Hans Scherfig
-- *Helhesten* Year 1, Booklets 5 & 6 (November 18, 1941) — Cover by Axel Salto
-- *Helhesten* Year 2, Booklet 1 (October 30, 1942) — Cover by Niels Lergaard
-- *Helhesten* Year 2, Booklets 2 & 3 (March 10, 1943) — Cover by Storm Petersen
-- *Helhesten* Year 2, Booklet 4 (December 24, 1943) — Cover by Ejler Bille
-- *Helhesten* Year 2, Booklets 5 & 6 (November 11, 1944) — Cover by Carl-Henning Pedersen
+- *Helhesten* Year 1, Booklet 1 (April 13, 1941) - Cover by Henry Heerup
+- *Helhesten* Year 1, Booklet 2 (May 10, 1941) - Cover by Egon Mathiesen
+- *Helhesten* Year 1, Booklet 4 (October 18, 1941) - Cover by Hans Scherfig
+- *Helhesten* Year 1, Booklets 5 & 6 (November 18, 1941) - Cover by Axel Salto
+- *Helhesten* Year 2, Booklet 1 (October 30, 1942) - Cover by Niels Lergaard
+- *Helhesten* Year 2, Booklets 2 & 3 (March 10, 1943) - Cover by Storm Petersen
+- *Helhesten* Year 2, Booklet 4 (December 24, 1943) - Cover by Ejler Bille
+- *Helhesten* Year 2, Booklets 5 & 6 (November 11, 1944) - Cover by Carl-Henning Pedersen
 
 ## Explore the Book
 
@@ -94,4 +94,3 @@ Other issues in the series include:
 
 *This is a preview only - <a href="https://archive.org/details/helhesten-1-3" target="_blank">view fullsize on archive.org</a>*
 
-{% include collapsible.html %}

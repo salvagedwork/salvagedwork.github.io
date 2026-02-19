@@ -444,7 +444,7 @@ for you to say that, before I die.”</p>
 
 <h3 id="erik-cinthio">Erik Cinthio</h3>
 
-<p>Erik Cinthio (1921–2018) was a Swedish art historian and archaeologist. He received his doctorate in 1957 with a dissertation on Lund Cathedral during the Romanesque period and was appointed the same year as docent in art history with medieval archaeology at Lund University. In his dissertation, he broke with older tradition by allowing the archaeological remains, the monument, and its artworks to form the starting point for analysis as a means to explain the building’s practical and ideal function as well as its position in historical context. From 1 July 1965—the same year this book was published—Cinthio held the first professorship in medieval archaeology in Scandinavia at Lund University.</p>
+<p>Erik Cinthio (1921–2018) was a Swedish art historian and archaeologist. He received his doctorate in 1957 with a dissertation on Lund Cathedral during the Romanesque period and was appointed the same year as docent in art history with medieval archaeology at Lund University. In his dissertation, he broke with older tradition by allowing the archaeological remains, the monument, and its artworks to form the starting point for analysis as a means to explain the building’s practical and ideal function as well as its position in historical context. From 1 July 1965-the same year this book was published-Cinthio held the first professorship in medieval archaeology in Scandinavia at Lund University.</p>
 
 <h3 id="gérard-franceschi">Gérard Franceschi</h3>
 
@@ -505,6 +505,24 @@ for you to say that, before I die.”</p>
 </article>
 
 <script src="/js/article-toc.js"></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-text-button");
+for (var i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var container = this.parentElement;
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      container.classList.remove("expanded");
+    } else {
+      container.classList.add("expanded");
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
 
 			</div>
 			

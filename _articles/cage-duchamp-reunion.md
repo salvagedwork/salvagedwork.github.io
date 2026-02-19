@@ -58,7 +58,7 @@ The board was built from two tournament-size Masonite boards separated by painte
 
 The four collaborating composers performed continuously throughout the evening using their own pre-existing works on custom-built or modified equipment. Behrman contributed *Runthrough*, Mumma performed *Hornpipe* and *Swarmer*, and Tudor, who Cross noted did not enter the engagement with much enthusiasm, performed a piece titled *Reunion*. Cross's contributions were two pre-recorded tape works, *Video II (B)* and *Musica Instrumentalis*, the latter also generating the oscilloscopic imagery on the television screens.
 
-Duchamp, playing White, gave Cage a handicap in the first game by removing his king's knight, replacing it on the board with a U.S. quarter dollar. With this action, as Cross later noted, Duchamp demonstrated his understanding of the function of the chessboard — and indeed, of the entire event. Despite the handicap, Duchamp defeated Cage in roughly 25 minutes. In the 1950s, Duchamp had been considered by the American grand master Edward Lasker to be among the top 25 chess players in the United States. He had also competed for France in the 1930s Chess Olympiads alongside Alexander Alekhine.
+Duchamp, playing White, gave Cage a handicap in the first game by removing his king's knight, replacing it on the board with a U.S. quarter dollar. With this action, as Cross later noted, Duchamp demonstrated his understanding of the function of the chessboard - and indeed, of the entire event. Despite the handicap, Duchamp defeated Cage in roughly 25 minutes. In the 1950s, Duchamp had been considered by the American grand master Edward Lasker to be among the top 25 chess players in the United States. He had also competed for France in the 1930s Chess Olympiads alongside Alexander Alekhine.
 
 After a brief intermission during which much of the audience departed, Cage (White) and Teeny Duchamp (Black) began a second game at around 9:15 PM while Duchamp observed or, as photographs by Kubota show, occasionally dozed off. The two proved well matched and played seriously and deliberately. The game continued until 1:00 AM on 6 March, when Duchamp made known his fatigue. The match was adjourned, with Duchamp memorising the final positions. Teeny finished the game and won several days later in New York. No record of the moves in either game survives.
 
@@ -119,4 +119,3 @@ Marcel Duchamp died on 2 October 1968 at his apartment in Neuilly-sur-Seine, sev
     </figure>
 </section>
 
-{% include collapsible.html %}

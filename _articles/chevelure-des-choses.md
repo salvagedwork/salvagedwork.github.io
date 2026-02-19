@@ -31,7 +31,6 @@ Prior to the publication and exhibition of *La chevelure*, the pair collaborated
 
 {% include articles/chevelure-des-choses/lorthocatalographe_dotremont.html %}
 
-{% include collapsible.html %}
 
 ### Explore the Catalogue
 

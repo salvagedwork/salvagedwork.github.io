@@ -358,14 +358,14 @@
 <p>Other issues in the series include:</p>
 
 <ul>
-  <li><em>Helhesten</em> Year 1, Booklet 1 (April 13, 1941) — Cover by Henry Heerup</li>
-  <li><em>Helhesten</em> Year 1, Booklet 2 (May 10, 1941) — Cover by Egon Mathiesen</li>
-  <li><em>Helhesten</em> Year 1, Booklet 3 (September 17, 1941) — Cover by Jens Søndergaard</li>
-  <li><em>Helhesten</em> Year 1, Booklet 4 (October 18, 1941) — Cover by Hans Scherfig</li>
-  <li><em>Helhesten</em> Year 1, Booklets 5 &amp; 6 (November 18, 1941) — Cover by Axel Salto</li>
-  <li><em>Helhesten</em> Year 2, Booklet 1 (October 30, 1942) — Cover by Niels Lergaard</li>
-  <li><em>Helhesten</em> Year 2, Booklet 4 (December 24, 1943) — Cover by Ejler Bille</li>
-  <li><em>Helhesten</em> Year 2, Booklets 5 &amp; 6 (November 11, 1944) — Cover by Carl-Henning Pedersen</li>
+  <li><em>Helhesten</em> Year 1, Booklet 1 (April 13, 1941) - Cover by Henry Heerup</li>
+  <li><em>Helhesten</em> Year 1, Booklet 2 (May 10, 1941) - Cover by Egon Mathiesen</li>
+  <li><em>Helhesten</em> Year 1, Booklet 3 (September 17, 1941) - Cover by Jens Søndergaard</li>
+  <li><em>Helhesten</em> Year 1, Booklet 4 (October 18, 1941) - Cover by Hans Scherfig</li>
+  <li><em>Helhesten</em> Year 1, Booklets 5 &amp; 6 (November 18, 1941) - Cover by Axel Salto</li>
+  <li><em>Helhesten</em> Year 2, Booklet 1 (October 30, 1942) - Cover by Niels Lergaard</li>
+  <li><em>Helhesten</em> Year 2, Booklet 4 (December 24, 1943) - Cover by Ejler Bille</li>
+  <li><em>Helhesten</em> Year 2, Booklets 5 &amp; 6 (November 11, 1944) - Cover by Carl-Henning Pedersen</li>
 </ul>
 
 <h2 id="explore-the-book">Explore the Book</h2>
@@ -373,26 +373,6 @@
 <iframe src="https://archive.org/embed/helhesten-2-2-3" width="100%" height="700" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen=""></iframe>
 
 <p><em>This is a preview only - <a href="https://archive.org/details/helhesten-2-2-3" target="_blank">view fullsize on archive.org</a></em></p>
-
-<script>
-var coll = document.getElementsByClassName("collapsible-text-button");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var container = this.parentElement;
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-      container.classList.remove("expanded");
-    } else {
-      container.classList.add("expanded");
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
 
 
 		</div>
@@ -402,6 +382,24 @@ for (i = 0; i < coll.length; i++) {
 </article>
 
 <script src="/js/article-toc.js"></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-text-button");
+for (var i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var container = this.parentElement;
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      container.classList.remove("expanded");
+    } else {
+      container.classList.add("expanded");
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
 
 			</div>
 			

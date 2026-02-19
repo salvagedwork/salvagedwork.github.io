@@ -26,11 +26,11 @@ This article is part of the [Helhesten](/collection/helhesten/) collection.
 
 ## Background
 
-The second issue of *Helhesten* appeared less than a month after the inaugural issue and was timed to coincide with "13 Artists in a Tent" (*13 Kunstnere i et Telt*)—the first truly avant-garde exhibition in Denmark to attempt to merge art and life. The issue contains one of the most important theoretical texts of the Danish avant-garde: Asger Jorn's essay "Intimate Banalities" (*Intime Banaliteter*).
+The second issue of *Helhesten* appeared less than a month after the inaugural issue and was timed to coincide with "13 Artists in a Tent" (*13 Kunstnere i et Telt*)-the first truly avant-garde exhibition in Denmark to attempt to merge art and life. The issue contains one of the most important theoretical texts of the Danish avant-garde: Asger Jorn's essay "Intimate Banalities" (*Intime Banaliteter*).
 
 ## "Intimate Banalities"
 
-Jorn's landmark article theorised the virtues of kitsch and popular culture for contemporary art. Appearing at almost the same moment as Clement Greenberg's 1939 essay "Avant-Garde and Kitsch"—which maintained that the avant-garde must remain autonomous from everyday life—Jorn argued the exact opposite: that kitsch and the detritus of daily life were essential to contemporary art and its relevance to society as authentic indicators of human creative output.
+Jorn's landmark article theorised the virtues of kitsch and popular culture for contemporary art. Appearing at almost the same moment as Clement Greenberg's 1939 essay "Avant-Garde and Kitsch"-which maintained that the avant-garde must remain autonomous from everyday life-Jorn argued the exact opposite: that kitsch and the detritus of daily life were essential to contemporary art and its relevance to society as authentic indicators of human creative output.
 
 As Guy Atkins notes in *The Crucial Years*, Jorn later referred back to this essay in his 1959 *Modifications* exhibition preface, maintaining that "the greatest artistic masterpieces are completely banal" and speaking with affection of those gilt-framed "lakes in forests" that hang in thousands of homes.
 
@@ -39,7 +39,7 @@ From the essay itself, Jorn writes:
 {% capture jorn_quote %}
 It is typical of those who have lost touch with what is fundamental in art to have also lost the sense of what is banal. By this I do not mean the ability to see banality, an ability which on the contrary develops in a morbid way. I mean the ability to understand the artistic value of banality, its paramount importance for art. There exists a multitude of anonymous banalities whose relevance extends over centuries and which surpass all the ingenious achievements of our so-called great personalities. Upon closer examination, one realises that the merit of these personalities is precisely their ability to grasp banalities.
 
-The grandiose work of art is the perfect banality. And what most banalities lack is not being sufficiently banal—not being infinite in their depth and their logic—resting upon a dead foundation of spiritualism and aesthetics.
+The grandiose work of art is the perfect banality. And what most banalities lack is not being sufficiently banal-not being infinite in their depth and their logic-resting upon a dead foundation of spiritualism and aesthetics.
 {% endcapture %}
 {% include quote.html text=jorn_quote attribution="- Asger Jorn, &ldquo;Intimate Banalities,&rdquo; <em>Helhesten</em> 1, no. 2 (1941)" %}
 
@@ -58,7 +58,7 @@ The artists strategically chose Dyrehaven…to create a more visible profile wit
 
 The exhibition was a collective enterprise: each exhibitor had a different role in setting up and maintaining the show, with artists offering free tours of the park, taking turns sleeping in the tent to safeguard the artwork, and socialising together.
 
-The choice of the tent itself was inspired by earlier precedents: the 1915 Grønningen exhibition in Copenhagen—an alternative show that took place in a brightly painted temporary wooden shack during World War I—and Le Corbusier's Pavillon des Temps Nouveaux at the 1937 International Art Exhibition, to which Jorn, as one of Léger's former students, had contributed with the mural *Les Moissons* (The Harvest Season).
+The choice of the tent itself was inspired by earlier precedents: the 1915 Grønningen exhibition in Copenhagen-an alternative show that took place in a brightly painted temporary wooden shack during World War I-and Le Corbusier's Pavillon des Temps Nouveaux at the 1937 International Art Exhibition, to which Jorn, as one of Léger's former students, had contributed with the mural *Les Moissons* (The Harvest Season).
 
 Guy Atkins records this exhibition in *Jorn in Scandinavia*:
 
@@ -69,7 +69,7 @@ In 1941 they exhibited as a group in a large marquee at Bellevue near Copenhagen
 
 ## Cover Design
 
-Egon Mathiesen (1907–1976) designed the cover, presenting the hell-horse as a happy storybook mare in repose—a deliberately naïve image that mocked the Nazi abuse of Nordic myths by caricaturing the mythological figure in a manner that would have been disparaged as "degenerate" in Germany. Mathiesen was both a painter and a writer; he later contributed the essay "What Modern Art Is" (*Hvad moderne kunst er*) to the journal, in which he argued that "Culture and art never look back, not even in the current acute situation, but always ahead to the future."
+Egon Mathiesen (1907–1976) designed the cover, presenting the hell-horse as a happy storybook mare in repose-a deliberately naïve image that mocked the Nazi abuse of Nordic myths by caricaturing the mythological figure in a manner that would have been disparaged as "degenerate" in Germany. Mathiesen was both a painter and a writer; he later contributed the essay "What Modern Art Is" (*Hvad moderne kunst er*) to the journal, in which he argued that "Culture and art never look back, not even in the current acute situation, but always ahead to the future."
 
 ## The Helhesten Series
 
@@ -77,14 +77,14 @@ Egon Mathiesen (1907–1976) designed the cover, presenting the hell-horse as a 
 
 Other issues in the series include:
 
-- *Helhesten* Year 1, Booklet 1 (April 13, 1941) — Cover by Henry Heerup
-- *Helhesten* Year 1, Booklet 3 (September 17, 1941) — Cover by Jens Søndergaard
-- *Helhesten* Year 1, Booklet 4 (October 18, 1941) — Cover by Hans Scherfig
-- *Helhesten* Year 1, Booklets 5 & 6 (November 18, 1941) — Cover by Axel Salto
-- *Helhesten* Year 2, Booklet 1 (October 30, 1942) — Cover by Niels Lergaard
-- *Helhesten* Year 2, Booklets 2 & 3 (March 10, 1943) — Cover by Storm Petersen
-- *Helhesten* Year 2, Booklet 4 (December 24, 1943) — Cover by Ejler Bille
-- *Helhesten* Year 2, Booklets 5 & 6 (November 11, 1944) — Cover by Carl-Henning Pedersen
+- *Helhesten* Year 1, Booklet 1 (April 13, 1941) - Cover by Henry Heerup
+- *Helhesten* Year 1, Booklet 3 (September 17, 1941) - Cover by Jens Søndergaard
+- *Helhesten* Year 1, Booklet 4 (October 18, 1941) - Cover by Hans Scherfig
+- *Helhesten* Year 1, Booklets 5 & 6 (November 18, 1941) - Cover by Axel Salto
+- *Helhesten* Year 2, Booklet 1 (October 30, 1942) - Cover by Niels Lergaard
+- *Helhesten* Year 2, Booklets 2 & 3 (March 10, 1943) - Cover by Storm Petersen
+- *Helhesten* Year 2, Booklet 4 (December 24, 1943) - Cover by Ejler Bille
+- *Helhesten* Year 2, Booklets 5 & 6 (November 11, 1944) - Cover by Carl-Henning Pedersen
 
 ## Explore the Book
 
@@ -92,4 +92,3 @@ Other issues in the series include:
 
 *This is a preview only - <a href="https://archive.org/details/helhesten-1-2" target="_blank">view fullsize on archive.org</a>*
 
-{% include collapsible.html %}

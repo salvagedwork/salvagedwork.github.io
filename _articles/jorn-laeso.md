@@ -30,7 +30,7 @@ book_reader:
 
 ## The Purchase of Bangsbohave
 
-The story of Jorn's connection to Læsø begins with a chance encounter on a train in January 1964. Traveling to Holstebro, Jorn fell into conversation with a fellow passenger named Svend Nielsen Dahl, who owned a farm called Bangsbohave on Læsø that he had never actually visited. Both men hailed from the same region of Jutland, and by the time they checked into a hotel in Holstebro—sharing a double bed after several whiskies—Jorn had agreed to purchase the property for 10,000 kroner with a handshake. The transaction was handled through his gallerist Børge Birch, founder of Galerie Birch in Copenhagen and one of Jorn's closest friends and supporters.
+The story of Jorn's connection to Læsø begins with a chance encounter on a train in January 1964. Traveling to Holstebro, Jorn fell into conversation with a fellow passenger named Svend Nielsen Dahl, who owned a farm called Bangsbohave on Læsø that he had never actually visited. Both men hailed from the same region of Jutland, and by the time they checked into a hotel in Holstebro-sharing a double bed after several whiskies-Jorn had agreed to purchase the property for 10,000 kroner with a handshake. The transaction was handled through his gallerist Børge Birch, founder of Galerie Birch in Copenhagen and one of Jorn's closest friends and supporters.
 
 Jorn later reflected on the peculiar circumstances in an interview with *Ekstra Bladet* in October 1968, noting that behind the seeming coincidence lay a deeper motivation: as an artist with no active role in Danish cultural life who nonetheless felt himself to be Danish, he needed a place where he could exist without bothering anyone. "One can say I am here to be a little forgotten," he explained. "Decay quietly, little by little. Perhaps this is the start of the retreat."
 
@@ -48,7 +48,7 @@ When Jorn finally took possession in 1968, he declared to *Ekstra Bladet*: "Stra
 
 ## The Mural at Birch's Farm
 
-During Jorn's first substantial visit to Læsø in August 1965, an extraordinary episode occurred at Birch's summer house. While Birch worked outside felling trees to create more open space on the property, Jorn slipped inside after declaring he wanted a beer. Finding a supply of paints in the living room—including a can of Læsøgrøn, the distinctive green used on local farmhouse woodwork—he spontaneously began painting one entire wall of the barn.
+During Jorn's first substantial visit to Læsø in August 1965, an extraordinary episode occurred at Birch's summer house. While Birch worked outside felling trees to create more open space on the property, Jorn slipped inside after declaring he wanted a beer. Finding a supply of paints in the living room-including a can of Læsøgrøn, the distinctive green used on local farmhouse woodwork-he spontaneously began painting one entire wall of the barn.
 
 The resulting mural spans sixteen meters and functions as a decorative element binding together the varied sequence of dark, low-ceilinged rooms typical of Læsø properties. Beginning on the right with a scene of many figures, it continues across a doorway whose deep sides contain hidden erotic images, then proceeds to a section featuring a sun rendered as a face and an enormous composite mask. As the composition moves leftward, it grows progressively darker, as if depicting a cheerful day drawing to a close, culminating in a nocturne scene around a corner. This monumental work, covering over fifty square meters, was later dismantled and preserved; it has been exhibited at ARKEN Museum for Contemporary Art and in 2024 was installed permanently at Museum Jorn in Silkeborg.
 
@@ -59,7 +59,7 @@ The resulting mural spans sixteen meters and functions as a decorative element b
 
 ## Life and Work on the Island
 
-Jorn's pattern of use at Bangsbohave was sporadic but intense. He typically arrived during summer months when it was hot in his primary studios in Albissola, Italy, and Paris. The island offered fresh air—particularly welcome given his history of tuberculosis—and a place to receive visits from his children during school holidays.
+Jorn's pattern of use at Bangsbohave was sporadic but intense. He typically arrived during summer months when it was hot in his primary studios in Albissola, Italy, and Paris. The island offered fresh air-particularly welcome given his history of tuberculosis-and a place to receive visits from his children during school holidays.
 
 The book documents Jorn's daily routines and relationships on the island through vivid anecdotes. He rode a red ladies' bicycle to his neighbor Erland Stoklund's house to make long-distance telephone calls to Italy and France. He ate at Østerby Hotel, always paying double to demonstrate that a great man had come to the island. He discussed art theory with Haugen Sørensen, who recalls that Jorn talked incessantly, filled the room with his presence, and could laugh so hard that the whole house shook.
 
@@ -112,4 +112,3 @@ After Jorn's death, Bangsbohave was leased by Stoklund and rented to tourists be
     </figure>
 </section>
 
-{% include collapsible.html %}

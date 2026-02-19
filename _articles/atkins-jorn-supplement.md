@@ -73,7 +73,7 @@ Now Jorn and I would understand each other very well. Jorn is a fantastic loss.
 
 ## Contents
 
-**Part One — Essays and Tributes**
+**Part One - Essays and Tributes**
 
 1. Pierre Alechinsky
 2. Guy Atkins
@@ -110,11 +110,10 @@ Now Jorn and I would understand each other very well. Jorn is a fantastic loss.
 
 This volume is the fourth in a five-volume catalogue raisonné of Asger Jorn's oil paintings by Guy Atkins and Troels Andersen. The series documents over 2,000 paintings spanning Jorn's entire career from 1930 to 1973, representing 45 years of research. Other volumes in the series include:
 
-- *Jorn in Scandinavia 1930-1953* (1968) — 855 paintings from Jorn's early career in Denmark
-- *Asger Jorn: The Crucial Years 1954-1964* (1977) — 751 paintings from the period of Jorn's international breakthrough
-- *Asger Jorn: The Final Years 1965-1973* (1980) — The concluding volume of the main trilogy
-- *Asger Jorn: Revised Supplement* (2006) — A further 123 paintings, concluding the registration of Jorn's œuvre
+- *Jorn in Scandinavia 1930-1953* (1968) - 855 paintings from Jorn's early career in Denmark
+- *Asger Jorn: The Crucial Years 1954-1964* (1977) - 751 paintings from the period of Jorn's international breakthrough
+- *Asger Jorn: The Final Years 1965-1973* (1980) - The concluding volume of the main trilogy
+- *Asger Jorn: Revised Supplement* (2006) - A further 123 paintings, concluding the registration of Jorn's œuvre
 
 The Supplement integrates the appendixes from all three preceding volumes with the newly discovered paintings into a single chronological sequence, using the prefix "S" before each catalogue number for easy reference.
 
-{% include collapsible.html %}

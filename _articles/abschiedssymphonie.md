@@ -33,7 +33,7 @@ last_modified_at: 2025-02-13
 The concert took place at the Hochschule für bildende Künste (HfBK) in Hamburg on November 29, 1985, as the opening event of the *Towards Art-of-Peace Biennale*, an exhibition at the Kunstverein Hamburg curated by René Block.<span class="footnote"><a href="https://www.otherminds.org/wp-content/uploads/2017/09/fluxus_program_lorez.pdf" target="_blank"><em>Something Else: A Fluxus Semicentenary</em></a>, Other Minds programme notes.</span> The Biennale was the realization of a project conceived by the French Fluxus artist Robert Filliou, who between 1980 and 1984 had served as visiting professor at the HfBK and spent two years with students researching the relationship between art practice and peace.<span class="footnote"><a href="https://rokantyfaszystowski.org/en/art-of-peace-biennale/" target="_blank">Rok Antyfaszystowski, "Art-of-Peace Biennale"</a>. Accessed 2025-02-13.</span> Filliou envisioned a permanent cycle of interdisciplinary events bringing together artists, economists, scientists, and spiritual teachers. In the end, only one exhibition materialized, and Filliou himself was too ill to attend; he withdrew from the art world shortly after and died in December 1987.
 
 {% capture fluxus_quote %}
-A concert by Paik and Christiansen was scheduled in Hamburg on November 29, 1985, and visual artist Joseph Beuys was supposed to be a member of the group. The occasion was the opening concert of a large exhibition, "Art of Peace Biennale/The Art School of Hamburg" curated by René Block... However, as Beuys had become too ill to travel, he phoned in his participation — a novelty in those days — and is heard speaking by telephone from time to time.
+A concert by Paik and Christiansen was scheduled in Hamburg on November 29, 1985, and visual artist Joseph Beuys was supposed to be a member of the group. The occasion was the opening concert of a large exhibition, "Art of Peace Biennale/The Art School of Hamburg" curated by René Block... However, as Beuys had become too ill to travel, he phoned in his participation - a novelty in those days - and is heard speaking by telephone from time to time.
 {% endcapture %}
 {% include quote.html text=fluxus_quote attribution='- <a href="https://www.otherminds.org/wp-content/uploads/2017/09/fluxus_program_lorez.pdf" target="_blank"><em>Something Else: A Fluxus Semicentenary</em></a>' %}
 
@@ -46,15 +46,15 @@ When Beuys was asked by René Block if he wanted to participate in the opening c
 <br><br>
 The opening concert of the Peace Biennial ran under the motto "Peace must be active." The room was full of phonetic images: Paik plays the horse head fiddle and Christiansen plays a piano bird. On his piano is a white canary female, who is constantly hopping and peeping... Christiansen flaps between the chords with his arm wings and sings a few words on the way: "Love is here to stay." Paik goes to the TV and now shows the Tokiovideo, a concert with him and Beuys, where Beuys records the 'ö-ö' theme and makes himself understood in Japan. On tape in the hall runs the sound of the sea and the SYMPHONY NATURA and the wolves sing together with Beuys 'ö-ö ssang-ssang' (Korean = together).
 <br><br>
-Paik attacks his piano with love and plays Chopin. Christiansen accompanies him flying on his piano, while Paik's microphone falls out and Chopin flutters around in the great hall. After the applause, only a ringing and the female canary singing to the sound of the sea is to hear — peace.
+Paik attacks his piano with love and plays Chopin. Christiansen accompanies him flying on his piano, while Paik's microphone falls out and Chopin flutters around in the great hall. After the applause, only a ringing and the female canary singing to the sound of the sea is to hear - peace.
 <br><br>
-During the concert, Beuys answered by phone. The oxygen is released, and he has said the beautiful phrase, "BEI EINEM 'WESENSGEMÄSSEN' ..., etc., and Felisch has chalked this down on the blackboard, with the triangle and the tetrad — and after repeating the sentence by Beuys and his question "OK then?" and after Felisch's "yes," Beuys has said goodbye to all of us.
+During the concert, Beuys answered by phone. The oxygen is released, and he has said the beautiful phrase, "BEI EINEM 'WESENSGEMÄSSEN' ..., etc., and Felisch has chalked this down on the blackboard, with the triangle and the tetrad - and after repeating the sentence by Beuys and his question "OK then?" and after Felisch's "yes," Beuys has said goodbye to all of us.
 {% endcapture %}
 {% include quote.html text=liner_quote attribution="- Henning Christiansen, <em>Abschiedssymphonie</em> liner notes, Berlin, 29.11.1987" %}
 
-The collaboration between Christiansen and Beuys stretched back over two decades. The two first met in the early 1960s and shared a belief in performance as a means of individual liberation, with political engagement running through much of their joint work. Christiansen provided the sonic component for many of Beuys' most significant actions, including *Eurasienstab — Fluxorum Organum* (1968) and *Die Grosse Grüne Zeitsymphonie* (1980–81).<span class="footnote"><a href="https://surround.noquam.com/nature-and-culture/" target="_blank">Greg Lutz, "Nature and Culture"</a>, <em>Surround</em>. Accessed 2025-02-13.</span> The Friedenskonzert would be their last collaboration. Nobody in the audience could have known that Beuys' telephone farewell was also a final one. Less than a month later, on December 23, 1985, Beuys opened *Palazzo Regale* at the Museo di Capodimonte in Naples, an installation he consciously intended as a summing-up of his life's work.<span class="footnote">Stephen Robert Carruthers, <a href="https://www.researchgate.net/publication/374338754" target="_blank">"The 1985 Exhibition of The Palazzo Regale of Joseph Beuys at the Salone de Camuccini at the Museo de Capodimonte in Naples"</a>, <em>ResearchGate</em>, 2023.</span> He received the Wilhelm Lehmbruck Prize on January 12, 1986, and died of heart failure eleven days later in Düsseldorf, at the age of sixty-four.<span class="footnote"><a href="https://www.tate.org.uk/art/artists/joseph-beuys-747" target="_blank">Tate, "Joseph Beuys: Chronology"</a>. Accessed 2025-02-13.</span>
+The collaboration between Christiansen and Beuys stretched back over two decades. The two first met in the early 1960s and shared a belief in performance as a means of individual liberation, with political engagement running through much of their joint work. Christiansen provided the sonic component for many of Beuys' most significant actions, including *Eurasienstab - Fluxorum Organum* (1968) and *Die Grosse Grüne Zeitsymphonie* (1980–81).<span class="footnote"><a href="https://surround.noquam.com/nature-and-culture/" target="_blank">Greg Lutz, "Nature and Culture"</a>, <em>Surround</em>. Accessed 2025-02-13.</span> The Friedenskonzert would be their last collaboration. Nobody in the audience could have known that Beuys' telephone farewell was also a final one. Less than a month later, on December 23, 1985, Beuys opened *Palazzo Regale* at the Museo di Capodimonte in Naples, an installation he consciously intended as a summing-up of his life's work.<span class="footnote">Stephen Robert Carruthers, <a href="https://www.researchgate.net/publication/374338754" target="_blank">"The 1985 Exhibition of The Palazzo Regale of Joseph Beuys at the Salone de Camuccini at the Museo de Capodimonte in Naples"</a>, <em>ResearchGate</em>, 2023.</span> He received the Wilhelm Lehmbruck Prize on January 12, 1986, and died of heart failure eleven days later in Düsseldorf, at the age of sixty-four.<span class="footnote"><a href="https://www.tate.org.uk/art/artists/joseph-beuys-747" target="_blank">Tate, "Joseph Beuys: Chronology"</a>. Accessed 2025-02-13.</span>
 
-Christiansen's liner notes, written on the second anniversary of the concert, reflect on Beuys' concept of *Wärmecharakter im Denken* — "warmth of character in thinking."<span class="footnote">Christiansen, liner notes, <em>Abschiedssymphonie</em>.</span> In Christiansen's reading, the warmth is transformed into thought, and thought into human capacities, and the energy must cycle back again: "the generator must run forever." The text circles around Beuys' final telephoned sentence, treating it as a kind of philosophical bequest about the relationship between human ability and liberation. Christiansen closes: "Ability to love. Ability to develop new ideas for peace is art."
+Christiansen's liner notes, written on the second anniversary of the concert, reflect on Beuys' concept of *Wärmecharakter im Denken* - "warmth of character in thinking."<span class="footnote">Christiansen, liner notes, <em>Abschiedssymphonie</em>.</span> In Christiansen's reading, the warmth is transformed into thought, and thought into human capacities, and the energy must cycle back again: "the generator must run forever." The text circles around Beuys' final telephoned sentence, treating it as a kind of philosophical bequest about the relationship between human ability and liberation. Christiansen closes: "Ability to love. Ability to develop new ideas for peace is art."
 
 ## Recording
 
@@ -70,11 +70,11 @@ The LP was released in 1988 by Edition Block (EB 118) in a gatefold sleeve with 
 
 **Personnel**
 
-Henning Christiansen — piano, recording, mixing<br>
-Nam June Paik — piano, violin<br>
-Joseph Beuys — telephone<br>
-Ernst Kretzer, Esben Christiansen, Lorenzo Mammi, Thomas Stelter — recording<br>
-Jean Martin — mixing
+Henning Christiansen - piano, recording, mixing<br>
+Nam June Paik - piano, violin<br>
+Joseph Beuys - telephone<br>
+Ernst Kretzer, Esben Christiansen, Lorenzo Mammi, Thomas Stelter - recording<br>
+Jean Martin - mixing
 
 ### Audio
 
@@ -84,7 +84,6 @@ Jean Martin — mixing
 
 {% include articles/abschiedssymphonie/linernotes.html %}
 
-{% include collapsible.html %}
 
 ## Gallery
 
