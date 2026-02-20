@@ -1,22 +1,35 @@
-<div class="creator-card">
-	<div class="creator-card-image">
-		<a href="{{ creator.url }}"><img src="/assets/images/creator_profiles/{{ creator.name }}.png" alt="{{ creator.title }}" /></a>
+{%- assign creator_data = site.data.creators | where: "slug", creator_slug | first -%}
+{%- assign creator_col = site.creators | where: "name", creator_slug | first -%}
+{%- assign creator_articles = site.articles | where_exp: "article", "article.creators contains creator_slug" -%}
+{%- assign count = creator_articles.size -%}
+{%- if count >= 20 -%}{%- assign heat_class = "heat-4" -%}
+{%- elsif count >= 5 -%}{%- assign heat_class = "heat-3" -%}
+{%- elsif count >= 3 -%}{%- assign heat_class = "heat-2" -%}
+{%- elsif count >= 2 -%}{%- assign heat_class = "heat-1" -%}
+{%- else -%}{%- assign heat_class = "heat-0" -%}
+{%- endif -%}
+<a href="{{ creator_col.url }}" class="creator-card {{ heat_class }}">
+	<div class="creator-card-header">
+		<span class="creator-card-name">{{ creator_data.name | default: creator_slug }}</span>
+		<span class="creator-card-count">{{ count }}</span>
 	</div>
-	<div class="creator-card-content">
-		<h3><a href="{{ creator.url }}">{{ creator.title }}</a></h3>
-		<p class="creator-card-description">{{ creator.description }}</p>
-		{% assign creator_articles = site.articles | where_exp: "article", "article.creators contains creator.name" %}
-		{% if creator_articles.size > 0 %}
-		<p class="creator-card-meta">{{ creator_articles.size }} article{% if creator_articles.size != 1 %}s{% endif %} archived</p>
-		<div class="creator-card-articles">
-			{% for article in creator_articles limit:3 %}
-			<a href="{{ article.url }}" class="creator-card-article-link">{{ article.title }}</a>{% unless forloop.last %}, {% endunless %}
-			{% endfor %}
-			{% if creator_articles.size > 3 %}
-			<span class="creator-card-more">and {{ creator_articles.size | minus: 3 }} more...</span>
-			{% endif %}
-		</div>
+	{%- if creator_data.nationality or creator_data.born -%}
+	<p class="creator-card-meta">
+		{%- if creator_data.nationality -%}{{ creator_data.nationality }}{%- endif -%}
+		{%- if creator_data.born -%}
+			{%- if creator_data.nationality -%}&thinsp;·&thinsp;{%- endif -%}
+			{{ creator_data.born }}–{%- if creator_data.died -%}{{ creator_data.died }}{%- else -%}present{%- endif -%}
+		{%- endif -%}
+	</p>
+	{%- endif -%}
+	{% if count > 0 %}
+	<ul class="creator-card-articles">
+		{% for article in creator_articles limit:3 %}
+		<li>{{ article.title }}</li>
+		{% endfor %}
+		{% if count > 3 %}
+		<li class="creator-card-more">+{{ count | minus: 3 }} more</li>
 		{% endif %}
-		<a href="{{ creator.url }}" class="creator-card-link">View creator profile →</a>
-	</div>
-</div>
+	</ul>
+	{% endif %}
+</a>

@@ -1,15 +1,41 @@
 ---
 layout: default
 ---
-{%- capture creator_name -%}{% include titlecase.html text=page.name %}{%- endcapture -%}
+{%- assign creator_data = site.data.creators | where: "slug", page.name | first -%}
+{%- assign display_name = creator_data.name | default: page.name | split: '-' | join: ' ' -%}
 
-<h1>{{ creator_name }}</h1>
+<div class="creator-page">
 
-{{ content }}
+	<header class="creator-header">
+		<h1>{{ display_name }}</h1>
+		<p class="creator-meta">
+			{%- if creator_data.nationality -%}
+				<span class="creator-nationality">{{ creator_data.nationality }}</span>
+			{%- endif -%}
+			{%- if creator_data.born -%}
+				<span class="creator-dates">
+					&thinsp;·&thinsp;
+					{{ creator_data.born }}–{%- if creator_data.died -%}{{ creator_data.died }}{%- else -%}present{%- endif -%}
+				</span>
+			{%- endif -%}
+			{%- if creator_data.wikipedia -%}
+				<span class="creator-wikipedia">&thinsp;·&thinsp;<a href="{{ creator_data.wikipedia }}" target="_blank" rel="noopener">Wikipedia &nearr;</a></span>
+			{%- endif -%}
+		</p>
+		<hr />
+	</header>
 
-<h3>Articles featuring {{ creator_name }}:</h3>
+	{% assign creator_articles = site.articles | where_exp: "article", "article.creators contains page.name" %}
 
-{% assign filtered_articles = site.articles | where_exp: "article", "article.creators contains page.name" %}
-{% for article in filtered_articles %}
-  {% include article-listing.html %}
-{% endfor %}
+	{% if creator_articles.size > 0 %}
+	<section class="creator-articles">
+		<h2>{{ creator_articles.size }} article{% if creator_articles.size != 1 %}s{% endif %} archived</h2>
+		{% for article in creator_articles %}
+			{% include article-listing.html %}
+		{% endfor %}
+	</section>
+	{% else %}
+	<p class="creator-no-articles">No articles archived yet for this creator.</p>
+	{% endif %}
+
+</div>

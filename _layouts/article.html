@@ -19,13 +19,8 @@ layout: default
 					{%- endfor -%}
 					: {% endif -%}
 					{%- for creator_slug in page.creators -%}
-					{%- assign creator = site.creators | where: "name", creator_slug | first -%}
-					{%- if creator -%}
-					<a href="/creator/{{ creator_slug }}/">{{ creator.title }}</a>
-					{%- else -%}
-					<a href="/creator/{{ creator_slug }}/">{% include titlecase.html text=creator_slug %}</a>
-					{%- endif -%}
-					{%- unless forloop.last %}, {% endunless -%}
+					{%- assign creator_data = site.data.creators | where: "slug", creator_slug | first -%}
+					<a href="/creator/{{ creator_slug }}/">{{ creator_data.name | default: creator_slug | split: '-' | join: ' ' | capitalize }}</a>{%- unless forloop.last %}, {% endunless -%}
 					{%- endfor -%}
 				</span>
 				{%- endif %}
@@ -46,7 +41,7 @@ layout: default
 		<nav class="article-toc" id="article-toc" aria-label="Table of contents">
 			<div class="toc-header">
 				<span class="toc-title">Contents</span>
-				<button class="toc-toggle" id="toc-toggle" aria-expanded="false" aria-controls="toc-list-wrapper">▾</button>
+				<button class="toc-toggle" id="toc-toggle" aria-expanded="false" aria-controls="toc-list-wrapper">â–¾</button>
 			</div>
 			<div class="toc-list-wrapper" id="toc-list-wrapper">
 				<ol class="toc-list" id="toc-list"></ol>
@@ -62,4 +57,3 @@ layout: default
 </article>
 
 <script src="/js/article-toc.js"></script>
-{% include collapsible.html %}

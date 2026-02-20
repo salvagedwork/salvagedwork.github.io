@@ -1,0 +1,275 @@
+# Central creator data file.
+# To add a new creator:
+#   1. Add an entry here
+#   2. Create a minimal stub file at _creators/[slug].md (3 lines — see any existing stub)
+#
+# Fields:
+#   slug        (required) — matches the slug used in article front-matter creators: arrays
+#   name        (required) — display name
+#   surname     (required) — used for alphabetical sorting by last name
+#   born        (optional) — birth year
+#   died        (optional) — death year (omit if living)
+#   nationality (optional) — one or two words
+#   wikipedia   (optional) — full Wikipedia URL
+
+- slug: jose-vicente-asuar
+  name: José Vicente Asuar
+  surname: Asuar
+  born: 1933
+  died: 2017
+  nationality: Chilean
+  wikipedia: https://en.wikipedia.org/wiki/Jos%C3%A9_Vicente_Asuar
+
+- slug: joseph-beuys
+  name: Joseph Beuys
+  surname: Beuys
+  born: 1921
+  died: 1986
+  nationality: German
+  wikipedia: https://en.wikipedia.org/wiki/Joseph_Beuys
+
+- slug: earle-brown
+  name: Earle Brown
+  surname: Brown
+  born: 1926
+  died: 2002
+  nationality: American
+  wikipedia: https://en.wikipedia.org/wiki/Earle_Brown
+
+- slug: john-cage
+  name: John Cage
+  surname: Cage
+  born: 1912
+  died: 1992
+  nationality: American
+  wikipedia: https://en.wikipedia.org/wiki/John_Cage
+
+- slug: henning-christiansen
+  name: Henning Christiansen
+  surname: Christiansen
+  born: 1932
+  died: 1996
+  nationality: Danish
+  wikipedia: https://en.wikipedia.org/wiki/Henning_Christiansen
+
+- slug: liesbeth-crommelin
+  name: Liesbeth Crommelin
+  surname: Crommelin
+  born: 1944
+  nationality: Dutch
+
+- slug: guy-debord
+  name: Guy Debord
+  surname: Debord
+  born: 1931
+  died: 1994
+  nationality: French
+  wikipedia: https://en.wikipedia.org/wiki/Guy_Debord
+
+- slug: christian-dotremont
+  name: Christian Dotremont
+  surname: Dotremont
+  born: 1922
+  died: 1979
+  nationality: Belgian
+  wikipedia: https://en.wikipedia.org/wiki/Christian_Dotremont
+
+- slug: jean-dubuffet
+  name: Jean Dubuffet
+  surname: Dubuffet
+  born: 1901
+  died: 1985
+  nationality: French
+  wikipedia: https://en.wikipedia.org/wiki/Jean_Dubuffet
+
+- slug: marcel-duchamp
+  name: Marcel Duchamp
+  surname: Duchamp
+  born: 1887
+  died: 1968
+  nationality: French-American
+  wikipedia: https://en.wikipedia.org/wiki/Marcel_Duchamp
+
+- slug: morton-feldman
+  name: Morton Feldman
+  surname: Feldman
+  born: 1926
+  died: 1987
+  nationality: American
+  wikipedia: https://en.wikipedia.org/wiki/Morton_Feldman
+
+- slug: lejaren-hiller
+  name: Lejaren Hiller
+  surname: Hiller
+  born: 1924
+  died: 1994
+  nationality: American
+  wikipedia: https://en.wikipedia.org/wiki/Lejaren_Hiller
+
+- slug: toshi-ichiyanagi
+  name: Toshi Ichiyanagi
+  surname: Ichiyanagi
+  born: 1933
+  died: 2022
+  nationality: Japanese
+  wikipedia: https://en.wikipedia.org/wiki/Toshi_Ichiyanagi
+
+- slug: asger-jorn
+  name: Asger Jorn
+  surname: Jorn
+  born: 1914
+  died: 1973
+  nationality: Danish
+  wikipedia: https://en.wikipedia.org/wiki/Asger_Jorn
+
+- slug: yves-klein
+  name: Yves Klein
+  surname: Klein
+  born: 1928
+  died: 1962
+  nationality: French
+  wikipedia: https://en.wikipedia.org/wiki/Yves_Klein
+
+- slug: ernst-krenek
+  name: Ernst Krenek
+  surname: Krenek
+  born: 1900
+  died: 1991
+  nationality: Austrian-American
+  wikipedia: https://en.wikipedia.org/wiki/Ernst_Krenek
+
+- slug: shigeko-kubota
+  name: Shigeko Kubota
+  surname: Kubota
+  born: 1937
+  died: 2015
+  nationality: Japanese-American
+  wikipedia: https://en.wikipedia.org/wiki/Shigeko_Kubota
+
+- slug: alcides-lanza
+  name: Alcides Lanza
+  surname: Lanza
+  born: 1929
+  died: 2020
+  nationality: Argentine-Canadian
+  wikipedia: https://en.wikipedia.org/wiki/Alcides_Lanza
+
+- slug: felici-maissen
+  name: Felici Maissen
+  surname: Maissen
+  born: 1910
+  died: 1992
+  nationality: Swiss
+  wikipedia: https://en.wikipedia.org/wiki/Felici_Maissen
+
+- slug: heinz-Klaus-metzger
+  name: Heinz-Klaus Metzger
+  surname: Metzger
+  born: 1932
+  died: 2016
+  nationality: German
+  wikipedia: https://en.wikipedia.org/wiki/Heinz-Klaus_Metzger
+
+- slug: charlotte-moorman
+  name: Charlotte Moorman
+  surname: Moorman
+  born: 1933
+  died: 1991
+  nationality: American
+  wikipedia: https://en.wikipedia.org/wiki/Charlotte_Moorman
+
+- slug: lars-morell
+  name: Lars Morell
+  surname: Morell
+  born: 1926
+  died: 2014
+  nationality: Danish
+
+- slug: gordon-mumma
+  name: Gordon Mumma
+  surname: Mumma
+  born: 1935
+  nationality: American
+  wikipedia: https://en.wikipedia.org/wiki/Gordon_Mumma
+
+- slug: nam-june-paik
+  name: Nam June Paik
+  surname: Paik
+  born: 1932
+  died: 2006
+  nationality: Korean-American
+  wikipedia: https://en.wikipedia.org/wiki/Nam_June_Paik
+
+- slug: jasia-reichardt
+  name: Jasia Reichardt
+  surname: Reichardt
+  born: 1933
+  nationality: Polish-British
+  wikipedia: https://en.wikipedia.org/wiki/Jasia_Reichardt
+
+- slug: rainer-riehn
+  name: Rainer Riehn
+  surname: Riehn
+  born: 1941
+  died: 2014
+  nationality: German
+  wikipedia: https://en.wikipedia.org/wiki/Rainer_Riehn
+
+- slug: karlheinz-stockhausen
+  name: Karlheinz Stockhausen
+  surname: Stockhausen
+  born: 1928
+  died: 2007
+  nationality: German
+  wikipedia: https://en.wikipedia.org/wiki/Karlheinz_Stockhausen
+
+- slug: gerald-strang
+  name: Gerald Strang
+  surname: Strang
+  born: 1908
+  died: 1983
+  nationality: American
+  wikipedia: https://en.wikipedia.org/wiki/Gerald_Strang
+
+- slug: takis
+  name: Takis
+  surname: Takis
+  born: 1925
+  died: 2019
+  nationality: Greek
+  wikipedia: https://en.wikipedia.org/wiki/Takis_(sculptor)
+
+- slug: horacio-vaggione
+  name: Horacio Vaggione
+  surname: Vaggione
+  born: 1943
+  nationality: Argentine-French
+  wikipedia: https://en.wikipedia.org/wiki/Horacio_Vaggione
+
+- slug: wolf-vostell
+  name: Wolf Vostell
+  surname: Vostell
+  born: 1932
+  died: 1998
+  nationality: German
+  wikipedia: https://en.wikipedia.org/wiki/Wolf_Vostell
+
+- slug: robert-watson
+  name: Robert Watson
+  surname: Watson
+  nationality: British
+
+- slug: charles-wilp
+  name: Charles Wilp
+  surname: Wilp
+  born: 1932
+  died: 2005
+  nationality: German
+  wikipedia: https://en.wikipedia.org/wiki/Charles_Wilp
+
+- slug: christian-wolff
+  name: Christian Wolff
+  surname: Wolff
+  born: 1934
+  nationality: American
+  wikipedia: https://en.wikipedia.org/wiki/Christian_Wolff_(composer)

@@ -6,11 +6,12 @@ permalink: /creators/
 
 # Creators
 
-<p class="page-intro">The archive focuses on works by the following artists, authors, and collaborators. Each creator page includes a biography and links to all archived materials featuring their work.</p>
+<p class="page-intro">Artists, composers, authors, and collaborators whose work is archived here.</p>
 
 <div class="creator-grid">
-{% assign sorted_creators = site.creators | sort: 'title' %}
-{% for creator in sorted_creators %}
+{% assign sorted_creators = site.data.creators | sort: "surname" %}
+{% for creator_data in sorted_creators %}
+	{% assign creator_slug = creator_data.slug %}
 	{% include creator-listing.html %}
 {% endfor %}
 </div>

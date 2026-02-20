@@ -31,6 +31,12 @@ FEATURED ARTICLE (randomly selected on each page load via JavaScript)
 (function() {
 	'use strict';
 	
+	// Creator slug → display name lookup
+	var creatorNames = {
+		{% for c in site.data.creators %}"{{ c.slug }}": {{ c.name | jsonify }}{% unless forloop.last %},{% endunless %}
+		{% endfor %}
+	};
+	
 	// All articles with featured images
 	var featuredArticles = [
 		{% for article in featured_articles %}
@@ -63,7 +69,7 @@ FEATURED ARTICLE (randomly selected on each page load via JavaScript)
 		html += ': ';
 		
 		featured.creators.forEach(function(creator, index) {
-			var creatorTitle = creator.split('-').map(function(word) {
+			var creatorTitle = creatorNames[creator] || creator.split('-').map(function(word) {
 				return word.charAt(0).toUpperCase() + word.slice(1);
 			}).join(' ');
 			
@@ -181,7 +187,7 @@ BROWSE BY SUBJECT
 		var count = parseInt(tag.getAttribute('data-count'), 10);
 		
 		// Use logarithmic scale to create more distinction between low counts
-		// log(1) = 0, log(2) â‰ˆ 0.69, log(3) â‰ˆ 1.1, etc.
+		// log(1) = 0, log(2) Ã¢â€°Ë† 0.69, log(3) Ã¢â€°Ë† 1.1, etc.
 		var logCount = Math.log(count + 1);
 		var logMax = Math.log(maxCount + 1);
 		var intensity = logCount / logMax;
@@ -278,7 +284,9 @@ CREATORS
 <p>The archive focuses on works by the following artists and authors:</p>
 
 <div class="creator-grid">
-{% for creator in site.creators %}
+{% assign sorted_creators = site.data.creators | sort: "surname" %}
+{% for creator_data in sorted_creators %}
+	{% assign creator_slug = creator_data.slug %}
 	{% include creator-listing.html %}
 {% endfor %}
 </div>

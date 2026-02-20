@@ -89,16 +89,8 @@ The book appeared in 1928, the year in which the Historic Sites and Monuments Bo
 
 <section data-gallery class="gallery-grid">
     <figure>
-        <a href="/assets/articles/lower-fort-garry/image_01.jpg"><img src="/assets/articles/lower-fort-garry/image_01.jpg"></a>
-        <figcaption>Southwest bastion and south wall of Lower Fort Garry, as reproduced in Watson's 1928 volume.</figcaption>
-    </figure>
-    <figure>
-        <a href="/assets/articles/lower-fort-garry/image_02.jpg"><img src="/assets/articles/lower-fort-garry/image_02.jpg"></a>
-        <figcaption>The residence and council house at Lower Fort Garry, seat of the HBC's annual Northern Department Council.</figcaption>
-    </figure>
-    <figure>
-        <a href="/assets/articles/lower-fort-garry/image_03.jpg"><img src="/assets/articles/lower-fort-garry/image_03.jpg"></a>
-        <figcaption>East wall, gateway, and old turnstile at Lower Fort Garry. The names of soldiers of the Wolseley Expedition are still carved into the east gate pillars.</figcaption>
+        <a href="/assets/articles/lower-fort-garry/governors-house-2024.jpg"><img src="/assets/articles/lower-fort-garry/governors-house-2024.jpg"></a>
+        <figcaption>Governor's House at Lower Fort Garry, August 2024.</figcaption>
     </figure>
 </section>
 

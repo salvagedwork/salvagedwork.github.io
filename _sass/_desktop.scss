@@ -267,24 +267,8 @@
 	// Creator Cards
 	// --------------------------------------------------------------------------
 	
-	.creator-card {
-		flex-direction: row;
-		align-items: flex-start;
-	}
-	
-	.creator-card-image {
-		flex: 0 0 120px;
-		margin-bottom: 0;
-		margin-right: 1.5rem;
-		
-		img {
-			width: 120px;
-			height: 120px;
-		}
-	}
-	
-	.creator-card-content {
-		flex: 1;
+	.creator-grid {
+		grid-template-columns: repeat(3, 1fr);
 	}
 	
 	

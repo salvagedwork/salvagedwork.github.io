@@ -6,7 +6,6 @@ baseurl: ""
 permalink: pretty
 theme: null
 paginate: 10
-future: true
 
 collections:
   articles:
@@ -33,6 +32,11 @@ defaults:
       type: "articles"
     values:
       layout: "article"
+  - scope:
+      path: ""
+      type: "creators"
+    values:
+      layout: "creator"
   - scope:
       path: ""
       type: "collections"
