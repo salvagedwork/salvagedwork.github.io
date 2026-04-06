@@ -169,11 +169,33 @@ article section:has(iframe) { overflow: hidden; }
 
 .thumbnail-caption { margin-top: 0.3rem; }
 
-.book-thumbnail { width: 33.33%; max-width: 1000px; margin: 1.5rem auto; text-align: center; }
+.thumbnail-expand-btn { background: none; border: none; color: red; cursor: pointer; font-family: "GT-Eesti-Text-Light", sans-serif; font-size: inherit; padding: 0 0 0 0.3em; text-decoration: underline; vertical-align: baseline; }
+.thumbnail-expand-btn::after { content: ' ▾'; }
+.thumbnail-expand-btn.active::after { content: ' ▴'; }
+.thumbnail-expand-btn:hover { color: #cc0000; }
+
+.thumbnail-expand-content { display: block; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; margin-top: 0.3rem; color: #666; }
+
+.book-thumbnail { width: 33.33%; max-width: 1000px; margin: 1.5rem auto; text-align: center; clear: both; }
 .book-thumbnail img { max-width: 100%; max-height: 1000px; height: auto; display: block; margin: 0 auto; }
 .book-thumbnail figcaption { font-size: 85%; color: #666; margin-top: 0.4rem; }
 
-@media only screen and (max-width: 768px) { .book-thumbnail { width: 70%; } }
+.book-thumbnail:has(+ .book-thumbnail) { float: left; clear: both; width: 33%; margin: 1.5rem 1% 1.5rem 15%; }
+
+.book-thumbnail:has(+ .book-thumbnail + .book-thumbnail) { width: 30%; margin-left: 2%; }
+
+.book-thumbnail + .book-thumbnail { float: left; clear: none; width: 33%; margin: 1.5rem 1%; }
+
+.book-thumbnail:has(+ .book-thumbnail + .book-thumbnail) + .book-thumbnail { width: 30%; }
+
+.book-thumbnail + .book-thumbnail + .book-thumbnail { width: 30%; }
+
+.book-thumbnail + .book-thumbnail + *:not(.book-thumbnail) { clear: both; }
+
+.book-thumbnail + .book-thumbnail + .book-thumbnail + * { clear: both; }
+
+@media only screen and (max-width: 768px) { .book-thumbnail { width: 70%; }
+  .book-thumbnail:has(+ .book-thumbnail), .book-thumbnail:has(+ .book-thumbnail + .book-thumbnail), .book-thumbnail + .book-thumbnail, .book-thumbnail + .book-thumbnail + .book-thumbnail { float: none; clear: both; width: 70%; margin: 1rem auto; } }
 .quote { margin-top: 1rem; padding: 0.5rem; overflow: hidden; border-left: 1px dotted black; }
 .quote p:first-child { margin-block-start: 0; }
 .quote p:last-child { margin-block-end: 0; }

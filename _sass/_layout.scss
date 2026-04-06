@@ -547,12 +547,47 @@ article section:has(iframe) {
 	margin-top: 0.3rem;
 }
 
+// Expandable thumbnail description
+.thumbnail-expand-btn {
+	background: none;
+	border: none;
+	color: $color-accent;
+	cursor: pointer;
+	font-family: $font-regular;
+	font-size: inherit;
+	padding: 0 0 0 0.3em;
+	text-decoration: underline;
+	vertical-align: baseline;
+
+	&::after {
+		content: ' ▾';
+	}
+
+	&.active::after {
+		content: ' ▴';
+	}
+
+	&:hover {
+		color: $color-accent-dark;
+	}
+}
+
+.thumbnail-expand-content {
+	display: block;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	margin-top: 0.3rem;
+	color: $color-muted;
+}
+
 // Book-specific thumbnail: centred, no box, 1/3 width
 .book-thumbnail {
 	width: 33.33%;
 	max-width: 1000px;
 	margin: 1.5rem auto;
 	text-align: center;
+	clear: both;
 
 	img {
 		max-width: 100%;
@@ -569,10 +604,66 @@ article section:has(iframe) {
 	}
 }
 
+// Multiple consecutive book-thumbnails sit side by side using floats
+// (inline-block fails here because Jekyll inserts whitespace between includes)
+
+// First of a pair: 33% wide, centered ((100 - 33 - 33 - 4) / 2 = 15% left margin)
+.book-thumbnail:has(+ .book-thumbnail) {
+	float: left;
+	clear: both;
+	width: 33%;
+	margin: 1.5rem 1% 1.5rem 15%;
+}
+
+// First of a triple: override width and centering ((100 - 30*3 - 6) / 2 = 2% left margin)
+.book-thumbnail:has(+ .book-thumbnail + .book-thumbnail) {
+	width: 30%;
+	margin-left: 2%;
+}
+
+// Second+ in any sequence
+.book-thumbnail + .book-thumbnail {
+	float: left;
+	clear: none;
+	width: 33%;
+	margin: 1.5rem 1%;
+}
+
+// Second of a triple: match triple width
+.book-thumbnail:has(+ .book-thumbnail + .book-thumbnail) + .book-thumbnail {
+	width: 30%;
+}
+
+// Third in a triple
+.book-thumbnail + .book-thumbnail + .book-thumbnail {
+	width: 30%;
+}
+
+// Clear after a pair (next element that isn't a third thumbnail)
+.book-thumbnail + .book-thumbnail + *:not(.book-thumbnail) {
+	clear: both;
+}
+
+// Clear after a triple
+.book-thumbnail + .book-thumbnail + .book-thumbnail + * {
+	clear: both;
+}
+
 // On mobile, allow book thumbnails to be wider
 @media #{$information-mobile} {
 	.book-thumbnail {
 		width: 70%;
+	}
+
+	// On mobile, all multi-thumbnails stack
+	.book-thumbnail:has(+ .book-thumbnail),
+	.book-thumbnail:has(+ .book-thumbnail + .book-thumbnail),
+	.book-thumbnail + .book-thumbnail,
+	.book-thumbnail + .book-thumbnail + .book-thumbnail {
+		float: none;
+		clear: both;
+		width: 70%;
+		margin: 1rem auto;
 	}
 }
 

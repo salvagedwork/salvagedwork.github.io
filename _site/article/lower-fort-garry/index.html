@@ -245,7 +245,7 @@
 		<header>
 			<h1>Lower Fort Garry: A History of the Stone Fort</h1>
 			
-			<p class="article-meta"><span class="article-collection"><a href="/articles/?category=books">Books</a>: <a href="/creator/robert-watson/">Robert watson</a></span>
+			<p class="article-meta"><span class="article-collection"><a href="/articles/?category=books">Books</a>: <a href="/creators/robert-watson/">Robert Watson</a></span>
 				<span class="article-subjects"><a href="/articles/?subject=hudson-bay-company">Hudson Bay Company</a>, <a href="/articles/?subject=canadian-history">Canadian History</a>, <a href="/articles/?subject=fur-trade">Fur Trade</a>, <a href="/articles/?subject=red-river-settlement">Red River Settlement</a>, <a href="/articles/?subject=rupert's-land">Rupert's Land</a>, <a href="/articles/?subject=first-nations-treaties">First Nations Treaties</a></span>
 			</p>
 			
@@ -268,8 +268,8 @@
 <table id="infobox">
     <tbody>
         <tr>
-            <td colspan="2">
-                <a href="#" data-featherlight="/assets/articles/lower-fort-garry/front.jpg"><img class="infobox-image" src="/assets/articles/lower-fort-garry/front.jpg" /></a>
+            <td colspan="2" data-gallery="">
+                <a href="/assets/articles/lower-fort-garry/front.jpg"><img class="infobox-image" src="/assets/articles/lower-fort-garry/front.jpg" /></a>
             </td>
         </tr>
         <tr>
@@ -399,18 +399,33 @@
 
 <script>
 var coll = document.getElementsByClassName("collapsible-text-button");
-for (var i = 0; i < coll.length; i++) {
+var i;
+
+for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var container = this.parentElement;
     var content = this.nextElementSibling;
-    if (content.style.maxHeight) {
+    if (content.style.maxHeight){
       content.style.maxHeight = null;
       container.classList.remove("expanded");
     } else {
       container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
-    }
+    } 
+  });
+}
+
+var expandBtns = document.getElementsByClassName("thumbnail-expand-btn");
+var j;
+
+for (j = 0; j < expandBtns.length; j++) {
+  expandBtns[j].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    var expanded = this.getAttribute("aria-expanded") === "true";
+    this.setAttribute("aria-expanded", String(!expanded));
+    content.style.maxHeight = expanded ? null : content.scrollHeight + "px";
   });
 }
 </script>

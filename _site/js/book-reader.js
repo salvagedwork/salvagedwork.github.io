@@ -23,6 +23,7 @@
 		initExpandCollapseAll();
 		initTocHighlighting();
 		initSmoothScroll();
+		initFootnoteScroll();
 	}
 
 	/**
@@ -301,6 +302,53 @@
 					}
 				}
 			});
+		});
+	}
+
+	/**
+	 * Smooth scroll when clicking Kramdown footnote links.
+	 * Uses event delegation and an attribute selector (not querySelector('#fn:1'))
+	 * because the colon in IDs like "fn:1" breaks CSS selector syntax.
+	 * Searches within the visible language div only, to avoid hitting duplicate
+	 * IDs in hidden language divs (which have getBoundingClientRect().top = 0
+	 * and would cause a spurious upward scroll).
+	 */
+	function initFootnoteScroll() {
+		document.addEventListener('click', function(e) {
+			var link = e.target.closest('a');
+			if (!link) return;
+
+			var href = link.getAttribute('href');
+			if (!href || !href.startsWith('#')) return;
+
+			var targetId = href.substring(1);
+			// Only intercept Kramdown footnote IDs (fn:N and fnref:N)
+			if (!targetId.startsWith('fn:') && !targetId.startsWith('fnref:')) return;
+
+			// Search within the visible language div to avoid duplicate IDs in hidden divs.
+			// querySelector('[id="fn:1"]') handles colons; querySelector('#fn:1') would fail.
+			var target = null;
+			var visibleContent = document.querySelector('.book-text:not([hidden])');
+			if (visibleContent) {
+				target = visibleContent.querySelector('[id="' + targetId + '"]');
+			}
+			// Fallback for single-language pages with no hidden divs
+			if (!target) {
+				target = document.getElementById(targetId);
+			}
+
+			if (!target) return;
+
+			e.preventDefault();
+
+			var offset = 20;
+			var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+			window.scrollTo({
+				top: targetPosition,
+				behavior: 'smooth'
+			});
+			// Preserve any existing query params (e.g. ?lang=en) in the URL
+			history.pushState(null, null, href);
 		});
 	}
 

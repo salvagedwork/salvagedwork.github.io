@@ -250,8 +250,8 @@
 <table id="infobox">
     <tbody>
         <tr>
-            <td colspan="2">
-                <a href="#" data-featherlight="/assets/articles/helhesten/helhesten_bound_aargang.jpg"><img class="infobox-image" src="/assets/articles/helhesten/helhesten_bound_aargang.jpg" /></a>
+            <td colspan="2" data-gallery="">
+                <a href="/assets/articles/helhesten/helhesten_bound_aargang.jpg"><img class="infobox-image" src="/assets/articles/helhesten/helhesten_bound_aargang.jpg" /></a>
             </td>
         </tr>
         <tr>
@@ -450,18 +450,33 @@
 
 <script>
 var coll = document.getElementsByClassName("collapsible-text-button");
-for (var i = 0; i < coll.length; i++) {
+var i;
+
+for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var container = this.parentElement;
     var content = this.nextElementSibling;
-    if (content.style.maxHeight) {
+    if (content.style.maxHeight){
       content.style.maxHeight = null;
       container.classList.remove("expanded");
     } else {
       container.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
-    }
+    } 
+  });
+}
+
+var expandBtns = document.getElementsByClassName("thumbnail-expand-btn");
+var j;
+
+for (j = 0; j < expandBtns.length; j++) {
+  expandBtns[j].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    var expanded = this.getAttribute("aria-expanded") === "true";
+    this.setAttribute("aria-expanded", String(!expanded));
+    content.style.maxHeight = expanded ? null : content.scrollHeight + "px";
   });
 }
 </script>
