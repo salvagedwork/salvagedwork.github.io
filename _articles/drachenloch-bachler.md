@@ -137,4 +137,4 @@ The site remains associated in the popular imagination with Neanderthal spiritua
     image="/assets/articles/drachenloch-bachler/front.jpg"
 %}
 
-{% include archive-embed.html id="apf7845.0001.001.umich.edu" %}
+{% include archive-embed.html id="drachenloch_bachler" %}
