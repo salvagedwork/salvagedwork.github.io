@@ -32,7 +32,7 @@ In the summer of 1917, Theophil Nigg, a schoolteacher from the Swiss village of 
 
 Published in 2008, Peter Baumann's *Drachenloch 1917–23* is the first complete reconstruction of that excavation's documentary record: the daily cave diaries of Nigg and of Dr. Emil Bächler (the expedition's scientific director), 86 letters from Bächler to Nigg and 16 in return, first publication notices, and photographs of skulls, bones, and stone artefacts still held in the Kirchhoferhaus in St. Gallen. The book arrives nearly a century after the first digging, and its purpose is largely corrective - not in the sense of overturning the site's importance, but of recovering it from the distortions introduced by Bächler's own published summaries.
 
-## The Cave and Its Excavators
+## The Drachenloch Cave and Its Excavators
 
 **Theophil Nigg (1860–1957)** was a senior teacher and long-serving member of the cantonal parliament (*Grossrat*) in Vättis, whose interest in the cave predated the excavations by years — he had come to know it through his work as a local historian, and his first test dig on 7 July 1917 was the fulfilment of a long-held intention. In the field he proved meticulous: his eight numbered cave diaries, four sketchbooks of centimetre-accurate situation drawings, and profile cross-sections are now deposited in the State Archives of Graubünden in Chur, and form the primary factual record of what was actually found and where.
 
@@ -42,7 +42,7 @@ The Drachenloch itself — literally "dragon hole" — sits at 2,427 metres abov
 
 Bächler published his interpretation in 1921 in the *Jahrbuch der St. Gallischen Naturwissenschaftlichen Gesellschaft*, and in expanded form in *Das alpine Paläolithikum der Schweiz* (Birkhäuser Verlag, Basel, 1940). Both publications presented the Drachenloch as a high-alpine Mousterian settlement of Neanderthal man and cave-bear hunter — claims that drew considerable international attention. They also introduced claims not supported by the excavation records themselves, and it is here that the trouble began.
 
-## What Bächler's Publications Did to the Record
+## Bächler's Publications
 
 Baumann's introduction states the problem directly: Bächler "impermissibly and freely summarized the excavation results that would have followed from the excavation records meticulously written by Nigg and by himself, by passing over the individual findings or even partially combining them, thereby giving the findings an appearance that the excavators had never encountered - one newly created by Bächler himself."<span class="footnote">Baumann, *Drachenloch 1917–23*, Introduction, p. 5. The editor also notes that Nigg's son, Anton (Toni) Nigg, published his father's records in 1978 ("Theophil Nigg, Meine Höhlen-Tagebücher v. Drachenloch 1917/1923," Chur), which partially addressed the gap but left Bächler's own notes almost entirely aside.</span>
 
@@ -52,7 +52,7 @@ What Bächler's own 1920 notebook actually records at the relevant passage is so
 
 This gap between record and publication caused lasting damage. When the stone chest could not be verified from the sources, researchers dismissed not just Bächler's more speculative claims but the entire site's archaeological credibility, including findings that the records genuinely do support - the sealed hearth, the patterned bone deposits, the stone tools in Seewerkalk. Baumann's conclusion, after reviewing all material: "the Drachenloch again today - and rightfully so - merits the outstanding significance as a high-alpine, Middle Palaeolithic find site and action site of Neanderthal Man and cave bear hunter."
 
-## The Book's Structure
+## Book Structure
 
 *Drachenloch 1917–23* opens with a prologue on palaeoanthropology - a substantial essay situating the Drachenloch within debates about Neanderthal man and the origins of modern humans. Baumann surveys the long argument between the "Out of Africa" school (Klein, Stringer) and multiregionalism (Wolpoff), before establishing the key point: the Drachenloch's charcoal, sampled from a sealed hearth in cave section H II, was dated by the C-14 laboratory at Groningen to "older than 53,000 years" (GRO 1477). The human present in the cave more than 50,000 years ago was, by any reckoning, the Neanderthal. Elisabeth Schmid, who conducted ground investigations at the site from 2 to 6 August 1954, placed the cave bear layers at the closing Riss/Würm interglacial or early Würm onset - a position the cave's altitude (which halted sedimentation during glacial maximum) supports.<span class="footnote">Schmid, *Höhlenforschung und Sedimentanalyse*, Basel 1958, pp. 123–132, cited in Baumann 2008, p. 64.</span>
 
@@ -60,7 +60,7 @@ The prologue also takes up the question of Neanderthal ritual and symbolic expre
 
 The prologue concludes with a discussion of a find made in 2004 from the excavation spoil of the cave: a Seewerkalk stone of roughly triangular form, now held in the local museum at Vättis, which Baumann interprets as a symbolic representation of female parturient fertility - a seated, slightly forward-inclined figure whose head is differentiated from the body by the rounding of the skull's rear, and whose base carries a rectangular slot (approximately 20 × 5 mm) chiselled into the light limestone. Whether this constitutes intentional figural sculpture or a natural form selectively recognised remains arguable; what Baumann identifies as the unambiguous sign of human working is the rectangular slot itself, which he reads as a symbolic womb.<span class="footnote">Figs. 17a–d in Baumann 2008, pp. 24–26. The stone is exhibited in the local museum of Vättis alongside the permanent exhibition on the Drachenloch excavations, the only such exhibition still publicly accessible.</span>
 
-### The Annotated Chronicle
+### Annotated Chronicle
 
 The body of the book is the chronicle itself, running to several hundred pages and organised strictly by year from 1917 to 1923. Each year's entry reproduces the excavation diary entries of Nigg - in italic type, following Baumann's editorial convention - alongside Bächler's own notebook passages (distinguished as bold italic where archaeologically significant), the letters between the two men, and first-publication notices from the period. Weather reports are always included; air pressure and temperature readings appear selectively. Editorial commentary appears in roman type and is precisely delimited from the primary sources.
 
@@ -72,13 +72,11 @@ The chronicle also documents the correspondence's more private dimensions: Bäch
 
 The eight bone deposits (bone pits 1–8) in cave sections H II and H III are documented in detail across the 1920 and later seasons. Across these pits, Nigg's centimetre-accurate situation sketches record the position of individual skulls, the stone slabs placed over them, and the accompanying bone material. The editor tracks each numbered skull (D 1 through D 45 in the Drachenloch catalogue, with 79 skull fragments recorded in total) against the provenance slips surviving in the St. Gallen depot, identifying discrepancies between Bächler's published account and the primary record. One recurring observation: the deposited animals are exclusively juvenile - rarely more than 1½ to 2 years old at death, based on molar wear analysis by Heinz Bächler - and include cut marks consistent with systematic defleshing with stone tools.<span class="footnote">Cut marks documented in Figs. 12–14 in Baumann 2008, pp. 21–22; age class analysis draws on Heinz Bächler, "Die Höhlenbärenschädel vom Drachenloch," in Emil Bächler, *Das alpine Paläolithikum der Schweiz*, Basel 1940, pp. 188–201.</span>
 
-## The Appendix and Koby's Theory
+## Appendix and Koby's Theory
 
 An appendix addresses what is presented as a persistent alternative explanation for the bone accumulations: F.-Ed. Koby's theory of *charriage à sec par l'ours des cavernes* (dry dragging by cave bears), under which the bone deposits are attributed to bears themselves moving bones during winter hibernation. Koby's argument gained traction precisely because Bächler's published account of the stone chest was suspect, and critics who rejected the stone chest sometimes rejected the site's Neanderthal associations altogether.
 
 The appendix closes with a note written by Nigg in 1956, the year before his death, in which he systematically refutes Koby: bones suited to tools always appear reworked in consistent ways, and the skull deposits in cave section H III - still intact after millennia - cannot be explained by the rummaging of hibernating bears. Nigg's final sentence reads: "We find it genuinely difficult to be convinced that a 'charriage à sec' ever existed anywhere at any time."<span class="footnote">Nigg's note of 1956, preserved via his son Toni Nigg; cited in Baumann 2008, Appendix, p. 5646.</span>
-
-## The Sources and the Archive
 
 The photographs in the book - of cave bear skulls, bone tools, Seewerkalk artefacts, notebook pages, and drawings - are Baumann's own, taken between December 2005 and November 2006 in the Kirchhoferhaus, St. Gallen, where the main Drachenloch depot remains closed to the public. A smaller portion of the find material is exhibited in the local museum of Vättis, whose permanent Drachenloch exhibition was designed by Toni (Anton) Nigg and opened in 1987. Baumann's acknowledgements identify Jean-Dominique Lajoux - ethnologist and former CNRS research fellow, author of *L'homme et l'ours* (Glénat, 1996) - as the person who encouraged the project, and Doris Wobmann of the Vättis museum as a central collaborator.
 

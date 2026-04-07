@@ -30,7 +30,7 @@ book_reader:
 
 **The Drachenloch above Vättis in the Tamina Valley** *(Das Drachenloch ob Vättis im Taminatale)* {{ page.description }} Published by the St. Gallen Natural Science Society and printed by Zollikofer & Cie., it stands as the first major report on what Bächler argued was the highest-situated Palaeolithic site in Europe — nearly a thousand metres higher than his earlier excavation at the Wildkirchli on the Säntis. The book's central and most enduring claim — that Neanderthal hunters had arranged cave bear skulls and bones in stone-built enclosures as part of a hunting cult — made the Drachenloch one of the most discussed and disputed archaeological sites of the twentieth century.
 
-## Context: Swiss Palaeolithic Research Before 1917
+## Swiss Palaeolithic Research Before 1917
 
 Before Bächler turned his attention to the Drachenloch, Swiss prehistoric research had centred on two post-glacial Magdalenian sites: the *Kesslerloch* near Thayngen, excavated from 1874, and the *Schweizersbild* near Schaffhausen, explored from 1891. Both had established the presence of late Palaeolithic hunters on Swiss territory, but represented the youngest phase of the Old Stone Age, associated with reindeer and mammoth. The existence of earlier, Middle Palaeolithic occupation in Switzerland remained disputed on geological grounds: authorities including Gabriel de Mortillet had argued in 1898 that Switzerland's glaciation had precluded any older human settlement, and Albrecht Penck's foundational work on the Alps during the Ice Age (1909) similarly contended that Palaeolithic humans never penetrated the alpine forelands during glaciation.
 
@@ -72,7 +72,7 @@ The excavation profiles in caves II and III revealed six consistent layers throu
 
 A striking feature of the Drachenloch profile, contrasting sharply with the Wildkirchli, is the extreme looseness and dryness of the find layers, even down to the deeper horizons. Bächler interprets this as evidence of a drier climate during the period of deposition, and notes that the bones are consequently far better preserved than those from the corresponding Wildkirchli layers.
 
-## The Palaeontological Finds
+## Palaeontological Finds
 
 Cave bear remains dominate the prehistoric horizons, constituting 99.5% of bone finds from layers III to V. Bächler estimates that the excavated material to date represents the remains of over 600 individual animals, with the total expected to rise substantially as excavations continued into the rearmost chambers. A complete series of developmental stages is present, from newborn cubs to reproductively mature animals of seven to eight years; old individuals are almost entirely absent, and heavily worn molars or long-used canine teeth — common in the Wildkirchli — do not occur. Bächler interprets the overwhelming predominance of young animals as a diagnostic criterion of human hunting, citing comparisons with cave bear assemblages from Taubach near Weimar (Acheulean-Mousterian), the Schipka cave, and Sirgenstein, where young individuals similarly predominate in contexts with demonstrable human presence.
 
@@ -96,7 +96,7 @@ Bächler presents six categories of evidence for the prehistoric settlement of t
 
 **Hunting trophy cult.** The overall interpretation Bächler advances is that the stone enclosures containing skulls and long bones represent a primitive bear cult — a hunting and sacrificial ritual in which the most valued trophies were set aside rather than discarded, the skulls placed in stone-built shrines analogous to those still practised by Caucasian and Siberian bear-hunting peoples in the early twentieth century.
 
-## The Bear Cult Controversy
+## Bear Cult Controversy
 
 Bächler's interpretation attracted immediate attention and has remained one of the most debated claims in Palaeolithic archaeology. The case rested on the proposition that the ordered arrangements of skulls and bones, the stone enclosures, and the deliberately inserted femur could not be explained by natural processes, and that they constituted the earliest known evidence of symbolic or religious behaviour in the archaeological record.
 
