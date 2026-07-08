@@ -482,6 +482,17 @@
 	  "description" : "is a 1921 monograph by Swiss naturalist Dr. Emil Bächler documenting the excavation of a prehistoric cave at 2,445 metres above sea level in the canton of St. Gallen, Switzerland, which yielded thousands of cave bear bones and contested evidence for habitation by Palaeolithic man.",
       "date"     	: "2026-04-06 00:00:00 +0200"
 
+    } ,
+  
+    {
+
+      "title"    	: "Materials for the History of Polish Territories under Prussian Administration",
+      "url"      	: "/article/materialen-zur-geschichte/",
+	  "subjects"    : "prussian-history, polish-history",
+      "category" 	: "",
+	  "description" : "is an anonymous polemical collection of historical documents published at Leipzig in 1861, assembled to contest Prussian and German-national claims to the formerly Polish lands of the Grand Duchy of Posen by turning the records, decrees, and private papers of Prussian officials against the administration that produced them. Its documentary centrepiece is the &quot;Black Register,&quot; a suppressed table of confiscated Polish crown and church estates given away as grace-and-favour gifts in the province of South Prussia in the 1790s, compiled by the Prussian whistleblower Hans von Held in a Berlin prison cell.",
+      "date"     	: "2026-07-08 00:00:00 +0200"
+
     } 
   
 ]
