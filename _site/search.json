@@ -493,6 +493,28 @@
 	  "description" : "is an anonymous polemical collection of historical documents published at Leipzig in 1861, assembled to contest Prussian and German-national claims to the formerly Polish lands of the Grand Duchy of Posen by turning the records, decrees, and private papers of Prussian officials against the administration that produced them. Its documentary centrepiece is the &quot;Black Register,&quot; a suppressed table of confiscated Polish crown and church estates given away as grace-and-favour gifts in the province of South Prussia in the 1790s, compiled by the Prussian whistleblower Hans von Held in a Berlin prison cell.",
       "date"     	: "2026-07-08 00:00:00 +0200"
 
+    } ,
+  
+    {
+
+      "title"    	: "The True Jacobins in the Prussian State, or - A Documentary Account of the Wicked Intrigues and Fraudulent Conduct in Office of Two Prussian Ministers of State",
+      "url"      	: "/article/black-book/",
+	  "subjects"    : "prussia, political-pamphlets, corruption, partitions-of-poland",
+      "category" 	: "",
+	  "description" : "is an anonymous political dossier published in 1801 with the false imprint &quot;Everywhere and nowhere,&quot; compiled by the Prussian excise official Hans von Held. Across 256 pages it reprints thirty-three official documents from the archives of South Prussia and Silesia, connected by unsigned editorial notes, in order to accuse the Silesian provincial minister Karl Georg von Hoym and the Grand Chancellor Heinrich Julius von Goldbeck of protecting a favourite, destroying a domain lessee, and lying to their king. Held bound twelve copies in black and sent them to the court, and the book has been known ever since as the Schwarzes Buch, the black book.",
+      "date"     	: "2026-07-15 00:00:00 +0200"
+
+    } ,
+  
+    {
+
+      "title"    	: "New Firebrands - Marginalia on the Tract - Confidential Letters on the Internal Affairs of the Prussian Court since the Death of Frederick II",
+      "url"      	: "/article/neue-feuerbraende/",
+	  "subjects"    : "prussia, napoleonic-wars, censorship, clandestine-publishing",
+      "category" 	: "",
+	  "description" : "is the first collected volume of a political journal issued anonymously in 1807 by the Prussian official Friedrich von Cölln, gathering the first three of the eighteen instalments that eventually appeared under a false Amsterdam and Cologne imprint. Written in the months after the destruction of the Prussian army at Jena and Auerstedt, the three parts combine eyewitness correspondence, polemical essays on the army and the state, fiscal argument, reportage from occupied Berlin, and a register naming the officials who had received confiscated Polish estates.",
+      "date"     	: "2026-07-15 00:00:00 +0200"
+
     } 
   
 ]

@@ -22,6 +22,9 @@
 <lastmod>2025-01-24T00:00:00+01:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/books/black-book/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/books/cobra-bibliotek/</loc>
 </url>
 <url>
@@ -56,6 +59,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/books/materialen-zur-geschichte/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/books/neue-feuerbraende/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/books/scania-stone-sculpture/</loc>

@@ -27,6 +27,14 @@
   died: 1950
   nationality: Swiss
   wikipedia: https://de.wikipedia.org/wiki/Emil_B%C3%A4chler
+  
+  slug: friedrich-von-coelln
+  name: Friedrich von Cölln
+  surname: Cölln
+  born: 1766
+  died: 1820
+  nationality: German
+  wikipedia: https://de.wikipedia.org/wiki/Friedrich_von_C%C3%B6lln
 
 - slug: peter-baumann
   name: Peter Baumann
@@ -86,6 +94,14 @@
   died: 1979
   nationality: Belgian
   wikipedia: https://en.wikipedia.org/wiki/Christian_Dotremont
+  
+  slug: hans-von-held
+  name: Hans von Held
+  surname: Held
+  born: 1764
+  died: 1842
+  nationality: Prussian
+  wikipedia: https://de.wikipedia.org/wiki/Hans_von_Held
 
 - slug: jean-dubuffet
   name: Jean Dubuffet
