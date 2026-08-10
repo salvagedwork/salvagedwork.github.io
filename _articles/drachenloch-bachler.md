@@ -3,7 +3,7 @@ layout: article
 title: "The Drachenloch above Vättis in the Tamina Valley"
 categories: books
 description: "is a 1921 monograph by Swiss naturalist Dr. Emil Bächler documenting the excavation of a prehistoric cave at 2,445 metres above sea level in the canton of St. Gallen, Switzerland, which yielded thousands of cave bear bones and contested evidence for habitation by Palaeolithic man."
-creators: []
+creators: [emil-bachler]
 subjects: [archaeology, palaeontology, prehistory]
 featured-image: /assets/articles/drachenloch-bachler/front.jpg
 date: 2026-04-06

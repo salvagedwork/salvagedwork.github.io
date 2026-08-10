@@ -1,4 +1,2 @@
 ---
-name: ernst-krenek
-date: 2026-02-20
 ---

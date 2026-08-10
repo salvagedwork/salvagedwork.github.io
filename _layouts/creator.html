@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-{%- assign creator_data = site.data.creators | where: "slug", page.name | first -%}
-{%- assign display_name = creator_data.name | default: page.name | split: '-' | join: ' ' -%}
+{%- assign creator_data = site.data.creators | where: "slug", page.slug | first -%}
+{%- assign display_name = creator_data.name | default: page.slug | split: '-' | join: ' ' -%}
 
 <div class="creator-page">
 
@@ -25,7 +25,7 @@ layout: default
 		<hr />
 	</header>
 
-	{% assign creator_articles = site.articles | where_exp: "article", "article.creators contains page.name" %}
+	{% assign creator_articles = site.articles | where_exp: "article", "article.creators contains page.slug" %}
 
 	{% if creator_articles.size > 0 %}
 	<section class="creator-articles">

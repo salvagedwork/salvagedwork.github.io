@@ -36,7 +36,7 @@ layout: default
 
 <span>
   {% for tag in page.tags %}
-    <a href="/tag/{{ tag }}/">
+    <a href="/articles/?tag={{ tag }}">
 			{% include titlecase.html text=tag %}
 		</a><br />
   {% endfor %}

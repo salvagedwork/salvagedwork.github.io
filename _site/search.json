@@ -5,7 +5,8 @@
       "title"    	: "Abschiedssymphonie, Op. 177",
       "url"      	: "/article/abschiedssymphonie/",
 	  "subjects"    : "fluxus",
-      "category" 	: "",
+      "categories" 	: "recordings",
+      "creators"    : "joseph-beuys, henning-christiansen, nam-june-paik",
 	  "description" : "is a recording by Henning Christiansen released by Edition Block in 1988, constructed from material recorded at the opening concert of the Biennale des Friedens in Hamburg on November 29, 1985, with Nam June Paik and Joseph Beuys.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -16,7 +17,8 @@
       "title"    	: "Asger Jorn à Silkeborg",
       "url"      	: "/article/asger-jorn-a-silkeborg/",
 	  "subjects"    : "exhibition-catalogue",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "Le musée d&#39;un peintre (Asger Jorn in Silkeborg, a painter&#39;s museum) is a partial catalogue of works held by the Silkeborg Museum of Art with a focus on the art of Danish painter Asger Jorn and the relationship that the museum&#39;s other works have with Jorn&#39;s art.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -27,7 +29,8 @@
       "title"    	: "Helhesten (Year 1, Booklet 1)",
       "url"      	: "/article/helhesten-1_1/",
 	  "subjects"    : "cobra, helhesten",
-      "category" 	: "",
+      "categories" 	: "journals",
+      "creators"    : "asger-jorn",
 	  "description" : "is the inaugural issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published during the German occupation of Denmark, it launched the most significant avant-garde art journal to emerge from occupied Europe during World War II.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -38,7 +41,8 @@
       "title"    	: "Helhesten (Year 1, Booklet 2)",
       "url"      	: "/article/helhesten-1_2/",
 	  "subjects"    : "cobra, helhesten",
-      "category" 	: "",
+      "categories" 	: "journals",
+      "creators"    : "asger-jorn",
 	  "description" : "is the second issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This landmark issue contains Asger Jorn&#39;s influential essay &quot;Intimate Banalities&quot; and was published to coincide with the groundbreaking exhibition &quot;13 Artists in a Tent.&quot;",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -49,7 +53,8 @@
       "title"    	: "Helhesten (Year 1, Booklet 3)",
       "url"      	: "/article/helhesten-1_3/",
 	  "subjects"    : "cobra, helhesten",
-      "category" 	: "",
+      "categories" 	: "journals",
+      "creators"    : "asger-jorn",
 	  "description" : "is the third issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This issue features key theoretical texts including Egill Jacobsen&#39;s introduction to Carl-Henning Pedersen&#39;s work, Niels Lergaard&#39;s essay on myth, and Egon Mathiesen&#39;s &quot;What Modern Art Is.&quot;",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -60,7 +65,8 @@
       "title"    	: "Helhesten (Year 1, Booklet 4)",
       "url"      	: "/article/helhesten-1_4/",
 	  "subjects"    : "cobra, helhesten",
-      "category" 	: "",
+      "categories" 	: "journals",
+      "creators"    : "asger-jorn",
 	  "description" : "is the fourth issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This issue features Egill Jacobsen&#39;s important profile of Asger Jorn, a poem about the hell-horse by national poet Steen Steensen Blicher, and Jens Sigsgaard&#39;s influential essay on children&#39;s drawings.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -71,7 +77,8 @@
       "title"    	: "Helhesten (Year 1, Booklets 5 &amp; 6)",
       "url"      	: "/article/helhesten-1_5-6/",
 	  "subjects"    : "cobra, helhesten",
-      "category" 	: "",
+      "categories" 	: "journals",
+      "creators"    : "asger-jorn",
 	  "description" : "is the final double issue of the first year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This combined issue completed an extraordinary first year that saw six issues published during the German occupation of Denmark.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -82,7 +89,8 @@
       "title"    	: "Helhesten (Year 2, Booklet 1)",
       "url"      	: "/article/helhesten-2_1/",
 	  "subjects"    : "cobra, helhesten",
-      "category" 	: "",
+      "categories" 	: "journals",
+      "creators"    : "asger-jorn",
 	  "description" : "is the first issue of the second year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published nearly a year after the previous issue, it marked the journal&#39;s survival despite growing financial difficulties during the German occupation.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -93,7 +101,8 @@
       "title"    	: "Helhesten (Year 2, Booklets 2 &amp; 3)",
       "url"      	: "/article/helhesten-2_2-3/",
 	  "subjects"    : "cobra, helhesten",
-      "category" 	: "",
+      "categories" 	: "journals",
+      "creators"    : "asger-jorn",
 	  "description" : "is a double issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published in March 1943, it appeared shortly after a fund-raising exhibition held to address the journal&#39;s mounting debts.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -104,7 +113,8 @@
       "title"    	: "Helhesten (Year 2, Booklet 4)",
       "url"      	: "/article/helhesten-2_4/",
 	  "subjects"    : "cobra, helhesten",
-      "category" 	: "",
+      "categories" 	: "journals",
+      "creators"    : "asger-jorn",
 	  "description" : "is the fourth issue of the second year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published on Christmas Eve 1943, this issue features Dan Sterup-Hansen&#39;s profile of Henry Heerup, Jorn&#39;s theoretical article on stylistics, and Carl-Henning Pedersen&#39;s influential essay on fantasy art.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -115,7 +125,8 @@
       "title"    	: "Helhesten (Year 2, Booklets 5 &amp; 6)",
       "url"      	: "/article/helhesten-2_5-6/",
 	  "subjects"    : "cobra, helhesten",
-      "category" 	: "",
+      "categories" 	: "journals",
+      "creators"    : "asger-jorn",
 	  "description" : "is the final issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published in November 1944, it concluded the journal&#39;s remarkable three-and-a-half-year run during the German occupation of Denmark.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -126,7 +137,8 @@
       "title"    	: "Il giardino delle delizie",
       "url"      	: "/article/il-giardino-delle-delizie/",
 	  "subjects"    : "fluxus",
-      "category" 	: "",
+      "categories" 	: "recordings",
+      "creators"    : "wolf-vostell",
 	  "description" : "(The Garden of Delights) is a recording released by Multhipla Records featuring a musical Fluxus performance by Wolf Vostell.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -137,7 +149,8 @@
       "title"    	: "La langue verte et la cuite",
       "url"      	: "/article/la-langue-verte/",
 	  "subjects"    : "structuralism, art-theory",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "&lt;em&gt;(Slang and Drunkenness)&lt;/em&gt; is a book written in French by Asger Jorn and Noël Arnaud, and edited and published by Jean Jacques Pauvert in 1968.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -148,7 +161,8 @@
       "title"    	: "Scania&#39;s Stone Sculpture During the 12th Century",
       "url"      	: "/article/scania-stone-sculpture/",
 	  "subjects"    : "comparative-vandalism, medieval-art, romanesque-architecture, sculpture",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "is a book on 12th century stone sculpture from the Scania region of southern Sweden by Erik Cinthio, with an introduction by P. V. Glob and notes by Asger Jorn.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -159,7 +173,8 @@
       "title"    	: "Signes gravés sur les églises de l&#39;Eure et du Calvados",
       "url"      	: "/article/signes-graves-eure-calvados/",
 	  "subjects"    : "comparative-vandalism, medieval-art, church-graffiti",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "(Signs Engraved on the Churches of Eure and Calvados) is a book written in French and directed by Asger Jorn, with essay contributions from various antiquities experts and photography by Gérard Franceschi.",
       "date"     	: "2019-01-01 00:00:00 +0100"
 
@@ -170,7 +185,8 @@
       "title"    	: "21 Lystegninger",
       "url"      	: "/article/21-light-drawings-jorn/",
 	  "subjects"    : "",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "(21 Light Drawings) is the title of an exhibition catalogue released by the Aarhus Art Association of 1847 in conjunction with an exhibition of Asger Jorn&#39;s light drawings at the Aarhus Festuge 1971.",
       "date"     	: "2020-12-13 00:00:00 +0100"
 
@@ -181,7 +197,8 @@
       "title"    	: "Klankteksten - Konkrete Poëzie - Visuele Teksten",
       "url"      	: "/article/klankteksten/",
 	  "subjects"    : "klankteksten",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "liesbeth-crommelin",
 	  "description" : "(Sound Texts - Concrete Poetry - Visual Texts) is the catalogue of a touring exhibition organised by the Stedelijk Museum in Amsterdam in November 1970. Conceived at a moment when concrete poetry was being declared dead, the exhibition brought together over one hundred international poets and provided a comprehensive survey of the movement&#39;s visual, typographic, and phonetic dimensions.",
       "date"     	: "2021-03-09 00:00:00 +0100"
 
@@ -192,7 +209,8 @@
       "title"    	: "Cybernetic Serendipity - The Computer and the Arts",
       "url"      	: "/article/cybernetic-serendipity/",
 	  "subjects"    : "cybernetics",
-      "category" 	: "",
+      "categories" 	: "books, recordings",
+      "creators"    : "jasia-reichardt",
 	  "description" : "is a special issue of the British magazine *Studio International*, first published in July 1968 to coincide with the exhibition of the same name at the Institute of Contemporary Arts in London. Curated by Jasia Reichardt at the suggestion of the German philosopher Max Bense, the exhibition was the first large-scale international show devoted to the relationship between computers, cybernetics, and creative activity, drawing an estimated 45,000 to 60,000 visitors and subsequently touring to the Corcoran Gallery of Art in Washington, D.C. and the newly opened Exploratorium in San Francisco.",
       "date"     	: "2021-06-11 00:00:00 +0200"
 
@@ -203,7 +221,8 @@
       "title"    	: "Asger Jorn - The Crucial Years 1954-1964",
       "url"      	: "/article/atkins-jorn-crucial-years/",
 	  "subjects"    : "painting, ceramics",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "is the second book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
       "date"     	: "2021-08-05 00:00:00 +0200"
 
@@ -214,7 +233,8 @@
       "title"    	: "Asger Jorn - The Final Years 1965-1973",
       "url"      	: "/article/atkins-jorn-final-years/",
 	  "subjects"    : "painting, sculpture, collage",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "is the third book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
       "date"     	: "2021-08-05 00:00:00 +0200"
 
@@ -225,7 +245,8 @@
       "title"    	: "Asger Jorn - Revised Supplement",
       "url"      	: "/article/atkins-jorn-revised-supplement/",
 	  "subjects"    : "painting",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "is the fifth and final book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
       "date"     	: "2021-08-05 00:00:00 +0200"
 
@@ -236,7 +257,8 @@
       "title"    	: "Jorn in Scandinavia 1930-1953",
       "url"      	: "/article/atkins-jorn-scandinavia/",
 	  "subjects"    : "",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "is the first book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
       "date"     	: "2021-08-05 00:00:00 +0200"
 
@@ -247,7 +269,8 @@
       "title"    	: "Asger Jorn - Supplement - Paintings 1930-1973",
       "url"      	: "/article/atkins-jorn-supplement/",
 	  "subjects"    : "painting",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "is the fourth book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.",
       "date"     	: "2021-08-05 00:00:00 +0200"
 
@@ -258,7 +281,8 @@
       "title"    	: "Mémoires",
       "url"      	: "/article/memoires/",
 	  "subjects"    : "situationist-international, collage, psychogeography, artist-books, detournement",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn, guy-debord",
 	  "description" : "is an artist&#39;s book by Guy Debord with structures portantes by Asger Jorn, published by the Internationale Situationniste and printed by Permild &amp; Rosengreen in Copenhagen in 1959.",
       "date"     	: "2022-02-03 00:00:00 +0100"
 
@@ -269,7 +293,8 @@
       "title"    	: "La chevelure des choses",
       "url"      	: "/article/chevelure-des-choses/",
 	  "subjects"    : "cobra, exhibition-catalogue, word-painting, artist-books",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn, christian-dotremont",
 	  "description" : "(The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.",
       "date"     	: "2022-02-05 00:00:00 +0100"
 
@@ -280,7 +305,8 @@
       "title"    	: "Asger Jorn on Læsø",
       "url"      	: "/article/jorn-laeso/",
 	  "subjects"    : "biography, cobra",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn, lars-morell",
 	  "description" : "is a book by Lars Morell documenting the Danish painter Asger Jorn&#39;s relationship with the island of Læsø, where he maintained a studio from 1964 until his death in 1973.",
       "date"     	: "2025-02-05 00:00:00 +0100"
 
@@ -291,7 +317,8 @@
       "title"    	: "The Bird, the Animal and the Human in Nordic Iron Age Art",
       "url"      	: "/article/fuglen-dyret-mennesket/",
 	  "subjects"    : "archaeology, nordic-art, comparative-vandalism",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "is the second volume in Asger Jorn&#39;s posthumous series 10,000 Years of Nordic Folk Art, featuring photographs by Gérard Franceschi and text by Norwegian archaeologist Bente Magnus examining animal symbolism in Nordic Iron Age art.",
       "date"     	: "2026-02-04 00:00:00 +0100"
 
@@ -302,7 +329,8 @@
       "title"    	: "Asger Jorn and 10,000 Years of Nordic Folk Art",
       "url"      	: "/article/jorn-10-thousand-years/",
 	  "subjects"    : "archaeology, nordic-art, folk-art, vandalism",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "is an exhibition catalogue and documentation of Asger Jorn&#39;s ambitious but unfinished project to create a 32-volume encyclopedic visual survey of Nordic art from prehistory through the Middle Ages, published in conjunction with exhibitions at the National Museum in Copenhagen and Silkeborg Art Museum in 1995-96.",
       "date"     	: "2026-02-07 00:00:00 +0100"
 
@@ -313,7 +341,8 @@
       "title"    	: "Asger Jorn&#39;s Aarhus Mural",
       "url"      	: "/article/jorn-aarhus-mural/",
 	  "subjects"    : "ceramics, murals",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "is a limited-edition booklet documenting Asger Jorn&#39;s monumental ceramic relief at Aarhus State Gymnasium in Denmark, edited by Guy Atkins with an introduction by Erik Nyholm and photography by Dominique Darbois.",
       "date"     	: "2026-02-08 00:00:00 +0100"
 
@@ -324,7 +353,8 @@
       "title"    	: "Musique Phénoménale",
       "url"      	: "/article/jorn-dubuffet-musique/",
 	  "subjects"    : "experimental-music, art-brut, sound-art",
-      "category" 	: "",
+      "categories" 	: "recordings",
+      "creators"    : "asger-jorn, jean-dubuffet",
 	  "description" : "is a collaborative recording of experimental music by Asger Jorn and Jean Dubuffet, recorded between December 1960 and March 1961 in Paris and originally published in an extremely limited edition of fifty numbered box sets by Galleria del Cavallino in Venice.",
       "date"     	: "2026-02-08 00:00:00 +0100"
 
@@ -335,7 +365,8 @@
       "title"    	: "COBRA Bibliotek",
       "url"      	: "/article/cobra-bibliotek/",
 	  "subjects"    : "cobra, avant-garde, artist-monographs",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "was a series of fifteen artist monographs published in Copenhagen in 1950, edited by Asger Jorn as the first installment of a planned permanent encyclopedia of experimental art.",
       "date"     	: "2026-02-09 00:00:00 +0100"
 
@@ -346,7 +377,8 @@
       "title"    	: "A bibliography of Asger Jorn&#39;s writings to 1963",
       "url"      	: "/article/jorn-bibliography/",
 	  "subjects"    : "bibliography, art",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "asger-jorn",
 	  "description" : "is a comprehensive bibliography documenting the Danish painter and writer Asger Jorn&#39;s published writings from 1932 to 1963, compiled by Guy Atkins and Erik Schmidt.",
       "date"     	: "2026-02-09 00:00:00 +0100"
 
@@ -357,7 +389,8 @@
       "title"    	: "Reunion",
       "url"      	: "/article/cage-duchamp-reunion/",
 	  "subjects"    : "fluxus, electronic-music, chess, artist-books",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "john-cage, marcel-duchamp, shigeko-kubota",
 	  "description" : "is an artist&#39;s book by Shigeko Kubota, published by Takeyoshi Miyazawa in 1970. Documenting the March 1968 performance *Reunion* in Toronto, the book pairs Kubota&#39;s black-and-white photographs of Marcel Duchamp and John Cage playing chess on an electronic chessboard with Cage&#39;s text *36 Acrostics re and not re Duchamp* and a blue flexi-disc recording of the event.",
       "date"     	: "2026-02-13 00:00:00 +0100"
 
@@ -368,7 +401,8 @@
       "title"    	: "History of the Parish of Cumbel",
       "url"      	: "/article/cumbel-parish-history/",
 	  "subjects"    : "romansh-literature, parish-history, switzerland",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "felici-maissen",
 	  "description" : "a parish history written in Sursilvan Romansh by the historian and priest Felici Maissen, published in 1983 by Casa editura Desertina at Mustér (Disentis), Switzerland. Spanning sixteen chapters and 264 pages, it chronicles the Catholic parish of Cumbel in the Val Lumnezia from the early medieval period through the 1980s, drawing on parish archives, baptismal and death registers, communal protocols, cantonal records, and oral tradition to document the ecclesiastical, political, demographic, and cultural life of a small Alpine community across six centuries.",
       "date"     	: "2026-02-15 00:00:00 +0100"
 
@@ -379,7 +413,8 @@
       "title"    	: "Schottische Symphonie / Requiem of Art",
       "url"      	: "/article/beuys-christiansen-schottische/",
 	  "subjects"    : "fluxus, sound-art, performance-art, action-art",
-      "category" 	: "",
+      "categories" 	: "recordings",
+      "creators"    : "joseph-beuys, henning-christiansen",
 	  "description" : "a double LP released in 1973 by Edition Schellmann, Munich, documenting two works by Joseph Beuys and Henning Christiansen drawn from their 1970 collaboration &lt;em&gt;Celtic (Kinloch Rannoch) Scottish Symphony&lt;/em&gt; at the Edinburgh College of Art.",
       "date"     	: "2026-02-18 00:00:00 +0100"
 
@@ -390,7 +425,8 @@
       "title"    	: "Symphonie &#39;Monoton-Silence&#39;",
       "url"      	: "/article/klein-monoton-silence/",
 	  "subjects"    : "nouveau-realisme, minimalism, performance-art, conceptual-art, sound-art, france",
-      "category" 	: "",
+      "categories" 	: "recordings",
+      "creators"    : "yves-klein",
 	  "description" : "a conceptual musical work by French artist Yves Klein, conceived between 1947 and 1949 and first performed publicly in Paris in 1960. Scored for a large orchestra and chorus, the piece consists of two equal parts: a sustained D major chord held for twenty minutes, followed by twenty minutes of absolute silence.",
       "date"     	: "2026-02-18 00:00:00 +0100"
 
@@ -401,7 +437,8 @@
       "title"    	: "Prince of Space, Musik der Leere",
       "url"      	: "/article/klein-space/",
 	  "subjects"    : "nouveau-realisme, conceptual-art, avant-garde, silence, fluxus-adjacent",
-      "category" 	: "",
+      "categories" 	: "recordings",
+      "creators"    : "yves-klein, charles-wilp",
 	  "description" : "a vinyl LP conceived by Yves Klein and produced by Charles Wilp, released by Sight &amp; Sound Productions in Germany. The record contains no music whatsoever - only the crackling of a stylus tracing an empty groove.",
       "date"     	: "2026-02-18 00:00:00 +0100"
 
@@ -412,7 +449,8 @@
       "title"    	: "3a Bienal Americana de Arte",
       "url"      	: "/article/bienal-americana/",
 	  "subjects"    : "electronic-music, experimental-music, latin-american-avant-garde, computer-music, aleatory-music",
-      "category" 	: "",
+      "categories" 	: "recordings",
+      "creators"    : "horacio-vaggione, john-cage, morton-feldman, earle-brown, christian-wolff, gordon-mumma, lejaren-hiller, alcides-lanza, jose-vicente-asuar, gerald-strang, ernst-krenek",
 	  "description" : "is a two-disc LP set documenting the experimental music concerts held during the Tercera Bienal Americana de Arte in Córdoba, Argentina in October 1966.",
       "date"     	: "2026-02-19 00:00:00 +0100"
 
@@ -423,7 +461,8 @@
       "title"    	: "Duett Paik/Takis",
       "url"      	: "/article/duett-paik-takis/",
 	  "subjects"    : "fluxus, kinetic-art, sound-art, performance-art, experimental-music",
-      "category" 	: "",
+      "categories" 	: "recordings",
+      "creators"    : "nam-june-paik, takis",
 	  "description" : "is a double-sided vinyl LP documenting two live performances staged at the Kölnischer Kunstverein in Cologne in June 1979, featuring Nam June Paik performing on harpsichord, piano, and voice alongside the electromagnetic sculptures of Takis.",
       "date"     	: "2026-02-19 00:00:00 +0100"
 
@@ -434,7 +473,8 @@
       "title"    	: "Lower Fort Garry: A History of the Stone Fort",
       "url"      	: "/article/lower-fort-garry/",
 	  "subjects"    : "hudson-bay-company, canadian-history, fur-trade, red-river-settlement, rupert's-land, first-nations-treaties",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "robert-watson",
 	  "description" : "is a historical account of Lower Fort Garry, the oldest intact stone fur trading post in North America, written to commemorate the centenary of the fort&#39;s construction and published by the Hudson&#39;s Bay Company in Winnipeg in 1928.",
       "date"     	: "2026-02-19 00:00:00 +0100"
 
@@ -445,7 +485,8 @@
       "title"    	: "Music Before Revolution",
       "url"      	: "/article/music-before-revolution/",
 	  "subjects"    : "experimental-music, indeterminacy, new-york-school, graphic-notation, anarchism, fluxus-adjacent",
-      "category" 	: "",
+      "categories" 	: "recordings",
+      "creators"    : "john-cage, earle-brown, morton-feldman, christian-wolff, toshi-ichiyanagi, heinz-klaus-metzger, rainer-riehn",
 	  "description" : "is a 1972 quadruple-LP box set released on the Odeon label documenting radical American experimental music from 1939 to 1970, performed by the Ensemble Musica Negativa under conductor Rainer Riehn, with liner notes by critic Heinz-Klaus Metzger and recorded conversations between the composers themselves.",
       "date"     	: "2026-02-19 00:00:00 +0100"
 
@@ -456,7 +497,8 @@
       "title"    	: "Originale",
       "url"      	: "/article/stockhausen-originale/",
 	  "subjects"    : "fluxus, happenings, electronic-music, performance-art, new-york-avant-garde-festival",
-      "category" 	: "",
+      "categories" 	: "recordings",
+      "creators"    : "karlheinz-stockhausen, nam-june-paik, charlotte-moorman",
 	  "description" : "is a recording of the 1964 New York premiere of Karlheinz Stockhausen&#39;s music theatre work of the same name, released on vinyl by Cyalume &amp; Argonzer in 2018.",
       "date"     	: "2026-02-19 00:00:00 +0100"
 
@@ -467,7 +509,8 @@
       "title"    	: "Drachenloch 1917–23",
       "url"      	: "/article/drachenloch-baumann/",
 	  "subjects"    : "cave-archaeology, palaeolithic, neanderthal, switzerland, prehistory, cave-bear",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "peter-baumann",
 	  "description" : "is a 2008 documentary chronicle by Peter Baumann reconstructing the full excavation record of the Drachenloch cave above Vättis, Switzerland, the highest-altitude Middle Palaeolithic site in Europe.",
       "date"     	: "2026-02-21 00:00:00 +0100"
 
@@ -478,7 +521,8 @@
       "title"    	: "The Drachenloch above Vättis in the Tamina Valley",
       "url"      	: "/article/drachenloch-bachler/",
 	  "subjects"    : "archaeology, palaeontology, prehistory",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "emil-bachler",
 	  "description" : "is a 1921 monograph by Swiss naturalist Dr. Emil Bächler documenting the excavation of a prehistoric cave at 2,445 metres above sea level in the canton of St. Gallen, Switzerland, which yielded thousands of cave bear bones and contested evidence for habitation by Palaeolithic man.",
       "date"     	: "2026-04-06 00:00:00 +0200"
 
@@ -489,7 +533,8 @@
       "title"    	: "Materials for the History of Polish Territories under Prussian Administration",
       "url"      	: "/article/materialen-zur-geschichte/",
 	  "subjects"    : "prussian-history, polish-history",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "",
 	  "description" : "is an anonymous polemical collection of historical documents published at Leipzig in 1861, assembled to contest Prussian and German-national claims to the formerly Polish lands of the Grand Duchy of Posen by turning the records, decrees, and private papers of Prussian officials against the administration that produced them. Its documentary centrepiece is the &quot;Black Register,&quot; a suppressed table of confiscated Polish crown and church estates given away as grace-and-favour gifts in the province of South Prussia in the 1790s, compiled by the Prussian whistleblower Hans von Held in a Berlin prison cell.",
       "date"     	: "2026-07-08 00:00:00 +0200"
 
@@ -500,7 +545,8 @@
       "title"    	: "The True Jacobins in the Prussian State, or - A Documentary Account of the Wicked Intrigues and Fraudulent Conduct in Office of Two Prussian Ministers of State",
       "url"      	: "/article/black-book/",
 	  "subjects"    : "prussia, political-pamphlets, corruption, partitions-of-poland",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "hans-von-held",
 	  "description" : "is an anonymous political dossier published in 1801 with the false imprint &quot;Everywhere and nowhere,&quot; compiled by the Prussian excise official Hans von Held. Across 256 pages it reprints thirty-three official documents from the archives of South Prussia and Silesia, connected by unsigned editorial notes, in order to accuse the Silesian provincial minister Karl Georg von Hoym and the Grand Chancellor Heinrich Julius von Goldbeck of protecting a favourite, destroying a domain lessee, and lying to their king. Held bound twelve copies in black and sent them to the court, and the book has been known ever since as the Schwarzes Buch, the black book.",
       "date"     	: "2026-07-15 00:00:00 +0200"
 
@@ -511,7 +557,8 @@
       "title"    	: "New Firebrands - Marginalia on the Tract - Confidential Letters on the Internal Affairs of the Prussian Court since the Death of Frederick II",
       "url"      	: "/article/neue-feuerbraende/",
 	  "subjects"    : "prussia, napoleonic-wars, censorship, clandestine-publishing",
-      "category" 	: "",
+      "categories" 	: "books",
+      "creators"    : "friedrich-von-coelln",
 	  "description" : "is the first collected volume of a political journal issued anonymously in 1807 by the Prussian official Friedrich von Cölln, gathering the first three of the eighteen instalments that eventually appeared under a false Amsterdam and Cologne imprint. Written in the months after the destruction of the Prussian army at Jena and Auerstedt, the three parts combine eyewitness correspondence, polemical essays on the army and the state, fiscal argument, reportage from occupied Berlin, and a register naming the officials who had received confiscated Polish estates.",
       "date"     	: "2026-07-15 00:00:00 +0200"
 

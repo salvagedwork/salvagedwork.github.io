@@ -2,7 +2,8 @@
 layout: default
 ---
 
-{% assign article = site.articles | where: "slug", page.article_slug | first %}
+{% assign book_slug = page.article_slug | default: page.slug %}
+{% assign article = site.articles | where: "slug", book_slug | first %}
 
 <div class="book-reader">
 	
@@ -38,10 +39,10 @@ layout: default
 		{% for lang in article.book_reader.languages %}
 		<div class="book-text" data-lang="{{ lang.code }}"{% unless lang.code == article.book_reader.default_language %} hidden{% endunless %}>
 			{% if lang.format == 'html' %}
-				{% capture content_path %}articles/{{ page.article_slug }}/book_{{ lang.code }}.html{% endcapture %}
+				{% capture content_path %}articles/{{ book_slug }}/book_{{ lang.code }}.html{% endcapture %}
 				{% include {{ content_path }} %}
 			{% else %}
-				{% capture content_path %}articles/{{ page.article_slug }}/book_{{ lang.code }}.md{% endcapture %}
+				{% capture content_path %}articles/{{ book_slug }}/book_{{ lang.code }}.md{% endcapture %}
 				{% capture book_content %}{% include {{ content_path }} %}{% endcapture %}
 				{{ book_content | markdownify }}
 			{% endif %}

@@ -8,7 +8,8 @@ layout: null
       "title"    	: "{{ article.title | escape }}",
       "url"      	: "{{ site.baseurl }}{{ article.url }}",
 	  "subjects"    : "{{ article.subjects | join: ', ' }}",
-      "category" 	: "{{ article.category }}",
+      "categories" 	: "{{ article.categories | join: ', ' }}",
+      "creators"    : "{{ article.creators | join: ', ' }}",
 	  "description" : "{{ article.description | escape }}",
       "date"     	: "{{ article.date }}"
 

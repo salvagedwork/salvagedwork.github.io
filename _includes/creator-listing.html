@@ -1,5 +1,5 @@
 {%- assign creator_data = site.data.creators | where: "slug", creator_slug | first -%}
-{%- assign creator_col = site.creators | where: "name", creator_slug | first -%}
+{%- assign creator_col = site.creators | where: "slug", creator_slug | first -%}
 {%- assign creator_articles = site.articles | where_exp: "article", "article.creators contains creator_slug" -%}
 {%- assign count = creator_articles.size -%}
 {%- if count >= 20 -%}{%- assign heat_class = "heat-4" -%}
