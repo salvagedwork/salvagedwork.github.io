@@ -6,17 +6,18 @@ layout: default
 
 	<div class="article-container article-container--full entry">
 
-		<header class="collection-header{% if page.kind == 'theme' %} collection-header--theme{% endif %}">
-			{% if page.kind == "theme" and page.door_image %}
-			<span class="pebble pebble--a collection-header-crop"><img src="{{ page.door_image }}" alt=""></span>
+		<header class="home-masthead collection-header">
+			<h1>{{ page.title }}</h1>
+			{% if page.kind == "theme" %}
+			<div class="home-mission">{{ content }}</div>
 			{% endif %}
-			<div class="collection-header-text">
-				<h1>{{ page.title }}</h1>
-				<hr />
-			</div>
 		</header>
 
-		{{ content }}
+		<hr class="zag-rule" />
+
+		{% unless page.kind == "theme" %}
+		<div class="article-body collection-essay">{{ content }}</div>
+		{% endunless %}
 
 		<section class="collection-articles">
 			{% unless page.kind == "theme" %}<h2>Articles in this collection</h2>{% endunless %}

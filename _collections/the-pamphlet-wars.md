@@ -12,4 +12,4 @@ articles: [black-book, neue-feuerbraende, materialen-zur-geschichte]
 date: 2026-08-10
 ---
 
-Around 1800, Prussia's political arguments were fought in print. Anonymous pamphlets appeared under false imprints, black books were bound and sent to the court, and careers ended over a footnote. These texts circulated in small numbers and against the censor; most survive in a handful of copies. Each one here can be read whole, in German and in English.
+Around 1800, Prussia's political arguments were fought in print. Anonymous pamphlets appeared under false imprints, black books were bound and sent to the court, and careers ended over a footnote. These texts circulated in small numbers and against the censor, and most survive only in a handful of copies. Each one here can be read whole, in German and in English.

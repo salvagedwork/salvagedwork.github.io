@@ -69,21 +69,24 @@ body::after {
 
 .home-masthead {
 	padding: 2.5rem 0 1.5rem;
+}
 
-	h1 {
-		font-family: $font-bold;
-		font-size: clamp(2rem, 5vw, 3.5rem);
-		line-height: 1.1;
-		margin: 0 0 1rem;
-		text-transform: lowercase;
-		letter-spacing: -0.01em;
-	}
+// The explainer paragraph under any h1, site-wide -- the one shared class
+// for this element, used on the homepage, Reading Room, About, Cookies,
+// Contact, Search, and the Creators index.
+.home-mission {
+	font-family: $font-serif;
+	font-size: 1.05rem;
+	line-height: 1.6;
+	max-width: 62ch;
+	margin: 0 0 0.9rem;
 
-	.home-mission {
-		font-size: 1.05rem;
-		line-height: $line-height;
-		max-width: 46rem;
-		margin: 0;
+	// when used as a wrapper around multi-paragraph content (theme
+	// blurbs), rather than as a single <p class="home-mission">
+	p {
+		margin: 0 0 0.9rem;
+
+		&:last-child { margin-bottom: 0; }
 	}
 }
 
@@ -673,27 +676,9 @@ body::after {
 }
 
 // --------------------------------------------------------------------------
-// Collection pages: pebble header, toolbar, sort controls
+// Collection pages: toolbar, sort controls
+// (header itself uses .home-masthead — no separate rule needed here)
 // --------------------------------------------------------------------------
-
-.collection-header--theme {
-	display: flex;
-	align-items: center;
-	gap: 1.25rem;
-
-	.collection-header-crop {
-		flex: 0 0 4.5rem;
-		width: 4.5rem;
-		height: 4.5rem;
-	}
-
-	.collection-header-text {
-		flex: 1;
-		min-width: 0;
-	}
-
-	h1 { text-transform: lowercase; }
-}
 
 .collection-toolbar {
 	display: flex;
@@ -1387,11 +1372,17 @@ body::after {
 	margin-bottom: 1.75rem;
 }
 
-.article-title {
+// The one sanctioned exception to the global h1: article titles are real
+// proper-noun-heavy titles (book names, people, places), so they keep
+// sentence case and the source voice rather than the site's lowercase
+// display type. Scoped by context, not a class on the h1 itself.
+.article-header h1 {
 	font-family: $font-serif;
 	font-weight: 600;
 	font-size: 1.9rem;
 	line-height: 1.25;
+	text-transform: none;
+	letter-spacing: normal;
 	margin: 0 0 0.6rem;
 
 	@media #{$information-desktop} {
@@ -1717,7 +1708,7 @@ body::after {
 	letter-spacing: 0.05em;
 	border: 1px solid $color-border;
 	background: $color-background;
-	padding: 0.35rem 0.5rem;
+	padding: 0.35rem 1.85rem 0.35rem 0.5rem;
 	color: $color-text;
 
 	&::placeholder {
@@ -1728,6 +1719,37 @@ body::after {
 	&:focus {
 		outline: none;
 		border-color: $ink-red;
+	}
+}
+
+// The visible search button: same destination as pressing Enter, and the
+// primary way to reach the full results page on touch devices, where a
+// virtual keyboard's Enter/Go key isn't a reliable substitute.
+.header-search-submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 1.85rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	color: $color-muted;
+	transition: color 0.2s $ease-site;
+
+	.icon-search {
+		font-size: 0.85rem;
+	}
+
+	&:hover,
+	&:focus-visible {
+		color: $ink-red;
+		outline: none;
 	}
 }
 
@@ -1772,56 +1794,13 @@ body::after {
 // The About page: the archive explaining itself
 // --------------------------------------------------------------------------
 
+// About's header, stripped to the gold standard: just spacing before the
+// h1 (which comes from the global rule) and a rule beneath it.
+// Header is just the h1 now (no pebble, no eyebrow, no counters); no
+// border here, so the flow matches the door pages exactly: h1, then
+// content, then the one zag-rule after the opening paragraph.
 .about-header {
-	display: flex;
-	align-items: center;
-	gap: 1.5rem;
-	padding-bottom: 1.25rem;
-	margin-bottom: 2rem;
-	border-bottom: 1px solid $color-border;
-
-	.about-header-crop {
-		flex: 0 0 5.5rem;
-		width: 5.5rem;
-		height: 5.5rem;
-	}
-
-	.about-header-text {
-		flex: 1;
-		min-width: 0;
-	}
-
-	.about-eyebrow {
-		font-family: $font-mono;
-		font-size: 0.8rem;
-		letter-spacing: 0.02em;
-		color: $color-muted;
-		margin: 0 0 0.4rem;
-	}
-
-	.about-title {
-		font-family: $font-serif;
-		font-weight: 600;
-		font-size: 1.9rem;
-		line-height: 1.2;
-		margin: 0 0 0.6rem;
-
-		@media #{$information-desktop} {
-			font-size: 2.4rem;
-		}
-	}
-
-	.home-counters { margin: 0; }
-
-	@media #{$information-mobile} {
-		gap: 1.1rem;
-
-		.about-header-crop {
-			flex-basis: 4rem;
-			width: 4rem;
-			height: 4rem;
-		}
-	}
+	margin-bottom: 1.5rem;
 }
 
 .about-body {
@@ -1829,11 +1808,9 @@ body::after {
 	font-size: 1.05rem;
 	line-height: 1.7;
 
-	// the opening statement carries more weight
-	> p:first-of-type {
-		font-size: 1.2rem;
-		line-height: 1.6;
-	}
+	// the opening paragraph uses .home-mission directly (applied via a
+	// Kramdown IAL in about.md), the same rule as the Reading Room's
+	// intro -- not a separate, similarly-sized rule of its own
 
 	h2 {
 		font-family: $font-regular;
@@ -1853,33 +1830,8 @@ body::after {
 }
 
 // The Goldsmith line, given room
-.about-pullquote {
-	margin: 2.5rem 0;
-	padding: 1.5rem 0 1.25rem;
-	border-top: 2px solid $ink-red;
-	border-bottom: 1px solid $color-border;
-
-	blockquote {
-		font-family: $font-serif;
-		font-style: italic;
-		font-size: 1.3rem;
-		line-height: 1.45;
-		margin: 0 0 0.75rem;
-		padding: 0;
-		border: none;
-		max-width: 32ch;
-	}
-
-	figcaption {
-		font-family: $font-mono;
-		font-size: 0.78rem;
-		color: $color-muted;
-	}
-
-	@media #{$information-desktop} {
-		blockquote { font-size: 1.55rem; }
-	}
-}
+// The Goldsmith quote uses the standard .quote component (see
+// _catalogue.scss's article quote styling) — no separate pullquote system.
 
 // The pipeline: five numbered stages on a spine. Each step is its own
 // paragraph carrying {: .method-step} in the Markdown, so no HTML wrapper
@@ -1969,31 +1921,8 @@ body::after {
 // Index pages: a shared masthead for Creators, and any future index
 // --------------------------------------------------------------------------
 
-.index-masthead {
-	padding: 0.5rem 0 0;
-
-	.index-title {
-		font-family: $font-serif;
-		font-weight: 600;
-		font-size: 1.9rem;
-		line-height: 1.2;
-		margin: 0 0 0.6rem;
-
-		@media #{$information-desktop} {
-			font-size: 2.4rem;
-		}
-	}
-
-	.index-intro {
-		font-family: $font-serif;
-		font-size: 1.05rem;
-		line-height: 1.6;
-		max-width: 62ch;
-		margin: 0 0 0.9rem;
-	}
-
-	.home-counters { margin: 0; }
-}
+// .index-masthead is retired: pages that used it now use .home-masthead
+// (h1 + .home-mission), the same wrapper as the homepage and Reading Room.
 
 // --------------------------------------------------------------------------
 // The creator roster
@@ -2114,14 +2043,7 @@ body::after {
 // --------------------------------------------------------------------------
 
 .creator-masthead {
-	.about-eyebrow {
-		font-family: $font-mono;
-		font-size: 0.8rem;
-		color: $color-muted;
-		margin: 0 0 0.4rem;
-	}
-
-	.index-title { margin-bottom: 0.5rem; }
+	h1 { margin-bottom: 0.5rem; }
 }
 
 .creator-page-meta {
@@ -2288,4 +2210,22 @@ body::after {
 	margin-top: 2.5rem;
 	padding-top: 1.25rem;
 	border-top: 1px solid $color-border;
+}
+
+// --------------------------------------------------------------------------
+// Search results page: catalogue rows, with a body-text snippet as the
+// description and a small meta line (creators, category, year) beneath it.
+// --------------------------------------------------------------------------
+
+.search-result-meta {
+	display: block;
+	font-family: $font-mono;
+	font-size: 0.7rem;
+	color: $color-muted;
+	margin-top: 0.25rem;
+}
+
+#search-results-page[hidden],
+#search-empty-state[hidden] {
+	display: none;
 }

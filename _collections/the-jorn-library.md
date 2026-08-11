@@ -12,6 +12,6 @@ articles: [21-light-drawings-jorn, asger-jorn-a-silkeborg, atkins-jorn-crucial-y
 date: 2026-08-10
 ---
 
-Jorn spent the last decade of his life arguing that in books about art the images should come first and the words should follow. He fell out with his oldest collaborator over it, then published a volume at his own expense to prove the point. This page is arranged on his terms.
+Jorn spent the last decade of his life arguing that in books about art, the images should come first and the words should follow. He fell out with his oldest collaborator over it, then published a volume at his own expense to prove the point. This page is arranged on his terms.
 
-Asger Jorn is where this archive began. Its first item was his catalogue raisonné, won at auction and digitised because it had long been out of print. The library around him now covers his whole working life: the wartime **Helhesten** journal, **CoBrA**, the **Situationist International**, and the archaeological work of his last two decades.
+The library around him covers his whole working life: the wartime **Helhesten** journal, **CoBrA**, **Situationist International**, and the archaeological work of his last two decades.

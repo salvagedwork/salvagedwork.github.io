@@ -103,6 +103,7 @@
 		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
+			<button type="button" class="header-search-submit" id="header-search-submit-desktop" aria-label="See full search results"><span class="icon-search" aria-hidden="true"></span></button>
 			<div id="header-search-results-desktop" class="header-search-results"></div>
 		</div>
 	</div>
@@ -138,6 +139,7 @@
 
 <div class="header-search-container header-search-mobile">
 	<input type="text" id="header-search-input-mobile" class="header-search-input" placeholder="Search..." autocomplete="off">
+	<button type="button" class="header-search-submit" id="header-search-submit-mobile" aria-label="See full search results"><span class="icon-search" aria-hidden="true"></span></button>
 	<div id="header-search-results-mobile" class="header-search-results"></div>
 </div>
 
@@ -250,6 +252,112 @@
 	}
 	
 	initSearch();
+
+	// --- Full results page (added separately; does not modify anything above) ---
+	//
+	// The dropdown above is unchanged from its working version. Everything
+	// below is new, independent code: it finds the search elements again on
+	// its own and adds its own listeners, so it cannot interfere with the
+	// dropdown's own event handling no matter what it does.
+	function initFullResultsLink() {
+		var isDesktop = window.innerWidth >= 769;
+		var inputId = isDesktop ? 'header-search-input-desktop' : 'header-search-input-mobile';
+		var submitId = isDesktop ? 'header-search-submit-desktop' : 'header-search-submit-mobile';
+		var resultsId = isDesktop ? 'header-search-results-desktop' : 'header-search-results-mobile';
+
+		var searchInput = document.getElementById(inputId);
+		var searchSubmit = document.getElementById(submitId);
+		var searchResults = document.getElementById(resultsId);
+		if (!searchInput) return;
+
+		function goToFullResults() {
+			var value = (searchInput.value || '').trim();
+			if (value.length === 0) return;
+			window.location.href = '/search/?q=' + encodeURIComponent(value);
+		}
+
+		// The visible button: always goes to the full results page.
+		if (searchSubmit) {
+			searchSubmit.addEventListener('click', goToFullResults);
+		}
+
+		// A second, independent Enter-key listener (deliberately not merged
+		// into the dropdown's own keydown handler above). If a dropdown
+		// result is focused, let its own native link handle Enter instead of
+		// hijacking it.
+		searchInput.addEventListener('keydown', function(e) {
+			if (e.key !== 'Enter') return;
+			var activeResult = searchResults &&
+				searchResults.querySelector('.header-search-result:focus');
+			if (!activeResult) {
+				e.preventDefault();
+				goToFullResults();
+			}
+		});
+	}
+
+	initFullResultsLink();
+
+	// --- Arrow-key navigation within the dropdown (added separately; does
+	// not modify initSearch or initFullResultsLink above) ---
+	//
+	// Uses its own DOM lookups and its own listeners, same pattern as
+	// initFullResultsLink. Event delegation on the results container
+	// (searchResults) is used for up/down movement between results, since
+	// the individual result links are destroyed and recreated on every
+	// keystroke by SimpleJekyllSearch -- listeners attached directly to
+	// them would be lost immediately. searchResults itself is never
+	// recreated, only its contents, so a delegated listener on it survives.
+	function initDropdownKeyboardNav() {
+		var isDesktop = window.innerWidth >= 769;
+		var inputId = isDesktop ? 'header-search-input-desktop' : 'header-search-input-mobile';
+		var resultsId = isDesktop ? 'header-search-results-desktop' : 'header-search-results-mobile';
+
+		var searchInput = document.getElementById(inputId);
+		var searchResults = document.getElementById(resultsId);
+		if (!searchInput || !searchResults) return;
+
+		function getResultLinks() {
+			return Array.prototype.slice.call(
+				searchResults.querySelectorAll('.header-search-result')
+			);
+		}
+
+		// From the input: Down enters the list at the first result.
+		searchInput.addEventListener('keydown', function(e) {
+			if (e.key !== 'ArrowDown') return;
+			var links = getResultLinks();
+			if (links.length === 0) return;
+			e.preventDefault();
+			links[0].focus();
+		});
+
+		// From within the list: Down/Up move between results; Up from the
+		// first result returns to the input; Escape closes and returns to
+		// the input, matching the input's own Escape behaviour.
+		searchResults.addEventListener('keydown', function(e) {
+			var links = getResultLinks();
+			var currentIndex = links.indexOf(e.target);
+			if (currentIndex === -1) return; // focus isn't on a result link
+
+			if (e.key === 'ArrowDown') {
+				e.preventDefault();
+				if (currentIndex < links.length - 1) links[currentIndex + 1].focus();
+			} else if (e.key === 'ArrowUp') {
+				e.preventDefault();
+				if (currentIndex > 0) {
+					links[currentIndex - 1].focus();
+				} else {
+					searchInput.focus();
+				}
+			} else if (e.key === 'Escape') {
+				searchResults.classList.remove('visible');
+				searchInput.focus();
+			}
+		});
+	}
+
+	initDropdownKeyboardNav();
 })();
 </script>
 
@@ -258,9 +366,8 @@
 			<div id="content">
 				<div class="creator-page">
 
-	<header class="index-masthead creator-masthead">
-		<p class="about-eyebrow">Creator</p>
-		<h1 class="index-title">John Cage</h1>
+	<header class="home-masthead creator-masthead">
+		<h1>John Cage</h1>
 
 		<p class="creator-page-meta">American &middot; 1912&ndash;1992 &middot; <a href="https://en.wikipedia.org/wiki/John_Cage" target="_blank" rel="noopener">Wikipedia &nearr;</a></p>
 		<span class="creator-lifespan creator-lifespan--page" aria-hidden="true">

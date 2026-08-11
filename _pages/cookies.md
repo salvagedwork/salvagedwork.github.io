@@ -6,9 +6,9 @@ permalink: /cookies/
 last_modified_at: 2026-08-11
 ---
 
-<div class="index-masthead">
-	<h1 class="index-title">Cookies and privacy</h1>
-	<p class="index-intro">salvaged.work sets no cookies of its own and does not track visitors. A small number of third-party services are used to run the site, and some of them may set cookies in your browser. The only personal data the site itself ever receives is what you choose to type into the contact form. This page explains both: what third parties may do, and what happens to anything you send directly to the archive.</p>
+<div class="home-masthead">
+	<h1>Cookies and privacy</h1>
+	<p class="home-mission">salvaged.work sets no cookies of its own and does not track visitors. A small number of third-party services are used to run the site, and some of them may set cookies in your browser. The only personal data the site itself ever receives is what you choose to type into the contact form. This page explains both: what third parties may do, and what happens to anything you send directly to the archive.</p>
 </div>
 
 <hr class="zag-rule" />
@@ -16,6 +16,26 @@ last_modified_at: 2026-08-11
 ## Cookies set by this site
 
 None. salvaged.work is a static website. It sets no cookies, uses no local storage, keeps no session, and has no login, comments, shopping basket, or advertising. Nothing you do here is recorded against you as an individual.
+
+## Privacy policy: the contact form
+
+The only place on this site that asks for personal data is the [contact page](/contact/), which asks for an email address and whatever message is typed.
+
+**Who is responsible for this data.** salvaged.work is an independent, non-commercial archive operated by one person, based in the European Union. The site does not publish the operator's name. For the purposes of data protection law, the operator of salvaged.work is the data controller for anything submitted through the contact form, and is reachable only through that same [contact form](/contact/).
+
+**What is collected.** The email address and message content entered into the form. Nothing else is requested. The form does not ask for a name, and none is required to send a message.
+
+**How it is used.** Solely to read and, where useful, reply to the message: for example about a work to add to the archive, a correction to a transcription or translation, or a question about the site.
+
+**How it is sent and stored.** The form submits through [Formspree](https://formspree.io/legal/privacy-policy/), a third-party form-delivery service, which forwards the message by email. Formspree's own handling of the data in transit is governed by its privacy policy, linked above. Once received, messages are read and then **deleted**. They are not archived, exported, added to a mailing list, or used for any purpose beyond the original message.
+
+**Legal basis.** Processing this data relies on legitimate interest (responding to messages sent to a contact form the sender chose to use) rather than a separate consent step, since providing an email address to a contact form is itself the request to be replied to.
+
+**International transfer.** Formspree is a US-based service. Sending the contact form involves a transfer of the message outside the EU/EEA for the purpose of delivery. See Formspree's privacy policy for the safeguards it applies to that transfer.
+
+**Retention.** Messages are deleted after being read. No fixed retention period beyond that, since none is kept.
+
+**Your rights.** Under the GDPR, anyone whose data is processed here has the right to ask what, if anything, is held about them, to have it corrected, and to have it erased. In practice this is straightforward: since messages are deleted on reading, there is usually nothing left to request after that point. To ask about a message still pending a reply, use the [contact form](/contact/) itself. You also have the right to lodge a complaint with the data protection supervisory authority in your own country of residence, or in the country the operator is based in, if you believe your data has been mishandled.
 
 ## Visitor statistics
 
@@ -61,26 +81,6 @@ The two exceptions are described above and are both deliberate:
 ## Controlling cookies yourself
 
 Every major browser can block or delete cookies, including blocking third-party cookies entirely, which would prevent the Internet Archive embed and reCAPTCHA from setting anything. This is usually found under Privacy or Site Settings. Blocking third-party cookies does not affect any other part of this site, since the site itself uses none.
-
-## Privacy policy
-
-The only place on this site that asks for personal data is the [contact page](/contact/), which asks for an email address and whatever message is typed.
-
-**Who is responsible for this data.** salvaged.work is an independent, non-commercial archive operated by one person, based in the European Union. The site does not publish the operator's name. For the purposes of data protection law, the operator of salvaged.work is the data controller for anything submitted through the contact form, and is reachable only through that same [contact form](/contact/).
-
-**What is collected.** The email address and message content entered into the form. Nothing else is requested. The form does not ask for a name, and none is required to send a message.
-
-**How it is used.** Solely to read and, where useful, reply to the message: for example about a work to add to the archive, a correction to a transcription or translation, or a question about the site.
-
-**How it is sent and stored.** The form submits through [Formspree](https://formspree.io/legal/privacy-policy/), a third-party form-delivery service, which forwards the message by email. Formspree's own handling of the data in transit is governed by its privacy policy, linked above. Once received, messages are read and then **deleted**. They are not archived, exported, added to a mailing list, or used for any purpose beyond the original message.
-
-**Legal basis.** Processing this data relies on legitimate interest (responding to messages sent to a contact form the sender chose to use) rather than a separate consent step, since providing an email address to a contact form is itself the request to be replied to.
-
-**International transfer.** Formspree is a US-based service. Sending the contact form involves a transfer of the message outside the EU/EEA for the purpose of delivery. See Formspree's privacy policy for the safeguards it applies to that transfer.
-
-**Retention.** Messages are deleted after being read. No fixed retention period beyond that, since none is kept.
-
-**Your rights.** Under the GDPR, anyone whose data is processed here has the right to ask what, if anything, is held about them, to have it corrected, and to have it erased. In practice this is straightforward: since messages are deleted on reading, there is usually nothing left to request after that point. To ask about a message still pending a reply, use the [contact form](/contact/) itself. You also have the right to lodge a complaint with the data protection supervisory authority in your own country of residence, or in the country the operator is based in, if you believe your data has been mishandled.
 
 ## Questions
 

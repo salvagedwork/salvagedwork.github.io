@@ -64,10 +64,18 @@ a:hover {
 // Typography
 // ==========================================================================
 
+// The gold standard: every h1 on the site uses this by default, with no
+// class needed. Article pages are the one exception (see .article-header
+// h1 in _catalogue.scss) and the book reader's title page is a second,
+// deliberate exception (.book-title, unchanged, matches the book's own
+// identity rather than the site's).
 h1 {
-	font-size: $font-size-medium;
 	font-family: $font-bold;
-	margin: 0 0 0.5rem 0;
+	font-size: clamp(2rem, 5vw, 3.5rem);
+	line-height: 1.1;
+	margin: 0 0 1rem;
+	text-transform: lowercase;
+	letter-spacing: -0.01em;
 }
 
 h2 {
@@ -262,9 +270,11 @@ a.current {
 	border-bottom: 1px solid $color-shade;
 	transition: background-color 0.1s ease;
 	
-	&:hover {
+	&:hover,
+	&:focus {
 		background-color: $color-shade;
 		text-decoration: none;
+		outline: none;
 	}
 	
 	&:last-child {

@@ -12,4 +12,4 @@ articles: [drachenloch-bachler, drachenloch-baumann, jorn-10-thousand-years, fug
 date: 2026-08-10
 ---
 
-Before archaeology was a profession it was a publication: excavation reports and surveys printed in small editions for learned societies. This theme holds the archive's deep time, from alpine cave bears to the engraved signs of medieval churches. It also holds the surveys Asger Jorn commissioned for his unfinished atlas of Nordic folk art.
+Before archaeology was a profession, it was a publication: excavation reports and surveys were printed in small editions for learned societies. This theme holds the archive's deep time, from alpine cave bears to the engraved signs of medieval churches. It also holds the surveys Asger Jorn commissioned for his unfinished atlas of Nordic folk art.

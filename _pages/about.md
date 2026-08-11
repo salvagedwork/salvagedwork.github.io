@@ -2,13 +2,15 @@
 layout: about
 title: About
 heading: The need for salvaging
-eyebrow: About the archive
 description: The purpose behind salvaged.work, a digital archive for salvaged analogue materials.
 permalink: /about/
 last_modified_at: 2026-08-11
 ---
 
 salvaged.work began with making the winning bid for the catalogue raisonné of the Danish painter Asger Jorn and the subsequent action to digitize the catalogue, which had long been out of print. Further research into Jorn's œuvre revealed many works that had been published in limited number and had since become scarce. salvaged.work's first idea was to digitize and rescue these rare works from the confines of their physical copies and share them with a new online audience, but has since expanded to include other works that are similarly being *salvaged*, usually from restrictive sources.
+{: .home-mission}
+
+<hr class="zag-rule" />
 
 Libraries, archives, museums, and collectors reinforce the artificial scarcity of a published work when they limit means of access. When a work is accessible through *reading room use only*, the experience requires a physical presence. In a modern digital-first society where the need for physicality is declining, institutions need to embrace this change and digitize their collections. These efforts are slowed by copyright restrictions and the sheer volume of published works to be digitized that have never been released beyond analogue form, leading to the need for intervention.
 
@@ -16,10 +18,7 @@ The voluntary dedication of *citizen archivists* to bring these works to the int
 
 salvaged.work uses the [Internet Archive](https://archive.org/) as the digital repository for these works, so that they may hopefully exist even if this archive has disappeared.
 
-<figure class="about-pullquote">
-	<blockquote>The grind of the scanner as it peels language off the page, thawing it, liberating it.</blockquote>
-	<figcaption>Kenneth Goldsmith, <cite>Theory</cite>, 2015</figcaption>
-</figure>
+{% include quote.html text="The grind of the scanner as it peels language off the page, thawing it, liberating it." attribution="- Kenneth Goldsmith, <em>Theory</em>, 2015" %}
 
 ## About the archive
 
@@ -48,11 +47,11 @@ Every text in the Reading Room passes through a human-in-the-loop digitisation p
 {: .method-step}
 
 <aside class="about-callout">
-	<h2>A note on AI and machine assistance</h2>
+	<h2>AI and machine assistance</h2>
 	<p>Transcription and translation at this scale are only possible with AI and machine learning tools, and this archive uses them openly. Using AI comes with caveats that the visitor should be aware of: machine-assisted transcription and translation can contain errors, and some will have survived review. Secondly, for any question of substance, <strong>the original language text is the authority</strong>, and behind it, the scan of the physical page. The English editions exist to open these works to readers who could not otherwise approach them; they are reading editions, not critical editions. Corrections are welcome through the <a href="/contact/">contact page</a>.</p>
 	<p>Where a book's translation protocol has been published, it is linked from the book's own pages, so the rules that governed its translation can be read alongside the result.</p>
 </aside>
 
-## On the images
+## Background images
 
 The backgrounds of this site rotate through various lithographs of Asger Jorn's *Cobra Bibliotek* portfolio, one of the works [documented in the archive](/article/cobra-bibliotek/).

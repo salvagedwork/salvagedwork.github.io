@@ -1,6 +1,8 @@
 # Die wahren Jacobiner im preussischen Staate oder actenmässige Darstellung der bösen Ränke und betrügerischen Dienstführung zweyer preussischer Staatsminister.
 
-### Die Hauptsache.
+---
+
+**Die Hauptsache.**
 
 > Jedem Besitzer das Seine und jedem Regierer den Rechtsinn!  
 > Das ist zu wünschen; doch ihr! Beydes verschafft ihr uns nicht.
@@ -13,6 +15,8 @@ S. die Xenien im Schillerschen Allmanach für 1797.
 
 Uberall und nirgends.
 
+---
+
 [p. unnumbered]
 
 > Il n'y a point de profit si legitime, qui ne soit surpassè par celui qu'on peut faire illegitimement et le tort fait au prochain est toujours plus lucratif que les services. Il ne s'agit donc plus que de trouver les moyens de s'assurer l'impunité et c'est à quoi les puissans employent toutes leurs forces et les foibles toutes leurs ruses.  
@@ -20,13 +24,15 @@ Uberall und nirgends.
 > Rousseau  
 > Discours sur l'inegalité Note 9.
 
-[p. unnumbered]
-
-## An des jetztregierenden Königs von Preussen Friedrich Wilhelms des III. erhabene und oberstrichterliche Majestät.
+---
 
 [p. unnumbered]
 
-## Allerdurchlauchtigster, Erhabenster Monarch, Verehrtester und redlichster Oberherr im Staate!
+**An des jetztregierenden Königs von Preussen Friedrich Wilhelms des III. erhabene und oberstrichterliche Majestät.**
+
+[p. unnumbered]
+
+**Allerdurchlauchtigster, Erhabenster Monarch, Verehrtester und redlichster Oberherr im Staate!**
 
 Bevor Sie gestatten, dass der Verkauf dieses Buch im Einlande verboten werde, widmen Sie ihm nur eine einzige einsame halbe Stunde, um es Selbst durchzulesen. Denn sein Inhalt ist wahrlich wichtig. Dann urtheilen Sie auch Selbst. Bloss Ihr Urtheil erachten alle diejenigen für competent, die in Ihnen nicht nur den ersten, sondern auch den redlichsten Mann im Staate sehen, und die Ihr erhabenes Amt und Ihre Person viel zu aufrichtig verehren, als dass sie gegen *Beyde*, das verbrecherische und elende Spiel einer ängstlichen und listigen Cabale versuchen könnten. Sie stehn zu hoch, Sie stehn ganz unabhängig im Heiligthume der Gerechtigkeit, als dass partheyische Rücksichten
 
@@ -40,7 +46,7 @@ Jahr 1801
 
 die Redlichsten Ihrer Diener und treusten Ihrer Unterthanen.
 
-[p. unnumbered]
+[p. 1]
 
 ## An die Leser.
 
@@ -72,13 +78,13 @@ Eines Zettels darf ich zu erwähnen nicht vergessen, der in dem Boden der Mappe 
 
 [p. 6]
 
-### Acta primae Instantiae
+**Acta primae Instantiae**
 
-"Der Regierung in Posen, in Sachen des Ober-Amtmann Früson auf Schlawiz in Schlesien, wider die Seehandlungs- Societät in Berlin, wegen Wiedereinsetzung in die Pacht der Herrschaft Krotosczyn. Angefangen den 4. Januar 1794. Und
+"Der Regierung in Posen, in Sachen des Ober-Amtmann Früson auf Schlawiz in Schlesien, wider die Seehandlungs- Societät in Berlin, wegen Wiedereinsetzung in die Pacht der Herrschaft Krotosczyn. Angefangen den 4. Januar 1794." Und
 
-### Acta primae Instantiae
+**Acta primae Instantiae**
 
-"Der Regierung in Posen in Sachen des Amtmann Früson wider die Seehandlungs- Societät in Berlin und Kriegs- und Domainen-Cammer in Bresslau, wegen Entsetzung aus der Pacht von Krotosczyn. Angefangen den 22. Decem- ber 1797."
+"Der Regierung in Posen in Sachen des Amtmann Früson wider die Seehandlungs- Societät in Berlin und Kriegs- und Domainen-Cammer in Bresslau, wegen Entsetzung aus der Pacht von Krotosczyn. Angefangen den 22. December 1797."
 
 Ob nun solche Acten wirklich existiren und ob aus ihnen gegen die hier gelieferten Verhandlungen, eine Widerlegung zu entnehmen oder ein Beweis der Verfälschung zu führen seyn möchte, werden die Herren v. Hoym
 
@@ -156,7 +162,7 @@ Dass Triebenfeld in den nachfolgenden Verhandlungen überall hinter den Coulisse
 
 [p. 21]
 
-### Friedrich der Grosse an den Staatsminister von Hoym in Bresslau.
+## Friedrich der Grosse an den Staatsminister von Hoym in Bresslau.
 
 Mein lieber Etats-Minister von Hoym. Da der bisherige Chef der See- und Salz-Handlungs-Compagnie, von Görne, der Kasse gedachter Compagnie, wie ich Euch schon gesagt habe, ansehnliche Summen schuldig ist, und ich also mich und die Kasse so gut als möglich aus dessen Vermögen bezahlt machen muss, so habe ich resolvirt, seine in Pohlen erkaufte Güther, so fort in Besitz nehmen,
 
@@ -182,7 +188,7 @@ Schulenburg.
 
 [p. 26]
 
-### Der Bresslausche Geheimerath v. Hoym, *Vetter des Ministers v. Hoym*, an den Ober-Amtmann Früson.
+## Der Bresslausche Geheimerath v. Hoym, *Vetter des Ministers v. Hoym*, an den Ober-Amtmann Früson.
 
 Wohlgebohrner Herr,
 
@@ -214,7 +220,7 @@ v. Hoym.
 
 [p. 30]
 
-### Der *Minister von Struensee* in Berlin an den Kriegsrath von Triebenfeld[^6] in Krotoschyn.
+## Der *Minister von Struensee* in Berlin an den Kriegsrath von Triebenfeld([^6]) in Krotoschyn.
 
 Der Oberamtmann Früson hat sich bey seiner Anwesenheit hier in Berlin beschwert, dass Sie ihm bey dem Betrieb seiner Pachtung viele
 
@@ -236,7 +242,7 @@ Struensee.
 
 [p. 34]
 
-### Der von dem Triebenfeld und Neumann dem Früson abgezwungene Vergleich, die Pachtung von Krotoschin wieder aufzugeben.
+## Der von dem Triebenfeld und Neumann dem Früson abgezwungene Vergleich, die Pachtung von Krotoschin wieder aufzugeben.
 
 Endesunterschriebener Ober-Amtmann Johann George Früson urkundet und bekennet hierdurch,[^7] dass er sich die von der Kalischer
 
@@ -246,7 +252,7 @@ Krieges- und Polizey-Commission gegen ihm diktirten Exmission aus der Pacht der 
 
 [p. 36]
 
-Citation, auf welche der Herr von Husarzewski, der Herr Krieges - und Forst - Rath von Triebenfeld, er und die Stadt Krotoszyn den 25. huj. mensis vor derselben erscheinen soll, als ungültig erkläre. — Auch annulliret derselbe die dem Hrn. v. Trembinski am 25. Juli ertheilte Vollmacht dergestalt, dass sie von nun an als nicht geschehen anzusehen ist. Endlich versprechen der Herr Krieges - und Forst-Rath von Triebenfeld, desgleichen der Herr Gottlieb Hermann als regierender Burgermeister, der Hr. Rudolph von Gurowski und der Hr. Thomas Chmileck als Rathmänner, dass sie von nun an gemeinschaftlich von allen intendirten Prozessen abstehen, alle Manifestationes, und Citationes sie mögen gemacht worden seyn, wo sie wollen, zurücknehmen, und sich überhaupt darüber wechseltig quittiren auch keine neue Prozesse mehr formiren wollen. Der Krieges- und Forst-Rath v. Triebenfeld verspricht überdiess, dass er Quittungen über die Aufhebung der zwischen dem Herrn Grenzrichter,
+Citation, auf welche der Herr von Husarzewski, der Herr Krieges- und Forst-Rath von Triebenfeld, er und die Stadt Krotoszyn den 25. huj. mensis vor derselben erscheinen soll, als ungültig erkläre. — Auch annulliret derselbe die dem Hrn. v. Trembinski am 25. Juli ertheilte Vollmacht dergestalt, dass sie von nun an als nicht geschehen anzusehen ist. Endlich versprechen der Herr Krieges- und Forst-Rath von Triebenfeld, desgleichen der Herr Gottlieb Hermann als regierender Burgermeister, der Hr. Rudolph von Gurowski und der Hr. Thomas Chmileck als Rathmänner, dass sie von nun an gemeinschaftlich von allen intendirten Prozessen abstehen, alle Manifestationes, und Citationes sie mögen gemacht worden seyn, wo sie wollen, zurücknehmen, und sich überhaupt darüber wechseltig quittiren auch keine neue Prozesse mehr formiren wollen. Der Krieges- und Forst-Rath v. Triebenfeld verspricht überdiess, dass er Quittungen über die Aufhebung der zwischen dem Herrn Grenzrichter,
 
 [p. 37]
 
@@ -258,7 +264,7 @@ den Hrn. v. Zablocki, v. Kordaszowski und Hrn. Ober-Amtmann Früson und seinem S
 
 [p. 39]
 
-### Der Bresslausche Regierungs Referend. Früson an den Minister von Struensee in Berlin.
+## Der Bresslausche Regierungs Referend. Früson an den Minister von Struensee in Berlin.
 
 Hochwohlgebohrner etc.
 
@@ -333,7 +339,7 @@ den 16. August 1792.
 
 [p. 49]
 
-### Der Minister von Struensee an den Referendarius Früson, damals auf der Reise in Berlin.
+## Der Minister von Struensee an den Referendarius Früson, damals auf der Reise in Berlin.
 
 Dem Herrn Referendarius Früson, kann ich auf das als Mandatarius des Ober-Amtmann Früson unterm 4. d. M. eingereichte Schreiben im allgemeinen nur dasjenige wiederholen, was ich dem Ober-Amtmann Früson bereits mehreremalen gesagt habe, dass nehmlich die Bewirthschaftung der Krotoszyner Güther von des Königes Majestät ganz der Bresslauschen Cammer überlassen worden ist, es daher auch lediglich und allein die Sache der Cammer ist, wie sie die Bewirthschaftung zu
 
@@ -355,7 +361,7 @@ Berlin den 5. September 1792.
 
 [p. 53]
 
-### Der *Ober-Amtmann Früson* an die Regierung in Posen, welche sogleich bey der im Jahre 1793 erfolgten Besitznehmung von Süd-Preussen, in dieser Stadt etablirt ward.
+## Der *Ober-Amtmann Früson* an die Regierung in Posen, welche sogleich bey der im Jahre 1793 erfolgten Besitznehmung von Süd-Preussen, in dieser Stadt etablirt ward.
 
 Allerdurchlauchtigster etc.
 
@@ -379,7 +385,7 @@ Tractaten wegen dieser Verpachtung einzulassen, und zur Aufhebung meiner bereits
 
 [p. 56]
 
-an mich zu verabfolgen. Hiernächst ward durch Vermittelung des etc. *Triebenfeld* bey der Krieges- und Polizey-Commission zu Kalisch denuncirt, als ob ich mich mit Gewalt in Besitz der Güter gesetzt habe, und ausser Stande sey, mich durch einen Kontrakt legitimiren zu können. Die zur Herrschaft gehörigen Dorfschaften wiegelte *Triebenfeld* überdiess auf, ihre Dienste nicht mehr wie zeithero geschehen zu prästiren. — Das kontractmässig festgesetzte Holz zur Brauerey, Brenn- und Podaschsiederey liess derselbe, (da er über die Forsten zu disponiren hatte) nicht verabfolgen, und zuletzt beliebte es dem Herrn Ministre von *Hoym* sogar durch ein Mandat an den dortigen Renntmeister meine General-Pacht-Casse unter dem Vorwande eigenmächtiger Weise zu sperren, „weil mir die Dispo- sition über die Revenüen der Güter eher nicht zugestanden werden könne, bis ich mich durch ein Attest der pohlnischen Ge- richte würde legitimirt haben,“
+an mich zu verabfolgen. Hiernächst ward durch Vermittelung des etc. *Triebenfeld* bey der Krieges- und Polizey-Commission zu Kalisch denuncirt, als ob ich mich mit Gewalt in Besitz der Güter gesetzt habe, und ausser Stande sey, mich durch einen Kontrakt legitimiren zu können. Die zur Herrschaft gehörigen Dorfschaften wiegelte *Triebenfeld* überdiess auf, ihre Dienste nicht mehr wie zeithero geschehen zu prästiren. — Das kontractmässig festgesetzte Holz zur Brauerey, Brenn- und Podaschsiederey liess derselbe, (da er über die Forsten zu disponiren hatte) nicht verabfolgen, und zuletzt beliebte es dem Herrn Ministre von *Hoym* sogar durch ein Mandat an den dortigen Renntmeister meine General-Pacht-Casse unter dem Vorwande eigenmächtiger Weise zu sperren, „weil mir die Disposition über die Revenüen der Güter eher nicht zugestanden werden könne, bis ich mich durch ein Attest der pohlnischen Gerichte würde legitimirt haben,“
 
 dass ich nach pohlnischer Landesverfassung
 
@@ -529,7 +535,7 @@ p. Früson jun.[^14]
 
 [p. 78]
 
-### Protocoll auf der Regierung in Posen.
+## Protocoll auf der Regierung in Posen.
 
 Actum Posen den 12. Februar 1794.
 
@@ -547,9 +553,9 @@ Ein gewisser Forstrath v. Triebenfeld nehmlich, welchem ehedem die Administratio
 
 [p. 80]
 
-beikommen lassen, mehrere der herrschaftlichen Unterthanen zur Entweichung von ihren Höfen zu disponiren, demnächst aber meinen Vater eines unwirthschaftlichen Benehmens und der Bedrückung der Pacht - Unterthanen zu beschuldigen und demselben die vorbemeldete Entweichung der Unterthanen zur Last zu legen. Dies veranlasste eine von der vormahligen pohlnischen Civil- und Polizey - Commission zu Kalisch, wider meinen Vater eröfnete Untersuchung, die sich damit endigte, dass die Commission, durch ein ferirtes Decret die Exmission meines Vaters aus der Krotoszyner Pacht verordnete.
+beikommen lassen, mehrere der herrschaftlichen Unterthanen zur Entweichung von ihren Höfen zu disponiren, demnächst aber meinen Vater eines unwirthschaftlichen Benehmens und der Bedrückung der Pacht-Unterthanen zu beschuldigen und demselben die vorbemeldete Entweichung der Unterthanen zur Last zu legen. Dies veranlasste eine von der vormahligen pohlnischen Civil- und Polizey-Commission zu Kalisch, wider meinen Vater eröfnete Untersuchung, die sich damit endigte, dass die Commission, durch ein ferirtes Decret die Exmission meines Vaters aus der Krotoszyner Pacht verordnete.
 
-Des Endes wurde ihm auch von dem Etats - Ministre Grafen von Hoym bekannt gemacht, dass er sich zum Abzuge von der Pacht bereit zu halten habe, indem zur Realisirung der erkannten Exmission eine von der Cammer zu Bresslau hierzu ernannte Commission in Krotoszyn sich einfinden werde.
+Des Endes wurde ihm auch von dem Etats-Ministre Grafen von Hoym bekannt gemacht, dass er sich zum Abzuge von der Pacht bereit zu halten habe, indem zur Realisirung der erkannten Exmission eine von der Cammer zu Bresslau hierzu ernannte Commission in Krotoszyn sich einfinden werde.
 
 Hiebey bemerke ich [nur nachträglich, dass meinem Vater nicht genau bekannt ist,
 
@@ -613,7 +619,7 @@ Mandatus Regierungsrath des Klägers qua Deputatus.
 
 [p. 87]
 
-### Die Seehandlungs-Societät in Berlin an die Regierung in Posen.
+## Die Seehandlungs-Societät in Berlin an die Regierung in Posen.
 
 Einer Königl. hochlöblichen Regierung zu Posen ist es gefällig gewesen, auf die von dem Oberamtmann Früson gegen die Königl. Preussische Seehandlungs-Societät alldort angestellte Klage, letztere durch Requisition des hiesigen Königl. Cammer-Gerichts zu einem auf den 10. April a. c. angesetzten Instructionstermin, per modum rescripti zu citiren. Die Seehandlungs-Societät ist aber eine moralische Person, an welche dergleichen Citationes
 
@@ -641,13 +647,13 @@ angesezt worden ist, dass die Citation erst den 24. dieses, hier eingegangen ist
 
 Berlin den 27. März 1794.
 
-General - Direction der Seehandlungs - Societät.
+General-Direction der Seehandlungs-Societät.
 
 Utrecht, Treplin, Nöldichen, Labaye.
 
 [p. 92]
 
-### Die Seehandlungs-Societät in Berlin an den Ober-Fiscal und Stadtgerichts-Director Herrn Mosqua als ihren zu diesem Prozess Bevollmächtigten in Posen.
+## Die Seehandlungs-Societät in Berlin an den Ober-Fiscal und Stadtgerichts-Director Herrn Mosqua als ihren zu diesem Prozess Bevollmächtigten in Posen.
 
 In dem Verhältniss, in welchem das Institut der Seehandlungs-Societät mit dem Könige stehet, verliehrt das was die Seehandlungs-Societät verliehrt, der König, dies konnte die dortige Regierung auch schon aus den Worten
 
@@ -669,7 +675,7 @@ Utrecht. Treplin. Nöldichen. Labaye.
 
 [p. 95]
 
-### Die Regierung in Posen an den Minister v. Hoym in Bresslau.
+## Die Regierung in Posen an den Minister v. Hoym in Bresslau.
 
 An Unsern wirklichen Geheimen Staats-Krieges- und dirigirenden Finanz-Ministre Grafen von Hoym.
 
@@ -707,7 +713,7 @@ Gegeben Posen den 23. Januar 1795.
 
 [p. 99]
 
-### Die Regierung in Posen an die Regierung in Bresslau.
+## Die Regierung in Posen an die Regierung in Bresslau.
 
 Einer Königl. hochlöblichen Ober-Amts-Regierung übersenden wir anliegend eine an den Staats-Ministre Grafen von Hoym Excellenz erlassene Verordnung in originali et copia, nach welcher ihm in Sachen des Ober-Amtmann Früson, wider die Seehandlungs-Societät Lis denuncirt worden, mit dem ergebensten Ersuchen ersteres demselben zu insinuiren, letztere aber mit dem Documento insinuationis versehen bald gefälligst an uns
 
@@ -723,7 +729,7 @@ Königl. Südpreuss. Regierung.
 
 [p. 101]
 
-### Unterthänigstes Pro Memoria des Canzleidieners Runge in Bresslau an die Regierung in Bresslau.
+## Unterthänigstes Pro Memoria des Canzleidieners Runge in Bresslau an die Regierung in Bresslau.
 
 Nach der gestern erfolgten Zurückkunft des Königl. Etats-Krieges-und dirigirenden Minister Herrn Grafen von *Hoym* Excellenz von Glogau, wollte ich den mir pro December c. M. aufgetragenen Befehl vom 10ten dieses die von der Posner Regierung anhero gesandte Citation an hochgedachte Excellenz insinuiren. Nachdem gleich gedachte Excellenz die Abschrift der Citation gelesen, stellten mir
 
@@ -737,7 +743,7 @@ Berlin den 17. Februar 1795.
 
 [p. 103]
 
-### Der Minister v. Hoym in Bresslau an die Regierung in Bresslau.
+## Der Minister v. Hoym in Bresslau an die Regierung in Bresslau.
 
 Einer Königl. Oberamts-Regierung ist es gefällig gewesen, mir heute ein Decret zu meinem Befremden von der Königl. Posenschen Regierung insinuiren zu lassen, welches ich, nachdem ich aus der beiliegenden Abschrift ersehen, dass ich von einem Menschen: Früson genannt, in öffentlichen Angelegenheiten in gerichtlichen Anspruch genommen worden, nicht angenommen, sondern selbiges dem Ueberbringer zurück gegeben habe.
 
@@ -751,7 +757,7 @@ Hoym.
 
 [p. 105]
 
-### Die Regierung in Bresslau an die Regierung in Posen.
+## Die Regierung in Bresslau an die Regierung in Posen.
 
 Auf Einer Königl. hochlöbl. Südpreuss. Regierung, in Sachen des Ober-Amtmanns Früson wider die Seehandlungs-Societät sub dato den 23. Mensis praet. et recepto den 9. hujus anhero erlassenes Geehrtes, sind wir zwar sogleich bereit gewesen, die an des Königl. wirklichen Geheimen und dirigirenden Etats- und Krieges-Minister Herrn von Hoym Excellenz erlassene Verordnung, insinuiren zu lassen, Seiner Excellenz haben aber,
 
@@ -768,7 +774,7 @@ Königl. Preuss. Bresslausche Ober-Amts-Regierung.
 
 [p. 107]
 
-### Der Justitzminister v. Dankelmann in Bresslau an die Regierung in Posen.
+## Der Justitzminister v. Dankelmann in Bresslau an die Regierung in Posen.
 
 Friedrich Wilhelm etc.
 
@@ -790,7 +796,7 @@ v. Danckelmann.
 
 [p. 110]
 
-### Der Posensche Justitz-Commissarius Früson an die Regierung in Posen.
+## Der Posensche Justitz-Commissarius Früson an die Regierung in Posen.
 
 *Allerdurchlauchtigster etc.*
 
@@ -836,7 +842,7 @@ Justitz-Commissarius.
 
 [p. 114]
 
-### Die Regierung in Posen an den Justitz-Commissarius Früson daselbst, in Antwort auf dessen Antrag vom 19. März 1795.
+## Die Regierung in Posen an den Justitz-Commissarius Früson daselbst, in Antwort auf dessen Antrag vom 19. März 1795.
 
 Dicatur dem Früson per Copiam Decreti, sein unschicklicher und dem gesetzlichen Laufe eines Rechtstreites unangemessener Antrag finde nicht Statt, vielmehr habe er sich binnen 8 Tagen bestimmt darüber zu erklären, ob er dem gegenwärtigen Prozesse renunciren wolle. Posen den 25. März 1795.
 
@@ -846,7 +852,7 @@ Hierauf antwortete Früson unterm 9ten April 1795. der Regierung in Posen, dass 
 
 [p. 116]
 
-### Der *Minister von Hoym* damals auf der Reise in Posen, an die Regierung in Posen.
+## Der *Minister von Hoym* damals auf der Reise in Posen, an die Regierung in Posen.
 
 Die Vorladung, welche Eine Königl. hochlöbliche Regierung in Sachen des Früson wider die Seehandlungs-Societät, sowohl an mich als an die Mitglieder der Bresslauer Krieges- und Domainen-Cammer erlassen hat, ohne dass ein Grund beigebracht worden, der diesen persönlichen Angriff aus bloss officiellen Handlungen beschönigte, ist so befremdend, dass ich genöthiget bin, Sr. Majestät des Königes Verhaltungsbefehle darüber unmittelbar einzuziehen. Ich ermangele daher nicht
 
@@ -860,7 +866,7 @@ Posen den 8. Juni 1795.
 
 [p. 118]
 
-### Die Regierung in Posen an des Königl. Preuss. Geheimen Staats-Finanz- und dirigirenden Ministers Hrn. Grafen v. Hoym, Excellenz allhier.
+## Die Regierung in Posen an des Königl. Preuss. Geheimen Staats-Finanz- und dirigirenden Ministers Hrn. Grafen v. Hoym, Excellenz allhier.
 
 Auf des Königl. Preuss. Geheimen Staats-Finanz- und dirigirenden Ministers Herrn Grafen von Hoym Excellenz zur Sache Früson contra die Seehandlungs-Societät zu Berlin an uns erlassenes Schreiben vom 8. et praes. den 9. hujus ermangeln wir nicht hiermit ergebenst zu erwiedern, dass die Litis Denunciation und Sr. Excellenz Vorladung auf ausdrückliches Verlangen der Beklagten Seehandlungs-Societät dessen Grund oder Ungrund wir Behufs der Vorladung nicht zu untersuchen
 
@@ -886,7 +892,7 @@ v. Steudener.
 
 [p. 122]
 
-### Der *Grosskanzler v. Goldbeck* in Berlin, an die Regierung in Posen.
+## Der *Grosskanzler v. Goldbeck* in Berlin, an die Regierung in Posen.
 
 Friedrich Wilhelm König etc.
 
@@ -922,7 +928,7 @@ Da nun nach klarer Vorschrift des Corp. Jur. Fridr. Part. I. Titt. III. §. 12. 
 
 ihres Amts eben so wenig als unsre übrige Unterthanen, mit offenbar frivolen[^16] und ungegründeten Prozessen fatigiren lassen wollen; so befehlen Wir Euch hiermit in Gnaden etc. Früson mit seiner unstatthaften Klage per Decretum abzuweisen, und Acta reponiren zu lassen, Sind Euch mit Gnaden gewogen. Gegeben Berlin den 12. Juli 1795.
 
-Auf Sr. Königl. Majestät allergnädigsten Special - Befehl.
+Auf Sr. Königl. Majestät allergnädigsten Special-Befehl.
 
 v. Goldbeck.
 
@@ -1026,7 +1032,7 @@ A. d. H.
 
 [p. 142]
 
-### Früson an den Grosskanzler v. Goldbeck.
+## Früson an den Grosskanzler v. Goldbeck.
 
 Allerdurchlauchtigster etc.
 
@@ -1219,7 +1225,7 @@ Früson.
 
 [p. 169]
 
-### Der Grosskanzler v. Goldbeck an Früson.
+## Der Grosskanzler v. Goldbeck an Früson.
 
 Sr. Königl. Majestät von Preussen etc. Unser etc. lassen dem Ober-Amtmann Früson auf seine wider die Seehandlungs-Societät unterm 21. v. M. eingereichte Vorstellung hierdurch bescheiden, dass an der Resolution vom 12. Juli c. nichts geändert werden kann. Supplicant muss noch jetzt einräumen, dass er ad Protocollum vom 13. August 1794 [sic] sich der Abgabe der Pacht unterworfen und allen deshalb im Wege Rechtens zu machenden Ansprüchen entsagt habe.
 
@@ -1251,7 +1257,7 @@ A. d. H.
 
 [p. 172]
 
-### Der Justitz-Commissarius Früson in Posen an Seine Majestät den König Friedrich Wilhelm III. in Berlin, bald nach Antritt seiner Regierung.
+## Der Justitz-Commissarius Früson in Posen an Seine Majestät den König Friedrich Wilhelm III. in Berlin, bald nach Antritt seiner Regierung.
 
 ---
 
@@ -1329,7 +1335,7 @@ Justitz-Commissarius.
 
 [p. 183]
 
-### Friedrich Wilhelm der III. an den Justitzkommissarius Früson in Posen.
+## Friedrich Wilhelm der III. an den Justitzkommissarius Früson in Posen.
 
 Sr. Königlichen Majestät von Preussen etc. haben bey denen in der Vorstellung des Justitz-Commissarius Früson vom 6. d. angeführten Umständen, keinen Anstand genommen, dem Justitz-Departement aufzugeben, dass dasselbe die Regierung zu Posen, zur Wiederaufnahme desjenigen Prozesses authorisire, welchen der Vater des Supplicanten im Jahr 1794 wegen seiner angeblich unrechtmäsigen Exmission aus der Pacht von Krotoszin, zum Schaden-Ersatz angestellet gehabt; und lassen solches dem etc. Früson zur Resolution hiedurch bekannt machen.
 
@@ -1339,7 +1345,7 @@ Friedrich Wilhelm.
 
 [p. 184]
 
-### Der Grosskanzler von Goldbeck in Berlin an die Regierung in Posen.
+## Der Grosskanzler von Goldbeck in Berlin an die Regierung in Posen.
 
 Von Gottes Gnaden Friedrich Wilhelm König von Preussen etc. Unsern gnädigen Gruss zuvor, Wohlgebohrner, veste und hochgelahrte Räthe; liebe Getreue. Da Unsere Allerhöchste Person auf Instanz des Justitz-Commissarii *Früson* die Fortsetzung des von dem Ober-Amtmann *Früson* gegen die Seehandlungs-Societät und die Bresslauische Kriegs- und Domainen-Cammer im Jahre 1795 angestellten Prozesses durch eine unterm 17. hujus
 
@@ -1353,7 +1359,7 @@ Goldbek.
 
 [p. 186]
 
-### Der *Oberamtmann Früson* durch seinen Sohn den Justitz-Commissarius Früson in Posen, an die Regierung in Posen.
+## Der *Oberamtmann Früson* durch seinen Sohn den Justitz-Commissarius Früson in Posen, an die Regierung in Posen.
 
 Allerdurchlauchtigster Grossmächtigster König, Allergnädigster König und Herr!
 
@@ -1471,7 +1477,7 @@ Hierauf kam endlich die Vorbescheidung des Etats-Ministre Grafen von Hoym vom 12
 
 [p. 197]
 
-dass solchemnach dieses Geschäft durch eine Cammer - Commission aus Bresslau kürzlich vollzogen werden sollte. Mir war zu der Zeit weder von einer dergleichen Verfügung jenes Gerichts, und eben so wenig von einer Veranlassung dazu, etwas bekannt worden. Diess alles brachte ich auch alsdenn erst in Erfahrung, als der zu meiner Vertreibung denominirte Bresslauische Cammer - Commissarius etc. *Neumann*, gegenwärtiger Krieges - und Domainen - Rath zu Bresslau mit diesem Auftrage nach Krotoszyn kam; derselbe producirte mir jene Exmissions - Verfügung des Polizey-Gerichts zu Kalisch, woraus ich zugleich entnehmen konnte, dass die Auswanderung einiger Unterthanen bey jener Verfügung zum Vorwande genommen wurde, indem man vorgab, dass diese Leute durch meine Bedrückungen zur Emigration wären genöthiget worden. Hierbey muss ich nun noch ein merkwürdiges Factum erzählen, welches den wesentlichsten Einfluss zur Sache hat.
+dass solchemnach dieses Geschäft durch eine Cammer-Commission aus Bresslau kürzlich vollzogen werden sollte. Mir war zu der Zeit weder von einer dergleichen Verfügung jenes Gerichts, und eben so wenig von einer Veranlassung dazu, etwas bekannt worden. Diess alles brachte ich auch alsdenn erst in Erfahrung, als der zu meiner Vertreibung denominirte Bresslauische Cammer-Commissarius etc. *Neumann*, gegenwärtiger Krieges- und Domainen-Rath zu Bresslau mit diesem Auftrage nach Krotoszyn kam; derselbe producirte mir jene Exmissions-Verfügung des Polizey-Gerichts zu Kalisch, woraus ich zugleich entnehmen konnte, dass die Auswanderung einiger Unterthanen bey jener Verfügung zum Vorwande genommen wurde, indem man vorgab, dass diese Leute durch meine Bedrückungen zur Emigration wären genöthiget worden. Hierbey muss ich nun noch ein merkwürdiges Factum erzählen, welches den wesentlichsten Einfluss zur Sache hat.
 
 Man hatte nehmlich bey jenem Gericht
 
@@ -1753,7 +1759,7 @@ A. d. H.
 
 [p. 228]
 
-### Der *Grosskanzler v. Goldbeck* in Berlin an die Regierung in Posen.
+## Der *Grosskanzler v. Goldbeck* in Berlin an die Regierung in Posen.
 
 Von Gottes Gnaden Friedrich Wilhelm König von Preussen etc. Unsern gnädigen Gruss und geneigten Willen zuvor: Hochwohlgebohrner, Wohlgebohrne, Veste und hochgelahrte Räthe: besonders lieber und liebe Getreue! Wir finden uns veranlasst, die über die Klage des Amtmann *Früson,* wegen seiner Exmission aus der Herrschaft *Krotoszyn* verhandelten Acten allhier einzusehen, und
 
@@ -1761,7 +1767,7 @@ Von Gottes Gnaden Friedrich Wilhelm König von Preussen etc. Unsern gnädigen Gr
 
 befehlen Euch daher hierdurch allergnädigst, diese Acten unverzüglich mit der nächsten Post vollständig an Unsern Gross-Canzler einzusenden. Das ist Unser gnädiger Wille. Sind Euch mit Gnaden und geneigtem Willen wohl beygethan. Gegeben Berlin den 27. November 1798.
 
-Auf Sr. Königl. Majestät allergnädigsten Special - Befehl.
+Auf Sr. Königl. Majestät allergnädigsten Special-Befehl.
 
 Goldbeck.
 
@@ -1771,7 +1777,7 @@ A. d. H.
 
 [p. 230]
 
-### Friedrich Wilhelm III. an den Grosskanzler v. Goldbeck.
+## Friedrich Wilhelm III. an den Grosskanzler v. Goldbeck.
 
 Mein lieber Grosskanzler von Goldbeck. Aus den hierbey zurückkommenden, von Euch auf meinen Befehl eingesandten Acten, über die Klage, welche der Amtmann Früson wegen der Herrschaft Krotoszyn gegen die Seehandlung angestellt hat, habe ich ersehen, dass es damit ganz anders zusammenhängt, als der Früson in seiner Immediat-Eingabe vom 6. December v. J. vorgestellt hat. Er ist nehmlich nicht durch eine widerrechtliche Verfügung des Etats-Ministre Grafen v. Hoym, sondern auf Requisition der damaligen vom Suppl. selbst für competent anerkannten Polnischen
 
@@ -1792,7 +1798,7 @@ Friedrich Wilhelm.
 
 [p. 234]
 
-### Das *Justitz-Ministerium* an die *Regierung in Posen.*
+## Das *Justitz-Ministerium* an die *Regierung in Posen.*
 
 Von Gottes Gnaden Friedrich Wilhelm König von Preussen etc. Unsern gnädigen Gruss und geneigten Willen zuvor. Hochwohlgebohrner, Veste und Hochgelahrte Räthe; besonders lieber und liebe Getreue! Nachdem Unsere höchste Person durch Einsicht der von Euch hierneben zurückerfolgenden 3. Vol. Act. die Klage des Amtmann Früson wegen seiner Exmission aus der Pachtung der Herrschaft Krotoszyn betreffend,
 
@@ -1868,11 +1874,11 @@ Es scheint jedoch als wäre diese Betrachtung hinterher und nachdem nur erst der
 
 mit dem Früson überstanden war, dem Hoym aufs Herz gefallen, denn nach Verlauf weniger Monathe, erliess er folgende mit seiner vorherigen Schilderung des *Galinsky* beym Könige übel sich reimende Trostepistel an den *Galinsky*:
 
-„Es ist mir lieb, dass sich der Ober-Amt- mann *Galinsky* nach seiner Anzeige vom 29. v. Monaths von der Beschaffenheit des Amtes Proskau an Ort und Stelle gehörig un- terrichtet hat. Inzwischen muss es bey der Separation der beyden Aemter Proskau und Chrzelitz verbleiben.“
+„Es ist mir lieb, dass sich der Ober-Amtmann *Galinsky* nach seiner Anzeige vom 29. v. Monaths von der Beschaffenheit des Amtes Proskau an Ort und Stelle gehörig unterrichtet hat. Inzwischen muss es bey der Separation der beyden Aemter Proskau und Chrzelitz verbleiben.“
 
-„Es wird nun darauf ankommen, die Auf- hebung des allerhöchsten Königl. Verbots, den etc. *Galinsky* zu keiner Pacht zu ad- mittiren zu bewirken.“
+„Es wird nun darauf ankommen, die Aufhebung des allerhöchsten Königl. Verbots, den etc. *Galinsky* zu keiner Pacht zu admittiren zu bewirken.“
 
-„Ich werde dabey dem etc. *Galinsky* nach Möglichkeit das Wort reden und über- haupt mit allem guten Willen die Hand da- zu bieten, um denselben aus seinem Laby- rinthe heraus und zu einem bessern Schicksal
+„Ich werde dabey dem etc. *Galinsky* nach Möglichkeit das Wort reden und überhaupt mit allem guten Willen die Hand dazu bieten, um denselben aus seinem Labyrinthe heraus und zu einem bessern Schicksal
 
 [p. 245]
 
@@ -1882,7 +1888,7 @@ v. Hoym.
 
 An den Oberamtmann Galinski zu Sophienthal.
 
-„Wenn der Ober-Amtmann Galinsky nach seiner Vorstellung vom gestrigen dato Anstand nimmt, auf die Pacht von Chrzeliz mittelst Licitation zu entriren, so kann ich demselben auf eine andere Weise nicht be- hülflich seyn. Meine Absicht war, dass sich derselbe den Zustand dieses Amtes genau be- kannt machen und sodann sich bey der Lici- tation diesen Kenntnissen gemäss geriren soll- te. Ich würde demnächst mich bey des Kö- nigs Majestät um Aufhebung des Verbotes, den Galinsky zu einer Pacht zu admittiren verwendet haben.“
+„Wenn der Ober-Amtmann Galinsky nach seiner Vorstellung vom gestrigen dato Anstand nimmt, auf die Pacht von Chrzeliz mittelst Licitation zu entriren, so kann ich demselben auf eine andere Weise nicht behülflich seyn. Meine Absicht war, dass sich derselbe den Zustand dieses Amtes genau bekannt machen und sodann sich bey der Licitation diesen Kenntnissen gemäss geriren sollte. Ich würde demnächst mich bey des Königs Majestät um Aufhebung des Verbotes, den Galinsky zu einer Pacht zu admittiren verwendet haben.“
 
 „Die Unterhandlung mit den Früsonschen
 
@@ -1906,7 +1912,7 @@ Doch, eitel Schwindeleyen und Palliativkuren! Denn die Einigung des Galinsky mit
 
 *Friedrich Wilhelm.*
 
-"Seine Majestät von Preussen haben ein-mahl den Entschluss gefasst, dass der etc. Galinsky keine Domainen - Pachtung erhalten soll und begnügen sich daher, ihm solches auf seine Eingabe vom 23. v. M. deren Anlagen hiebey sämmtlich zurück erfolgen, nochmals zu erkennen zu geben. Charlottenburg den 12. Juni 1800."
+"Seine Majestät von Preussen haben ein-mahl den Entschluss gefasst, dass der etc. Galinsky keine Domainen-Pachtung erhalten soll und begnügen sich daher, ihm solches auf seine Eingabe vom 23. v. M. deren Anlagen hiebey sämmtlich zurück erfolgen, nochmals zu erkennen zu geben. Charlottenburg den 12. Juni 1800."
 
 *Friedrich Wilhelm.*
 
@@ -1997,9 +2003,9 @@ Schillers Allmanach für 1797.
 
 [^4]: Jetziger Minister, und von allen der mahligen preussischen Staatsmännern ohnstreitig derjenige, der als Geschäftsmann und Denker die meiste Achtung der Mit- und Nachwelt verdient. Er stand bereits als Geheimer-Finanz-Rath an der Spitze der Seehandlungs-Societät. A. d. H.
 
-[^5]: Der Geheime-Rath von Hoym, der diese Sache bearbeitete und wohl voraussah, dass die Seehandlungs-Societät, ihre Absicht, die Herrschaft Krotoszyn der bisherigen uneingeschränkten Triebenfeldschen Administration zu entreissen und sie einer einträglichern Verpachtung zu übergeben durchsetzen, und dass der solide Oberamtmann Früson letztere von der Seehandlungs-Societät erhalten würde, streicht in diesem Schreiben blos den Fuchsschwanz. Schon vorher hatte er mit dem noch lebenden Prediger Matthiae zu Zduny im damaligen Grosspohlen jetzigen Süd-Preussen das Abkommen getroffen, dass wenn dieser die Pachtung von Krotoszyn, auf die er ebenfalls geboten hatte, bekäme, er ihm jährlich tausend Tha-  ler baar geben und seine Küche in Bresslau mit allerley Victualien versorgen solle. Rothland ist ein schlesisches Dorf, wo gedachter Geheimer-Rath v. Hoym damals, wer weis übrigens jetzt, warum, sich aufhielt. Seinen Posten hatte er bey der Bresslauschen Cammer. Jetzt ist er Präsident der Cammer in Warschau. A. d. H.
+[^5]: Der Geheime-Rath von Hoym, der diese Sache bearbeitete und wohl voraussah, dass die Seehandlungs-Societät, ihre Absicht, die Herrschaft Krotoszyn der bisherigen uneingeschränkten Triebenfeldschen Administration zu entreissen und sie einer einträglichern Verpachtung zu übergeben durchsetzen, und dass der solide Oberamtmann Früson letztere von der Seehandlungs-Societät erhalten würde, streicht in diesem Schreiben blos den Fuchsschwanz. Schon vorher hatte er mit dem noch lebenden Prediger Matthiae zu Zduny im damaligen Grosspohlen jetzigen Süd-Preussen das Abkommen getroffen, dass wenn dieser die Pachtung von Krotoszyn, auf die er ebenfalls geboten hatte, bekäme, er ihm jährlich tausend Thaler baar geben und seine Küche in Bresslau mit allerley Victualien versorgen solle. Rothland ist ein schlesisches Dorf, wo gedachter Geheimer-Rath v. Hoym damals, wer weis übrigens jetzt, warum, sich aufhielt. Seinen Posten hatte er bey der Bresslauschen Cammer. Jetzt ist er Präsident der Cammer in Warschau. A. d. H.
 
-[^6]: Der Kriegs- und Forstrath von Triebenfeld, der, Gott weis wie, von der Bresslauschen Cammer ressortirt, aber theils in seinen eigenen, theils in andrer Leute schmutzi-  gen Geschäften immer abwesend und auf Reisen ist, ist der Haupt-Favorit des Minister von *Hoym* und durch des letzteren Vorschub vom verstorbenen Könige Friedrich Wilhelm dem II. nicht nur geadelt, sondern auch späterhin mit einer solchen Menge südpreussischer Güter beschenkt worden, dass ihr Werth nach gerichtlicher Taxe über sieben mahl hundert tausend Thaler beträgt. Von Hause aus ist er ein Jägerbursche und ohne alle eigentliche Cultur, roh, grob und kek. Als der Ober-Amtmann *Früson* die Herrschaft *Krotoszyn* pachtete, wurden die sehr ansehnlichen Forsten nicht mit an ihn verpachtet, diese blieben vielmehr unter der besondern Administration des *Triebenfeld* als Ober-Forst-Aufsehers und deshalb behielt *Triebenfeld* eine freye Wohnung im Schlosse zu *Krotoszyn*, in welchem *Früson* als General-Pächter natürlicherweise ebenfalls wohnte. Beyde mussten daher bald, schon dieser häuslichen Nähe wegen miteinander in Streit, und zwar um so mehr gerathen, da Triebenfeld sogleich beym Anfange der Früsonschen Pacht über dem Plane brütete, den Früson nicht nur wieder zu delogiren, sondern vielmehr gänzlich aus der Pacht zu vertreiben, damit er selbst, wie endlich auch geschah, die Administration wieder bekäme. War es von der andern Seite dem etc. Früson zu verdenken, wenn er seinen nicht nur höchstbeschwerlichen, sondern wahrhaft teuflischen Widersacher gern los seyn, und die alleinige Disposition über das Schloss haben wollte, wie sie ihm als General-Pächter zukam? A. d. H.
+[^6]: Der Kriegs- und Forstrath von Triebenfeld, der, Gott weis wie, von der Bresslauschen Cammer ressortirt, aber theils in seinen eigenen, theils in andrer Leute schmutzigen Geschäften immer abwesend und auf Reisen ist, ist der Haupt-Favorit des Minister von *Hoym* und durch des letzteren Vorschub vom verstorbenen Könige Friedrich Wilhelm dem II. nicht nur geadelt, sondern auch späterhin mit einer solchen Menge südpreussischer Güter beschenkt worden, dass ihr Werth nach gerichtlicher Taxe über sieben mahl hundert tausend Thaler beträgt. Von Hause aus ist er ein Jägerbursche und ohne alle eigentliche Cultur, roh, grob und kek. Als der Ober-Amtmann *Früson* die Herrschaft *Krotoszyn* pachtete, wurden die sehr ansehnlichen Forsten nicht mit an ihn verpachtet, diese blieben vielmehr unter der besondern Administration des *Triebenfeld* als Ober-Forst-Aufsehers und deshalb behielt *Triebenfeld* eine freye Wohnung im Schlosse zu *Krotoszyn*, in welchem *Früson* als General-Pächter natürlicherweise ebenfalls wohnte. Beyde mussten daher bald, schon dieser häuslichen Nähe wegen miteinander in Streit, und zwar um so mehr gerathen, da Triebenfeld sogleich beym Anfange der Früsonschen Pacht über dem Plane brütete, den Früson nicht nur wieder zu delogiren, sondern vielmehr gänzlich aus der Pacht zu vertreiben, damit er selbst, wie endlich auch geschah, die Administration wieder bekäme. War es von der andern Seite dem etc. Früson zu verdenken, wenn er seinen nicht nur höchstbeschwerlichen, sondern wahrhaft teuflischen Widersacher gern los seyn, und die alleinige Disposition über das Schloss haben wollte, wie sie ihm als General-Pächter zukam? A. d. H.
 
 [^7]: Dieses saubere Stück Arbeit ist zugleich  ein Beweis, welch ein Stylist Triebenfeld ist, denn er ist der Verfasser. **A. d. H.**
 
@@ -2015,12 +2021,12 @@ Schillers Allmanach für 1797.
 
 [^13]: Freyhahn ist ein kleines Städtchen in Schlesien. Es gehört einem Grafen von *Zedlitz*, und liegt hart an der vormahls pohlnischen jetzt südpreussischen Grenze gegenüber Krotoszyn. A. d. H.
 
-[^14]: Früson junior hatte sein Referendariat in Bresslau aufgegeben, war mit dem Justiz-  minister Dankelmann im Frühjahr 1793 nach Posen gegangen, war dort geblieben und Justiz-Commissarius geworden. Er befindet sich jetzt in Person in recht guten Umständen und betrachtet diesen Kampf als ein Spiel, das die Welt mit ihm und er reciproce mit ihr getrieben hat. A. d. H.
+[^14]: Früson junior hatte sein Referendariat in Bresslau aufgegeben, war mit dem Justizminister Dankelmann im Frühjahr 1793 nach Posen gegangen, war dort geblieben und Justiz-Commissarius geworden. Er befindet sich jetzt in Person in recht guten Umständen und betrachtet diesen Kampf als ein Spiel, das die Welt mit ihm und er reciproce mit ihr getrieben hat. A. d. H.
 
 [^15]: Um diese Zeit wurde der bisherige und noch diese Stunde ganz wohl sich befindende schlesische Justitz-Minister von *Dankelmann* in Bresslau, unter dessen Oberaufsicht die Einrichtung des Justitzwesens in Südpreussen seit der Acquisition, mithin seit zwei Jahren stand und der dieses mühsame Geschäft mit dem rühmlichsten Eifer verrichtete, durch eine Estafette aus Berlin, die ihn gerade in Posen traf, seiner Dienste plötzlich entlassen; und da der bisherige Gross-Canzler von *Carmer* wegen wirklicher Altersschwäche ebenfalls um diese Zeit seine Stelle quittirte, so gelangte der berlinische Cammer-Gerichts-Präsident von *Goldbeck*, obgleich er in mehr als einer Hinsicht, wohl die wenigsten Ansprüche darauf hatte, zur Würde des Grosskanzleramtes, die er noch jetzt zur grossen Verwunderung des auswärtigen und einheimischen Publicums bekleidet. Wahrlich, ein eigenes und sehr verdächtiges Zusammentreffen, auffallender Umstände! Es scheint fast, als hätte man, um den Minister von *Hoym* aus der in Rede stehenden Verlegenheit zu ziehen, einen durch seine Rechtschaffenheit beschwerlichen Mann entfernen wollen, und als hätte *Dankelmann* sich Feinde zugezogen und sich unangenehm gemacht, weil er, um den Gang dieses Früsonschen Prozesses aufrecht zu erhalten, einigemal sein Ansehn angewandt hatte; denn im natürlichen Laufe der Dinge, hätte er, sowohl nach seinem Range, als vielmehr nach seinen Verdiensten, dem Carmer succediren müssen. Seit dem Tage, da jene Estafette ankam, die ihm zugleich die Nachricht von der Erhebung des Goldbeck mitbrachte, lebt der Exminister von Dankelmann in philosophischer Abgezogenheit auf seinem Gute Peterwiz vier Meilen von Bresslau und studirt die alten Classiker. Die Engländer geben ihrem Grosskanzler den schönen Namen: Bewahrer des Gewissens des Königs. Wessen der preussische Staat zu dem neuen Bewahrer des Gewissens seiner Könige sich zu versehen hatte, lehrt folgendes Rescript, welches Goldbeck baldigst und in den ersten Tagen seines erhabenen Grosskanzleramtes an die Regierung in Posen abgehen liess. A. d. H.
 
 [^16]: Wie konnte Goldbeck diesen Prozess niederschlagen, ohne wenigstens vorher das Gutachten der Posenschen Regierung über das Memorial der breslauschen Cammer einzufodern und sogar ohne sich selbst von demjenigen actenmässig zu unterrichten, was Früson denn eigentlich seinerseits vorgebracht hatte und ihm dem Goldbeck bisher unbekannt geblieben war? Es heisst ja doch: Audiatur et altera pars. Und war Früsons Klage wirklich so frivol als sie hier genannt wird bedurfte es dann einer gewaltsamen Niederschlagung derselben, da in diesem Falle, sie, wenn sie dem gewöhnlichen rechtlichen Gange überlassen wurde, ohnstreitig schon vor der Posenschen Regierung für Früson verlohren gehen musste? Oder war etwa die ganze Posensche Regierung so unmündig oder so schlecht, dass sie Frivolitäten von sehr ernsthaften Dingen nicht hätte unterscheiden können oder nicht wollen, so dass es des Grosskanzlers als eines Deus ex machina bedurfte, um sie darüber zu belehren? Vom Fatigiren konnte die Rede vernünftigerweise nicht seyn, denn eine Regierung vor der sechstehalbtausend Prozesse schweben, wird durch einen mehr oder weniger nicht fatigirt. A. d. H.
 
-[^17]: Nehmlich der Krieges - und Polizey-Commission in Kalisch. Man sieht hieraus, welche Verwirrung, wenn nichts Schlimmeres, bey dem pohl. Gerichts-Behörden herrschte und wie leicht in derselben Sache, eine Sentenz pro et contra von ihnen zu erhalten war. A. d. H.
+[^17]: Nehmlich der Krieges- und Polizey-Commission in Kalisch. Man sieht hieraus, welche Verwirrung, wenn nichts Schlimmeres, bey dem pohl. Gerichts-Behörden herrschte und wie leicht in derselben Sache, eine Sentenz pro et contra von ihnen zu erhalten war. A. d. H.
 
 [^18]: Diese Administrirung der Herrschaft Krotoschin setzte, nach der Vertreibung des Früson aus der Pacht im August 1792, der Triebenfeld jedoch nicht lange, fort. Von vielen Zerstreuungen, Reisen und Geschäften, (die welches wohl zu merken ist, nicht Dienstgeschäfte waren) bey der damals im Jahre 1793 bald eintretenden Occupation von Süd-Preussen umhergeworfen, sah er ein, dass seine beständige Abwesenheit von Krotoschin seinem Beutel schaden müsse. Er gab also einem gewissen Starosten Gajewsky, (Besitzer des südpreussischen Städchens Storchnest, und, ein bis sein Unstern ihn mit Triebenfeld zusammen führte, reicher aber einfältiger Mann,) die Herrschaft Krotoschin auf 10 Jahr in eine Art von Afterpacht, mit der Bedingung, dass *Gajewsky* ihm jährlich 5000 Thaler von dem zu machenden Profit abgeben solle. *Gajewsky* ging den Handel ein. Bald nachher überredete *Triebenfeld* den *Gajewsky* unter allerhand vorgespiegelten Vortheilen, dass dieser ihm die fünftausend Thaler zehnmal, mithin funfzigtausend Thaler voraus bezahlte; *Gajewsky* hatte aber nicht so viel bahres Geld, und nun schoss es *Hoym* dem *Gajewsky* aus einer der grossen schlesischen Cassen vor, damit dieser den *Triebenfeld* bezahlen konnte, dagegen verpfändete *Gajewsky* sein ganzes Vermögen, die Herrschaft Storchnest und Starostey Powidz der Casse die das Darlehn in Bresslau hergab. Inzwischen trat der Fall ein, dass *Hoym* durch den ersten unter *Dankelmanns* Aufsicht geführten Früsonschen Prozess, bevor *Goldbek* denselben im Juli 1795 niederschlagen konnte, schon im Anfange des Jahres 1795 so geängstigt wurde, dass er, als das beste Hülfsmittel, allen Früsonschen Prätensionen für immer einen Riegel vorzuschieben, von Fridrich Wilhelm dem II. einen Cabinets-Befehl unterm 4. März 1795 auswirkte, zufolge dessen die Seehandlungs-Societät von Trinitatis 1795 an die Herrschaft Krotoschin für eine Million Thaler an das süd-preussische Domainen-Aerarium verkaufen musste. Krotoschin wurde also eine süd-preussische Domaine und nun sah Gajewsky sich genöthiget, zu Trinitatis 1795 ohngefehr eben so wie 3 Jahre vorher Früson, aus Krotoschin zu wandern. Demohngeachtet zählte Triebenfeld den erhaltenen Vorschuss nicht an Gajewsky zurück, Hoym aber deckte die Casse mit dem Gajewskyschen Vermögen und auf diese Weise ward aus dem Gajewsky ein armer Mann, der als ein lebendiges Denkmal der Schwäche und Schlechtheit des Hoym, in Süd-Preussen umhergeht und jedem der ihn nur hören will, seine lamentable Geschichte erzählt. Wer die Wahrheit dieser gleichsam nur so nebenher begangenen Büberey bestreiten und die vielen darum wissenden Zeugen bey den Cammern in Posen und Bresslau widerlegen kann, ey! der trete doch auf. A. d. H.

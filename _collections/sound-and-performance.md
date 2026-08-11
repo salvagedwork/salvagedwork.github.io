@@ -12,4 +12,4 @@ articles: [abschiedssymphonie, beuys-christiansen-schottische, bienal-americana,
 date: 2026-08-10
 ---
 
-The postwar avant-garde was as much heard as seen. This theme collects its sound: Fluxus actions pressed to vinyl, painters picking up instruments, concerts where the score was an instruction and the instrument was anything.
+The postwar avant-garde was as much heard as seen. This theme collects its sound: Fluxus actions on vinyl, painters picking up instruments, and concerts where the score was an instruction and the instrument was anything.

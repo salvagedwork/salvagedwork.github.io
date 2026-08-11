@@ -72,7 +72,7 @@ This path is passable because the artist and the scholar have joined forces. Thu
        image="/assets/articles/fuglen-dyret-mennesket/front.jpg"
 %}
 
-{% include archive-embed.html id="jorn-10000-ars" %}
+{% include archive-embed.html id="fuglen-dyret-mennesket-jorn" %}
 
 ## Contributors
 

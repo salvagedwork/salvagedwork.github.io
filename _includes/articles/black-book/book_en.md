@@ -1,6 +1,8 @@
 # The True Jacobins in the Prussian State, or: A Documentary Account of the Wicked Intrigues and Fraudulent Conduct in Office of Two Prussian Ministers of State.
 
-### The Heart of the Matter.
+---
+
+**The Heart of the Matter.**
 
 > To every possessor his own, and to every ruler a sense of justice!  
 > That is to be wished; but you! Neither of the two do you procure us.
@@ -15,18 +17,30 @@ Everywhere and nowhere.
 
 ---
 
+[p. unnumbered]
+
 > There is no gain so legitimate but that it is surpassed by what one can make illegitimately, and the wrong done to one's neighbour is always more lucrative than services rendered. It is therefore only a question of finding the means to secure impunity, and it is to this that the powerful devote all their strength and the weak all their cunning.  
 >  
 > Rousseau  
 > Discours sur l'inégalité, Note 9.
 
-## To the Exalted and Supreme Judicial Majesty of the Now-Reigning King of Prussia, Frederick William III.
+---
+
+[p. unnumbered]
+
+**To the Exalted and Supreme Judicial Majesty of the Now-Reigning King of Prussia, Frederick William III.**
 
 ---
 
-## Most Serene, Most Exalted Monarch, Most Revered and most upright Sovereign Lord in the State!
+[p. unnumbered]
 
-Before you permit the sale of this book to be forbidden within the country, devote to it but a single solitary half-hour to read it through Yourself. For its content is truly important. Then judge for Yourself as well. Your judgment alone do all those hold to be competent who see in You not only the first but also the most upright man in the State, and who revere Your exalted office and Your person far too sincerely to be capable of attempting, against *both*, the criminal and wretched game of an anxious and cunning cabal. You stand too high, You stand wholly independent in the sanctuary of justice, for partisan considerations toward persons within the State, who after all are always only Your servants and subjects, to be able to determine Your judgment. If need be, You may indeed inquire of a few other honest men — an Arnim, Struensee, Menke, Hoff, etc. — as to their opinions.
+**Most Serene, Most Exalted Monarch, Most Revered and most upright Sovereign Lord in the State!**
+
+Before you permit the sale of this book to be forbidden within the country, devote to it but a single solitary half-hour to read it through Yourself. For its content is truly important. Then judge for Yourself as well. Your judgment alone do all those hold to be competent who see in You not only the first but also the most upright man in the State, and who revere Your exalted office and Your person far too sincerely to be capable of attempting, against *both*, the criminal and wretched game of an anxious and cunning cabal. You stand too high, You stand wholly independent in the sanctuary of justice, for partisan considerations
+
+[p. unnumbered]
+
+toward persons within the State, who after all are always only Your servants and subjects, to be able to determine Your judgment. If need be, You may indeed inquire of a few other honest men — an Arnim, Struensee, Menke, Hoff, etc. — as to their opinions.
 
 But properly speaking — that Your own free and just judgment should decide the fate of these pages, this is the most respectful and most humble prayer of
 
@@ -66,13 +80,13 @@ I must not forget to mention a slip of paper which lay in the bottom of the port
 
 [p. 6]
 
-### Acta primae Instantiae
+**Acta primae Instantiae**
 
-"Of the Regierung at Posen, in the matter of the Ober-Amtmann Früson of Slawitz in Silesia, against the Seehandlung at Berlin, concerning reinstatement in the lease of the lordship of Krotoszyn. Begun 4 January 1794. And
+> "Of the Regierung at Posen, in the matter of the Ober-Amtmann Früson of Slawitz in Silesia, against the Seehandlung at Berlin, concerning reinstatement in the lease of the lordship of Krotoszyn. Begun 4 January 1794." And
 
-### Acta primae Instantiae
+**Acta primae Instantiae**
 
-Of the Regierung at Posen in the matter of the Amtmann Früson against the Maritime and Salt Trading Society at Berlin and the War and Domains Chamber at Breslau, concerning the ejection from the lease of Krotoszyn. Begun 22 December 1797."
+> "Of the Regierung at Posen in the matter of the Amtmann Früson against the Maritime and Salt Trading Society at Berlin and the War and Domains Chamber at Breslau, concerning the ejection from the lease of Krotoszyn. Begun 22 December 1797."
 
 Now whether such records really exist, and whether from them a refutation of the proceedings here delivered might be drawn, or a proof of falsification carried out, the gentlemen v. Hoym
 
@@ -150,7 +164,7 @@ That Triebenfeld stands throughout behind the scenes in the transactions that fo
 
 [p. 21]
 
-### Frederick the Great to the Minister of State von Hoym in Breslau.
+## Frederick the Great to the Minister of State von Hoym in Breslau.
 
 My dear Minister of State von Hoym. Since the hitherto Chief of the Maritime and Salt Trading Company, von Görne, is indebted to the treasury of the said Company, as I have already told you, in considerable sums, and I must therefore recover payment for myself and the treasury as far as possible out of his estate, I have accordingly resolved to have his estates purchased in Poland taken into possession forthwith,
 
@@ -176,7 +190,7 @@ Schulenburg.
 
 [p. 26]
 
-### The Breslau Privy Councillor v. Hoym, *cousin of the Minister v. Hoym*, to the Ober-Amtmann Früson.
+## The Breslau Privy Councillor v. Hoym, *cousin of the Minister v. Hoym*, to the Ober-Amtmann Früson.
 
 Well-born Sir,
 
@@ -208,7 +222,7 @@ v. Hoym.
 
 [p. 30]
 
-### The *Minister von Struensee* in Berlin to the War Councillor von Triebenfeld[^6] in Krotoszyn.
+## The *Minister von Struensee* in Berlin to the War Councillor von Triebenfeld([^6]) in Krotoszyn.
 
 The Ober-Amtmann Früson, during his presence here in Berlin, has complained that in the conduct of his lease you have placed many
 
@@ -230,7 +244,7 @@ Struensee.
 
 [p. 34]
 
-### The Composition Wrung from Früson by von Triebenfeld and Neumann, Whereby He Was to Relinquish the Lease of Krotoszyn Once More.
+## The Composition Wrung from Früson by von Triebenfeld and Neumann, Whereby He Was to Relinquish the Lease of Krotoszyn Once More.
 
 The undersigned Ober-Amtmann (senior domain lessee) Johann George Früson hereby attests and acknowledges,[^7] that he once again submits to the eviction from the lease of the Krotoszyn estates dictated against him by the Kalisch
 
@@ -252,7 +266,7 @@ Herr v. Zablocki, v. Kordaszowski, and Herr Ober-Amtmann Früson and his son, an
 
 [p. 39]
 
-### Früson, Referendary of the Breslau Regierung, to Minister von Struensee in Berlin.
+## Früson, Referendary of the Breslau Regierung, to Minister von Struensee in Berlin.
 
 High-well-born Sir, etc.
 
@@ -327,7 +341,7 @@ Krotoszyn
 
 [p. 49]
 
-### Minister von Struensee to the Referendary Früson, then travelling in Berlin.
+## Minister von Struensee to the Referendary Früson, then travelling in Berlin.
 
 To the Herr Referendary Früson, in reply to the letter submitted on the 4th of this month as mandatary of the Ober-Amtmann Früson, I can in general only repeat what I have already told the Ober-Amtmann Früson several times, namely that the management of the Krotoszyn estates has been left entirely to the Breslau Chamber by His Majesty the King, and that it is therefore solely and exclusively the affair of the Chamber how it is to conduct that management, and whether it thinks it better to retain the Ober-Amtmann Früson or not to retain him.
 
@@ -349,7 +363,7 @@ Berlin, 5 September 1792.
 
 [p. 53]
 
-### The *Ober-Amtmann Früson* to the Regierung at Posen, which was established in that city immediately upon the taking of possession of South Prussia in the year 1793.
+## The *Ober-Amtmann Früson* to the Regierung at Posen, which was established in that city immediately upon the taking of possession of South Prussia in the year 1793.
 
 Most Serene etc.
 
@@ -523,7 +537,7 @@ p. Früson jun.[^14]
 
 [p. 78]
 
-### Protocol before the Regierung at Posen.
+## Protocol before the Regierung at Posen.
 
 Enacted at Posen, 12 February 1794.
 
@@ -607,7 +621,7 @@ Mandatus Government Councillor of the plaintiff *qua Deputatus*.
 
 [p. 87]
 
-### The Seehandlung of Berlin to the Regierung at Posen.
+## The Seehandlung of Berlin to the Regierung at Posen.
 
 It has pleased a Royal and most laudable Regierung at Posen, upon the suit brought there by the Ober-Amtmann Früson against the Royal Prussian Seehandlung, to summon the latter, *per modum rescripti*, through requisition of the local Royal Kammergericht, to an instruction term appointed for 10 April of this year. The Seehandlung, however, is a moral person, to whom citations of this kind
 
@@ -641,7 +655,7 @@ Utrecht, Treplin, Nöldichen, Labaye.
 
 [p. 92]
 
-### The Seehandlung at Berlin to the Senior Fiscal and City-Court Director Herr Mosqua, as its plenipotentiary for this suit at Posen.
+## The Seehandlung at Berlin to the Senior Fiscal and City-Court Director Herr Mosqua, as its plenipotentiary for this suit at Posen.
 
 In the relation in which the institution of the Seehandlung stands with the King, what the Seehandlung loses, the King loses; and this the Regierung there could already have gathered from the words
 
@@ -663,7 +677,7 @@ Utrecht. Treplin. Nöldichen. Labaye.
 
 [p. 95]
 
-### The Regierung at Posen to Minister v. Hoym at Breslau.
+## The Regierung at Posen to Minister v. Hoym at Breslau.
 
 To Our Actual Privy Minister of State and War and Directing Finance Minister Count von Hoym.
 
@@ -701,7 +715,7 @@ Given at Posen, 23 January 1795.
 
 [p. 99]
 
-### The Regierung at Posen to the Regierung at Breslau.
+## The Regierung at Posen to the Regierung at Breslau.
 
 To a Royally most laudable Oberamtsregierung we transmit herewith an ordinance issued to His Excellency the Minister of State Count von Hoym, *in originali et copia*, by which, in the matter of the Ober-Amtmann Früson, a *litis denunciatio* has been served against him regarding the Seehandlung, with the most humble request to have the former insinuated to him, but the latter, furnished with the *documentum insinuationis*, kindly and soon
 
@@ -717,7 +731,7 @@ Royal South Prussian Regierung.
 
 [p. 101]
 
-### Most Humble Pro Memoria of the Chancery-Servant Runge in Breslau to the Regierung in Breslau.
+## Most Humble Pro Memoria of the Chancery-Servant Runge in Breslau to the Regierung in Breslau.
 
 Upon the return yesterday of His Excellency the Royal Minister of State and War and Directing Minister, Count von *Hoym*, from Glogau, I wished, in accordance with the command laid upon me for the month of December of this year, dated the 10th of this month, to serve upon His said Excellency the citation sent hither by the Regierung at Posen. As soon as His said Excellency had read the copy of the citation, He handed
 
@@ -731,7 +745,7 @@ Berlin, 17 February 1795.
 
 [p. 103]
 
-### Minister v. Hoym in Breslau to the Regierung in Breslau.
+## Minister v. Hoym in Breslau to the Regierung in Breslau.
 
 It has pleased a Royal Oberamtsregierung to have served upon me today, to my astonishment, a decree from the Royal Regierung at Posen, which — after I had seen from the enclosed copy that I had been made subject to legal claim in public matters by a person named Früson — I did not accept, but returned to the bearer.
 
@@ -745,7 +759,7 @@ Hoym.
 
 [p. 105]
 
-### The Regierung at Breslau to the Regierung at Posen.
+## The Regierung at Breslau to the Regierung at Posen.
 
 Upon the esteemed letter issued to us by a Royal and highly commendable South Prussian Regierung, in the matter of the Ober-Amtmann Früson against the Seehandlung, dated the 23rd of last month and received on the 9th of this month, we were indeed at once prepared to have the ordinance issued to His Excellency the Royal Actual Privy and Directing Minister of State and War, Herr von Hoym, served upon him; His Excellency, however,
 
@@ -762,7 +776,7 @@ Royal Prussian Breslau Oberamtsregierung.
 
 [p. 107]
 
-### The Minister of Justice v. Dankelmann at Breslau to the Regierung at Posen.
+## The Minister of Justice v. Dankelmann at Breslau to the Regierung at Posen.
 
 Frederick William etc.
 
@@ -784,7 +798,7 @@ v. Dankelmann.
 
 [p. 110]
 
-### The Posen Justice Commissioner Früson to the Regierung at Posen.
+## The Posen Justice Commissioner Früson to the Regierung at Posen.
 
 *Most Serene etc.*
 
@@ -830,7 +844,7 @@ justice commissioner.
 
 [p. 114]
 
-### The Regierung at Posen to the Justice Commissioner Früson there, in reply to his motion of 19 March 1795.
+## The Regierung at Posen to the Justice Commissioner Früson there, in reply to his motion of 19 March 1795.
 
 Let Früson be informed *per copiam decreti* that his unseemly motion, unsuited to the lawful course of a legal dispute, cannot be admitted; rather, he is to declare himself definitely within 8 days as to whether he wishes to renounce the present suit. Posen, 25 March 1795.
 
@@ -840,7 +854,7 @@ Upon this Früson replied to the Regierung at Posen, under date of 9 April 1795,
 
 [p. 116]
 
-### The *Minister von Hoym*, then travelling in Posen, to the Regierung at Posen.
+## The *Minister von Hoym*, then travelling in Posen, to the Regierung at Posen.
 
 The summons which a Royal and most laudable Regierung has issued in the matter of Früson against the Seehandlung, both to me and to the members of the Breslau War and Domains Chamber, without any ground having been adduced that would palliate this personal attack founded on merely official acts, is so extraordinary that I am compelled to obtain directly the instructions of His Majesty the King in the matter. I therefore do not fail
 
@@ -854,7 +868,7 @@ Posen, 8 June 1795.
 
 [p. 118]
 
-### The Regierung at Posen to His Excellency Count v. Hoym, Royal Prussian Privy Minister of State, Finance, and Directing Minister, here present.
+## The Regierung at Posen to His Excellency Count v. Hoym, Royal Prussian Privy Minister of State, Finance, and Directing Minister, here present.
 
 In reply to the letter addressed to us by His Excellency Count von Hoym, Royal Prussian Privy Minister of State, Finance, and Directing Minister, in the matter of Früson against the Seehandlung at Berlin, dated the 8th and presented the 9th of this month, we do not fail most respectfully to answer herewith that the litis-denunciation and His Excellency's summons — issued upon the express demand of the defendant Seehandlung, whose grounds or want of grounds we have no duty to examine for the purpose of the summons —
 
@@ -880,7 +894,7 @@ v. Steudener.
 
 [p. 122]
 
-### The *Grand Chancellor v. Goldbeck* in Berlin, to the Regierung at Posen.
+## The *Grand Chancellor v. Goldbeck* in Berlin, to the Regierung at Posen.
 
 Frederick William, King, etc.
 
@@ -1020,7 +1034,7 @@ N. B. To this sophistry no signature is to be found, presumably because no one w
 
 [p. 142]
 
-### Früson to the Grand Chancellor v. Goldbeck.
+## Früson to the Grand Chancellor v. Goldbeck.
 
 Most Serene etc.
 
@@ -1213,7 +1227,7 @@ Früson.
 
 [p. 169]
 
-### The Grand Chancellor v. Goldbeck to Früson.
+## The Grand Chancellor v. Goldbeck to Früson.
 
 His Royal Majesty of Prussia etc. Our etc. hereby give the Ober-Amtmann Früson to understand, upon the representation he submitted against the Seehandlung on the 21st of last month, that nothing can be altered in the resolution of 12 July of this year. The supplicant must even now concede that, *ad protocollum* of 13 August 1794 [sic, 1792], he submitted himself to the surrender of the lease and renounced all claims to be advanced on that account by way of law.
 
@@ -1245,7 +1259,7 @@ After this ruling nothing remained but to await better times and a juster govern
 
 [p. 172]
 
-### The Justice Commissioner Früson at Posen to His Majesty the King Frederick William III at Berlin, soon after his accession to the throne.
+## The Justice Commissioner Früson at Posen to His Majesty the King Frederick William III at Berlin, soon after his accession to the throne.
 
 ---
 
@@ -1323,7 +1337,7 @@ Justice Commissioner.
 
 [p. 183]
 
-### Frederick William III to the Justice Commissioner Früson at Posen.
+## Frederick William III to the Justice Commissioner Früson at Posen.
 
 His Royal Majesty of Prussia etc. has, in view of the circumstances set forth in the representation of the Justice Commissioner Früson of the 6th of this month, taken no exception to charging the Department of Justice that it authorize the Regierung at Posen to reopen that lawsuit which the father of the supplicant had brought in the year 1794 for compensation of damages on account of his allegedly unlawful ejection from the lease of Krotoszyn; and this is hereby made known to the said Früson by way of resolution.
 
@@ -1333,7 +1347,7 @@ Frederick William.
 
 [p. 184]
 
-### The Grand Chancellor von Goldbeck at Berlin to the Regierung at Posen.
+## The Grand Chancellor von Goldbeck at Berlin to the Regierung at Posen.
 
 By the Grace of God Frederick William, King of Prussia, etc. Our gracious greeting first, Well-born, trusty, and highly learned Councillors; beloved faithful. Whereas Our Most Exalted Person, upon the petition of the justice commissioner *Früson*, has, by a cabinet order issued hither under the 17th of this month, granted the continuation of the suit brought in the year 1795 by the Ober-Amtmann *Früson* against the Seehandlung and the Breslau War and Domains Chamber;
 
@@ -1347,7 +1361,7 @@ v. Goldbeck.
 
 [p. 186]
 
-### The *Ober-Amtmann Früson*, through his son the Justice Commissioner Früson in Posen, to the Regierung at Posen.
+## The *Ober-Amtmann Früson*, through his son the Justice Commissioner Früson in Posen, to the Regierung at Posen.
 
 Most Serene and Most Mighty King, Most Gracious King and Lord!
 
@@ -1747,7 +1761,7 @@ correspondence, however, being entirely inessential for the reader, is not furni
 
 [p. 228]
 
-### The *Grand Chancellor v. Goldbeck* in Berlin to the Regierung at Posen.
+## The *Grand Chancellor v. Goldbeck* in Berlin to the Regierung at Posen.
 
 By the Grace of God Frederick William, King of Prussia, etc. Our gracious greeting and favourable will first: High-well-born, Well-born, trusty, and highly learned Councillors: especially beloved faithful! We find occasion to inspect here the records taken in the matter of the suit of the Amtmann *Früson* concerning his eviction from the lordship of *Krotoszyn*, and
 
@@ -1765,7 +1779,7 @@ The Posen Regierung accordingly dispatched all the records with all speed to the
 
 [p. 230]
 
-### Frederick William III to the Grand Chancellor von Goldbeck.
+## Frederick William III to the Grand Chancellor von Goldbeck.
 
 My dear Grand Chancellor von Goldbeck. From the records herewith returned, submitted by you at My command, concerning the suit which the Amtmann Früson has brought against the Seehandlung on account of the lordship of Krotoszyn, I have seen that the matter hangs together quite otherwise than the said Früson represented in his immediate petition of 6 December of last year. He was not, namely, removed from the lease through an unlawful ordinance of the Minister of State Count v. Hoym, but upon the requisition of the then Polish
 
@@ -1786,7 +1800,7 @@ Frederick William.
 
 [p. 234]
 
-### The *Ministry of Justice* to the *Regierung at Posen.*
+## The *Ministry of Justice* to the *Regierung at Posen.*
 
 By the Grace of God Frederick William, King of Prussia, etc. Our gracious greeting and favourable will first. High-well-born, trusty, and highly learned Councillors; especially beloved faithful! After Our Most Exalted Person, by perusal of the 3 vols. of records herewith returned to you, concerning the suit of the Amtmann Früson respecting his ejectment from the lease of the lordship of Krotoszyn,
 
@@ -1982,6 +1996,8 @@ Written in the year 1800.
 Schiller's Almanac for 1797.
 
 ---
+
+## Footnotes
 
 [^1]: In how many a truly patriotic heart may there not now often arise, at the sight of our good King, the blunt wish of that blacksmith in the Thuringian Forest in the days of Landgrave Louis the Iron: O Landgrave, grow hard! etc. etc. See Stolberg's Romances.
 
