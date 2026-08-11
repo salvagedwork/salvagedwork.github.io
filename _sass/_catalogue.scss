@@ -2278,3 +2278,14 @@ body::after {
 		transition: none !important;
 	}
 }
+
+// Standing disclaimer at the foot of the cookies page
+.cookies-disclaimer {
+	font-family: $font-mono;
+	font-size: 0.78rem;
+	line-height: 1.6;
+	color: $color-muted;
+	margin-top: 2.5rem;
+	padding-top: 1.25rem;
+	border-top: 1px solid $color-border;
+}

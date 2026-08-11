@@ -984,3 +984,4 @@ body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-in
 .contact-aside p:last-child { margin-bottom: 0; }
 
 @media (prefers-reduced-motion: reduce) { .contact-submit, .contact-form-holder input[type="text"], .contact-form-holder textarea { transition: none !important; } }
+.cookies-disclaimer { font-family: "JetBrains Mono", "Courier New", monospace; font-size: 0.78rem; line-height: 1.6; color: #6b5f56; margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid #d8d0c2; }
