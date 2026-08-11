@@ -147,7 +147,7 @@
 		toggle.addEventListener('click', function () {
 			var isOpen = wrapper.classList.toggle('toc-list-wrapper--open');
 			toggle.setAttribute('aria-expanded', String(isOpen));
-			toggle.textContent = isOpen ? '▴' : '▾';
+			toggle.textContent = isOpen ? '\u25B4' : '\u25BE';
 		});
 	}
 
@@ -159,7 +159,7 @@
 		if (window.getComputedStyle(toggle).display !== 'none') {
 			wrapper.classList.remove('toc-list-wrapper--open');
 			toggle.setAttribute('aria-expanded', 'false');
-			toggle.textContent = '▾';
+			toggle.textContent = '\u25BE';
 		}
 	}
 

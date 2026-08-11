@@ -115,9 +115,18 @@ body::after {
 // The doors: theme cards with spine-stripe, flow-masked crop, mono count
 .home-doors {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+	// mobile-first: a single column with no percentage-based track sizing
+	// at all, so this cannot be affected by percentage resolution through
+	// the nested flex/grid ancestor chain (html/body/#page-body/
+	// .article-container). Desktop switches to a real auto-fit grid, where
+	// the container is always comfortably wider than the track minimum.
+	grid-template-columns: 1fr;
 	gap: 1.25rem;
 	margin: 2rem 0;
+
+	@media #{$information-desktop} {
+		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	}
 }
 
 .door {
@@ -211,9 +220,16 @@ body::after {
 
 .shelf {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
-	gap: 2.5rem 1.75rem;
+	// mobile-first: two columns via a fixed rem minimum, no percentage
+	// track sizing (see .home-doors comment for why).
+	grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+	gap: 1.75rem 1rem;
 	margin: 2rem 0;
+
+	@media #{$information-desktop} {
+		grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+		gap: 2.5rem 1.75rem;
+	}
 }
 
 .shelf-item {
@@ -309,8 +325,12 @@ body::after {
 		margin: 0;
 		padding: 0;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+		grid-template-columns: 1fr;
 		gap: 0.85rem;
+
+		@media #{$information-desktop} {
+			grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+		}
 	}
 }
 
@@ -785,8 +805,14 @@ body::after {
 
 .collection-discography {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
-	gap: 2rem 1.5rem;
+	// mobile-first: no percentage track sizing (see .home-doors comment).
+	grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+	gap: 1.5rem 1rem;
+
+	@media #{$information-desktop} {
+		grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+		gap: 2rem 1.5rem;
+	}
 
 	.disc-tile {
 		text-decoration: none;
@@ -902,11 +928,25 @@ body::after {
 
 .collection-pamphlet {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+	// mobile-first: a single column, no percentage-based track sizing.
+	// The previous attempt (minmax(min(100%, 22rem), 1fr) + min-width: 0)
+	// still overflowed on real phones: this sits six layers deep inside
+	// nested grid/flex ancestors (html -> body[grid] -> #page-body[grid
+	// item] -> #content -> .article-container[flex] -> .collection-articles
+	// -> this grid), and percentage resolution through that chain is not
+	// reliable enough to trust. Removing the percentage entirely removes
+	// the ambiguity: there is nothing here for a percentage to resolve
+	// against incorrectly.
+	grid-template-columns: 1fr;
 	gap: 2rem;
 	align-items: start;
 	max-width: 48rem;
 	margin: 0 auto;
+	min-width: 0;
+
+	@media #{$information-desktop} {
+		grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+	}
 
 	.pamphlet-sheet {
 		display: block;
@@ -1204,7 +1244,9 @@ body::after {
 
 .collection-plates {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+	// mobile-first: no percentage track sizing (see .collection-pamphlet
+	// comment for why this matters here).
+	grid-template-columns: 1fr;
 	gap: 3rem 2rem;
 	align-items: start;
 	// backfill: a wide plate that will not fit the tail of a row lets the
@@ -1288,7 +1330,7 @@ body::after {
 	// seventh plate takes two columns and prints larger, so the page reads
 	// as a hand-laid plate section rather than a catalogue table.
 	@media #{$information-desktop} {
-		grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
 
 		// four printings of the plate, cycling every seven items: a grand
 		// double plate, a large double plate, a reduced plate, and the
@@ -1724,17 +1766,6 @@ body::after {
 	}
 
 	#footer .footer-meta { margin-bottom: 0.6rem; }
-
-	// Two-up covers read better than one giant column on a phone
-	.shelf {
-		grid-template-columns: repeat(auto-fill, minmax(min(100%, 9.5rem), 1fr));
-		gap: 1.75rem 1rem;
-	}
-
-	.collection-discography {
-		grid-template-columns: repeat(auto-fill, minmax(min(100%, 9.5rem), 1fr));
-		gap: 1.5rem 1rem;
-	}
 }
 
 // --------------------------------------------------------------------------
@@ -1975,9 +2006,14 @@ body::after {
 
 .creator-roster {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+	// mobile-first: no percentage track sizing (see .home-doors comment).
+	grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
 	gap: 1rem;
 	margin: 1.5rem 0;
+
+	@media #{$information-desktop} {
+		grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+	}
 }
 
 // Rhythmic tinting: the register's own data offers no useful colour axis
