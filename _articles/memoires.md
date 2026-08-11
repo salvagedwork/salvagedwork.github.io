@@ -7,6 +7,7 @@ creators: [asger-jorn, guy-debord]
 subjects: [situationist-international, collage, psychogeography, artist-books, detournement]
 featured-image: /assets/articles/memoires/front.jpg
 date: 2022-02-03
+published: 1959
 last_modified_at: 2025-02-13
 ---
 

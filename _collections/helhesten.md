@@ -2,6 +2,7 @@
 layout: collection
 title: Helhesten
 collection_id: helhesten
+kind: series
 description: is a Danish art journal published over nine issues from April 1941 to November 1944 which featured the abstract expressionist art of the Danish avantgarde group of the same name.
 creators: [asger-jorn]
 tags: [cobra, helhesten]

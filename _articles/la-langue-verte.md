@@ -7,6 +7,7 @@ creators: [asger-jorn]
 subjects: [structuralism, art-theory]
 featured-image: /assets/articles/la-langue-verte/front.jpg
 date: 2019-01-01
+published: 1968
 last_modified_at: 2021-03-10
 
 book_reader:

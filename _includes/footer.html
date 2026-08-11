@@ -1,12 +1,16 @@
-<div class="page-modified-date">
+<div class="footer-meta">
+	<div class="page-modified-date">
 	{% if page.last_modified_at %}
 		Page last modified on {{ page.last_modified_at }}
 	{% else %}
 		Salvaging for the future.
 	{% endif %}</div>
+	{%- assign litho_article = site.articles | where: "slug", "cobra-bibliotek" | first -%}
+	<div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a>{% if litho_article.published %} ({{ litho_article.published }}){% endif %}</div>
+</div>
 <div class="navbar-links-container">
 	{% for item in site.data.footer %}
-		<a href="{{ item.link }}" {% if page.url == item.link %}class="navbar-link current"{% endif %} class="navbar-link">{{ item.name }}</a>
+		<a href="{{ item.link }}" class="navbar-link{% if page.url == item.link %} current{% endif %}">{{ item.name }}</a>
 	{% endfor %}
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>

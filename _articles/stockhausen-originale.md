@@ -7,6 +7,7 @@ creators: [karlheinz-stockhausen, nam-june-paik, charlotte-moorman]
 subjects: [fluxus, happenings, electronic-music, performance-art, new-york-avant-garde-festival]
 featured-image: /assets/articles/stockhausen-originale/front.jpg
 date: 2026-02-19
+published: 2018
 last_modified_at: 2026-02-19
 ---
 
@@ -94,7 +95,7 @@ The LP credits include Karlheinz Stockhausen as composer, Nam June Paik as compo
 
 ### Audio
 
-<iframe src="https://archive.org/embed/stockhausen-originale&playlist=1&list_height=200" width="100%" height="150" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+<iframe src="https://archive.org/embed/stockhausen-originale?playlist=1" width="500" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
 ## Legacy
 

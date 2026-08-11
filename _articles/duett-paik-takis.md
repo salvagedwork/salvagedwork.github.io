@@ -7,6 +7,7 @@ creators: [nam-june-paik, takis]
 subjects: [fluxus, kinetic-art, sound-art, performance-art, experimental-music]
 featured-image: /assets/articles/duett-paik-takis/front.jpg
 date: 2026-02-19
+published: 1979
 last_modified_at: 2026-02-19
 ---
 
@@ -53,7 +54,7 @@ The *Klangraum* extended this logic into an immersive environment: the visitor e
 
 ## Audio
 
-<iframe src="https://archive.org/embed/duett-paik-takis&playlist=1&list_height=250" width="100%" height="150" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+<iframe src="https://archive.org/embed/duett-paik-takis?playlist=1" width="500" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
 ## Publication
 

@@ -7,6 +7,7 @@ creators: [emil-bachler]
 subjects: [archaeology, palaeontology, prehistory]
 featured-image: /assets/articles/drachenloch-bachler/front.jpg
 date: 2026-04-06
+published: 1921
 last_modified_at: 2026-04-06
 
 book_reader:

@@ -3,39 +3,86 @@ layout: default
 ---
 {%- assign creator_data = site.data.creators | where: "slug", page.slug | first -%}
 {%- assign display_name = creator_data.name | default: page.slug | split: '-' | join: ' ' -%}
+{%- assign creator_articles = site.articles | where_exp: "article", "article.creators contains page.slug" -%}
+
+{%- comment -%}
+The lifespan bar is drawn against the same span as the creators index:
+earliest birth in the register, less a decade, through the present year.
+{%- endcomment -%}
+{%- assign born_years = site.data.creators | map: "born" | compact | sort -%}
+{%- assign span_start = born_years | first | minus: 10 -%}
+{%- assign span_end = 'now' | date: "%Y" | plus: 0 -%}
+{%- assign span_total = span_end | minus: span_start -%}
+{%- if creator_data.born -%}
+	{%- assign life_end = creator_data.died | default: span_end -%}
+	{%- assign bar_left = creator_data.born | minus: span_start | times: 100 | divided_by: span_total -%}
+	{%- assign bar_width = life_end | minus: creator_data.born | times: 100 | divided_by: span_total -%}
+{%- endif -%}
 
 <div class="creator-page">
 
-	<header class="creator-header">
-		<h1>{{ display_name }}</h1>
-		<p class="creator-meta">
-			{%- if creator_data.nationality -%}
-				<span class="creator-nationality">{{ creator_data.nationality }}</span>
-			{%- endif -%}
-			{%- if creator_data.born -%}
-				<span class="creator-dates">
-					&thinsp;·&thinsp;
-					{{ creator_data.born }}–{%- if creator_data.died -%}{{ creator_data.died }}{%- else -%}present{%- endif -%}
-				</span>
-			{%- endif -%}
-			{%- if creator_data.wikipedia -%}
-				<span class="creator-wikipedia">&thinsp;·&thinsp;<a href="{{ creator_data.wikipedia }}" target="_blank" rel="noopener">Wikipedia &nearr;</a></span>
-			{%- endif -%}
+	<header class="index-masthead creator-masthead">
+		<p class="about-eyebrow">Creator</p>
+		<h1 class="index-title">{{ display_name }}</h1>
+
+		<p class="creator-page-meta">
+			{%- if creator_data.nationality %}{{ creator_data.nationality }}{% endif -%}
+			{%- if creator_data.born %}{% if creator_data.nationality %} &middot; {% endif %}{{ creator_data.born }}&ndash;{% if creator_data.died %}{{ creator_data.died }}{% endif %}{% endif -%}
+			{%- if creator_data.wikipedia %} &middot; <a href="{{ creator_data.wikipedia }}" target="_blank" rel="noopener">Wikipedia &nearr;</a>{% endif -%}
 		</p>
-		<hr />
+
+		{%- if creator_data.born %}
+		<span class="creator-lifespan creator-lifespan--page" aria-hidden="true">
+			<span class="creator-lifespan-bar" style="left: {{ bar_left }}%; width: {{ bar_width }}%;"></span>
+		</span>
+		{%- endif %}
 	</header>
 
-	{% assign creator_articles = site.articles | where_exp: "article", "article.creators contains page.slug" %}
+	<hr class="zag-rule" />
 
 	{% if creator_articles.size > 0 %}
 	<section class="creator-articles">
-		<h2>{{ creator_articles.size }} article{% if creator_articles.size != 1 %}s{% endif %} archived</h2>
-		{% for article in creator_articles %}
-			{% include article-listing.html %}
-		{% endfor %}
+		<div class="collection-toolbar">
+			<span class="collection-count">{{ creator_articles.size }} work{% if creator_articles.size != 1 %}s{% endif %} in the archive</span>
+			{% if creator_articles.size > 1 %}
+			<span class="collection-sort" data-sort-controls>
+				<span class="sort-label">sort</span>
+				<button type="button" data-sort="title" data-dir="asc">a&ndash;z</button>
+				<button type="button" data-sort="published" data-dir="asc">year</button>
+				<button type="button" data-sort="added" data-dir="desc">newest</button>
+			</span>
+			{% endif %}
+		</div>
+
+		<div class="collection-list collection-catalogue" data-sortable>
+			{% for article in creator_articles %}
+			<a class="catalogue-row" href="{{ article.url }}"
+				data-title="{{ article.title | slugify }}"
+				data-published="{{ article.published | default: 9999 }}"
+				data-added="{{ article.date | date: '%s' }}">
+				<span class="catalogue-thumb"><img src="{{ article.featured-image }}" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">{{ article.title }}</span>
+					<span class="catalogue-desc">{% include first-sentence.html text=article.description %}</span>
+				</span>
+				<span class="catalogue-year">{{ article.published }}</span>
+			</a>
+			{% endfor %}
+		</div>
 	</section>
 	{% else %}
-	<p class="creator-no-articles">No articles archived yet for this creator.</p>
+	<p class="creator-no-articles">No works by this creator are archived yet.</p>
 	{% endif %}
 
+	<nav class="onward-doors" aria-label="Continue exploring">
+		<p class="onward-title">Continue exploring</p>
+		<ul>
+			<li><a class="onward-tile" data-kind="creator" href="/creators/"><span class="onward-kind">index</span><span class="onward-name">All creators</span></a></li>
+			<li><a class="onward-tile" data-kind="theme" href="/articles/"><span class="onward-kind">browse</span><span class="onward-name">All articles</span></a></li>
+			<li><a class="onward-tile" data-kind="random" href="/articles/" data-random-drawer><span class="onward-kind">random</span><span class="onward-name">Open a drawer</span></a></li>
+		</ul>
+	</nav>
+
 </div>
+
+<script src="/js/collection-sort.js"></script>

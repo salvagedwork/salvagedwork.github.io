@@ -7,6 +7,7 @@ creators: [asger-jorn, lars-morell]
 subjects: [biography, cobra]
 featured-image: /assets/articles/jorn-laeso/front.jpg
 date: 2025-02-05
+published: 2012
 last_modified_at: 2025-02-05
 
 book_reader:

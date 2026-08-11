@@ -1,0 +1,3 @@
+{%- assign fs_text = include.text | strip_html -%}
+{%- assign fs_first = fs_text | split: ". " | first -%}
+{{ fs_first }}{% unless fs_first == fs_text %}.{% endunless %}

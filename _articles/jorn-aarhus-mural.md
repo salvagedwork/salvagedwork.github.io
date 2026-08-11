@@ -7,6 +7,7 @@ creators: [asger-jorn]
 subjects: [ceramics, murals]
 featured-image: /assets/articles/jorn-aarhus-mural/front.jpg
 date: 2026-02-08
+published: 1964
 last_modified_at: 2026-02-08
 
 book_reader:

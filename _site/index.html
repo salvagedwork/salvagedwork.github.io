@@ -33,8 +33,14 @@
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	
+	<!-- Font preloads (the source and machine voices) -->
+	<link rel="preload" href="/assets/fonts/Literata-var.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/discover.js" defer></script>
+	<script src="/js/back-to-top.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
 	
@@ -73,7 +79,7 @@
 <meta property="twitter:title" content="salvaged.work - A digital archive for salvaged works." />
 <meta name="twitter:site" content="@salvagedwork" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","dateModified":"2026-02-20T00:00:00+01:00","description":"A digital archive for salvaged analogue materials.","headline":"salvaged.work - A digital archive for salvaged works.","image":"http://localhost:4000/assets/images/social_media/logo.png","name":"salvaged.work","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/social_media/logo.png"}},"sameAs":["https://twitter.com/salvagedwork","https://www.instagram.com/salvagedwork/"],"url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","dateModified":"2026-08-10T00:00:00+02:00","description":"A digital archive for salvaged analogue materials.","headline":"salvaged.work - A digital archive for salvaged works.","image":"http://localhost:4000/assets/images/social_media/logo.png","name":"salvaged.work","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/social_media/logo.png"}},"sameAs":["https://twitter.com/salvagedwork","https://www.instagram.com/salvagedwork/"],"url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -85,10 +91,13 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/creators"  class="navbar-link">Creators</a>
+		<a href="/reading-room/" class="navbar-link">Reading Room</a>
 		
-		<a href="/articles"  class="navbar-link">Articles</a>
+		<a href="/articles/" class="navbar-link">Articles</a>
 		
+		<a href="/creators/" class="navbar-link">Creators</a>
+		
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -103,10 +112,13 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/creators" class="mobile-nav-link">Creators</a>
+	<a href="/reading-room/" class="mobile-nav-link">Reading Room</a>
 	
-	<a href="/articles" class="mobile-nav-link">Articles</a>
+	<a href="/articles/" class="mobile-nav-link">Articles</a>
 	
+	<a href="/creators/" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	
 	<a href="/about/" class="mobile-nav-link">About</a>
@@ -239,21 +251,124 @@
 			</div>
 			
 			<div id="content">
-				<h2 style="padding-top: 0;">Salvage what is hard to access.</h2>
+				
 
-<p>salvaged.work is an archive for texts, audio, and images that have languished within the confines of analogue media. The archive pays homage to these works through curation and digital restoration so that they may be shared with a wider, modern audience.</p>
+<div class="home-masthead">
+	<h1>an archive of salvaged works</h1>
+	<p class="home-mission">salvaged.work is an archive for texts, audio, and images that have languished within the confines of analogue media. The archive pays homage to these works through curation and digital restoration so that they may be shared with a wider, modern audience. Where a work was published in another language, the archive provides a full English reading edition alongside the original text. This project is independently supported and has no commercial interest in the materials shared. <a href="/about/">About the archive and its editorial method &rarr;</a></p>
 
-<p>This project is independently supported and has no commercial interest in the materials shared.</p>
+	<p class="home-counters">
+		<a href="/articles/">47 articles</a><span class="counter-sep">&middot;</span><a href="/reading-room/">22 books in the reading room</a><span class="counter-sep">&middot;</span><a href="/creators/">38 creators</a>
+	</p>
+</div>
 
-<p><strong>47 articles</strong> across <strong>38 creators</strong> are currently archived.</p>
-
-
-
-
-
+<hr class="zag-rule zag-rule--red" />
 
 
-<h2>Featured article</h2>
+<div class="home-doors">
+	<a class="door" href="/reading-room/" style="--door-ink: #a8221c;">
+		<span class="door-crop"><img src="/assets/images/backgrounds/7.jpg" alt="" loading="lazy"></span>
+		<span class="door-text">
+			<span class="door-title">the reading room</span>
+			<span class="door-count">22 books &middot; original + english</span>
+			<span class="door-blurb">Every book in the archive that can be read cover to cover, in its original language and in English.</span>
+		</span>
+	</a>
+	
+	
+	<a class="door" href="/collection/sound-and-performance/" style="--door-ink: #1d5c9c;">
+		<span class="door-crop"><img src="/assets/images/backgrounds/2.jpg" alt="" loading="lazy"></span>
+		<span class="door-text">
+			<span class="door-title">sound & performance</span>
+			<span class="door-count">13 items</span>
+			<span class="door-blurb">Experimental music of the postwar decades, on record and in print.</span>
+		</span>
+	</a>
+	
+	<a class="door" href="/collection/the-deep-past/" style="--door-ink: #9a6b12;">
+		<span class="door-crop"><img src="/assets/images/backgrounds/6.jpg" alt="" loading="lazy"></span>
+		<span class="door-text">
+			<span class="door-title">the deep past</span>
+			<span class="door-count">6 items</span>
+			<span class="door-blurb">Cave bears, church graffiti, and ten thousand years of Nordic folk art.</span>
+		</span>
+	</a>
+	
+	<a class="door" href="/collection/the-jorn-library/" style="--door-ink: #a8221c;">
+		<span class="door-crop"><img src="/assets/images/backgrounds/1.jpg" alt="" loading="lazy"></span>
+		<span class="door-text">
+			<span class="door-title">the jorn library</span>
+			<span class="door-count">19 items</span>
+			<span class="door-blurb">Asger Jorn and his orbit, from the wartime Helhesten circle to the Situationist years.</span>
+		</span>
+	</a>
+	
+	<a class="door" href="/collection/the-pamphlet-wars/" style="--door-ink: #265a30;">
+		<span class="door-crop"><img src="/assets/images/backgrounds/3.jpg" alt="" loading="lazy"></span>
+		<span class="door-text">
+			<span class="door-title">the pamphlet wars</span>
+			<span class="door-count">3 items</span>
+			<span class="door-blurb">Clandestine pamphlets and black books from Prussia in the age of Napoleon.</span>
+		</span>
+	</a>
+	
+	<a class="door" href="/articles/" data-random-drawer style="--door-ink: #9a6b12;">
+		<span class="door-crop"><img src="/assets/images/backgrounds/5.jpg" alt="" loading="lazy"></span>
+		<span class="door-text">
+			<span class="door-title">open a drawer</span>
+			<span class="door-count">one random item from the archive</span>
+			<span class="door-blurb">Let the archive choose. A different drawer every time.</span>
+		</span>
+	</a>
+</div>
+
+<h2 class="home-section-title">recently salvaged</h2>
+
+
+
+<div class="recent-article">
+	<div class="recent-article-image">
+		<a href="/article/black-book/"><img src="/assets/articles/black-book/front.jpg" alt="The True Jacobins in the Prussian State, or - A Documentary Account of the Wicked Intrigues and Fraudulent Conduct in Office of Two Prussian Ministers of State"></a>
+	</div>
+	<div class="recent-article-content">
+		<h3 style="padding-top: 0; margin-top: 0;"><a href="/article/black-book/">The True Jacobins in the Prussian State, or - A Documentary Account of the Wicked Intrigues and Fraudulent Conduct in Office of Two Prussian Ministers of State</a></h3>
+		<p><strong>The True Jacobins in the Prussian State, or - A Documentary Account of the Wicked Intrigues and Fraudulent Conduct in Office of Two Prussian Ministers of State</strong> is an anonymous political dossier published in 1801 with the false imprint "Everywhere and nowhere," compiled by the Prussian excise official Hans von Held. Across 256 pages it reprints thirty-three official documents from the archives of South Prussia and Silesia, connected by unsigned editorial notes, in order to accuse the Silesian provincial minister Karl Georg von Hoym and the Grand Chancellor Heinrich Julius von Goldbeck of protecting a favourite, destroying a domain lessee, and lying to their king. Held bound twelve copies in black and sent them to the court, and the book has been known ever since as the Schwarzes Buch, the black book.</p>
+		<p class="recent-article-date">Added: July 15, 2026</p>
+		<p><a href="/article/black-book/">Read more &rarr;</a></p>
+	</div>
+</div>
+
+<div class="recent-article">
+	<div class="recent-article-image">
+		<a href="/article/neue-feuerbraende/"><img src="/assets/articles/neue-feuerbraende/front.jpg" alt="New Firebrands - Marginalia on the Tract - Confidential Letters on the Internal Affairs of the Prussian Court since the Death of Frederick II"></a>
+	</div>
+	<div class="recent-article-content">
+		<h3 style="padding-top: 0; margin-top: 0;"><a href="/article/neue-feuerbraende/">New Firebrands - Marginalia on the Tract - Confidential Letters on the Internal Affairs of the Prussian Court since the Death of Frederick II</a></h3>
+		<p><strong>New Firebrands - Marginalia on the Tract - Confidential Letters on the Internal Affairs of the Prussian Court since the Death of Frederick II</strong> is the first collected volume of a political journal issued anonymously in 1807 by the Prussian official Friedrich von Cölln, gathering the first three of the eighteen instalments that eventually appeared under a false Amsterdam and Cologne imprint. Written in the months after the destruction of the Prussian army at Jena and Auerstedt, the three parts combine eyewitness correspondence, polemical essays on the army and the state, fiscal argument, reportage from occupied Berlin, and a register naming the officials who had received confiscated Polish estates.</p>
+		<p class="recent-article-date">Added: July 15, 2026</p>
+		<p><a href="/article/neue-feuerbraende/">Read more &rarr;</a></p>
+	</div>
+</div>
+
+<div class="recent-article">
+	<div class="recent-article-image">
+		<a href="/article/materialen-zur-geschichte/"><img src="/assets/articles/materialen-zur-geschichte/front.jpg" alt="Materials for the History of Polish Territories under Prussian Administration"></a>
+	</div>
+	<div class="recent-article-content">
+		<h3 style="padding-top: 0; margin-top: 0;"><a href="/article/materialen-zur-geschichte/">Materials for the History of Polish Territories under Prussian Administration</a></h3>
+		<p><strong>Materials for the History of Polish Territories under Prussian Administration</strong> is an anonymous polemical collection of historical documents published at Leipzig in 1861, assembled to contest Prussian and German-national claims to the formerly Polish lands of the Grand Duchy of Posen by turning the records, decrees, and private papers of Prussian officials against the administration that produced them. Its documentary centrepiece is the "Black Register," a suppressed table of confiscated Polish crown and church estates given away as grace-and-favour gifts in the province of South Prussia in the 1790s, compiled by the Prussian whistleblower Hans von Held in a Berlin prison cell.</p>
+		<p class="recent-article-date">Added: July 08, 2026</p>
+		<p><a href="/article/materialen-zur-geschichte/">Read more &rarr;</a></p>
+	</div>
+</div>
+
+
+<p><a href="/articles/" class="hover-flow">Explore all 47 articles &rarr;</a></p>
+
+
+
+
+<h2 class="home-section-title">from the archive</h2>
 
 <div class="featured-article" id="featured-article-container">
 	<!-- Content will be populated by JavaScript -->
@@ -727,1335 +842,20 @@
 
 
 
-
-
-
-<h2>Recent additions</h2>
-
-
-
-<div class="recent-article">
-	<div class="recent-article-image">
-		<a href="/article/black-book/"><img src="/assets/articles/black-book/front.jpg" alt="The True Jacobins in the Prussian State, or - A Documentary Account of the Wicked Intrigues and Fraudulent Conduct in Office of Two Prussian Ministers of State"></a>
-	</div>
-	<div class="recent-article-content">
-		<h3 style="padding-top: 0; margin-top: 0;"><a href="/article/black-book/">The True Jacobins in the Prussian State, or - A Documentary Account of the Wicked Intrigues and Fraudulent Conduct in Office of Two Prussian Ministers of State</a></h3>
-		<p><strong>The True Jacobins in the Prussian State, or - A Documentary Account of the Wicked Intrigues and Fraudulent Conduct in Office of Two Prussian Ministers of State</strong> is an anonymous political dossier published in 1801 with the false imprint "Everywhere and nowhere," compiled by the Prussian excise official Hans von Held. Across 256 pages it reprints thirty-three official documents from the archives of South Prussia and Silesia, connected by unsigned editorial notes, in order to accuse the Silesian provincial minister Karl Georg von Hoym and the Grand Chancellor Heinrich Julius von Goldbeck of protecting a favourite, destroying a domain lessee, and lying to their king. Held bound twelve copies in black and sent them to the court, and the book has been known ever since as the Schwarzes Buch, the black book.</p>
-		<p class="recent-article-date">Added: July 15, 2026</p>
-		<p><a href="/article/black-book/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-<div class="recent-article">
-	<div class="recent-article-image">
-		<a href="/article/neue-feuerbraende/"><img src="/assets/articles/neue-feuerbraende/front.jpg" alt="New Firebrands - Marginalia on the Tract - Confidential Letters on the Internal Affairs of the Prussian Court since the Death of Frederick II"></a>
-	</div>
-	<div class="recent-article-content">
-		<h3 style="padding-top: 0; margin-top: 0;"><a href="/article/neue-feuerbraende/">New Firebrands - Marginalia on the Tract - Confidential Letters on the Internal Affairs of the Prussian Court since the Death of Frederick II</a></h3>
-		<p><strong>New Firebrands - Marginalia on the Tract - Confidential Letters on the Internal Affairs of the Prussian Court since the Death of Frederick II</strong> is the first collected volume of a political journal issued anonymously in 1807 by the Prussian official Friedrich von Cölln, gathering the first three of the eighteen instalments that eventually appeared under a false Amsterdam and Cologne imprint. Written in the months after the destruction of the Prussian army at Jena and Auerstedt, the three parts combine eyewitness correspondence, polemical essays on the army and the state, fiscal argument, reportage from occupied Berlin, and a register naming the officials who had received confiscated Polish estates.</p>
-		<p class="recent-article-date">Added: July 15, 2026</p>
-		<p><a href="/article/neue-feuerbraende/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-<div class="recent-article">
-	<div class="recent-article-image">
-		<a href="/article/materialen-zur-geschichte/"><img src="/assets/articles/materialen-zur-geschichte/front.jpg" alt="Materials for the History of Polish Territories under Prussian Administration"></a>
-	</div>
-	<div class="recent-article-content">
-		<h3 style="padding-top: 0; margin-top: 0;"><a href="/article/materialen-zur-geschichte/">Materials for the History of Polish Territories under Prussian Administration</a></h3>
-		<p><strong>Materials for the History of Polish Territories under Prussian Administration</strong> is an anonymous polemical collection of historical documents published at Leipzig in 1861, assembled to contest Prussian and German-national claims to the formerly Polish lands of the Grand Duchy of Posen by turning the records, decrees, and private papers of Prussian officials against the administration that produced them. Its documentary centrepiece is the "Black Register," a suppressed table of confiscated Polish crown and church estates given away as grace-and-favour gifts in the province of South Prussia in the 1790s, compiled by the Prussian whistleblower Hans von Held in a Berlin prison cell.</p>
-		<p class="recent-article-date">Added: July 08, 2026</p>
-		<p><a href="/article/materialen-zur-geschichte/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-
-<p><a href="/articles/">Explore all 47 articles &rarr;</a></p>
-
-
-
-
-<h2>Browse by category</h2>
-
-<p>Articles are organized into the following categories:</p>
-
-
-<div class="browse-grid">
-
-	
-	
-	<div class="browse-item">
-		<a href="/articles/?category=books">
-			<span class="browse-item-title">Books</span>
-			<span class="browse-item-count">28 articles</span>
-		</a>
-	</div>
-	
-
-	
-	
-	<div class="browse-item">
-		<a href="/articles/?category=journals">
-			<span class="browse-item-title">Journals</span>
-			<span class="browse-item-count">9 articles</span>
-		</a>
-	</div>
-	
-
-	
-	
-	<div class="browse-item">
-		<a href="/articles/?category=recordings">
-			<span class="browse-item-title">Recordings</span>
-			<span class="browse-item-count">11 articles</span>
-		</a>
-	</div>
-	
-
-</div>
-
-
-
-
-
-
-<h2>Browse by subject</h2>
-
-<p>Explore articles by their subject matter:</p>
-
-<div class="tag-cloud" id="subject-tag-cloud">
-
-	
-	
-	
-	<a href="/articles/?subject=action-art" class="tag-cloud-item subject-tag" data-count="1">Action Art <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=aleatory-music" class="tag-cloud-item subject-tag" data-count="1">Aleatory Music <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=anarchism" class="tag-cloud-item subject-tag" data-count="1">Anarchism <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=archaeology" class="tag-cloud-item subject-tag" data-count="3">Archaeology <span class="tag-count">(3)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=art" class="tag-cloud-item subject-tag" data-count="1">Art <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=art-brut" class="tag-cloud-item subject-tag" data-count="1">Art Brut <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=art-theory" class="tag-cloud-item subject-tag" data-count="1">Art Theory <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=artist-books" class="tag-cloud-item subject-tag" data-count="3">Artist Books <span class="tag-count">(3)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=artist-monographs" class="tag-cloud-item subject-tag" data-count="1">Artist Monographs <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=avant-garde" class="tag-cloud-item subject-tag" data-count="2">Avant Garde <span class="tag-count">(2)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=bibliography" class="tag-cloud-item subject-tag" data-count="1">Bibliography <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=biography" class="tag-cloud-item subject-tag" data-count="1">Biography <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=canadian-history" class="tag-cloud-item subject-tag" data-count="1">Canadian History <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=cave-archaeology" class="tag-cloud-item subject-tag" data-count="1">Cave Archaeology <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=cave-bear" class="tag-cloud-item subject-tag" data-count="1">Cave Bear <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=censorship" class="tag-cloud-item subject-tag" data-count="1">Censorship <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=ceramics" class="tag-cloud-item subject-tag" data-count="2">Ceramics <span class="tag-count">(2)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=chess" class="tag-cloud-item subject-tag" data-count="1">Chess <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=church-graffiti" class="tag-cloud-item subject-tag" data-count="1">Church Graffiti <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=clandestine-publishing" class="tag-cloud-item subject-tag" data-count="1">Clandestine Publishing <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=cobra" class="tag-cloud-item subject-tag" data-count="12">Cobra <span class="tag-count">(12)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=collage" class="tag-cloud-item subject-tag" data-count="2">Collage <span class="tag-count">(2)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=comparative-vandalism" class="tag-cloud-item subject-tag" data-count="3">Comparative Vandalism <span class="tag-count">(3)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=computer-music" class="tag-cloud-item subject-tag" data-count="1">Computer Music <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=conceptual-art" class="tag-cloud-item subject-tag" data-count="2">Conceptual Art <span class="tag-count">(2)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=corruption" class="tag-cloud-item subject-tag" data-count="1">Corruption <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=cybernetics" class="tag-cloud-item subject-tag" data-count="1">Cybernetics <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=detournement" class="tag-cloud-item subject-tag" data-count="1">Detournement <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=electronic-music" class="tag-cloud-item subject-tag" data-count="3">Electronic Music <span class="tag-count">(3)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=exhibition-catalogue" class="tag-cloud-item subject-tag" data-count="2">Exhibition Catalogue <span class="tag-count">(2)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=experimental-music" class="tag-cloud-item subject-tag" data-count="4">Experimental Music <span class="tag-count">(4)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=first-nations-treaties" class="tag-cloud-item subject-tag" data-count="1">First Nations Treaties <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=fluxus" class="tag-cloud-item subject-tag" data-count="6">Fluxus <span class="tag-count">(6)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=fluxus-adjacent" class="tag-cloud-item subject-tag" data-count="2">Fluxus Adjacent <span class="tag-count">(2)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=folk-art" class="tag-cloud-item subject-tag" data-count="1">Folk Art <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=france" class="tag-cloud-item subject-tag" data-count="1">France <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=fur-trade" class="tag-cloud-item subject-tag" data-count="1">Fur Trade <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=graphic-notation" class="tag-cloud-item subject-tag" data-count="1">Graphic Notation <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=happenings" class="tag-cloud-item subject-tag" data-count="1">Happenings <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=helhesten" class="tag-cloud-item subject-tag" data-count="9">Helhesten <span class="tag-count">(9)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=hudson-bay-company" class="tag-cloud-item subject-tag" data-count="1">Hudson Bay Company <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=indeterminacy" class="tag-cloud-item subject-tag" data-count="1">Indeterminacy <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=kinetic-art" class="tag-cloud-item subject-tag" data-count="1">Kinetic Art <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=klankteksten" class="tag-cloud-item subject-tag" data-count="1">Klankteksten <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=latin-american-avant-garde" class="tag-cloud-item subject-tag" data-count="1">Latin American Avant Garde <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=medieval-art" class="tag-cloud-item subject-tag" data-count="2">Medieval Art <span class="tag-count">(2)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=minimalism" class="tag-cloud-item subject-tag" data-count="1">Minimalism <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=murals" class="tag-cloud-item subject-tag" data-count="1">Murals <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=napoleonic-wars" class="tag-cloud-item subject-tag" data-count="1">Napoleonic Wars <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=neanderthal" class="tag-cloud-item subject-tag" data-count="1">Neanderthal <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=new-york-avant-garde-festival" class="tag-cloud-item subject-tag" data-count="1">New York Avant Garde Festival <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=new-york-school" class="tag-cloud-item subject-tag" data-count="1">New York School <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=nordic-art" class="tag-cloud-item subject-tag" data-count="2">Nordic Art <span class="tag-count">(2)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=nouveau-realisme" class="tag-cloud-item subject-tag" data-count="2">Nouveau Realisme <span class="tag-count">(2)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=painting" class="tag-cloud-item subject-tag" data-count="4">Painting <span class="tag-count">(4)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=palaeolithic" class="tag-cloud-item subject-tag" data-count="1">Palaeolithic <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=palaeontology" class="tag-cloud-item subject-tag" data-count="1">Palaeontology <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=parish-history" class="tag-cloud-item subject-tag" data-count="1">Parish History <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=partitions-of-poland" class="tag-cloud-item subject-tag" data-count="1">Partitions Of Poland <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=performance-art" class="tag-cloud-item subject-tag" data-count="4">Performance Art <span class="tag-count">(4)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=polish-history" class="tag-cloud-item subject-tag" data-count="1">Polish History <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=political-pamphlets" class="tag-cloud-item subject-tag" data-count="1">Political Pamphlets <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=prehistory" class="tag-cloud-item subject-tag" data-count="2">Prehistory <span class="tag-count">(2)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=prussia" class="tag-cloud-item subject-tag" data-count="2">Prussia <span class="tag-count">(2)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=prussian-history" class="tag-cloud-item subject-tag" data-count="1">Prussian History <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=psychogeography" class="tag-cloud-item subject-tag" data-count="1">Psychogeography <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=red-river-settlement" class="tag-cloud-item subject-tag" data-count="1">Red River Settlement <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=romanesque-architecture" class="tag-cloud-item subject-tag" data-count="1">Romanesque Architecture <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=romansh-literature" class="tag-cloud-item subject-tag" data-count="1">Romansh Literature <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=rupert's-land" class="tag-cloud-item subject-tag" data-count="1">Rupert's Land <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=sculpture" class="tag-cloud-item subject-tag" data-count="2">Sculpture <span class="tag-count">(2)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=silence" class="tag-cloud-item subject-tag" data-count="1">Silence <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=situationist-international" class="tag-cloud-item subject-tag" data-count="1">Situationist International <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=sound-art" class="tag-cloud-item subject-tag" data-count="4">Sound Art <span class="tag-count">(4)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=structuralism" class="tag-cloud-item subject-tag" data-count="1">Structuralism <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=switzerland" class="tag-cloud-item subject-tag" data-count="2">Switzerland <span class="tag-count">(2)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=vandalism" class="tag-cloud-item subject-tag" data-count="1">Vandalism <span class="tag-count">(1)</span></a>
-	
-
-	
-	
-	
-	<a href="/articles/?subject=word-painting" class="tag-cloud-item subject-tag" data-count="1">Word Painting <span class="tag-count">(1)</span></a>
-	
-
-</div>
-
-<script>
-(function() {
-	'use strict';
-	
-	var subjectTags = document.querySelectorAll('.subject-tag');
-	
-	// Find the maximum count
-	var maxCount = 0;
-	subjectTags.forEach(function(tag) {
-		var count = parseInt(tag.getAttribute('data-count'), 10);
-		if (count > maxCount) maxCount = count;
-	});
-	
-	// Apply color based on count using logarithmic scale for better gradation
-	subjectTags.forEach(function(tag) {
-		var count = parseInt(tag.getAttribute('data-count'), 10);
-		
-		// Use logarithmic scale to create more distinction between low counts
-		// log(1) = 0, log(2) Ã¢â€°Ë† 0.69, log(3) Ã¢â€°Ë† 1.1, etc.
-		var logCount = Math.log(count + 1);
-		var logMax = Math.log(maxCount + 1);
-		var intensity = logCount / logMax;
-		
-		// Blue gradient from very light (low count) to dark (high count)
-		// Very light blue: rgb(150, 190, 240)
-		// Dark blue: rgb(30, 70, 140)
-		var r = Math.round(150 - (120 * intensity));
-		var g = Math.round(190 - (120 * intensity));
-		var b = Math.round(240 - (100 * intensity));
-		
-		var color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
-		tag.style.backgroundColor = color;
-		tag.style.borderColor = color;
-	});
-})();
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h2>Browse by collection</h2>
-
-<p>Some articles are organized into thematic collections:</p>
-
-<div class="collection-browse-list">
-
-	
-	<div class="collection-browse-item">
-		<div class="collection-browse-title">
-			<a href="/collection/helhesten/">Helhesten</a>
-		</div>
-		<div class="collection-browse-description">
-			<strong><a href="/collection/helhesten/">Helhesten</a></strong> is a Danish art journal published over nine issues from April 1941 to November 1944 which featured the abstract expressionist art of the Danish avantgarde group of the same name.
-		</div>
-		<div class="collection-browse-meta">
-			9 articles &middot; <a href="/collection/helhesten/">View collection &rarr;</a>
-		</div>
-	</div>
-
-	
-	<div class="collection-browse-item">
-		<div class="collection-browse-title">
-			<a href="/collection/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a>
-		</div>
-		<div class="collection-browse-description">
-			<strong><a href="/collection/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a></strong> is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
-		</div>
-		<div class="collection-browse-meta">
-			5 articles &middot; <a href="/collection/jorn-catalogue-raisonne/">View collection &rarr;</a>
-		</div>
-	</div>
-
-	
-	<div class="collection-browse-item">
-		<div class="collection-browse-title">
-			<a href="/collection/10000-years-nordic-folk-art/">10,000 Years of Nordic Folk Art</a>
-		</div>
-		<div class="collection-browse-description">
-			<strong><a href="/collection/10000-years-nordic-folk-art/">10,000 Years of Nordic Folk Art</a></strong> is the title of Asger Jorn's ambitious but unfinished encyclopedic project to document the visual history of Scandinavian art from prehistory through the Middle Ages, conceived through his Scandinavian Institute for Comparative Vandalism.
-		</div>
-		<div class="collection-browse-meta">
-			3 articles &middot; <a href="/collection/10000-years-nordic-folk-art/">View collection &rarr;</a>
-		</div>
-	</div>
-
-</div>
-
-
-
-
-
-
-<h2>Creators</h2>
-
-<p>The archive focuses on works by the following artists and authors:</p>
-
-<div class="creator-grid">
-
-
-	
-	<a href="/creators/jose-vicente-asuar/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">José Vicente Asuar</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Chilean&thinsp;·&thinsp;1933–2017</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/peter-baumann/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Peter Baumann</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Swiss</p>
-	<ul class="creator-card-articles">
-		
-		<li>Drachenloch 1917–23</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/joseph-beuys/" class="creator-card heat-1">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Joseph Beuys</span>
-		<span class="creator-card-count">2</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1921–1986</p>
-	<ul class="creator-card-articles">
-		
-		<li>Abschiedssymphonie, Op. 177</li>
-		
-		<li>Schottische Symphonie / Requiem of Art</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/earle-brown/" class="creator-card heat-1">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Earle Brown</span>
-		<span class="creator-card-count">2</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1926–2002</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/emil-bachler/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Emil Bächler</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Swiss&thinsp;·&thinsp;1868–1950</p>
-	<ul class="creator-card-articles">
-		
-		<li>The Drachenloch above Vättis in the Tamina Valley</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/john-cage/" class="creator-card heat-2">
-	<div class="creator-card-header">
-		<span class="creator-card-name">John Cage</span>
-		<span class="creator-card-count">3</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1912–1992</p>
-	<ul class="creator-card-articles">
-		
-		<li>Reunion</li>
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/henning-christiansen/" class="creator-card heat-1">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Henning Christiansen</span>
-		<span class="creator-card-count">2</span>
-	</div><p class="creator-card-meta">Danish&thinsp;·&thinsp;1932–1996</p>
-	<ul class="creator-card-articles">
-		
-		<li>Abschiedssymphonie, Op. 177</li>
-		
-		<li>Schottische Symphonie / Requiem of Art</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/liesbeth-crommelin/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Liesbeth Crommelin</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Dutch&thinsp;·&thinsp;1944–present</p>
-	<ul class="creator-card-articles">
-		
-		<li>Klankteksten - Konkrete Poëzie - Visuele Teksten</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/friedrich-von-coelln/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Friedrich von Cölln</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1766–1820</p>
-	<ul class="creator-card-articles">
-		
-		<li>New Firebrands - Marginalia on the Tract - Confidential Letters on the Internal Affairs of the Prussian Court since the Death of Frederick II</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/guy-debord/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Guy Debord</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">French&thinsp;·&thinsp;1931–1994</p>
-	<ul class="creator-card-articles">
-		
-		<li>Mémoires</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/christian-dotremont/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Christian Dotremont</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Belgian&thinsp;·&thinsp;1922–1979</p>
-	<ul class="creator-card-articles">
-		
-		<li>La chevelure des choses</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/jean-dubuffet/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Jean Dubuffet</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">French&thinsp;·&thinsp;1901–1985</p>
-	<ul class="creator-card-articles">
-		
-		<li>Musique Phénoménale</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/marcel-duchamp/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Marcel Duchamp</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">French-American&thinsp;·&thinsp;1887–1968</p>
-	<ul class="creator-card-articles">
-		
-		<li>Reunion</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/morton-feldman/" class="creator-card heat-1">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Morton Feldman</span>
-		<span class="creator-card-count">2</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1926–1987</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/hans-von-held/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Hans von Held</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Prussian&thinsp;·&thinsp;1764–1842</p>
-	<ul class="creator-card-articles">
-		
-		<li>The True Jacobins in the Prussian State, or - A Documentary Account of the Wicked Intrigues and Fraudulent Conduct in Office of Two Prussian Ministers of State</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/lejaren-hiller/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Lejaren Hiller</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1924–1994</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/toshi-ichiyanagi/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Toshi Ichiyanagi</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Japanese&thinsp;·&thinsp;1933–2022</p>
-	<ul class="creator-card-articles">
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/asger-jorn/" class="creator-card heat-4">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Asger Jorn</span>
-		<span class="creator-card-count">28</span>
-	</div><p class="creator-card-meta">Danish&thinsp;·&thinsp;1914–1973</p>
-	<ul class="creator-card-articles">
-		
-		<li>Asger Jorn à Silkeborg</li>
-		
-		<li>Helhesten (Year 1, Booklet 1)</li>
-		
-		<li>Helhesten (Year 1, Booklet 2)</li>
-		
-		
-		<li class="creator-card-more">+25 more</li>
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/yves-klein/" class="creator-card heat-1">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Yves Klein</span>
-		<span class="creator-card-count">2</span>
-	</div><p class="creator-card-meta">French&thinsp;·&thinsp;1928–1962</p>
-	<ul class="creator-card-articles">
-		
-		<li>Symphonie 'Monoton-Silence'</li>
-		
-		<li>Prince of Space, Musik der Leere</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/ernst-krenek/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Ernst Krenek</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Austrian-American&thinsp;·&thinsp;1900–1991</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/shigeko-kubota/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Shigeko Kubota</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Japanese-American&thinsp;·&thinsp;1937–2015</p>
-	<ul class="creator-card-articles">
-		
-		<li>Reunion</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/alcides-lanza/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Alcides Lanza</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Argentine-Canadian&thinsp;·&thinsp;1929–2020</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/felici-maissen/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Felici Maissen</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Swiss&thinsp;·&thinsp;1910–1992</p>
-	<ul class="creator-card-articles">
-		
-		<li>History of the Parish of Cumbel</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/heinz-klaus-metzger/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Heinz-Klaus Metzger</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1932–2016</p>
-	<ul class="creator-card-articles">
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/charlotte-moorman/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Charlotte Moorman</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1933–1991</p>
-	<ul class="creator-card-articles">
-		
-		<li>Originale</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/lars-morell/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Lars Morell</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Danish&thinsp;·&thinsp;1926–2014</p>
-	<ul class="creator-card-articles">
-		
-		<li>Asger Jorn on Læsø</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/gordon-mumma/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Gordon Mumma</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1935–present</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/nam-june-paik/" class="creator-card heat-2">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Nam June Paik</span>
-		<span class="creator-card-count">3</span>
-	</div><p class="creator-card-meta">Korean-American&thinsp;·&thinsp;1932–2006</p>
-	<ul class="creator-card-articles">
-		
-		<li>Abschiedssymphonie, Op. 177</li>
-		
-		<li>Duett Paik/Takis</li>
-		
-		<li>Originale</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/jasia-reichardt/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Jasia Reichardt</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Polish-British&thinsp;·&thinsp;1933–present</p>
-	<ul class="creator-card-articles">
-		
-		<li>Cybernetic Serendipity - The Computer and the Arts</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/rainer-riehn/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Rainer Riehn</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1941–2014</p>
-	<ul class="creator-card-articles">
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/karlheinz-stockhausen/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Karlheinz Stockhausen</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1928–2007</p>
-	<ul class="creator-card-articles">
-		
-		<li>Originale</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/gerald-strang/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Gerald Strang</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1908–1983</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/takis/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Takis</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Greek&thinsp;·&thinsp;1925–2019</p>
-	<ul class="creator-card-articles">
-		
-		<li>Duett Paik/Takis</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/horacio-vaggione/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Horacio Vaggione</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Argentine-French&thinsp;·&thinsp;1943–present</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/wolf-vostell/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Wolf Vostell</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1932–1998</p>
-	<ul class="creator-card-articles">
-		
-		<li>Il giardino delle delizie</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/robert-watson/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Robert Watson</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">British</p>
-	<ul class="creator-card-articles">
-		
-		<li>Lower Fort Garry: A History of the Stone Fort</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/charles-wilp/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Charles Wilp</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1932–2005</p>
-	<ul class="creator-card-articles">
-		
-		<li>Prince of Space, Musik der Leere</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-	
-	<a href="/creators/christian-wolff/" class="creator-card heat-1">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Christian Wolff</span>
-		<span class="creator-card-count">2</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1934–present</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
-</a>
-
-
-</div>
-
-<p><a href="/creators/">View all creators &rarr;</a></p>
-
 			</div>
 			
 			<div id="footer">
-				<div class="page-modified-date">
+				<div class="footer-meta">
+	<div class="page-modified-date">
 	
-		Page last modified on 2026-02-20
-	</div>
+		Page last modified on 2026-08-10
+	</div><div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a> (1950)</div>
+</div>
 <div class="navbar-links-container">
 	
-		<a href="/about/"  class="navbar-link">About</a>
+		<a href="/about/" class="navbar-link">About</a>
 	
-		<a href="/contact/"  class="navbar-link">Contact</a>
+		<a href="/contact/" class="navbar-link">Contact</a>
 	
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>

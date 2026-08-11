@@ -7,6 +7,7 @@ creators: [john-cage, marcel-duchamp, shigeko-kubota]
 subjects: [fluxus, electronic-music, chess, artist-books]
 featured-image: /assets/articles/cage-duchamp-reunion/front.jpg
 date: 2026-02-13
+published: 1970
 last_modified_at: 2026-02-13
 ---
 
@@ -92,7 +93,7 @@ According to the Shigeko Kubota Video Art Foundation, the book was funded by Kub
 
 ## Audio
 
-<iframe src="https://archive.org/embed/cage-duchamp-reunion-audio&playlist=1" width="100%" height="150" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+<iframe src="https://archive.org/embed/cage-duchamp-reunion-audio?playlist=1" width="500" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
 ## Duchamp's Last Appearance
 

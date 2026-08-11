@@ -8,6 +8,7 @@ subjects: [cobra, helhesten]
 member_of: helhesten
 featured-image: /assets/articles/helhesten/helhesten_2.1_cover.jpg
 date: 2019-01-01
+published: 1942
 last_modified_at: 2026-02-04
 ---
 

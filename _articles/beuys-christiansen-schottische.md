@@ -7,6 +7,7 @@ creators: [joseph-beuys, henning-christiansen]
 subjects: [fluxus, sound-art, performance-art, action-art]
 featured-image: /assets/articles/beuys-christiansen-schottische/front.jpg
 date: 2026-02-18
+published: 1973
 last_modified_at: 2026-02-18
 ---
 
@@ -62,7 +63,7 @@ The second LP, *Op. 50: Requiem of Art*, was reissued independently in 2016 by P
 
 ### Audio
 
-<iframe src="https://archive.org/embed/beuys-christiansen-schottische&playlist=1&list_height=200" width="100%" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+<iframe src="https://archive.org/embed/beuys-christiansen-schottische?playlist=1" width="500" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
 ## Reception
 

@@ -1,14 +1,5 @@
-<div class="book-link-card">
-	{% if include.image %}
-	<div class="book-link-image">
-		<a href="{{ include.url }}"><img src="{{ include.image }}" alt="{{ include.title }}"></a>
-	</div>
-	{% endif %}
-	<div class="book-link-content">
-		<h3 class="book-link-title"><a href="{{ include.url }}">{{ include.title }}</a></h3>
-		{% if include.description %}
-		<p class="book-link-description">{{ include.description }}</p>
-		{% endif %}
-		<a href="{{ include.url }}" class="book-link-button">Read the full text &rarr;</a>
-	</div>
-</div>
+{% comment %}
+Retired in the 2026 redesign: the infobox Read buttons and the article
+masthead now provide the paths into the reader, so this include renders
+nothing. It is kept so the twenty articles that call it need no edits.
+{% endcomment %}

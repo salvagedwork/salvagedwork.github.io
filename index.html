@@ -1,27 +1,75 @@
 ---
 title: salvaged.work - A digital archive for salvaged works.
-last_modified_at: 2026-02-20
+last_modified_at: 2026-08-10
 ---
 
-<h2 style="padding-top: 0;">Salvage what is hard to access.</h2>
+{% assign readable_books = site.articles | where_exp: "a", "a.book_reader.enabled" %}
 
-<p>salvaged.work is an archive for texts, audio, and images that have languished within the confines of analogue media. The archive pays homage to these works through curation and digital restoration so that they may be shared with a wider, modern audience.</p>
+<div class="home-masthead">
+	<h1>an archive of salvaged works</h1>
+	<p class="home-mission">salvaged.work is an archive for texts, audio, and images that have languished within the confines of analogue media. The archive pays homage to these works through curation and digital restoration so that they may be shared with a wider, modern audience. Where a work was published in another language, the archive provides a full English reading edition alongside the original text. This project is independently supported and has no commercial interest in the materials shared. <a href="/about/">About the archive and its editorial method &rarr;</a></p>
 
-<p>This project is independently supported and has no commercial interest in the materials shared.</p>
+	<p class="home-counters">
+		<a href="/articles/">{{ site.articles | size }} articles</a><span class="counter-sep">&middot;</span><a href="/reading-room/">{{ readable_books | size }} books in the reading room</a><span class="counter-sep">&middot;</span><a href="/creators/">{{ site.data.creators | size }} creators</a>
+	</p>
+</div>
 
-<p><strong>{{ site.articles | size }} articles</strong> across <strong>{{ site.creators | size }} creators</strong> are currently archived.</p>
+<hr class="zag-rule zag-rule--red" />
 
+{% comment %} The doors: Reading Room, themes, and the random drawer {% endcomment %}
+<div class="home-doors">
+	<a class="door" href="/reading-room/" style="--door-ink: #a8221c;">
+		<span class="door-crop"><img src="/assets/images/backgrounds/7.jpg" alt="" loading="lazy"></span>
+		<span class="door-text">
+			<span class="door-title">the reading room</span>
+			<span class="door-count">{{ readable_books | size }} books &middot; original + english</span>
+			<span class="door-blurb">Every book in the archive that can be read cover to cover, in its original language and in English.</span>
+		</span>
+	</a>
+	{% assign theme_docs = site.collections | where: "kind", "theme" | sort: "title" %}
+	{% for theme in theme_docs %}
+	<a class="door" href="{{ theme.url }}" style="--door-ink: {{ theme.ink | default: '#a8221c' }};">
+		<span class="door-crop"><img src="{{ theme.door_image | default: '/assets/images/backgrounds/1.jpg' }}" alt="" loading="lazy"></span>
+		<span class="door-text">
+			<span class="door-title">{{ theme.title }}</span>
+			<span class="door-count">{{ theme.articles | size }} items</span>
+			{% if theme.blurb %}<span class="door-blurb">{{ theme.blurb }}</span>{% endif %}
+		</span>
+	</a>
+	{% endfor %}
+	<a class="door" href="/articles/" data-random-drawer style="--door-ink: #9a6b12;">
+		<span class="door-crop"><img src="/assets/images/backgrounds/5.jpg" alt="" loading="lazy"></span>
+		<span class="door-text">
+			<span class="door-title">open a drawer</span>
+			<span class="door-count">one random item from the archive</span>
+			<span class="door-blurb">Let the archive choose. A different drawer every time.</span>
+		</span>
+	</a>
+</div>
 
-{% comment %}
-================================================================================
-FEATURED ARTICLE (randomly selected on each page load via JavaScript)
-================================================================================
-{% endcomment %}
+<h2 class="home-section-title">recently salvaged</h2>
+
+{% assign sorted_articles = site.articles | sort: 'date' | reverse %}
+{% for article in sorted_articles limit:3 %}
+<div class="recent-article">
+	<div class="recent-article-image">
+		<a href="{{ article.url }}"><img src="{{ article.featured-image }}" alt="{{ article.title }}"></a>
+	</div>
+	<div class="recent-article-content">
+		<h3 style="padding-top: 0; margin-top: 0;"><a href="{{ article.url }}">{{ article.title }}</a></h3>
+		<p><strong>{{ article.title }}</strong> {{ article.description }}</p>
+		<p class="recent-article-date">Added: {{ article.date | date: "%B %d, %Y" }}</p>
+		<p><a href="{{ article.url }}">Read more &rarr;</a></p>
+	</div>
+</div>
+{% endfor %}
+
+<p><a href="/articles/" class="hover-flow">Explore all {{ site.articles | size }} articles &rarr;</a></p>
 
 {% assign featured_articles = site.articles | where_exp: "article", "article.featured-image" %}
 {% if featured_articles.size > 0 %}
 
-<h2>Featured article</h2>
+<h2 class="home-section-title">from the archive</h2>
 
 <div class="featured-article" id="featured-article-container">
 	<!-- Content will be populated by JavaScript -->
@@ -89,206 +137,3 @@ FEATURED ARTICLE (randomly selected on each page load via JavaScript)
 </script>
 
 {% endif %}
-
-
-{% comment %}
-================================================================================
-RECENT ARTICLES
-================================================================================
-{% endcomment %}
-
-<h2>Recent additions</h2>
-
-{% assign sorted_articles = site.articles | sort: 'date' | reverse %}
-{% for article in sorted_articles limit:3 %}
-<div class="recent-article">
-	<div class="recent-article-image">
-		<a href="{{ article.url }}"><img src="{{ article.featured-image }}" alt="{{ article.title }}"></a>
-	</div>
-	<div class="recent-article-content">
-		<h3 style="padding-top: 0; margin-top: 0;"><a href="{{ article.url }}">{{ article.title }}</a></h3>
-		<p><strong>{{ article.title }}</strong> {{ article.description }}</p>
-		<p class="recent-article-date">Added: {{ article.date | date: "%B %d, %Y" }}</p>
-		<p><a href="{{ article.url }}">Read more &rarr;</a></p>
-	</div>
-</div>
-{% endfor %}
-
-<p><a href="/articles/">Explore all {{ site.articles | size }} articles &rarr;</a></p>
-
-
-{% comment %}
-================================================================================
-BROWSE BY CATEGORY
-================================================================================
-{% endcomment %}
-
-<h2>Browse by category</h2>
-
-<p>Articles are organized into the following categories:</p>
-
-{% assign categories = site.articles | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
-<div class="browse-grid">
-{% for category in categories %}
-	{% if category != '' %}
-	{% assign category_articles = site.articles | where: 'categories', category %}
-	<div class="browse-item">
-		<a href="/articles/?category={{ category }}">
-			<span class="browse-item-title">{% include titlecase.html text=category %}</span>
-			<span class="browse-item-count">{{ category_articles.size }} article{% if category_articles.size != 1 %}s{% endif %}</span>
-		</a>
-	</div>
-	{% endif %}
-{% endfor %}
-</div>
-
-
-{% comment %}
-================================================================================
-BROWSE BY SUBJECT
-================================================================================
-{% endcomment %}
-
-{% assign all_subjects = site.articles | map: 'subjects' | compact | join: ',' | split: ',' | uniq | sort %}
-{% if all_subjects.size > 0 %}
-<h2>Browse by subject</h2>
-
-<p>Explore articles by their subject matter:</p>
-
-<div class="tag-cloud" id="subject-tag-cloud">
-{% for subject in all_subjects %}
-	{% if subject != '' %}
-	{% assign subject_count = 0 %}
-	{% for article in site.articles %}
-		{% if article.subjects contains subject %}
-			{% assign subject_count = subject_count | plus: 1 %}
-		{% endif %}
-	{% endfor %}
-	<a href="/articles/?subject={{ subject }}" class="tag-cloud-item subject-tag" data-count="{{ subject_count }}">{% include titlecase.html text=subject %} <span class="tag-count">({{ subject_count }})</span></a>
-	{% endif %}
-{% endfor %}
-</div>
-
-<script>
-(function() {
-	'use strict';
-	
-	var subjectTags = document.querySelectorAll('.subject-tag');
-	
-	// Find the maximum count
-	var maxCount = 0;
-	subjectTags.forEach(function(tag) {
-		var count = parseInt(tag.getAttribute('data-count'), 10);
-		if (count > maxCount) maxCount = count;
-	});
-	
-	// Apply color based on count using logarithmic scale for better gradation
-	subjectTags.forEach(function(tag) {
-		var count = parseInt(tag.getAttribute('data-count'), 10);
-		
-		// Use logarithmic scale to create more distinction between low counts
-		// log(1) = 0, log(2) Ã¢â€°Ë† 0.69, log(3) Ã¢â€°Ë† 1.1, etc.
-		var logCount = Math.log(count + 1);
-		var logMax = Math.log(maxCount + 1);
-		var intensity = logCount / logMax;
-		
-		// Blue gradient from very light (low count) to dark (high count)
-		// Very light blue: rgb(150, 190, 240)
-		// Dark blue: rgb(30, 70, 140)
-		var r = Math.round(150 - (120 * intensity));
-		var g = Math.round(190 - (120 * intensity));
-		var b = Math.round(240 - (100 * intensity));
-		
-		var color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
-		tag.style.backgroundColor = color;
-		tag.style.borderColor = color;
-	});
-})();
-</script>
-
-{% endif %}
-
-
-{% comment %}
-================================================================================
-BROWSE BY TAG
-================================================================================
-{% endcomment %}
-
-{% assign all_tags = site.articles | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
-{% if all_tags.size > 0 %}
-<h2>Popular tags</h2>
-
-<p>Articles are tagged for easier discovery:</p>
-
-<div class="tag-cloud">
-{% for tag_name in all_tags %}
-	{% if tag_name != '' %}
-	{% assign tag_count = 0 %}
-	{% for article in site.articles %}
-		{% if article.tags contains tag_name %}
-			{% assign tag_count = tag_count | plus: 1 %}
-		{% endif %}
-	{% endfor %}
-	{% if tag_count > 0 %}
-	<a href="/articles/?tag={{ tag_name }}" class="tag-cloud-item">{% include titlecase.html text=tag_name %} <span class="tag-count">({{ tag_count }})</span></a>
-	{% endif %}
-	{% endif %}
-{% endfor %}
-</div>
-
-{% endif %}
-
-
-{% comment %}
-================================================================================
-BROWSE BY COLLECTION
-================================================================================
-{% endcomment %}
-
-{% if site.collections.size > 0 %}
-{% assign defined_collections = site.collections | where_exp: "c", "c.collection_id" %}
-{% if defined_collections.size > 0 %}
-<h2>Browse by collection</h2>
-
-<p>Some articles are organized into thematic collections:</p>
-
-<div class="collection-browse-list">
-{% for collection in defined_collections %}
-	{% assign collection_articles = site.articles | where: "member_of", collection.collection_id %}
-	<div class="collection-browse-item">
-		<div class="collection-browse-title">
-			<a href="{{ collection.url }}">{{ collection.title }}</a>
-		</div>
-		<div class="collection-browse-description">
-			<strong><a href="{{ collection.url }}">{{ collection.title }}</a></strong> {{ collection.description }}
-		</div>
-		<div class="collection-browse-meta">
-			{{ collection_articles.size }} article{% if collection_articles.size != 1 %}s{% endif %} &middot; <a href="{{ collection.url }}">View collection &rarr;</a>
-		</div>
-	</div>
-{% endfor %}
-</div>
-{% endif %}
-{% endif %}
-
-
-{% comment %}
-================================================================================
-CREATORS
-================================================================================
-{% endcomment %}
-
-<h2>Creators</h2>
-
-<p>The archive focuses on works by the following artists and authors:</p>
-
-<div class="creator-grid">
-{% assign sorted_creators = site.data.creators | sort: "surname" %}
-{% for creator_data in sorted_creators %}
-	{% assign creator_slug = creator_data.slug %}
-	{% include creator-listing.html %}
-{% endfor %}
-</div>
-
-<p><a href="/creators/">View all creators &rarr;</a></p>

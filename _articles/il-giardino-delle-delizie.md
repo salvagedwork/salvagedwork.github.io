@@ -8,6 +8,7 @@ creators: [wolf-vostell]
 subjects: [fluxus]
 featured-image: /assets/articles/il-giardino-delle-delizie/front.jpg
 date: 2019-01-01
+published: 1984
 last_modified_at: 2020-12-10
 ---
 
@@ -102,7 +103,7 @@ The vinyl recording of the performance is collaged/de-collaged with a variety of
 
 <a href="https://archive.org/details/ilgiardinodelledelizie" target="_blank">Listen to {{ page.title }} on archive.org:</a>
 
-<iframe src="https://archive.org/embed/ilgiardinodelledelizie&playlist=1&list_height=150" width="100%" height="100" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+<iframe src="https://archive.org/embed/ilgiardinodelledelizie?playlist=1" width="500" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
 ## Liner Notes
 

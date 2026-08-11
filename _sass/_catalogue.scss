@@ -1,0 +1,2244 @@
+// ==========================================================================
+// Catalogue — the designed shelves (style-definition.md)
+// Homepage, Reading Room, theme doors, discovery UI, motion foundations.
+// Article pages and book texts inherit only the foundations.
+// ==========================================================================
+
+// --------------------------------------------------------------------------
+// Foundations: view transitions, paper grain, easing
+// --------------------------------------------------------------------------
+
+@view-transition {
+	navigation: auto;
+}
+
+// Paper grain: subliminal noise over the sheet (2.5% opacity)
+body::after {
+	content: "";
+	position: fixed;
+	inset: 0;
+	pointer-events: none;
+	z-index: 2147483647;
+	opacity: 0.025;
+	mix-blend-mode: multiply;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+// --------------------------------------------------------------------------
+// The zag (45°, one geometry) — as rule, as active nav, as progress
+// --------------------------------------------------------------------------
+
+@mixin zag-line($color: "%23221813") {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='8' viewBox='0 0 16 8'%3E%3Cpath d='M0 7 L4 3 L8 7 L12 3 L16 7' fill='none' stroke='#{$color}' stroke-width='2'/%3E%3C/svg%3E");
+	background-repeat: repeat-x;
+	background-size: 16px 8px;
+}
+
+.zag-rule {
+	border: none;
+	height: 8px;
+	margin: 2.5rem auto;
+	max-width: 160px;
+	@include zag-line();
+}
+
+.zag-rule--red { @include zag-line("%23c8281e"); }
+
+// --------------------------------------------------------------------------
+// The flow: hover underline that draws in (index links only)
+// --------------------------------------------------------------------------
+
+.hover-flow {
+	text-decoration: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='6' viewBox='0 0 24 6'%3E%3Cpath d='M0 3 Q6 0 12 3 T24 3' fill='none' stroke='%23c8281e' stroke-width='2'/%3E%3C/svg%3E");
+	background-repeat: repeat-x;
+	background-position: 0 100%;
+	background-size: 0 6px;
+	padding-bottom: 5px;
+	transition: background-size 0.25s $ease-site;
+
+	&:hover,
+	&:focus-visible {
+		background-size: 24px 6px;
+	}
+}
+
+// --------------------------------------------------------------------------
+// Homepage: masthead → counters → doors → recently salvaged → featured
+// --------------------------------------------------------------------------
+
+.home-masthead {
+	padding: 2.5rem 0 1.5rem;
+
+	h1 {
+		font-family: $font-bold;
+		font-size: clamp(2rem, 5vw, 3.5rem);
+		line-height: 1.1;
+		margin: 0 0 1rem;
+		text-transform: lowercase;
+		letter-spacing: -0.01em;
+	}
+
+	.home-mission {
+		font-size: 1.05rem;
+		line-height: $line-height;
+		max-width: 46rem;
+		margin: 0;
+	}
+}
+
+.home-counters {
+	font-family: $font-mono;
+	font-size: 0.85rem;
+	letter-spacing: 0.02em;
+	color: $color-text;
+	margin: 1.5rem 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35rem 0;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+		transition: color 0.2s $ease-site;
+
+		&:hover,
+		&:focus-visible { color: $ink-red; }
+	}
+
+	.counter-sep {
+		margin: 0 0.6rem;
+		color: $color-border-dark;
+	}
+}
+
+// The doors: theme cards with spine-stripe, flow-masked crop, mono count
+.home-doors {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+	gap: 1.25rem;
+	margin: 2rem 0;
+}
+
+.door {
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	padding: 1.25rem;
+	background: $color-background;
+	border: 1px solid $color-border;
+	border-left: 6px solid var(--door-ink, $ink-red);
+	text-decoration: none;
+	color: $color-text;
+	transition: border-color 0.25s $ease-site, box-shadow 0.25s $ease-site;
+
+	&:hover,
+	&:focus-visible {
+		border-color: var(--door-ink, $ink-red);
+		box-shadow: 0 4px 14px rgba(34, 24, 19, 0.12);
+	}
+}
+
+.door-crop {
+	flex: 0 0 5.5rem;
+	width: 5.5rem;
+	height: 5.5rem;
+	overflow: hidden;
+	// the flow: an organic window onto the plate
+	border-radius: 58% 42% 55% 45% / 45% 52% 48% 55%;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 6s $ease-site;
+	}
+}
+
+.door:hover .door-crop img,
+.door:focus-visible .door-crop img {
+	transform: scale(1.06);
+}
+
+.door-text {
+	min-width: 0;
+
+	.door-title,
+	.door-count,
+	.door-blurb {
+		display: block;
+	}
+
+	.door-title {
+		font-family: $font-bold;
+		font-size: 1.35rem;
+		line-height: 1.15;
+		text-transform: lowercase;
+		margin: 0 0 0.3rem;
+	}
+
+	.door-count {
+		font-family: $font-mono;
+		font-size: 0.76rem;
+		letter-spacing: 0.02em;
+		color: $color-muted;
+		transition: color 0.2s $ease-site;
+	}
+
+	.door-blurb {
+		font-size: 0.9rem;
+		line-height: 1.45;
+		color: $color-muted;
+		margin: 0.35rem 0 0;
+	}
+}
+
+.door:hover .door-count,
+.door:focus-visible .door-count {
+	color: var(--door-ink, $ink-red);
+}
+
+.home-section-title {
+	font-family: $font-bold;
+	font-size: 1.5rem;
+	text-transform: lowercase;
+	margin: 2.5rem 0 1rem;
+}
+
+// --------------------------------------------------------------------------
+// Reading Room: the shelf
+// --------------------------------------------------------------------------
+
+.shelf {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+	gap: 2.5rem 1.75rem;
+	margin: 2rem 0;
+}
+
+.shelf-item {
+	text-decoration: none;
+	color: $color-text;
+	display: block;
+
+	.shelf-cover {
+		background: $color-highlight;
+		border: 1px solid $color-border;
+		aspect-ratio: 3 / 4;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		transition: transform 0.25s $ease-site, box-shadow 0.25s $ease-site;
+
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&:hover .shelf-cover,
+	&:focus-visible .shelf-cover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 18px rgba(34, 24, 19, 0.16);
+	}
+
+	.shelf-title {
+		font-family: $font-bold;
+		font-size: 0.95rem;
+		line-height: 1.25;
+		margin: 0.6rem 0 0.2rem;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	.shelf-meta {
+		font-family: $font-mono;
+		font-size: 0.72rem;
+		letter-spacing: 0.03em;
+		color: $color-muted;
+	}
+}
+
+// --------------------------------------------------------------------------
+// Article page discovery: full-text note + onward doors
+// (foundations tier: quiet, no ink fields, no zag)
+// --------------------------------------------------------------------------
+
+.article-fulltext-note {
+	font-family: $font-mono;
+	font-size: 0.82rem;
+	letter-spacing: 0.02em;
+	color: $color-text;
+	margin: 0.5rem 0 0;
+
+	a {
+		color: $ink-red;
+		text-decoration: none;
+
+		&:hover,
+		&:focus-visible { text-decoration: underline; }
+	}
+}
+
+// A horizontal band inside the article body: not an appendix, an invitation.
+// Sits on a tinted ground with a red top rule, the one place on an article
+// page ink appears as a field rather than a line.
+.onward-doors {
+	margin: 3.5rem 0 0.5rem;
+	padding: 1.5rem 1.5rem 1.75rem;
+	background: $color-highlight;
+	border-top: 1px solid $color-border;
+	max-width: none;
+
+	.onward-title {
+		font-family: $font-regular;
+		font-weight: 600;
+		font-size: 1.15rem;
+		text-transform: none;
+		letter-spacing: normal;
+		color: $color-text;
+		margin: 0 0 1rem;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+		gap: 0.85rem;
+	}
+}
+
+// --------------------------------------------------------------------------
+// Infobox read-row
+// --------------------------------------------------------------------------
+
+#infobox .infobox-read {
+	text-align: center;
+
+	a.infobox-read-btn {
+		display: inline-block;
+		font-family: $font-mono;
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: $paper;
+		background: $ink-red-dark;
+		padding: 0.45rem 0.9rem;
+		margin: 0.2rem 0;
+		text-decoration: none;
+		transition: background 0.2s $ease-site;
+
+		&:hover,
+		&:focus-visible { background: $ink-red; }
+	}
+}
+
+// --------------------------------------------------------------------------
+// Colophon (book reader) + lithograph credit (footer)
+// --------------------------------------------------------------------------
+
+.book-colophon,
+.litho-credit {
+	font-family: $font-mono;
+	font-size: 0.72rem;
+	letter-spacing: 0.03em;
+	color: $color-muted;
+
+	a {
+		color: inherit;
+		text-decoration: underline;
+
+		&:hover,
+		&:focus-visible { color: $ink-red; }
+	}
+}
+
+.book-colophon {
+	max-width: 68ch;
+	margin: 0.75rem auto 0;
+	text-align: center;
+}
+
+.litho-credit {
+	margin-top: 0.75rem;
+}
+
+// --------------------------------------------------------------------------
+// 404: three random drawers instead of an apology
+// --------------------------------------------------------------------------
+
+.not-found {
+	text-align: center;
+	padding: 2rem 0;
+
+	h1 {
+		font-family: $font-bold;
+		font-size: clamp(2rem, 5vw, 3.5rem);
+		text-transform: lowercase;
+		margin-bottom: 0.5rem;
+	}
+
+	.not-found-drawers {
+		list-style: none;
+		margin: 1.5rem 0 0;
+		padding: 0;
+
+		li { margin: 0.6rem 0; }
+
+		a {
+			font-family: $font-bold;
+			font-size: 1.1rem;
+			color: $color-text;
+			text-decoration: none;
+
+			&:hover,
+			&:focus-visible { color: $ink-red; }
+		}
+	}
+}
+
+// --------------------------------------------------------------------------
+// Back to top
+// --------------------------------------------------------------------------
+
+// The floating control cluster: reading progress and Top, as one unit
+.floating-controls {
+	position: fixed;
+	left: 50%;
+	bottom: 1.25rem;
+	z-index: 900;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: stretch;
+	gap: 0.5rem;
+	pointer-events: none;
+
+	> * { pointer-events: auto; }
+}
+
+// On a book page the reading measure is the second grid track, so the
+// cluster shifts right by half the rail (and its gap) to sit centred on the
+// text rather than on the viewport.
+@media #{$information-desktop} {
+	body:has(.book-reader) .floating-controls {
+		left: calc(50% + (250px + 3rem) / 2);
+	}
+}
+
+.back-to-top {
+	// the global button rule sets width: 100%; this element sizes to content
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.15rem;
+	padding: 0.6rem 0.8rem 0.5rem;
+	background: $paper;
+	border: 1px solid $color-border-dark;
+	box-shadow: 0 3px 12px rgba(34, 24, 19, 0.12);
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(8px);
+	transition: opacity 0.25s $ease-site, transform 0.25s $ease-site,
+		visibility 0.25s $ease-site, border-color 0.2s $ease-site;
+
+	&.visible {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+
+	&:hover,
+	&:focus-visible {
+		border-color: $ink-red;
+
+		.back-to-top-zag { border-color: $ink-red; }
+		.back-to-top-label { color: $ink-red; }
+	}
+
+	// the zag, pointing up
+	.back-to-top-zag {
+		display: block;
+		width: 11px;
+		height: 11px;
+		border-left: 2px solid $color-text;
+		border-top: 2px solid $color-text;
+		transform: rotate(45deg);
+		margin-bottom: 2px;
+		transition: border-color 0.2s $ease-site;
+	}
+
+	.back-to-top-label {
+		font-family: $font-mono;
+		font-size: 0.6rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: $color-text;
+		transition: color 0.2s $ease-site;
+	}
+}
+
+// --------------------------------------------------------------------------
+// Motion discipline
+// --------------------------------------------------------------------------
+
+@media (prefers-reduced-motion: reduce) {
+	.back-to-top {
+		transition: opacity 0.01ms, visibility 0.01ms !important;
+		transform: none !important;
+	}
+
+	.door,
+	.door-crop img,
+	.shelf-cover,
+	.hover-flow,
+	.home-counters a,
+	.door-count,
+	.catalogue-row,
+	.disc-cover,
+	.dossier-row,
+	.strata-row,
+	.onward-tile,
+	.book-btn,
+	.pamphlet-sheet,
+	.plate-mount,
+	.plate-caption,
+	.collection-sort button {
+		transition: none !important;
+		transform: none !important;
+	}
+
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
+}
+
+// --------------------------------------------------------------------------
+// The pebble: organic crop mask, three variants for variety
+// --------------------------------------------------------------------------
+
+.pebble {
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 58% 42% 55% 45% / 45% 52% 48% 55%;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.pebble--b { border-radius: 44% 56% 48% 52% / 58% 43% 57% 42%; }
+.pebble--c { border-radius: 52% 48% 60% 40% / 42% 56% 44% 58%; }
+
+// alternate pebble shapes across the homepage doors
+.home-doors .door:nth-child(3n+2) .door-crop { border-radius: 44% 56% 48% 52% / 58% 43% 57% 42%; }
+.home-doors .door:nth-child(3n) .door-crop { border-radius: 52% 48% 60% 40% / 42% 56% 44% 58%; }
+
+// --------------------------------------------------------------------------
+// Reading Room tiles: the catalogue-entry description (source voice)
+// --------------------------------------------------------------------------
+
+.shelf-item .shelf-desc {
+	display: block;
+	font-family: $font-serif;
+	font-size: 0.88rem;
+	line-height: 1.5;
+	color: $color-text;
+	margin: 0.25rem 0 0.3rem;
+}
+
+// --------------------------------------------------------------------------
+// Book prelude: the half-title page before the text
+// --------------------------------------------------------------------------
+
+// Shared button for reader actions
+.book-btn {
+	display: inline-block;
+	font-family: $font-mono;
+	font-size: 0.82rem;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	padding: 0.55rem 0.95rem;
+	border: 1px solid $color-border-dark;
+	color: $color-text;
+	transition: border-color 0.2s $ease-site, background 0.2s $ease-site,
+		color 0.2s $ease-site;
+
+	&:hover,
+	&:focus-visible {
+		border-color: $ink-red;
+		color: $ink-red;
+	}
+
+	&--primary {
+		background: $ink-red-dark;
+		border-color: $ink-red-dark;
+		color: $paper;
+
+		&:hover,
+		&:focus-visible {
+			background: $ink-red;
+			border-color: $ink-red;
+			color: $paper;
+		}
+	}
+
+	cite { font-style: italic; }
+}
+
+// Persistent link out of the text, in the sticky contents panel
+.book-toc-article {
+	display: block;
+	text-decoration: none;
+	padding-bottom: 0.75rem;
+	margin-bottom: 0.75rem;
+	border-bottom: 1px solid $color-border;
+
+	.book-toc-article-kind {
+		display: block;
+		font-family: $font-mono;
+		font-size: 0.65rem;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: $color-muted;
+	}
+
+	.book-toc-article-name {
+		font-family: $font-serif;
+		font-weight: 600;
+		font-size: 0.9rem;
+		color: $color-text;
+		transition: color 0.2s $ease-site;
+	}
+
+	&:hover .book-toc-article-name,
+	&:focus-visible .book-toc-article-name { color: $ink-red; }
+}
+
+// The way out, at the end of the text
+.book-endmatter {
+	max-width: 68ch;
+	margin: 0 auto;
+
+	.zag-rule {
+		margin: 0 0 1.25rem;
+		max-width: 120px;
+	}
+
+	.book-endmatter-label {
+		font-family: $font-mono;
+		font-size: 0.78rem;
+		letter-spacing: 0.02em;
+		color: $color-text;
+		margin: 0 0 1rem;
+	}
+
+	.book-endmatter-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.6rem;
+		margin: 0;
+	}
+}
+
+// --------------------------------------------------------------------------
+// Collection pages: pebble header, toolbar, sort controls
+// --------------------------------------------------------------------------
+
+.collection-header--theme {
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+
+	.collection-header-crop {
+		flex: 0 0 4.5rem;
+		width: 4.5rem;
+		height: 4.5rem;
+	}
+
+	.collection-header-text {
+		flex: 1;
+		min-width: 0;
+	}
+
+	h1 { text-transform: lowercase; }
+}
+
+.collection-toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 0.5rem 1rem;
+	margin: 0.5rem 0 1.25rem;
+	font-family: $font-mono;
+	font-size: 0.78rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: $color-muted;
+
+	.collection-sort {
+		display: inline-flex;
+		align-items: baseline;
+		gap: 0.9rem;
+
+		.sort-label { color: $color-border-dark; }
+
+		button {
+			font: inherit;
+			letter-spacing: inherit;
+			text-transform: inherit;
+			background: none;
+			border: none;
+			padding: 0 0 3px;
+			cursor: pointer;
+			color: $color-muted;
+			border-bottom: 2px solid transparent;
+			transition: color 0.2s $ease-site, border-color 0.2s $ease-site;
+
+			&:hover,
+			&:focus-visible { color: $ink-red; }
+
+			&.active {
+				color: $color-text;
+				border-bottom-color: $ink-red;
+			}
+		}
+	}
+}
+
+// --------------------------------------------------------------------------
+// Display variant: catalogue (dense library rows)
+// --------------------------------------------------------------------------
+
+.collection-catalogue {
+	display: flex;
+	flex-direction: column;
+
+	.catalogue-row {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 0.75rem 0.25rem;
+		border-top: 1px solid $color-border;
+		text-decoration: none;
+		color: $color-text;
+		transition: background 0.2s $ease-site;
+
+		&:last-child { border-bottom: 1px solid $color-border; }
+
+		&:hover,
+		&:focus-visible { background: $color-highlight; }
+	}
+
+	.catalogue-thumb {
+		flex: 0 0 4.5rem;
+		width: 4.5rem;
+
+		img {
+			width: 100%;
+			display: block;
+			border: 1px solid $color-border;
+		}
+	}
+
+	.catalogue-body { flex: 1; min-width: 0; }
+
+	.catalogue-title {
+		display: block;
+		font-family: $font-bold;
+		font-size: 0.95rem;
+		line-height: 1.25;
+	}
+
+	.catalogue-desc {
+		display: block;
+		font-family: $font-serif;
+		font-size: 0.88rem;
+		line-height: 1.5;
+		color: $color-text;
+		margin-top: 0.2rem;
+	}
+
+	.catalogue-year {
+		font-family: $font-mono;
+		font-size: 0.75rem;
+		color: $color-muted;
+		flex: 0 0 auto;
+	}
+}
+
+// --------------------------------------------------------------------------
+// Display variant: discography (square-cover grid)
+// --------------------------------------------------------------------------
+
+.collection-discography {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+	gap: 2rem 1.5rem;
+
+	.disc-tile {
+		text-decoration: none;
+		color: $color-text;
+
+		.disc-cover {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			aspect-ratio: 1 / 1;
+			padding: 0.4rem;
+			border: 1px solid $color-border;
+			background: $color-highlight;
+			transition: transform 0.25s $ease-site, box-shadow 0.25s $ease-site;
+
+			img {
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: contain;
+			}
+		}
+
+		&:hover .disc-cover,
+		&:focus-visible .disc-cover {
+			transform: translateY(-3px);
+			box-shadow: 0 8px 18px rgba(34, 24, 19, 0.16);
+		}
+
+		.disc-title {
+			display: block;
+			font-family: $font-bold;
+			font-size: 1rem;
+			line-height: 1.3;
+			margin-top: 0.6rem;
+		}
+
+		.disc-desc {
+			display: block;
+			font-family: $font-serif;
+			font-size: 0.88rem;
+			line-height: 1.5;
+			color: $color-text;
+			margin-top: 0.25rem;
+		}
+
+		.disc-year {
+			font-family: $font-mono;
+			font-size: 0.72rem;
+			color: $color-muted;
+			margin-top: 0.35rem;
+			display: block;
+		}
+	}
+}
+
+// --------------------------------------------------------------------------
+// Display variant: dossier (numbered files)
+// --------------------------------------------------------------------------
+
+.collection-dossier {
+	display: flex;
+	flex-direction: column;
+
+	.dossier-row {
+		display: flex;
+		gap: 1.25rem;
+		padding: 1.1rem 0.25rem;
+		border-top: 1px solid $color-border;
+		text-decoration: none;
+		color: $color-text;
+		transition: background 0.2s $ease-site;
+
+		&:last-child { border-bottom: 1px solid $color-border; }
+
+		&:hover,
+		&:focus-visible { background: $color-highlight; }
+	}
+
+	.dossier-no {
+		font-family: $font-mono;
+		font-size: 1.4rem;
+		color: $color-border-dark;
+		flex: 0 0 auto;
+		line-height: 1.2;
+	}
+
+	.dossier-title {
+		display: block;
+		font-family: $font-bold;
+		font-size: 1.05rem;
+		line-height: 1.3;
+	}
+
+	.dossier-desc {
+		display: block;
+		font-family: $font-serif;
+		font-size: 0.9rem;
+		line-height: 1.5;
+		color: $color-text;
+		margin: 0.3rem 0;
+	}
+
+	.dossier-meta {
+		font-family: $font-mono;
+		font-size: 0.72rem;
+		color: $color-muted;
+	}
+}
+
+// --------------------------------------------------------------------------
+// Display variant: pamphlet (period title pages, a stack of printed sheets)
+// --------------------------------------------------------------------------
+
+.collection-pamphlet {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+	gap: 2rem;
+	align-items: start;
+	max-width: 48rem;
+	margin: 0 auto;
+
+	.pamphlet-sheet {
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		color: $color-text;
+		background: $paper;
+		border: 1px solid $color-border-dark;
+		padding: 2rem 2rem 1.5rem;
+		// the sheets behind: a thin stack of pages
+		box-shadow:
+			3px 3px 0 -1px $paper,
+			3px 3px 0 0 $color-border,
+			6px 6px 0 -1px $paper,
+			6px 6px 0 0 $color-border;
+		transition: transform 0.25s $ease-site, box-shadow 0.25s $ease-site;
+
+		&:hover,
+		&:focus-visible {
+			transform: translateY(-2px);
+			box-shadow:
+				3px 3px 0 -1px $paper,
+				3px 3px 0 0 $color-border,
+				6px 6px 0 -1px $paper,
+				6px 6px 0 0 $color-border,
+				0 10px 22px rgba(34, 24, 19, 0.14);
+		}
+
+		// four printings: a plain sheet, a foxed sheet, a bordered
+		// sheet, and one with a printer's ornament above the rule
+		&:nth-child(4n+2) { background: mix($paper, $ink-yellow, 96%); }
+
+		&:nth-child(4n+3) {
+			border-width: 2px;
+			padding: 1.85rem 1.85rem 1.35rem;
+		}
+
+		&:nth-child(4n+1) .pamphlet-rule--top::before {
+			content: "\2766";
+			display: block;
+			font-size: 1.1rem;
+			color: $color-border-dark;
+			margin-bottom: 0.5rem;
+		}
+
+		// one printing runs its long-title in a slightly larger setting,
+		// as a shop would for a shorter sheet with room to spare
+		&:nth-child(4n) .pamphlet-longtitle {
+			font-size: 0.98rem;
+			line-height: 1.6;
+		}
+	}
+
+	.pamphlet-rule {
+		display: block;
+		width: 7rem;
+		margin: 0 auto;
+		border-top: 1px solid $color-text;
+
+		&--top {
+			border-top-width: 2px;
+			margin-bottom: 1.1rem;
+		}
+
+		&--bottom {
+			margin-top: 1.1rem;
+			padding-top: 2px;
+			border-bottom: 2px solid $color-text;
+		}
+	}
+
+	// the second printing's rules run a hair thinner, as though a
+	// different forme set this sheet
+	.pamphlet-sheet:nth-child(4n+2) .pamphlet-rule--top,
+	.pamphlet-sheet:nth-child(4n+2) .pamphlet-rule--bottom {
+		border-width: 1px;
+	}
+
+	.pamphlet-title {
+		display: block;
+		font-family: $font-serif;
+		font-weight: 600;
+		font-size: 1.05rem;
+		line-height: 1.45;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+	}
+
+	.pamphlet-longtitle {
+		display: block;
+		font-family: $font-serif;
+		font-size: 0.92rem;
+		line-height: 1.55;
+		margin-top: 0.9rem;
+	}
+
+	.pamphlet-imprint {
+		display: block;
+		font-family: $font-serif;
+		font-style: italic;
+		font-size: 0.78rem;
+		letter-spacing: 0.02em;
+		color: $color-muted;
+		margin-top: 1rem;
+	}
+}
+
+// --------------------------------------------------------------------------
+// Display variant: strata (chronological layers)
+// --------------------------------------------------------------------------
+
+.collection-strata {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	// the spine
+	&::before {
+		content: "";
+		position: absolute;
+		left: 5.25rem;
+		top: 0.75rem;
+		bottom: 0.75rem;
+		border-left: 2px solid $color-border-dark;
+	}
+
+	.strata-row {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+		padding: 1.1rem 0.25rem 1.1rem 0;
+		position: relative;
+		text-decoration: none;
+		color: $color-text;
+		transition: background 0.2s $ease-site;
+
+		// the joint: a diamond on the spine at each layer
+		&::before {
+			content: "";
+			position: absolute;
+			left: calc(5.25rem - 5px);
+			top: 50%;
+			margin-top: -5px;
+			width: 9px;
+			height: 9px;
+			background: $ink-green;
+			transform: rotate(45deg);
+		}
+
+		&:hover,
+		&:focus-visible { background: $color-highlight; }
+	}
+
+	.strata-year {
+		font-family: $font-mono;
+		font-size: 1.6rem;
+		line-height: 1;
+		color: $ink-green-dark;
+		flex: 0 0 4.5rem;
+		text-align: right;
+		padding-right: 0.35rem;
+	}
+
+	.strata-body { flex: 1; min-width: 0; }
+
+	.strata-title {
+		display: block;
+		font-family: $font-bold;
+		font-size: 0.98rem;
+		line-height: 1.3;
+	}
+
+	.strata-desc {
+		display: block;
+		font-family: $font-serif;
+		font-size: 0.88rem;
+		line-height: 1.5;
+		color: $color-text;
+		margin-top: 0.2rem;
+	}
+
+	.strata-thumb {
+		flex: 0 0 5.5rem;
+		width: 5.5rem;
+
+		img {
+			width: 100%;
+			display: block;
+			border: 1px solid $color-border;
+		}
+
+		@media #{$information-mobile} {
+			flex-basis: 3.5rem;
+			width: 3.5rem;
+		}
+	}
+
+	@media #{$information-mobile} {
+		&::before { left: 3.85rem; }
+
+		.strata-row {
+			gap: 1.1rem;
+
+			&::before { left: calc(3.85rem - 5px); }
+		}
+
+		.strata-year {
+			font-size: 1.15rem;
+			flex-basis: 3.25rem;
+		}
+	}
+}
+
+// --------------------------------------------------------------------------
+// Onward doors as tiles (article footer)
+// --------------------------------------------------------------------------
+
+// Each kind of onward link claims its own ink, the way each homepage door
+// does, rather than a single colour standing in for all four.
+.onward-tile {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	padding: 0.9rem 1.1rem;
+	background: $paper;
+	border: 1px solid $color-border;
+	border-left: 4px solid var(--onward-ink, #{$ink-blue});
+	text-decoration: none;
+	color: $color-text;
+	transition: border-color 0.2s $ease-site, transform 0.2s $ease-site,
+		box-shadow 0.2s $ease-site;
+
+	&:hover,
+	&:focus-visible {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 16px rgba(34, 24, 19, 0.1);
+	}
+
+	.onward-kind {
+		font-family: $font-mono;
+		font-size: 0.68rem;
+		text-transform: uppercase;
+		letter-spacing: 0.07em;
+		color: $color-muted;
+	}
+
+	.onward-name {
+		font-family: $font-serif;
+		font-weight: 600;
+		font-size: 1.05rem;
+		line-height: 1.3;
+		color: $color-text;
+	}
+
+	&:hover .onward-name,
+	&:focus-visible .onward-name {
+		color: var(--onward-ink, #{$ink-blue});
+	}
+}
+
+// kind -> ink, matched by structural order (theme, series, creator, random
+// always appear in this sequence in the markup)
+.onward-tile[data-kind="theme"]   { --onward-ink: #{$ink-red-dark}; }
+.onward-tile[data-kind="series"]  { --onward-ink: #{$ink-blue}; }
+.onward-tile[data-kind="creator"] { --onward-ink: #{$ink-green-dark}; }
+.onward-tile[data-kind="random"]  { --onward-ink: #{$ink-yellow-text}; }
+
+// --------------------------------------------------------------------------
+// Footer: credit and modified date on one baseline
+// --------------------------------------------------------------------------
+
+.footer-meta {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 0.25rem 1.5rem;
+
+	.page-modified-date,
+	.litho-credit {
+		margin: 0;
+	}
+
+	.litho-credit { margin-top: 0; }
+}
+
+// --------------------------------------------------------------------------
+// Display variant: plates (image-first, after Jorn's own editorial doctrine)
+//
+// Jorn argued that in books about art the images should take precedence over
+// the text, and that photographing works out of their contexts let them be
+// juxtaposed in new configurations ("comparative vandalism"). This variant
+// applies that to the page: the plate leads, the caption follows, and the
+// grid is deliberately irregular rather than uniform.
+// --------------------------------------------------------------------------
+
+.collection-plates {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+	gap: 3rem 2rem;
+	align-items: start;
+	// backfill: a wide plate that will not fit the tail of a row lets the
+	// next narrow plate take the space, so no row ends in a hole at any
+	// viewport width
+	grid-auto-flow: dense;
+
+	.plate {
+		display: block;
+		text-decoration: none;
+		color: $color-text;
+	}
+
+	// the mount: a wide paper margin around the plate, as in a plate section
+	.plate-mount {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: $paper;
+		border: 1px solid $color-border;
+		padding: 1.25rem;
+		min-height: 11rem;
+		transition: border-color 0.25s $ease-site, box-shadow 0.25s $ease-site,
+			transform 0.25s $ease-site;
+
+		img {
+			max-width: 100%;
+			max-height: 16rem;
+			object-fit: contain;
+			// the plate itself carries a hairline, the mount carries the air
+			box-shadow: 0 2px 10px rgba(34, 24, 19, 0.18);
+		}
+	}
+
+	.plate:hover .plate-mount,
+	.plate:focus-visible .plate-mount {
+		border-color: $ink-red;
+		transform: translateY(-3px);
+		box-shadow: 0 10px 24px rgba(34, 24, 19, 0.14);
+	}
+
+	// caption: subordinate to the plate, set like a figure legend
+	.plate-caption {
+		display: block;
+		margin-top: 0.85rem;
+		padding-left: 0.65rem;
+		border-left: 2px solid $color-border;
+		transition: border-color 0.25s $ease-site;
+	}
+
+	.plate:hover .plate-caption,
+	.plate:focus-visible .plate-caption {
+		border-left-color: $ink-red;
+	}
+
+	.plate-year {
+		display: block;
+		font-family: $font-mono;
+		font-size: 0.72rem;
+		letter-spacing: 0.1em;
+		color: $color-muted;
+	}
+
+	.plate-title {
+		display: block;
+		font-family: $font-bold;
+		font-size: 1rem;
+		line-height: 1.3;
+		margin-top: 0.15rem;
+	}
+
+	.plate-desc {
+		display: block;
+		font-family: $font-serif;
+		font-size: 0.88rem;
+		line-height: 1.5;
+		margin-top: 0.3rem;
+	}
+
+	// new configurations: the grid refuses to be uniform. Every fifth and
+	// seventh plate takes two columns and prints larger, so the page reads
+	// as a hand-laid plate section rather than a catalogue table.
+	@media #{$information-desktop} {
+		grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+
+		// four printings of the plate, cycling every seven items: a grand
+		// double plate, a large double plate, a reduced plate, and the
+		// standard setting for everything else
+		.plate:nth-child(7n+1),
+		.plate:nth-child(7n+5) {
+			grid-column: span 2;
+
+			.plate-mount { padding: 2rem; }
+
+			.plate-title { font-size: 1.15rem; }
+		}
+
+		.plate:nth-child(7n+1) .plate-mount {
+			min-height: 20rem;
+
+			img { max-height: 30rem; }
+		}
+
+		.plate:nth-child(7n+5) .plate-mount {
+			min-height: 15rem;
+
+			img { max-height: 21rem; }
+		}
+
+		.plate:nth-child(7n+3) .plate-mount {
+			min-height: 8rem;
+			padding: 0.9rem;
+
+			img { max-height: 10.5rem; }
+		}
+
+		.plate:nth-child(7n+6) .plate-mount {
+			min-height: 13rem;
+
+			img { max-height: 19rem; }
+		}
+
+		// a plate hung slightly low, the way a print section breathes
+		.plate:nth-child(7n+4) { margin-top: 1.5rem; }
+	}
+}
+
+// --------------------------------------------------------------------------
+// Article pages, 2026: the catalogue entry
+// The scholar reads Literata; GT Eesti keeps the section headings and the
+// chrome; the mono voice carries the apparatus. One zag closes the text.
+// --------------------------------------------------------------------------
+
+// The masthead strip: one mono line above the title
+.article-header {
+	padding-bottom: 1.1rem;
+	border-bottom: 1px solid $color-border;
+	margin-bottom: 1.75rem;
+}
+
+.article-title {
+	font-family: $font-serif;
+	font-weight: 600;
+	font-size: 1.9rem;
+	line-height: 1.25;
+	margin: 0 0 0.6rem;
+
+	@media #{$information-desktop} {
+		font-size: 2.3rem;
+	}
+}
+
+// One quiet line beneath the title carries category, creators, year,
+// languages, and subjects together, so the header reads as two elements
+// (title, then this line) rather than three or four stacked bands.
+.article-masthead {
+	font-family: $font-mono;
+	font-size: 0.85rem;
+	letter-spacing: 0.01em;
+	color: $color-text;
+	margin: 0;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover,
+		&:focus-visible { color: $ink-red; }
+	}
+}
+
+.article-masthead-sep {
+	color: $color-border-dark;
+	text-transform: none;
+	letter-spacing: 0;
+	margin: 0 0.5em;
+}
+
+.article-tags {
+	margin: 0.6rem 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+
+	a {
+		font-family: $font-mono;
+		font-size: 0.76rem;
+		letter-spacing: 0.01em;
+		color: $color-muted;
+		text-decoration: none;
+		padding: 0.15rem 0.5rem;
+		border: 1px solid $color-border;
+		border-radius: 2px;
+		transition: color 0.2s $ease-site, border-color 0.2s $ease-site;
+
+		&:hover,
+		&:focus-visible {
+			color: $ink-red;
+			border-color: $ink-red;
+		}
+	}
+}
+
+// The body reads in the source voice; headings stay editorial
+.article-body {
+	font-family: $font-serif;
+	font-size: 1.05rem;
+	line-height: 1.7;
+
+	// the standfirst: the opening "Title is a ..." paragraph, a step up
+	> p:first-of-type {
+		font-size: 1.14rem;
+		line-height: 1.65;
+	}
+
+	h2 {
+		font-family: $font-regular;
+		font-weight: 600;
+		font-size: 1.35rem;
+		line-height: 1.3;
+		margin: 2.25rem 0 0.9rem;
+		padding-bottom: 0.35rem;
+		border-bottom: 1px solid $color-border;
+	}
+
+	h3 {
+		font-family: $font-regular;
+		font-weight: 600;
+		font-size: 1.1rem;
+		margin: 1.75rem 0 0.7rem;
+	}
+
+	h4 {
+		font-family: $font-regular;
+		font-weight: 600;
+		font-size: 0.98rem;
+		margin: 1.5rem 0 0.5rem;
+	}
+}
+
+// Quotes: the source speaks in its own voice
+.article-body .quote,
+.quote {
+	margin: 1.75rem 0;
+	padding: 0.25rem 0 0.25rem 1.25rem;
+	border-left: 2px solid $ink-red;
+	overflow: visible;
+	max-width: 62ch;
+
+	p {
+		font-family: $font-serif;
+		font-style: italic;
+		font-size: 1.08rem;
+		line-height: 1.6;
+	}
+
+	.quote-attrib {
+		font-family: $font-mono;
+		font-style: normal;
+		font-size: 0.72rem;
+		letter-spacing: 0.05em;
+		color: $color-muted;
+		text-align: left;
+		margin-top: 0.6rem;
+
+		a {
+			color: inherit;
+
+			&:hover,
+			&:focus-visible { color: $ink-red; }
+		}
+	}
+}
+
+// The specimen card: the object's label in this museum
+#infobox {
+	background: $paper;
+	border: 1px solid $color-border-dark;
+	border-top: 3px solid $ink-red;
+	box-shadow: 0 3px 14px rgba(34, 24, 19, 0.07);
+	padding: 1rem 1.1rem 0.75rem;
+
+	tr {
+		border-bottom: 1px solid $color-border;
+
+		&:last-of-type { border-bottom: none; }
+	}
+
+	th {
+		font-family: $font-mono;
+		font-weight: normal;
+		font-size: 0.65rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: $color-muted;
+		padding-right: 0.75rem;
+	}
+
+	td {
+		font-family: $font-serif;
+		font-size: 0.9rem;
+		line-height: 1.5;
+	}
+
+	#infobox-subtitle cite {
+		font-family: $font-serif;
+		font-style: italic;
+		font-size: 0.95rem;
+	}
+
+	.infobox-image {
+		box-shadow: 0 2px 10px rgba(34, 24, 19, 0.18);
+	}
+}
+
+// The contents rail joins the reader's system
+.article-toc {
+	.toc-title {
+		font-family: $font-serif;
+		font-weight: 600;
+	}
+
+	.toc-link {
+		font-family: $font-serif;
+		line-height: 1.4;
+	}
+}
+
+// Notes and references, harmonized to one size regardless of source:
+// footnotes.js's span-based "References" and Kramdown's native [^n]
+// "Notes" (article-body .footnotes) render identically.
+.references-section,
+.article-body .footnotes {
+	font-family: $font-serif;
+	font-size: 0.85rem;
+	line-height: 1.55;
+
+	sup, li, p, ol { font-size: inherit; }
+
+	h2 {
+		font-family: $font-bold;
+		font-size: 1.25rem;
+		padding-bottom: 0.35rem;
+		border-bottom: 1px solid $color-border;
+	}
+}
+
+.article-body .footnotes {
+	margin-top: 2.5rem;
+
+	// Kramdown's own <hr> stays as the sole separator here, restyled to
+	// match the site's hairlines instead of the browser default, so
+	// there is one rule above Notes, not two.
+	hr {
+		border: none;
+		border-top: 1px solid $color-border;
+		margin: 0 0 1.25rem;
+	}
+}
+
+
+
+// --------------------------------------------------------------------------
+// Header and footer, 2026: the chrome
+//
+// Wayfinding is GT Eesti, quiet and small; the apparatus below it is mono.
+// Nothing is underlined by default. The active page and hover states use the
+// zag, so navigation carries the same signature as the rest of the site.
+// --------------------------------------------------------------------------
+
+#header {
+	border-bottom: 1px solid $color-border;
+}
+
+#footer {
+	border-top: 1px solid $color-border;
+}
+
+.navbar-title {
+	a {
+		text-decoration: none;
+		color: $color-text;
+		transition: color 0.2s $ease-site;
+
+		&:hover,
+		&:focus-visible { color: $ink-red; }
+	}
+}
+
+// Navigation links: no underline, a zag when active or hovered
+.navbar-link {
+	font-family: $font-regular;
+	font-weight: 600;
+	font-size: 1.05rem;
+	text-decoration: none;
+	color: $color-text;
+	padding-bottom: 9px;
+	margin-right: 1.35rem;
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	background-size: 0 8px;
+	transition: color 0.2s $ease-site, background-size 0.25s $ease-site;
+
+	&:hover,
+	&:focus-visible {
+		color: $color-text;
+		text-decoration: none;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='8' viewBox='0 0 16 8'%3E%3Cpath d='M0 7 L4 3 L8 7 L12 3 L16 7' fill='none' stroke='%23221813' stroke-width='2'/%3E%3C/svg%3E");
+		background-size: 16px 8px;
+	}
+
+	&.current {
+		color: $color-text;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='8' viewBox='0 0 16 8'%3E%3Cpath d='M0 7 L4 3 L8 7 L12 3 L16 7' fill='none' stroke='%23c8281e' stroke-width='2'/%3E%3C/svg%3E");
+		background-size: 100% 8px;
+	}
+
+	&:last-of-type { margin-right: 0.5rem; }
+}
+
+// The footer speaks entirely in the apparatus voice
+#footer {
+	.footer-meta {
+		gap: 0.2rem 1.5rem;
+	}
+
+	.page-modified-date,
+	.litho-credit {
+		font-family: $font-regular;
+		font-size: 0.85rem;
+		color: $color-text;
+	}
+
+	.litho-credit {
+		a {
+			text-decoration: none;
+			border-bottom: 1px solid $color-border-dark;
+
+			&:hover,
+			&:focus-visible {
+				color: $ink-red;
+				border-bottom-color: $ink-red;
+			}
+		}
+	}
+
+	.navbar-link {
+		font-family: $font-regular;
+		font-weight: 600;
+		font-size: 0.95rem;
+		padding-bottom: 7px;
+		margin-right: 1.15rem;
+	}
+
+	.social-media-icon {
+		color: $color-text;
+		margin-left: 0.4rem;
+		transition: color 0.2s $ease-site;
+
+		&:hover,
+		&:focus-visible { color: $ink-red; }
+	}
+}
+
+.header-search-input {
+	font-family: $font-mono;
+	font-size: 0.72rem;
+	letter-spacing: 0.05em;
+	border: 1px solid $color-border;
+	background: $color-background;
+	padding: 0.35rem 0.5rem;
+	color: $color-text;
+
+	&::placeholder {
+		color: $color-border-dark;
+		letter-spacing: 0.02em;
+	}
+
+	&:focus {
+		outline: none;
+		border-color: $ink-red;
+	}
+}
+
+@media #{$information-desktop} {
+	#header,
+	#footer {
+		align-items: center;
+	}
+
+	#header { padding: 1.35rem $content-padding; }
+	#footer { padding: 1.25rem $content-padding; }
+}
+
+@media #{$information-mobile} {
+	// The header/footer .navbar-link containers are hidden on mobile; those
+	// links live in the burger menu instead, so they are styled there.
+	.mobile-nav-link {
+		font-family: $font-regular;
+		font-weight: 600;
+		font-size: 1.05rem;
+		color: $color-text;
+		text-decoration: none;
+
+		&:hover,
+		&:focus-visible {
+			color: $ink-red;
+			text-decoration: none;
+		}
+	}
+
+	.mobile-nav-social .social-media-icon {
+		color: $color-text;
+
+		&:hover,
+		&:focus-visible { color: $ink-red; }
+	}
+
+	#footer .footer-meta { margin-bottom: 0.6rem; }
+
+	// Two-up covers read better than one giant column on a phone
+	.shelf {
+		grid-template-columns: repeat(auto-fill, minmax(min(100%, 9.5rem), 1fr));
+		gap: 1.75rem 1rem;
+	}
+
+	.collection-discography {
+		grid-template-columns: repeat(auto-fill, minmax(min(100%, 9.5rem), 1fr));
+		gap: 1.5rem 1rem;
+	}
+}
+
+// --------------------------------------------------------------------------
+// The About page: the archive explaining itself
+// --------------------------------------------------------------------------
+
+.about-header {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	padding-bottom: 1.25rem;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid $color-border;
+
+	.about-header-crop {
+		flex: 0 0 5.5rem;
+		width: 5.5rem;
+		height: 5.5rem;
+	}
+
+	.about-header-text {
+		flex: 1;
+		min-width: 0;
+	}
+
+	.about-eyebrow {
+		font-family: $font-mono;
+		font-size: 0.8rem;
+		letter-spacing: 0.02em;
+		color: $color-muted;
+		margin: 0 0 0.4rem;
+	}
+
+	.about-title {
+		font-family: $font-serif;
+		font-weight: 600;
+		font-size: 1.9rem;
+		line-height: 1.2;
+		margin: 0 0 0.6rem;
+
+		@media #{$information-desktop} {
+			font-size: 2.4rem;
+		}
+	}
+
+	.home-counters { margin: 0; }
+
+	@media #{$information-mobile} {
+		gap: 1.1rem;
+
+		.about-header-crop {
+			flex-basis: 4rem;
+			width: 4rem;
+			height: 4rem;
+		}
+	}
+}
+
+.about-body {
+	font-family: $font-serif;
+	font-size: 1.05rem;
+	line-height: 1.7;
+
+	// the opening statement carries more weight
+	> p:first-of-type {
+		font-size: 1.2rem;
+		line-height: 1.6;
+	}
+
+	h2 {
+		font-family: $font-regular;
+		font-weight: 600;
+		font-size: 1.35rem;
+		margin: 2.5rem 0 0.9rem;
+		padding-bottom: 0.35rem;
+		border-bottom: 1px solid $color-border;
+	}
+
+	h3 {
+		font-family: $font-regular;
+		font-weight: 600;
+		font-size: 1.1rem;
+		margin: 1.75rem 0 0.6rem;
+	}
+}
+
+// The Goldsmith line, given room
+.about-pullquote {
+	margin: 2.5rem 0;
+	padding: 1.5rem 0 1.25rem;
+	border-top: 2px solid $ink-red;
+	border-bottom: 1px solid $color-border;
+
+	blockquote {
+		font-family: $font-serif;
+		font-style: italic;
+		font-size: 1.3rem;
+		line-height: 1.45;
+		margin: 0 0 0.75rem;
+		padding: 0;
+		border: none;
+		max-width: 32ch;
+	}
+
+	figcaption {
+		font-family: $font-mono;
+		font-size: 0.78rem;
+		color: $color-muted;
+	}
+
+	@media #{$information-desktop} {
+		blockquote { font-size: 1.55rem; }
+	}
+}
+
+// The pipeline: five numbered stages on a spine. Each step is its own
+// paragraph carrying {: .method-step} in the Markdown, so no HTML wrapper
+// (and no markdown="1") is involved.
+.about-body {
+	counter-reset: method;
+}
+
+.method-step {
+	position: relative;
+	counter-increment: method;
+	margin: 0;
+	padding: 0 0 1.4rem 3.25rem;
+
+	// the spine, drawn per step so adjacent steps form one continuous line
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0.85rem;
+		top: 0;
+		bottom: 0;
+		border-left: 2px solid $color-border;
+		z-index: 0;
+	}
+
+	// the last step stops the spine at its own numeral
+	&:last-of-type::after {
+		bottom: auto;
+		height: 1.75rem;
+	}
+
+	// the numeral, sitting on the spine
+	&::before {
+		content: counter(method, decimal-leading-zero);
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		width: 1.75rem;
+		height: 1.75rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: $font-mono;
+		font-size: 0.72rem;
+		color: $paper;
+		background: $ink-red-dark;
+	}
+
+	strong {
+		font-family: $font-regular;
+		font-weight: 600;
+	}
+
+	@media #{$information-mobile} {
+		padding-left: 2.5rem;
+
+		&::after { left: 0.65rem; }
+
+		&::before {
+			width: 1.35rem;
+			height: 1.35rem;
+			font-size: 0.62rem;
+		}
+
+		&:last-of-type::after { height: 1.35rem; }
+	}
+}
+
+// The AI note: the one panel on the page that raises its voice
+.about-callout {
+	margin: 2.5rem 0;
+	padding: 1.5rem 1.5rem 1.25rem;
+	background: $color-highlight;
+	border-left: 4px solid $ink-yellow-text;
+
+	h2 {
+		margin-top: 0;
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+
+	> p:last-child { margin-bottom: 0; }
+}
+
+// --------------------------------------------------------------------------
+// Index pages: a shared masthead for Creators, and any future index
+// --------------------------------------------------------------------------
+
+.index-masthead {
+	padding: 0.5rem 0 0;
+
+	.index-title {
+		font-family: $font-serif;
+		font-weight: 600;
+		font-size: 1.9rem;
+		line-height: 1.2;
+		margin: 0 0 0.6rem;
+
+		@media #{$information-desktop} {
+			font-size: 2.4rem;
+		}
+	}
+
+	.index-intro {
+		font-family: $font-serif;
+		font-size: 1.05rem;
+		line-height: 1.6;
+		max-width: 62ch;
+		margin: 0 0 0.9rem;
+	}
+
+	.home-counters { margin: 0; }
+}
+
+// --------------------------------------------------------------------------
+// The creator roster
+//
+// Most creators contribute a single work, so counting is the least
+// interesting thing about them. Each card leads with the person and their
+// dates, and carries a bar showing their life measured against the span of
+// the whole collection — a variable that is actually different for everyone.
+// --------------------------------------------------------------------------
+
+.creator-roster {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+	gap: 1rem;
+	margin: 1.5rem 0;
+}
+
+// Rhythmic tinting: the register's own data offers no useful colour axis
+// (32 of 36 creators were born in the same century), so the variation is
+// deliberately rhythmic rather than encoded — a seven-item cycle, which is
+// coprime with the usual two, three, and four column counts, so the tints
+// scatter instead of forming stripes.
+.creator-card:nth-child(7n+1) { background: mix($paper, $ink-yellow, 96%); }
+.creator-card:nth-child(7n+3) { background: mix($paper, $ink-blue, 96%); }
+.creator-card:nth-child(7n+5) { background: mix($paper, $ink-green, 95%); }
+
+.creator-card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	padding: 1rem 1.1rem 1.1rem;
+	background: $paper;
+	border: 1px solid $color-border;
+	text-decoration: none;
+	color: $color-text;
+	transition: border-color 0.2s $ease-site, transform 0.2s $ease-site,
+		box-shadow 0.2s $ease-site;
+
+	&:hover,
+	&:focus-visible {
+		border-color: $ink-red;
+		transform: translateY(-2px);
+		box-shadow: 0 6px 16px rgba(34, 24, 19, 0.1);
+	}
+
+	.creator-card-name {
+		font-family: $font-serif;
+		font-weight: 600;
+		font-size: 1.1rem;
+		line-height: 1.25;
+	}
+
+	.creator-card-meta {
+		font-family: $font-mono;
+		font-size: 0.75rem;
+		color: $color-muted;
+	}
+
+	.creator-card-works {
+		display: flex;
+		flex-direction: column;
+		gap: 0.15rem;
+		margin-top: 0.35rem;
+	}
+
+	.creator-card-work {
+		font-family: $font-serif;
+		font-size: 0.86rem;
+		line-height: 1.4;
+		color: $color-text;
+	}
+
+	.creator-card-more {
+		font-family: $font-mono;
+		font-size: 0.7rem;
+		color: $color-muted;
+	}
+}
+
+// The lifespan bar: one life against the collection's whole span
+.creator-lifespan {
+	display: block;
+	position: relative;
+	height: 3px;
+	margin: 0.5rem 0 0.15rem;
+	background: $color-shade;
+
+	.creator-lifespan-bar {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		background: $ink-blue;
+		min-width: 3px;
+		transition: background 0.2s $ease-site;
+	}
+}
+
+.creator-card:hover .creator-lifespan-bar,
+.creator-card:focus-visible .creator-lifespan-bar {
+	background: $ink-red;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.creator-card,
+	.creator-lifespan-bar {
+		transition: none !important;
+		transform: none !important;
+	}
+}
+
+// --------------------------------------------------------------------------
+// The individual creator page
+// --------------------------------------------------------------------------
+
+.creator-masthead {
+	.about-eyebrow {
+		font-family: $font-mono;
+		font-size: 0.8rem;
+		color: $color-muted;
+		margin: 0 0 0.4rem;
+	}
+
+	.index-title { margin-bottom: 0.5rem; }
+}
+
+.creator-page-meta {
+	font-family: $font-mono;
+	font-size: 0.85rem;
+	color: $color-text;
+	margin: 0;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+		border-bottom: 1px solid $color-border-dark;
+
+		&:hover,
+		&:focus-visible {
+			color: $ink-red;
+			border-bottom-color: $ink-red;
+		}
+	}
+}
+
+// The same bar as the roster, given room on the creator's own page
+.creator-lifespan--page {
+	max-width: 26rem;
+	height: 4px;
+	margin: 1rem 0 0.25rem;
+
+	.creator-lifespan-bar { background: $ink-red; }
+}
+
+.creator-no-articles {
+	font-family: $font-serif;
+	font-style: italic;
+	color: $color-muted;
+	margin: 1.5rem 0;
+}
+
+.creator-articles {
+	margin-bottom: 1rem;
+
+	.collection-catalogue .catalogue-row:first-child {
+		border-top: 1px solid $color-border;
+	}
+}
+
+// --------------------------------------------------------------------------
+// The contact page
+// Form on the left, a note on what a submission leads to on the right.
+// --------------------------------------------------------------------------
+
+.contact-layout {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	margin: 1.5rem 0 0;
+	align-items: start;
+
+	@media #{$information-desktop} {
+		grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+		gap: 3rem;
+	}
+}
+
+.contact-form-holder {
+	margin-top: 0;
+	width: 100%;
+}
+
+.contact-field {
+	margin: 0 0 1.5rem;
+}
+
+.contact-label {
+	display: block;
+	font-family: $font-mono;
+	font-size: 0.78rem;
+	color: $color-muted;
+	margin-bottom: 0.4rem;
+}
+
+.contact-form-holder {
+	input[type="text"],
+	textarea {
+		font-family: $font-serif;
+		font-size: 1rem;
+		line-height: 1.55;
+		width: 100%;
+		padding: 0.6rem 0.7rem;
+		background: $paper;
+		border: 1px solid $color-border-dark;
+		color: $color-text;
+		transition: border-color 0.2s $ease-site;
+
+		&:focus {
+			outline: none;
+			border-color: $ink-red;
+		}
+	}
+
+	textarea { resize: vertical; }
+
+	.g-recaptcha { margin: 0 0 1.25rem; }
+}
+
+// The send button, in the reader-button idiom rather than the global
+// full-width black button
+.contact-submit {
+	display: inline-block;
+	width: auto;
+	font-family: $font-mono;
+	font-size: 0.82rem;
+	letter-spacing: 0.02em;
+	font-weight: normal;
+	color: $paper;
+	background: $ink-red-dark;
+	border: 1px solid $ink-red-dark;
+	padding: 0.6rem 1.4rem;
+	cursor: pointer;
+	transition: background 0.2s $ease-site, border-color 0.2s $ease-site;
+
+	&:hover,
+	&:focus-visible {
+		background: $ink-red;
+		border-color: $ink-red;
+	}
+}
+
+.contact-aside {
+	background: $color-highlight;
+	border-left: 4px solid $ink-blue;
+	padding: 1.25rem 1.4rem;
+
+	.contact-aside-title {
+		font-family: $font-regular;
+		font-weight: 600;
+		font-size: 1.05rem;
+		margin: 0 0 0.75rem;
+	}
+
+	p {
+		font-family: $font-serif;
+		font-size: 0.92rem;
+		line-height: 1.6;
+		margin: 0 0 0.85rem;
+
+		&:last-child { margin-bottom: 0; }
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.contact-submit,
+	.contact-form-holder input[type="text"],
+	.contact-form-holder textarea {
+		transition: none !important;
+	}
+}

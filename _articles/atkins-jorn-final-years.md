@@ -8,6 +8,7 @@ subjects: [painting, sculpture, collage]
 member_of: jorn-catalogue-raisonne
 featured-image: /assets/articles/atkins-jorn-final-years/front.jpg
 date: 2021-08-05
+published: 1980
 last_modified_at: 2022-01-31
 
 book_reader:

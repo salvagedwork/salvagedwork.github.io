@@ -6,6 +6,7 @@ description: is an anonymous polemical collection of historical documents publis
 subjects: [prussian-history, polish-history]
 featured-image: /assets/articles/materialen-zur-geschichte/front.jpg
 date: 2026-07-08
+published: 1861
 last_modified_at: 2026-07-08
 
 book_reader:
@@ -141,4 +142,3 @@ What has given the book a longer life than most polemics is its documentary base
 
 [^22]: Joachim Bahlcke and A. Joisten (eds.), *Wortgewalten. Hans von Held. Ein aufgeklärter Staatsdiener zwischen Preußen und Polen* (Potsdam, 2018); and earlier, Colmar Grünhagen, *Zerboni und Held in ihren Konflikten mit der Staatsgewalt, 1796–1802* (Berlin, 1897), and Karl August Varnhagen von Ense, *Hans von Held. Ein preußisches Charakterbild* (1845).
 
-{% include collapsible.html %}

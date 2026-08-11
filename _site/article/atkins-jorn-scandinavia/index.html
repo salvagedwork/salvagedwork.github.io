@@ -33,8 +33,14 @@
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	
+	<!-- Font preloads (the source and machine voices) -->
+	<link rel="preload" href="/assets/fonts/Literata-var.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/discover.js" defer></script>
+	<script src="/js/back-to-top.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
 	
@@ -86,10 +92,13 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/creators"  class="navbar-link">Creators</a>
+		<a href="/reading-room/" class="navbar-link">Reading Room</a>
 		
-		<a href="/articles"  class="navbar-link">Articles</a>
+		<a href="/articles/" class="navbar-link">Articles</a>
 		
+		<a href="/creators/" class="navbar-link">Creators</a>
+		
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -104,10 +113,13 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/creators" class="mobile-nav-link">Creators</a>
+	<a href="/reading-room/" class="mobile-nav-link">Reading Room</a>
 	
-	<a href="/articles" class="mobile-nav-link">Articles</a>
+	<a href="/articles/" class="mobile-nav-link">Articles</a>
 	
+	<a href="/creators/" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	
 	<a href="/about/" class="mobile-nav-link">About</a>
@@ -245,14 +257,12 @@
 	<!-- "entry" class is for footnotes.js to work correctly -->
 	<div class="article-container entry">
 	
-		<header>
-			<h1>Jorn in Scandinavia 1930-1953</h1>
-			
-			<p class="article-meta"><span class="article-collection"><a href="/articles/?category=books">Books</a>: <a href="/creators/asger-jorn/">Asger Jorn</a></span>
-				
+		<header class="article-header">
+			<h1 class="article-title">Jorn in Scandinavia 1930-1953</h1>
+			<p class="article-masthead"><a href="/articles/?category=books">books</a><span class="article-masthead-sep">&middot;</span>
+				<a href="/creators/asger-jorn/">Asger Jorn</a><span class="article-masthead-sep">&middot;</span>1968<span class="article-masthead-sep">&middot;</span><a href="/books/atkins-jorn-scandinavia/?lang=en">English</a>
 			</p>
 			
-			<hr />
 		</header>
 
 		<!-- Table of Contents (populated by article-toc.js) -->
@@ -278,6 +288,13 @@
         <tr>
             <td colspan="2" id="infobox-subtitle"><cite>Jorn in Scandinavia 1930-1953</cite></td>
         </tr>
+        
+        <tr>
+            <td colspan="2" class="infobox-read">
+                <a class="infobox-read-btn" href="/books/atkins-jorn-scandinavia/?lang=en">Read &middot; English</a>
+            </td>
+        </tr>
+        
         
         <tr>
             <th scope="row">Authors</th>
@@ -391,21 +408,6 @@
   <li>Appendix, Bibliography, Credits, Index</li>
 </ul>
 
-<div class="book-link-card">
-	
-	<div class="book-link-image">
-		<a href="/books/atkins-jorn-scandinavia/"><img src="/assets/articles/atkins-jorn-scandinavia/front.jpg" alt="Jorn in Scandinavia 1930-1953" /></a>
-	</div>
-	
-	<div class="book-link-content">
-		<h3 class="book-link-title"><a href="/books/atkins-jorn-scandinavia/">Jorn in Scandinavia 1930-1953</a></h3>
-		
-		<p class="book-link-description">Read the book in English.</p>
-		
-		<a href="/books/atkins-jorn-scandinavia/" class="book-link-button">Read the full text &rarr;</a>
-	</div>
-</div>
-
 <h2 id="explore-the-book">Explore the Book</h2>
 
 <iframe src="https://archive.org/embed/jorn-scandinavia" width="100%" height="700" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen=""></iframe>
@@ -426,8 +428,70 @@
 <p>Jorn was able to review and authenticate the photographs for this first volume before publication. Unfortunately, the artist did not live to see the completion of the project, as he died in 1973. The second and third volumes appeared posthumously.</p>
 
 
+
+			<script>
+var coll = document.getElementsByClassName("collapsible-text-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var container = this.parentElement;
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+      container.classList.remove("expanded");
+    } else {
+      container.classList.add("expanded");
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+var expandBtns = document.getElementsByClassName("thumbnail-expand-btn");
+var j;
+
+for (j = 0; j < expandBtns.length; j++) {
+  expandBtns[j].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    var expanded = this.getAttribute("aria-expanded") === "true";
+    this.setAttribute("aria-expanded", String(!expanded));
+    content.style.maxHeight = expanded ? null : content.scrollHeight + "px";
+  });
+}
+</script>
+
+
+			<nav class="onward-doors" aria-label="Continue exploring">
+				<p class="onward-title">Continue exploring</p>
+			<ul>
+				
+				
+					
+				
+					
+				
+					
+					<li><a class="onward-tile" data-kind="theme" href="/collection/the-jorn-library/"><span class="onward-kind">theme</span><span class="onward-name">the jorn library</span></a></li>
+					
+				
+					
+				
+				
+					
+					<li><a class="onward-tile" data-kind="series" href="/collection/jorn-catalogue-raisonne/"><span class="onward-kind">series</span><span class="onward-name">Asger Jorn Catalogue raisonné Series</span></a></li>
+				
+				
+					
+					
+					<li><a class="onward-tile" data-kind="creator" href="/creators/asger-jorn/"><span class="onward-kind">creator</span><span class="onward-name">Asger Jorn</span></a></li>
+				
+				<li><a class="onward-tile" data-kind="random" href="/articles/" data-random-drawer><span class="onward-kind">random</span><span class="onward-name">open a drawer</span></a></li>
+				</ul>
+			</nav>
 		</div>
-		
+
 	</div>
 	
 </article>
@@ -437,15 +501,17 @@
 			</div>
 			
 			<div id="footer">
-				<div class="page-modified-date">
+				<div class="footer-meta">
+	<div class="page-modified-date">
 	
 		Page last modified on 2022-01-31
-	</div>
+	</div><div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a> (1950)</div>
+</div>
 <div class="navbar-links-container">
 	
-		<a href="/about/"  class="navbar-link">About</a>
+		<a href="/about/" class="navbar-link">About</a>
 	
-		<a href="/contact/"  class="navbar-link">Contact</a>
+		<a href="/contact/" class="navbar-link">Contact</a>
 	
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>

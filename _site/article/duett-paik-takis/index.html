@@ -33,8 +33,14 @@
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	
+	<!-- Font preloads (the source and machine voices) -->
+	<link rel="preload" href="/assets/fonts/Literata-var.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/discover.js" defer></script>
+	<script src="/js/back-to-top.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
 	
@@ -86,10 +92,13 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/creators"  class="navbar-link">Creators</a>
+		<a href="/reading-room/" class="navbar-link">Reading Room</a>
 		
-		<a href="/articles"  class="navbar-link">Articles</a>
+		<a href="/articles/" class="navbar-link">Articles</a>
 		
+		<a href="/creators/" class="navbar-link">Creators</a>
+		
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -104,10 +113,13 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/creators" class="mobile-nav-link">Creators</a>
+	<a href="/reading-room/" class="mobile-nav-link">Reading Room</a>
 	
-	<a href="/articles" class="mobile-nav-link">Articles</a>
+	<a href="/articles/" class="mobile-nav-link">Articles</a>
 	
+	<a href="/creators/" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	
 	<a href="/about/" class="mobile-nav-link">About</a>
@@ -245,14 +257,15 @@
 	<!-- "entry" class is for footnotes.js to work correctly -->
 	<div class="article-container entry">
 	
-		<header>
-			<h1>Duett Paik/Takis</h1>
-			
-			<p class="article-meta"><span class="article-collection"><a href="/articles/?category=recordings">Recordings</a>: <a href="/creators/nam-june-paik/">Nam June Paik</a>, <a href="/creators/takis/">Takis</a></span>
-				<span class="article-subjects"><a href="/articles/?subject=fluxus">Fluxus</a>, <a href="/articles/?subject=kinetic-art">Kinetic Art</a>, <a href="/articles/?subject=sound-art">Sound Art</a>, <a href="/articles/?subject=performance-art">Performance Art</a>, <a href="/articles/?subject=experimental-music">Experimental Music</a></span>
+		<header class="article-header">
+			<h1 class="article-title">Duett Paik/Takis</h1>
+			<p class="article-masthead"><a href="/articles/?category=recordings">recordings</a><span class="article-masthead-sep">&middot;</span>
+				<a href="/creators/nam-june-paik/">Nam June Paik</a>, 
+				<a href="/creators/takis/">Takis</a><span class="article-masthead-sep">&middot;</span>1979
 			</p>
 			
-			<hr />
+			<p class="article-tags"><a href="/articles/?subject=fluxus">Fluxus</a><a href="/articles/?subject=kinetic-art">Kinetic Art</a><a href="/articles/?subject=sound-art">Sound Art</a><a href="/articles/?subject=performance-art">Performance Art</a><a href="/articles/?subject=experimental-music">Experimental Music</a></p>
+			
 		</header>
 
 		<!-- Table of Contents (populated by article-toc.js) -->
@@ -278,6 +291,7 @@
         <tr>
             <td colspan="2" id="infobox-subtitle"><cite>Duett Paik/Takis / Klangraum Takis</cite></td>
         </tr>
+        
         
         
         <tr>
@@ -359,7 +373,7 @@
 
 <h2 id="audio">Audio</h2>
 
-<iframe src="https://archive.org/embed/duett-paik-takis&amp;playlist=1&amp;list_height=250" width="100%" height="150" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen=""></iframe>
+<iframe src="https://archive.org/embed/duett-paik-takis?playlist=1" width="500" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen=""></iframe>
 
 <h2 id="publication">Publication</h2>
 
@@ -423,8 +437,67 @@ Takis - 26:43</p>
 </section>
 
 
+
+			<script>
+var coll = document.getElementsByClassName("collapsible-text-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var container = this.parentElement;
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+      container.classList.remove("expanded");
+    } else {
+      container.classList.add("expanded");
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+var expandBtns = document.getElementsByClassName("thumbnail-expand-btn");
+var j;
+
+for (j = 0; j < expandBtns.length; j++) {
+  expandBtns[j].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    var expanded = this.getAttribute("aria-expanded") === "true";
+    this.setAttribute("aria-expanded", String(!expanded));
+    content.style.maxHeight = expanded ? null : content.scrollHeight + "px";
+  });
+}
+</script>
+
+
+			<nav class="onward-doors" aria-label="Continue exploring">
+				<p class="onward-title">Continue exploring</p>
+			<ul>
+				
+				
+					
+					<li><a class="onward-tile" data-kind="theme" href="/collection/sound-and-performance/"><span class="onward-kind">theme</span><span class="onward-name">sound & performance</span></a></li>
+					
+				
+					
+				
+					
+				
+					
+				
+				
+				
+					
+					
+					<li><a class="onward-tile" data-kind="creator" href="/creators/nam-june-paik/"><span class="onward-kind">creator</span><span class="onward-name">Nam June Paik</span></a></li>
+				
+				<li><a class="onward-tile" data-kind="random" href="/articles/" data-random-drawer><span class="onward-kind">random</span><span class="onward-name">open a drawer</span></a></li>
+				</ul>
+			</nav>
 		</div>
-		
+
 	</div>
 	
 </article>
@@ -434,15 +507,17 @@ Takis - 26:43</p>
 			</div>
 			
 			<div id="footer">
-				<div class="page-modified-date">
+				<div class="footer-meta">
+	<div class="page-modified-date">
 	
 		Page last modified on 2026-02-19
-	</div>
+	</div><div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a> (1950)</div>
+</div>
 <div class="navbar-links-container">
 	
-		<a href="/about/"  class="navbar-link">About</a>
+		<a href="/about/" class="navbar-link">About</a>
 	
-		<a href="/contact/"  class="navbar-link">Contact</a>
+		<a href="/contact/" class="navbar-link">Contact</a>
 	
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>

@@ -7,6 +7,7 @@ creators: [asger-jorn]
 subjects: [cobra, avant-garde, artist-monographs]
 featured-image: /assets/articles/cobra-bibliotek/front.jpg
 date: 2026-02-09
+published: 1950
 last_modified_at: 2026-02-09
 
 book_reader:

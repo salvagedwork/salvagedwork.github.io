@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% assign readable_books = site.articles | where_exp: "a", "a.book_reader.enabled" %}
+
+<article class="about-page" lang="en">
+
+	<header class="about-header">
+		<span class="pebble pebble--b about-header-crop"><img src="/assets/images/backgrounds/4.jpg" alt=""></span>
+		<div class="about-header-text">
+			<p class="about-eyebrow">{{ page.eyebrow | default: "About the archive" }}</p>
+			<h1 class="about-title">{{ page.heading | default: page.title }}</h1>
+			<p class="home-counters">
+				<a href="/articles/">{{ site.articles | size }} articles</a><span class="counter-sep">&middot;</span><a href="/reading-room/">{{ readable_books | size }} books in the reading room</a><span class="counter-sep">&middot;</span><a href="/creators/">{{ site.data.creators | size }} creators</a>
+			</p>
+		</div>
+	</header>
+
+	<div class="about-body">
+		{{ content }}
+	</div>
+
+</article>

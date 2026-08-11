@@ -33,8 +33,14 @@
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	
+	<!-- Font preloads (the source and machine voices) -->
+	<link rel="preload" href="/assets/fonts/Literata-var.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/discover.js" defer></script>
+	<script src="/js/back-to-top.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
 	
@@ -86,10 +92,13 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/creators"  class="navbar-link">Creators</a>
+		<a href="/reading-room/" class="navbar-link">Reading Room</a>
 		
-		<a href="/articles"  class="navbar-link">Articles</a>
+		<a href="/articles/" class="navbar-link">Articles</a>
 		
+		<a href="/creators/" class="navbar-link">Creators</a>
+		
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -104,10 +113,13 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/creators" class="mobile-nav-link">Creators</a>
+	<a href="/reading-room/" class="mobile-nav-link">Reading Room</a>
 	
-	<a href="/articles" class="mobile-nav-link">Articles</a>
+	<a href="/articles/" class="mobile-nav-link">Articles</a>
 	
+	<a href="/creators/" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	
 	<a href="/about/" class="mobile-nav-link">About</a>
@@ -242,13 +254,16 @@
 			<div id="content">
 				<article lang="en">
 
-	<div class="article-container entry">
-	
-		<header>
-			<h1>Asger Jorn Catalogue raisonné Series</h1>
-			<hr />
+	<div class="article-container article-container--full entry">
+
+		<header class="collection-header">
+			
+			<div class="collection-header-text">
+				<h1>Asger Jorn Catalogue raisonné Series</h1>
+				<hr />
+			</div>
 		</header>
-	
+
 		
 <table id="infobox">
     <tbody>
@@ -260,6 +275,7 @@
         <tr>
             <td colspan="2" id="infobox-subtitle"><cite>Asger Jorn Catalogue raisonné Series</cite></td>
         </tr>
+        
         
         <tr>
             <th scope="row">Authors</th>
@@ -444,14 +460,27 @@ for (j = 0; j < expandBtns.length; j++) {
 </script>
 
 
-		
+
 		<section class="collection-articles">
 			<h2>Articles in this collection</h2>
+
 			
+
 			
+			<div class="collection-toolbar">
+				<span class="collection-count">5 items</span>
+				<span class="collection-sort" data-sort-controls>
+					<span class="sort-label">sort</span>
+					<button type="button" data-sort="title" data-dir="asc">a&ndash;z</button>
+					<button type="button" data-sort="published" data-dir="asc">year</button>
+					<button type="button" data-sort="added" data-dir="desc">newest</button>
+				</span>
+			</div>
+
 			
-				<p class="collection-article-count">5 articles in this collection.</p>
+			<div class="collection-list" data-sortable>
 				
+				<div data-title="asger-jorn-revised-supplement" data-published="2006" data-added="1628114400">
 					<div class="article-tile" data-subjects="painting" data-category="books" data-collection="jorn-catalogue-raisonne" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/atkins-jorn-revised-supplement/"><img src="/assets/articles/atkins-jorn-revised-supplement/front.jpg" alt="Asger Jorn - Revised Supplement"></a>
@@ -465,7 +494,9 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+				<div data-title="asger-jorn-supplement-paintings-1930-1973" data-published="1986" data-added="1628114400">
 					<div class="article-tile" data-subjects="painting" data-category="books" data-collection="jorn-catalogue-raisonne" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/atkins-jorn-supplement/"><img src="/assets/articles/atkins-jorn-supplement/front.jpg" alt="Asger Jorn - Supplement - Paintings 1930-1973"></a>
@@ -479,7 +510,9 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+				<div data-title="asger-jorn-the-crucial-years-1954-1964" data-published="1977" data-added="1628114400">
 					<div class="article-tile" data-subjects="painting,ceramics" data-category="books" data-collection="jorn-catalogue-raisonne" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/atkins-jorn-crucial-years/"><img src="/assets/articles/atkins-jorn-crucial-years/front.jpg" alt="Asger Jorn - The Crucial Years 1954-1964"></a>
@@ -493,7 +526,9 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+				<div data-title="asger-jorn-the-final-years-1965-1973" data-published="1980" data-added="1628114400">
 					<div class="article-tile" data-subjects="painting,sculpture,collage" data-category="books" data-collection="jorn-catalogue-raisonne" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/atkins-jorn-final-years/"><img src="/assets/articles/atkins-jorn-final-years/front.jpg" alt="Asger Jorn - The Final Years 1965-1973"></a>
@@ -507,7 +542,9 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+				<div data-title="jorn-in-scandinavia-1930-1953" data-published="1968" data-added="1628114400">
 					<div class="article-tile" data-subjects="" data-category="books" data-collection="jorn-catalogue-raisonne" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/atkins-jorn-scandinavia/"><img src="/assets/articles/atkins-jorn-scandinavia/front.jpg" alt="Jorn in Scandinavia 1930-1953"></a>
@@ -519,28 +556,36 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+			</div>
+			
+
 			
 		</section>
-		
+
 	</div>
-	
+
 </article>
 
 
 
+<script src="/js/collection-sort.js"></script>
+
 			</div>
 			
 			<div id="footer">
-				<div class="page-modified-date">
+				<div class="footer-meta">
+	<div class="page-modified-date">
 	
 		Page last modified on 2022-01-31
-	</div>
+	</div><div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a> (1950)</div>
+</div>
 <div class="navbar-links-container">
 	
-		<a href="/about/"  class="navbar-link">About</a>
+		<a href="/about/" class="navbar-link">About</a>
 	
-		<a href="/contact/"  class="navbar-link">Contact</a>
+		<a href="/contact/" class="navbar-link">Contact</a>
 	
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>

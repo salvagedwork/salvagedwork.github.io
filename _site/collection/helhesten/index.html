@@ -33,8 +33,14 @@
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	
+	<!-- Font preloads (the source and machine voices) -->
+	<link rel="preload" href="/assets/fonts/Literata-var.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/discover.js" defer></script>
+	<script src="/js/back-to-top.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
 	
@@ -86,10 +92,13 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/creators"  class="navbar-link">Creators</a>
+		<a href="/reading-room/" class="navbar-link">Reading Room</a>
 		
-		<a href="/articles"  class="navbar-link">Articles</a>
+		<a href="/articles/" class="navbar-link">Articles</a>
 		
+		<a href="/creators/" class="navbar-link">Creators</a>
+		
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -104,10 +113,13 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/creators" class="mobile-nav-link">Creators</a>
+	<a href="/reading-room/" class="mobile-nav-link">Reading Room</a>
 	
-	<a href="/articles" class="mobile-nav-link">Articles</a>
+	<a href="/articles/" class="mobile-nav-link">Articles</a>
 	
+	<a href="/creators/" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	
 	<a href="/about/" class="mobile-nav-link">About</a>
@@ -242,13 +254,16 @@
 			<div id="content">
 				<article lang="en">
 
-	<div class="article-container entry">
-	
-		<header>
-			<h1>Helhesten</h1>
-			<hr />
+	<div class="article-container article-container--full entry">
+
+		<header class="collection-header">
+			
+			<div class="collection-header-text">
+				<h1>Helhesten</h1>
+				<hr />
+			</div>
 		</header>
-	
+
 		
 <table id="infobox">
     <tbody>
@@ -260,6 +275,7 @@
         <tr>
             <td colspan="2" id="infobox-subtitle"><cite>Helhesten</cite></td>
         </tr>
+        
         
         
         
@@ -485,14 +501,27 @@ for (j = 0; j < expandBtns.length; j++) {
 </script>
 
 
-		
+
 		<section class="collection-articles">
 			<h2>Articles in this collection</h2>
+
 			
+
 			
+			<div class="collection-toolbar">
+				<span class="collection-count">9 items</span>
+				<span class="collection-sort" data-sort-controls>
+					<span class="sort-label">sort</span>
+					<button type="button" data-sort="title" data-dir="asc">a&ndash;z</button>
+					<button type="button" data-sort="published" data-dir="asc">year</button>
+					<button type="button" data-sort="added" data-dir="desc">newest</button>
+				</span>
+			</div>
+
 			
-				<p class="collection-article-count">9 articles in this collection.</p>
+			<div class="collection-list" data-sortable>
 				
+				<div data-title="helhesten-year-1-booklet-1" data-published="1941" data-added="1546297200">
 					<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/helhesten-1_1/"><img src="/assets/articles/helhesten/helhesten_1.1_cover.jpg" alt="Helhesten (Year 1, Booklet 1)"></a>
@@ -506,7 +535,9 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+				<div data-title="helhesten-year-1-booklet-2" data-published="1941" data-added="1546297200">
 					<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/helhesten-1_2/"><img src="/assets/articles/helhesten/helhesten_1.2_cover.jpg" alt="Helhesten (Year 1, Booklet 2)"></a>
@@ -520,7 +551,9 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+				<div data-title="helhesten-year-1-booklet-3" data-published="1941" data-added="1546297200">
 					<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/helhesten-1_3/"><img src="/assets/articles/helhesten/helhesten_1.3_cover.jpg" alt="Helhesten (Year 1, Booklet 3)"></a>
@@ -534,7 +567,9 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+				<div data-title="helhesten-year-1-booklet-4" data-published="1941" data-added="1546297200">
 					<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/helhesten-1_4/"><img src="/assets/articles/helhesten/helhesten_1.4_cover.jpg" alt="Helhesten (Year 1, Booklet 4)"></a>
@@ -548,7 +583,9 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+				<div data-title="helhesten-year-1-booklets-5-6" data-published="1941" data-added="1546297200">
 					<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/helhesten-1_5-6/"><img src="/assets/articles/helhesten/helhesten_1.56_cover.jpg" alt="Helhesten (Year 1, Booklets 5 & 6)"></a>
@@ -562,7 +599,9 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+				<div data-title="helhesten-year-2-booklet-1" data-published="1942" data-added="1546297200">
 					<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/helhesten-2_1/"><img src="/assets/articles/helhesten/helhesten_2.1_cover.jpg" alt="Helhesten (Year 2, Booklet 1)"></a>
@@ -576,7 +615,9 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+				<div data-title="helhesten-year-2-booklet-4" data-published="1943" data-added="1546297200">
 					<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/helhesten-2_4/"><img src="/assets/articles/helhesten/helhesten_2.4_cover.jpg" alt="Helhesten (Year 2, Booklet 4)"></a>
@@ -590,7 +631,9 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+				<div data-title="helhesten-year-2-booklets-2-3" data-published="1943" data-added="1546297200">
 					<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/helhesten-2_2-3/"><img src="/assets/articles/helhesten/helhesten_2.23_cover.jpg" alt="Helhesten (Year 2, Booklets 2 & 3)"></a>
@@ -604,7 +647,9 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+				<div data-title="helhesten-year-2-booklets-5-6" data-published="1944" data-added="1546297200">
 					<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
 	<div class="article-tile-image">
 		<a href="/article/helhesten-2_5-6/"><img src="/assets/articles/helhesten/helhesten_2.56_cover.jpg" alt="Helhesten (Year 2, Booklets 5 & 6)"></a>
@@ -618,12 +663,16 @@ for (j = 0; j < expandBtns.length; j++) {
 	</div>
 </div>
 
+				</div>
 				
+			</div>
+			
+
 			
 		</section>
-		
+
 	</div>
-	
+
 </article>
 
 
@@ -642,18 +691,22 @@ for (j = 0; j < expandBtns.length; j++) {
 </span>
 
 
+<script src="/js/collection-sort.js"></script>
+
 			</div>
 			
 			<div id="footer">
-				<div class="page-modified-date">
+				<div class="footer-meta">
+	<div class="page-modified-date">
 	
 		Page last modified on 2020-12-10
-	</div>
+	</div><div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a> (1950)</div>
+</div>
 <div class="navbar-links-container">
 	
-		<a href="/about/"  class="navbar-link">About</a>
+		<a href="/about/" class="navbar-link">About</a>
 	
-		<a href="/contact/"  class="navbar-link">Contact</a>
+		<a href="/contact/" class="navbar-link">Contact</a>
 	
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>

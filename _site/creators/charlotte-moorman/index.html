@@ -33,8 +33,14 @@
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	
+	<!-- Font preloads (the source and machine voices) -->
+	<link rel="preload" href="/assets/fonts/Literata-var.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/discover.js" defer></script>
+	<script src="/js/back-to-top.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
 	
@@ -86,10 +92,13 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/creators"  class="navbar-link">Creators</a>
+		<a href="/reading-room/" class="navbar-link">Reading Room</a>
 		
-		<a href="/articles"  class="navbar-link">Articles</a>
+		<a href="/articles/" class="navbar-link">Articles</a>
 		
+		<a href="/creators/" class="navbar-link">Creators</a>
+		
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -104,10 +113,13 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/creators" class="mobile-nav-link">Creators</a>
+	<a href="/reading-room/" class="mobile-nav-link">Reading Room</a>
 	
-	<a href="/articles" class="mobile-nav-link">Articles</a>
+	<a href="/articles/" class="mobile-nav-link">Articles</a>
 	
+	<a href="/creators/" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	
 	<a href="/about/" class="mobile-nav-link">About</a>
@@ -242,51 +254,71 @@
 			<div id="content">
 				<div class="creator-page">
 
-	<header class="creator-header">
-		<h1>Charlotte Moorman</h1>
-		<p class="creator-meta"><span class="creator-nationality">American</span><span class="creator-dates">
-					&thinsp;·&thinsp;
-					1933–1991</span><span class="creator-wikipedia">&thinsp;·&thinsp;<a href="https://en.wikipedia.org/wiki/Charlotte_Moorman" target="_blank" rel="noopener">Wikipedia &nearr;</a></span></p>
-		<hr />
+	<header class="index-masthead creator-masthead">
+		<p class="about-eyebrow">Creator</p>
+		<h1 class="index-title">Charlotte Moorman</h1>
+
+		<p class="creator-page-meta">American &middot; 1933&ndash;1991 &middot; <a href="https://en.wikipedia.org/wiki/Charlotte_Moorman" target="_blank" rel="noopener">Wikipedia &nearr;</a></p>
+		<span class="creator-lifespan creator-lifespan--page" aria-hidden="true">
+			<span class="creator-lifespan-bar" style="left: 65%; width: 21%;"></span>
+		</span>
 	</header>
 
-	
+	<hr class="zag-rule" />
 
 	
 	<section class="creator-articles">
-		<h2>1 article archived</h2>
-		
-			<div class="article-tile" data-subjects="fluxus,happenings,electronic-music,performance-art,new-york-avant-garde-festival" data-category="recordings" data-collection="" data-creators="karlheinz-stockhausen,nam-june-paik,charlotte-moorman">
-	<div class="article-tile-image">
-		<a href="/article/stockhausen-originale/"><img src="/assets/articles/stockhausen-originale/front.jpg" alt="Originale"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/stockhausen-originale/">Originale</a></h3>
-		<p class="article-tile-description"><strong>Originale</strong> is a recording of the 1964 New York premiere of Karlheinz Stockhausen's music theatre work of the same name, released on vinyl by Cyalume & Argonzer in 2018.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=recordings">Recordings</a>: <a href="/articles/?creator=karlheinz-stockhausen">Karlheinz Stockhausen</a>, <a href="/articles/?creator=nam-june-paik">Nam June Paik</a>, <a href="/articles/?creator=charlotte-moorman">Charlotte Moorman</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=fluxus">Fluxus</a>, <a href="/articles/?subject=happenings">Happenings</a>, <a href="/articles/?subject=electronic-music">Electronic Music</a>, <a href="/articles/?subject=performance-art">Performance Art</a>, <a href="/articles/?subject=new-york-avant-garde-festival">New York Avant Garde Festival</a></em>
-		</p><p class="article-tile-link"><a href="/article/stockhausen-originale/">Read more &rarr;</a></p>
-	</div>
-</div>
+		<div class="collection-toolbar">
+			<span class="collection-count">1 work in the archive</span>
+			
+		</div>
 
-		
+		<div class="collection-list collection-catalogue" data-sortable>
+			
+			<a class="catalogue-row" href="/article/stockhausen-originale/"
+				data-title="originale"
+				data-published="2018"
+				data-added="1771455600">
+				<span class="catalogue-thumb"><img src="/assets/articles/stockhausen-originale/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Originale</span>
+					<span class="catalogue-desc">is a recording of the 1964 New York premiere of Karlheinz Stockhausen's music theatre work of the same name, released on vinyl by Cyalume & Argonzer in 2018.
+</span>
+				</span>
+				<span class="catalogue-year">2018</span>
+			</a>
+			
+		</div>
 	</section>
 	
 
+	<nav class="onward-doors" aria-label="Continue exploring">
+		<p class="onward-title">Continue exploring</p>
+		<ul>
+			<li><a class="onward-tile" data-kind="creator" href="/creators/"><span class="onward-kind">index</span><span class="onward-name">All creators</span></a></li>
+			<li><a class="onward-tile" data-kind="theme" href="/articles/"><span class="onward-kind">browse</span><span class="onward-name">All articles</span></a></li>
+			<li><a class="onward-tile" data-kind="random" href="/articles/" data-random-drawer><span class="onward-kind">random</span><span class="onward-name">Open a drawer</span></a></li>
+		</ul>
+	</nav>
+
 </div>
+
+<script src="/js/collection-sort.js"></script>
 
 			</div>
 			
 			<div id="footer">
-				<div class="page-modified-date">
+				<div class="footer-meta">
+	<div class="page-modified-date">
 	
 		Salvaging for the future.
-	</div>
+	</div><div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a> (1950)</div>
+</div>
 <div class="navbar-links-container">
 	
-		<a href="/about/"  class="navbar-link">About</a>
+		<a href="/about/" class="navbar-link">About</a>
 	
-		<a href="/contact/"  class="navbar-link">Contact</a>
+		<a href="/contact/" class="navbar-link">Contact</a>
 	
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>

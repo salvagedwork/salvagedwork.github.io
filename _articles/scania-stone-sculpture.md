@@ -8,6 +8,7 @@ subjects: [comparative-vandalism, medieval-art, romanesque-architecture, sculptu
 member_of: 10000-years-nordic-folk-art
 featured-image: /assets/articles/scania-stone-sculpture/front.jpg
 date: 2019-01-01
+published: 1965
 last_modified_at: 2021-03-10
 
 book_reader:

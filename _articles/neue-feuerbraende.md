@@ -7,6 +7,7 @@ creators: [friedrich-von-coelln]
 subjects: [prussia, napoleonic-wars, censorship, clandestine-publishing]
 featured-image: /assets/articles/neue-feuerbraende/front.jpg
 date: 2026-07-15
+published: 1807
 last_modified_at: 2026-07-15
 
 book_reader:
@@ -179,4 +180,3 @@ The verdicts in the volume are those of a partisan writing within weeks of the e
 
 [^13]: Ethan K. Soefje, "Testing the Narrative of Prussian Decline: 1778–1806" (M.A. thesis, University of North Texas, 2020), and "Prussian Reformist Sentiment Before 1806," *Age of Revolutions*, 17 March 2025, published among the 2024 Selected Papers of the Consortium on the Revolutionary Era; Katherine Aaslestad and Karen Hagemann, "1806 and Its Aftermath: Revisiting the Period of the Napoleonic Wars in German Central European Historiography," *Central European History* 39, no. 4 (2006), pp. 547–579.
 
-{% include collapsible.html %}

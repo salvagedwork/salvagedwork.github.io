@@ -13,29 +13,42 @@ $breakpoint-desktop: 769px;
 $information-desktop: "only screen and (min-width: #{$breakpoint-desktop})";
 $information-mobile: "only screen and (max-width: #{$breakpoint-desktop - 1})";
 
-// Colors
-$color-text: #1a1a1a;
-$color-background: white;
-$color-shade: #eee;
-$color-border: #ccc;
-$color-border-dark: #a2a9b1;
-$color-muted: #666;
-$color-highlight: #f8f9fa;
-$color-accent: red;
-$color-accent-dark: #cc0000;
-$color-search-highlight: #ffeb3b;
+// Colors — the ink system, sampled from the Cobra Bibliotek plates
+// (see style-definition.md §3). Ground is paper, type is ink.
+$ink-black: #221813;      // warm near-black, the key plate
+$paper: #f6f2ea;          // the sheet
+$ink-red: #c8281e;        // cadmium red (plates 1, 2, 7) — 4.98:1 on paper
+$ink-red-dark: #a8221c;   // 6.46:1
+$ink-blue: #2a63a8;       // cobalt (plates 1, 2, 4) — 5.45:1
+$ink-blue-dark: #1d5c9c;
+$ink-yellow: #e9b514;     // chrome yellow: chips/labels only, never text on paper
+$ink-yellow-text: #9a6b12; // the yellow's text-safe form
+$ink-green: #2f6e3a;      // plates 1, 5 — 5.51:1
+$ink-green-dark: #265a30;
+$ink-muted: #6b5f56;      // warm grey for secondary text
 
-// Filter button colors (muted palette)
-$color-filter-collection: #a04040;      // Muted burgundy/red
-$color-filter-collection-dark: #8a3535;
-$color-filter-tag: #4a6fa5;             // Muted steel blue
-$color-filter-tag-dark: #3d5c8a;
-$color-filter-subject: #5a8a5a;         // Muted sage green
-$color-filter-subject-dark: #4a7a4a;
-$color-filter-category: #7a5a8a;        // Muted purple
-$color-filter-category-dark: #6a4a7a;
-$color-filter-creator: #b07040;         // Muted amber/orange
-$color-filter-creator-dark: #9a6035;
+$color-text: $ink-black;
+$color-background: $paper;
+$color-shade: #ece6da;
+$color-border: #d8d0c2;
+$color-border-dark: #a2988a;
+$color-muted: $ink-muted;
+$color-highlight: #efe9dd;
+$color-accent: $ink-red;
+$color-accent-dark: $ink-red-dark;
+$color-search-highlight: #f5dd7a;
+
+// Filter button colors — drawn from the ink system
+$color-filter-collection: $ink-red-dark;
+$color-filter-collection-dark: #8f1d18;
+$color-filter-tag: $ink-blue;
+$color-filter-tag-dark: $ink-blue-dark;
+$color-filter-subject: $ink-green;
+$color-filter-subject-dark: $ink-green-dark;
+$color-filter-category: $ink-muted;
+$color-filter-category-dark: #574c44;
+$color-filter-creator: $ink-yellow-text;
+$color-filter-creator-dark: #7d570e;
 
 // Typography
 $font-regular: 'GT-Eesti-Text-Light', sans-serif;
@@ -46,6 +59,14 @@ $font-size-medium: 1.7em;
 $font-size-base: 1rem;
 $font-size-small: 0.85rem;
 $line-height: 1.6;
+
+// The three voices (style-definition.md §2)
+// editorial: GT Eesti (above) · source: Literata · machine: JetBrains Mono
+$font-serif: 'Literata', Georgia, serif;
+$font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+// Motion
+$ease-site: cubic-bezier(0.22, 1, 0.36, 1);
 
 
 // ==========================================================================

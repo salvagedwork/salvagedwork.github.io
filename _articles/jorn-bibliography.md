@@ -7,6 +7,7 @@ creators: [asger-jorn]
 subjects: [bibliography, art]
 featured-image: /assets/articles/jorn-bibliography/front.jpg
 date: 2026-02-09
+published: 1964
 last_modified_at: 2026-02-09
 
 book_reader:

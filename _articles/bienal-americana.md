@@ -7,6 +7,7 @@ creators: [horacio-vaggione, john-cage, morton-feldman, earle-brown, christian-w
 subjects: [electronic-music, experimental-music, latin-american-avant-garde, computer-music, aleatory-music]
 featured-image: /assets/articles/bienal-americana/front.jpg
 date: 2026-02-19
+published: 1966
 last_modified_at: 2026-02-19
 ---
 
@@ -42,7 +43,7 @@ The two-disc set was recorded in a studio after the concerts concluded, a circum
 
 ### Audio
 
-<iframe src="https://archive.org/embed/bienal-americana&playlist=1&list_height=150" width="100%" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+<iframe src="https://archive.org/embed/bienal-americana?playlist=1" width="500" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
 ## Disc One
 

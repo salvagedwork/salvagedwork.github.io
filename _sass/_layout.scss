@@ -99,11 +99,7 @@ header {
 	padding-top: 1rem;
 }
 
-.navbar-link {
-	font-family: $font-bold;
-	font-size: 1.1rem;
-	margin-right: 0.5rem;
-}
+// .navbar-link styling lives in _catalogue.scss (2026 chrome redesign)
 
 a.current {
 	color: $color-accent;
@@ -237,7 +233,7 @@ a.current {
 	}
 	
 	&::placeholder {
-		color: #999;
+		color: $color-border-dark;
 	}
 }
 
@@ -405,7 +401,7 @@ a.current {
 }
 
 .meta-label {
-	color: #888;
+	color: $color-muted;
 }
 
 .article-tile-link {
@@ -492,7 +488,7 @@ article section:has(iframe) {
 		min-width: 100%;
 		display: flex;
 		flex-flow: row nowrap;
-		border-bottom: 1px solid #eaecf0;
+		border-bottom: 1px solid $color-border;
 		padding: 0.5rem 0;
 		
 		&:last-of-type {
@@ -732,8 +728,8 @@ article section:has(iframe) {
 }
 
 .collapsible-text-button {
-	background-color: #777;
-	color: white;
+	background-color: $ink-muted;
+	color: $paper;
 	cursor: pointer;
 	padding: 18px;
 	border: none;
@@ -748,7 +744,7 @@ article section:has(iframe) {
 	
 	&:hover,
 	&.active {
-		background-color: #555;
+		background-color: $ink-black;
 	}
 	
 	&::after {
@@ -810,12 +806,12 @@ article section:has(iframe) {
 	}
 	
 	&.active {
-		background-color: #a04040;
+		background-color: $ink-red-dark;
 		color: $color-background;
-		border-color: #a04040;
+		border-color: $ink-red-dark;
 		
 		&:hover {
-			background-color: #8a3535;
+			background-color: $ink-red-dark;
 		}
 	}
 }
@@ -857,7 +853,7 @@ button {
 	padding: 1rem;
 	border: none;
 	background-color: $color-text;
-	color: #fff;
+	color: $paper;
 	font-weight: 600;
 	width: 100%;
 }
@@ -997,144 +993,18 @@ button {
 .tooltip {
 	position: absolute;
 	font-family: $font-regular;
-	border: 1px solid #777;
+	border: 1px solid $color-border-dark;
 	background-color: $color-highlight;
 	padding: 2px 7px;
-	box-shadow: 2px 2px 10px #999;
+	box-shadow: 0 3px 12px rgba(34, 24, 19, 0.18);
 	z-index: 1000;
 	max-width: 300px;
 }
 
 
 // ==========================================================================
-// Creator Cards (for creators/artists index pages)
+// Creator cards: styling lives in _catalogue.scss (2026 roster redesign)
 // ==========================================================================
-
-.page-intro {
-	font-size: 1.1rem;
-	margin-bottom: 2rem;
-	color: #444;
-}
-
-.creator-grid {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 1px;
-	background-color: $color-border;
-	border: 1px solid $color-border;
-}
-
-.creator-card {
-	display: block;
-	min-width: 0; // prevent nowrap article titles from forcing the grid column (and page) wider
-	background-color: $color-background;
-	padding: 1rem 1.1rem;
-	text-decoration: none;
-	color: $color-text;
-	transition: background-color 0.12s ease;
-
-	&:hover {
-		background-color: $color-highlight;
-		text-decoration: none;
-
-		.creator-card-name {
-			text-decoration: underline;
-		}
-	}
-}
-
-.creator-card-header {
-	display: flex;
-	align-items: baseline;
-	justify-content: space-between;
-	gap: 0.5rem;
-	margin-bottom: 0.2rem;
-}
-
-.creator-card-name {
-	font-family: $font-bold;
-	font-size: 1rem;
-}
-
-.creator-card-count {
-	font-family: $font-regular;
-	font-size: $font-size-small;
-	color: white;
-	background-color: $color-filter-creator;
-	padding: 0.05rem 0.4rem;
-	flex-shrink: 0;
-	line-height: 1.5;
-}
-
-.creator-card-meta {
-	font-size: $font-size-small;
-	color: $color-muted;
-	margin: 0 0 0.5rem 0;
-}
-
-.creator-card-articles {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	border-top: 1px solid $color-shade;
-	padding-top: 0.4rem;
-
-	li {
-		font-size: $font-size-small;
-		color: $color-muted;
-		line-height: 1.4;
-		padding: 0.1rem 0;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-}
-
-.creator-card-more {
-	font-style: italic;
-	color: $color-border-dark !important;
-}
-
-// Heat map tiers — background deepens with article count
-// Tier thresholds: 1 / 2 / 3–4 / 5–19 / 20+
-// Text stays dark for tiers 0–2; inverts to white for 3–4
-
-.heat-0 { background-color: #ffffff; }
-
-.heat-1 { background-color: #fef0e6; }
-
-.heat-2 {
-	background-color: #f5c89a;
-	.creator-card-articles { border-top-color: rgba(0,0,0,0.12); }
-}
-
-.heat-3 {
-	background-color: #c0623a;
-	color: #fff;
-	.creator-card-meta { color: rgba(255,255,255,0.75); }
-	.creator-card-articles {
-		border-top-color: rgba(255,255,255,0.25);
-		li { color: rgba(255,255,255,0.8); }
-	}
-	.creator-card-count {
-		background-color: rgba(0,0,0,0.2);
-	}
-	&:hover { background-color: #b05632; }
-}
-
-.heat-4 {
-	background-color: #7a1a0a;
-	color: #fff;
-	.creator-card-meta { color: rgba(255,255,255,0.7); }
-	.creator-card-articles {
-		border-top-color: rgba(255,255,255,0.2);
-		li { color: rgba(255,255,255,0.75); }
-	}
-	.creator-card-count {
-		background-color: rgba(0,0,0,0.25);
-	}
-	&:hover { background-color: #6a1408; }
-}
 
 // ==========================================================================
 // Collections

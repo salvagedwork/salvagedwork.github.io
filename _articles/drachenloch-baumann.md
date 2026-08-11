@@ -7,6 +7,7 @@ creators: [peter-baumann]
 subjects: [cave-archaeology, palaeolithic, neanderthal, switzerland, prehistory, cave-bear]
 featured-image: /assets/articles/drachenloch-baumann/front.jpg
 date: 2026-02-21
+published: 2008
 last_modified_at: 2026-02-21
 
 book_reader:

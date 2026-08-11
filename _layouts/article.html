@@ -7,39 +7,34 @@ layout: default
 	<!-- "entry" class is for footnotes.js to work correctly -->
 	<div class="article-container entry">
 	
-		<header>
-			<h1>{{ page.title }}</h1>
-			{% if page.creators or page.subjects.size > 0 %}
-			<p class="article-meta">
-				{%- if page.creators -%}
-				<span class="article-collection">
-					{%- if page.categories -%}
-					{%- for cat in page.categories -%}
-					<a href="/articles/?category={{ cat }}">{{ cat | capitalize }}</a>{%- unless forloop.last %}, {% endunless -%}
-					{%- endfor -%}
-					: {% endif -%}
-					{%- for creator_slug in page.creators -%}
-					{%- assign creator_data = site.data.creators | where: "slug", creator_slug | first -%}
-					{%- if creator_data -%}
-					<a href="/creators/{{ creator_slug }}/">{{ creator_data.name }}</a>
-					{%- else -%}
-					<a href="/creators/{{ creator_slug }}/">{% include titlecase.html text=creator_slug %}</a>
-					{%- endif -%}
-					{%- unless forloop.last %}, {% endunless -%}
-					{%- endfor -%}
-				</span>
-				{%- endif %}
-				{% if page.subjects.size > 0 -%}
-				<span class="article-subjects">
-					{%- for subject in page.subjects -%}
-					<a href="/articles/?subject={{ subject }}">{% include titlecase.html text=subject %}</a>
-					{%- unless forloop.last %}, {% endunless -%}
-					{%- endfor -%}
-				</span>
+		<header class="article-header">
+			<h1 class="article-title">{{ page.title }}</h1>
+			<p class="article-masthead">
+				{%- if page.categories -%}
+				{%- for cat in page.categories -%}
+				<a href="/articles/?category={{ cat }}">{{ cat }}</a>{%- unless forloop.last %}, {% endunless -%}
+				{%- endfor -%}
+				{%- endif -%}
+				{%- if page.creators.size > 0 %}<span class="article-masthead-sep">&middot;</span>
+				{%- for creator_slug in page.creators -%}
+				{%- assign creator_data = site.data.creators | where: "slug", creator_slug | first %}
+				<a href="/creators/{{ creator_slug }}/">{% if creator_data %}{{ creator_data.name }}{% else %}{% include titlecase.html text=creator_slug %}{% endif %}</a>{%- unless forloop.last %}, {% endunless -%}
+				{%- endfor -%}
+				{%- endif -%}
+				{%- if page.published %}<span class="article-masthead-sep">&middot;</span>{{ page.published }}{% endif -%}
+				{%- if page.book_reader.enabled %}<span class="article-masthead-sep">&middot;</span>
+				{%- for lang in page.book_reader.languages -%}
+				<a href="/books/{{ page.slug }}/?lang={{ lang.code }}">{{ lang.label }}</a>{%- unless forloop.last %} / {% endunless -%}
+				{%- endfor -%}
 				{%- endif %}
 			</p>
+			{% if page.subjects.size > 0 %}
+			<p class="article-tags">
+				{%- for subject in page.subjects -%}
+				<a href="/articles/?subject={{ subject }}">{% include titlecase.html text=subject %}</a>
+				{%- endfor -%}
+			</p>
 			{% endif %}
-			<hr />
 		</header>
 
 		<!-- Table of Contents (populated by article-toc.js) -->
@@ -55,8 +50,32 @@ layout: default
 
 		<div class="article-body">
 			{{ content }}
+
+			{% include collapsible.html %}
+
+			<nav class="onward-doors" aria-label="Continue exploring">
+				<p class="onward-title">Continue exploring</p>
+			<ul>
+				{% assign page_themes = site.collections | where: "kind", "theme" %}
+				{% for theme in page_themes %}
+					{% if theme.articles contains page.slug %}
+					<li><a class="onward-tile" data-kind="theme" href="{{ theme.url }}"><span class="onward-kind">theme</span><span class="onward-name">{{ theme.title }}</span></a></li>
+					{% endif %}
+				{% endfor %}
+				{% if page.member_of %}
+					{% assign parent = site.collections | where: "collection_id", page.member_of | first %}
+					{% if parent %}<li><a class="onward-tile" data-kind="series" href="{{ parent.url }}"><span class="onward-kind">series</span><span class="onward-name">{{ parent.title }}</span></a></li>{% endif %}
+				{% endif %}
+				{% if page.creators.size > 0 %}
+					{% assign first_creator = page.creators | first %}
+					{% assign creator_info = site.data.creators | where: "slug", first_creator | first %}
+					<li><a class="onward-tile" data-kind="creator" href="/creators/{{ first_creator }}/"><span class="onward-kind">creator</span><span class="onward-name">{% if creator_info %}{{ creator_info.name }}{% else %}{% include titlecase.html text=first_creator %}{% endif %}</span></a></li>
+				{% endif %}
+				<li><a class="onward-tile" data-kind="random" href="/articles/" data-random-drawer><span class="onward-kind">random</span><span class="onward-name">open a drawer</span></a></li>
+				</ul>
+			</nav>
 		</div>
-		
+
 	</div>
 	
 </article>

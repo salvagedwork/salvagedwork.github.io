@@ -7,6 +7,7 @@ creators: [john-cage, earle-brown, morton-feldman, christian-wolff, toshi-ichiya
 subjects: [experimental-music, indeterminacy, new-york-school, graphic-notation, anarchism, fluxus-adjacent]
 featured-image: /assets/articles/music-before-revolution/front.jpg
 date: 2026-02-19
+published: 1972
 last_modified_at: 2026-02-19
 ---
 
@@ -60,7 +61,7 @@ Side eight is occupied by a three-way discussion among Feldman, Brown, and Metzg
 
 ### Audio
 
-<iframe src="https://archive.org/embed/music-before-revolution&playlist=1&list_height=150" width="100%" height="400" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+<iframe src="https://archive.org/embed/music-before-revolution?playlist=1" width="500" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
 ### John Cage
 

@@ -7,6 +7,7 @@ creators: [felici-maissen]
 subjects: [romansh-literature, parish-history, switzerland]
 featured-image: /assets/articles/cumbel-parish-history/front.jpg
 date: 2026-02-15
+published: 1983
 last_modified_at: 2026-02-15
 
 book_reader:

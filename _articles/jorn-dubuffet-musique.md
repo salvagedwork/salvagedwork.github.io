@@ -7,6 +7,7 @@ creators: [asger-jorn, jean-dubuffet]
 subjects: [experimental-music, art-brut, sound-art]
 featured-image: /assets/articles/jorn-dubuffet-musique/front.jpg
 date: 2026-02-08
+published: 1961
 last_modified_at: 2026-02-08
 ---
 
@@ -62,7 +63,7 @@ The release represented a significant art object in itself, with production valu
 
 ## Audio
 
-<iframe src="https://archive.org/embed/jorn-dubuffet-musique&playlist=1" width="100%" height="450" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+<iframe src="https://archive.org/embed/jorn-dubuffet-musique?playlist=1" width="500" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
 ## Track Listing
 

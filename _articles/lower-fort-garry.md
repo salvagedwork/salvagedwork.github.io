@@ -7,6 +7,7 @@ creators: [robert-watson]
 subjects: [hudson-bay-company, canadian-history, fur-trade, red-river-settlement, rupert's-land, first-nations-treaties]
 featured-image: /assets/articles/lower-fort-garry/front.jpg
 date: 2026-02-19
+published: 1928
 last_modified_at: 2026-02-19
 
 book_reader:
@@ -94,4 +95,3 @@ The book appeared in 1928, the year in which the Historic Sites and Monuments Bo
     </figure>
 </section>
 
-{% include collapsible.html %}

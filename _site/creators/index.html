@@ -33,8 +33,14 @@
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	
+	<!-- Font preloads (the source and machine voices) -->
+	<link rel="preload" href="/assets/fonts/Literata-var.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/discover.js" defer></script>
+	<script src="/js/back-to-top.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
 	
@@ -67,13 +73,14 @@
 <meta property="og:url" content="http://localhost:4000/creators/" />
 <meta property="og:site_name" content="salvaged.work" />
 <meta property="og:image" content="http://localhost:4000/assets/images/social_media/logo.png" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-08-11T00:00:00+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:image" content="http://localhost:4000/assets/images/social_media/logo.png" />
 <meta property="twitter:title" content="Creators Index" />
 <meta name="twitter:site" content="@salvagedwork" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A digital archive for salvaged analogue materials.","headline":"Creators Index","image":"http://localhost:4000/assets/images/social_media/logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/social_media/logo.png"}},"url":"http://localhost:4000/creators/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-08-11T00:00:00+02:00","datePublished":"2026-08-11T00:00:00+02:00","description":"A digital archive for salvaged analogue materials.","headline":"Creators Index","image":"http://localhost:4000/assets/images/social_media/logo.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/creators/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/social_media/logo.png"}},"url":"http://localhost:4000/creators/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -85,10 +92,13 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/creators"  class="navbar-link">Creators</a>
+		<a href="/reading-room/" class="navbar-link">Reading Room</a>
 		
-		<a href="/articles"  class="navbar-link">Articles</a>
+		<a href="/articles/" class="navbar-link">Articles</a>
 		
+		<a href="/creators/" class="navbar-link current">Creators</a>
+		
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -103,10 +113,13 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/creators" class="mobile-nav-link">Creators</a>
+	<a href="/reading-room/" class="mobile-nav-link">Reading Room</a>
 	
-	<a href="/articles" class="mobile-nav-link">Articles</a>
+	<a href="/articles/" class="mobile-nav-link">Articles</a>
 	
+	<a href="/creators/" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	
 	<a href="/about/" class="mobile-nav-link">About</a>
@@ -239,661 +252,534 @@
 			</div>
 			
 			<div id="content">
-				<h1 id="creators">Creators</h1>
+				
+<div class="index-masthead">
+	<h1 class="index-title">Creators</h1>
+	<p class="index-intro">Artists, composers, authors, printers, and collaborators whose work is held in the archive. Each bar shows a life measured against the span of the whole register, earliest birth to the present.</p>
+</div>
 
-<p class="page-intro">Artists, composers, authors, and collaborators whose work is archived here.</p>
+<hr class="zag-rule" />
 
-<div class="creator-grid">
+<div class="collection-toolbar">
+	<span class="collection-count">38 creators</span>
+	<span class="collection-sort" data-sort-controls="">
+		<span class="sort-label">sort</span>
+		<button type="button" data-sort="title" data-dir="asc">surname</button>
+		<button type="button" data-sort="forename" data-dir="asc">first name</button>
+		<button type="button" data-sort="born" data-dir="asc">born</button>
+	</span>
+</div>
+
+<div class="creator-roster" data-sortable="">
 
 
 	
-	<a href="/creators/jose-vicente-asuar/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">José Vicente Asuar</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Chilean&thinsp;·&thinsp;1933–2017</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/jose-vicente-asuar/" class="creator-card" data-title="asuar" data-forename="josé" data-born="1933">
+
+	<span class="creator-card-name">José Vicente Asuar</span>
+
+	<span class="creator-card-meta">Chilean &middot; 1933&ndash;2017</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 65%; width: 30%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">3a Bienal Americana de Arte</span></span>
 </a>
 
 
 	
-	<a href="/creators/peter-baumann/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Peter Baumann</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Swiss</p>
-	<ul class="creator-card-articles">
-		
-		<li>Drachenloch 1917–23</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/peter-baumann/" class="creator-card" data-title="baumann" data-forename="peter" data-born="9999">
+
+	<span class="creator-card-name">Peter Baumann</span>
+
+	<span class="creator-card-meta">Swiss</span>
+	<span class="creator-card-works"><span class="creator-card-work">Drachenloch 1917–23</span></span>
 </a>
 
 
 	
-	<a href="/creators/joseph-beuys/" class="creator-card heat-1">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Joseph Beuys</span>
-		<span class="creator-card-count">2</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1921–1986</p>
-	<ul class="creator-card-articles">
-		
-		<li>Abschiedssymphonie, Op. 177</li>
-		
-		<li>Schottische Symphonie / Requiem of Art</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/joseph-beuys/" class="creator-card" data-title="beuys" data-forename="joseph" data-born="1921">
+
+	<span class="creator-card-name">Joseph Beuys</span>
+
+	<span class="creator-card-meta">German &middot; 1921&ndash;1986</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 61%; width: 23%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Abschiedssymphonie, Op. 177</span><span class="creator-card-work">Schottische Symphonie / Requiem of Art</span></span>
 </a>
 
 
 	
-	<a href="/creators/earle-brown/" class="creator-card heat-1">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Earle Brown</span>
-		<span class="creator-card-count">2</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1926–2002</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/earle-brown/" class="creator-card" data-title="brown" data-forename="earle" data-born="1926">
+
+	<span class="creator-card-name">Earle Brown</span>
+
+	<span class="creator-card-meta">American &middot; 1926&ndash;2002</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 63%; width: 27%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">3a Bienal Americana de Arte</span><span class="creator-card-work">Music Before Revolution</span></span>
 </a>
 
 
 	
-	<a href="/creators/emil-bachler/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Emil Bächler</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Swiss&thinsp;·&thinsp;1868–1950</p>
-	<ul class="creator-card-articles">
-		
-		<li>The Drachenloch above Vättis in the Tamina Valley</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/emil-bachler/" class="creator-card" data-title="bächler" data-forename="emil" data-born="1868">
+
+	<span class="creator-card-name">Emil Bächler</span>
+
+	<span class="creator-card-meta">Swiss &middot; 1868&ndash;1950</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 41%; width: 30%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">The Drachenloch above Vättis in the Tamina Valley</span></span>
 </a>
 
 
 	
-	<a href="/creators/john-cage/" class="creator-card heat-2">
-	<div class="creator-card-header">
-		<span class="creator-card-name">John Cage</span>
-		<span class="creator-card-count">3</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1912–1992</p>
-	<ul class="creator-card-articles">
-		
-		<li>Reunion</li>
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/john-cage/" class="creator-card" data-title="cage" data-forename="john" data-born="1912">
+
+	<span class="creator-card-name">John Cage</span>
+
+	<span class="creator-card-meta">American &middot; 1912&ndash;1992</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 58%; width: 29%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Reunion</span><span class="creator-card-work">3a Bienal Americana de Arte</span><span class="creator-card-more">and 1 more</span></span>
 </a>
 
 
 	
-	<a href="/creators/henning-christiansen/" class="creator-card heat-1">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Henning Christiansen</span>
-		<span class="creator-card-count">2</span>
-	</div><p class="creator-card-meta">Danish&thinsp;·&thinsp;1932–1996</p>
-	<ul class="creator-card-articles">
-		
-		<li>Abschiedssymphonie, Op. 177</li>
-		
-		<li>Schottische Symphonie / Requiem of Art</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/henning-christiansen/" class="creator-card" data-title="christiansen" data-forename="henning" data-born="1932">
+
+	<span class="creator-card-name">Henning Christiansen</span>
+
+	<span class="creator-card-meta">Danish &middot; 1932&ndash;1996</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 65%; width: 23%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Abschiedssymphonie, Op. 177</span><span class="creator-card-work">Schottische Symphonie / Requiem of Art</span></span>
 </a>
 
 
 	
-	<a href="/creators/liesbeth-crommelin/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Liesbeth Crommelin</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Dutch&thinsp;·&thinsp;1944–present</p>
-	<ul class="creator-card-articles">
-		
-		<li>Klankteksten - Konkrete Poëzie - Visuele Teksten</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/liesbeth-crommelin/" class="creator-card" data-title="crommelin" data-forename="liesbeth" data-born="1944">
+
+	<span class="creator-card-name">Liesbeth Crommelin</span>
+
+	<span class="creator-card-meta">Dutch &middot; 1944&ndash;</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 69%; width: 30%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Klankteksten - Konkrete Poëzie - Visuele Teksten</span></span>
 </a>
 
 
 	
-	<a href="/creators/friedrich-von-coelln/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Friedrich von Cölln</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1766–1820</p>
-	<ul class="creator-card-articles">
-		
-		<li>New Firebrands - Marginalia on the Tract - Confidential Letters on the Internal Affairs of the Prussian Court since the Death of Frederick II</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/friedrich-von-coelln/" class="creator-card" data-title="cölln" data-forename="friedrich" data-born="1766">
+
+	<span class="creator-card-name">Friedrich von Cölln</span>
+
+	<span class="creator-card-meta">German &middot; 1766&ndash;1820</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 4%; width: 19%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">New Firebrands - Marginalia on the Tract - Confidential Letters on the Internal Affairs of the Prussian Court since the Death of Frederick II</span></span>
 </a>
 
 
 	
-	<a href="/creators/guy-debord/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Guy Debord</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">French&thinsp;·&thinsp;1931–1994</p>
-	<ul class="creator-card-articles">
-		
-		<li>Mémoires</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/guy-debord/" class="creator-card" data-title="debord" data-forename="guy" data-born="1931">
+
+	<span class="creator-card-name">Guy Debord</span>
+
+	<span class="creator-card-meta">French &middot; 1931&ndash;1994</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 65%; width: 23%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Mémoires</span></span>
 </a>
 
 
 	
-	<a href="/creators/christian-dotremont/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Christian Dotremont</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Belgian&thinsp;·&thinsp;1922–1979</p>
-	<ul class="creator-card-articles">
-		
-		<li>La chevelure des choses</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/christian-dotremont/" class="creator-card" data-title="dotremont" data-forename="christian" data-born="1922">
+
+	<span class="creator-card-name">Christian Dotremont</span>
+
+	<span class="creator-card-meta">Belgian &middot; 1922&ndash;1979</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 61%; width: 20%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">La chevelure des choses</span></span>
 </a>
 
 
 	
-	<a href="/creators/jean-dubuffet/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Jean Dubuffet</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">French&thinsp;·&thinsp;1901–1985</p>
-	<ul class="creator-card-articles">
-		
-		<li>Musique Phénoménale</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/jean-dubuffet/" class="creator-card" data-title="dubuffet" data-forename="jean" data-born="1901">
+
+	<span class="creator-card-name">Jean Dubuffet</span>
+
+	<span class="creator-card-meta">French &middot; 1901&ndash;1985</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 54%; width: 30%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Musique Phénoménale</span></span>
 </a>
 
 
 	
-	<a href="/creators/marcel-duchamp/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Marcel Duchamp</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">French-American&thinsp;·&thinsp;1887–1968</p>
-	<ul class="creator-card-articles">
-		
-		<li>Reunion</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/marcel-duchamp/" class="creator-card" data-title="duchamp" data-forename="marcel" data-born="1887">
+
+	<span class="creator-card-name">Marcel Duchamp</span>
+
+	<span class="creator-card-meta">French-American &middot; 1887&ndash;1968</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 48%; width: 29%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Reunion</span></span>
 </a>
 
 
 	
-	<a href="/creators/morton-feldman/" class="creator-card heat-1">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Morton Feldman</span>
-		<span class="creator-card-count">2</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1926–1987</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/morton-feldman/" class="creator-card" data-title="feldman" data-forename="morton" data-born="1926">
+
+	<span class="creator-card-name">Morton Feldman</span>
+
+	<span class="creator-card-meta">American &middot; 1926&ndash;1987</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 63%; width: 22%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">3a Bienal Americana de Arte</span><span class="creator-card-work">Music Before Revolution</span></span>
 </a>
 
 
 	
-	<a href="/creators/hans-von-held/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Hans von Held</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Prussian&thinsp;·&thinsp;1764–1842</p>
-	<ul class="creator-card-articles">
-		
-		<li>The True Jacobins in the Prussian State, or - A Documentary Account of the Wicked Intrigues and Fraudulent Conduct in Office of Two Prussian Ministers of State</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/hans-von-held/" class="creator-card" data-title="held" data-forename="hans" data-born="1764">
+
+	<span class="creator-card-name">Hans von Held</span>
+
+	<span class="creator-card-meta">Prussian &middot; 1764&ndash;1842</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 3%; width: 28%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">The True Jacobins in the Prussian State, or - A Documentary Account of the Wicked Intrigues and Fraudulent Conduct in Office of Two Prussian Ministers of State</span></span>
 </a>
 
 
 	
-	<a href="/creators/lejaren-hiller/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Lejaren Hiller</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1924–1994</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/lejaren-hiller/" class="creator-card" data-title="hiller" data-forename="lejaren" data-born="1924">
+
+	<span class="creator-card-name">Lejaren Hiller</span>
+
+	<span class="creator-card-meta">American &middot; 1924&ndash;1994</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 62%; width: 25%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">3a Bienal Americana de Arte</span></span>
 </a>
 
 
 	
-	<a href="/creators/toshi-ichiyanagi/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Toshi Ichiyanagi</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Japanese&thinsp;·&thinsp;1933–2022</p>
-	<ul class="creator-card-articles">
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/toshi-ichiyanagi/" class="creator-card" data-title="ichiyanagi" data-forename="toshi" data-born="1933">
+
+	<span class="creator-card-name">Toshi Ichiyanagi</span>
+
+	<span class="creator-card-meta">Japanese &middot; 1933&ndash;2022</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 65%; width: 32%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Music Before Revolution</span></span>
 </a>
 
 
 	
-	<a href="/creators/asger-jorn/" class="creator-card heat-4">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Asger Jorn</span>
-		<span class="creator-card-count">28</span>
-	</div><p class="creator-card-meta">Danish&thinsp;·&thinsp;1914–1973</p>
-	<ul class="creator-card-articles">
-		
-		<li>Asger Jorn à Silkeborg</li>
-		
-		<li>Helhesten (Year 1, Booklet 1)</li>
-		
-		<li>Helhesten (Year 1, Booklet 2)</li>
-		
-		
-		<li class="creator-card-more">+25 more</li>
-		
-	</ul>
-	
+	<a href="/creators/asger-jorn/" class="creator-card" data-title="jorn" data-forename="asger" data-born="1914">
+
+	<span class="creator-card-name">Asger Jorn</span>
+
+	<span class="creator-card-meta">Danish &middot; 1914&ndash;1973</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 58%; width: 21%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Asger Jorn à Silkeborg</span><span class="creator-card-work">Helhesten (Year 1, Booklet 1)</span><span class="creator-card-more">and 26 more</span></span>
 </a>
 
 
 	
-	<a href="/creators/yves-klein/" class="creator-card heat-1">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Yves Klein</span>
-		<span class="creator-card-count">2</span>
-	</div><p class="creator-card-meta">French&thinsp;·&thinsp;1928–1962</p>
-	<ul class="creator-card-articles">
-		
-		<li>Symphonie 'Monoton-Silence'</li>
-		
-		<li>Prince of Space, Musik der Leere</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/yves-klein/" class="creator-card" data-title="klein" data-forename="yves" data-born="1928">
+
+	<span class="creator-card-name">Yves Klein</span>
+
+	<span class="creator-card-meta">French &middot; 1928&ndash;1962</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 63%; width: 12%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Symphonie 'Monoton-Silence'</span><span class="creator-card-work">Prince of Space, Musik der Leere</span></span>
 </a>
 
 
 	
-	<a href="/creators/ernst-krenek/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Ernst Krenek</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Austrian-American&thinsp;·&thinsp;1900–1991</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/ernst-krenek/" class="creator-card" data-title="krenek" data-forename="ernst" data-born="1900">
+
+	<span class="creator-card-name">Ernst Krenek</span>
+
+	<span class="creator-card-meta">Austrian-American &middot; 1900&ndash;1991</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 53%; width: 33%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">3a Bienal Americana de Arte</span></span>
 </a>
 
 
 	
-	<a href="/creators/shigeko-kubota/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Shigeko Kubota</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Japanese-American&thinsp;·&thinsp;1937–2015</p>
-	<ul class="creator-card-articles">
-		
-		<li>Reunion</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/shigeko-kubota/" class="creator-card" data-title="kubota" data-forename="shigeko" data-born="1937">
+
+	<span class="creator-card-name">Shigeko Kubota</span>
+
+	<span class="creator-card-meta">Japanese-American &middot; 1937&ndash;2015</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 67%; width: 28%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Reunion</span></span>
 </a>
 
 
 	
-	<a href="/creators/alcides-lanza/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Alcides Lanza</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Argentine-Canadian&thinsp;·&thinsp;1929–2020</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/alcides-lanza/" class="creator-card" data-title="lanza" data-forename="alcides" data-born="1929">
+
+	<span class="creator-card-name">Alcides Lanza</span>
+
+	<span class="creator-card-meta">Argentine-Canadian &middot; 1929&ndash;2020</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 64%; width: 33%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">3a Bienal Americana de Arte</span></span>
 </a>
 
 
 	
-	<a href="/creators/felici-maissen/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Felici Maissen</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Swiss&thinsp;·&thinsp;1910–1992</p>
-	<ul class="creator-card-articles">
-		
-		<li>History of the Parish of Cumbel</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/felici-maissen/" class="creator-card" data-title="maissen" data-forename="felici" data-born="1910">
+
+	<span class="creator-card-name">Felici Maissen</span>
+
+	<span class="creator-card-meta">Swiss &middot; 1910&ndash;1992</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 57%; width: 30%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">History of the Parish of Cumbel</span></span>
 </a>
 
 
 	
-	<a href="/creators/heinz-klaus-metzger/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Heinz-Klaus Metzger</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1932–2016</p>
-	<ul class="creator-card-articles">
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/heinz-klaus-metzger/" class="creator-card" data-title="metzger" data-forename="heinz-klaus" data-born="1932">
+
+	<span class="creator-card-name">Heinz-Klaus Metzger</span>
+
+	<span class="creator-card-meta">German &middot; 1932&ndash;2016</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 65%; width: 30%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Music Before Revolution</span></span>
 </a>
 
 
 	
-	<a href="/creators/charlotte-moorman/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Charlotte Moorman</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1933–1991</p>
-	<ul class="creator-card-articles">
-		
-		<li>Originale</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/charlotte-moorman/" class="creator-card" data-title="moorman" data-forename="charlotte" data-born="1933">
+
+	<span class="creator-card-name">Charlotte Moorman</span>
+
+	<span class="creator-card-meta">American &middot; 1933&ndash;1991</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 65%; width: 21%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Originale</span></span>
 </a>
 
 
 	
-	<a href="/creators/lars-morell/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Lars Morell</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Danish&thinsp;·&thinsp;1926–2014</p>
-	<ul class="creator-card-articles">
-		
-		<li>Asger Jorn on Læsø</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/lars-morell/" class="creator-card" data-title="morell" data-forename="lars" data-born="1926">
+
+	<span class="creator-card-name">Lars Morell</span>
+
+	<span class="creator-card-meta">Danish &middot; 1926&ndash;2014</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 63%; width: 32%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Asger Jorn on Læsø</span></span>
 </a>
 
 
 	
-	<a href="/creators/gordon-mumma/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Gordon Mumma</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1935–present</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/gordon-mumma/" class="creator-card" data-title="mumma" data-forename="gordon" data-born="1935">
+
+	<span class="creator-card-name">Gordon Mumma</span>
+
+	<span class="creator-card-meta">American &middot; 1935&ndash;</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 66%; width: 33%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">3a Bienal Americana de Arte</span></span>
 </a>
 
 
 	
-	<a href="/creators/nam-june-paik/" class="creator-card heat-2">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Nam June Paik</span>
-		<span class="creator-card-count">3</span>
-	</div><p class="creator-card-meta">Korean-American&thinsp;·&thinsp;1932–2006</p>
-	<ul class="creator-card-articles">
-		
-		<li>Abschiedssymphonie, Op. 177</li>
-		
-		<li>Duett Paik/Takis</li>
-		
-		<li>Originale</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/nam-june-paik/" class="creator-card" data-title="paik" data-forename="nam" data-born="1932">
+
+	<span class="creator-card-name">Nam June Paik</span>
+
+	<span class="creator-card-meta">Korean-American &middot; 1932&ndash;2006</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 65%; width: 27%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Abschiedssymphonie, Op. 177</span><span class="creator-card-work">Duett Paik/Takis</span><span class="creator-card-more">and 1 more</span></span>
 </a>
 
 
 	
-	<a href="/creators/jasia-reichardt/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Jasia Reichardt</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Polish-British&thinsp;·&thinsp;1933–present</p>
-	<ul class="creator-card-articles">
-		
-		<li>Cybernetic Serendipity - The Computer and the Arts</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/jasia-reichardt/" class="creator-card" data-title="reichardt" data-forename="jasia" data-born="1933">
+
+	<span class="creator-card-name">Jasia Reichardt</span>
+
+	<span class="creator-card-meta">Polish-British &middot; 1933&ndash;</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 65%; width: 34%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Cybernetic Serendipity - The Computer and the Arts</span></span>
 </a>
 
 
 	
-	<a href="/creators/rainer-riehn/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Rainer Riehn</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1941–2014</p>
-	<ul class="creator-card-articles">
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/rainer-riehn/" class="creator-card" data-title="riehn" data-forename="rainer" data-born="1941">
+
+	<span class="creator-card-name">Rainer Riehn</span>
+
+	<span class="creator-card-meta">German &middot; 1941&ndash;2014</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 68%; width: 26%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Music Before Revolution</span></span>
 </a>
 
 
 	
-	<a href="/creators/karlheinz-stockhausen/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Karlheinz Stockhausen</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1928–2007</p>
-	<ul class="creator-card-articles">
-		
-		<li>Originale</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/karlheinz-stockhausen/" class="creator-card" data-title="stockhausen" data-forename="karlheinz" data-born="1928">
+
+	<span class="creator-card-name">Karlheinz Stockhausen</span>
+
+	<span class="creator-card-meta">German &middot; 1928&ndash;2007</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 63%; width: 29%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Originale</span></span>
 </a>
 
 
 	
-	<a href="/creators/gerald-strang/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Gerald Strang</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1908–1983</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/gerald-strang/" class="creator-card" data-title="strang" data-forename="gerald" data-born="1908">
+
+	<span class="creator-card-name">Gerald Strang</span>
+
+	<span class="creator-card-meta">American &middot; 1908&ndash;1983</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 56%; width: 27%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">3a Bienal Americana de Arte</span></span>
 </a>
 
 
 	
-	<a href="/creators/takis/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Takis</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Greek&thinsp;·&thinsp;1925–2019</p>
-	<ul class="creator-card-articles">
-		
-		<li>Duett Paik/Takis</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/takis/" class="creator-card" data-title="takis" data-forename="takis" data-born="1925">
+
+	<span class="creator-card-name">Takis</span>
+
+	<span class="creator-card-meta">Greek &middot; 1925&ndash;2019</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 62%; width: 34%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Duett Paik/Takis</span></span>
 </a>
 
 
 	
-	<a href="/creators/horacio-vaggione/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Horacio Vaggione</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">Argentine-French&thinsp;·&thinsp;1943–present</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/horacio-vaggione/" class="creator-card" data-title="vaggione" data-forename="horacio" data-born="1943">
+
+	<span class="creator-card-name">Horacio Vaggione</span>
+
+	<span class="creator-card-meta">Argentine-French &middot; 1943&ndash;</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 69%; width: 30%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">3a Bienal Americana de Arte</span></span>
 </a>
 
 
 	
-	<a href="/creators/wolf-vostell/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Wolf Vostell</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1932–1998</p>
-	<ul class="creator-card-articles">
-		
-		<li>Il giardino delle delizie</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/wolf-vostell/" class="creator-card" data-title="vostell" data-forename="wolf" data-born="1932">
+
+	<span class="creator-card-name">Wolf Vostell</span>
+
+	<span class="creator-card-meta">German &middot; 1932&ndash;1998</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 65%; width: 24%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Il giardino delle delizie</span></span>
 </a>
 
 
 	
-	<a href="/creators/robert-watson/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Robert Watson</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">British</p>
-	<ul class="creator-card-articles">
-		
-		<li>Lower Fort Garry: A History of the Stone Fort</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/robert-watson/" class="creator-card" data-title="watson" data-forename="robert" data-born="9999">
+
+	<span class="creator-card-name">Robert Watson</span>
+
+	<span class="creator-card-meta">British</span>
+	<span class="creator-card-works"><span class="creator-card-work">Lower Fort Garry: A History of the Stone Fort</span></span>
 </a>
 
 
 	
-	<a href="/creators/charles-wilp/" class="creator-card heat-0">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Charles Wilp</span>
-		<span class="creator-card-count">1</span>
-	</div><p class="creator-card-meta">German&thinsp;·&thinsp;1932–2005</p>
-	<ul class="creator-card-articles">
-		
-		<li>Prince of Space, Musik der Leere</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/charles-wilp/" class="creator-card" data-title="wilp" data-forename="charles" data-born="1932">
+
+	<span class="creator-card-name">Charles Wilp</span>
+
+	<span class="creator-card-meta">German &middot; 1932&ndash;2005</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 65%; width: 26%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">Prince of Space, Musik der Leere</span></span>
 </a>
 
 
 	
-	<a href="/creators/christian-wolff/" class="creator-card heat-1">
-	<div class="creator-card-header">
-		<span class="creator-card-name">Christian Wolff</span>
-		<span class="creator-card-count">2</span>
-	</div><p class="creator-card-meta">American&thinsp;·&thinsp;1934–present</p>
-	<ul class="creator-card-articles">
-		
-		<li>3a Bienal Americana de Arte</li>
-		
-		<li>Music Before Revolution</li>
-		
-		
-	</ul>
-	
+	<a href="/creators/christian-wolff/" class="creator-card" data-title="wolff" data-forename="christian" data-born="1934">
+
+	<span class="creator-card-name">Christian Wolff</span>
+
+	<span class="creator-card-meta">American &middot; 1934&ndash;</span>
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: 66%; width: 33%;"></span>
+	</span>
+	<span class="creator-card-works"><span class="creator-card-work">3a Bienal Americana de Arte</span><span class="creator-card-work">Music Before Revolution</span></span>
 </a>
 
 
 </div>
 
+<script src="/js/collection-sort.js"></script>
+
+
 			</div>
 			
 			<div id="footer">
-				<div class="page-modified-date">
+				<div class="footer-meta">
+	<div class="page-modified-date">
 	
 		Salvaging for the future.
-	</div>
+	</div><div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a> (1950)</div>
+</div>
 <div class="navbar-links-container">
 	
-		<a href="/about/"  class="navbar-link">About</a>
+		<a href="/about/" class="navbar-link">About</a>
 	
-		<a href="/contact/"  class="navbar-link">Contact</a>
+		<a href="/contact/" class="navbar-link">Contact</a>
 	
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>

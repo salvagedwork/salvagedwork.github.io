@@ -6,36 +6,83 @@ layout: default
 {% assign article = site.articles | where: "slug", book_slug | first %}
 
 <div class="book-reader">
-	
-	<div class="book-header">
-		<a href="{{ article.url }}" class="book-back-link">&larr; Back to article</a>
-		<h1 class="book-title">{{ article.title }}</h1>
+
+	<div class="book-progress" hidden>
+		<span class="book-progress-track" role="slider" tabindex="0"
+			aria-label="Reading position" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+			<span class="book-progress-fill"></span>
+		</span>
+		<span class="book-progress-label">0%</span>
 	</div>
-	
+
+	<header class="book-titlepage">
+
+		<div class="book-titlepage-body">
+
+			<a class="book-titlepage-cover" href="{{ article.url }}">
+				<img src="{{ article.featured-image }}" alt="{{ article.title | escape }}">
+			</a>
+
+			<div class="book-titlepage-text">
+
+				{% if article.book_reader.languages.size > 0 %}
+				<p class="book-eyebrow">
+					{%- for lang in article.book_reader.languages -%}
+					{{ lang.label }}{% unless forloop.last %} &middot; {% endunless %}
+					{%- endfor -%}
+				</p>
+				{% endif %}
+
+				<h1 class="book-title">{{ article.title }}</h1>
+
+				<p class="book-desc">{{ article.description }}</p>
+
+				<p class="book-actions">
+					<a class="book-btn book-btn--primary" href="{{ article.url }}">Read the article</a>
+					<a class="book-btn" href="#book-begin">Begin reading &darr;</a>
+				</p>
+
+				<p class="book-colophon">
+					{%- if article.book_reader.languages.size > 1 -%}
+					Scanned, transcribed, and translated with machine assistance under a fixed protocol, then reviewed by hand. The original language is the authority. <a href="/about/#editorial-method">Editorial method</a>{% if article.book_reader.translation_guide %} &middot; <a href="{{ article.book_reader.translation_guide }}">Translation note</a>{% endif %}
+					{%- else -%}
+					Scanned and transcribed with machine assistance, then reviewed by hand. The printed original is the authority. <a href="/about/#editorial-method">Editorial method</a>
+					{%- endif -%}
+				</p>
+
+			</div>
+		</div>
+	</header>
+
 	<nav class="book-toc" aria-label="Table of contents">
 		<div class="book-toc-inner">
-			
+
+			<a class="book-toc-article" href="{{ article.url }}">
+				<span class="book-toc-article-kind">Article</span>
+				<span class="book-toc-article-name">About this book</span>
+			</a>
+
 			{% if article.book_reader.languages.size > 1 %}
 			<div class="book-language-switch">
 				{% for lang in article.book_reader.languages %}
-				<button class="book-lang-btn{% if lang.code == article.book_reader.default_language %} active{% endif %}" 
+				<button class="book-lang-btn{% if lang.code == article.book_reader.default_language %} active{% endif %}"
 						data-lang="{{ lang.code }}">
 					{{ lang.label }}
 				</button>
 				{% endfor %}
 			</div>
 			{% endif %}
-			
-			<h3 class="book-toc-title">Contents</h3>
-			
+
+			<h2 class="book-toc-title">Contents</h2>
+
 			<ul class="book-toc-list" id="book-toc-list">
 				<li class="book-toc-loading">Loading...</li>
 			</ul>
-			
+
 		</div>
 	</nav>
-	
-	<div class="book-content">
+
+	<div class="book-content" id="book-begin">
 		{% for lang in article.book_reader.languages %}
 		<div class="book-text" data-lang="{{ lang.code }}"{% unless lang.code == article.book_reader.default_language %} hidden{% endunless %}>
 			{% if lang.format == 'html' %}
@@ -49,7 +96,16 @@ layout: default
 		</div>
 		{% endfor %}
 	</div>
-	
+
+	<footer class="book-endmatter">
+		<hr class="zag-rule" />
+		<p class="book-endmatter-label">End of the text</p>
+		<p class="book-endmatter-links">
+			<a class="book-btn book-btn--primary" href="{{ article.url }}">Read the article</a>
+			<a class="book-btn" href="/reading-room/">The reading room</a>
+		</p>
+	</footer>
+
 </div>
 
 <script src="{{ '/js/book-reader.js' | relative_url }}"></script>

@@ -33,8 +33,14 @@
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	
+	<!-- Font preloads (the source and machine voices) -->
+	<link rel="preload" href="/assets/fonts/Literata-var.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/discover.js" defer></script>
+	<script src="/js/back-to-top.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
 	
@@ -86,10 +92,13 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/creators"  class="navbar-link">Creators</a>
+		<a href="/reading-room/" class="navbar-link">Reading Room</a>
 		
-		<a href="/articles"  class="navbar-link">Articles</a>
+		<a href="/articles/" class="navbar-link">Articles</a>
 		
+		<a href="/creators/" class="navbar-link">Creators</a>
+		
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -104,10 +113,13 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/creators" class="mobile-nav-link">Creators</a>
+	<a href="/reading-room/" class="mobile-nav-link">Reading Room</a>
 	
-	<a href="/articles" class="mobile-nav-link">Articles</a>
+	<a href="/articles/" class="mobile-nav-link">Articles</a>
 	
+	<a href="/creators/" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	
 	<a href="/about/" class="mobile-nav-link">About</a>
@@ -242,65 +254,91 @@
 			<div id="content">
 				<div class="creator-page">
 
-	<header class="creator-header">
-		<h1>Henning Christiansen</h1>
-		<p class="creator-meta"><span class="creator-nationality">Danish</span><span class="creator-dates">
-					&thinsp;·&thinsp;
-					1932–1996</span><span class="creator-wikipedia">&thinsp;·&thinsp;<a href="https://en.wikipedia.org/wiki/Henning_Christiansen" target="_blank" rel="noopener">Wikipedia &nearr;</a></span></p>
-		<hr />
+	<header class="index-masthead creator-masthead">
+		<p class="about-eyebrow">Creator</p>
+		<h1 class="index-title">Henning Christiansen</h1>
+
+		<p class="creator-page-meta">Danish &middot; 1932&ndash;1996 &middot; <a href="https://en.wikipedia.org/wiki/Henning_Christiansen" target="_blank" rel="noopener">Wikipedia &nearr;</a></p>
+		<span class="creator-lifespan creator-lifespan--page" aria-hidden="true">
+			<span class="creator-lifespan-bar" style="left: 65%; width: 23%;"></span>
+		</span>
 	</header>
 
-	
+	<hr class="zag-rule" />
 
 	
 	<section class="creator-articles">
-		<h2>2 articles archived</h2>
-		
-			<div class="article-tile" data-subjects="fluxus" data-category="recordings" data-collection="" data-creators="joseph-beuys,henning-christiansen,nam-june-paik">
-	<div class="article-tile-image">
-		<a href="/article/abschiedssymphonie/"><img src="/assets/articles/abschiedssymphonie/front.jpg" alt="Abschiedssymphonie, Op. 177"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/abschiedssymphonie/">Abschiedssymphonie, Op. 177</a></h3>
-		<p class="article-tile-description"><strong>Abschiedssymphonie, Op. 177</strong> is a recording by Henning Christiansen released by Edition Block in 1988, constructed from material recorded at the opening concert of the Biennale des Friedens in Hamburg on November 29, 1985, with Nam June Paik and Joseph Beuys.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=recordings">Recordings</a>: <a href="/articles/?creator=joseph-beuys">Joseph Beuys</a>, <a href="/articles/?creator=henning-christiansen">Henning Christiansen</a>, <a href="/articles/?creator=nam-june-paik">Nam June Paik</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=fluxus">Fluxus</a></em>
-		</p><p class="article-tile-link"><a href="/article/abschiedssymphonie/">Read more &rarr;</a></p>
-	</div>
-</div>
+		<div class="collection-toolbar">
+			<span class="collection-count">2 works in the archive</span>
+			
+			<span class="collection-sort" data-sort-controls>
+				<span class="sort-label">sort</span>
+				<button type="button" data-sort="title" data-dir="asc">a&ndash;z</button>
+				<button type="button" data-sort="published" data-dir="asc">year</button>
+				<button type="button" data-sort="added" data-dir="desc">newest</button>
+			</span>
+			
+		</div>
 
-		
-			<div class="article-tile" data-subjects="fluxus,sound-art,performance-art,action-art" data-category="recordings" data-collection="" data-creators="joseph-beuys,henning-christiansen">
-	<div class="article-tile-image">
-		<a href="/article/beuys-christiansen-schottische/"><img src="/assets/articles/beuys-christiansen-schottische/front.jpg" alt="Schottische Symphonie / Requiem of Art"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/beuys-christiansen-schottische/">Schottische Symphonie / Requiem of Art</a></h3>
-		<p class="article-tile-description"><strong>Schottische Symphonie / Requiem of Art</strong> a double LP released in 1973 by Edition Schellmann, Munich, documenting two works by Joseph Beuys and Henning Christiansen drawn from their 1970 collaboration <em>Celtic (Kinloch Rannoch) Scottish Symphony</em> at the Edinburgh College of Art.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=recordings">Recordings</a>: <a href="/articles/?creator=joseph-beuys">Joseph Beuys</a>, <a href="/articles/?creator=henning-christiansen">Henning Christiansen</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=fluxus">Fluxus</a>, <a href="/articles/?subject=sound-art">Sound Art</a>, <a href="/articles/?subject=performance-art">Performance Art</a>, <a href="/articles/?subject=action-art">Action Art</a></em>
-		</p><p class="article-tile-link"><a href="/article/beuys-christiansen-schottische/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
+		<div class="collection-list collection-catalogue" data-sortable>
+			
+			<a class="catalogue-row" href="/article/abschiedssymphonie/"
+				data-title="abschiedssymphonie-op-177"
+				data-published="1988"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/abschiedssymphonie/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Abschiedssymphonie, Op. 177</span>
+					<span class="catalogue-desc">is a recording by Henning Christiansen released by Edition Block in 1988, constructed from material recorded at the opening concert of the Biennale des Friedens in Hamburg on November 29, 1985, with Nam June Paik and Joseph Beuys.
+</span>
+				</span>
+				<span class="catalogue-year">1988</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/beuys-christiansen-schottische/"
+				data-title="schottische-symphonie-requiem-of-art"
+				data-published="1973"
+				data-added="1771369200">
+				<span class="catalogue-thumb"><img src="/assets/articles/beuys-christiansen-schottische/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Schottische Symphonie / Requiem of Art</span>
+					<span class="catalogue-desc">a double LP released in 1973 by Edition Schellmann, Munich, documenting two works by Joseph Beuys and Henning Christiansen drawn from their 1970 collaboration Celtic (Kinloch Rannoch) Scottish Symphony at the Edinburgh College of Art.
+</span>
+				</span>
+				<span class="catalogue-year">1973</span>
+			</a>
+			
+		</div>
 	</section>
 	
 
+	<nav class="onward-doors" aria-label="Continue exploring">
+		<p class="onward-title">Continue exploring</p>
+		<ul>
+			<li><a class="onward-tile" data-kind="creator" href="/creators/"><span class="onward-kind">index</span><span class="onward-name">All creators</span></a></li>
+			<li><a class="onward-tile" data-kind="theme" href="/articles/"><span class="onward-kind">browse</span><span class="onward-name">All articles</span></a></li>
+			<li><a class="onward-tile" data-kind="random" href="/articles/" data-random-drawer><span class="onward-kind">random</span><span class="onward-name">Open a drawer</span></a></li>
+		</ul>
+	</nav>
+
 </div>
+
+<script src="/js/collection-sort.js"></script>
 
 			</div>
 			
 			<div id="footer">
-				<div class="page-modified-date">
+				<div class="footer-meta">
+	<div class="page-modified-date">
 	
 		Salvaging for the future.
-	</div>
+	</div><div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a> (1950)</div>
+</div>
 <div class="navbar-links-container">
 	
-		<a href="/about/"  class="navbar-link">About</a>
+		<a href="/about/" class="navbar-link">About</a>
 	
-		<a href="/contact/"  class="navbar-link">Contact</a>
+		<a href="/contact/" class="navbar-link">Contact</a>
 	
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>

@@ -7,6 +7,7 @@ creators: [asger-jorn]
 subjects: [exhibition-catalogue]
 featured-image: /assets/articles/asger-jorn-a-silkeborg/front.jpg
 date: 2019-01-01
+published: 1978
 last_modified_at: 2021-03-10
 
 book_reader:

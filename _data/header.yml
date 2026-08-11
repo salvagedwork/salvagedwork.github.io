@@ -1,4 +1,6 @@
-- name: Creators
-  link: /creators
+- name: Reading Room
+  link: /reading-room/
 - name: Articles
-  link: /articles
+  link: /articles/
+- name: Creators
+  link: /creators/

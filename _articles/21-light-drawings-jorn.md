@@ -7,6 +7,7 @@ creators: [asger-jorn]
 subjects: []
 featured-image: /assets/articles/21-light-drawings-jorn/front.jpg
 date: 2020-12-13
+published: 1971
 last_modified_at: 2020-12-13
 ---
 

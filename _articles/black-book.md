@@ -7,6 +7,7 @@ creators: [hans-von-held]
 subjects: [prussia, political-pamphlets, corruption, partitions-of-poland]
 featured-image: /assets/articles/black-book/front.jpg
 date: 2026-07-15
+published: 1801
 last_modified_at: 2026-07-15
 
 book_reader:
@@ -143,4 +144,3 @@ What survived is partly the vocabulary. The German *Schwarzbuch*, a compiled dos
 
 [^13]: Joachim Bahlcke and Anna Joisten, eds., *Wortgewalten. Hans von Held – Ein aufgeklärter Staatsdiener zwischen Preußen und Polen* (Potsdam: Deutsches Kulturforum östliches Europa, 2018), ISBN 978-3-936168-81-5; Iwan-Michelangelo D'Aprile, "Die letzten Aufklärer. Politischer Journalismus in Berlin um 1800," in Ursula Goldenbaum and Alexander Košenina, eds., *Berliner Aufklärung*, vol. 4 (2011), pp. 179–206.
 
-{% include collapsible.html %}

@@ -2,34 +2,40 @@
 {%- assign creator_col = site.creators | where: "slug", creator_slug | first -%}
 {%- assign creator_articles = site.articles | where_exp: "article", "article.creators contains creator_slug" -%}
 {%- assign count = creator_articles.size -%}
-{%- if count >= 20 -%}{%- assign heat_class = "heat-4" -%}
-{%- elsif count >= 5 -%}{%- assign heat_class = "heat-3" -%}
-{%- elsif count >= 3 -%}{%- assign heat_class = "heat-2" -%}
-{%- elsif count >= 2 -%}{%- assign heat_class = "heat-1" -%}
-{%- else -%}{%- assign heat_class = "heat-0" -%}
+{%- comment -%}
+Lifespan bar: position and width as percentages of the collection's span.
+span_start / span_end / span_total are assigned by the calling page; the bar
+is omitted where a birth year is unknown.
+{%- endcomment -%}
+{%- if creator_data.born and span_total -%}
+	{%- assign life_end = creator_data.died | default: span_end -%}
+	{%- assign bar_left = creator_data.born | minus: span_start | times: 100 | divided_by: span_total -%}
+	{%- assign bar_width = life_end | minus: creator_data.born | times: 100 | divided_by: span_total -%}
 {%- endif -%}
-<a href="{{ creator_col.url }}" class="creator-card {{ heat_class }}">
-	<div class="creator-card-header">
-		<span class="creator-card-name">{{ creator_data.name | default: creator_slug }}</span>
-		<span class="creator-card-count">{{ count }}</span>
-	</div>
-	{%- if creator_data.nationality or creator_data.born -%}
-	<p class="creator-card-meta">
-		{%- if creator_data.nationality -%}{{ creator_data.nationality }}{%- endif -%}
-		{%- if creator_data.born -%}
-			{%- if creator_data.nationality -%}&thinsp;·&thinsp;{%- endif -%}
-			{{ creator_data.born }}–{%- if creator_data.died -%}{{ creator_data.died }}{%- else -%}present{%- endif -%}
-		{%- endif -%}
-	</p>
-	{%- endif -%}
-	{% if count > 0 %}
-	<ul class="creator-card-articles">
-		{% for article in creator_articles limit:3 %}
-		<li>{{ article.title }}</li>
-		{% endfor %}
-		{% if count > 3 %}
-		<li class="creator-card-more">+{{ count | minus: 3 }} more</li>
-		{% endif %}
-	</ul>
-	{% endif %}
+<a href="{{ creator_col.url }}" class="creator-card"
+	data-title="{{ creator_data.surname | default: creator_data.name | slugify }}"
+	data-forename="{{ creator_data.name | split: ' ' | first | slugify }}"
+	data-born="{{ creator_data.born | default: 9999 }}">
+
+	<span class="creator-card-name">{{ creator_data.name | default: creator_slug }}</span>
+
+	<span class="creator-card-meta">
+		{%- if creator_data.nationality %}{{ creator_data.nationality }}{% endif -%}
+		{%- if creator_data.born %}{% if creator_data.nationality %} &middot; {% endif %}{{ creator_data.born }}&ndash;{% if creator_data.died %}{{ creator_data.died }}{% endif %}{% endif -%}
+	</span>
+
+	{%- if creator_data.born and span_total %}
+	<span class="creator-lifespan" aria-hidden="true">
+		<span class="creator-lifespan-bar" style="left: {{ bar_left }}%; width: {{ bar_width }}%;"></span>
+	</span>
+	{%- endif %}
+
+	{%- if count > 0 %}
+	<span class="creator-card-works">
+		{%- for article in creator_articles limit: 2 -%}
+		<span class="creator-card-work">{{ article.title }}</span>
+		{%- endfor -%}
+		{%- if count > 2 %}<span class="creator-card-more">and {{ count | minus: 2 }} more</span>{% endif -%}
+	</span>
+	{%- endif %}
 </a>

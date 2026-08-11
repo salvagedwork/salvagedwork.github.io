@@ -33,8 +33,14 @@
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	
+	<!-- Font preloads (the source and machine voices) -->
+	<link rel="preload" href="/assets/fonts/Literata-var.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/discover.js" defer></script>
+	<script src="/js/back-to-top.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
 	
@@ -75,7 +81,7 @@
 <meta property="twitter:title" content="Contact" />
 <meta name="twitter:site" content="@salvagedwork" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","dateModified":"2021-04-26T00:00:00+02:00","description":"Contact salvaged.work","headline":"Contact","image":"http://localhost:4000/assets/images/social_media/logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/social_media/logo.png"}},"url":"http://localhost:4000/contact/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","dateModified":"2026-08-11T00:00:00+02:00","description":"Contact salvaged.work","headline":"Contact","image":"http://localhost:4000/assets/images/social_media/logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/social_media/logo.png"}},"url":"http://localhost:4000/contact/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -87,10 +93,13 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/creators"  class="navbar-link">Creators</a>
+		<a href="/reading-room/" class="navbar-link">Reading Room</a>
 		
-		<a href="/articles"  class="navbar-link">Articles</a>
+		<a href="/articles/" class="navbar-link">Articles</a>
 		
+		<a href="/creators/" class="navbar-link">Creators</a>
+		
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -105,10 +114,13 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/creators" class="mobile-nav-link">Creators</a>
+	<a href="/reading-room/" class="mobile-nav-link">Reading Room</a>
 	
-	<a href="/articles" class="mobile-nav-link">Articles</a>
+	<a href="/articles/" class="mobile-nav-link">Articles</a>
 	
+	<a href="/creators/" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	
 	<a href="/about/" class="mobile-nav-link">About</a>
@@ -241,42 +253,54 @@
 			</div>
 			
 			<div id="content">
-				<h1 id="contact">Contact</h1>
+				<div class="index-masthead">
+	<h1 class="index-title">Contact</h1>
+	<p class="index-intro">Do you have a work that should be salvaged, or a physical copy of something missing here? Corrections to a transcription or translation are just as welcome.</p>
+</div>
 
-<p>Do you have a work that we should salvage? Can you provide a physical copy of a work that we’re missing on this site? Please get in touch!</p>
+<hr class="zag-rule" />
+
+<div class="contact-layout">
 
 <div class="contact-form-holder">
 	<form action="https://formspree.io/f/mdopwzyo" method="POST">
-		<p>
-			<label>
-				<input type="text" name="_replyto" placeholder="Email" required="" />
-			</label>
+		<p class="contact-field">
+			<label for="contact-email" class="contact-label">Email</label>
+			<input id="contact-email" type="text" name="_replyto" required="" />
 		</p>
-		<p>
-			<label>
-				<textarea name="message" placeholder="Message" required=""></textarea>
-			</label>
+		<p class="contact-field">
+			<label for="contact-message" class="contact-label">Message</label>
+			<textarea id="contact-message" name="message" rows="7" required=""></textarea>
 		</p>
-	
-	<div class="g-recaptcha" data-sitekey="6Lcls7oaAAAAAHE48h-DAXpojju5JLjIsHmd0IKt"></div>
-	<!-- your other form fields go here -->
-	
-	<button type="submit">Send</button>
+
+		<div class="g-recaptcha" data-sitekey="6Lcls7oaAAAAAHE48h-DAXpojju5JLjIsHmd0IKt"></div>
+
+		<button type="submit" class="contact-submit">Send</button>
 	</form>
+</div>
+
+<aside class="contact-aside">
+	<h2 class="contact-aside-title">What happens to a submission</h2>
+	<p>Works offered to the archive are scanned, transcribed, and where necessary translated under the archive's <a href="/about/#editorial-method">editorial method</a>, then deposited at the <a href="https://archive.org/">Internet Archive</a> alongside their article here.</p>
+	<p>Corrections are read against the scans before anything is changed. If you are reporting an error in a translation, quoting the surrounding sentence and the printed page number helps considerably.</p>
+</aside>
+
 </div>
 
 			</div>
 			
 			<div id="footer">
-				<div class="page-modified-date">
+				<div class="footer-meta">
+	<div class="page-modified-date">
 	
-		Page last modified on 2021-04-26
-	</div>
+		Page last modified on 2026-08-11
+	</div><div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a> (1950)</div>
+</div>
 <div class="navbar-links-container">
 	
-		<a href="/about/"  class="navbar-link">About</a>
+		<a href="/about/" class="navbar-link">About</a>
 	
-		<a href="/contact/" class="navbar-link current" class="navbar-link">Contact</a>
+		<a href="/contact/" class="navbar-link current">Contact</a>
 	
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>

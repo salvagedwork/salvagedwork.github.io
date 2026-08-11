@@ -4,31 +4,145 @@ layout: default
 
 <article lang="en">
 
-	<div class="article-container entry">
-	
-		<header>
-			<h1>{{ page.title }}</h1>
-			<hr />
+	<div class="article-container article-container--full entry">
+
+		<header class="collection-header{% if page.kind == 'theme' %} collection-header--theme{% endif %}">
+			{% if page.kind == "theme" and page.door_image %}
+			<span class="pebble pebble--a collection-header-crop"><img src="{{ page.door_image }}" alt=""></span>
+			{% endif %}
+			<div class="collection-header-text">
+				<h1>{{ page.title }}</h1>
+				<hr />
+			</div>
 		</header>
-	
+
 		{{ content }}
-		
+
 		<section class="collection-articles">
-			<h2>Articles in this collection</h2>
-			
-			{% assign collection_articles = site.articles | where: "member_of", page.collection_id | sort: 'title' %}
-			{% if collection_articles.size > 0 %}
-				<p class="collection-article-count">{{ collection_articles.size }} article{% if collection_articles.size != 1 %}s{% endif %} in this collection.</p>
-				{% for article in collection_articles %}
-					{% include article-listing.html %}
+			{% unless page.kind == "theme" %}<h2>Articles in this collection</h2>{% endunless %}
+
+			{% if page.kind == "theme" %}
+				{% assign collection_articles = "" | split: "" %}
+				{% for slug in page.articles %}
+					{% assign doc = site.articles | where: "slug", slug | first %}
+					{% if doc %}{% assign collection_articles = collection_articles | push: doc %}{% endif %}
 				{% endfor %}
+			{% else %}
+				{% assign collection_articles = site.articles | where: "member_of", page.collection_id | sort: 'title' %}
+			{% endif %}
+
+			{% if collection_articles.size > 0 %}
+			<div class="collection-toolbar">
+				<span class="collection-count">{{ collection_articles.size }} item{% if collection_articles.size != 1 %}s{% endif %}</span>
+				<span class="collection-sort" data-sort-controls>
+					<span class="sort-label">sort</span>
+					<button type="button" data-sort="title" data-dir="asc">a&ndash;z</button>
+					<button type="button" data-sort="published" data-dir="asc">year</button>
+					<button type="button" data-sort="added" data-dir="desc">newest</button>
+				</span>
+			</div>
+
+			{% case page.display %}
+
+			{% when "catalogue" %}
+			<div class="collection-list collection-catalogue" data-sortable>
+				{% for article in collection_articles %}
+				<a class="catalogue-row" href="{{ article.url }}" data-title="{{ article.title | slugify }}" data-published="{{ article.published | default: 9999 }}" data-added="{{ article.date | date: '%s' }}">
+					<span class="catalogue-thumb"><img src="{{ article.featured-image }}" alt="" loading="lazy"></span>
+					<span class="catalogue-body">
+						<span class="catalogue-title">{{ article.title }}</span>
+						<span class="catalogue-desc">{% include first-sentence.html text=article.description %}</span>
+					</span>
+					<span class="catalogue-year">{{ article.published }}</span>
+				</a>
+				{% endfor %}
+			</div>
+
+			{% when "discography" %}
+			<div class="collection-list collection-discography" data-sortable>
+				{% for article in collection_articles %}
+				<a class="disc-tile" href="{{ article.url }}" data-title="{{ article.title | slugify }}" data-published="{{ article.published | default: 9999 }}" data-added="{{ article.date | date: '%s' }}">
+					<span class="disc-cover"><img src="{{ article.featured-image }}" alt="" loading="lazy"></span>
+					<span class="disc-title">{{ article.title }}</span>
+					<span class="disc-desc">{% include first-sentence.html text=article.description %}</span>
+					<span class="disc-year">{{ article.published }}</span>
+				</a>
+				{% endfor %}
+			</div>
+
+			{% when "dossier" %}
+			<div class="collection-list collection-dossier" data-sortable>
+				{% for article in collection_articles %}
+				<a class="dossier-row" href="{{ article.url }}" data-title="{{ article.title | slugify }}" data-published="{{ article.published | default: 9999 }}" data-added="{{ article.date | date: '%s' }}">
+					<span class="dossier-no">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
+					<span class="dossier-body">
+						<span class="dossier-title">{{ article.title }}</span>
+						<span class="dossier-desc">{% include first-sentence.html text=article.description %}</span>
+						<span class="dossier-meta">{{ article.published }}</span>
+					</span>
+				</a>
+				{% endfor %}
+			</div>
+
+			{% when "plates" %}
+			<div class="collection-list collection-plates" data-sortable>
+				{% for article in collection_articles %}
+				<a class="plate" href="{{ article.url }}" data-title="{{ article.title | slugify }}" data-published="{{ article.published | default: 9999 }}" data-added="{{ article.date | date: '%s' }}">
+					<span class="plate-mount"><img src="{{ article.featured-image }}" alt="{{ article.title | escape }}" loading="lazy"></span>
+					<span class="plate-caption">
+						<span class="plate-year">{{ article.published }}</span>
+						<span class="plate-title">{{ article.title }}</span>
+						<span class="plate-desc">{% include first-sentence.html text=article.description %}</span>
+					</span>
+				</a>
+				{% endfor %}
+			</div>
+
+			{% when "pamphlet" %}
+			<div class="collection-list collection-pamphlet" data-sortable>
+				{% for article in collection_articles %}
+				<a class="pamphlet-sheet" href="{{ article.url }}" data-title="{{ article.title | slugify }}" data-published="{{ article.published | default: 9999 }}" data-added="{{ article.date | date: '%s' }}">
+					<span class="pamphlet-rule pamphlet-rule--top"></span>
+					<span class="pamphlet-title">{{ article.title }}</span>
+					<span class="pamphlet-longtitle">{% include first-sentence.html text=article.description %}</span>
+					<span class="pamphlet-rule pamphlet-rule--bottom"></span>
+					<span class="pamphlet-imprint">printed in the year {{ article.published }}</span>
+				</a>
+				{% endfor %}
+			</div>
+
+			{% when "strata" %}
+			{% assign strata_articles = collection_articles | sort: "published" %}
+			<div class="collection-list collection-strata" data-sortable>
+				{% for article in strata_articles %}
+				<a class="strata-row" href="{{ article.url }}" data-title="{{ article.title | slugify }}" data-published="{{ article.published | default: 9999 }}" data-added="{{ article.date | date: '%s' }}">
+					<span class="strata-year">{{ article.published }}</span>
+					<span class="strata-body">
+						<span class="strata-title">{{ article.title }}</span>
+						<span class="strata-desc">{% include first-sentence.html text=article.description %}</span>
+					</span>
+					<span class="strata-thumb"><img src="{{ article.featured-image }}" alt="" loading="lazy"></span>
+				</a>
+				{% endfor %}
+			</div>
+
+			{% else %}
+			<div class="collection-list" data-sortable>
+				{% for article in collection_articles %}
+				<div data-title="{{ article.title | slugify }}" data-published="{{ article.published | default: 9999 }}" data-added="{{ article.date | date: '%s' }}">
+					{% include article-listing.html %}
+				</div>
+				{% endfor %}
+			</div>
+			{% endcase %}
+
 			{% else %}
 				<p><em>No articles have been added to this collection yet.</em></p>
 			{% endif %}
 		</section>
-		
+
 	</div>
-	
+
 </article>
 
 {% if page.tags.size > 0 %}
@@ -42,3 +156,5 @@ layout: default
   {% endfor %}
 </span>
 {% endif %}
+
+<script src="/js/collection-sort.js"></script>

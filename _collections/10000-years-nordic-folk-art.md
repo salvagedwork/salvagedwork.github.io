@@ -2,6 +2,7 @@
 layout: collection
 title: "10,000 Years of Nordic Folk Art"
 collection_id: 10000-years-nordic-folk-art
+kind: series
 description: is the title of Asger Jorn's ambitious but unfinished encyclopedic project to document the visual history of Scandinavian art from prehistory through the Middle Ages, conceived through his Scandinavian Institute for Comparative Vandalism.
 creators: [asger-jorn]
 tags: [comparative-vandalism, nordic-art, archaeology, folk-art]

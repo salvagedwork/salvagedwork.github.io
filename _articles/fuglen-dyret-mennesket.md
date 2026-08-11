@@ -8,6 +8,7 @@ subjects: [archaeology, nordic-art, comparative-vandalism]
 member_of: 10000-years-nordic-folk-art
 featured-image: /assets/articles/fuglen-dyret-mennesket/front.jpg
 date: 2026-02-04
+published: 2005
 last_modified_at: 2026-02-04
 
 book_reader:

@@ -8,6 +8,7 @@ subjects: [painting, ceramics]
 member_of: jorn-catalogue-raisonne
 featured-image: /assets/articles/atkins-jorn-crucial-years/front.jpg
 date: 2021-08-05
+published: 1977
 last_modified_at: 2022-01-31
 
 book_reader:

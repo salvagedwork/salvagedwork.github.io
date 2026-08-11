@@ -35,8 +35,14 @@
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	
+	<!-- Font preloads (the source and machine voices) -->
+	<link rel="preload" href="/assets/fonts/Literata-var.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/discover.js" defer></script>
+	<script src="/js/back-to-top.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
 	
@@ -88,10 +94,13 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/creators"  class="navbar-link">Creators</a>
+		<a href="/reading-room/" class="navbar-link">Reading Room</a>
 		
-		<a href="/articles"  class="navbar-link">Articles</a>
+		<a href="/articles/" class="navbar-link">Articles</a>
 		
+		<a href="/creators/" class="navbar-link">Creators</a>
+		
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -106,10 +115,13 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/creators" class="mobile-nav-link">Creators</a>
+	<a href="/reading-room/" class="mobile-nav-link">Reading Room</a>
 	
-	<a href="/articles" class="mobile-nav-link">Articles</a>
+	<a href="/articles/" class="mobile-nav-link">Articles</a>
 	
+	<a href="/creators/" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	
 	<a href="/about/" class="mobile-nav-link">About</a>
@@ -246,41 +258,78 @@
 
 
 <div class="book-reader">
-	
-	<div class="book-header">
-		<a href="/article/drachenloch-bachler/" class="book-back-link">&larr; Back to article</a>
-		<h1 class="book-title">The Drachenloch above Vättis in the Tamina Valley</h1>
+
+	<div class="book-progress" hidden>
+		<span class="book-progress-track" role="slider" tabindex="0"
+			aria-label="Reading position" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+			<span class="book-progress-fill"></span>
+		</span>
+		<span class="book-progress-label">0%</span>
 	</div>
-	
+
+	<header class="book-titlepage">
+
+		<div class="book-titlepage-body">
+
+			<a class="book-titlepage-cover" href="/article/drachenloch-bachler/">
+				<img src="/assets/articles/drachenloch-bachler/front.jpg" alt="The Drachenloch above Vättis in the Tamina Valley">
+			</a>
+
+			<div class="book-titlepage-text">
+
+				
+				<p class="book-eyebrow">German &middot; English</p>
+				
+
+				<h1 class="book-title">The Drachenloch above Vättis in the Tamina Valley</h1>
+
+				<p class="book-desc">is a 1921 monograph by Swiss naturalist Dr. Emil Bächler documenting the excavation of a prehistoric cave at 2,445 metres above sea level in the canton of St. Gallen, Switzerland, which yielded thousands of cave bear bones and contested evidence for habitation by Palaeolithic man.</p>
+
+				<p class="book-actions">
+					<a class="book-btn book-btn--primary" href="/article/drachenloch-bachler/">Read the article</a>
+					<a class="book-btn" href="#book-begin">Begin reading &darr;</a>
+				</p>
+
+				<p class="book-colophon">Scanned, transcribed, and translated with machine assistance under a fixed protocol, then reviewed by hand. The original language is the authority. <a href="/about/#editorial-method">Editorial method</a></p>
+
+			</div>
+		</div>
+	</header>
+
 	<nav class="book-toc" aria-label="Table of contents">
 		<div class="book-toc-inner">
-			
+
+			<a class="book-toc-article" href="/article/drachenloch-bachler/">
+				<span class="book-toc-article-kind">Article</span>
+				<span class="book-toc-article-name">About this book</span>
+			</a>
+
 			
 			<div class="book-language-switch">
 				
-				<button class="book-lang-btn" 
+				<button class="book-lang-btn"
 						data-lang="de">
 					German
 				</button>
 				
-				<button class="book-lang-btn active" 
+				<button class="book-lang-btn active"
 						data-lang="en">
 					English
 				</button>
 				
 			</div>
 			
-			
-			<h3 class="book-toc-title">Contents</h3>
-			
+
+			<h2 class="book-toc-title">Contents</h2>
+
 			<ul class="book-toc-list" id="book-toc-list">
 				<li class="book-toc-loading">Loading...</li>
 			</ul>
-			
+
 		</div>
 	</nav>
-	
-	<div class="book-content">
+
+	<div class="book-content" id="book-begin">
 		
 		<div class="book-text" data-lang="de" hidden>
 			
@@ -4284,22 +4333,34 @@ Ave Maria! Ave Maria! Ave Maria!” - <sup id="fnref:32" role="doc-noteref"><a h
 		</div>
 		
 	</div>
-	
+
+	<footer class="book-endmatter">
+		<hr class="zag-rule" />
+		<p class="book-endmatter-label">End of the text</p>
+		<p class="book-endmatter-links">
+			<a class="book-btn book-btn--primary" href="/article/drachenloch-bachler/">Read the article</a>
+			<a class="book-btn" href="/reading-room/">The reading room</a>
+		</p>
+	</footer>
+
 </div>
 
 <script src="/js/book-reader.js"></script>
+
 			</div>
 			
 			<div id="footer">
-				<div class="page-modified-date">
+				<div class="footer-meta">
+	<div class="page-modified-date">
 	
 		Salvaging for the future.
-	</div>
+	</div><div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a> (1950)</div>
+</div>
 <div class="navbar-links-container">
 	
-		<a href="/about/"  class="navbar-link">About</a>
+		<a href="/about/" class="navbar-link">About</a>
 	
-		<a href="/contact/"  class="navbar-link">Contact</a>
+		<a href="/contact/" class="navbar-link">Contact</a>
 	
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>

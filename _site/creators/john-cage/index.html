@@ -33,8 +33,14 @@
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	
+	<!-- Font preloads (the source and machine voices) -->
+	<link rel="preload" href="/assets/fonts/Literata-var.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/discover.js" defer></script>
+	<script src="/js/back-to-top.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
 	
@@ -86,10 +92,13 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/creators"  class="navbar-link">Creators</a>
+		<a href="/reading-room/" class="navbar-link">Reading Room</a>
 		
-		<a href="/articles"  class="navbar-link">Articles</a>
+		<a href="/articles/" class="navbar-link">Articles</a>
 		
+		<a href="/creators/" class="navbar-link">Creators</a>
+		
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -104,10 +113,13 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/creators" class="mobile-nav-link">Creators</a>
+	<a href="/reading-room/" class="mobile-nav-link">Reading Room</a>
 	
-	<a href="/articles" class="mobile-nav-link">Articles</a>
+	<a href="/articles/" class="mobile-nav-link">Articles</a>
 	
+	<a href="/creators/" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	
 	<a href="/about/" class="mobile-nav-link">About</a>
@@ -242,79 +254,104 @@
 			<div id="content">
 				<div class="creator-page">
 
-	<header class="creator-header">
-		<h1>John Cage</h1>
-		<p class="creator-meta"><span class="creator-nationality">American</span><span class="creator-dates">
-					&thinsp;·&thinsp;
-					1912–1992</span><span class="creator-wikipedia">&thinsp;·&thinsp;<a href="https://en.wikipedia.org/wiki/John_Cage" target="_blank" rel="noopener">Wikipedia &nearr;</a></span></p>
-		<hr />
+	<header class="index-masthead creator-masthead">
+		<p class="about-eyebrow">Creator</p>
+		<h1 class="index-title">John Cage</h1>
+
+		<p class="creator-page-meta">American &middot; 1912&ndash;1992 &middot; <a href="https://en.wikipedia.org/wiki/John_Cage" target="_blank" rel="noopener">Wikipedia &nearr;</a></p>
+		<span class="creator-lifespan creator-lifespan--page" aria-hidden="true">
+			<span class="creator-lifespan-bar" style="left: 58%; width: 29%;"></span>
+		</span>
 	</header>
 
-	
+	<hr class="zag-rule" />
 
 	
 	<section class="creator-articles">
-		<h2>3 articles archived</h2>
-		
-			<div class="article-tile" data-subjects="fluxus,electronic-music,chess,artist-books" data-category="books" data-collection="" data-creators="john-cage,marcel-duchamp,shigeko-kubota">
-	<div class="article-tile-image">
-		<a href="/article/cage-duchamp-reunion/"><img src="/assets/articles/cage-duchamp-reunion/front.jpg" alt="Reunion"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/cage-duchamp-reunion/">Reunion</a></h3>
-		<p class="article-tile-description"><strong>Reunion</strong> is an artist's book by Shigeko Kubota, published by Takeyoshi Miyazawa in 1970. Documenting the March 1968 performance *Reunion* in Toronto, the book pairs Kubota's black-and-white photographs of Marcel Duchamp and John Cage playing chess on an electronic chessboard with Cage's text *36 Acrostics re and not re Duchamp* and a blue flexi-disc recording of the event.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=john-cage">John Cage</a>, <a href="/articles/?creator=marcel-duchamp">Marcel Duchamp</a>, <a href="/articles/?creator=shigeko-kubota">Shigeko Kubota</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=fluxus">Fluxus</a>, <a href="/articles/?subject=electronic-music">Electronic Music</a>, <a href="/articles/?subject=chess">Chess</a>, <a href="/articles/?subject=artist-books">Artist Books</a></em>
-		</p><p class="article-tile-link"><a href="/article/cage-duchamp-reunion/">Read more &rarr;</a></p>
-	</div>
-</div>
+		<div class="collection-toolbar">
+			<span class="collection-count">3 works in the archive</span>
+			
+			<span class="collection-sort" data-sort-controls>
+				<span class="sort-label">sort</span>
+				<button type="button" data-sort="title" data-dir="asc">a&ndash;z</button>
+				<button type="button" data-sort="published" data-dir="asc">year</button>
+				<button type="button" data-sort="added" data-dir="desc">newest</button>
+			</span>
+			
+		</div>
 
-		
-			<div class="article-tile" data-subjects="electronic-music,experimental-music,latin-american-avant-garde,computer-music,aleatory-music" data-category="recordings" data-collection="" data-creators="horacio-vaggione,john-cage,morton-feldman,earle-brown,christian-wolff,gordon-mumma,lejaren-hiller,alcides-lanza,jose-vicente-asuar,gerald-strang,ernst-krenek">
-	<div class="article-tile-image">
-		<a href="/article/bienal-americana/"><img src="/assets/articles/bienal-americana/front.jpg" alt="3a Bienal Americana de Arte"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/bienal-americana/">3a Bienal Americana de Arte</a></h3>
-		<p class="article-tile-description"><strong>3a Bienal Americana de Arte</strong> is a two-disc LP set documenting the experimental music concerts held during the Tercera Bienal Americana de Arte in Córdoba, Argentina in October 1966.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=recordings">Recordings</a>: <a href="/articles/?creator=horacio-vaggione">Horacio Vaggione</a>, <a href="/articles/?creator=john-cage">John Cage</a>, <a href="/articles/?creator=morton-feldman">Morton Feldman</a>, <a href="/articles/?creator=earle-brown">Earle Brown</a>, <a href="/articles/?creator=christian-wolff">Christian Wolff</a>, <a href="/articles/?creator=gordon-mumma">Gordon Mumma</a>, <a href="/articles/?creator=lejaren-hiller">Lejaren Hiller</a>, <a href="/articles/?creator=alcides-lanza">Alcides Lanza</a>, <a href="/articles/?creator=jose-vicente-asuar">Jose Vicente Asuar</a>, <a href="/articles/?creator=gerald-strang">Gerald Strang</a>, <a href="/articles/?creator=ernst-krenek">Ernst Krenek</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=electronic-music">Electronic Music</a>, <a href="/articles/?subject=experimental-music">Experimental Music</a>, <a href="/articles/?subject=latin-american-avant-garde">Latin American Avant Garde</a>, <a href="/articles/?subject=computer-music">Computer Music</a>, <a href="/articles/?subject=aleatory-music">Aleatory Music</a></em>
-		</p><p class="article-tile-link"><a href="/article/bienal-americana/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="experimental-music,indeterminacy,new-york-school,graphic-notation,anarchism,fluxus-adjacent" data-category="recordings" data-collection="" data-creators="john-cage,earle-brown,morton-feldman,christian-wolff,toshi-ichiyanagi,heinz-klaus-metzger,rainer-riehn">
-	<div class="article-tile-image">
-		<a href="/article/music-before-revolution/"><img src="/assets/articles/music-before-revolution/front.jpg" alt="Music Before Revolution"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/music-before-revolution/">Music Before Revolution</a></h3>
-		<p class="article-tile-description"><strong>Music Before Revolution</strong> is a 1972 quadruple-LP box set released on the Odeon label documenting radical American experimental music from 1939 to 1970, performed by the Ensemble Musica Negativa under conductor Rainer Riehn, with liner notes by critic Heinz-Klaus Metzger and recorded conversations between the composers themselves.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=recordings">Recordings</a>: <a href="/articles/?creator=john-cage">John Cage</a>, <a href="/articles/?creator=earle-brown">Earle Brown</a>, <a href="/articles/?creator=morton-feldman">Morton Feldman</a>, <a href="/articles/?creator=christian-wolff">Christian Wolff</a>, <a href="/articles/?creator=toshi-ichiyanagi">Toshi Ichiyanagi</a>, <a href="/articles/?creator=heinz-klaus-metzger">Heinz Klaus Metzger</a>, <a href="/articles/?creator=rainer-riehn">Rainer Riehn</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=experimental-music">Experimental Music</a>, <a href="/articles/?subject=indeterminacy">Indeterminacy</a>, <a href="/articles/?subject=new-york-school">New York School</a>, <a href="/articles/?subject=graphic-notation">Graphic Notation</a>, <a href="/articles/?subject=anarchism">Anarchism</a>, <a href="/articles/?subject=fluxus-adjacent">Fluxus Adjacent</a></em>
-		</p><p class="article-tile-link"><a href="/article/music-before-revolution/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
+		<div class="collection-list collection-catalogue" data-sortable>
+			
+			<a class="catalogue-row" href="/article/cage-duchamp-reunion/"
+				data-title="reunion"
+				data-published="1970"
+				data-added="1770937200">
+				<span class="catalogue-thumb"><img src="/assets/articles/cage-duchamp-reunion/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Reunion</span>
+					<span class="catalogue-desc">is an artist's book by Shigeko Kubota, published by Takeyoshi Miyazawa in 1970.
+</span>
+				</span>
+				<span class="catalogue-year">1970</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/bienal-americana/"
+				data-title="3a-bienal-americana-de-arte"
+				data-published="1966"
+				data-added="1771455600">
+				<span class="catalogue-thumb"><img src="/assets/articles/bienal-americana/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">3a Bienal Americana de Arte</span>
+					<span class="catalogue-desc">is a two-disc LP set documenting the experimental music concerts held during the Tercera Bienal Americana de Arte in Córdoba, Argentina in October 1966.
+</span>
+				</span>
+				<span class="catalogue-year">1966</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/music-before-revolution/"
+				data-title="music-before-revolution"
+				data-published="1972"
+				data-added="1771455600">
+				<span class="catalogue-thumb"><img src="/assets/articles/music-before-revolution/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Music Before Revolution</span>
+					<span class="catalogue-desc">is a 1972 quadruple-LP box set released on the Odeon label documenting radical American experimental music from 1939 to 1970, performed by the Ensemble Musica Negativa under conductor Rainer Riehn, with liner notes by critic Heinz-Klaus Metzger and recorded conversations between the composers themselves.
+</span>
+				</span>
+				<span class="catalogue-year">1972</span>
+			</a>
+			
+		</div>
 	</section>
 	
 
+	<nav class="onward-doors" aria-label="Continue exploring">
+		<p class="onward-title">Continue exploring</p>
+		<ul>
+			<li><a class="onward-tile" data-kind="creator" href="/creators/"><span class="onward-kind">index</span><span class="onward-name">All creators</span></a></li>
+			<li><a class="onward-tile" data-kind="theme" href="/articles/"><span class="onward-kind">browse</span><span class="onward-name">All articles</span></a></li>
+			<li><a class="onward-tile" data-kind="random" href="/articles/" data-random-drawer><span class="onward-kind">random</span><span class="onward-name">Open a drawer</span></a></li>
+		</ul>
+	</nav>
+
 </div>
+
+<script src="/js/collection-sort.js"></script>
 
 			</div>
 			
 			<div id="footer">
-				<div class="page-modified-date">
+				<div class="footer-meta">
+	<div class="page-modified-date">
 	
 		Salvaging for the future.
-	</div>
+	</div><div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a> (1950)</div>
+</div>
 <div class="navbar-links-container">
 	
-		<a href="/about/"  class="navbar-link">About</a>
+		<a href="/about/" class="navbar-link">About</a>
 	
-		<a href="/contact/"  class="navbar-link">Contact</a>
+		<a href="/contact/" class="navbar-link">Contact</a>
 	
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>

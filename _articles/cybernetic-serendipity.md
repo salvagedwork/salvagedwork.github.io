@@ -7,6 +7,7 @@ creators: [jasia-reichardt]
 subjects: [cybernetics]
 featured-image: /assets/articles/cybernetic-serendipity/front.jpg
 date: 2021-06-11
+published: 1968
 last_modified_at: 2026-02-09
 ---
 
@@ -131,7 +132,7 @@ The LP was reissued as a limited-edition vinyl by The Vinyl Factory in 2014 to c
 
 ### Audio
 
-<iframe src="https://archive.org/embed/cybernetic-serendipity-music&playlist=1&list_height=150" width="100%" height="100" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+<iframe src="https://archive.org/embed/cybernetic-serendipity-music?playlist=1" width="500" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
 **Tracklisting:**
 

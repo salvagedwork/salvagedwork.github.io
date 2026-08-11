@@ -29,6 +29,15 @@ Usage:
         <tr>
             <td colspan="2" id="infobox-subtitle"><cite>{{ include.title }}</cite></td>
         </tr>
+        {% if page.book_reader.enabled %}
+        <tr>
+            <td colspan="2" class="infobox-read">
+                {%- for lang in page.book_reader.languages %}
+                <a class="infobox-read-btn" href="/books/{{ page.slug }}/?lang={{ lang.code }}">Read &middot; {{ lang.label }}</a>
+                {%- endfor %}
+            </td>
+        </tr>
+        {% endif %}
         {% if include.authors %}
         <tr>
             <th scope="row">Authors</th>

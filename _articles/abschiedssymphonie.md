@@ -8,6 +8,7 @@ creators: [joseph-beuys, henning-christiansen, nam-june-paik]
 subjects: [fluxus]
 featured-image: /assets/articles/abschiedssymphonie/front.jpg
 date: 2019-01-01
+published: 1988
 last_modified_at: 2025-02-13
 ---
 
@@ -78,7 +79,7 @@ Jean Martin - mixing
 
 ### Audio
 
-<iframe src="https://archive.org/embed/abschiedssymphonie177&playlist=1&list_height=150" width="100%" height="100" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+<iframe src="https://archive.org/embed/abschiedssymphonie177?playlist=1" width="500" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
 ### Liner Notes
 

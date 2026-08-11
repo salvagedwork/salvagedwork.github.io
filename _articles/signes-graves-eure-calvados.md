@@ -7,6 +7,7 @@ creators: [asger-jorn]
 subjects: [comparative-vandalism, medieval-art, church-graffiti]
 featured-image: /assets/articles/signes-graves-eure-calvados/front.jpg
 date: 2019-01-01
+published: 1964
 last_modified_at: 2021-03-10
 
 book_reader:

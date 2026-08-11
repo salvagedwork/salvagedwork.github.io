@@ -8,6 +8,7 @@ subjects: [archaeology, nordic-art, folk-art, vandalism]
 member_of: 10000-years-nordic-folk-art
 featured-image: /assets/articles/jorn-10-thousand-years/front.jpg
 date: 2026-02-07
+published: 1995
 last_modified_at: 2026-02-07
 
 book_reader:

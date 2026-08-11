@@ -2,6 +2,7 @@
 layout: collection
 title: Asger Jorn Catalogue raisonné Series
 collection_id: jorn-catalogue-raisonne
+kind: series
 categories: books
 description: is a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
 creators: [asger-jorn]

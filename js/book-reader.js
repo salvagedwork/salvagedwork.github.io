@@ -359,3 +359,208 @@
 		init();
 	}
 })();
+
+/**
+ * Page apparatus (2026 redesign):
+ * - Transforms [p. N] markers in the pure-Markdown book texts into anchored
+ *   margin apparatus at render time (the source files stay untouched).
+ * - Deep links: #de-p123 / #en-p123 switch language and scroll; #p123 uses
+ *   the active language.
+ * - Reading progress: the zag drawing across the viewport top.
+ */
+(function() {
+	'use strict';
+
+	var MARKER_RE = /\[p\.\s*([0-9IVXLCivxlc]+|unnumbered)\]/g;
+
+	function transformMarkers() {
+		var texts = document.querySelectorAll('.book-text');
+		texts.forEach(function(text) {
+			var lang = text.getAttribute('data-lang') || 'x';
+			var unnumbered = 0;
+			var walker = document.createTreeWalker(text, NodeFilter.SHOW_TEXT, null);
+			var nodes = [];
+			while (walker.nextNode()) {
+				if (MARKER_RE.test(walker.currentNode.nodeValue)) nodes.push(walker.currentNode);
+				MARKER_RE.lastIndex = 0;
+			}
+			nodes.forEach(function(node) {
+				var frag = document.createDocumentFragment();
+				var value = node.nodeValue;
+				var lastIndex = 0;
+				var match;
+				MARKER_RE.lastIndex = 0;
+				while ((match = MARKER_RE.exec(value)) !== null) {
+					frag.appendChild(document.createTextNode(value.slice(lastIndex, match.index)));
+					var num = match[1];
+					if (num === 'unnumbered') {
+						unnumbered += 1;
+						num = 'un' + unnumbered;
+					}
+					var a = document.createElement('a');
+					a.className = 'page-marker';
+					a.id = lang + '-p' + num;
+					a.href = '#' + lang + '-p' + num;
+					a.title = 'Page ' + match[1];
+					a.textContent = match[1] === 'unnumbered' ? '·' : match[1];
+					frag.appendChild(a);
+					lastIndex = MARKER_RE.lastIndex;
+				}
+				frag.appendChild(document.createTextNode(value.slice(lastIndex)));
+				node.parentNode.replaceChild(frag, node);
+			});
+		});
+	}
+
+	function jumpToHash() {
+		var hash = window.location.hash;
+		if (!hash) return;
+		var m = hash.match(/^#(?:([a-z]{2})-)?p([0-9IVXLCivxlc]+|un\d+)$/);
+		if (!m) return;
+		var lang = m[1];
+		if (lang) {
+			var btn = document.querySelector('.book-lang-btn[data-lang="' + lang + '"]');
+			var content = document.querySelector('.book-text[data-lang="' + lang + '"]');
+			if (btn && content && content.hidden) btn.click();
+		}
+		var target = lang
+			? document.getElementById(lang + '-p' + m[2])
+			: document.querySelector('.book-text:not([hidden]) [id$="-p' + m[2] + '"]');
+		if (target) {
+			setTimeout(function() {
+				target.scrollIntoView({ block: 'center' });
+			}, 50);
+		}
+	}
+
+	function floatingControls() {
+		var el = document.getElementById('floating-controls');
+		if (!el) {
+			el = document.createElement('div');
+			el.id = 'floating-controls';
+			el.className = 'floating-controls';
+			document.body.appendChild(el);
+		}
+		return el;
+	}
+
+	function initProgress() {
+		var bar = document.querySelector('.book-progress');
+		if (!bar) return;
+
+		var track = bar.querySelector('.book-progress-track');
+		var fill = bar.querySelector('.book-progress-fill');
+		var label = bar.querySelector('.book-progress-label');
+
+		// join the floating cluster so progress and Top read as one control
+		floatingControls().insertBefore(bar, floatingControls().firstChild);
+		bar.hidden = false;
+
+		function maxScroll() {
+			return document.documentElement.scrollHeight - window.innerHeight;
+		}
+
+		var ticking = false;
+		var scrubbing = false;
+
+		function update() {
+			ticking = false;
+			if (scrubbing) return;
+			var max = maxScroll();
+			var pct = max > 0 ? (window.scrollY / max) * 100 : 0;
+			pct = Math.min(100, Math.max(0, pct));
+			paint(pct);
+		}
+
+		function paint(pct) {
+			if (fill) fill.style.width = pct + '%';
+			if (label) label.textContent = Math.round(pct) + '%';
+			if (track) track.setAttribute('aria-valuenow', Math.round(pct));
+		}
+
+		// Scrubbing. Setting scrollY to fraction * maxScroll places the
+		// content at that fraction of the document in the centre of the
+		// viewport, so clicking the middle of the bar lands mid-text.
+		function seekTo(pct, smooth) {
+			pct = Math.min(100, Math.max(0, pct));
+			paint(pct);
+			window.scrollTo({
+				top: (pct / 100) * maxScroll(),
+				behavior: smooth ? 'smooth' : 'auto'
+			});
+		}
+
+		// Measured against the track, but the whole pill is the hit area, so
+		// the 10px rule does not have to be hit exactly.
+		function pctFromEvent(e) {
+			var rect = track.getBoundingClientRect();
+			return ((e.clientX - rect.left) / rect.width) * 100;
+		}
+
+		if (track) {
+			bar.addEventListener('pointerdown', function(e) {
+				e.preventDefault();
+				scrubbing = true;
+				bar.setPointerCapture(e.pointerId);
+				seekTo(pctFromEvent(e), false);
+			});
+
+			bar.addEventListener('pointermove', function(e) {
+				if (!scrubbing) return;
+				seekTo(pctFromEvent(e), false);
+			});
+
+			function endScrub(e) {
+				if (!scrubbing) return;
+				scrubbing = false;
+				if (bar.hasPointerCapture && bar.hasPointerCapture(e.pointerId)) {
+					bar.releasePointerCapture(e.pointerId);
+				}
+				update();
+			}
+
+			bar.addEventListener('pointerup', endScrub);
+			bar.addEventListener('pointercancel', endScrub);
+
+			track.addEventListener('keydown', function(e) {
+				var max = maxScroll();
+				var current = max > 0 ? (window.scrollY / max) * 100 : 0;
+				var step = e.shiftKey ? 10 : 2;
+				var next = null;
+
+				if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = current + step;
+				else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = current - step;
+				else if (e.key === 'Home') next = 0;
+				else if (e.key === 'End') next = 100;
+
+				if (next !== null) {
+					e.preventDefault();
+					seekTo(next, true);
+				}
+			});
+		}
+
+		window.addEventListener('scroll', function() {
+			if (!ticking) {
+				ticking = true;
+				window.requestAnimationFrame(update);
+			}
+		}, { passive: true });
+
+		update();
+	}
+
+	function initApparatus() {
+		if (!document.querySelector('.book-reader')) return;
+		transformMarkers();
+		jumpToHash();
+		initProgress();
+		window.addEventListener('hashchange', jumpToHash);
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initApparatus);
+	} else {
+		initApparatus();
+	}
+})();

@@ -33,8 +33,14 @@
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	
+	<!-- Font preloads (the source and machine voices) -->
+	<link rel="preload" href="/assets/fonts/Literata-var.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/discover.js" defer></script>
+	<script src="/js/back-to-top.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
 	
@@ -86,10 +92,13 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/creators"  class="navbar-link">Creators</a>
+		<a href="/reading-room/" class="navbar-link">Reading Room</a>
 		
-		<a href="/articles"  class="navbar-link">Articles</a>
+		<a href="/articles/" class="navbar-link">Articles</a>
 		
+		<a href="/creators/" class="navbar-link">Creators</a>
+		
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -104,10 +113,13 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/creators" class="mobile-nav-link">Creators</a>
+	<a href="/reading-room/" class="mobile-nav-link">Reading Room</a>
 	
-	<a href="/articles" class="mobile-nav-link">Articles</a>
+	<a href="/articles/" class="mobile-nav-link">Articles</a>
 	
+	<a href="/creators/" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	
 	<a href="/about/" class="mobile-nav-link">About</a>
@@ -242,425 +254,429 @@
 			<div id="content">
 				<div class="creator-page">
 
-	<header class="creator-header">
-		<h1>Asger Jorn</h1>
-		<p class="creator-meta"><span class="creator-nationality">Danish</span><span class="creator-dates">
-					&thinsp;·&thinsp;
-					1914–1973</span><span class="creator-wikipedia">&thinsp;·&thinsp;<a href="https://en.wikipedia.org/wiki/Asger_Jorn" target="_blank" rel="noopener">Wikipedia &nearr;</a></span></p>
-		<hr />
+	<header class="index-masthead creator-masthead">
+		<p class="about-eyebrow">Creator</p>
+		<h1 class="index-title">Asger Jorn</h1>
+
+		<p class="creator-page-meta">Danish &middot; 1914&ndash;1973 &middot; <a href="https://en.wikipedia.org/wiki/Asger_Jorn" target="_blank" rel="noopener">Wikipedia &nearr;</a></p>
+		<span class="creator-lifespan creator-lifespan--page" aria-hidden="true">
+			<span class="creator-lifespan-bar" style="left: 58%; width: 21%;"></span>
+		</span>
 	</header>
 
-	
+	<hr class="zag-rule" />
 
 	
 	<section class="creator-articles">
-		<h2>28 articles archived</h2>
-		
-			<div class="article-tile" data-subjects="exhibition-catalogue" data-category="books" data-collection="" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/asger-jorn-a-silkeborg/"><img src="/assets/articles/asger-jorn-a-silkeborg/front.jpg" alt="Asger Jorn à Silkeborg"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/asger-jorn-a-silkeborg/">Asger Jorn à Silkeborg</a></h3>
-		<p class="article-tile-description"><strong>Asger Jorn à Silkeborg</strong> Le musée d'un peintre (Asger Jorn in Silkeborg, a painter's museum) is a partial catalogue of works held by the Silkeborg Museum of Art with a focus on the art of Danish painter Asger Jorn and the relationship that the museum's other works have with Jorn's art.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=exhibition-catalogue">Exhibition Catalogue</a></em>
-		</p><p class="article-tile-link"><a href="/article/asger-jorn-a-silkeborg/">Read more &rarr;</a></p>
-	</div>
-</div>
+		<div class="collection-toolbar">
+			<span class="collection-count">28 works in the archive</span>
+			
+			<span class="collection-sort" data-sort-controls>
+				<span class="sort-label">sort</span>
+				<button type="button" data-sort="title" data-dir="asc">a&ndash;z</button>
+				<button type="button" data-sort="published" data-dir="asc">year</button>
+				<button type="button" data-sort="added" data-dir="desc">newest</button>
+			</span>
+			
+		</div>
 
-		
-			<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/helhesten-1_1/"><img src="/assets/articles/helhesten/helhesten_1.1_cover.jpg" alt="Helhesten (Year 1, Booklet 1)"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/helhesten-1_1/">Helhesten (Year 1, Booklet 1)</a></h3>
-		<p class="article-tile-description"><strong>Helhesten (Year 1, Booklet 1)</strong> is the inaugural issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published during the German occupation of Denmark, it launched the most significant avant-garde art journal to emerge from occupied Europe during World War II.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=journals">Journals</a>: <a href="/collection/helhesten/">Helhesten</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=cobra">Cobra</a>, <a href="/articles/?subject=helhesten">Helhesten</a></em>
-		</p><p class="article-tile-link"><a href="/article/helhesten-1_1/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/helhesten-1_2/"><img src="/assets/articles/helhesten/helhesten_1.2_cover.jpg" alt="Helhesten (Year 1, Booklet 2)"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/helhesten-1_2/">Helhesten (Year 1, Booklet 2)</a></h3>
-		<p class="article-tile-description"><strong>Helhesten (Year 1, Booklet 2)</strong> is the second issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This landmark issue contains Asger Jorn's influential essay "Intimate Banalities" and was published to coincide with the groundbreaking exhibition "13 Artists in a Tent."</p>
-		<p class="article-tile-meta"><a href="/articles/?category=journals">Journals</a>: <a href="/collection/helhesten/">Helhesten</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=cobra">Cobra</a>, <a href="/articles/?subject=helhesten">Helhesten</a></em>
-		</p><p class="article-tile-link"><a href="/article/helhesten-1_2/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/helhesten-1_3/"><img src="/assets/articles/helhesten/helhesten_1.3_cover.jpg" alt="Helhesten (Year 1, Booklet 3)"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/helhesten-1_3/">Helhesten (Year 1, Booklet 3)</a></h3>
-		<p class="article-tile-description"><strong>Helhesten (Year 1, Booklet 3)</strong> is the third issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This issue features key theoretical texts including Egill Jacobsen's introduction to Carl-Henning Pedersen's work, Niels Lergaard's essay on myth, and Egon Mathiesen's "What Modern Art Is."</p>
-		<p class="article-tile-meta"><a href="/articles/?category=journals">Journals</a>: <a href="/collection/helhesten/">Helhesten</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=cobra">Cobra</a>, <a href="/articles/?subject=helhesten">Helhesten</a></em>
-		</p><p class="article-tile-link"><a href="/article/helhesten-1_3/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/helhesten-1_4/"><img src="/assets/articles/helhesten/helhesten_1.4_cover.jpg" alt="Helhesten (Year 1, Booklet 4)"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/helhesten-1_4/">Helhesten (Year 1, Booklet 4)</a></h3>
-		<p class="article-tile-description"><strong>Helhesten (Year 1, Booklet 4)</strong> is the fourth issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This issue features Egill Jacobsen's important profile of Asger Jorn, a poem about the hell-horse by national poet Steen Steensen Blicher, and Jens Sigsgaard's influential essay on children's drawings.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=journals">Journals</a>: <a href="/collection/helhesten/">Helhesten</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=cobra">Cobra</a>, <a href="/articles/?subject=helhesten">Helhesten</a></em>
-		</p><p class="article-tile-link"><a href="/article/helhesten-1_4/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/helhesten-1_5-6/"><img src="/assets/articles/helhesten/helhesten_1.56_cover.jpg" alt="Helhesten (Year 1, Booklets 5 & 6)"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/helhesten-1_5-6/">Helhesten (Year 1, Booklets 5 & 6)</a></h3>
-		<p class="article-tile-description"><strong>Helhesten (Year 1, Booklets 5 & 6)</strong> is the final double issue of the first year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. This combined issue completed an extraordinary first year that saw six issues published during the German occupation of Denmark.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=journals">Journals</a>: <a href="/collection/helhesten/">Helhesten</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=cobra">Cobra</a>, <a href="/articles/?subject=helhesten">Helhesten</a></em>
-		</p><p class="article-tile-link"><a href="/article/helhesten-1_5-6/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/helhesten-2_1/"><img src="/assets/articles/helhesten/helhesten_2.1_cover.jpg" alt="Helhesten (Year 2, Booklet 1)"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/helhesten-2_1/">Helhesten (Year 2, Booklet 1)</a></h3>
-		<p class="article-tile-description"><strong>Helhesten (Year 2, Booklet 1)</strong> is the first issue of the second year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published nearly a year after the previous issue, it marked the journal's survival despite growing financial difficulties during the German occupation.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=journals">Journals</a>: <a href="/collection/helhesten/">Helhesten</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=cobra">Cobra</a>, <a href="/articles/?subject=helhesten">Helhesten</a></em>
-		</p><p class="article-tile-link"><a href="/article/helhesten-2_1/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/helhesten-2_2-3/"><img src="/assets/articles/helhesten/helhesten_2.23_cover.jpg" alt="Helhesten (Year 2, Booklets 2 & 3)"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/helhesten-2_2-3/">Helhesten (Year 2, Booklets 2 & 3)</a></h3>
-		<p class="article-tile-description"><strong>Helhesten (Year 2, Booklets 2 & 3)</strong> is a double issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published in March 1943, it appeared shortly after a fund-raising exhibition held to address the journal's mounting debts.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=journals">Journals</a>: <a href="/collection/helhesten/">Helhesten</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=cobra">Cobra</a>, <a href="/articles/?subject=helhesten">Helhesten</a></em>
-		</p><p class="article-tile-link"><a href="/article/helhesten-2_2-3/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/helhesten-2_4/"><img src="/assets/articles/helhesten/helhesten_2.4_cover.jpg" alt="Helhesten (Year 2, Booklet 4)"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/helhesten-2_4/">Helhesten (Year 2, Booklet 4)</a></h3>
-		<p class="article-tile-description"><strong>Helhesten (Year 2, Booklet 4)</strong> is the fourth issue of the second year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published on Christmas Eve 1943, this issue features Dan Sterup-Hansen's profile of Henry Heerup, Jorn's theoretical article on stylistics, and Carl-Henning Pedersen's influential essay on fantasy art.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=journals">Journals</a>: <a href="/collection/helhesten/">Helhesten</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=cobra">Cobra</a>, <a href="/articles/?subject=helhesten">Helhesten</a></em>
-		</p><p class="article-tile-link"><a href="/article/helhesten-2_4/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="cobra,helhesten" data-category="journals" data-collection="helhesten" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/helhesten-2_5-6/"><img src="/assets/articles/helhesten/helhesten_2.56_cover.jpg" alt="Helhesten (Year 2, Booklets 5 & 6)"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/helhesten-2_5-6/">Helhesten (Year 2, Booklets 5 & 6)</a></h3>
-		<p class="article-tile-description"><strong>Helhesten (Year 2, Booklets 5 & 6)</strong> is the final issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen. Published in November 1944, it concluded the journal's remarkable three-and-a-half-year run during the German occupation of Denmark.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=journals">Journals</a>: <a href="/collection/helhesten/">Helhesten</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=cobra">Cobra</a>, <a href="/articles/?subject=helhesten">Helhesten</a></em>
-		</p><p class="article-tile-link"><a href="/article/helhesten-2_5-6/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="structuralism,art-theory" data-category="books" data-collection="" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/la-langue-verte/"><img src="/assets/articles/la-langue-verte/front.jpg" alt="La langue verte et la cuite"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/la-langue-verte/">La langue verte et la cuite</a></h3>
-		<p class="article-tile-description"><strong>La langue verte et la cuite</strong> <em>(Slang and Drunkenness)</em> is a book written in French by Asger Jorn and Noël Arnaud, and edited and published by Jean Jacques Pauvert in 1968.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=structuralism">Structuralism</a>, <a href="/articles/?subject=art-theory">Art Theory</a></em>
-		</p><p class="article-tile-link"><a href="/article/la-langue-verte/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="comparative-vandalism,medieval-art,romanesque-architecture,sculpture" data-category="books" data-collection="10000-years-nordic-folk-art" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/scania-stone-sculpture/"><img src="/assets/articles/scania-stone-sculpture/front.jpg" alt="Scania's Stone Sculpture During the 12th Century"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/scania-stone-sculpture/">Scania's Stone Sculpture During the 12th Century</a></h3>
-		<p class="article-tile-description"><strong>Scania's Stone Sculpture During the 12th Century</strong> is a book on 12th century stone sculpture from the Scania region of southern Sweden by Erik Cinthio, with an introduction by P. V. Glob and notes by Asger Jorn.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/collection/10000-years-nordic-folk-art/">10,000 Years of Nordic Folk Art</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=comparative-vandalism">Comparative Vandalism</a>, <a href="/articles/?subject=medieval-art">Medieval Art</a>, <a href="/articles/?subject=romanesque-architecture">Romanesque Architecture</a>, <a href="/articles/?subject=sculpture">Sculpture</a></em>
-		</p><p class="article-tile-link"><a href="/article/scania-stone-sculpture/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="comparative-vandalism,medieval-art,church-graffiti" data-category="books" data-collection="" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/signes-graves-eure-calvados/"><img src="/assets/articles/signes-graves-eure-calvados/front.jpg" alt="Signes gravés sur les églises de l'Eure et du Calvados"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/signes-graves-eure-calvados/">Signes gravés sur les églises de l'Eure et du Calvados</a></h3>
-		<p class="article-tile-description"><strong>Signes gravés sur les églises de l'Eure et du Calvados</strong> (Signs Engraved on the Churches of Eure and Calvados) is a book written in French and directed by Asger Jorn, with essay contributions from various antiquities experts and photography by Gérard Franceschi.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=comparative-vandalism">Comparative Vandalism</a>, <a href="/articles/?subject=medieval-art">Medieval Art</a>, <a href="/articles/?subject=church-graffiti">Church Graffiti</a></em>
-		</p><p class="article-tile-link"><a href="/article/signes-graves-eure-calvados/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="" data-category="books" data-collection="" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/21-light-drawings-jorn/"><img src="/assets/articles/21-light-drawings-jorn/front.jpg" alt="21 Lystegninger"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/21-light-drawings-jorn/">21 Lystegninger</a></h3>
-		<p class="article-tile-description"><strong>21 Lystegninger</strong> (21 Light Drawings) is the title of an exhibition catalogue released by the Aarhus Art Association of 1847 in conjunction with an exhibition of Asger Jorn's light drawings at the Aarhus Festuge 1971.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a></p><p class="article-tile-link"><a href="/article/21-light-drawings-jorn/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="painting,ceramics" data-category="books" data-collection="jorn-catalogue-raisonne" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/atkins-jorn-crucial-years/"><img src="/assets/articles/atkins-jorn-crucial-years/front.jpg" alt="Asger Jorn - The Crucial Years 1954-1964"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/atkins-jorn-crucial-years/">Asger Jorn - The Crucial Years 1954-1964</a></h3>
-		<p class="article-tile-description"><strong>Asger Jorn - The Crucial Years 1954-1964</strong> is the second book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/collection/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=painting">Painting</a>, <a href="/articles/?subject=ceramics">Ceramics</a></em>
-		</p><p class="article-tile-link"><a href="/article/atkins-jorn-crucial-years/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="painting,sculpture,collage" data-category="books" data-collection="jorn-catalogue-raisonne" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/atkins-jorn-final-years/"><img src="/assets/articles/atkins-jorn-final-years/front.jpg" alt="Asger Jorn - The Final Years 1965-1973"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/atkins-jorn-final-years/">Asger Jorn - The Final Years 1965-1973</a></h3>
-		<p class="article-tile-description"><strong>Asger Jorn - The Final Years 1965-1973</strong> is the third book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/collection/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=painting">Painting</a>, <a href="/articles/?subject=sculpture">Sculpture</a>, <a href="/articles/?subject=collage">Collage</a></em>
-		</p><p class="article-tile-link"><a href="/article/atkins-jorn-final-years/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="painting" data-category="books" data-collection="jorn-catalogue-raisonne" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/atkins-jorn-revised-supplement/"><img src="/assets/articles/atkins-jorn-revised-supplement/front.jpg" alt="Asger Jorn - Revised Supplement"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/atkins-jorn-revised-supplement/">Asger Jorn - Revised Supplement</a></h3>
-		<p class="article-tile-description"><strong>Asger Jorn - Revised Supplement</strong> is the fifth and final book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/collection/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=painting">Painting</a></em>
-		</p><p class="article-tile-link"><a href="/article/atkins-jorn-revised-supplement/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="" data-category="books" data-collection="jorn-catalogue-raisonne" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/atkins-jorn-scandinavia/"><img src="/assets/articles/atkins-jorn-scandinavia/front.jpg" alt="Jorn in Scandinavia 1930-1953"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/atkins-jorn-scandinavia/">Jorn in Scandinavia 1930-1953</a></h3>
-		<p class="article-tile-description"><strong>Jorn in Scandinavia 1930-1953</strong> is the first book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/collection/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-link"><a href="/article/atkins-jorn-scandinavia/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="painting" data-category="books" data-collection="jorn-catalogue-raisonne" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/atkins-jorn-supplement/"><img src="/assets/articles/atkins-jorn-supplement/front.jpg" alt="Asger Jorn - Supplement - Paintings 1930-1973"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/atkins-jorn-supplement/">Asger Jorn - Supplement - Paintings 1930-1973</a></h3>
-		<p class="article-tile-description"><strong>Asger Jorn - Supplement - Paintings 1930-1973</strong> is the fourth book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/collection/jorn-catalogue-raisonne/">Asger Jorn Catalogue raisonné Series</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=painting">Painting</a></em>
-		</p><p class="article-tile-link"><a href="/article/atkins-jorn-supplement/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="situationist-international,collage,psychogeography,artist-books,detournement" data-category="books" data-collection="" data-creators="asger-jorn,guy-debord">
-	<div class="article-tile-image">
-		<a href="/article/memoires/"><img src="/assets/articles/memoires/front.jpg" alt="Mémoires"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/memoires/">Mémoires</a></h3>
-		<p class="article-tile-description"><strong>Mémoires</strong> is an artist's book by Guy Debord with structures portantes by Asger Jorn, published by the Internationale Situationniste and printed by Permild & Rosengreen in Copenhagen in 1959.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a>, <a href="/articles/?creator=guy-debord">Guy Debord</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=situationist-international">Situationist International</a>, <a href="/articles/?subject=collage">Collage</a>, <a href="/articles/?subject=psychogeography">Psychogeography</a>, <a href="/articles/?subject=artist-books">Artist Books</a>, <a href="/articles/?subject=detournement">Detournement</a></em>
-		</p><p class="article-tile-link"><a href="/article/memoires/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="cobra,exhibition-catalogue,word-painting,artist-books" data-category="books" data-collection="" data-creators="asger-jorn,christian-dotremont">
-	<div class="article-tile-image">
-		<a href="/article/chevelure-des-choses/"><img src="/assets/articles/chevelure-des-choses/front.jpg" alt="La chevelure des choses"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/chevelure-des-choses/">La chevelure des choses</a></h3>
-		<p class="article-tile-description"><strong>La chevelure des choses</strong> (The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a>, <a href="/articles/?creator=christian-dotremont">Christian Dotremont</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=cobra">Cobra</a>, <a href="/articles/?subject=exhibition-catalogue">Exhibition Catalogue</a>, <a href="/articles/?subject=word-painting">Word Painting</a>, <a href="/articles/?subject=artist-books">Artist Books</a></em>
-		</p><p class="article-tile-link"><a href="/article/chevelure-des-choses/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="biography,cobra" data-category="books" data-collection="" data-creators="asger-jorn,lars-morell">
-	<div class="article-tile-image">
-		<a href="/article/jorn-laeso/"><img src="/assets/articles/jorn-laeso/front.jpg" alt="Asger Jorn on Læsø"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/jorn-laeso/">Asger Jorn on Læsø</a></h3>
-		<p class="article-tile-description"><strong>Asger Jorn on Læsø</strong> is a book by Lars Morell documenting the Danish painter Asger Jorn's relationship with the island of Læsø, where he maintained a studio from 1964 until his death in 1973.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a>, <a href="/articles/?creator=lars-morell">Lars Morell</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=biography">Biography</a>, <a href="/articles/?subject=cobra">Cobra</a></em>
-		</p><p class="article-tile-link"><a href="/article/jorn-laeso/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="archaeology,nordic-art,comparative-vandalism" data-category="books" data-collection="10000-years-nordic-folk-art" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/fuglen-dyret-mennesket/"><img src="/assets/articles/fuglen-dyret-mennesket/front.jpg" alt="The Bird, the Animal and the Human in Nordic Iron Age Art"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/fuglen-dyret-mennesket/">The Bird, the Animal and the Human in Nordic Iron Age Art</a></h3>
-		<p class="article-tile-description"><strong>The Bird, the Animal and the Human in Nordic Iron Age Art</strong> is the second volume in Asger Jorn's posthumous series 10,000 Years of Nordic Folk Art, featuring photographs by Gérard Franceschi and text by Norwegian archaeologist Bente Magnus examining animal symbolism in Nordic Iron Age art.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/collection/10000-years-nordic-folk-art/">10,000 Years of Nordic Folk Art</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=archaeology">Archaeology</a>, <a href="/articles/?subject=nordic-art">Nordic Art</a>, <a href="/articles/?subject=comparative-vandalism">Comparative Vandalism</a></em>
-		</p><p class="article-tile-link"><a href="/article/fuglen-dyret-mennesket/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="archaeology,nordic-art,folk-art,vandalism" data-category="books" data-collection="10000-years-nordic-folk-art" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/jorn-10-thousand-years/"><img src="/assets/articles/jorn-10-thousand-years/front.jpg" alt="Asger Jorn and 10,000 Years of Nordic Folk Art"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/jorn-10-thousand-years/">Asger Jorn and 10,000 Years of Nordic Folk Art</a></h3>
-		<p class="article-tile-description"><strong>Asger Jorn and 10,000 Years of Nordic Folk Art</strong> is an exhibition catalogue and documentation of Asger Jorn's ambitious but unfinished project to create a 32-volume encyclopedic visual survey of Nordic art from prehistory through the Middle Ages, published in conjunction with exhibitions at the National Museum in Copenhagen and Silkeborg Art Museum in 1995-96.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/collection/10000-years-nordic-folk-art/">10,000 Years of Nordic Folk Art</a> (<a href="/articles/?creator=asger-jorn">Asger Jorn</a>)</p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=archaeology">Archaeology</a>, <a href="/articles/?subject=nordic-art">Nordic Art</a>, <a href="/articles/?subject=folk-art">Folk Art</a>, <a href="/articles/?subject=vandalism">Vandalism</a></em>
-		</p><p class="article-tile-link"><a href="/article/jorn-10-thousand-years/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="ceramics,murals" data-category="books" data-collection="" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/jorn-aarhus-mural/"><img src="/assets/articles/jorn-aarhus-mural/front.jpg" alt="Asger Jorn's Aarhus Mural"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/jorn-aarhus-mural/">Asger Jorn's Aarhus Mural</a></h3>
-		<p class="article-tile-description"><strong>Asger Jorn's Aarhus Mural</strong> is a limited-edition booklet documenting Asger Jorn's monumental ceramic relief at Aarhus State Gymnasium in Denmark, edited by Guy Atkins with an introduction by Erik Nyholm and photography by Dominique Darbois.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=ceramics">Ceramics</a>, <a href="/articles/?subject=murals">Murals</a></em>
-		</p><p class="article-tile-link"><a href="/article/jorn-aarhus-mural/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="experimental-music,art-brut,sound-art" data-category="recordings" data-collection="" data-creators="asger-jorn,jean-dubuffet">
-	<div class="article-tile-image">
-		<a href="/article/jorn-dubuffet-musique/"><img src="/assets/articles/jorn-dubuffet-musique/front.jpg" alt="Musique Phénoménale"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/jorn-dubuffet-musique/">Musique Phénoménale</a></h3>
-		<p class="article-tile-description"><strong>Musique Phénoménale</strong> is a collaborative recording of experimental music by Asger Jorn and Jean Dubuffet, recorded between December 1960 and March 1961 in Paris and originally published in an extremely limited edition of fifty numbered box sets by Galleria del Cavallino in Venice.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=recordings">Recordings</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a>, <a href="/articles/?creator=jean-dubuffet">Jean Dubuffet</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=experimental-music">Experimental Music</a>, <a href="/articles/?subject=art-brut">Art Brut</a>, <a href="/articles/?subject=sound-art">Sound Art</a></em>
-		</p><p class="article-tile-link"><a href="/article/jorn-dubuffet-musique/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="cobra,avant-garde,artist-monographs" data-category="books" data-collection="" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/cobra-bibliotek/"><img src="/assets/articles/cobra-bibliotek/front.jpg" alt="COBRA Bibliotek"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/cobra-bibliotek/">COBRA Bibliotek</a></h3>
-		<p class="article-tile-description"><strong>COBRA Bibliotek</strong> was a series of fifteen artist monographs published in Copenhagen in 1950, edited by Asger Jorn as the first installment of a planned permanent encyclopedia of experimental art.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=cobra">Cobra</a>, <a href="/articles/?subject=avant-garde">Avant Garde</a>, <a href="/articles/?subject=artist-monographs">Artist Monographs</a></em>
-		</p><p class="article-tile-link"><a href="/article/cobra-bibliotek/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
-			<div class="article-tile" data-subjects="bibliography,art" data-category="books" data-collection="" data-creators="asger-jorn">
-	<div class="article-tile-image">
-		<a href="/article/jorn-bibliography/"><img src="/assets/articles/jorn-bibliography/front.jpg" alt="A bibliography of Asger Jorn's writings to 1963"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/jorn-bibliography/">A bibliography of Asger Jorn's writings to 1963</a></h3>
-		<p class="article-tile-description"><strong>A bibliography of Asger Jorn's writings to 1963</strong> is a comprehensive bibliography documenting the Danish painter and writer Asger Jorn's published writings from 1932 to 1963, compiled by Guy Atkins and Erik Schmidt.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=asger-jorn">Asger Jorn</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=bibliography">Bibliography</a>, <a href="/articles/?subject=art">Art</a></em>
-		</p><p class="article-tile-link"><a href="/article/jorn-bibliography/">Read more &rarr;</a></p>
-	</div>
-</div>
-
-		
+		<div class="collection-list collection-catalogue" data-sortable>
+			
+			<a class="catalogue-row" href="/article/asger-jorn-a-silkeborg/"
+				data-title="asger-jorn-à-silkeborg"
+				data-published="1978"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/asger-jorn-a-silkeborg/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Asger Jorn à Silkeborg</span>
+					<span class="catalogue-desc">Le musée d'un peintre (Asger Jorn in Silkeborg, a painter's museum) is a partial catalogue of works held by the Silkeborg Museum of Art with a focus on the art of Danish painter Asger Jorn and the relationship that the museum's other works have with Jorn's art.
+</span>
+				</span>
+				<span class="catalogue-year">1978</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/helhesten-1_1/"
+				data-title="helhesten-year-1-booklet-1"
+				data-published="1941"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/helhesten/helhesten_1.1_cover.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Helhesten (Year 1, Booklet 1)</span>
+					<span class="catalogue-desc">is the inaugural issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.
+</span>
+				</span>
+				<span class="catalogue-year">1941</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/helhesten-1_2/"
+				data-title="helhesten-year-1-booklet-2"
+				data-published="1941"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/helhesten/helhesten_1.2_cover.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Helhesten (Year 1, Booklet 2)</span>
+					<span class="catalogue-desc">is the second issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.
+</span>
+				</span>
+				<span class="catalogue-year">1941</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/helhesten-1_3/"
+				data-title="helhesten-year-1-booklet-3"
+				data-published="1941"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/helhesten/helhesten_1.3_cover.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Helhesten (Year 1, Booklet 3)</span>
+					<span class="catalogue-desc">is the third issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.
+</span>
+				</span>
+				<span class="catalogue-year">1941</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/helhesten-1_4/"
+				data-title="helhesten-year-1-booklet-4"
+				data-published="1941"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/helhesten/helhesten_1.4_cover.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Helhesten (Year 1, Booklet 4)</span>
+					<span class="catalogue-desc">is the fourth issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.
+</span>
+				</span>
+				<span class="catalogue-year">1941</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/helhesten-1_5-6/"
+				data-title="helhesten-year-1-booklets-5-6"
+				data-published="1941"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/helhesten/helhesten_1.56_cover.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Helhesten (Year 1, Booklets 5 & 6)</span>
+					<span class="catalogue-desc">is the final double issue of the first year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.
+</span>
+				</span>
+				<span class="catalogue-year">1941</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/helhesten-2_1/"
+				data-title="helhesten-year-2-booklet-1"
+				data-published="1942"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/helhesten/helhesten_2.1_cover.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Helhesten (Year 2, Booklet 1)</span>
+					<span class="catalogue-desc">is the first issue of the second year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.
+</span>
+				</span>
+				<span class="catalogue-year">1942</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/helhesten-2_2-3/"
+				data-title="helhesten-year-2-booklets-2-3"
+				data-published="1943"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/helhesten/helhesten_2.23_cover.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Helhesten (Year 2, Booklets 2 & 3)</span>
+					<span class="catalogue-desc">is a double issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.
+</span>
+				</span>
+				<span class="catalogue-year">1943</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/helhesten-2_4/"
+				data-title="helhesten-year-2-booklet-4"
+				data-published="1943"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/helhesten/helhesten_2.4_cover.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Helhesten (Year 2, Booklet 4)</span>
+					<span class="catalogue-desc">is the fourth issue of the second year of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.
+</span>
+				</span>
+				<span class="catalogue-year">1943</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/helhesten-2_5-6/"
+				data-title="helhesten-year-2-booklets-5-6"
+				data-published="1944"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/helhesten/helhesten_2.56_cover.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Helhesten (Year 2, Booklets 5 & 6)</span>
+					<span class="catalogue-desc">is the final issue of the Danish art journal Helhesten, edited by Danish architect Robert Dahlmann Olsen.
+</span>
+				</span>
+				<span class="catalogue-year">1944</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/la-langue-verte/"
+				data-title="la-langue-verte-et-la-cuite"
+				data-published="1968"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/la-langue-verte/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">La langue verte et la cuite</span>
+					<span class="catalogue-desc">(Slang and Drunkenness) is a book written in French by Asger Jorn and Noël Arnaud, and edited and published by Jean Jacques Pauvert in 1968.
+</span>
+				</span>
+				<span class="catalogue-year">1968</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/scania-stone-sculpture/"
+				data-title="scania-s-stone-sculpture-during-the-12th-century"
+				data-published="1965"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/scania-stone-sculpture/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Scania's Stone Sculpture During the 12th Century</span>
+					<span class="catalogue-desc">is a book on 12th century stone sculpture from the Scania region of southern Sweden by Erik Cinthio, with an introduction by P.
+</span>
+				</span>
+				<span class="catalogue-year">1965</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/signes-graves-eure-calvados/"
+				data-title="signes-gravés-sur-les-églises-de-l-eure-et-du-calvados"
+				data-published="1964"
+				data-added="1546297200">
+				<span class="catalogue-thumb"><img src="/assets/articles/signes-graves-eure-calvados/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Signes gravés sur les églises de l'Eure et du Calvados</span>
+					<span class="catalogue-desc">(Signs Engraved on the Churches of Eure and Calvados) is a book written in French and directed by Asger Jorn, with essay contributions from various antiquities experts and photography by Gérard Franceschi.
+</span>
+				</span>
+				<span class="catalogue-year">1964</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/21-light-drawings-jorn/"
+				data-title="21-lystegninger"
+				data-published="1971"
+				data-added="1607814000">
+				<span class="catalogue-thumb"><img src="/assets/articles/21-light-drawings-jorn/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">21 Lystegninger</span>
+					<span class="catalogue-desc">(21 Light Drawings) is the title of an exhibition catalogue released by the Aarhus Art Association of 1847 in conjunction with an exhibition of Asger Jorn's light drawings at the Aarhus Festuge 1971.
+</span>
+				</span>
+				<span class="catalogue-year">1971</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/atkins-jorn-crucial-years/"
+				data-title="asger-jorn-the-crucial-years-1954-1964"
+				data-published="1977"
+				data-added="1628114400">
+				<span class="catalogue-thumb"><img src="/assets/articles/atkins-jorn-crucial-years/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Asger Jorn - The Crucial Years 1954-1964</span>
+					<span class="catalogue-desc">is the second book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
+</span>
+				</span>
+				<span class="catalogue-year">1977</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/atkins-jorn-final-years/"
+				data-title="asger-jorn-the-final-years-1965-1973"
+				data-published="1980"
+				data-added="1628114400">
+				<span class="catalogue-thumb"><img src="/assets/articles/atkins-jorn-final-years/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Asger Jorn - The Final Years 1965-1973</span>
+					<span class="catalogue-desc">is the third book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
+</span>
+				</span>
+				<span class="catalogue-year">1980</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/atkins-jorn-revised-supplement/"
+				data-title="asger-jorn-revised-supplement"
+				data-published="2006"
+				data-added="1628114400">
+				<span class="catalogue-thumb"><img src="/assets/articles/atkins-jorn-revised-supplement/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Asger Jorn - Revised Supplement</span>
+					<span class="catalogue-desc">is the fifth and final book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
+</span>
+				</span>
+				<span class="catalogue-year">2006</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/atkins-jorn-scandinavia/"
+				data-title="jorn-in-scandinavia-1930-1953"
+				data-published="1968"
+				data-added="1628114400">
+				<span class="catalogue-thumb"><img src="/assets/articles/atkins-jorn-scandinavia/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Jorn in Scandinavia 1930-1953</span>
+					<span class="catalogue-desc">is the first book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
+</span>
+				</span>
+				<span class="catalogue-year">1968</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/atkins-jorn-supplement/"
+				data-title="asger-jorn-supplement-paintings-1930-1973"
+				data-published="1986"
+				data-added="1628114400">
+				<span class="catalogue-thumb"><img src="/assets/articles/atkins-jorn-supplement/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Asger Jorn - Supplement - Paintings 1930-1973</span>
+					<span class="catalogue-desc">is the fourth book in a five-volume catalogue raisonné series on the Danish painter Asger Jorn by Guy Atkins and Troels Andersen.
+</span>
+				</span>
+				<span class="catalogue-year">1986</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/memoires/"
+				data-title="mémoires"
+				data-published="1959"
+				data-added="1643842800">
+				<span class="catalogue-thumb"><img src="/assets/articles/memoires/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Mémoires</span>
+					<span class="catalogue-desc">is an artist's book by Guy Debord with structures portantes by Asger Jorn, published by the Internationale Situationniste and printed by Permild & Rosengreen in Copenhagen in 1959.
+</span>
+				</span>
+				<span class="catalogue-year">1959</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/chevelure-des-choses/"
+				data-title="la-chevelure-des-choses"
+				data-published="9999"
+				data-added="1644015600">
+				<span class="catalogue-thumb"><img src="/assets/articles/chevelure-des-choses/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">La chevelure des choses</span>
+					<span class="catalogue-desc">(The hair of things) is an exhibition catalogue by Belgian poet Christian Dotremont and Asger Jorn.
+</span>
+				</span>
+				<span class="catalogue-year"></span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/jorn-laeso/"
+				data-title="asger-jorn-on-læsø"
+				data-published="2012"
+				data-added="1738710000">
+				<span class="catalogue-thumb"><img src="/assets/articles/jorn-laeso/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Asger Jorn on Læsø</span>
+					<span class="catalogue-desc">is a book by Lars Morell documenting the Danish painter Asger Jorn's relationship with the island of Læsø, where he maintained a studio from 1964 until his death in 1973.
+</span>
+				</span>
+				<span class="catalogue-year">2012</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/fuglen-dyret-mennesket/"
+				data-title="the-bird-the-animal-and-the-human-in-nordic-iron-age-art"
+				data-published="2005"
+				data-added="1770159600">
+				<span class="catalogue-thumb"><img src="/assets/articles/fuglen-dyret-mennesket/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">The Bird, the Animal and the Human in Nordic Iron Age Art</span>
+					<span class="catalogue-desc">is the second volume in Asger Jorn's posthumous series 10,000 Years of Nordic Folk Art, featuring photographs by Gérard Franceschi and text by Norwegian archaeologist Bente Magnus examining animal symbolism in Nordic Iron Age art.
+</span>
+				</span>
+				<span class="catalogue-year">2005</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/jorn-10-thousand-years/"
+				data-title="asger-jorn-and-10-000-years-of-nordic-folk-art"
+				data-published="1995"
+				data-added="1770418800">
+				<span class="catalogue-thumb"><img src="/assets/articles/jorn-10-thousand-years/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Asger Jorn and 10,000 Years of Nordic Folk Art</span>
+					<span class="catalogue-desc">is an exhibition catalogue and documentation of Asger Jorn's ambitious but unfinished project to create a 32-volume encyclopedic visual survey of Nordic art from prehistory through the Middle Ages, published in conjunction with exhibitions at the National Museum in Copenhagen and Silkeborg Art Museum in 1995-96.
+</span>
+				</span>
+				<span class="catalogue-year">1995</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/jorn-aarhus-mural/"
+				data-title="asger-jorn-s-aarhus-mural"
+				data-published="1964"
+				data-added="1770505200">
+				<span class="catalogue-thumb"><img src="/assets/articles/jorn-aarhus-mural/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Asger Jorn's Aarhus Mural</span>
+					<span class="catalogue-desc">is a limited-edition booklet documenting Asger Jorn's monumental ceramic relief at Aarhus State Gymnasium in Denmark, edited by Guy Atkins with an introduction by Erik Nyholm and photography by Dominique Darbois.
+</span>
+				</span>
+				<span class="catalogue-year">1964</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/jorn-dubuffet-musique/"
+				data-title="musique-phénoménale"
+				data-published="1961"
+				data-added="1770505200">
+				<span class="catalogue-thumb"><img src="/assets/articles/jorn-dubuffet-musique/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Musique Phénoménale</span>
+					<span class="catalogue-desc">is a collaborative recording of experimental music by Asger Jorn and Jean Dubuffet, recorded between December 1960 and March 1961 in Paris and originally published in an extremely limited edition of fifty numbered box sets by Galleria del Cavallino in Venice.
+</span>
+				</span>
+				<span class="catalogue-year">1961</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/cobra-bibliotek/"
+				data-title="cobra-bibliotek"
+				data-published="1950"
+				data-added="1770591600">
+				<span class="catalogue-thumb"><img src="/assets/articles/cobra-bibliotek/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">COBRA Bibliotek</span>
+					<span class="catalogue-desc">was a series of fifteen artist monographs published in Copenhagen in 1950, edited by Asger Jorn as the first installment of a planned permanent encyclopedia of experimental art.
+</span>
+				</span>
+				<span class="catalogue-year">1950</span>
+			</a>
+			
+			<a class="catalogue-row" href="/article/jorn-bibliography/"
+				data-title="a-bibliography-of-asger-jorn-s-writings-to-1963"
+				data-published="1964"
+				data-added="1770591600">
+				<span class="catalogue-thumb"><img src="/assets/articles/jorn-bibliography/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">A bibliography of Asger Jorn's writings to 1963</span>
+					<span class="catalogue-desc">is a comprehensive bibliography documenting the Danish painter and writer Asger Jorn's published writings from 1932 to 1963, compiled by Guy Atkins and Erik Schmidt.
+</span>
+				</span>
+				<span class="catalogue-year">1964</span>
+			</a>
+			
+		</div>
 	</section>
 	
 
+	<nav class="onward-doors" aria-label="Continue exploring">
+		<p class="onward-title">Continue exploring</p>
+		<ul>
+			<li><a class="onward-tile" data-kind="creator" href="/creators/"><span class="onward-kind">index</span><span class="onward-name">All creators</span></a></li>
+			<li><a class="onward-tile" data-kind="theme" href="/articles/"><span class="onward-kind">browse</span><span class="onward-name">All articles</span></a></li>
+			<li><a class="onward-tile" data-kind="random" href="/articles/" data-random-drawer><span class="onward-kind">random</span><span class="onward-name">Open a drawer</span></a></li>
+		</ul>
+	</nav>
+
 </div>
+
+<script src="/js/collection-sort.js"></script>
 
 			</div>
 			
 			<div id="footer">
-				<div class="page-modified-date">
+				<div class="footer-meta">
+	<div class="page-modified-date">
 	
 		Salvaging for the future.
-	</div>
+	</div><div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a> (1950)</div>
+</div>
 <div class="navbar-links-container">
 	
-		<a href="/about/"  class="navbar-link">About</a>
+		<a href="/about/" class="navbar-link">About</a>
 	
-		<a href="/contact/"  class="navbar-link">Contact</a>
+		<a href="/contact/" class="navbar-link">Contact</a>
 	
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>

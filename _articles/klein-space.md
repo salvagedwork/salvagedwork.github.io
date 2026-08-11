@@ -7,6 +7,7 @@ creators: [yves-klein, charles-wilp]
 subjects: [nouveau-realisme, conceptual-art, avant-garde, silence, fluxus-adjacent]
 featured-image: /assets/articles/klein-space/front.jpg
 date: 2026-02-18
+published: 1965
 last_modified_at: 2026-02-18
 ---
 
@@ -49,7 +50,7 @@ The relationship to John Cage's *4'33"* (1952) is frequently noted but should be
 
 ### Audio
 
-<iframe src="https://archive.org/embed/klein-space&playlist=1&list_height=200" width="100%" height="100" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+<iframe src="https://archive.org/embed/klein-space?playlist=1" width="500" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
 ## 'Prince of Space'
 

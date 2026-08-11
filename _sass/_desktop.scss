@@ -145,6 +145,12 @@
 		}
 	}
 
+	// Collection and theme pages carry no TOC, so they use the full width
+	// instead of the article grid's [TOC] [body] split.
+	.article-container--full {
+		display: block;
+	}
+
 	.article-toc {
 		grid-column: 1;
 		position: sticky;
@@ -264,18 +270,6 @@
 	}
 	
 	
-	// Creator Cards
-	// --------------------------------------------------------------------------
-	
-	.creator-grid {
-		grid-template-columns: repeat(3, 1fr);
-	}
-	
-	
-	// Contact Form
-	// --------------------------------------------------------------------------
-	
-	.contact-form-holder {
-		width: 50%;
-	}
+	// Contact form layout lives in _catalogue.scss (2026 redesign): the form
+	// and its aside are grid columns, so the holder fills its own cell.
 }

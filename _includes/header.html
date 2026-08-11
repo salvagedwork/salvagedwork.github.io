@@ -2,8 +2,9 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		{% for item in site.data.header %}
-		<a href="{{ item.link }}" {% if page.url == item.link %}class="navbar-link current"{% endif %} class="navbar-link">{{ item.name }}</a>
+		<a href="{{ item.link }}" class="navbar-link{% if page.url == item.link %} current{% endif %}">{{ item.name }}</a>
 		{% endfor %}
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -20,6 +21,7 @@
 	{% for item in site.data.header %}
 	<a href="{{ item.link }}" class="mobile-nav-link">{{ item.name }}</a>
 	{% endfor %}
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	{% for item in site.data.footer %}
 	<a href="{{ item.link }}" class="mobile-nav-link">{{ item.name }}</a>

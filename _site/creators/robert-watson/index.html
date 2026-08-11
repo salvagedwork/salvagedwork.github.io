@@ -33,8 +33,14 @@
 		- recaptcha: Only needed on contact page, loaded async
 	-->
 	
+	<!-- Font preloads (the source and machine voices) -->
+	<link rel="preload" href="/assets/fonts/Literata-var.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 	<!-- Site scripts (vanilla JS) -->
 	<script src="/js/footnotes.js" defer></script>
+	<script src="/js/discover.js" defer></script>
+	<script src="/js/back-to-top.js" defer></script>
 	<script src="/js/background.js" defer></script>
 	<script src="/js/translation-toggle.js" defer></script>
 	
@@ -86,10 +92,13 @@
 	<div class="navbar-title"><a href="/" style="text-decoration: none;">salvaged.work</a></div>
 	<div class="navbar-links-container">
 		
-		<a href="/creators"  class="navbar-link">Creators</a>
+		<a href="/reading-room/" class="navbar-link">Reading Room</a>
 		
-		<a href="/articles"  class="navbar-link">Articles</a>
+		<a href="/articles/" class="navbar-link">Articles</a>
 		
+		<a href="/creators/" class="navbar-link">Creators</a>
+		
+		<a href="/articles/" class="navbar-link" data-random-drawer title="Open a random item from the archive">Random</a>
 		<div class="header-search-container header-search-desktop">
 			<input type="text" id="header-search-input-desktop" class="header-search-input" placeholder="Search..." autocomplete="off">
 			<div id="header-search-results-desktop" class="header-search-results"></div>
@@ -104,10 +113,13 @@
 
 <nav class="mobile-nav" id="mobile-nav">
 	
-	<a href="/creators" class="mobile-nav-link">Creators</a>
+	<a href="/reading-room/" class="mobile-nav-link">Reading Room</a>
 	
-	<a href="/articles" class="mobile-nav-link">Articles</a>
+	<a href="/articles/" class="mobile-nav-link">Articles</a>
 	
+	<a href="/creators/" class="mobile-nav-link">Creators</a>
+	
+	<a href="/articles/" class="mobile-nav-link" data-random-drawer>Open a drawer (random)</a>
 	<div class="mobile-nav-divider"></div>
 	
 	<a href="/about/" class="mobile-nav-link">About</a>
@@ -242,49 +254,68 @@
 			<div id="content">
 				<div class="creator-page">
 
-	<header class="creator-header">
-		<h1>Robert Watson</h1>
-		<p class="creator-meta"><span class="creator-nationality">British</span></p>
-		<hr />
+	<header class="index-masthead creator-masthead">
+		<p class="about-eyebrow">Creator</p>
+		<h1 class="index-title">Robert Watson</h1>
+
+		<p class="creator-page-meta">British</p>
 	</header>
 
-	
+	<hr class="zag-rule" />
 
 	
 	<section class="creator-articles">
-		<h2>1 article archived</h2>
-		
-			<div class="article-tile" data-subjects="hudson-bay-company,canadian-history,fur-trade,red-river-settlement,rupert's-land,first-nations-treaties" data-category="books" data-collection="" data-creators="robert-watson">
-	<div class="article-tile-image">
-		<a href="/article/lower-fort-garry/"><img src="/assets/articles/lower-fort-garry/front.jpg" alt="Lower Fort Garry: A History of the Stone Fort"></a>
-	</div>
-	<div class="article-tile-content">
-		<h3><a href="/article/lower-fort-garry/">Lower Fort Garry: A History of the Stone Fort</a></h3>
-		<p class="article-tile-description"><strong>Lower Fort Garry: A History of the Stone Fort</strong> is a historical account of Lower Fort Garry, the oldest intact stone fur trading post in North America, written to commemorate the centenary of the fort's construction and published by the Hudson's Bay Company in Winnipeg in 1928.</p>
-		<p class="article-tile-meta"><a href="/articles/?category=books">Books</a>: <a href="/articles/?creator=robert-watson">Robert Watson</a></p><p class="article-tile-meta">
-			<em><a href="/articles/?subject=hudson-bay-company">Hudson Bay Company</a>, <a href="/articles/?subject=canadian-history">Canadian History</a>, <a href="/articles/?subject=fur-trade">Fur Trade</a>, <a href="/articles/?subject=red-river-settlement">Red River Settlement</a>, <a href="/articles/?subject=rupert's-land">Rupert's Land</a>, <a href="/articles/?subject=first-nations-treaties">First Nations Treaties</a></em>
-		</p><p class="article-tile-link"><a href="/article/lower-fort-garry/">Read more &rarr;</a></p>
-	</div>
-</div>
+		<div class="collection-toolbar">
+			<span class="collection-count">1 work in the archive</span>
+			
+		</div>
 
-		
+		<div class="collection-list collection-catalogue" data-sortable>
+			
+			<a class="catalogue-row" href="/article/lower-fort-garry/"
+				data-title="lower-fort-garry-a-history-of-the-stone-fort"
+				data-published="1928"
+				data-added="1771455600">
+				<span class="catalogue-thumb"><img src="/assets/articles/lower-fort-garry/front.jpg" alt="" loading="lazy"></span>
+				<span class="catalogue-body">
+					<span class="catalogue-title">Lower Fort Garry: A History of the Stone Fort</span>
+					<span class="catalogue-desc">is a historical account of Lower Fort Garry, the oldest intact stone fur trading post in North America, written to commemorate the centenary of the fort's construction and published by the Hudson's Bay Company in Winnipeg in 1928.
+</span>
+				</span>
+				<span class="catalogue-year">1928</span>
+			</a>
+			
+		</div>
 	</section>
 	
 
+	<nav class="onward-doors" aria-label="Continue exploring">
+		<p class="onward-title">Continue exploring</p>
+		<ul>
+			<li><a class="onward-tile" data-kind="creator" href="/creators/"><span class="onward-kind">index</span><span class="onward-name">All creators</span></a></li>
+			<li><a class="onward-tile" data-kind="theme" href="/articles/"><span class="onward-kind">browse</span><span class="onward-name">All articles</span></a></li>
+			<li><a class="onward-tile" data-kind="random" href="/articles/" data-random-drawer><span class="onward-kind">random</span><span class="onward-name">Open a drawer</span></a></li>
+		</ul>
+	</nav>
+
 </div>
+
+<script src="/js/collection-sort.js"></script>
 
 			</div>
 			
 			<div id="footer">
-				<div class="page-modified-date">
+				<div class="footer-meta">
+	<div class="page-modified-date">
 	
 		Salvaging for the future.
-	</div>
+	</div><div class="litho-credit">Background: Asger Jorn, <a href="/article/cobra-bibliotek/"><em>Cobra Bibliotek</em></a> (1950)</div>
+</div>
 <div class="navbar-links-container">
 	
-		<a href="/about/"  class="navbar-link">About</a>
+		<a href="/about/" class="navbar-link">About</a>
 	
-		<a href="/contact/"  class="navbar-link">Contact</a>
+		<a href="/contact/" class="navbar-link">Contact</a>
 	
 	<a href="https://www.instagram.com/salvagedwork/" class="social-media-icon" target="_blank"><span class="icon-instagram"></span></a>
 	<a href="https://twitter.com/salvagedwork" class="social-media-icon" target="_blank"><span class="icon-twitter"></span></a>
