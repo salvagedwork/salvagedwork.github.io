@@ -7,14 +7,14 @@ last_modified_at: 2026-08-10
 
 <div class="home-masthead">
 	<h1>an archive of salvaged works</h1>
-	<p class="home-mission">salvaged.work is an archive for texts, audio, and images that have languished within the confines of analogue media. The archive pays homage to these works through curation and digital restoration so that they may be shared with a wider, modern audience. Where a work was published in another language, the archive provides a full English reading edition alongside the original text. This project is independently supported and has no commercial interest in the materials shared. <a href="/about/">About the archive and its editorial method &rarr;</a></p>
+	<p class="home-mission">salvaged.work is an archive for texts, audio, and images that have languished within the confines of analogue media. The archive pays homage to these works through curation and digital restoration so that they may be shared with a wider, modern audience. Where a work was published in another language, the archive provides a full English reading edition alongside the original text. This project is independently supported and has no commercial interest in the materials shared.</p>
+	
+	<p class="home-mission"><a href="/about/">About the archive and its editorial method &rarr;</a></p>
 
 	<p class="home-counters">
 		<a href="/articles/">{{ site.articles | size }} articles</a><span class="counter-sep">&middot;</span><a href="/reading-room/">{{ readable_books | size }} books in the reading room</a><span class="counter-sep">&middot;</span><a href="/creators/">{{ site.data.creators | size }} creators</a>
 	</p>
 </div>
-
-<hr class="zag-rule zag-rule--red" />
 
 {% comment %} The doors: Reading Room, themes, and the random drawer {% endcomment %}
 <div class="home-doors">
@@ -49,20 +49,19 @@ last_modified_at: 2026-08-10
 
 <h2 class="home-section-title">recently salvaged</h2>
 
+<div class="collection-catalogue">
 {% assign sorted_articles = site.articles | sort: 'date' | reverse %}
 {% for article in sorted_articles limit:3 %}
-<div class="recent-article">
-	<div class="recent-article-image">
-		<a href="{{ article.url }}"><img src="{{ article.featured-image }}" alt="{{ article.title }}"></a>
-	</div>
-	<div class="recent-article-content">
-		<h3 style="padding-top: 0; margin-top: 0;"><a href="{{ article.url }}">{{ article.title }}</a></h3>
-		<p><strong>{{ article.title }}</strong> {{ article.description }}</p>
-		<p class="recent-article-date">Added: {{ article.date | date: "%B %d, %Y" }}</p>
-		<p><a href="{{ article.url }}">Read more &rarr;</a></p>
-	</div>
-</div>
+<a class="catalogue-row" href="{{ article.url }}">
+	<span class="catalogue-thumb"><img src="{{ article.featured-image }}" alt="" loading="lazy"></span>
+	<span class="catalogue-body">
+		<span class="catalogue-title">{{ article.title }}</span>
+		<span class="catalogue-desc">{% include first-sentence.html text=article.description %}</span>
+	</span>
+	<span class="catalogue-year">{{ article.date | date: "%b %-d" }}</span>
+</a>
 {% endfor %}
+</div>
 
 <p><a href="/articles/" class="hover-flow">Explore all {{ site.articles | size }} articles &rarr;</a></p>
 

@@ -18,9 +18,10 @@ to the end of the bar.
 <div class="home-masthead">
 	<h1>Creators</h1>
 	<p class="home-mission">Artists, composers, authors, printers, and collaborators whose work is held in the archive. Each bar shows a life measured against the span of the whole register, earliest birth to the present.</p>
+	<p class="home-counters">
+		<a href="/articles/">{{ site.data.creators | size }} creators</a>
+	</p>
 </div>
-
-<hr class="zag-rule" />
 
 <div class="collection-toolbar">
 	<span class="collection-count">{{ site.data.creators | size }} creators</span>

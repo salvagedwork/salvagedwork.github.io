@@ -11,8 +11,6 @@ last_modified_at: 2026-08-11
 	<p class="home-mission">Do you have a work that should be salvaged, or a physical copy of something missing here? Corrections to a transcription or translation are just as welcome.</p>
 </div>
 
-<hr class="zag-rule" />
-
 <div class="contact-layout">
 
 <div class="contact-form-holder">

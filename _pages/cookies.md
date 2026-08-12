@@ -11,8 +11,6 @@ last_modified_at: 2026-08-11
 	<p class="home-mission">salvaged.work sets no cookies of its own and does not track visitors. A small number of third-party services are used to run the site, and some of them may set cookies in your browser. The only personal data the site itself ever receives is what you choose to type into the contact form. This page explains both: what third parties may do, and what happens to anything you send directly to the archive.</p>
 </div>
 
-<hr class="zag-rule" />
-
 ## Cookies set by this site
 
 None. salvaged.work is a static website. It sets no cookies, uses no local storage, keeps no session, and has no login, comments, shopping basket, or advertising. Nothing you do here is recorded against you as an individual.
