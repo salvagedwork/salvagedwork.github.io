@@ -67,9 +67,11 @@ body::after {
 // Homepage: masthead → counters → doors → recently salvaged → featured
 // --------------------------------------------------------------------------
 
-.home-masthead {
-	padding: 2.5rem 0 1.5rem;
-}
+// The opening of every page (excluding articles) is h1, then an intro
+// paragraph carrying .home-mission -- no wrapper div, no per-page padding
+// hacks. Spacing comes entirely from h1's own margin (global rule) and
+// .home-mission's own margin below, so it can't drift out of sync between
+// pages the way a wrapper-div padding property could (and did).
 
 // The explainer paragraph under any h1, site-wide -- the one shared class
 // for this element, used on the homepage, Reading Room, About, Cookies,
@@ -1799,10 +1801,6 @@ body::after {
 // Header is just the h1 now (no pebble, no eyebrow, no counters); no
 // border here, so the flow matches the door pages exactly: h1, then
 // content, then the one zag-rule after the opening paragraph.
-.about-header {
-	margin-bottom: 1.5rem;
-}
-
 .about-body {
 	font-family: $font-serif;
 	font-size: 1.05rem;

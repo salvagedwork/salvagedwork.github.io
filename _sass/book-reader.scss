@@ -57,6 +57,8 @@ $book-margin-width: 4rem;
 	font-weight: 600;
 	font-size: 1.65rem;
 	line-height: 1.25;
+	text-transform: none;
+	letter-spacing: normal;
 	margin: 0 0 0.9rem;
 	padding: 0;
 }
@@ -600,6 +602,8 @@ $book-margin-width: 4rem;
 
 	h1 {
 		font-size: 1.5rem;
+		text-transform: none;
+		letter-spacing: normal;
 		margin: 0 0 1.25rem;
 
 		@media #{$information-desktop} {

@@ -6,10 +6,10 @@ permalink: /cookies/
 last_modified_at: 2026-08-11
 ---
 
-<div class="home-masthead">
-	<h1>Cookies and privacy</h1>
-	<p class="home-mission">salvaged.work sets no cookies of its own and does not track visitors. A small number of third-party services are used to run the site, and some of them may set cookies in your browser. The only personal data the site itself ever receives is what you choose to type into the contact form. This page explains both: what third parties may do, and what happens to anything you send directly to the archive.</p>
-</div>
+# Cookies and privacy
+
+salvaged.work sets no cookies of its own and does not track visitors. A small number of third-party services are used to run the site, and some of them may set cookies in your browser. The only personal data the site itself ever receives is what you choose to type into the contact form. This page explains both: what third parties may do, and what happens to anything you send directly to the archive.
+{: .home-mission}
 
 ## Cookies set by this site
 

@@ -6,10 +6,11 @@ permalink: /search/
 last_modified_at: 2026-08-11
 ---
 
-<div class="home-masthead">
-	<h1 id="search-title">Search</h1>
-	<p class="home-mission" id="search-intro">Enter a search term above and press Enter to see results here.</p>
-</div>
+# Search
+{: #search-title}
+
+Enter a search term above and press Enter to see results here.
+{: #search-intro .home-mission}
 
 <hr class="zag-rule" />
 

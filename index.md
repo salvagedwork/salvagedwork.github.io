@@ -5,16 +5,16 @@ last_modified_at: 2026-08-10
 
 {% assign readable_books = site.articles | where_exp: "a", "a.book_reader.enabled" %}
 
-<div class="home-masthead">
-	<h1>an archive of salvaged works</h1>
-	<p class="home-mission">salvaged.work is an archive for texts, audio, and images that have languished within the confines of analogue media. The archive pays homage to these works through curation and digital restoration so that they may be shared with a wider, modern audience. Where a work was published in another language, the archive provides a full English reading edition alongside the original text. This project is independently supported and has no commercial interest in the materials shared.</p>
-	
-	<p class="home-mission"><a href="/about/">About the archive and its editorial method &rarr;</a></p>
+# an archive of salvaged works
 
-	<p class="home-counters">
-		<a href="/articles/">{{ site.articles | size }} articles</a><span class="counter-sep">&middot;</span><a href="/reading-room/">{{ readable_books | size }} books in the reading room</a><span class="counter-sep">&middot;</span><a href="/creators/">{{ site.data.creators | size }} creators</a>
-	</p>
-</div>
+salvaged.work is an archive for texts, audio, and images that have languished within the confines of analogue media. The archive pays homage to these works through curation and digital restoration so that they may be shared with a wider, modern audience. Where a work was published in another language, the archive provides a full English reading edition alongside the original text. This project is independently supported and has no commercial interest in the materials shared.
+{: .home-mission}
+
+[About the archive and its editorial method &rarr;](/about/)
+{: .home-mission}
+
+[{{ site.articles | size }} articles](/articles/)<span class="counter-sep">&middot;</span>[{{ readable_books | size }} books in the reading room](/reading-room/)<span class="counter-sep">&middot;</span>[{{ site.data.creators | size }} creators](/creators/)
+{: .home-counters}
 
 {% comment %} The doors: Reading Room, themes, and the random drawer {% endcomment %}
 <div class="home-doors">

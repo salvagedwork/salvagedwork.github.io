@@ -52,7 +52,14 @@
 				var li = document.createElement('li');
 				var a = document.createElement('a');
 				a.href = item.url;
-				a.textContent = item.title;
+				// item.title comes from search.json pre-escaped for HTML
+				// insertion (Liquid's `escape` filter, e.g. an apostrophe
+				// becomes &#39;). innerHTML correctly parses that back into
+				// the real character; textContent would print the literal
+				// entity text instead. This matches how the header search
+				// dropdown already renders the same field, via a template
+				// string inserted as HTML.
+				a.innerHTML = item.title;
 				li.appendChild(a);
 				list.insertBefore(li, list.firstChild);
 			}

@@ -15,13 +15,10 @@ to the end of the bar.
 {% assign span_end = 'now' | date: "%Y" | plus: 0 %}
 {% assign span_total = span_end | minus: span_start %}
 
-<div class="home-masthead">
-	<h1>Creators</h1>
-	<p class="home-mission">Artists, composers, authors, printers, and collaborators whose work is held in the archive. Each bar shows a life measured against the span of the whole register, earliest birth to the present.</p>
-	<p class="home-counters">
-		<a href="/articles/">{{ site.data.creators | size }} creators</a>
-	</p>
-</div>
+# Creators
+
+Artists, composers, authors, printers, and collaborators whose work is held in the archive. Each bar shows a life measured against the span of the whole register, earliest birth to the present.
+{: .home-mission}
 
 <div class="collection-toolbar">
 	<span class="collection-count">{{ site.data.creators | size }} creators</span>
