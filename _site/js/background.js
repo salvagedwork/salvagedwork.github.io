@@ -12,22 +12,22 @@
 		imageExtension: '.jpg',
 		backgroundSize: '100% auto',
 		backgroundPosition: 'top center',
-		backgroundRepeat: 'repeat-y',
-		backgroundAttachment: 'fixed'
+		backgroundRepeat: 'repeat-y'
 	};
 
 	/**
-	 * Apply a random background image to the document body
+	 * Apply a random background image to the dedicated background element
 	 */
 	function setRandomBackground() {
 		const num = Math.ceil(Math.random() * CONFIG.totalBackgrounds);
 		const imageUrl = `${CONFIG.imagePath}${num}${CONFIG.imageExtension}`;
-		
-		document.body.style.backgroundImage = `url('${imageUrl}')`;
-		document.body.style.backgroundSize = CONFIG.backgroundSize;
-		document.body.style.backgroundPosition = CONFIG.backgroundPosition;
-		document.body.style.backgroundRepeat = CONFIG.backgroundRepeat;
-		document.body.style.backgroundAttachment = CONFIG.backgroundAttachment;
+		const el = document.getElementById('site-background');
+		if (!el) return;
+
+		el.style.backgroundImage = `url('${imageUrl}')`;
+		el.style.backgroundSize = CONFIG.backgroundSize;
+		el.style.backgroundPosition = CONFIG.backgroundPosition;
+		el.style.backgroundRepeat = CONFIG.backgroundRepeat;
 	}
 
 	/**

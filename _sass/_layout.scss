@@ -12,6 +12,23 @@ body {
 	grid-gap: 1rem;
 	font-size: $font-size-base;
 	line-height: $line-height;
+	background-color: $paper; // fallback: shows before JS sets the image,
+	                          // or if it's disabled -- no white flash either way
+}
+
+// The rotating lithograph background. A dedicated position:fixed element,
+// not body { background-attachment: fixed }: iOS Safari has never reliably
+// supported fixed-attachment backgrounds -- it commonly leaves parts of the
+// viewport unpainted (a white gap at the top on load, edges that never
+// receive the image) because the fixed-attachment calculation runs against
+// a viewport height that changes as Safari's own chrome collapses on
+// scroll. A real position:fixed element with inset:0 doesn't have that
+// bug; only the background *value* on body did.
+#site-background {
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	background-color: $paper;
 }
 
 #page-body {
