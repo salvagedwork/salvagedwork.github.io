@@ -1448,6 +1448,12 @@ body::after {
 	font-family: $font-serif;
 	font-size: 1.05rem;
 	line-height: 1.7;
+	// .article-container is a flex column on mobile; without this, an
+	// embedded iframe or the gallery-grid's 250px column minimum can lock
+	// this flex item to its content's width and overflow the viewport
+	// instead of shrinking to fit (same root cause as the update 30/31
+	// overflow fixes -- this component was never covered by those).
+	min-width: 0;
 
 	// the standfirst: the opening "Title is a ..." paragraph, a step up
 	> p:first-of-type {

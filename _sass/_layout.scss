@@ -479,8 +479,16 @@ a.current {
 	margin-bottom: 0;
 }
 
-article iframe {
+// Universal safety net: any image, iframe, video, or embed used directly in
+// article content (not just ones going through a specific include, which
+// may or may not have its own max-width rule) never exceeds its container.
+article img,
+article iframe,
+article video,
+article embed,
+article object {
     display: block;
+    max-width: 100%;
 }
 
 article section:has(iframe) {
