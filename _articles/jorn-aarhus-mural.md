@@ -134,7 +134,7 @@ The visual impact of the page of the score has a chance affinity with the rhythm
 
 The score's cover featured a detail from Jorn's ceramic relief, making explicit the connection between visual and sonic textures. As Erik Nyholm noted, the graphic appearance of Nørholm's score - particularly the sections with free notation in *Relief II* - bears a visual resemblance to the rhythmic, textured surface of Jorn's ceramic panels.
 
-Nørholm went on to become one of Denmark's most significant postwar composers, alongside Per Nørgård and Pelle Gudmundsen-Holmgreen. His exploration of graphic scores and experimental techniques in the early 1960s, exemplified by *Relief II*, positioned him at the forefront of Danish contemporary music. The composition stands as a unique example of musical ekphrasis - a sonic response that captures not just the visual appearance but the working method and aesthetic philosophy behind Jorn's monumental achievement.
+Nørholm went on to become one of Denmark's most significant postwar composers, alongside Per Nørgård and Pelle Gudmundsen-Holmgreen. His exploration of graphic scores and experimental techniques in the early 1960s, exemplified by *Relief II*, positioned him at the forefront of Danish contemporary music. The composition is an unusual example of musical ekphrasis - a sonic response that captures not just the visual appearance but the working method and aesthetic philosophy behind Jorn's monumental achievement.
 
 ### Explore the Musical Score
 

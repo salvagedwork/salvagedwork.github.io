@@ -48,7 +48,7 @@ Pierre Alechinsky (text by Luc Zangrie), Else Alfelt (text by Edouard Jaguer), K
 
 Christian Dotremont, the Belgian poet and co-founder of COBRA, contributed the majority of texts, writing critical essays on nine of the fifteen artists. His central role reflected his position as what Karel Appel later described as "the most important thinker of COBRA." Dotremont served as the movement's secretary-general and chief publicist, and his texts for the Bibliotek demonstrated his characteristic approach of merging poetic insight with critical analysis.
 
-The selection of artists represented the geographic and stylistic range of COBRA, spanning Denmark, Belgium, the Netherlands, France, England, and Iceland. The Danish contingent was particularly strong, reflecting the importance of the Copenhagen art scene to the movement's development. Among the featured artists were the two female members of COBRA: Else Alfelt and Sonja Ferlov (though sources also mention Helge Jacobson as a female member).
+The selection of artists represented the geographic and stylistic range of COBRA, spanning Denmark, Belgium, the Netherlands, France, England, and Iceland. The Danish contingent was particularly strong, an indication of how central the Copenhagen art scene was to the movement. Among the featured artists were the two female members of COBRA: Else Alfelt and Sonja Ferlov (though sources also mention Helge Jacobson as a female member).
 
 ## Jorn's Introduction
 
@@ -89,7 +89,7 @@ The series represented an attempt to establish COBRA's place in art history whil
 
 ## Legacy and Influence
 
-The COBRA Bibliotek stands as one of the key documentary sources for studying the movement. Years after COBRA's dissolution, Jorn paid tribute to Dotremont's role, noting that the poet gave the painters their "big shock" through his insistence on experimentation. As Jorn recalled, Dotremont impressed upon the artists the necessity for experimentation in everything he said and did, with something young and lively about this approach. Only later did Jorn clearly see the importance of this personal force, which kept COBRA firmly opposed to any kind of aestheticism or formalism.
+The COBRA Bibliotek is one of the main documentary sources for studying the movement. Years after COBRA's dissolution, Jorn paid tribute to Dotremont's role, noting that the poet gave the painters their "big shock" through his insistence on experimentation. As Jorn recalled, Dotremont impressed upon the artists the necessity for experimentation in everything he said and did, with something young and lively about this approach. Only later did Jorn clearly see the importance of this personal force, which kept COBRA firmly opposed to any kind of aestheticism or formalism.
 
 The monographs provided first critical assessments of artists who would become major figures in postwar European art. For several artists, including Else Alfelt and Stephen Gilbert, the Bibliotek volumes represented the first monographs devoted to their work. The texts established critical frameworks that subsequent scholars would build upon, with Dotremont's characterizations proving particularly influential.
 
@@ -99,7 +99,7 @@ Guy Atkins's catalogue raisonné work drew extensively on the Bibliotek as a pri
 
 ## Related Publications
 
-The COBRA Bibliotek was published alongside the movement's journal, *Cobra*, which appeared in eight issues from 1949 to 1951. A planned double issue remained in proof form due to lack of funds, reflecting the financial challenges that plagued the movement throughout its brief existence. While the journal provided ongoing documentation of COBRA's activities and theoretical positions, the Bibliotek offered more sustained critical engagement with individual artists' work.
+The COBRA Bibliotek was published alongside the movement's journal, *Cobra*, which appeared in eight issues from 1949 to 1951. A planned double issue remained in proof form for lack of funds, one of several money problems the movement faced throughout its short existence. While the journal provided ongoing documentation of COBRA's activities and theoretical positions, the Bibliotek offered more sustained critical engagement with individual artists' work.
 
 The format anticipated later artist book projects and alternative art publishing initiatives of the 1960s and 1970s. The integration of original lithographic covers with critical texts, the modest scale and affordability, and the commitment to international collaboration all influenced subsequent attempts to create alternative distribution networks for experimental art.
 

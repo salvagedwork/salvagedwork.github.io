@@ -27,9 +27,9 @@ This article is part of the [Helhesten](/collection/helhesten/) collection.
 
 ## Background
 
-After producing six issues in 1941, *Helhesten* fell silent for nearly a year before this issue appeared in October 1942. The eleven-month gap reflected the journal's growing financial difficulties-the colour printing that had distinguished the publication proved unsustainable under wartime conditions. This would be the only issue published in 1942.
+After producing six issues in 1941, *Helhesten* fell silent for nearly a year before this issue appeared in October 1942. The eleven-month gap reflected the journal's growing financial difficulties. The colour printing that had distinguished the publication proved unsustainable under wartime conditions. This would be the only issue published in 1942.
 
-Despite these challenges, the journal continued to serve as a vital forum for Denmark's avant-garde during the occupation. As Guy Atkins notes in *Jorn in Scandinavia*:
+The journal remained an important forum for Denmark's avant-garde during the occupation. As Guy Atkins notes in *Jorn in Scandinavia*:
 
 {% capture atkins_quote %}
 It is now generally recognized that the artists of the war years were by far the most talented generation of painters and sculptors that Denmark has ever produced. The war situation drew these men closer together. They could no longer travel abroad and so they had to rely entirely upon each other for mental stimulus and companionship.

@@ -76,7 +76,7 @@ Jorn was subsequently diagnosed with lung cancer at Århus Kommunehospital. Even
 
 ## Bangsbohave Today
 
-After Jorn's death, Bangsbohave was leased by Stoklund and rented to tourists before eventually falling into ruin. In 2007, Nanna Enzensberger sold the property to new owners who undertook a major restoration, reopening it in 2009 as a guest studio for artists. Today, Bangsbohave operates as part of the Læsø Artist in Residence program alongside Per Kirkeby's nearby retreat Haabet, ensuring that Jorn's legacy continues to support future generations of artists on the island.
+After Jorn's death, Bangsbohave was leased by Stoklund and rented to tourists before eventually falling into ruin. In 2007, Nanna Enzensberger sold the property to new owners who undertook a major restoration, reopening it in 2009 as a guest studio for artists. Today, Bangsbohave operates as part of the Læsø Artist in Residence program, alongside Per Kirkeby's nearby retreat Haabet.
 
 ## Explore the Book
 
